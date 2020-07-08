@@ -1,0 +1,2312 @@
+00        83L                                                 1122PPPPI90 000001
+01ROC 0000 - Rochusplatz in Kîln          05.06.1919.02.0710:00           000002
+02ROC 0000 - Rochusplatz in Kîln                                          000003
+03GAG Immobilien AG                                                       000004
+062              MATERIAL      MONTAGE                                    000005
+08EUR                                                                     000006
+11 1       N                                                              000007
+12LÅftungsinstallation Tiefgarage                                         000008
+11 1 1     N                                                              000009
+12LÅftungstechnik fÅr LÅftung ohne                                        000010
+21 1 1  10 NNN    X    00000001000St                                      000011
+30          0000420500000005400000000000000000000000                      000012
+25Garagenabluftventilator 630mm mit                                       000013
+26   Garagenabluftventilator 630mm mit                                    000014
+26   21.130 mÅ/h                                                          000015
+26   AusfÅhrung nach den gÅltigen Regeln der                              000016
+26   Technik, den                                                         000017
+26   gesetzlichen Vorschriften und mit                                    000018
+26   BerÅcksichtigung der                                                 000019
+26   relevanten Normen (u. A. DIN EN 1886,                                000020
+26   prEN 13053, VDI                                                      000021
+26   6022, VDI 3803).                                                     000022
+26                                                                        000023
+26   GerÑtetyp:                                                           000024
+26   Garagenabluftventilator, duplex,                                     000025
+26   Anordnung :                                                          000026
+26   hintereinander                                                       000027
+26   Axialventilator, aus Stahl, OberflÑche                               000028
+26   beschichtet,                                                         000029
+26   inkl. 2 StÅck E-Motoren,                                             000030
+26                                                                        000031
+26   GerÑtetyp:   Garagenabluft                                           000032
+26   Luftmenge:   21.134 m¸/h                                             000033
+26                                                                        000034
+26   Technische Daten                                                     000035
+26   Einbausituation gemÑ· ISO 5801                                       000036
+26   saugseitig                                                           000037
+26   angeschlossen, druckseitig angeschlossen                             000038
+26   Betriebstemperatur      20 ¯C                                        000039
+26   Betriebsdichte      1,205 kg/m3                                      000040
+26   Normdichte      1,293 Kg/m3                                          000041
+26   Aufstellungshîhe      0 m                                            000042
+26   Totaler Ventilatordruck      456 Pa                                  000043
+26   statischer Ventilatordruck      245 Pa                               000044
+26   dynamischer Druck      211 Pa                                        000045
+26   Volumenstrom      21134 Bm3/h                                        000046
+26   Normvolumenstrom      19694 Nm3/h                                    000047
+26   Nenndurchmesser      630 mm                                          000048
+26   Polzahl      4 p                                                     000049
+26   Drehzahl(50 Hz)      1440 1/min                                      000050
+26   Max Drehzahl      3600 1/min                                         000051
+26   Wellenleistung      3,4 kW                                           000052
+26   Motorleistung      4,5 kW                                            000053
+26   Energieeffizienz      1                                              000054
+26   Nennstrom      9,32 A                                                000055
+26   Anlaufstrom      -                                                   000056
+26   Ventilator TrÑgheitsmoment   - Kg.m2                                 000057
+26   Hochlaufzeit      1,5 s                                              000058
+26   Frequenz      50 Hz                                                  000059
+26   Spannung / Schaltung      400 V / D                                  000060
+26   Max. Dauertemperatur      55 ¯C                                      000061
+26   Schaufelwinkel      37 ¯                                             000062
+26   Wellenwirkungsgrad      39 %                                         000063
+26   Theoretischer Schub      132,394 N                                   000064
+26   Gesamteffizienz 52,5%, Effizienzgrad 53,                             000065
+26   Gewicht ohne Zubehîr :      254 kg                                   000066
+26                                                                        000067
+26   Schallleistungspegel    108 dB(A)                                    000068
+26                                                                        000069
+26   Schallleistungspegel in db(A)                                        000070
+26   63Hz   74                                                            000071
+26   125Hz   88                                                           000072
+26   250Hz   98                                                           000073
+26   500Hz   103                                                          000074
+26   1000Hz   104                                                         000075
+26   2000Hz   100                                                         000076
+26   4000Hz   93                                                          000077
+26   8000Hz   81                                                          000078
+26                                                                        000079
+26   Schallleistungspegel in dB(A), berechnet                             000080
+26    nach VDI 3731,                                                      000081
+26   im Kanal                                                             000082
+26                                                                        000083
+26                                                                        000084
+26                                                                        000085
+26   wie                                                                  000086
+26   Hersteller:   Pollrich DLK                                           000087
+26   Baugrî·e:   0630                                                     000088
+26   Typ : ToromaPro duplex AAGM01-0630-B                                 000089
+26   Max. Einsatz-Temp.   55¯C                                            000090
+26   Anzahl Motoren :   2                                                 000091
+26   Drehzahl :      1440 / 3600                                          000092
+26                                                                        000093
+26                                                                        000094
+26   Zubehîr:                                                             000095
+26   1 St   Z10 Kompensator bis 70¯C, und                                 000096
+26   2000Pa                                                               000097
+26   Differenzdruck                                                       000098
+26      mit Art.-Nr. B141035,                                             000099
+26   2 St   Z55 Klemmenkasten aus Kunststoff                              000100
+26   fÅr                                                                  000101
+26   Innenaufstellung                                                     000102
+26      mit Art.-Nr. B1214019                                             000103
+26   2 St   Z58 Reparaturschalter, lose                                   000104
+26   geliefert, n                                                         000105
+26   Kompensator bis 70¯C, und 2000Pa                                     000106
+26   Differenzdruck                                                       000107
+26      mit Art.-Nr. B141035,                                             000108
+26                                                                        000109
+26   GerÑteabmessungen:                                                   000110
+26   LÑnge:   1480 mm                                                     000111
+26   Breite:   810 mm                                                     000112
+26   Hîhe:   950 mm                                                       000113
+26                                                                        000114
+26   liefern frei Bordstein und zur                                       000115
+26   Montagestelle im UG TG                                               000116
+26   schaffen (75m Åber TG Rampe !) und                                   000117
+26   aufstellen                                                           000118
+26                                                                        000119
+26   Hinweis:                                                             000120
+26   Vor Bestellung sind die Konstruktions-                               000121
+26   und DetailplÑne,                                                     000122
+26   einschl. der akustischen Daten fÅr die                               000123
+26   GerÑte, der                                                          000124
+26   Bauleitung zur Freigabe vorzulegen, erst                             000125
+26    nach erfolgter                                                      000126
+26   Freigabe durch den Akustiker und der                                 000127
+26   Bauleitung darf                                                      000128
+26   mit der Fertigung begonnen werden.                                   000129
+26                                                                        000130
+21 1 1  20 NNN    X    00000002000St                                      000131
+30          0000036730000001080000000000000000000000                      000132
+25SchwingungsdÑmpfer fÅr Duckbelastung,                                   000133
+26   SchwingungsdÑmpfer fÅr Duckbelastung,                                000134
+26   bis 360kg                                                            000135
+26   zur Aufstellung von Ventilatoren auf                                 000136
+26   Profilstahlkonstruktionen,                                           000137
+26   zur Befestigung des LÅfters, 1 StÅck Set                             000138
+26    = 4 StÅck                                                           000139
+26   DÑmpfer,                                                             000140
+26   Bauart als Federphonolator,                                          000141
+26   TemperaturbestÑndig bis                                              000142
+26   600¯C,                                                               000143
+26   wie                                                                  000144
+26   Herst :      Helios                                                  000145
+26   Typ :       SSD 6                                                    000146
+26   Art-Nr:      1926                                                    000147
+26                                                                        000148
+26   auf der Montagekonsole komplett mit                                  000149
+26   allen Schrauben,                                                     000150
+26   Klein-, Verbindungs- und                                             000151
+26   Befestigungsmaterialien,                                             000152
+26   einschl. aller Schwei·-, Bohr- und                                   000153
+26   Schneidarbeiten                                                      000154
+26   einbauen,                                                            000155
+26                                                                        000156
+26   zu liefern und in Abstimmung mit der                                 000157
+26   Statik fachgerecht                                                   000158
+26   im Aufstellraum montieren.                                           000159
+26                                                                        000160
+21 1 1  30 NNN    X    00000001000St                                      000161
+30          0000047125000004050000000000000000000000                      000162
+25Profilstahlunterkonstruktion fÅr                                        000163
+26   Profilstahlunterkonstruktion fÅr                                     000164
+26   AblÅfter                                                             000165
+26   Profilstahl als Winkel-U und Flachprofil                             000166
+26    fÅr spezielle                                                       000167
+26   Befestigungskonstruktionen fÅr AblÅfter                              000168
+26   auf dem                                                              000169
+26   Betonboden, UK Ventilator als Abstand                                000170
+26   zum Boden : ca.                                                      000171
+26   40cm, bestehend aus :                                                000172
+26                                                                        000173
+26   - 2,4m verz. U-TrÑger, 120x55mm mit 7mm                              000174
+26   StÑrke                                                               000175
+26   - 5m verz. Flachstahl, 60mm breit 5mm                                000176
+26   stark                                                                000177
+26                                                                        000178
+26   zur Befestigung des LÅfters auf dem                                  000179
+26   schallgedÑmmten                                                      000180
+26   Fundament, komplett mit allen Schrauben,                             000181
+26    Klein-,                                                             000182
+26   Verbindungs- und                                                     000183
+26   Befestigungsmaterialien, einschl.                                    000184
+26   aller Schwei·-, Bohr- und                                            000185
+26   Schneidarbeiten,                                                     000186
+26                                                                        000187
+26   zu liefern und in Abstimmung mit der                                 000188
+26   Statik fachgerecht                                                   000189
+26   im Aufstellraum montieren.                                           000190
+26                                                                        000191
+21 1 1  40 NNN    X    00000001000St                                      000192
+30          0000014500000004320000000000000000000000                      000193
+25Pauschalpreis fÅr Aufstellung RLT-GerÑt                                 000194
+26   Pauschalpreis fÅr Aufstellung RLT-GerÑt                              000195
+26   Transport des GaragenabluftgerÑtes zum                               000196
+26   Aufstellraum,                                                        000197
+26   Abmessungen: ca. 0,63 x 0,63 x 1,26 m (L                             000198
+26    x B x H) im                                                         000199
+26   Untergeschoss, Einbringung in den                                    000200
+26   Aufstellraum durch                                                   000201
+26   vorhandene ZugangstÅr,                                               000202
+26                                                                        000203
+26   Abmessungen: ca. 1,0 x 2,0 m (B x H),                                000204
+26   einschl. schallgedÑmmter Aufstellung auf                             000205
+26    der in                                                              000206
+26   separater Position beschriebenen                                     000207
+26   Profilstahlunterkonstruktion und                                     000208
+26   betriebsfertiger                                                     000209
+26   Verbindung mit den LuftkanÑlen.                                      000210
+26                                                                        000211
+21 1 1  50 NNN    X    00000001000St                                      000212
+30          0000261000000021600000000000000000000000                      000213
+25Pauschalpreis fÅr Inbetriebnahme und                                    000214
+26   Pauschalpreis fÅr Inbetriebnahme und                                 000215
+26   Einregulierung                                                       000216
+26   Erstellung eines Mess- und                                           000217
+26   öbergabeprotokolls mit                                               000218
+26   Angabe der bei Abschluss der                                         000219
+26   Inbetriebnahme gemessenen                                            000220
+26   Luftmengen (Soll- und Istwerte) sowie                                000221
+26   Schallmessungen                                                      000222
+26   in und au·erhalb des GebÑudes,                                       000223
+26   Protokollierung der                                                  000224
+26   tatsÑchlichen Druckverluste und der                                  000225
+26   heizungsseitigen                                                     000226
+26   Daten, gemÑ· VDI 2079, Einweisung des                                000227
+26   Bedienungspersonals im Anschluss an die                              000228
+26   Inbetriebnahme,                                                      000229
+26   durch den Werkskundendienst des                                      000230
+26   Herstellers, einschl.                                                000231
+26   Fahrtkosten, Auslîsung und Anfertigung                               000232
+26   eines                                                                000233
+26   Inbetriebnahme- und eines                                            000234
+26   Einweisungsprotokolls.                                               000235
+26                                                                        000236
+26   Hinweis:                                                             000237
+26   Die Protokolle sind den                                              000238
+26   Revisionsunterlagen des AN                                           000239
+26   beizufÅgen.                                                          000240
+26                                                                        000241
+26   QualitÑtsbeschreibung LuftkanÑle aus                                 000242
+26   verzinktem                                                           000243
+26   Stahlblech                                                           000244
+26                                                                        000245
+26   LuftkanÑle in gefalzter AusfÅhrung, fÅr                              000246
+26   normal                                                               000247
+26   belastete Luft, aus sendzimirverzinktem                              000248
+26   Stahlblech 275                                                       000249
+26   g/m˝ gemÑ· DIN EN 10 124, GÅte FePO2G Z                              000250
+26   275 NA,                                                              000251
+26   Dichtheitsklasse II gem. DIN 24 194.                                 000252
+26                                                                        000253
+26   BlechstÑrke gem. DIN 24 157, Reihe 1                                 000254
+26   (bis 1.600 Pa),                                                      000255
+26   jedoch min. 0,75 mm, Versteifung der                                 000256
+26   KanÑle durch                                                         000257
+26   Z-Profilierung, Åber 1.250 mm                                        000258
+26   KantenlÑnge mit                                                      000259
+26   zusÑtzlicher Rohrversteifung.                                        000260
+26                                                                        000261
+26   Kanalverbindungen aus verzinktem,                                    000262
+26   kaltgezogenem                                                        000263
+26   Spezialprofil mit eingesetzten,                                      000264
+26   verschraubten                                                        000265
+26   Spezialecken und zusÑtzlicher                                        000266
+26   Schiebeleiste oder                                                   000267
+26   Montageklammer mit kadmierten Schrauben                              000268
+26   und Vorlegeband                                                      000269
+26   15 mm.                                                               000270
+26                                                                        000271
+26   Befestigungen mit korrosionsgeschÅtzter                              000272
+26   Tragkonstruktion aus Profilstahl,                                    000273
+26   Gewindestangen,                                                      000274
+26   zugelassenen DÅbeln und schalldÑmmender                              000275
+26   Zwischenlage                                                         000276
+26   nach DIN 4109.                                                       000277
+26                                                                        000278
+26   Hygieneanforderungen gem. DIN EN V 12                                000279
+26   097, mittlere                                                        000280
+26   Stufe (ausgenommen GaragenlÅftung).                                  000281
+26                                                                        000282
+26      Fabrikat Planung   Fabrikat Bieter                                000283
+26   Hersteller:   Achenbach                                              000284
+26   ...........................                                          000285
+26                                                                        000286
+26   Im Einheitspreis (gem. FlÑchenma· nach                               000287
+26   DIN 18 379) sind                                                     000288
+26   entsprechend vorstehender Beschreibung                               000289
+26   und der Hinweise                                                     000290
+26   zur AusfÅhrung enthalten:                                            000291
+26   -   KanÑle und Kanalverbindungen,                                    000292
+26   -   Leitbleche, PasslÑngen,                                          000293
+26   StutzenanschlÅsse,                                                   000294
+26   Trennbleche beim SeitenverhÑltnis > 1:5,                             000295
+26   -   Ausschnitte fÅr LuftdurchlÑsse,                                  000296
+26   Revisionsîffnungen,                                                  000297
+26   etc.,                                                                000298
+26   -   Einbau von FÅhlern und sonstigen                                 000299
+26   MSR-FeldgerÑten,                                                     000300
+26   -   Messîffnungen mit luftdichten                                    000301
+26   Stopfen,                                                             000302
+26   -   Flanschverbindungen fÅr                                          000303
+26   Kanaleinbauten,                                                      000304
+26   -   Befestigungen, einschl.                                          000305
+26   Bohrarbeiten,                                                        000306
+26   -   Ummantelung in Wand- und                                         000307
+26   DeckendurchfÅhrungen,                                                000308
+26   -   GerÅste und ArbeitsbÅhnen Åber 2 m                               000309
+26   Hîhe.                                                                000310
+26                                                                        000311
+21 1 1  60 NNN    X    00000008000m2                                      000312
+30          0000003625000000306000000000000000000000                      000313
+25FormstÅcke aus verzinktem Stahlblech                                    000314
+26   FormstÅcke aus verzinktem Stahlblech                                 000315
+26   wie vor beschrieben fÅr LuftkanÑle.                                  000316
+26                                                                        000317
+21 1 1  70 NNN    X    00000001000St                                      000318
+30          0000076225000002340000000000000000000000                      000319
+25KulissenschalldÑmpfer 1800x1200x750 mm                                  000320
+26   KulissenschalldÑmpfer 1800x1200x750 mm                               000321
+26   als SchalldÑmpfer fÅr Kanaleinbau,                                   000322
+26   eingebaute Kulissen                                                  000323
+26   mit hochfester, abriebsicherer und                                   000324
+26   feuchtigkeitsabweisender OberflÑche aus                              000325
+26   Glasseide,                                                           000326
+26   nichtbrennbar nach DIN 4102, in                                      000327
+26   Zweikammerbauart aus                                                 000328
+26   verzinktem Stahlblech, mit Resonanz- und                             000329
+26   Absorptionselementen zur optimalen                                   000330
+26   SchalldÑmpfung bei                                                   000331
+26   250 Hz, umlaufendem Profilrahmen sowie                               000332
+26   durchgehendem                                                        000333
+26   Stabilisierungs- und Kammertrennprofil,                              000334
+26   KanalgehÑuse                                                         000335
+26   aus verzinktem Stahlblech, mit                                       000336
+26   Anschlussrahmen und                                                  000337
+26   Aussteifungsprofilen, einschl.                                       000338
+26   korrosionsgeschÅtzter                                                000339
+26   schallentkoppelter Befestigung mit                                   000340
+26   zugelassenen DÅbeln,                                                 000341
+26   wie:                                                                 000342
+26                                                                        000343
+26   Hersteller:   Schako                                                 000344
+26   Typ:   MWS                                                           000345
+26   Kulissendicke:   200 mm                                              000346
+26   Anzahl der Kulissen:   4 StÅck                                       000347
+26   LÑnge:   750 mm                                                      000348
+26   Volumenstrom;:   22.000 m¸/h                                         000349
+26   Druckverlust:   18 Pa                                                000350
+26   Anstrîmgeschwindigkeit:   8,5 m/s                                    000351
+26   StrîmungsgerÑusch:   38 dB(A)                                        000352
+26   Gewicht:   114 kg                                                    000353
+26                                                                        000354
+26   liefern und einschl. Verbindungs- und                                000355
+26   Befestigungsmaterial fachgerecht                                     000356
+26   montieren.                                                           000357
+26                                                                        000358
+21 1 1  80 NNN    X    00000001000St                                      000359
+30          0000122173000003510000000000000000000000                      000360
+25KulissenschalldÑmpfer 1800x1200x1500 mm                                 000361
+26   KulissenschalldÑmpfer 1800x1200x1500 mm                              000362
+26   als SchalldÑmpfer fÅr Kanaleinbau,                                   000363
+26   eingebaute Kulissen                                                  000364
+26   mit hochfester, abriebsicherer und                                   000365
+26   feuchtigkeitsabweisender OberflÑche aus                              000366
+26   Glasseide,                                                           000367
+26   nichtbrennbar nach DIN 4102, in                                      000368
+26   Zweikammerbauart aus                                                 000369
+26   verzinktem Stahlblech, mit Resonanz- und                             000370
+26   Absorptionselementen zur optimalen                                   000371
+26   SchalldÑmpfung bei                                                   000372
+26   250 Hz, umlaufendem Profilrahmen sowie                               000373
+26   durchgehendem                                                        000374
+26   Stabilisierungs- und Kammertrennprofil,                              000375
+26   KanalgehÑuse                                                         000376
+26   aus verzinktem Stahlblech, mit                                       000377
+26   Anschlussrahmen und                                                  000378
+26   Aussteifungsprofilen, einschl.                                       000379
+26   korrosionsgeschÅtzter                                                000380
+26   schallentkoppelter Befestigung mit                                   000381
+26   zugelassenen DÅbeln,                                                 000382
+26   wie:                                                                 000383
+26                                                                        000384
+26   Hersteller:   Schako                                                 000385
+26   Typ:   MWS                                                           000386
+26   Kulissendicke:   200 mm                                              000387
+26   Anzahl der Kulissen:   4 StÅck                                       000388
+26   LÑnge:   1750 mm                                                     000389
+26   Volumenstrom;:   22.000 m¸/h                                         000390
+26   Druckverlust:   22 Pa                                                000391
+26   Anstrîmgeschwindigkeit:   8,5 m/s                                    000392
+26   StrîmungsgerÑusch:   38 dB(A)                                        000393
+26   Gewicht:   211 kg                                                    000394
+26                                                                        000395
+26   liefern und einschl. Verbindungs- und                                000396
+26   Befestigungsmaterial fachgerecht                                     000397
+26   montieren.                                                           000398
+26                                                                        000399
+21 1 1  90 NNN    X    00000001000St                                      000400
+30          0000166815000004680000000000000000000000                      000401
+25KulissenschalldÑmpfer 1800x1200x1750 mm                                 000402
+26   KulissenschalldÑmpfer 1800x1200x1750 mm                              000403
+26   als SchalldÑmpfer fÅr Kanaleinbau,                                   000404
+26   eingebaute Kulissen                                                  000405
+26   mit hochfester, abriebsicherer und                                   000406
+26   feuchtigkeitsabweisender OberflÑche aus                              000407
+26   Glasseide,                                                           000408
+26   nichtbrennbar nach DIN 4102, in                                      000409
+26   Zweikammerbauart aus                                                 000410
+26   verzinktem Stahlblech, mit Resonanz- und                             000411
+26   Absorptionselementen zur optimalen                                   000412
+26   SchalldÑmpfung bei                                                   000413
+26   250 Hz, umlaufendem Profilrahmen sowie                               000414
+26   durchgehendem                                                        000415
+26   Stabilisierungs- und Kammertrennprofil,                              000416
+26   KanalgehÑuse                                                         000417
+26   aus verzinktem Stahlblech, mit                                       000418
+26   Anschlussrahmen und                                                  000419
+26   Aussteifungsprofilen, einschl.                                       000420
+26   korrosionsgeschÅtzter                                                000421
+26   schallentkoppelter Befestigung mit                                   000422
+26   zugelassenen DÅbeln,                                                 000423
+26   wie:                                                                 000424
+26                                                                        000425
+26   Hersteller:   Schako                                                 000426
+26   Typ:   MWS                                                           000427
+26   Kulissendicke:   200 mm                                              000428
+26   Anzahl der Kulissen:   4 StÅck                                       000429
+26   LÑnge:   1750 mm                                                     000430
+26   Volumenstrom;:   22.000 m¸/h                                         000431
+26   Druckverlust:   22 Pa                                                000432
+26   Anstrîmgeschwindigkeit:   8,5 m/s                                    000433
+26   StrîmungsgerÑusch:   38 dB(A)                                        000434
+26   Gewicht:   241 kg                                                    000435
+26                                                                        000436
+26   liefern und einschl. Verbindungs- und                                000437
+26   Befestigungsmaterial fachgerecht                                     000438
+26   montieren.                                                           000439
+26                                                                        000440
+31 1 1                                                                    000441
+11 1 2     N                                                              000442
+12LuftkanÑle und Zubehîr                                                  000443
+21 1 2  10 NNN    X    00000008000m2                                      000444
+30          0000002719000000252000000000000000000000                      000445
+25LuftkanÑle aus verzinktem Stahlblech                                    000446
+26   LuftkanÑle aus verzinktem Stahlblech                                 000447
+26   wie vor beschrieben.                                                 000448
+26                                                                        000449
+21 1 2  20 NNN    X    00000038000m2                                      000450
+30          0000003625000000306000000000000000000000                      000451
+25FormstÅcke aus verzinktem Stahlblech                                    000452
+26   FormstÅcke aus verzinktem Stahlblech                                 000453
+26   wie vor beschrieben fÅr LuftkanÑle.                                  000454
+26                                                                        000455
+21 1 2  30 NEN    X    00000001000St                                      000456
+30          0000149611000001881000000000000000000000                      000457
+25Brandschutzklapp1500x800 mm                                             000458
+26   Brandschutzklapp1500x800 mm                                          000459
+26   mit 90 Minuten Feuerwiderstandsdauer                                 000460
+26   nach europÑischem                                                    000461
+26   Standard EN 1366-2,                                                  000462
+26   Feuerwiderstandsklasse EI90,                                         000463
+26   luftdichtes GehÑuse aus verzinktem                                   000464
+26   Stahlblech einteilig                                                 000465
+26   umlaufend gekantet und druckgefÅgt,                                  000466
+26   angeschrÑgte                                                         000467
+26   Innensicke fÅr den Klappenblattfreilauf,                             000468
+26    Au·ensicken                                                         000469
+26   zur GewÑhrleistung umfassender                                       000470
+26   StabilitÑt,                                                          000471
+26   Anschlussflanschen, austauschbares                                   000472
+26   Klappenblatt aus                                                     000473
+26   abriebfestem Kalziumsilikat, mit                                     000474
+26   Elastomer-Lippendichtungen an einem                                  000475
+26   Profilrahmen und                                                     000476
+26   komplettem Mantel aus verzinktem Stahl,                              000477
+26   im                                                                   000478
+26   GehÑusewandungsbereich liegende,                                     000479
+26   vollgekapselte,                                                      000480
+26   wartungsfreie Antriebsmechanik mit                                   000481
+26   selbstverriegelnder                                                  000482
+26   Kurbelschleife fÅr bruchsichere                                      000483
+26   DrehmomentÅbertragungen, abgedichtete                                000484
+26   Antriebsachsen                                                       000485
+26   aus rostfreiem Edelstahl, Lager aus                                  000486
+26   Rotmetall, geeignet                                                  000487
+26   zum Einbau ohne Mindestabstand und mit                               000488
+26   liegenden oder                                                       000489
+26   stehenden Klappenblattachsen in, an und                              000490
+26   entfernt von                                                         000491
+26   massiven WÑnden und Decken, in und                                   000492
+26   entfernt von                                                         000493
+26   leichten TrennwÑnden, bei schwer                                     000494
+26   zugÑnglichen                                                         000495
+26   Einbauîffnungen oder Einbau Flansch an                               000496
+26   Flansch auch mit                                                     000497
+26   Mineralwoll, direkter Anschluss an                                   000498
+26   LÅftungsleitungen                                                    000499
+26   aus nichtbrennbaren oder brennbaren                                  000500
+26   Baustoffen oder mit                                                  000501
+26   nichtbrennbaren Schutzgittern,                                       000502
+26   thermische Auslîsung                                                 000503
+26   70¯C / 90¯C, Antriebseinrichtung, wie:                               000504
+26                                                                        000505
+26      Fabrikat Planung   Fabrikat Bieter                                000506
+26   Hersteller:   Schakor                                                000507
+26   ...........................                                          000508
+26   Typ:   BK 133                                                        000509
+26   ...........................                                          000510
+26   Breite:   800 mm                                                     000511
+26   ...........................                                          000512
+26   Hîhe:    1500 mm                                                     000513
+26   ...........................                                          000514
+26   LÑnge:    500 mm                                                     000515
+26   ...........................                                          000516
+26   Volumenstrom:    22.000 m¸/h                                         000517
+26   ...........................                                          000518
+26                                                                        000519
+26   Zubehîr:                                                             000520
+26   -   elektrischer Endlagenschalter,                                   000521
+26   -   elektrischer Stellantrieb mit                                    000522
+26   FederrÅcklaufmotor,                                                  000523
+26   -   GehÑuseverlÑngerung,                                             000524
+26   -   elastische Anschlussstutzen oder                                 000525
+26   Schutzgitter.                                                        000526
+26                                                                        000527
+26   liefern und einschl. Verbindungs- und                                000528
+26   Befestigungsmaterial fachgerecht                                     000529
+26   montieren.                                                           000530
+26                                                                        000531
+26   Hinweis:                                                             000532
+26   Die fachgerechte                                                     000533
+26   Ummantelung/Einmîrtelung der                                         000534
+26   Brandschutzklappe ist in den                                         000535
+26   Einheitspreis                                                        000536
+26   einzurechnen.                                                        000537
+26                                                                        000538
+21 1 2  40 NEN    X    00000001000m˝                                      000539
+30          0000018343000000000000000000000000000000                      000540
+25L90-Blechkanalbekleidung, 3-seitig                                      000541
+26   L90-Blechkanalbekleidung, 3-seitig                                   000542
+26   fÅr SeitenlÑnge bis bis 1000 mm,                                     000543
+26   feuerwiderstandsfÑhige                                               000544
+26   Bekleidung mit Tragkonstruktion fÅr                                  000545
+26   vertikal und                                                         000546
+26   horizontal verlegte gerade Luftleitungen                             000547
+26    und FormstÅcke                                                      000548
+26   aus verzinktem Stahlblech.                                           000549
+26                                                                        000550
+26   AusfÅhrung:                                                          000551
+26   Feuerwiderstandsklasse L 90 nach DIN                                 000552
+26   4102 mit amtlichem                                                   000553
+26   Nachweis, nach den PrÅfbestimmungen und                              000554
+26   dem                                                                  000555
+26   Zulassungsbescheid aus dem geprÅften                                 000556
+26   Material und den                                                     000557
+26   geprÅften Verarbeitungsrichtlinien                                   000558
+26   hergestellt und                                                      000559
+26   befestigt.                                                           000560
+26                                                                        000561
+26   Befestigungen mit bauaufsichtlich                                    000562
+26   zugelassenen                                                         000563
+26   Stahl-Spreiz-DÅbeln min. M 8 und                                     000564
+26   doppelter Einbautiefe                                                000565
+26   min. 60 mm. Gewindestangen max.                                      000566
+26   Zugspannung 6 N/mm˝ und                                              000567
+26   Tragprofilen. Senkrechte KanÑle                                      000568
+26   geschossweise                                                        000569
+26   abgefangen.                                                          000570
+26                                                                        000571
+26   Bekleidung aus Brandschutzplatten SL 45                              000572
+26   mm, RG ca. 550                                                       000573
+26   kg/m¸, nicht brennbar, verschraubt,                                  000574
+26   verklammert und                                                      000575
+26   verklebt. An den Stî·en mit                                          000576
+26   Plattenstreifen abgedeckt,                                           000577
+26   Auflagerstreifen fÅr den Blechkanal,                                 000578
+26   Versteifungen fÅr                                                    000579
+26   Lastabtragung und WanddurchfÅhrung, wie:                             000580
+26                                                                        000581
+26      Fabrikat Planung   Fabrikat Bieter                                000582
+26   Hersteller:   thermax                                                000583
+26   ...........................                                          000584
+26                                                                        000585
+26                                                                        000586
+26   liefern und fachgerecht auf die                                      000587
+26   LuftkanÑle aufbringen.                                               000588
+26                                                                        000589
+21 1 2  50 NNN    X    00000001000St                                      000590
+30          0000050707000002583000000000000000000000                      000591
+25Luftansauggitter 1.200 x 1830 mm                                        000592
+26   Luftansauggitter 1.200 x 1830 mm                                     000593
+26   fÅr Kanaleinbau, mit Rahmen gekantet und                             000594
+26    Lamellen aus                                                        000595
+26   Stahlblech verzinkt , Luftansauggitter                               000596
+26   mit                                                                  000597
+26   feststehenden Lamellen, mit                                          000598
+26   Drahtgeflecht auf der                                                000599
+26   RÅckseite, mit Einbaurahmen mit                                      000600
+26   Verankerungsklauen,                                                  000601
+26   bestehend aus verzinktem Stahlblech,                                 000602
+26   geringe                                                              000603
+26   Druckdifferenz durch strîmungsgÅnstig                                000604
+26   geformte                                                             000605
+26   Lamellen,                                                            000606
+26                                                                        000607
+26   Hersteller:   Schako                                                 000608
+26   Typ:   ALA-S                                                         000609
+26   Breite:   1.200 mm                                                   000610
+26   Hîhe:   1.830 mm                                                     000611
+26   Einbauart :   saugend                                                000612
+26   Druckdifferenz :   48 Pa                                             000613
+26   Schallleistungspegel    52 dB(A)                                     000614
+26                                                                        000615
+26   einschl. Verbindungs- und                                            000616
+26   Befestigungsmaterial liefern                                         000617
+26   und fachgerecht montieren.                                           000618
+26                                                                        000619
+21 1 2  60 NEN    X    00000001000m2                                      000620
+30          0000005800000000000000000000000000000000                      000621
+25Isolierung fÅr LuftkanÑle mit                                           000622
+26   Isolierung fÅr LuftkanÑle mit                                        000623
+26   Alukaschirten Isoliermatten                                          000624
+26   nach DIN 4140 Teil 2, auf der Au·enseite                             000625
+26    von                                                                 000626
+26   LuftkanÑlen aller Abmessungen aus                                    000627
+26   verzinktem                                                           000628
+26   Stahlblech, Mineralwolleplatten mit                                  000629
+26   aufkaschierter                                                       000630
+26   Alu-Gitterfolie, geklebt mit                                         000631
+26   nichtbrennbarem Kleber und                                           000632
+26   mit SpezialisoliernÑgeln (unterseitig 10                             000633
+26    St/m˝)                                                              000634
+26   befestigt, LÑngs- und RundnÑhte mit Band                             000635
+26    Åberkleben,                                                         000636
+26   nicht brennbar, Baustoffklasse A1, nach                              000637
+26   DIN 4102,                                                            000638
+26   einschl. der Mehrleistungen fÅr                                      000639
+26   FormstÅcke und                                                       000640
+26   Befestigungen, wie:                                                  000641
+26                                                                        000642
+26      Fabrikat Planung                                                  000643
+26   Hersteller:   G + H                                                  000644
+26   Typ:   Lamellenmatte                                                 000645
+26      ML 3                                                              000646
+26   DÑmmschichtdicke:   30 mm                                            000647
+26                                                                        000648
+26   liefern und fachgerecht auf die                                      000649
+26   LuftkanÑle aufbringen.                                               000650
+26                                                                        000651
+31 1 2                                                                    000652
+11 1 3     N                                                              000653
+12LÅftungsturm Fortluft auf TG-Decke                                      000654
+21 1 3  10 NNN    X    00000001000St                                      000655
+30          0000751535000000000000000000000000000000                      000656
+25Fortluftturm 1.100 mm  fÅr 22.000 mÅ/h                                  000657
+26   Fortluftturm 1.100 mm  fÅr 22.000 mÅ/h                               000658
+26   Fortluftturm  1100mm, einwandig                                      000659
+26   freistehend, best. aus:                                              000660
+26                                                                        000661
+26   innenliegendem Fu·flansch, mit div.                                  000662
+26   Schraublîchern zur                                                   000663
+26   Befestigung auf einem Montagekorb, der                               000664
+26   in einer                                                             000665
+26   separaten Position beschrieben ist,                                  000666
+26   Standrohr in                                                         000667
+26   optisch  hochwertiger, absolut sauberer                              000668
+26   und                                                                  000669
+26   gleichmÑ·iger OberflÑche, in                                         000670
+26   Segmentbauweise, ein- oder                                           000671
+26   mehrteilig entsprechen Durchmesser,                                  000672
+26   Lamellenkopf TYP                                                     000673
+26   1230 (Åberkragend, gebîrdelt) umlaufend                              000674
+26   360¯, unter 450                                                      000675
+26   schrÑggestellten Regenabweislamellen,                                000676
+26   die am oberen                                                        000677
+26   Ende mit einem min. 15 mm aufgekanteten                              000678
+26   umlaufenden                                                          000679
+26   Schlagwasserbord versehen sind,                                      000680
+26   hintergebautem                                                       000681
+26   Edelstahl-Vogelschutzgitter mit einer                                000682
+26   Maschenweite von                                                     000683
+26   16/20 mm. Dachaufsatz als Flachdach                                  000684
+26   ausgebildet,                                                         000685
+26                                                                        000686
+26   Mit Ausnahme der Schwei·naht am Flansch                              000687
+26   und an den                                                           000688
+26   Knotenblechen, dÅrfen keine Schwei·nÑhte                             000689
+26    bzw. deren                                                          000690
+26   Nacharbeit am Rohr und am Lamellenkopf                               000691
+26   in Erscheinung                                                       000692
+26   treten.                                                              000693
+26                                                                        000694
+26   Die gesamte Konstruktion ist nach                                    000695
+26   statischen Nachweisen                                                000696
+26   zu fertigen. Bei Angebotsabgabe ist die                              000697
+26   Eignung zum                                                          000698
+26   Schwei·en tragender Bauteile gem. EN                                 000699
+26   1090-2                                                               000700
+26   (AusfÅhrungsklasse EXC 2) vorzulegen,                                000701
+26   wie:                                                                 000702
+26                                                                        000703
+26   Technische Daten:                                                    000704
+26   Luftleistung:   22.000 m3/h                                          000705
+26   Ausblasgeschwindigkeit:   2,7 m/s                                    000706
+26   Schallleistungspegel:   ca. 47 dB (A)                                000707
+26   Schalldruckpegel in 2m:   ca. 33 dB(A)                               000708
+26   Druckverlust:   ca 40 Pa                                             000709
+26   li. Rohrdurchmesser:   1100 mm                                       000710
+26   WandstÑrke am Standrohr:   2,0 mm                                    000711
+26   Anzahl der Lamellen:   9 StÅck                                       000712
+26   Hîhe bis zum Lamellenkopf:      2500 mm                              000713
+26   Lamellenkopfhîhe:   900 mm                                           000714
+26   Aufsatzhîhe:   150 mm                                                000715
+26   Gesamthîhe:   3550 mm                                                000716
+26   Gewicht:   ca. 300 kg                                                000717
+26   Werkstoff:   Edelstahl 1.4301                                        000718
+26   OberflÑche:   gebÅrstet                                              000719
+26   Fabrikat    AMS                                                      000720
+26   Typ:   1230-A-11                                                     000721
+26                                                                        000722
+26   liefern und einschl. Verbindungs- und                                000723
+26   Befestigungsmaterial fachgerecht                                     000724
+26   montieren.                                                           000725
+26                                                                        000726
+26                                                                        000727
+26                                                                        000728
+21 1 3  20 NNN    X    00000001000St                                      000729
+30          0000350175000000000000000000000000000000                      000730
+25Montagesockel Turm 1m hoch                                              000731
+26   Montagesockel Turm 1m hoch                                           000732
+26   Montagesockelrohr,  1.100mm, einwandig                               000733
+26   freistehend,                                                         000734
+26   best. aus:                                                           000735
+26   Rohrstutzen mit innenliegendem Flansch                               000736
+26   oben zur                                                             000737
+26   Aufnahme des Turms, Arbeiten von Innen                               000738
+26   im Turm, sowie                                                       000739
+26   einem Fussflansch, mit diversen                                      000740
+26   Befestigungslîchern zum                                              000741
+26   AndÅbeln der Schwei·konstruktion auf den                             000742
+26    Betondecke der                                                      000743
+26   TG, komplett nach statischem Nachweis                                000744
+26   liefern,                                                             000745
+26   wie:                                                                 000746
+26                                                                        000747
+26   Abmessungen:                                                         000748
+26   Hîhe:      1000 mm                                                   000749
+26   Durchmesser:   1100 mm                                               000750
+26   Gewicht:   ca. 120 kg                                                000751
+26                                                                        000752
+26   inkl. 1 StÅck Holzplatte als                                         000753
+26   Siebdruckplatte Multiplex                                            000754
+26   Birke                                                                000755
+26   Durchmesser :    1200mm rund                                         000756
+26   StÑrke     15mm                                                      000757
+26                                                                        000758
+26   als provisorischer Deckel fÅr die Dauer                              000759
+26   der Bauzeit                                                          000760
+26   vorhalten und zur Montage des Turm                                   000761
+26   demontieren und                                                      000762
+26   entsorgen                                                            000763
+26                                                                        000764
+26   liefern und einschl. Verbindungs- und                                000765
+26   Befestigungsmaterial fachgerecht                                     000766
+26   montieren.                                                           000767
+26                                                                        000768
+26                                                                        000769
+26                                                                        000770
+26                                                                        000771
+21 1 3  30 NNN    X    00000001000St                                      000772
+30          0000000000000000000000000000000000000000                      000773
+25Kran zur LÅftungsturm Montage                                           000774
+26   Kran zur LÅftungsturm Montage                                        000775
+26   zur Montage des Abluftturms ist eine                                 000776
+26   Kraneinsatz zu                                                       000777
+26   kalkulieren mit folgenden Daten:                                     000778
+26                                                                        000779
+26   Gewicht :   max. 500kg                                               000780
+26   Kran :      Teleskopkran 30to                                        000781
+26   Typ :      LTM 1030/2                                                000782
+26   Teleskophîhe :   30m                                                 000783
+26   Ausladung :   max.. 26m                                              000784
+26   Ausladung geplant :   max.  20m                                      000785
+26                                                                        000786
+26   fÅr die Dauer zur fachgerechten Montage                              000787
+26   des                                                                  000788
+26   Abluft-Turms, inkl. An- und Abfahrt und                              000789
+26   aller Spesen,                                                        000790
+26   zu bestellen und termingerecht die                                   000791
+26   Massnahme begleiten.                                                 000792
+26                                                                        000793
+31 1 3                                                                    000794
+11 1 4     N                                                              000795
+12JET-Stream-Ventilatoren inkl.                                           000796
+21 1 4  10 NNN    X    00000005000St                                      000797
+30          0000200100000005400000000000000000000000                      000798
+25Jetfans (Schubventilatoren) mit                                         000799
+26   Jetfans (Schubventilatoren) mit                                      000800
+26   5.500mÅ/h                                                            000801
+26   Garagen-Jet-Ventilator, direktgetrieben                              000802
+26   Zur Be- und EntlÅftung bis max. 40¯C fÅr                             000803
+26   unidirektionalen Betrieb.                                            000804
+26   Montagefreundliche AusfÅhrung                                        000805
+26   durch gewichtsoptimierte Konstruktion                                000806
+26   und Verwendung                                                       000807
+26   von Aluminium.                                                       000808
+26                                                                        000809
+26   Bestehend aus:                                                       000810
+26   GehÑuse mit Strahlumlenkung und                                      000811
+26   AufhÑngung aus                                                       000812
+26   Aluminium.                                                           000813
+26   Aerodynamisch ausgebildete EinstrîmdÅse                              000814
+26   mit                                                                  000815
+26   eingeschwei·tem MotortrÑger mit                                      000816
+26   optimalem                                                            000817
+26   OberflÑchenschutz durch                                              000818
+26   Stahl-Pulverbeschichtung.                                            000819
+26                                                                        000820
+26   Laufrad Aerodynamisch optimiert,                                     000821
+26   einseitig saugend mit                                                000822
+26   verschwei·ten, rÅckwÑrts gekrÅmmten                                  000823
+26   Kreisbogenschaufeln                                                  000824
+26   mit korrosionsfester Nabe und                                        000825
+26   montagefreundlicher                                                  000826
+26   Wellen I Nabenverbindung im bewÑhrten                                000827
+26   Taper-Lock                                                           000828
+26   Spannbuchsen-                                                        000829
+26   System.                                                              000830
+26   Ausgewuchtet nach DIN ISO 1940-1,                                    000831
+26   WuchtgÅte G 6.3.                                                     000832
+26                                                                        000833
+26   Drehstrommotor/ IEC - Normmotor in                                   000834
+26   Bauform B30,                                                         000835
+26   Schutzart IP 55 / lsoklasse F.                                       000836
+26   Motorleistung gewÑhlt fÅr Kaltanlauf bei                             000837
+26    20¯ C                                                               000838
+26   PVC Steuerleitung, radial ausgefÅhrt.                                000839
+26   Elektrische Verdrahtung am                                           000840
+26   au·enliegenden                                                       000841
+26   Klemmenkasten.                                                       000842
+26                                                                        000843
+26   Genauigkeitsklasse 2 nach DIN 24166                                  000844
+26   Bautoleranzen nach DIN 2768.                                         000845
+26   Leistungsmessung nach ISO 5801                                       000846
+26   Technische Daten                                                     000847
+26                                                                        000848
+26   Produktreihe CRJM01-0500                                             000849
+26   Einbausituation gemÑ· ISO 5801 frei                                  000850
+26   ansaugend, frei                                                      000851
+26   ausblasend                                                           000852
+26                                                                        000853
+26   Betriebstemperatur       20 ¯C                                       000854
+26   Betriebsdichte       1,205 kg/m3                                     000855
+26   Normdichte       1,293 Kg/m3                                         000856
+26   Aufstellungshîhe       0 m                                           000857
+26   Totaler Ventilatordruck    280 Pa                                    000858
+26   statischer Ventilatordruck    1 Pa                                   000859
+26   dynamischer Druck       279 Pa                                       000860
+26   Volumenstrom       5868 Bm3/h                                        000861
+26   Normvolumenstrom       5468 Nm3/h                                    000862
+26   Nenndurchmesser       500 mm                                         000863
+26   Polzahl          4 p                                                 000864
+26   Drehzahl(50 Hz)        1400 1/min                                    000865
+26   Max Drehzahl       1800 1/min                                        000866
+26   Wellenleistung       1,2 kW                                          000867
+26   Motorleistung       1,6 kW                                           000868
+26   Nennstrom       3,8 A                                                000869
+26   Hochlaufzeit       5,5 s                                             000870
+26   Frequenz       50 Hz                                                 000871
+26   Spannung / Schaltung    400 V / Y                                    000872
+26   Max. Dauertemperatur    40 ¯C                                        000873
+26   Schaufelwinkel       0 ¯                                             000874
+26   Wellenwirkungsgrad       0 %                                         000875
+26   Theoretischer Schub       42,258 N                                   000876
+26   Gewicht ohne Zubehîr -   94 kg                                       000877
+26   Schallleistungspegel       88 dB(A)                                  000878
+26                                                                        000879
+26   Schallleistungspegel in db(A)                                        000880
+26   63Hz   67                                                            000881
+26   125Hz   76                                                           000882
+26   250Hz   81                                                           000883
+26   500Hz   83                                                           000884
+26   1000Hz   82                                                          000885
+26   2000Hz   78                                                          000886
+26   4000Hz   72                                                          000887
+26   8000Hz   63                                                          000888
+26                                                                        000889
+26   Schallleistungspegel in dB(A), berechnet                             000890
+26    nach VDI 3731,                                                      000891
+26   in der Einbausituation frei ansaugend /                              000892
+26   frei ausblasend                                                      000893
+26   wie                                                                  000894
+26   Hersteller:      Pollrich DLK                                        000895
+26   Baugrî·e:      0630                                                  000896
+26   Produktreihe       CRJM01-0500                                       000897
+26   Max. Einsatz-Temp.      55¯C                                         000898
+26   Anzahl Motoren :      2                                              000899
+26      Drehzahl :      1440 / 3600                                       000900
+26      Zubehîr:                                                          000901
+26   1 St   Z10 Kompensator bis 70¯C, und                                 000902
+26   2000Pa                                                               000903
+26   Differenzdruck mit Art.-Nr. B141035,                                 000904
+26   2 St   Z55 Klemmenkasten aus Kunststoff                              000905
+26   fÅr                                                                  000906
+26   Innenaufstellung mit Art.-Nr. B1214019                               000907
+26   2 St   Z58 Reparaturschalter, lose                                   000908
+26   geliefert, n                                                         000909
+26   Kompensator bis 70¯C, und 2000Pa                                     000910
+26   Differenzdruck    mit                                                000911
+26   Art.-Nr. B141035,                                                    000912
+26                                                                        000913
+26   GerÑteabmessungen:                                                   000914
+26   LÑnge:   1480 mm                                                     000915
+26   Breite:   810 mm                                                     000916
+26   Hîhe:   950 mm                                                       000917
+26                                                                        000918
+26   liefern frei Bordstein und zur                                       000919
+26   Montagestelle im UG TG                                               000920
+26   schaffen (75m Åber TG Rampe !) und unter                             000921
+26    Decke                                                               000922
+26   gemÑ·Planung und Herstellerangaben                                   000923
+26   montieren                                                            000924
+26                                                                        000925
+26   Hinweis:                                                             000926
+26   Vor Bestellung sind die Konstruktions-                               000927
+26   und DetailplÑne,                                                     000928
+26   einschl. der akustischen Daten fÅr die                               000929
+26   GerÑte, der                                                          000930
+26   Bauleitung zur Freigabe vorzulegen, erst                             000931
+26    nach erfolgter                                                      000932
+26   Freigabe durch den Akustiker und der                                 000933
+26   Bauleitung darf                                                      000934
+26   mit der Fertigung begonnen werden.                                   000935
+26                                                                        000936
+21 1 4  20 NNN    X    00000001000St                                      000937
+30          0000406000000021600000000000000000000000                      000938
+25Pauschalpreis fÅr Inbetriebnahme und                                    000939
+26   Pauschalpreis fÅr Inbetriebnahme und                                 000940
+26   Einregulierung                                                       000941
+26   Erstellung eines Mess- und                                           000942
+26   öbergabeprotokolls mit                                               000943
+26   Angabe der bei Abschluss der                                         000944
+26   Inbetriebnahme gemessenen                                            000945
+26   Luftmengen (Soll- und Istwerte) sowie                                000946
+26   Schallmessungen                                                      000947
+26   in und au·erhalb des GebÑudes,                                       000948
+26   Protokollierung der                                                  000949
+26   tatsÑchlichen Druckverluste und der                                  000950
+26   heizungsseitigen                                                     000951
+26   Daten, gemÑ· VDI 2079, Einweisung des                                000952
+26   Bedienungspersonals im Anschluss an die                              000953
+26   Inbetriebnahme,                                                      000954
+26   durch den Werkskundendienst des                                      000955
+26   Herstellers, einschl.                                                000956
+26   Fahrtkosten, Auslîsung und Anfertigung                               000957
+26   eines                                                                000958
+26   Inbetriebnahme- und eines                                            000959
+26   Einweisungsprotokolls.                                               000960
+26                                                                        000961
+26   Hinweis:                                                             000962
+26   Die Protokolle sind den                                              000963
+26   Revisionsunterlagen des AN                                           000964
+26   beizufÅgen.                                                          000965
+26                                                                        000966
+31 1 4                                                                    000967
+11 1 5     N                                                              000968
+12Schaltschrank und Verkabelung RLT + GLT                                 000969
+21 1 5  10 NNN    X    00000001000St                                      000970
+30          0001943000000043200000000000000000000000                      000971
+25Schaltschrank fÅr GaragenabluftgerÑt,                                   000972
+26   Schaltschrank fÅr GaragenabluftgerÑt,                                000973
+26   Jetfans und CO-Warnanlage                                            000974
+26   als Steuerschrank zur TiefgaragenlÅftung                             000975
+26    zum Schalten                                                        000976
+26   der Ventilatoren Åber externe Signale                                000977
+26   (z. B. CO-Anlage,                                                    000978
+26   Feuerwehrtableau, Brandmelde-Anlage).                                000979
+26   Alternierende LÅfterumschaltung zur                                  000980
+26   Erreichung gleicher                                                  000981
+26   Betriebszeiten fÅr jeden Ventilator.                                 000982
+26                                                                        000983
+26   bestehend aus folgenden Bauteilen :                                  000984
+26                                                                        000985
+26   StandgehÑuse anreihbar fÅr Sockelmontage                             000986
+26   Stabile StahlblechausfÅhrung,                                        000987
+26   MindestblechstÑrken;                                                 000988
+26   GehÑuse 2,0 mm, TÅren 2,0 mm, grundiert,                             000989
+26    Lackierung                                                          000990
+26   au·en Strukturlack RAL 7035.                                         000991
+26                                                                        000992
+26   Aufliegende gummiabgedichtete TÅren mit                              000993
+26   Scharnieren und                                                      000994
+26   Stangenverschlu· mit Doppelbarteinsatz,                              000995
+26   Transportîsen.                                                       000996
+26   Schutzart - ohne TÅreinbauten, IP 55 DIN                             000997
+26    40050.                                                              000998
+26   Montageplatte 3,0 mm verzinkt                                        000999
+26                                                                        001000
+26   Gravierte Bezeichnungsschilder fÅr die                               001001
+26   TÅreinbaugerÑte,                                                     001002
+26   unverwechselbare Bezeichnung aller                                   001003
+26   Betriebsmittel gemÑ·                                                 001004
+26   Schaltunterlagen, Schaltplantasche,                                  001005
+26   KabelkanÑle,                                                         001006
+26   bezeichnete Reihenklemmen fÅr alle nach                              001007
+26   au·en fÅhrenden                                                      001008
+26                                                                        001009
+26   Leitungen, Nullleiter-Trennklemmen fÅr                               001010
+26   AbgÑnge bis 16                                                       001011
+26   mm˝,                                                                 001012
+26   Schutzleiterklemmen fÅr AbgÑnge bis 35                               001013
+26   mm˝.                                                                 001014
+26   Kabelverschraubungen gemÑ· Schaltplan                                001015
+26   mit ca.                                                              001016
+26   10 % Reserve bei EinfÅhrung von oben.                                001017
+26                                                                        001018
+26   Kabelabfangschiene, Rangierkanal.                                    001019
+26   AusfÅhrung gemÑ· VDE 0660-5/11.67                                    001020
+26   Abmessungen mit min. 20 % Platzreserve                               001021
+26   und nach                                                             001022
+26   Klimatafel VDE 0660-5/11.67                                          001023
+26                                                                        001024
+26   inkl. passend zum beschriebenen                                      001025
+26   Schaltschrank :                                                      001026
+26                                                                        001027
+26   1 StÅck Standsockel                                                  001028
+26   StahlblechausfÅhrung mit allseitig                                   001029
+26   abnehmbaren                                                          001030
+26   Blenden zur KabeleinfÅhrung, Lackierung                              001031
+26    RAL ..                                                              001032
+26   fÅr vorstehend beschriebenen                                         001033
+26   Schaltschrank.                                                       001034
+26   Hîhe:  200 mm                                                        001035
+26   inkl. passend zum beschriebenen                                      001036
+26   Schaltschrank :                                                      001037
+26                                                                        001038
+26   2 StÅck SeitenwÑnde ( 1Satz )                                        001039
+26   StahlblechausfÅhrung abnehmbar,                                      001040
+26   Lackierung  RAL 7035                                                 001041
+26   fÅr vorstehend beschriebenes GehÑuse                                 001042
+26   inkl. passend zum beschriebenen                                      001043
+26   Schaltschrank :                                                      001044
+26                                                                        001045
+26   1 StÅck Grundkosten Standschrank                                     001046
+26   (Trafo,  Steuersicherungen m.HK, SSM..)                              001047
+26                                                                        001048
+26   Steuerspannungsversorgung 230V                                       001049
+26   bestehend aus je:                                                    001050
+26   1 StÅck  Leistungsschalter  3pol.                                    001051
+26   1 StÅck Transformator 400/230V/0,016 KVA                             001052
+26    fÅr Schutzkleinspannung                                             001053
+26   1 StÅck Steuerspannungsabsicherung 230 /                             001054
+26    24V                                                                 001055
+26   bestehend aus je:                                                    001056
+26   10 StÅck Sicherungsautomat ..A, 1-pol.                               001057
+26   10 StÅck Hilfskontaktaufsatz                                         001058
+26   Sammelstîrmeldung                                                    001059
+26   bestehend aus:                                                       001060
+26   13 StÅck HilfsschÅtz / Relais                                        001061
+26   13 LED-Meldeleuchte                                                  001062
+26   22 StÅck Reihenklemmen + PE mit allem                                001063
+26   Zubehîr                                                              001064
+26   inkl. passend zum beschriebenen                                      001065
+26   Schaltschrank :                                                      001066
+26   Schienensystem bis 250A je Schaltschrank                             001067
+26   bestehend aus:                                                       001068
+26   20 StÅck SchienentrÑger 4-pol.                                       001069
+26   20 StÅck E-CU Flachschienen                                          001070
+26   20 StÅck Schienenabdeckungen                                         001071
+26   36 StÅck Endabdeckungen                                              001072
+26   inkl. passend zum beschriebenen                                      001073
+26   Schaltschrank :                                                      001074
+26   Lastsicherung fÅr 6 StÅck Jetfan                                     001075
+26   bestehend aus :                                                      001076
+26   1  Sicherung / Automat 3pol. 10A                                     001077
+26   inkl. passend zum beschriebenen                                      001078
+26   Schaltschrank :                                                      001079
+26                                                                        001080
+26   Netzanschluss 400 V, 60A                                             001081
+26   mit Hauptschalter und Sicherung                                      001082
+26   bestehend aus :                                                      001083
+26   1  Lasttrennschalter, 3-polig,  60 A                                 001084
+26   3  Steuersicherungen 1pol. 6A                                        001085
+26   6  Meldeleuchten                                                     001086
+26   inkl. passend zum beschriebenen                                      001087
+26   Schaltschrank :                                                      001088
+26                                                                        001089
+26   HauptlÅfter - Motorleistungsgruppe 400                               001090
+26   V, max. 12KW                                                         001091
+26   2-stufig Dahlander                                                   001092
+26                                                                        001093
+26   Ansteuerung Åber CO-Controller oder SPS                              001094
+26   inkl. Handebene                                                      001095
+26   bestehend aus je:                                                    001096
+26   2  Sicherung / Automat 3pol.                                         001097
+26   2  MotorschÅtze mit therm.                                           001098
+26   öberstromrelais                                                      001099
+26   1  MotorschÅtz                                                       001100
+26   1  Zeitrelais anzugverzîgert                                         001101
+26   1  HilfsschÅtz / Relais                                              001102
+26   2  Relais mit Handebene                                              001103
+26   inkl. passend zum beschriebenen                                      001104
+26   Schaltschrank :                                                      001105
+26   SchublÅfter - Motorleistungsgruppe 400                               001106
+26   V, max. 4 KW                                                         001107
+26   2-stufig Dahlander                                                   001108
+26                                                                        001109
+26   Ansteuerung Åber CO-Controller oder SPS                              001110
+26   inkl. Handebene                                                      001111
+26   bestehend aus je:                                                    001112
+26   2  Sicherung / Automat 3pol.                                         001113
+26   2  MotorschÅtze mit therm.                                           001114
+26   öberstromrelais                                                      001115
+26   1  MotorschÅtz                                                       001116
+26   1  HilfsschÅtz / Relais                                              001117
+26   2  Relais mit Handebene                                              001118
+26   inkl. passend zum beschriebenen                                      001119
+26   Schaltschrank :                                                      001120
+26                                                                        001121
+26   Entqualmungssschaltung je Brandabschnitt                             001122
+26   Baugruppe  zur Tunnel- und                                           001123
+26   GaragenentlÅftung                                                    001124
+26   bestehend aus je:                                                    001125
+26   1  Steuerschalter 3-Stellungen                                       001126
+26   6 StÅck HilfsschÅtz / Relais                                         001127
+26   6 StÅck LED-Meldeleuchte                                             001128
+26   12 StÅck  Reihenklemmen + PE mit allem                               001129
+26   Zubehîr                                                              001130
+26   inkl. passend zum beschriebenen                                      001131
+26   Schaltschrank :                                                      001132
+26                                                                        001133
+26   Zeitschaltung fÅr zusÑtzlichen Einbau in                             001134
+26   LÅftersteuerung,                                                     001135
+26   bestehend aus:  1 StÅck   Digitaluhr                                 001136
+26   2-Kanal                                                              001137
+26                                                                        001138
+26   inkl. passend zum beschriebenen                                      001139
+26   Schaltschrank :                                                      001140
+26   Aufschaltung - 2 stufig der bauseitigen                              001141
+26   Gaswarnanlage                                                        001142
+26   bestehend aus:   2  HilfsschÅtz / Relais                             001143
+26                                                                        001144
+26   Die Ventilatorsteuerung dient zur                                    001145
+26   mechanischen                                                         001146
+26   EntlÅftung von Tiefgaragen.Sie enthÑlt                               001147
+26   alle Steuer- und                                                     001148
+26   Funktionsmerkmale nach neuesten                                      001149
+26   Landesverordnungen fÅr                                               001150
+26   Garagen.                                                             001151
+26   Einschaltmîglichkeit der Ventilatoren                                001152
+26   Åber externe                                                         001153
+26   Signale (z. B. CO-Anlage,                                            001154
+26   Feuerwehrtableau,                                                    001155
+26   Brandmelde-Anlage).                                                  001156
+26   Alternierende LÅfterumschaltung zur                                  001157
+26   Erreichung gleicher                                                  001158
+26   Betriebszeiten fÅr jeden Ventilator.                                 001159
+26   öberwachung von vier Feuerschutzklappen                              001160
+26   mit                                                                  001161
+26   Sammelstîrmeldung und wahlweiser                                     001162
+26   Ventilatorabschaltung.                                               001163
+26   Sammelstîrausgang fÅr alle                                           001164
+26   Stîrmeldungen,                                                       001165
+26   potentialbehaftet und potentialfrei.                                 001166
+26   Kombi-Anlagen mit                                                    001167
+26   CO-Warnanlage mîglich, wie:                                          001168
+26   Breite:               1200   mm                                      001169
+26   Hîhe:                1800   mm                                       001170
+26   Tiefe:                 400     mm                                    001171
+26   Anzahl d. TÅren:      2 StÅck                                        001172
+26                                                                        001173
+26   zu liefern auf der Palette Åber Hubwagen                             001174
+26    Åber die                                                            001175
+26   TG-Rampe bis zum Technikraum in 50m                                  001176
+26   Entfernung im UG,                                                    001177
+26   liefern und fachgerecht aufstellen und                               001178
+26   montieren                                                            001179
+26                                                                        001180
+21 1 5  20 NNN    X    00000001000St                                      001181
+30          0000290000000004320000000000000000000000                      001182
+25Fernbedienung-Schaltschrank fÅr                                         001183
+26   Fernbedienung-Schaltschrank fÅr                                      001184
+26   Feuerwehr                                                            001185
+26   Schaltschrank als WandgehÑuse zur                                    001186
+26   ErgÑntzung der                                                       001187
+26   Feuerwehr-Informationsstelle zur                                     001188
+26   Bedienung der LÅftung                                                001189
+26   Tiefgarage SÅd  zur Entqualmung nach                                 001190
+26   Brandlîschung,                                                       001191
+26                                                                        001192
+26   Stabile StahlblechausfÅhrung,                                        001193
+26   MindestblechstÑrken;                                                 001194
+26   GehÑuse 2,0 mm, TÅren 2,0 mm, grundiert,                             001195
+26    Lackierung                                                          001196
+26   au·en Strukturlack RAL 7035. Aufliegende                             001197
+26   gummiabgedichtete TÅren mit Scharnieren                              001198
+26   und                                                                  001199
+26   Stangenverschlu· mit Doppelbarteinsatz,                              001200
+26   Transportîsen.                                                       001201
+26   Schutzart - ohne TÅreinbauten, IP 55 DIN                             001202
+26    40050.                                                              001203
+26   Montageplatte 3,0 mm verzinkt                                        001204
+26   Gravierte Bezeichnungsschilder fÅr die                               001205
+26   TÅreinbaugerÑte,                                                     001206
+26   unverwechselbare Bezeichnung aller                                   001207
+26   Betriebsmittel gemÑ·                                                 001208
+26   Schaltunterlagen, Schaltplantasche,                                  001209
+26   KabelkanÑle,                                                         001210
+26   bezeichnete Reihenklemmen fÅr alle nach                              001211
+26   au·en fÅhrenden                                                      001212
+26                                                                        001213
+26   Leitungen, Nullleiter-Trennklemmen fÅr                               001214
+26   AbgÑnge bis                                                          001215
+26   2,5mm˝,                                                              001216
+26   Schutzleiterklemmen fÅr AbgÑnge bis                                  001217
+26   10mm˝.                                                               001218
+26   Kabelverschraubungen gemÑ· Schaltplan                                001219
+26   mit ca.                                                              001220
+26   10 % Reserve bei EinfÅhrung von oben.                                001221
+26   AusfÅhrung gemÑ· VDE 0660-5/11.67                                    001222
+26   Abmessungen mit min. 20 % Platzreserve                               001223
+26   und nach                                                             001224
+26   Klimatafel VDE 0660-5/11.67                                          001225
+26                                                                        001226
+26   Fernbedienbarkeit der Ventilatoren und                               001227
+26   der Steuerung                                                        001228
+26   zur mechanischen EntlÅftung von                                      001229
+26   Tiefgaragen. Sie                                                     001230
+26   enthÑlt alle Steuer- und                                             001231
+26   Funktionsmerkmale nach                                               001232
+26   neuesten Landesverordnungen fÅr Garagen.                             001233
+26                                                                        001234
+26   öberwachung von Sammelstîrausgang fÅr                                001235
+26   alle                                                                 001236
+26   Stîrmeldungen, potentialbehaftet und                                 001237
+26   potentialfrei.                                                       001238
+26   wie:                                                                 001239
+26                                                                        001240
+26   Schaltschrankabmessungen:                                            001241
+26   Hîhe:   465 mm                                                       001242
+26   Breite:   296 mm                                                     001243
+26   Tiefe:   118 mm                                                      001244
+26                                                                        001245
+26   zu liefern und fachgerecht montieren und                             001246
+26    mit allen                                                           001247
+26   Kabeln gemÑ· Schaltplan aufschalten.                                 001248
+26                                                                        001249
+21 1 5  30 NNN    X    00000065000lfdm                                    001250
+30          0000000297000000000000000000000000000000                      001251
+25Kabel NYM-J 3 x 1,5 mm˝ in                                              001252
+26   Kabel NYM-J 3 x 1,5 mm˝ in                                           001253
+26   Einzel-/Sammelbefestigung                                            001254
+26   Isolierte Starkstromleitung als                                      001255
+26   Kunststoff-Mantelleitung gemÑ· DIN 57                                001256
+26   250/VDE 0250,                                                        001257
+26   halogenfrei, in TeillÑngen liefrn und                                001258
+26   verlegen, mit                                                        001259
+26   serienmÑ·iger Einzel- oder                                           001260
+26   Sammelbefestigung auf                                                001261
+26   Kabelpritsche, in Kabelrinne, in Rohr                                001262
+26   oder an WÑnden                                                       001263
+26   bzw. Decken, zur Verwendung in trockenen                             001264
+26    und feuchten                                                        001265
+26   RÑumen, fÅr auf Putz- und unter bzw. in                              001266
+26   Putzverlegung,                                                       001267
+26   VerÑnderungen in den Kupfernotierungen                               001268
+26   finden bei der                                                       001269
+26   Abrechnung keine BerÅcksichtigung,                                   001270
+26                                                                        001271
+26   liefern und fachgerecht verlegen.                                    001272
+26                                                                        001273
+21 1 5  40 NEN    X    00000001000lfdm                                    001274
+30          0000000341000000000000000000000000000000                      001275
+25Kabel NYM-J 4 x 1,5 mm˝ in                                              001276
+26   Kabel NYM-J 4 x 1,5 mm˝ in                                           001277
+26   Einzel-/Sammelbefestigung                                            001278
+26   desgl., jedoch 4 x 1,5 mm˝.                                          001279
+26                                                                        001280
+21 1 5  50 NNN    X    00000036000lfdm                                    001281
+30          0000000399000000000000000000000000000000                      001282
+25Kabel NYM-J 5 x 1,5 mm˝ in                                              001283
+26   Kabel NYM-J 5 x 1,5 mm˝ in                                           001284
+26   Einzel-/Sammelbefestigung                                            001285
+26   desgl., jedoch 5 x 1,5 mm˝.                                          001286
+26                                                                        001287
+21 1 5  60 NNN    X    00000028000lfdm                                    001288
+30          0000000558000000000000000000000000000000                      001289
+25Kabel NYM-J 5 x 2,5 mm˝ in                                              001290
+26   Kabel NYM-J 5 x 2,5 mm˝ in                                           001291
+26   Einzel-/Sammelbefestigung                                            001292
+26   desgl., jedoch 5 x 1,5 mm˝.                                          001293
+26                                                                        001294
+21 1 5  70 NNN    X    00000042000lfdm                                    001295
+30          0000001192000000000000000000000000000000                      001296
+25Kabel NYM-J 5 x 4mm˝ in                                                 001297
+26   Kabel NYM-J 5 x 4mm˝ in                                              001298
+26   Einzel-/Sammelbefestigung                                            001299
+26   desgl., jedoch 5 x 1,5 mm˝.                                          001300
+26                                                                        001301
+21 1 5  80 NEN    X    00000001000lfdm                                    001302
+30          0000000271000000000000000000000000000000                      001303
+25JY(St)Y 2 x 2 x 0,8 mm˝ in                                              001304
+26   JY(St)Y 2 x 2 x 0,8 mm˝ in                                           001305
+26   Einzel-/Sammelbefestigung                                            001306
+26   Fernmelde-Innenkabel, halogenfrei, in                                001307
+26   TeillÑngen                                                           001308
+26   liefern und verlegen, mit serienmÑ·iger                              001309
+26   Einzel- oder                                                         001310
+26   Sammelbefestigung auf Kabelpritsche, in                              001311
+26   Kabelrinne, in                                                       001312
+26   Rohr oder an WÑnden oder Decken bzw.                                 001313
+26   Decken, zur                                                          001314
+26   Verwendung in trockenen und feuchten                                 001315
+26   RÑumen, fÅr auf                                                      001316
+26   Putz- und unter bzw. in Putzverlegung,                               001317
+26   geeignet fÅr                                                         001318
+26   Brandmeldeanlagen, mit Aufdruck "                                    001319
+26   Brandmeldekabel Fire                                                 001320
+26   Alarm Cable", Farbe rot.                                             001321
+26                                                                        001322
+26                                                                        001323
+26   liefern und fachgerecht verlegen.                                    001324
+26                                                                        001325
+21 1 5  90 NNN    X    00000445000lfdm                                    001326
+30          0000000300000000000000000000000000000000                      001327
+25JY(St)Y 4 x 2 x 0,8 mm˝ in                                              001328
+26   JY(St)Y 4 x 2 x 0,8 mm˝ in                                           001329
+26   Einzel-/Sammelbefestigung                                            001330
+26   desgl., jedoch JY(St)Y 4 x 2 x 0,8 mm˝ .                             001331
+26                                                                        001332
+21 1 5 100 NNN    X    00000475000lfdm                                    001333
+30          0000000338000000000000000000000000000000                      001334
+25Kabel LI-YCY 3x1,5mm˝                                                   001335
+26   Kabel LI-YCY 3x1,5mm˝                                                001336
+26   Messleitungen LI-YCY 3 x 1,5 mm˝, aus                                001337
+26   Kupfer,                                                              001338
+26   abgeschirmt, Farbe grau, im Schutzrohr                               001339
+26   EN 20 verlegt,                                                       001340
+26   zur Verbindung der Transmitter/                                      001341
+26   Messkîpfe mit der                                                    001342
+26   Auswerteeinheit, einschl. Schutzrohr,                                001343
+26   Verteilerdosen,                                                      001344
+26   Befestigungsmaterial und Auflegen der                                001345
+26   Messleitungen an                                                     001346
+26   den Klemmen.                                                         001347
+26                                                                        001348
+26   liefern und einschl. Verbindungs- und                                001349
+26   Befestigungsmaterial fachgerecht                                     001350
+26   montieren.                                                           001351
+26                                                                        001352
+21 1 5 110 NNN    X    00000352000lfdm                                    001353
+30          0000000851000000000000000000000000000000                      001354
+25Kabel (N)HXH-J E90 3x1,5mm˝                                             001355
+26   Kabel (N)HXH-J E90 3x1,5mm˝                                          001356
+26   (N)HXH-J E90 3X1,5 RE var. Halogenfreies                             001357
+26   Niederspannungs-Kabel als Messleitungen,                             001358
+26    aus Kupfer,                                                         001359
+26   abgeschirmt, Farbe Orange,                                           001360
+26   Funktionserhalt E 90: nach DIN 4102-12                               001361
+26   Eigenschaften:                                                       001362
+26   halogenfrei brandhemmend minimale                                    001363
+26   Rauchentwicklung                                                     001364
+26   keine korrosiven Gase. Im Schutzrohr EN                              001365
+26   20 verlegt, zur                                                      001366
+26   Verbindung der Anzeigen und Warnsysteme                              001367
+26   mit der                                                              001368
+26   Regelung, einschl. Schutzrohr,                                       001369
+26   Verteilerdosen,                                                      001370
+26   Befestigungsmaterial und Auflegen der                                001371
+26   Messleitungen an                                                     001372
+26   den Klemmen.                                                         001373
+26                                                                        001374
+26                                                                        001375
+26   liefern und einschl. Verbindungs- und                                001376
+26   Befestigungsmaterial fachgerecht                                     001377
+26   montieren.                                                           001378
+26                                                                        001379
+26                                                                        001380
+21 1 5 120 NNN    X    00000366000lfdm                                    001381
+30          0000000919000000000000000000000000000000                      001382
+25Kabel (N)HXH-J E90 3x2,5mm˝                                             001383
+26   Kabel (N)HXH-J E90 3x2,5mm˝                                          001384
+26   (N)HXH-J E90 3X1,5 RE var. Halogenfreies                             001385
+26   Niederspannungs-Kabel als Messleitungen,                             001386
+26    aus Kupfer,                                                         001387
+26   abgeschirmt, Farbe Orange,                                           001388
+26   Funktionserhalt E 90: nach DIN 4102-12                               001389
+26   Eigenschaften:                                                       001390
+26   halogenfrei brandhemmend minimale                                    001391
+26   Rauchentwicklung                                                     001392
+26   keine korrosiven Gase. Im Schutzrohr EN                              001393
+26   20 verlegt, zur                                                      001394
+26   Verbindung der Anzeigen und Warnsysteme                              001395
+26   mit der                                                              001396
+26   Regelung, einschl. Schutzrohr,                                       001397
+26   Verteilerdosen,                                                      001398
+26   Befestigungsmaterial und Auflegen der                                001399
+26   Messleitungen an                                                     001400
+26   den Klemmen.                                                         001401
+26                                                                        001402
+26   liefern und einschl. Verbindungs- und                                001403
+26   Befestigungsmaterial fachgerecht                                     001404
+26   montieren.                                                           001405
+26                                                                        001406
+26                                                                        001407
+21 1 5 130 NNN    X    00000072000lfdm                                    001408
+30          0000001247000000000000000000000000000000                      001409
+25Stahlpanzerrohr PG 16                                                   001410
+26   Stahlpanzerrohr PG 16                                                001411
+26   gem. DIN 49 020 und VDE 0605, einschl.                               001412
+26   aller                                                                001413
+26   erforderlichen Bogen, Schraubmuffen,                                 001414
+26   EndtÅllen, fÅr                                                       001415
+26   mittlere mechanische Beanspruchung und                               001416
+26   fÅr offene                                                           001417
+26   Verlegung als Schutzrohr fÅr Leitungen,                              001418
+26   mit nicht                                                            001419
+26   rostendem Befestigungsmaterial und                                   001420
+26   Schellen, einschl.                                                   001421
+26   Bohren der Lîcher,                                                   001422
+26                                                                        001423
+26   liefern und fachgerecht auf Putz                                     001424
+26   verlegen.                                                            001425
+26                                                                        001426
+21 1 5 140 NNN    X    00000186000lfdm                                    001427
+30          0000001421000000000000000000000000000000                      001428
+25Stahlpanzerrohr PG 21                                                   001429
+26   Stahlpanzerrohr PG 21                                                001430
+26   desgl., jedoch PG 21.                                                001431
+26                                                                        001432
+21 1 5 150 NEN    X    00000001000lfdm                                    001433
+30          0000000653000000000000000000000000000000                      001434
+25Kunststoff-Panzerrohr 16,0                                              001435
+26   Kunststoff-Panzerrohr 16,0                                           001436
+26   Kunststoff-Panzerrohr mit Muffe, starr,                              001437
+26   glatt, Farbe                                                         001438
+26   RAL 7035, DIN 4 9016/VDE 0605,                                       001439
+26   AusfÅhrung "A + C + F",                                              001440
+26   fÅr mittlere mechanische Beanspruchung                               001441
+26   und fÅr offene                                                       001442
+26   Verlegung als Schutzrohr fÅr Leitungen,                              001443
+26   mit nicht                                                            001444
+26   rostendem Befestigungsmaterial und                                   001445
+26   Kunststoffschellen,                                                  001446
+26   einschl. Bohren der Lîcher,                                          001447
+26                                                                        001448
+26   liefern und auf Putz verlegen.                                       001449
+26                                                                        001450
+21 1 5 160 NEN    X    00000001000lfdm                                    001451
+30          0000000769000000000000000000000000000000                      001452
+25Kunststoff-Panzerrohr 25,0                                              001453
+26   Kunststoff-Panzerrohr 25,0                                           001454
+26   desgl., jedoch 25,0.                                                 001455
+26                                                                        001456
+21 1 5 170 NNN    X    00000230000lfdm                                    001457
+30          0000005728000000000000000000000000000000                      001458
+25Kabelrinne 100 mm mit Abdeckung                                         001459
+26   Kabelrinne 100 mm mit Abdeckung                                      001460
+26   aus Stahlblech feuerverzinkt, 100 mm                                 001461
+26   breit, 60 mm hoch,                                                   001462
+26   mit Abdeckung, einschl. der                                          001463
+26   erforderlichen flexiblen                                             001464
+26   BogenstÅcke, T-StÅcke, KreuzstÅcke,                                  001465
+26   Verbinder sowie                                                      001466
+26   nicht rostendem Befestigungsmaterial wie                             001467
+26    verzinkte                                                           001468
+26   TragbÅgel, DÅbel, Fixanker, fÅr Montage                              001469
+26   an WÑnden oder                                                       001470
+26   Decken, einschl. Bohren der Lîcher,                                  001471
+26   Bohren nur mit                                                       001472
+26   metallischen SpreizdÅbeln                                            001473
+26                                                                        001474
+26   liefern und fachgerecht auf Beton                                    001475
+26   verlegen.                                                            001476
+26                                                                        001477
+21 1 5 180 NNN    X    00000019000St                                      001478
+30          0000003335000000000000000000000000000000                      001479
+25Anschluss herstellen bis 5 x 1,5 mm˝                                    001480
+26   Anschluss herstellen bis 5 x 1,5 mm˝                                 001481
+26   an bauseits gelieferten FeldgerÑten und                              001482
+26   Verbrauchern                                                         001483
+26   mit Leitungen aller Art bis zu einem                                 001484
+26   Querschnitt von 5                                                    001485
+26   x 1,5 mm˝, einschl. Absetzen, EinfÅhren                              001486
+26   in die                                                               001487
+26   KlemmrÑume, DurchprÅfen der Leitungen,                               001488
+26   Anklemmen,                                                           001489
+26   FunktionsprÅfung, etc., unter                                        001490
+26   Zulieferung aller  nach                                              001491
+26   Herstellerangaben erforderlichem                                     001492
+26   Kleinmaterialien.                                                    001493
+26                                                                        001494
+21 1 5 190 NNN    X    00000004000St                                      001495
+30          0000003625000000000000000000000000000000                      001496
+25Anschluss herstellen bis 5 x 2,5 mm˝                                    001497
+26   Anschluss herstellen bis 5 x 2,5 mm˝                                 001498
+26   an bauseits gelieferten FeldgerÑten und                              001499
+26   Verbrauchern                                                         001500
+26   mit Leitungen aller Art bis zu einem                                 001501
+26   Querschnitt von 5                                                    001502
+26   x 1,5 mm˝, einschl. Absetzen, EinfÅhren                              001503
+26   in die                                                               001504
+26   KlemmrÑume, DurchprÅfen der Leitungen,                               001505
+26   Anklemmen,                                                           001506
+26   FunktionsprÅfung, etc., unter                                        001507
+26   Zulieferung aller  nach                                              001508
+26   Herstellerangaben erforderlichem                                     001509
+26   Kleinmaterialien.                                                    001510
+26                                                                        001511
+21 1 5 200 NNN    X    00000012000St                                      001512
+30          0000003770000000000000000000000000000000                      001513
+25Anschluss herstellen bis 5 x 4 mm˝                                      001514
+26   Anschluss herstellen bis 5 x 4 mm˝                                   001515
+26   an bauseits gelieferten FeldgerÑten und                              001516
+26   Verbrauchern                                                         001517
+26   mit Leitungen aller Art bis zu einem                                 001518
+26   Querschnitt von 5                                                    001519
+26   x 1,5 mm˝, einschl. Absetzen, EinfÅhren                              001520
+26   in die                                                               001521
+26   KlemmrÑume, DurchprÅfen der Leitungen,                               001522
+26   Anklemmen,                                                           001523
+26   FunktionsprÅfung, etc., unter                                        001524
+26   Zulieferung aller  nach                                              001525
+26   Herstellerangaben erforderlichem                                     001526
+26   Kleinmaterialien.                                                    001527
+26                                                                        001528
+21 1 5 210 NNN    X    00000028000St                                      001529
+30          0000003335000000000000000000000000000000                      001530
+25Anschluss herstellen bis 4 x 2 x 0,8 mm˝                                001531
+26   Anschluss herstellen bis 4 x 2 x 0,8 mm˝                             001532
+26   an Au·en- und InnengerÑten mit Leitungen                             001533
+26    aller Art bis                                                       001534
+26   zu einem Querschnitt von 2 x 2 x 0,8                                 001535
+26   mm˝, einschl.                                                        001536
+26   Absetzen, EinfÅhren in die KlemmrÑume,                               001537
+26   DurchprÅfen der                                                      001538
+26   Leitungen, Anklemmen, FunktionsprÅfung,                              001539
+26   etc., unter                                                          001540
+26   Zulieferung aller  nach                                              001541
+26   Herstellerangaben                                                    001542
+26   erforderlichem Kleinmaterialien.                                     001543
+26                                                                        001544
+21 1 5 220 NNN    X    00000015000St                                      001545
+30          0000003335000000000000000000000000000000                      001546
+25Anschluss herstellen bis 4 x 2 x 0,8 mm˝                                001547
+26   Anschluss herstellen bis 4 x 2 x 0,8 mm˝                             001548
+26   auf Fremd-GLT                                                        001549
+26   Auflegen auf steuereinheit der                                       001550
+26   Feuerwehr-GebÑudeleittechnik  zur                                    001551
+26   Handschlatung der                                                    001552
+26   Abluftanlage mit Leitungen aller Art bis                             001553
+26    zu einem                                                            001554
+26   Querschnitt von 2 x 2 x 0,8 mm˝,                                     001555
+26   einschl. Absetzen,                                                   001556
+26   EinfÅhren in die KlemmrÑume, DurchprÅfen                             001557
+26    der Leitungen,                                                      001558
+26   Anklemmen, FunktionsprÅfung, etc., unter                             001559
+26    Zulieferung                                                         001560
+26   aller  nach Herstellerangaben                                        001561
+26   erforderlichem                                                       001562
+26   Kleinmaterialien.                                                    001563
+26                                                                        001564
+21 1 5 230 NNN    X    00000028000St                                      001565
+30          0000003263000000000000000000000000000000                      001566
+25Anschluss herstellen bis Kabel LI-YCY                                   001567
+26   Anschluss herstellen bis Kabel LI-YCY                                001568
+26   3x1,5mm˝                                                             001569
+26   an Au·en- und InnengerÑten mit Leitungen                             001570
+26    aller Art bis                                                       001571
+26   zu einem Querschnitt von Kabel 3x1,5mm,                              001572
+26   einschl.                                                             001573
+26   Absetzen, EinfÅhren in die KlemmrÑume,                               001574
+26   DurchprÅfen der                                                      001575
+26   Leitungen, Anklemmen, FunktionsprÅfung,                              001576
+26   etc., unter                                                          001577
+26   Zulieferung aller  nach                                              001578
+26   Herstellerangaben                                                    001579
+26   erforderlichem Kleinmaterialien.                                     001580
+26                                                                        001581
+21 1 5 240 NNN    X    00000001000psch                                    001582
+30          0000029000000000000000000000000000000000                      001583
+25Koordination zum Auflegen der                                           001584
+26   Koordination zum Auflegen der                                        001585
+26   Stromversorgung                                                      001586
+26   durch den bauseitigen Hauselektriker,                                001587
+26   Zusammenstellung                                                     001588
+26   der elektr. Leistungsdaten mit allen                                 001589
+26   Werten und                                                           001590
+26   Anlaufstrîmen auf Papier und öbergabe an                             001591
+26    den                                                                 001592
+26   bauseitigen Auftragnehmer Elektro,                                   001593
+26   Terminvereinbarung                                                   001594
+26   zum Auflegen der Kabel im Schaltschrank,                             001595
+26    Spannungskabel                                                      001596
+26   im Schaltschrank einfÅhren und auflegen,                             001597
+26    Spannung                                                            001598
+26   einschalten durch Auftragnehmer Elektro                              001599
+26   bauseits, zu                                                         001600
+26   liefern und gemÑ· PrÅfzeugnis zu                                     001601
+26   verarbeiten                                                          001602
+26                                                                        001603
+21 1 5 250 NNN    X    00000008000St                                      001604
+30          0000013775000000000000000000000000000000                      001605
+25Kabelschott S90 mittels Kartusche CP 660                                001606
+26   Kabelschott S90 mittels Kartusche CP 660                             001607
+26   INT                                                                  001608
+26   Kartusche Brandschutzschaum CP 660 INT                               001609
+26   mit Mixer zur                                                        001610
+26   Herstellung von Brand- und                                           001611
+26   RauchschutzabschlÅssen fÅr                                           001612
+26   KabeldurchfÅhrungen S90, mittels                                     001613
+26   flexiblem                                                            001614
+26   Brandschutzschaum                                                    001615
+26                                                                        001616
+26   UngefÑhre AushÑrtedauer:   10min                                     001617
+26   Anwendungstemperatur -                                               001618
+26   Bereich:      10 - 35 ¯C                                             001619
+26   Schaumausbeute (bis zu):   2.1 l                                     001620
+26                                                                        001621
+26   PrÅfzeugnis vorhanden wie                                            001622
+26                                                                        001623
+26   Herst :      Hilti                                                   001624
+26   Typ :       Brandschutzschaum CP 660 INT                             001625
+26   Bestell-Nr.    203517                                                001626
+26                                                                        001627
+26   zu liefern und gemÑ· PrÅfzeugnis zu                                  001628
+26   verarbeiten                                                          001629
+26                                                                        001630
+31 1 5                                                                    001631
+11 1 6     N                                                              001632
+12CO-Warnanlage gemÑ· SBauVo                                              001633
+21 1 6  10 NNN    X    00000001000St                                      001634
+30          0000000000000000000000000000000000000000                      001635
+25CO-Warnanlage zum Einbau in                                             001636
+26   CO-Warnanlage zum Einbau in                                          001637
+26   Schaltschrank                                                        001638
+26   CO-Warnanlage gemÑ· EN 50545 und EN                                  001639
+26   50271                                                                001640
+26                                                                        001641
+26   Einbau CO-Anlage als Beistellung, in                                 001642
+26   SchrankgehÑuse                                                       001643
+26                                                                        001644
+26   1 Stck. Digitaler CO-Controller                                      001645
+26   TÅreinbau-Modul 24 V                                                 001646
+26   AC/DC, Display, TÅrmontage max.4                                     001647
+26   Messstellen, 5                                                       001648
+26   RelaisausgÑnge,                                                      001649
+26   MenÅsprache deutsch, erweiterbar mit                                 001650
+26   max. 23 EP-04                                                        001651
+26   Modulen auf 96 Messstellen, 30                                       001652
+26   RelaisausgÑnge                                                       001653
+26                                                                        001654
+26   Die Software des Controllers erfÅllt                                 001655
+26   SIL2 und damit die                                                   001656
+26   Anforderungen der DIN EN 50545                                       001657
+26   USV-Anlage CO max. 7,2                                               001658
+26   Ah mit Netzteil fÅr CO-Warnanlage inkl.                              001659
+26   Batterielader.                                                       001660
+26   Zubehîr Netzteil fÅr CO-Warnanlage,                                  001661
+26   incl. Einbau                                                         001662
+26                                                                        001663
+26   liefern und fachgerecht in Schaltschrank                             001664
+26    einbauen und                                                        001665
+26   verdrahten, Anlieferung an Baustelle                                 001666
+26   komplett eingebaut                                                   001667
+26   in Schrank und geprÅft                                               001668
+26                                                                        001669
+21 1 6  20 NNN    X    00000007000St                                      001670
+30          0000000000000000000000000000000000000000                      001671
+25CO-Transmitter digital                                                  001672
+26   CO-Transmitter digital                                               001673
+26   CO-Transmitter digital                                               001674
+26                                                                        001675
+26   zur Erfassung der Kohlenmonoxid (CO)                                 001676
+26   Konzentration in                                                     001677
+26   der Umgebungsluft gemÑ· VDI 2053 und                                 001678
+26   EMV-Richtlinie                                                       001679
+26   89/336/EWG fÅr Wandmontage.                                          001680
+26   Elektrochemischer                                                    001681
+26   Mehrfach-Elektrodensensor mit                                        001682
+26   Querempfindlichkeitsfilter, sehr gute                                001683
+26   LangzeitstabilitÑt und langer                                        001684
+26   Lebensdauer mit TöV                                                  001685
+26   Zertifizierung. Temperaturkompensierter,                             001686
+26   kurzschlussfester, Åberlastsicherer                                  001687
+26   sowie                                                                001688
+26   verpolungssicherer Messumformer,                                     001689
+26   modularer Aufbau,                                                    001690
+26   Sensor und Platine steckbar, Messbereich                             001691
+26    0-300ppm,                                                           001692
+26   Spannung 24V DC, Temperaturbereich -10¯                              001693
+26   - +50¯C, mit                                                         001694
+26   Kalibrierung.                                                        001695
+26                                                                        001696
+26   Sensor zur Montage bis zu 2 Sensorkîpfen                             001697
+26    in einem                                                            001698
+26   GehÑuse und Verarbeitung eines weiteren                              001699
+26   Sensorkopfes                                                         001700
+26   aus dem Slave-Sensor. Ausgabesignal                                  001701
+26   RS485 ist in der                                                     001702
+26   Basisversion RS-485. Sensorkopf fÅr CO:                              001703
+26                                                                        001704
+26   Wartungsfreundlicher Sensorkopf zum                                  001705
+26   Detektieren von                                                      001706
+26   Kohlenmonoxid wie                                                    001707
+26                                                                        001708
+26   Hersteller:   Pollrich DLK fan factories                             001709
+26                                                                        001710
+26   zu liefern und fachgerecht in                                        001711
+26   Schaltschrank einbauen                                               001712
+26   und verdrahten                                                       001713
+26                                                                        001714
+21 1 6  30 NNN    X    00000005000St                                      001715
+30          0000000000000000000000000000000000000000                      001716
+25LED-Warntransparent                                                     001717
+26   LED-Warntransparent                                                  001718
+26   LED-Warntransparent                                                  001719
+26                                                                        001720
+26   Wartungsfreies vollelektronisches                                    001721
+26   Warntransparent gemÑ·                                                001722
+26   VDI 2053  (1.1.2004) in LED-Technik (                                001723
+26   mind.50.000 Std.                                                     001724
+26   Lebensdauer !)Aluminiumprofil, 2m                                    001725
+26   Anschlusskabel, mit                                                  001726
+26   abgesetzter Kabelanschlussdose. gelbe                                001727
+26   Beschriftung,                                                        001728
+26   verstellbare Befestigungsîsen, incl.                                 001729
+26   Befestigungsmaterial                                                 001730
+26                                                                        001731
+26   Piktogramm: fÅr Vergiftungsgefahr                                    001732
+26   (Totenkopf im                                                        001733
+26   Dreieck) und Garage Verlassen                                        001734
+26   (flÅchtende Person mit                                               001735
+26   TÅr)                                                                 001736
+26   Text: STOP MOTOR  2-zeilig                                           001737
+26   Beschriftung: Beidseitig                                             001738
+26   Scheibenmaterial: Plexiglas,                                         001739
+26   Scheibenfarbe: klar                                                  001740
+26   Schrifthîhe:60mm                                                     001741
+26   Zeichenhîhe:132mm                                                    001742
+26   Schriftfarbe: wei· (im unbeleuchteten                                001743
+26   Zustand), gelb                                                       001744
+26   (im beleuchteten Zustand)                                            001745
+26                                                                        001746
+26   Abmessungen WT:642x203 x 22m Gewicht                                 001747
+26   WT:1,9 kg                                                            001748
+26   Abmessungen Dose: 80*80*52 mm Gewicht                                001749
+26   Dose: 0,5 kg                                                         001750
+26   Leistungsaufnahme:4,8 Watt  Spannung:24V                             001751
+26    AC/ DC                                                              001752
+26   Schutzart: IP 54                                                     001753
+26   Umgebungsbedingungen:Feuchte:15  95 % r.                             001754
+26    F. nicht                                                            001755
+26   kondensieren                                                         001756
+26   Temperatur -Betrieb  -20¯ C bis + 40¯ C                              001757
+26                                                                        001758
+26   liefern und fachgerecht in Schaltschrank                             001759
+26    einbauen und                                                        001760
+26   verdrahten                                                           001761
+26                                                                        001762
+21 1 6  40 NNN    X    00000002000St                                      001763
+30          0000000000000000000000000000000000000000                      001764
+25Warmhupe 24V 98dB                                                       001765
+26   Warmhupe 24V 98dB                                                    001766
+26   Warnhupe 24 V  98dB                                                  001767
+26                                                                        001768
+26   Universell einsetzbare Warntonsirene mit                             001769
+26    32                                                                  001770
+26   einstellbaren Tonarten, inklusive DIN                                001771
+26   Ton fÅr                                                              001772
+26   Brandmelde- und Sicherheits-Technik                                  001773
+26   gemÑ·                                                                001774
+26   VdS-Richtlinien. Warnhupen aus stabilem                              001775
+26   Kunststoff                                                           001776
+26   (ABS) gemÑ· VDI 2053                                                 001777
+26                                                                        001778
+26   zu liefern und fachgerecht in TG                                     001779
+26   einbauen und mit                                                     001780
+26   Schaltschrank verdrahten                                             001781
+26                                                                        001782
+21 1 6  50 NNN    X    00000002000St                                      001783
+30          0000000000000000000000000000000000000000                      001784
+25Optischer Warngeber als Blitzleuchte                                    001785
+26   Optischer Warngeber als Blitzleuchte                                 001786
+26   1 StÅck Blitzleuchte als optischer                                   001787
+26   Alarmsignalgeber,                                                    001788
+26   mit orangefarbener Haube, wie:                                       001789
+26                                                                        001790
+26   Typ:      HERMES RBL 5                                               001791
+26   Sachnr.:      AGXXXX                                                 001792
+26   Nennspannung:      230 V AC                                          001793
+26   Nennstromaufnahme:      0,05 A                                       001794
+26   Betriebstemperatur:      -20¯C bis +70¯C                             001795
+26   Blitzfrequenz:      1,1 Hz                                           001796
+26   Einschaltdauer:      100 % ED                                        001797
+26   Blitzleistung:      max. 7 Ws                                        001798
+26   Schutzart:      IP 54                                                001799
+26                                                                        001800
+26   zu liefern und zu montieren                                          001801
+26                                                                        001802
+26   Hinweis:                                                             001803
+26   Vor Bestellung sind die Konstruktions-                               001804
+26   und DetailplÑne,                                                     001805
+26   einschl. der akustischen Daten fÅr die                               001806
+26   GerÑte, der                                                          001807
+26   Bauleitung zur Freigabe vorzulegen, erst                             001808
+26    nach erfolgter                                                      001809
+26   Freigabe durch den Akustiker und der                                 001810
+26   Bauleitung darf                                                      001811
+26   mit der Fertigung begonnen werden.                                   001812
+26                                                                        001813
+21 1 6  60 NNN    X    00000001000psch                                    001814
+30          0000000000000000000000000000000000000000                      001815
+25Inbetriebnahme der CO-Warnanlage                                        001816
+26   Inbetriebnahme der CO-Warnanlage                                     001817
+26   1 StÅck Inbetriebnahme durch                                         001818
+26   Herstellerkundendienst der                                           001819
+26   Gaswarnanlage, mit Kalibrierung der                                  001820
+26   Messkîpfe mit                                                        001821
+26   PrÅfgas nach den Wartungsvorschriften,                               001822
+26   Inbetriebnahme                                                       001823
+26   der Auswerteeinheit, Parametrierung der                              001824
+26   Grenzwerte an                                                        001825
+26   der Warnzentrale, Messung der                                        001826
+26   Ist-Strîme, Test der                                                 001827
+26   FunktionstÅchtigkeit, VorfÅhrung und                                 001828
+26   Kurzeinweisung fÅr                                                   001829
+26   das Bedienpersonal, Protokollierung                                  001830
+26   sÑmtlicher                                                           001831
+26   relevanter Daten im öbergabeprotokoll,                               001832
+26   einschl.                                                             001833
+26   einmaliger Anfahrt, anteilig PrÅfgase                                001834
+26   und sonstige                                                         001835
+26   Nebenkosten, inkl. schriftlicher                                     001836
+26   Dokument<ation zur                                                   001837
+26   Einweisung,                                                          001838
+26                                                                        001839
+26   zu liefern und den Revisionsunterlagen                               001840
+26   hinzuzufÅgen                                                         001841
+26                                                                        001842
+31 1 6                                                                    001843
+11 1 7     N                                                              001844
+12SachverstÑndigenabnahme,                                                001845
+21 1 7  10 NNN    X    00000001000pau                                     001846
+30          0000261000000014400000000000000000000000                      001847
+25Begleitung der Abnahme des                                              001848
+26   Begleitung der Abnahme des                                           001849
+26   SachverstÑndigen fÅr TG-LÅftung und                                  001850
+26   Begleitung der SachverstÑndigenabnahme                               001851
+26   TG-LÅftung und                                                       001852
+26   CO-Warnanlage durch einen anerkannten,                               001853
+26   unabhÑngigen                                                         001854
+26   SachverstÑndigen, gem. den gesetzlichen                              001855
+26   Anforderungen,                                                       001856
+26   öberprÅfung der Funktion der Technik und                             001857
+26    PrÅfung auf                                                         001858
+26   öbereinstimmung mit der Baugenehmigung,                              001859
+26   mit dem Azur                                                         001860
+26   UnterstÅtzung des SV. Anlagenhersteller                              001861
+26   und                                                                  001862
+26   Anlagenrerichter                                                     001863
+26                                                                        001864
+26   SachverstÑndiger :                                                   001865
+26   Dipl. Ing. Hans Hugo Steinbach                                       001866
+26   (PrÅfsachverstÑndiger)                                               001867
+26   Mobil:    0151 14994037                                              001868
+26   Mail:   info@tpvg.de                                                 001869
+26                                                                        001870
+26                                                                        001871
+26   Hinweis:                                                             001872
+26   Die Protokolle/PrÅfberichte des                                      001873
+26   SachverstÑndigen sind                                                001874
+26   den Revisionsunterlagen des AN                                       001875
+26   beizufÅgen.                                                          001876
+26                                                                        001877
+21 1 7  20 NNN    X    00000001000pau                                     001878
+30          0000130500000014400000000000000000000000                      001879
+25Vorbegehung zur SachverstÑndigenabnahme                                 001880
+26   Vorbegehung zur SachverstÑndigenabnahme                              001881
+26   TG-LÅftung und CO-Warnanlage                                         001882
+26   Vorbereitung der                                                     001883
+26   SachverstÑndigenabnahme TG-LÅftung                                   001884
+26   und CO-Warnanlage durch einen                                        001885
+26   anerkannten, unabhÑngigen                                            001886
+26   SachverstÑndigen, gem. den gesetzlichen                              001887
+26   Anforderungen,                                                       001888
+26   öberprÅfung der Funktion der Technik und                             001889
+26    PrÅfung auf                                                         001890
+26   öbereinstimmung mit der Baugenehmigung,                              001891
+26   Anwesenheit mit                                                      001892
+26   dem Anlagenhersteller Pollrich und                                   001893
+26   Anlagenerrichter mit                                                 001894
+26   vollstÑndiger Funktionsprobe  der                                    001895
+26   Gesamtanlage !                                                       001896
+26                                                                        001897
+26   Hinweis:                                                             001898
+26   Die Protokolle/PrÅfberichte der                                      001899
+26   Beteiligten sind den                                                 001900
+26   Revisionsunterlagen des AN beizufÅgen.                               001901
+26                                                                        001902
+31 1 7                                                                    001903
+11 1 8     N                                                              001904
+12Verschiedenes                                                           001905
+21 1 8  10 NNN    X    00000350000cm                                      001906
+30          0000000232000000000000000000000000000000                      001907
+25Kernbohrung ù 50mm                                                      001908
+26   Kernbohrung ù 50mm                                                   001909
+26   durch WÑnde und Decken aus Stahlbeton                                001910
+26   bis 40 cm mit                                                        001911
+26   Schnitten durch Bewehrungsstahl bis 16                               001912
+26   mm Durchmesser                                                       001913
+26   und aller Arten Mauerwerk in                                         001914
+26   erschÅtterungs- und                                                  001915
+26   gerÑuscharmer Arbeitsweise ma·genau                                  001916
+26   herstellen, mit                                                      001917
+26   Durchmesser 60 mm,                                                   001918
+26                                                                        001919
+26   einschl. Kosten fÅr Bohrgrundpreise, An-                             001920
+26    und Abfahrten,                                                      001921
+26   Baustelleneinrichtungen, Absaugen des                                001922
+26   oberflÑchigen                                                        001923
+26   SpÅlwassers, Abtransport der                                         001924
+26   BetonstÅcke, mehrfaches                                              001925
+26   Umsetzen der Anlage, Reinigung der                                   001926
+26   Arbeitsstelle.                                                       001927
+26                                                                        001928
+21 1 8  20 NNN    X    00000120000cm                                      001929
+30          0000000371000000000000000000000000000000                      001930
+25Kernbohrung ù 150mm                                                     001931
+26   Kernbohrung ù 150mm                                                  001932
+26   durch WÑnde und Decken aus Stahlbeton                                001933
+26   bis 40 cm mit                                                        001934
+26   Schnitten durch Bewehrungsstahl bis 16                               001935
+26   mm Durchmesser                                                       001936
+26   und aller Arten Mauerwerk in                                         001937
+26   erschÅtterungs- und                                                  001938
+26   gerÑuscharmer Arbeitsweise ma·genau                                  001939
+26   herstellen, mit                                                      001940
+26   Durchmesser 60 mm,                                                   001941
+26                                                                        001942
+26   einschl. Kosten fÅr Bohrgrundpreise, An-                             001943
+26    und Abfahrten,                                                      001944
+26   Baustelleneinrichtungen, Absaugen des                                001945
+26   oberflÑchigen                                                        001946
+26   SpÅlwassers, Abtransport der                                         001947
+26   BetonstÅcke, mehrfaches                                              001948
+26   Umsetzen der Anlage, Reinigung der                                   001949
+26   Arbeitsstelle.                                                       001950
+26                                                                        001951
+21 1 8  30 NEN    X    00000001000cm                                      001952
+30          0000000390000000000000000000000000000000                      001953
+25Kernbohrung ù 180 mm                                                    001954
+26   Kernbohrung ù 180 mm                                                 001955
+26   desgl., jedoch Durchmesser 180 mm.                                   001956
+26                                                                        001957
+21 1 8  40 NEN    X    00000001000cm                                      001958
+30          0000000454000000000000000000000000000000                      001959
+25Kernbohrung ù 220 mm                                                    001960
+26   Kernbohrung ù 220 mm                                                 001961
+26   desgl., jedoch Durchmesser 220 mm.                                   001962
+26                                                                        001963
+21 1 8  50 NEN    X    00000001000St                                      001964
+30          0000026281000000000000000000000000000000                      001965
+25Wanddurchbruch bis 20 x 20 cm in Wand                                   001966
+26   Wanddurchbruch bis 20 x 20 cm in Wand                                001967
+26   11,5 cm herstellen                                                   001968
+26   durch WÑnde (StÑrke 11,5 cm) aller Arten                             001969
+26    Mauerwerk in                                                        001970
+26   erschÅtterungs- und gerÑuscharmer                                    001971
+26   Arbeitsweise ma·genau                                                001972
+26   herstellen,                                                          001973
+26                                                                        001974
+26   einschl. Abtransport und Entsorgung der                              001975
+26   Schuttreste                                                          001976
+26   sowie Reinigung der Arbeitsstelle.                                   001977
+26                                                                        001978
+21 1 8  60 NEN    X    00000001000St                                      001979
+30          0000023200000000000000000000000000000000                      001980
+25Wanddurchbruch bis 20 x 20 cm in Wand                                   001981
+26   Wanddurchbruch bis 20 x 20 cm in Wand                                001982
+26   17,5 cm herstellen                                                   001983
+26   desgl., jedoch in Wand 17,5 cm.                                      001984
+26                                                                        001985
+21 1 8  70 NEN    X    00000001000St                                      001986
+30          0000029000000000000000000000000000000000                      001987
+25Wanddurchbruch bis 20 x 20 cm in Wand                                   001988
+26   Wanddurchbruch bis 20 x 20 cm in Wand                                001989
+26   24,0 cm herstellen                                                   001990
+26   desgl., jedoch in Wand 24,0 cm.                                      001991
+26                                                                        001992
+21 1 8  80 NNN    X    00000094000kg                                      001993
+30          0000000508000000045000000000000000000000                      001994
+25Profilstahlkonstruktion                                                 001995
+26   Profilstahlkonstruktion                                              001996
+26   mit Rostschutzfarbe (Primer) gestrichen,                             001997
+26    fÅr die                                                             001998
+26   Herstellung von Befestigungen, BÅhnen                                001999
+26   und Traversen in                                                     002000
+26   der Tiefgarage, einschl. handwerklicher                              002001
+26    Herstellung                                                         002002
+26   von Konsolen, Traversen und BÅgeln in                                002003
+26   schwerer                                                             002004
+26   AusfÅhrung, einschl.                                                 002005
+26   Befestigungsmaterial an                                              002006
+26   HT-Schienen, Profilstahl bestehend aus:                              002007
+26   80% Winkelstahl                                                      002008
+26   nach DIN 1028, 10% T-Stahl nach DIN                                  002009
+26   1024, und 10%                                                        002010
+26   I-TrÑger nach DIN 1025,                                              002011
+26                                                                        002012
+26   liefern, herstellen und fachgerecht                                  002013
+26   montieren.                                                           002014
+26                                                                        002015
+21 1 8  90 NNN    X    00000041000m˝                                      002016
+30          0000005800000000000000000000000000000000                      002017
+25DÑmmplatte 13mm Katschuk, selbstkllebend                                002018
+26   DÑmmplatte 13mm Katschuk, selbstkllebend                             002019
+26   DÑmmplatte aus synthetischem Kautschuk,                              002020
+26   selbstklebend,                                                       002021
+26   Material, das keine Feuer verbreitet,                                002022
+26   selbstverlîschend, unentzÅndbar, nicht                               002023
+26   tropfend.                                                            002024
+26   Zertifikat der VertrÑglichkeit    CE                                 002025
+26   0543-FEF                                                             002026
+26   Akustische Isolation       (DIN 4109)                                002027
+26   Reduktion von MaterialgerÑuschen <28                                 002028
+26   dB(A)                                                                002029
+26   WÑrmeleitfÑhigkeit l [W/(m˙K)] bei Jm =                              002030
+26   0¯C <0,036                                                           002031
+26   Widerstandsfaktor gegen                                              002032
+26   Wasserdampfdiffusion >7000                                           002033
+26   wie                                                                  002034
+26   Typ :       Armaflex                                                 002035
+26   Herst.      Armacell                                                 002036
+26   Dicke :      13mm                                                    002037
+26   Art :      selbstklebend                                             002038
+26                                                                        002039
+26   zu liefern und innen und aussen gemÑ·                                002040
+26   Planung auf den                                                      002041
+26   LuftkanalflÑchen zu verkleben                                        002042
+26                                                                        002043
+26                                                                        002044
+21 1 8 100 NNN    X    00000010000m                                       002045
+30          0000002175000000000000000000000000000000                      002046
+25Kantenschutz                                                            002047
+26   Kantenschutz                                                         002048
+26   Kantenschutz um Sto·verletzungen durch                               002049
+26   RLT-Anlagen im                                                       002050
+26   Kopfbereich  zu verhindern .                                         002051
+26   Ideal fÅr den Einsatz im Lager-,                                     002052
+26   Versand-,                                                            002053
+26   Produktionsbereich, in Laboren und                                   002054
+26   Kliniken                                                             002055
+26   TemperaturbestÑndig fÅr den Innen- und                               002056
+26   Au·eneinsatz UV-                                                     002057
+26   und lîsungsmittelbestÑndig sowie geprÅft                             002058
+26    nach der                                                            002059
+26   Brandklassifikation UL94 Individueller                               002060
+26   Zuschnitt mit                                                        002061
+26   einem Messer mîglich                                                 002062
+26   Wie:                                                                 002063
+26   Hersteller:      Seton                                               002064
+26   Material:          Polyurethan                                       002065
+26   Farbe:          Gelb/Schwarz                                         002066
+26   TemperaturbestÑndig:       -40¯C bis                                 002067
+26   +90¯C                                                                002068
+26   LÑnge:          5 m                                                  002069
+26                                                                        002070
+26   zu liefern und fachgerecht anbringen                                 002071
+26                                                                        002072
+21 1 8 110 NNN    X    00000030000m                                       002073
+30          0000000218000000045000000000000000000000                      002074
+25Signalband als Warnband 50mm                                            002075
+26   Signalband als Warnband 50mm                                         002076
+26   WarnbÑnder mit hoher Lebensdauer nach                                002077
+26   ASR A1.3-2013                                                        002078
+26   AlterungsbestÑndiger, hochfester                                     002079
+26   Klebstoff                                                            002080
+26                                                                        002081
+26   Farbe : schwarz/weiss                                                002082
+26   Individueller Zuschnitt mit einem Messer                             002083
+26    mîglich                                                             002084
+26   Wie:                                                                 002085
+26   Hersteller:   Seton                                                  002086
+26   Farbe :       rot/weiss                                              002087
+26   Breite :       50mm                                                  002088
+26   Mat.       Vinylfolie                                                002089
+26                                                                        002090
+26   zu liefern und fachgerecht anbringen                                 002091
+26                                                                        002092
+21 1 8 120 NNN    X    00000008000St                                      002093
+30          0000000580000000090000000000000000000000                      002094
+25Bezeichnungsschilder 100 x 70 mm                                        002095
+26   Bezeichnungsschilder 100 x 70 mm                                     002096
+26   fÅr die gesamte LÅftungsanlage als                                   002097
+26   gravierte                                                            002098
+26   Resopalschilder, 2-farbig, gem.                                      002099
+26   DIN-Vorschriften, aus                                                002100
+26   denen alle Anlageteile und alle                                      002101
+26   Absperrungen                                                         002102
+26   einwandfrei bestimmt werden, einschl.                                002103
+26   der                                                                  002104
+26   erforderlichen Halterungen und                                       002105
+26   Befestigungen,                                                       002106
+26   korrosionsfest gestrichen, Schildergrî·e                             002107
+26    100 x 70 mm,                                                        002108
+26   einschl. Wand- oder Deckenmontage,                                   002109
+26                                                                        002110
+26   liefern und fachgerecht montieren.                                   002111
+26                                                                        002112
+21 1 8 130 NNN    X    00000001000pau                                     002113
+30          0000000000000028800000000000000000000000                      002114
+25Montageplanung                                                          002115
+26   Montageplanung                                                       002116
+26   Pauschale fÅr die Anfertigung und                                    002117
+26   Lieferung der                                                        002118
+26   Montageplanung, auf Grundlage der                                    002119
+26   AusfÅhrungsplanung                                                   002120
+26   und der Werkplanung des Architekten im                               002121
+26   Ma·stab 1:50,                                                        002122
+26   farbig angelegt, mit Eintragung aller                                002123
+26   Anlagenteile und                                                     002124
+26   Dimensionen, einschl. aller                                          002125
+26   Berechnungen,                                                        002126
+26                                                                        002127
+26   insgesamt zweifach anfertigen und der                                002128
+26   Fachbauleitung                                                       002129
+26   vor dem Montagebeginn zur PrÅfung                                    002130
+26   vorlegen.                                                            002131
+26                                                                        002132
+26   Hinweise zu Stundenlohnarbeiten                                      002133
+26                                                                        002134
+26   Stundenlohnarbeiten dÅrfen nur auf                                   002135
+26   ausdrÅckliche                                                        002136
+26   Anweisung des Bauherrn oder der                                      002137
+26   Fachbauleitung fÅr                                                   002138
+26   nicht vorgesehene Arbeiten angesetzt                                 002139
+26   werden.                                                              002140
+26                                                                        002141
+26   VergÅtet werden nur tatsÑchlich                                      002142
+26   ausgefÅhrte und vom                                                  002143
+26   Auftraggeber anerkannte Leistungen,                                  002144
+26   vorbehaltlich der                                                    002145
+26   PrÅfung durch die Fachbauleitung.                                    002146
+26                                                                        002147
+26   Alle Auslîsungen, ZuschlÑge, Fahrgelder                              002148
+26   und Nebenkosten                                                      002149
+26   sind in die Preise einzurechnen,                                     002150
+26   insbesondere der                                                     002151
+26   tatsÑchliche Lohn, einschl. der                                      002152
+26   vermîgenswirksamen                                                   002153
+26   Leistungen mit den ZuschlÑgen fÅr                                    002154
+26   Gemeinkosten                                                         002155
+26   (SozialkassenbeitrÑge, Winterbauumlage,                              002156
+26   etc.), sowie                                                         002157
+26   Lohn- bzw. Gehaltsnebenkosten und                                    002158
+26   ZuschlÑge fÅr                                                        002159
+26   öberstunden.                                                         002160
+26                                                                        002161
+21 1 8 140 NNN    X    00000004000h                                       002162
+30          0000000000000000552000000000000000000000                      002163
+25Obermonteurstunden                                                      002164
+26   Obermonteurstunden                                                   002165
+26   fÅr etwa anfallende Tagelohnarbeiten,                                002166
+26   innerhalb der                                                        002167
+26   Regelarbeitszeit,                                                    002168
+26                                                                        002169
+26   einschl. aller ZuschlÑge, Auslîsung,                                 002170
+26   Fahrgeld und                                                         002171
+26   Nebenkosten.                                                         002172
+26                                                                        002173
+21 1 8 150 NNN    X    00000010000h                                       002174
+30          0000000000000000505000000000000000000000                      002175
+25Monteurstunden                                                          002176
+26   Monteurstunden                                                       002177
+26   fÅr etwa anfallende Tagelohnarbeiten,                                002178
+26   innerhalb der                                                        002179
+26   Regelarbeitszeit,                                                    002180
+26                                                                        002181
+26   einschl. aller ZuschlÑge, Auslîsung,                                 002182
+26   Fahrgeld und                                                         002183
+26   Nebenkosten.                                                         002184
+26                                                                        002185
+21 1 8 160 NNN    X    00000010000h                                       002186
+30          0000000000000000435000000000000000000000                      002187
+25Helferstunden                                                           002188
+26   Helferstunden                                                        002189
+26   fÅr etwa anfallende Tagelohnarbeiten,                                002190
+26   innerhalb der                                                        002191
+26   Regelarbeitszeit,                                                    002192
+26                                                                        002193
+26   einschl. aller ZuschlÑge, Auslîsung,                                 002194
+26   Fahrgeld und                                                         002195
+26   Nebenkosten.                                                         002196
+26                                                                        002197
+21 1 8 170 NNN    X    00000004000h                                       002198
+30          0000000000000000908000000000000000000000                      002199
+25Regeltechnikerstunden                                                   002200
+26   Regeltechnikerstunden                                                002201
+26   fÅr etwa anfallende Tagelohnarbeiten,                                002202
+26   innerhalb der                                                        002203
+26   Regelarbeitszeit,                                                    002204
+26                                                                        002205
+26   einschl. aller ZuschlÑge, Auslîsung,                                 002206
+26   Fahrgeld und                                                         002207
+26   Nebenkosten.                                                         002208
+26                                                                        002209
+21 1 8 180 NEN    X    00000001000h                                       002210
+30          0000000000000000788000000000000000000000                      002211
+25Obermonteur-öberstunden                                                 002212
+26   Obermonteur-öberstunden                                              002213
+26   fÅr etwa anfallende Tagelohnarbeiten                                 002214
+26   au·erhalb der                                                        002215
+26   Regelarbeitszeit,                                                    002216
+26                                                                        002217
+26   einschl. aller ZuschlÑge, Auslîsung,                                 002218
+26   Fahrgeld und                                                         002219
+26   Nebenkosten, gÅltig fÅr die ersten                                   002220
+26   beiden öberstunden.                                                  002221
+26                                                                        002222
+21 1 8 190 NEN    X    00000001000h                                       002223
+30          0000000000000000717500000000000000000000                      002224
+25Monteur-öberstunden                                                     002225
+26   Monteur-öberstunden                                                  002226
+26   fÅr etwa anfallende Tagelohnarbeiten                                 002227
+26   au·erhalb der                                                        002228
+26   Regelarbeitszeit,                                                    002229
+26                                                                        002230
+26   einschl. aller ZuschlÑge, Auslîsung,                                 002231
+26   Fahrgeld und                                                         002232
+26   Nebenkosten, gÅltig fÅr die ersten                                   002233
+26   beiden öberstunden.                                                  002234
+26                                                                        002235
+21 1 8 200 NEN    X    00000001000h                                       002236
+30          0000000000000000612500000000000000000000                      002237
+25Helfer-öberstunden                                                      002238
+26   Helfer-öberstunden                                                   002239
+26   fÅr etwa anfallende Tagelohnarbeiten                                 002240
+26   au·erhalb der                                                        002241
+26   Regelarbeitszeit,                                                    002242
+26                                                                        002243
+26   einschl. aller ZuschlÑge, Auslîsung,                                 002244
+26   Fahrgeld und                                                         002245
+26   Nebenkosten, gÅltig fÅr die ersten                                   002246
+26   beiden öberstunden.                                                  002247
+26                                                                        002248
+21 1 8 210 NEN    X    00000001000h                                       002249
+30          0000000000000001322000000000000000000000                      002250
+25Regeltechniker-öberstunden                                              002251
+26   Regeltechniker-öberstunden                                           002252
+26   fÅr etwa anfallende Tagelohnarbeiten                                 002253
+26   au·erhalb der                                                        002254
+26   Regelarbeitszeit,                                                    002255
+26                                                                        002256
+26   einschl. aller ZuschlÑge, Auslîsung,                                 002257
+26   Fahrgeld und                                                         002258
+26   Nebenkosten, gÅltig fÅr die ersten                                   002259
+26   beiden öberstunden.                                                  002260
+26                                                                        002261
+31 1 8                                                                    002262
+11 1 9     N                                                              002263
+12Revisionsunterlagen                                                     002264
+21 1 9  10 NNN    X    00000001000pau                                     002265
+30          0000036250000023040000000000000000000000                      002266
+25Revisionsunterlagen                                                     002267
+26   Revisionsunterlagen                                                  002268
+26   Pauschale fÅr die Anfertigung und                                    002269
+26   Lieferung der                                                        002270
+26   Revisionszeichnungen und vollstÑndiger                               002271
+26   Revisionsunterlagen, abgeheftet in einem                             002272
+26    Ordner DIN A4                                                       002273
+26   mit 6 cm RÅckenbreite und                                            002274
+26   RÅckenbeschriftung, auf                                              002275
+26   Grundlage der ArchitektenplÑne im                                    002276
+26   Ma·stab 1:50, farbig                                                 002277
+26   angelegt, mit Eintragung aller                                       002278
+26   Anlagenteile und                                                     002279
+26   Dimensionen, insgesamt dreifach wie                                  002280
+26   folgt anfertigen:                                                    002281
+26                                                                        002282
+26   1)   FÅr das Archiv des Bauherrn:                                    002283
+26   1 x farbig angelegt, einschl. aller                                  002284
+26   Wartungsunterlagen,                                                  002285
+26   Ersatzteillisten, GerÑtebeschreibungen,                              002286
+26   Produkt-datenblÑtter, Einstelllisten,                                002287
+26   öbergabeprotokoll,                                                   002288
+26   Inbetrieb-nahmezÑhlerstÑnde mit                                      002289
+26   Datum, etc., zusÑtzlich 1 x als AutoCAD                              002290
+26   dwg- und                                                             002291
+26   pdf-Dateien auf CD-ROM,                                              002292
+26                                                                        002293
+26   2)  Handakte fÅr den Hausmeister:                                    002294
+26   1 x farbig angelegt, einschl. aller                                  002295
+26   Wartungsunterlagen,                                                  002296
+26   Ersatzteillisten, GerÑtebeschreibungen,                              002297
+26   Produkt-datenblÑtter, Einstelllisten,                                002298
+26   öbergabeprotokoll,                                                   002299
+26   Inbetrieb-nahmezÑhlerstÑnde mit                                      002300
+26   Datum, etc., einschl. eines                                          002301
+26   vollstÑndigen Schalt- und                                            002302
+26   Regelschemas unter Kunststoff und Rahmen                             002303
+26    laminiert,                                                          002304
+26                                                                        002305
+26   bei der Endabnahme zu liefern und der                                002306
+26   Fachbauleitung                                                       002307
+26   vorab zur PrÅfung vorzulegen.                                        002308
+26                                                                        002309
+31 1                                                                      002310
+31 1                                                                      002311
+99                                                                   00075002312
