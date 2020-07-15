@@ -6,22 +6,19 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraSplashScreen;
+using DevExpress.LookAndFeel;
 
 namespace CalcPro
 {
-    public partial class frmSplashScreen : SplashScreen
+    public partial class frmSplashScreen1 : SplashScreen
     {
-        /// <summary>
-        /// This from is to show progress while opening application
-        /// </summary>
-
-        #region Constructors
-        public frmSplashScreen()
+        public frmSplashScreen1()
         {
             InitializeComponent();
-        }
+            this.labelControl1.Text = "Copyright © 1998-" + DateTime.Now.Year.ToString();
+            this.labelControl3.Text = "Version : V1.1";
 
-        #endregion
+        }
 
         #region Overrides
 
@@ -29,8 +26,13 @@ namespace CalcPro
         {
             base.ProcessCommand(cmd, arg);
         }
-
+        
         #endregion
+
+        public enum SplashScreenCommand
+        {
+
+        }
 
     }
 }

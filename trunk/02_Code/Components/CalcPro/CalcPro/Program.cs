@@ -12,6 +12,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.ComponentModel;
+using DevExpress.XtraSplashScreen;
 
 namespace CalcPro
 {
@@ -28,7 +29,7 @@ namespace CalcPro
             {
                 Assembly asm = typeof(DevExpress.UserSkins.CategisSkin).Assembly;
                 DevExpress.Skins.SkinManager.Default.RegisterAssembly(asm);
-                // Create a new object, representing the German culture.  
+                SplashScreenManager.RegisterUserSkins(typeof(DevExpress.UserSkins.CategisSkin).Assembly);
                 BonusSkins.Register();
                 //UserLookAndFeel.Default.SetSkinStyle("Office 2019 Colorful");
                 UserLookAndFeel.Default.SetSkinStyle("CategisSkin");
@@ -59,7 +60,7 @@ namespace CalcPro
                     Log.Debug(msg);
                     Log.Info(msg);
                 };
-                Application.Run(new frmNewLogin());
+                Application.Run(new frmLogin());
             }
             catch (Exception ex)
             {

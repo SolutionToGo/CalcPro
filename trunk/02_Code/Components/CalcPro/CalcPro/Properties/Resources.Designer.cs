@@ -233,9 +233,39 @@ namespace CalcPro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap building {
+            get {
+                object obj = ResourceManager.GetObject("building", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Button_Refresh_icon {
             get {
                 object obj = ResourceManager.GetObject("Button-Refresh-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calcpro1 {
+            get {
+                object obj = ResourceManager.GetObject("calcpro1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CalcProLogo {
+            get {
+                object obj = ResourceManager.GetObject("CalcProLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -72,9 +72,8 @@
     <Reference Include="Accessibility">
       <Private>True</Private>
     </Reference>
-    <Reference Include="CategisSkin, Version=18.2.13.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\OTTOPro\trunk\02_Code\CategisSkin\CategisSkin.dll</HintPath>
+    <Reference Include="CategisSkin">
+      <HintPath>..\..\..\..\..\..\OTTOPro\trunk\02_Code\CategisSkin\CategisSkin.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.BonusSkins.v18.2, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -407,6 +406,12 @@
     <Compile Include="frmLoadUsers.Designer.cs">
       <DependentUpon>frmLoadUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMergeArticle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -508,6 +513,12 @@
     </Compile>
     <Compile Include="frmShortCuts.Designer.cs">
       <DependentUpon>frmShortCuts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashScreen1.Designer.cs">
+      <DependentUpon>frmSplashScreen1.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSpreadsheetControl.cs">
       <SubType>Form</SubType>
@@ -777,12 +788,6 @@
     <Compile Include="Report Design\rptSupplierProposal.Designer.cs">
       <DependentUpon>rptSupplierProposal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSplashScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSplashScreen.Designer.cs">
-      <DependentUpon>frmSplashScreen.cs</DependentUpon>
-    </Compile>
     <Compile Include="TextDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -874,6 +879,9 @@
     <EmbeddedResource Include="frmLoadUsers.resx">
       <DependentUpon>frmLoadUsers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMergeArticle.resx">
       <DependentUpon>frmMergeArticle.cs</DependentUpon>
     </EmbeddedResource>
@@ -924,6 +932,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmShortCuts.resx">
       <DependentUpon>frmShortCuts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashScreen1.resx">
+      <DependentUpon>frmSplashScreen1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSpreadsheetControl.resx">
       <DependentUpon>frmSpreadsheetControl.cs</DependentUpon>
@@ -1026,9 +1037,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report Design\rptSupplierProposal.resx">
       <DependentUpon>rptSupplierProposal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSplashScreen.resx">
-      <DependentUpon>frmSplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TextDialog.resx">
       <DependentUpon>TextDialog.cs</DependentUpon>
@@ -1307,6 +1315,9 @@
     <None Include="Resources\download %281%29.jpg" />
     <None Include="Resources\Button-Refresh-icon.png" />
     <None Include="Resources\defaultImage.png" />
+    <None Include="Resources\building.jpg" />
+    <None Include="Resources\CalcProLogo.png" />
+    <None Include="Resources\calcpro1.png" />
     <Content Include="Resources\edit-icon %281%29.png" />
     <Content Include="Resources\edit-icon.png" />
     <None Include="Resources\Save_16x16.png" />

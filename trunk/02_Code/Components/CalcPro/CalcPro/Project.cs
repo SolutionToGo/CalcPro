@@ -53,7 +53,7 @@ using DevExpress.XtraEditors.Popup;
 
 namespace CalcPro
 {
-    public partial class frmProject : DevExpress.XtraEditors.XtraForm
+    public partial class frmProject : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         #region Local Variables
 
@@ -118,11 +118,6 @@ namespace CalcPro
         XtraTabPage ObjTabDetails = null;
         string _txtDimensions = string.Empty;
         string tType = null;
-        private bool _IsBindPD = true;
-        private bool _IsBindMulti5 = true;
-        private bool _IsBindMulti6 = true;
-        private bool _IsBindSP = true;
-        private bool _IsBindUSP = true;
         private bool _Usertrigger = true;
         double sum = 0;
         DataSet ds_oldPrj;
@@ -183,21 +178,21 @@ namespace CalcPro
                 splitContainerControl1.CollapsePanel = SplitCollapsePanel.Panel1;
                 splitContainerControl2.CollapsePanel = SplitCollapsePanel.Panel1;
 
-                tbLVDetails.PageVisible = false;
-                tbBulkProcess.PageVisible = false;
-                tbMulti5.PageVisible = false;
-                tbMulti6.PageVisible = false;
-                tbOmlage.PageVisible = false;
-                tbDeliveryNotes.PageVisible = false;
-                tbInvoices.PageVisible = false;
-                tbSupplierProposal.PageVisible = false;
-                tbUpdateSupplier.PageVisible = false;
-                tbCopyLVs.PageVisible = false;
-                tbAufmassReport.PageVisible = false;
-                tbReports.PageVisible = false;
+                //tbLVDetails.PageVisible = false;
+                //tbBulkProcess.PageVisible = false;
+                //tbMulti5.PageVisible = false;
+                //tbMulti6.PageVisible = false;
+                //tbOmlage.PageVisible = false;
+                //tbDeliveryNotes.PageVisible = false;
+                //tbInvoices.PageVisible = false;
+                //tbSupplierProposal.PageVisible = false;
+                //tbUpdateSupplier.PageVisible = false;
+                //tbCopyLVs.PageVisible = false;
+                //tbAufmassReport.PageVisible = false;
+                //tbReports.PageVisible = false;
                 Utility.SetLookupEditValue(cmbPositionKZ, "N-Normalposition");
                 chkCumulated.Checked = true;
-                tbFormBlatt1.PageVisible = false;
+                //tbFormBlatt1.PageVisible = false;
                 SetRoundingPriceforColumn();
 
                 if (ProjectID > 0)
@@ -323,28 +318,34 @@ namespace CalcPro
                     return;
                 }
 
-                if (tcProjectDetails.SelectedTabPage.Name == "tbProjectDetails")
+                if (tcProjectDetails.SelectedTabPage == tbProjectDetails)
                 {
-                    if (_IsBindPD)
+                    if (ObjEProject.IsFinalInvoice && Utility.ProjectDataAccess == "7")
+                        btnProjectSave.Enabled = false;
+                    if (tlPositions.Nodes.Count == 0)
+                        ddlRaster.Enabled = true;
+                    LoadExistingProject();
+                    FormatLVFields();
+                }
+                else if (tcProjectDetails.SelectedTabPage == tbLVDetails)
+                {
+                    if (ObjEProject.ProjectID > 0)
                     {
                         FormatLVFields();
-                        if (tlPositions.Nodes.Count > 0)
-                        {
-                            txtkommissionNumber.ReadOnly = false;
-                            ddlRaster.Enabled = false;
-                        }
+                        IntializeLVPositions();
+                        SetOhnestuffeMask();
+                        BindPositionData();
+                        SetMaskForMaulties();
+                        SetRoundingPriceforColumn();
+                        if (tlPositions.Nodes != null && tlPositions.Nodes.Count > 0)
+                            tlPositions.SetFocusedNode(tlPositions.MoveLastVisible());
                         else
                         {
-                            ddlRaster.Enabled = true;
+                            btnNext.Enabled = false;
+                            btnPrevious.Enabled = false;
                         }
-                        LoadExistingProject();
                     }
-                }
-                else if (tcProjectDetails.SelectedTabPage.Name == "tbLVDetails")
-                {
-                    BindPositionData();
-                    FormatLVFields();
-                    IntializeLVPositions();
+
                     if (string.IsNullOrEmpty(ObjEProject.CommissionNumber))
                     {
                         cmbLVSection.Enabled = false;
@@ -355,10 +356,252 @@ namespace CalcPro
                         cmbLVSection.Enabled = true;
                         btnAddLVSection.Enabled = true;
                     }
+
+                    //LV Details Access
+                    if (Utility.LVDetailsAccess == "9")
+                    {
+                        splitContainerControl2.PanelVisibility = SplitPanelVisibility.Panel2;
+                        btnNew.Enabled = false;
+                        chkCreateNew.Enabled = false;
+                        LVDetailsColumnReadOnly(true);
+                    }
+                    else if (Utility.LVDetailsAccess == "7")
+                    {
+                        splitContainerControl2.Panel1.Enabled = false;
+                        btnNew.Enabled = false;
+                        chkCreateNew.Enabled = false;
+                        LVDetailsColumnReadOnly(true);
+                    }
+                    else if (Utility.LVDetailsAccess == "8")
+                    {
+                        splitContainerControl2.Panel1.Enabled = true;
+                        btnNew.Enabled = true;
+                        chkCreateNew.Enabled = true;
+                        LVDetailsColumnReadOnly(false);
+                    }
+
+                    //Cost Details Access
+                    if (Utility.CalcAccess == "9")
+                    {
+                        splitContainerControl2.PanelVisibility = SplitPanelVisibility.Panel1;
+                        LVCalculationColumnReadOnly(true);
+                    }
+                    else if (Utility.CalcAccess == "7")
+                    {
+                        splitContainerControl2.Panel2.Enabled = false;
+                        LVCalculationColumnReadOnly(true);
+                    }
+                    else if (Utility.CalcAccess == "8")
+                    {
+                        splitContainerControl2.Panel2.Enabled = true;
+                        LVCalculationColumnReadOnly(false);
+                    }
+
+                    if (Utility.LVsectionAddAccess == "9" || Utility.LVsectionAddAccess == "7")
+                    {
+                        btnAddLVSection.Enabled = false;
+                        cmbLVSection.Enabled = false;
+                    }
+                    else
+                    {
+                        if (Utility.LVDetailsAccess != "8" && !string.IsNullOrEmpty(ObjEProject.CommissionNumber))
+                        {
+                            splitContainerControl2.PanelVisibility = SplitPanelVisibility.Panel1;
+                            splitContainerControl2.Panel1.Enabled = true;
+                            DataView dvLVSection = ObjEProject.dtLVSection.DefaultView;
+                            dvLVSection.RowFilter = "LVSectionName <> 'HA'";
+                            cmbLVSection.Properties.DataSource = ObjEProject.dtLVSection;
+                            cmbLVSection.Properties.DisplayMember = "LVSectionName";
+                            cmbLVSection.Properties.ValueMember = "LVSectionID";
+                            btnNew.Enabled = true;
+                            chkCreateNew.Enabled = true;
+                            LVDetailsColumnReadOnly(true);
+                        }
+                    }
+
+                    if (Utility.LVDetailsAccess == "9" && Utility.CalcAccess == "9" && (Utility.LVsectionAddAccess != "8" || string.IsNullOrEmpty(ObjEProject.CommissionNumber)))
+                        splitContainerControl1.PanelVisibility = SplitPanelVisibility.Panel2;
+                    else
+                    {
+                        //if(splitContainerControl1.PanelVisibility == SplitPanelVisibility.Panel2)
+                    }
+                    if (ObjEProject.IsFinalInvoice)
+                    {
+                        btnNew.Enabled = false;
+                        btnSaveLVDetails.Enabled = false;
+                        btnCancel.Enabled = false;
+                        chkCreateNew.Enabled = false;
+                        tlPositions.OptionsBehavior.Editable = false;
+                    }
+
+                    if (splitContainerControl2.PanelVisibility == SplitPanelVisibility.Panel1)
+                        splitContainerControl1.SplitterPosition = 350;
+                    else if (splitContainerControl2.PanelVisibility == SplitPanelVisibility.Panel2)
+                        splitContainerControl1.SplitterPosition = 560;
                 }
-                else if (tcProjectDetails.SelectedTabPage.Name == "tbUpdateSupplier")
+                else if (tcProjectDetails.SelectedTabPage == tbBulkProcess)
                 {
-                    if (_IsBindUSP)
+                    ObjBProject.GetProjectDetails(ObjEProject);
+                    if (ObjEProject.ActualLvs == 0)
+                        return;
+                    if (ObjEProject.ProjectID > 0)
+                    {
+                        if (txtkommissionNumber.Text != "")
+                        {
+                            checkEditSectionAMulti5MA.Enabled = false;
+                            checkEditSectionAMulti5MO.Enabled = false;
+                            checkEditSectionAMulti6MA.Enabled = false;
+                            checkEditSectionAMulti6MO.Enabled = false;
+                            btnSaveActionA.Enabled = false;
+
+                            checkEditPositionMenge.Enabled = false;
+                            checkEditMaterialKz.Enabled = false;
+                            checkEditMontageKZ.Enabled = false;
+                            checkEditPreisErstaztext.Enabled = false;
+                            checkEditArtikelnummerWG.Enabled = false;
+                            checkEditFabrikat.Enabled = false;
+                            checkEditTyp.Enabled = false;
+                            checkEditLieferantMA.Enabled = false;
+                            btnSavesectionB.Enabled = false;
+                            checkEditNachtragsnummer.Enabled = true;
+                        }
+                        else
+                        {
+                            checkEditSectionAMulti5MA.Enabled = true;
+                            checkEditSectionAMulti5MO.Enabled = true;
+                            checkEditSectionAMulti6MA.Enabled = true;
+                            checkEditSectionAMulti6MO.Enabled = true;
+                            btnSaveActionA.Enabled = true;
+
+                            checkEditPositionMenge.Enabled = true;
+                            checkEditMaterialKz.Enabled = true;
+                            checkEditMontageKZ.Enabled = true;
+                            checkEditPreisErstaztext.Enabled = true;
+                            checkEditArtikelnummerWG.Enabled = true;
+                            checkEditFabrikat.Enabled = true;
+                            checkEditTyp.Enabled = true;
+                            checkEditLieferantMA.Enabled = true;
+                            btnSavesectionB.Enabled = true;
+                            checkEditNachtragsnummer.Enabled = false;
+
+                        }
+
+                    }
+                    if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
+                        btnApply.Enabled = false;
+                    if (!string.IsNullOrEmpty(ObjEProject.CommissionNumber))
+                    {
+                        if (Utility.LVsectionAddAccess == "9" || Utility.LVsectionAddAccess == "7"
+                             || Utility.LVSectionEditAccess == "9" || Utility.LVSectionEditAccess == "7")
+                            btnApply.Enabled = false;
+                    }
+                }
+                else if (tcProjectDetails.SelectedTabPage == tbMulti5)
+                {
+                    if (ObjEProject.ProjectID > 0)
+                    {
+                        if (objBGAEB == null)
+                            objBGAEB = new BGAEB();
+                        DataTable dtLVSection = new DataTable();
+                        dtLVSection = objBGAEB.GetLVSection(ObjEProject.ProjectID);
+
+                        if (Utility.LVSectionEditAccess == "7")
+                        {
+                            DataTable dttemp = dtLVSection.Copy();
+                            DataView dv = dttemp.DefaultView;
+                            dv.RowFilter = "LVSectionName = 'HA'";
+                            dtLVSection = new DataTable();
+                            dtLVSection = dv.ToTable();
+                        }
+
+                        cmbLVSectionFilter.Properties.DataSource = dtLVSection;
+                        cmbLVSectionFilter.Properties.DisplayMember = "LVSectionName";
+                        cmbLVSectionFilter.Properties.ValueMember = "LVSectionID";
+
+                        cmbLVSectionMulti5.Properties.DataSource = dtLVSection;
+                        cmbLVSectionMulti5.Properties.DisplayMember = "LVSectionName";
+                        cmbLVSectionMulti5.Properties.ValueMember = "LVSectionID";
+
+                        Utility.SetCheckedComboexitValue(cmbLVSectionFilter, "HA");
+                        btnMulti5LoadArticles_Click(null, null);
+                        gvMulti5.BestFitColumns();
+                        if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
+                            btnMulti5UpdateSelbekosten.Enabled = false;
+                    }
+                }
+                else if (tcProjectDetails.SelectedTabPage == tbMulti6)
+                {
+                    if (ObjEProject.ProjectID > 0)
+                    {
+                        if (objBGAEB == null)
+                            objBGAEB = new BGAEB();
+                        DataTable dtLVSection = new DataTable();
+                        gcMulti6.DataSource = null;
+                        dtLVSection = objBGAEB.GetLVSection(ObjEProject.ProjectID);
+
+                        if (Utility.LVSectionEditAccess == "7")
+                        {
+                            DataTable dttemp = dtLVSection.Copy();
+                            DataView dv = dttemp.DefaultView;
+                            dv.RowFilter = "LVSectionName = 'HA'";
+                            dtLVSection = new DataTable();
+                            dtLVSection = dv.ToTable();
+                        }
+
+                        cmbMulti6LVFilter.Properties.DataSource = dtLVSection;
+                        cmbMulti6LVFilter.Properties.DisplayMember = "LVSectionName";
+                        cmbMulti6LVFilter.Properties.ValueMember = "LVSectionID";
+
+                        cmbLvSectionMulti6.Properties.DataSource = dtLVSection;
+                        cmbLvSectionMulti6.Properties.DisplayMember = "LVSectionName";
+                        cmbLvSectionMulti6.Properties.ValueMember = "LVSectionID";
+
+                        Utility.SetCheckedComboexitValue(cmbMulti6LVFilter, "HA");
+                        cmbType.SelectedIndex = 0;
+
+                        btnMulti6LoadArticles_Click(null, null);
+                        gvMulti6.BestFitColumns();
+                        if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
+                            btnMulti6UpdateSelbekosten.Enabled = false;
+                    }
+                }
+                else if (tcProjectDetails.SelectedTabPage == tbOmlage)
+                {
+                    ObjBProject.GetProjectDetails(ObjEProject);
+                    if (ObjEProject.ProjectID > 0 && ObjEProject.CommissionNumber == string.Empty && ObjEProject.ActualLvs > 0)
+                    {
+                        if (ObjEUmlage == null)
+                            ObjEUmlage = new EUmlage();
+                        if (ObjBUmlage == null)
+                            ObjBUmlage = new BUmlage();
+                        ObjEUmlage.ProjectID = ObjEProject.ProjectID;
+                        ObjEUmlage = ObjBUmlage.GetSpecialCost(ObjEUmlage);
+                        rgUmlageMode.SelectedIndex = ObjEUmlage.UmlageMode;
+                        gcOmlage.DataSource = ObjEUmlage.dtSpecialCost;
+                        rgUmlageMode_SelectedIndexChanged(null, null);
+                        if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
+                        {
+                            btnUmlageSave.Enabled = false;
+                            btnAddedCost.Enabled = false;
+                        }
+                    }
+                }
+                else if (tcProjectDetails.SelectedTabPage == tbSupplierProposal)
+                {
+                    if (ObjEProject.ProjectID > 0)
+                    {
+                        ObjESupplier.ProjectID = ObjEProject.ProjectID;
+                        FillLVSection();
+                        gcDeletedDetails.DataSource = null;
+                        gcProposedDetails.DataSource = null;
+                        if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
+                            btnSaveSupplierProposal.Enabled = false;
+                        cmbLVSectionProposal_Closed(null, null);
+                    }
+                }
+                else if (tcProjectDetails.SelectedTabPage == tbUpdateSupplier)
+                {
+                    if (ObjEProject.ProjectID > 0)
                     {
                         radioGroup1.SelectedIndex = 0;
                         FillProposalNumbers();
@@ -370,29 +613,7 @@ namespace CalcPro
                             btnSubmit.Enabled = false;
                             gvSupplier.OptionsBehavior.Editable = false;
                         }
-                    }
-                }
-                else if (tcProjectDetails.SelectedTabPage.Name == "tbMulti5")
-                {
-                    if (_IsBindMulti5)
-                        btnMulti5LoadArticles_Click(null, null);
-                }
-                else if (tcProjectDetails.SelectedTabPage.Name == "tbMulti6")
-                {
-                    if (_IsBindMulti6)
-                        btnMulti6LoadArticles_Click(null, null);
-                }
-                else if (tcProjectDetails.SelectedTabPage.Name == "tbSupplierProposal")
-                {
-                    if (_IsBindSP)
-                    {
-                        ObjESupplier.ProjectID = ObjEProject.ProjectID;
-                        FillLVSection();
-                        gcDeletedDetails.DataSource = null;
-                        gcProposedDetails.DataSource = null;
-                        if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
-                            btnSaveSupplierProposal.Enabled = false;
-                        cmbLVSectionProposal_Closed(null, null);
+                        gvProposal_RowClick(null, null);
                     }
                 }
             }
@@ -626,27 +847,67 @@ namespace CalcPro
                     btnApply_Click(null, null);
                 else if (tcProjectDetails.SelectedTabPage == tbMulti5)
                 {
-                    navBarItemMulti5_LinkClicked(null, null);
+                    cmbLVSectionFilter_Closed(null, null);
                     if (cmbLVSectionMulti5.EditValue != null)
                         cmbLVSectionMulti5_Closed(null, null);
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbMulti6)
                 {
                     cmbMulti6LVFilter_Closed(null, null);
-                    if (!string.IsNullOrEmpty(cmbLvSectionMulti6.Text))
-                         cmbLvSectionMulti6_Closed(null, null);
+                    if (cmbLvSectionMulti6.EditValue != null)
+                        cmbLvSectionMulti6_Closed(null, null);
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbOmlage)
-                    navBarItemUmlage_LinkClicked(null, null);
+                {
+                    ObjBProject.GetProjectDetails(ObjEProject);
+                    if (ObjEProject.ProjectID > 0 && ObjEProject.CommissionNumber == string.Empty && ObjEProject.ActualLvs > 0)
+                    {
+                        if (ObjEUmlage == null)
+                            ObjEUmlage = new EUmlage();
+                        if (ObjBUmlage == null)
+                            ObjBUmlage = new BUmlage();
+                        ObjEUmlage.ProjectID = ObjEProject.ProjectID;
+                        ObjEUmlage = ObjBUmlage.GetSpecialCost(ObjEUmlage);
+                        rgUmlageMode.SelectedIndex = ObjEUmlage.UmlageMode;
+                        gcOmlage.DataSource = ObjEUmlage.dtSpecialCost;
+                        rgUmlageMode_SelectedIndexChanged(null, null);
+                        if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
+                        {
+                            btnUmlageSave.Enabled = false;
+                            btnAddedCost.Enabled = false;
+                        }
+                    }
+                }
                 else if (tcProjectDetails.SelectedTabPage == tbSupplierProposal)
                 {
-                    navBarItemSupplierProposal_LinkClicked(null, null);
-                    gvProposedSupplier_RowClick(null, null);
+                    if (ObjEProject.ProjectID > 0)
+                    {
+                        ObjESupplier.ProjectID = ObjEProject.ProjectID;
+                        FillLVSection();
+                        gcDeletedDetails.DataSource = null;
+                        gcProposedDetails.DataSource = null;
+                        if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
+                            btnSaveSupplierProposal.Enabled = false;
+                        cmbLVSectionProposal_Closed(null, null);
+                        gvProposedSupplier_RowClick(null, null);
+                    }
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbUpdateSupplier)
                 {
-                    navBarItemUpdateSupplierProposal_LinkClicked(null, null);
-                    gvProposal_RowClick(null, null);
+                    if (ObjEProject.ProjectID > 0)
+                    {
+                        radioGroup1.SelectedIndex = 0;
+                        FillProposalNumbers();
+                        gcDeletedDetails.DataSource = null;
+                        gcProposedDetails.DataSource = null;
+                        if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
+                        {
+                            layoutControl16.Enabled = false;
+                            btnSubmit.Enabled = false;
+                            gvSupplier.OptionsBehavior.Editable = false;
+                        }
+                        gvProposal_RowClick(null, null);
+                    }
                 }
             }
             catch (Exception ex)
@@ -675,6 +936,269 @@ namespace CalcPro
         }
 
         #endregion
+
+        #endregion
+
+        #region "NavigationBar Events"
+
+        private void navBarItemExport_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            try
+            {
+                ObjBProject.GetProjectDetails(ObjEProject);
+                if (ObjEProject.IsFinalInvoice)
+                    return;
+                BindPositionData();
+                if (ObjEProject.ActualLvs == 0)
+                {
+                    if (Utility._IsGermany == true)
+                        XtraMessageBox.Show("Es liegen keine LV Positionen für den Export vor!");
+                    else
+                        XtraMessageBox.Show("No LV Positions to Export.!");
+                    return;
+                }
+                if (ObjEProject.ProjectID > 0)
+                {
+                    if (objBGAEB == null)
+                        objBGAEB = new BGAEB();
+                    if (objEGAEB == null)
+                        objEGAEB = new EGAEB();
+                    string SelectedRaster = ObjEProject.LVRaster;
+                    bool _rtnOldRaster = false;
+                    objEGAEB.OldRaster = objBGAEB.GetOld_Raster(ObjEProject.ProjectID);
+                    if (objEGAEB.OldRaster != "")
+                    {
+                        objEGAEB.NewRaster = ObjEProject.LVRaster;
+                        frmSelectRaster frm = new frmSelectRaster(objEGAEB);
+                        frm.ShowDialog();
+                        if (frm.DialogResult == DialogResult.OK)
+                        {
+                            SelectedRaster = frm.LVRaster;
+                            if (ObjEProject.LVRaster != SelectedRaster)
+                                _rtnOldRaster = true;
+                        }
+                        else
+                            return;
+                    }
+                    int raster_count = SelectedRaster.Replace(".", string.Empty).Length;
+                    frmGAEBExport Obj = new frmGAEBExport(ObjEProject.ProjectNumber, ObjEProject.ProjectID, raster_count, SelectedRaster, _rtnOldRaster);
+                    Obj.KNr = ObjEProject.CommissionNumber;
+                    Obj.ShowDialog();
+                    if (File.Exists(Obj.OutputFilePath))
+                        Process.Start("explorer.exe", "/select, \"" + Obj.OutputFilePath + "\"");
+                }
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+
+        private void navBarItemImport_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            try
+            {
+                if (ObjEProject.ProjectID > 0)
+                {
+                    if (ObjEProject.IsFinalInvoice)
+                        return;
+                    frmGAEBImport Obj = new frmGAEBImport();
+                    Obj.ProjectID = ObjEProject.ProjectID;
+                    Obj.KNr = ObjEProject.CommissionNumber;
+                    Obj.ShowDialog();
+                    ProjectID = Obj.ProjectID;
+                    if (ProjectID > 0 && Obj.isbuild)
+                    {
+                        SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
+                        SplashScreenManager.Default.SetWaitFormDescription("Laden Projekt...");
+                        LoadExistingRasters();
+                        LoadExistingProject();
+                        BindPositionData();
+                        IntializeLVPositions();
+                        if (ObjEProject.ActualLvs == 0)
+                            ChkRaster.Enabled = true;
+                        else
+                            ChkRaster.Enabled = false;
+                        SplashScreenManager.CloseForm(false);
+                        frmCalcPro.UpdateStatus("Projektdatenimport mit Erfolg abgeschlossen");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                SplashScreenManager.CloseForm(false);
+                if (Utility._IsGermany == true)
+                {
+                    throw new Exception("Das ausgewählte Datei-Raster ist nicht mit dem ausgewählten Projektraster kompatibel!");
+                }
+                else
+                {
+                    Utility.ShowError(ex);
+                }
+            }
+        }
+
+        private void navBarControl1_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            try
+            {
+                navBarControl1.SelectedLink = e.Link;
+
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+
+        private void nbArticleSettings_LinkPressed(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            frmArticleSettings Obj = new frmArticleSettings(ObjEProject);
+            Obj.ShowDialog();
+        }
+
+        private void nbFormBlattArticleMapping_LinkPressed(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            try
+            {
+                ObjEPosition.ProjectID = ObjEProject.ProjectID;
+                frmFormBlattarticles Obj = new frmFormBlattarticles(ObjEPosition);
+                Obj.ShowDialog();
+            }
+            catch (Exception ex) { }
+        }
+
+        private void nbProjectArticles_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            try
+            {
+                ObjEPosition.ProjectID = ObjEProject.ProjectID;
+                frmProjectArticles Obj = new frmProjectArticles(ObjEPosition);
+                Obj.ShowDialog();
+            }
+            catch (Exception ex) { }
+        }
+
+        private void nbBreakdownReport_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            try
+            {
+                rptSampleBreakdown rptMA = new rptSampleBreakdown();
+                rptMA.Name = "Einzelaufgliederung Beispiel";
+                //rptMA.Name = "Einzelaufgliederung Beispiel_" + ObjEProject.ProjectDescription.Replace("-", "");
+                ReportPrintTool printTool = new ReportPrintTool(rptMA);
+                rptMA.Parameters["ProjectID"].Value = ObjEProject.ProjectID;
+                rptMA.Parameters["InternX"].Value = ObjEProject.InternX;
+                rptMA.Parameters["InternS"].Value = ObjEProject.InternS;
+                rptMA.PrintingSystem.Document.AutoFitToPagesWidth = 1;
+                printTool.ShowRibbonPreview();
+            }
+            catch (Exception ex) { }
+        }
+
+        private void navBarItemConsolidateBlatt_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            try
+            {
+                rptConsolidatedBlatt rpt = new rptConsolidatedBlatt();
+                ReportPrintTool printTool = new ReportPrintTool(rpt);
+                rpt.Parameters["ProjectID"].Value = ObjEProject.ProjectID;
+                printTool.ShowRibbonPreview();
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+
+        private void navBarItemQuerKalkulation_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            try
+            {
+                frmQuerKalculation frm = new frmQuerKalculation(ObjEProject.ProjectID, ObjEProject.ProjectDescription);
+                frm.stRaster = ObjEProject.LVRaster;
+                frm.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+
+        private void navBarReports_ItemChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                TabChange(tbReports);
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+
+        private void navBarForms_ItemChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                // navBarItemProject_LinkClicked(null, null);
+                tbReports.PageVisible = false;
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+
+        private void nbComparePrice_LinkPressed(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            try
+            {
+                if (tcProjectDetails.SelectedTabPage.Name == "tbLVDetails")
+                {
+                    if (tlPositions.Nodes.Count > 0)
+                    {
+                        panelControldoc.Visible = true;
+                        toggleSwitchType.Visible = true;
+                        dockPanelArticles.Show();
+                        dockPanelArticles_Click(null, null);
+                        lblArticles.Text = "Artikels :" + txtWG.Text + "/" + txtWA.Text + "/" + txtWI.Text;
+                        lblDimensions.Text = "Maße :" + txtDim1.Text + "/" + txtDim2.Text + "/" + txtDim3.Text;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+
+        private void navBarItemCommonReport_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            try
+            {
+                frmReportSetting Obj = new frmReportSetting(ObjEProject.ProjectID, ObjEProject.ProjectDescription, ObjEProject.LVRaster);
+                Obj.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+
+        private void nbQuerCalcV2_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            try
+            {
+                frmQuerKalculation frm = new frmQuerKalculation(ObjEProject.ProjectID, ObjEProject.ProjectDescription, 2);
+                frm.stRaster = ObjEProject.LVRaster;
+                frm.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
 
         #endregion
 
@@ -1165,7 +1689,6 @@ namespace CalcPro
                     dtpProjectStartDate.Properties.MinValue = DateTime.Today;
                     dtpProjectEndDate.Properties.MinValue = DateTime.Today;
                 }
-                _IsBindPD = true;
             }
             catch (Exception ex)
             {
@@ -8129,7 +8652,6 @@ namespace CalcPro
                     ObjEMulti = ObjBMulti.GetArticleGroups(ObjEMulti);
                     gcMulti5.DataSource = ObjEMulti.dtArticles;
                 }
-                _IsBindMulti5 = true;
             }
             catch (Exception ex){Utility.ShowError(ex);}
         }
@@ -8276,7 +8798,6 @@ namespace CalcPro
                     ObjEMulti = ObjBMulti.GetArticleGroupsForMulti6(ObjEMulti);
                     gcMulti6.DataSource = ObjEMulti.dtArticles;
                 }
-                _IsBindMulti6 = true;
             }
             catch (Exception ex)
             {
@@ -8291,8 +8812,7 @@ namespace CalcPro
 
         private void cmbType_SelectedValueChanged(object sender, EventArgs e)
         {
-            if (_IsBindMulti6)
-                btnMulti6LoadArticles_Click(null, null);
+            btnMulti6LoadArticles_Click(null, null);
         }
 
         private void gvMulti6_KeyDown(object sender, KeyEventArgs e)
@@ -8539,613 +9059,6 @@ namespace CalcPro
                 }
             }
             catch (Exception ex) { }
-        }
-
-        #endregion
-
-        #region "NavigationBar Events"
-
-        private void navBarItemProject_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                _IsBindPD = false;
-                if (ObjEProject.IsFinalInvoice && Utility.ProjectDataAccess == "7")
-                    btnProjectSave.Enabled = false;
-                ObjTabDetails = tbProjectDetails;
-                TabChange(ObjTabDetails);
-                FormatLVFields();
-                if (tlPositions.Nodes.Count > 0)
-                {
-                    txtkommissionNumber.ReadOnly = false;
-                    ddlRaster.Enabled = false;
-                }
-                else
-                {
-                    ddlRaster.Enabled = true;
-                }
-                LoadExistingProject();
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarItemLVDetails_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            tlPositions.Cursor = Cursors.Default;
-            try
-            {
-                if (ObjEProject.ProjectID > 0)
-                {
-                    IntializeLVPositions();
-                    SetOhnestuffeMask();
-                    ObjTabDetails = tbLVDetails;
-                    TabChange(ObjTabDetails);
-                    if (tbLVDetails.PageVisible == false || IsRefresh)
-                    {
-                        BindPositionData();
-                    }
-                    if (tlPositions.Nodes != null && tlPositions.Nodes.Count > 0)
-                        tlPositions.SetFocusedNode(tlPositions.MoveLastVisible());
-
-                    else
-                    {
-                        btnNext.Enabled = false;
-                        btnPrevious.Enabled = false;
-                    }
-                }
-                SetMaskForMaulties();
-                if (string.IsNullOrEmpty(ObjEProject.CommissionNumber))
-                {
-                    cmbLVSection.Enabled = false;
-                    btnAddLVSection.Enabled = false;
-                }
-                else
-                {
-                    cmbLVSection.Enabled = true;
-                    btnAddLVSection.Enabled = true;
-                }
-                //LV Details Access
-                if (Utility.LVDetailsAccess == "9")
-                {
-                    splitContainerControl2.PanelVisibility = SplitPanelVisibility.Panel2;
-                    btnNew.Enabled = false;
-                    chkCreateNew.Enabled = false;
-                    LVDetailsColumnReadOnly(true);
-                }
-                else if (Utility.LVDetailsAccess == "7")
-                {
-                    splitContainerControl2.Panel1.Enabled = false;
-                    btnNew.Enabled = false;
-                    chkCreateNew.Enabled = false;
-                    LVDetailsColumnReadOnly(true);
-                }
-                else if (Utility.LVDetailsAccess == "8")
-                {
-                    splitContainerControl2.Panel1.Enabled = true;
-                    btnNew.Enabled = true;
-                    chkCreateNew.Enabled = true;
-                    LVDetailsColumnReadOnly(false);
-                }
-
-                //Cost Details Access
-                if (Utility.CalcAccess == "9")
-                {
-                    splitContainerControl2.PanelVisibility = SplitPanelVisibility.Panel1;
-                    LVCalculationColumnReadOnly(true);
-                }
-                else if (Utility.CalcAccess == "7")
-                {
-                    splitContainerControl2.Panel2.Enabled = false;
-                    LVCalculationColumnReadOnly(true);
-                }
-                else if (Utility.CalcAccess == "8")
-                {
-                    splitContainerControl2.Panel2.Enabled = true;
-                    LVCalculationColumnReadOnly(false);
-                }
-
-                if (Utility.LVsectionAddAccess == "9" || Utility.LVsectionAddAccess == "7")
-                {
-                    btnAddLVSection.Enabled = false;
-                    cmbLVSection.Enabled = false;
-                }
-                else
-                {
-                    if (Utility.LVDetailsAccess != "8" && !string.IsNullOrEmpty(ObjEProject.CommissionNumber))
-                    {
-                        splitContainerControl2.PanelVisibility = SplitPanelVisibility.Panel1;
-                        splitContainerControl2.Panel1.Enabled = true;
-                        DataView dvLVSection = ObjEProject.dtLVSection.DefaultView;
-                        dvLVSection.RowFilter = "LVSectionName <> 'HA'";
-                        cmbLVSection.Properties.DataSource = ObjEProject.dtLVSection;
-                        cmbLVSection.Properties.DisplayMember = "LVSectionName";
-                        cmbLVSection.Properties.ValueMember = "LVSectionID";
-                        btnNew.Enabled = true;
-                        chkCreateNew.Enabled = true;
-                        LVDetailsColumnReadOnly(true);
-                    }
-                }
-
-                if (Utility.LVDetailsAccess == "9" && Utility.CalcAccess == "9" && (Utility.LVsectionAddAccess != "8" || string.IsNullOrEmpty(ObjEProject.CommissionNumber)))
-                    splitContainerControl1.PanelVisibility = SplitPanelVisibility.Panel2;
-                else
-                {
-                    //if(splitContainerControl1.PanelVisibility == SplitPanelVisibility.Panel2)
-                }
-                if (ObjEProject.IsFinalInvoice)
-                {
-                    btnNew.Enabled = false;
-                    btnSaveLVDetails.Enabled = false;
-                    btnCancel.Enabled = false;
-                    chkCreateNew.Enabled = false;
-                    tlPositions.OptionsBehavior.Editable = false;
-                }
-
-                if (splitContainerControl2.PanelVisibility == SplitPanelVisibility.Panel1)
-                    splitContainerControl1.SplitterPosition = 350;
-                else if (splitContainerControl2.PanelVisibility == SplitPanelVisibility.Panel2)
-                    splitContainerControl1.SplitterPosition = 560;
-
-                SetRoundingPriceforColumn();
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarItemBulkProcess_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                ObjBProject.GetProjectDetails(ObjEProject);
-                if (ObjEProject.ActualLvs == 0)
-                    return;
-                if (txtkommissionNumber.Text != "")
-                {
-                    checkEditSectionAMulti5MA.Enabled = false;
-                    checkEditSectionAMulti5MO.Enabled = false;
-                    checkEditSectionAMulti6MA.Enabled = false;
-                    checkEditSectionAMulti6MO.Enabled = false;
-                    btnSaveActionA.Enabled = false;
-
-                    checkEditPositionMenge.Enabled = false;
-                    checkEditMaterialKz.Enabled = false;
-                    checkEditMontageKZ.Enabled = false;
-                    checkEditPreisErstaztext.Enabled = false;
-                    checkEditArtikelnummerWG.Enabled = false;
-                    checkEditFabrikat.Enabled = false;
-                    checkEditTyp.Enabled = false;
-                    checkEditLieferantMA.Enabled = false;
-                    btnSavesectionB.Enabled = false;
-                    checkEditNachtragsnummer.Enabled = true;
-                }
-                else
-                {
-                    checkEditSectionAMulti5MA.Enabled = true;
-                    checkEditSectionAMulti5MO.Enabled = true;
-                    checkEditSectionAMulti6MA.Enabled = true;
-                    checkEditSectionAMulti6MO.Enabled = true;
-                    btnSaveActionA.Enabled = true;
-
-                    checkEditPositionMenge.Enabled = true;
-                    checkEditMaterialKz.Enabled = true;
-                    checkEditMontageKZ.Enabled = true;
-                    checkEditPreisErstaztext.Enabled = true;
-                    checkEditArtikelnummerWG.Enabled = true;
-                    checkEditFabrikat.Enabled = true;
-                    checkEditTyp.Enabled = true;
-                    checkEditLieferantMA.Enabled = true;
-                    btnSavesectionB.Enabled = true;
-                    checkEditNachtragsnummer.Enabled = false;
-
-                }
-                if (ObjEProject.ProjectID > 0)
-                {
-                    tlBulkProcessPositionDetails.Cursor = Cursors.Default;
-                    ObjTabDetails = tbBulkProcess;
-                    TabChange(ObjTabDetails);
-                    tlBulkProcessPositionDetails.BestFitColumns();
-                }
-                if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
-                    btnApply.Enabled = false;
-                if (!string.IsNullOrEmpty(ObjEProject.CommissionNumber))
-                {
-                    if (Utility.LVsectionAddAccess == "9" || Utility.LVsectionAddAccess == "7"
-                         || Utility.LVSectionEditAccess == "9" || Utility.LVSectionEditAccess == "7")
-                        btnApply.Enabled = false;
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarItemMulti5_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                _IsBindMulti5 = false;
-                if (ObjEProject.ProjectID > 0)
-                {
-                    ObjTabDetails = tbMulti5;
-                    TabChange(ObjTabDetails);
-
-                    if (objBGAEB == null)
-                        objBGAEB = new BGAEB();
-                    DataTable dtLVSection = new DataTable();
-                    dtLVSection = objBGAEB.GetLVSection(ObjEProject.ProjectID);
-
-                    if (Utility.LVSectionEditAccess == "7")
-                    {
-                        DataTable dttemp = dtLVSection.Copy();
-                        DataView dv = dttemp.DefaultView;
-                        dv.RowFilter = "LVSectionName = 'HA'";
-                        dtLVSection = new DataTable();
-                        dtLVSection = dv.ToTable();
-                    }
-
-                    cmbLVSectionFilter.Properties.DataSource = dtLVSection;
-                    cmbLVSectionFilter.Properties.DisplayMember = "LVSectionName";
-                    cmbLVSectionFilter.Properties.ValueMember = "LVSectionID";
-
-                    cmbLVSectionMulti5.Properties.DataSource = dtLVSection;
-                    cmbLVSectionMulti5.Properties.DisplayMember = "LVSectionName";
-                    cmbLVSectionMulti5.Properties.ValueMember = "LVSectionID";
-                    Utility.SetCheckedComboexitValue(cmbLVSectionFilter, "HA");
-                    btnMulti5LoadArticles_Click(null, null);
-                    gvMulti5.BestFitColumns();
-                    if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
-                        btnMulti5UpdateSelbekosten.Enabled = false;
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarItemMulti6_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                _IsBindMulti6 = false;
-                if (ObjEProject.ProjectID > 0)
-                {
-                    ObjTabDetails = tbMulti6;
-                    TabChange(ObjTabDetails);
-
-
-                    if (objBGAEB == null)
-                        objBGAEB = new BGAEB();
-                    DataTable dtLVSection = new DataTable();
-                    gcMulti6.DataSource = null;
-                    dtLVSection = objBGAEB.GetLVSection(ObjEProject.ProjectID);
-
-                    if (Utility.LVSectionEditAccess == "7")
-                    {
-                        DataTable dttemp = dtLVSection.Copy();
-                        DataView dv = dttemp.DefaultView;
-                        dv.RowFilter = "LVSectionName = 'HA'";
-                        dtLVSection = new DataTable();
-                        dtLVSection = dv.ToTable();
-                    }
-
-                    cmbMulti6LVFilter.Properties.DataSource = dtLVSection;
-                    cmbMulti6LVFilter.Properties.DisplayMember = "LVSectionName";
-                    cmbMulti6LVFilter.Properties.ValueMember = "LVSectionID";
-
-                    cmbLvSectionMulti6.Properties.DataSource = dtLVSection;
-                    cmbLvSectionMulti6.Properties.DisplayMember = "LVSectionName";
-                    cmbLvSectionMulti6.Properties.ValueMember = "LVSectionID";
-
-                    Utility.SetCheckedComboexitValue(cmbMulti6LVFilter, "HA");
-                    cmbType.SelectedIndex = 0;
-
-                    btnMulti6LoadArticles_Click(null, null);
-                    gvMulti6.BestFitColumns();
-                    if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
-                        btnMulti6UpdateSelbekosten.Enabled = false;
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarItemExport_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                ObjBProject.GetProjectDetails(ObjEProject);
-                if (ObjEProject.IsFinalInvoice)
-                    return;
-                BindPositionData();
-                if (ObjEProject.ActualLvs == 0)
-                {
-                    if (Utility._IsGermany == true)
-                        XtraMessageBox.Show("Es liegen keine LV Positionen für den Export vor!");
-                    else
-                        XtraMessageBox.Show("No LV Positions to Export.!");
-                    return;
-                }
-                if (ObjEProject.ProjectID > 0)
-                {
-                    if (objBGAEB == null)
-                        objBGAEB = new BGAEB();
-                    if (objEGAEB == null)
-                        objEGAEB = new EGAEB();
-                    string SelectedRaster = ObjEProject.LVRaster;
-                    bool _rtnOldRaster = false;
-                    objEGAEB.OldRaster = objBGAEB.GetOld_Raster(ObjEProject.ProjectID);
-                    if (objEGAEB.OldRaster != "")
-                    {
-                        objEGAEB.NewRaster = ObjEProject.LVRaster;
-                        frmSelectRaster frm = new frmSelectRaster(objEGAEB);
-                        frm.ShowDialog();
-                        if (frm.DialogResult == DialogResult.OK)
-                        {
-                            SelectedRaster = frm.LVRaster;
-                            if (ObjEProject.LVRaster != SelectedRaster)
-                                _rtnOldRaster = true;
-                        }
-                        else
-                            return;
-                    }
-                    int raster_count = SelectedRaster.Replace(".", string.Empty).Length;
-                    frmGAEBExport Obj = new frmGAEBExport(ObjEProject.ProjectNumber, ObjEProject.ProjectID, raster_count, SelectedRaster, _rtnOldRaster);
-                    Obj.KNr = ObjEProject.CommissionNumber;
-                    Obj.ShowDialog();
-                    if (File.Exists(Obj.OutputFilePath))
-                        Process.Start("explorer.exe", "/select, \"" + Obj.OutputFilePath + "\"");
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarItemImport_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                if (ObjEProject.ProjectID > 0)
-                {
-                    if (ObjEProject.IsFinalInvoice)
-                        return;
-                    frmGAEBImport Obj = new frmGAEBImport();
-                    Obj.ProjectID = ObjEProject.ProjectID;
-                    Obj.KNr = ObjEProject.CommissionNumber;
-                    Obj.ShowDialog();
-                    ProjectID = Obj.ProjectID;
-                    if (ProjectID > 0 && Obj.isbuild)
-                    {
-                        SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
-                        SplashScreenManager.Default.SetWaitFormDescription("Laden Projekt...");
-                        LoadExistingRasters();
-                        LoadExistingProject();
-                        BindPositionData();
-                        IntializeLVPositions();
-                        if (ObjEProject.ActualLvs == 0)
-                            ChkRaster.Enabled = true;
-                        else
-                            ChkRaster.Enabled = false;
-                        SplashScreenManager.CloseForm(false);
-                        frmCalcPro.UpdateStatus("Projektdatenimport mit Erfolg abgeschlossen");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                SplashScreenManager.CloseForm(false);
-                if (Utility._IsGermany == true)
-                {
-                    throw new Exception("Das ausgewählte Datei-Raster ist nicht mit dem ausgewählten Projektraster kompatibel!");
-                }
-                else
-                {
-                    Utility.ShowError(ex);
-                }
-            }
-        }
-
-        private void navBarItemUmlage_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                ObjBProject.GetProjectDetails(ObjEProject);
-                if (ObjEProject.ProjectID > 0 && ObjEProject.CommissionNumber == string.Empty && ObjEProject.ActualLvs > 0)
-                {
-                    ObjTabDetails = tbOmlage;
-                    TabChange(ObjTabDetails);
-                    if (ObjEUmlage == null)
-                        ObjEUmlage = new EUmlage();
-                    if (ObjBUmlage == null)
-                        ObjBUmlage = new BUmlage();
-                    ObjEUmlage.ProjectID = ObjEProject.ProjectID;
-                    ObjEUmlage = ObjBUmlage.GetSpecialCost(ObjEUmlage);
-                    rgUmlageMode.SelectedIndex = ObjEUmlage.UmlageMode;
-                    gcOmlage.DataSource = ObjEUmlage.dtSpecialCost;
-                    rgUmlageMode_SelectedIndexChanged(null, null);
-                    if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
-                    {
-                        btnUmlageSave.Enabled = false;
-                        btnAddedCost.Enabled = false;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarControl1_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                navBarControl1.SelectedLink = e.Link;
-
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void nbArticleSettings_LinkPressed(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            frmArticleSettings Obj = new frmArticleSettings(ObjEProject);
-            Obj.ShowDialog();
-        }
-
-        private void nbFormBlattArticleMapping_LinkPressed(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                ObjEPosition.ProjectID = ObjEProject.ProjectID;
-                frmFormBlattarticles Obj = new frmFormBlattarticles(ObjEPosition);
-                Obj.ShowDialog();
-            }
-            catch (Exception ex) { }
-        }
-
-        private void nbProjectArticles_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                ObjEPosition.ProjectID = ObjEProject.ProjectID;
-                frmProjectArticles Obj = new frmProjectArticles(ObjEPosition);
-                Obj.ShowDialog();
-            }
-            catch (Exception ex) { }
-        }
-
-        private void nbBreakdownReport_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                rptSampleBreakdown rptMA = new rptSampleBreakdown();
-                rptMA.Name = "Einzelaufgliederung Beispiel";
-                //rptMA.Name = "Einzelaufgliederung Beispiel_" + ObjEProject.ProjectDescription.Replace("-", "");
-                ReportPrintTool printTool = new ReportPrintTool(rptMA);
-                rptMA.Parameters["ProjectID"].Value = ObjEProject.ProjectID;
-                rptMA.Parameters["InternX"].Value = ObjEProject.InternX;
-                rptMA.Parameters["InternS"].Value = ObjEProject.InternS;
-                rptMA.PrintingSystem.Document.AutoFitToPagesWidth = 1;
-                printTool.ShowRibbonPreview();
-            }
-            catch (Exception ex) { }
-        }
-
-        private void navBarItemConsolidateBlatt_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                rptConsolidatedBlatt rpt = new rptConsolidatedBlatt();
-                ReportPrintTool printTool = new ReportPrintTool(rpt);
-                rpt.Parameters["ProjectID"].Value = ObjEProject.ProjectID;
-                printTool.ShowRibbonPreview();
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarItemQuerKalkulation_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                frmQuerKalculation frm = new frmQuerKalculation(ObjEProject.ProjectID, ObjEProject.ProjectDescription);
-                frm.stRaster = ObjEProject.LVRaster;
-                frm.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarReports_ItemChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                TabChange(tbReports);
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarForms_ItemChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                // navBarItemProject_LinkClicked(null, null);
-                tbReports.PageVisible = false;
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void nbComparePrice_LinkPressed(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                if (tcProjectDetails.SelectedTabPage.Name == "tbLVDetails")
-                {
-                    if (tlPositions.Nodes.Count > 0)
-                    {
-                        panelControldoc.Visible = true;
-                        toggleSwitchType.Visible = true;
-                        dockPanelArticles.Show();
-                        dockPanelArticles_Click(null, null);
-                        lblArticles.Text = "Artikels :" + txtWG.Text + "/" + txtWA.Text + "/" + txtWI.Text;
-                        lblDimensions.Text = "Maße :" + txtDim1.Text + "/" + txtDim2.Text + "/" + txtDim3.Text;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarItemCommonReport_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                frmReportSetting Obj = new frmReportSetting(ObjEProject.ProjectID, ObjEProject.ProjectDescription, ObjEProject.LVRaster);
-                Obj.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void nbQuerCalcV2_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                frmQuerKalculation frm = new frmQuerKalculation(ObjEProject.ProjectID, ObjEProject.ProjectDescription, 2);
-                frm.stRaster = ObjEProject.LVRaster;
-                frm.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
         }
 
         #endregion
@@ -9703,29 +9616,6 @@ namespace CalcPro
         #region Supplier Proposal
 
         #region Events
-        private void navBarItemSupplierProposal_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                if (ObjEProject.ProjectID > 0)
-                {
-                    _IsBindSP = false;
-                    ObjTabDetails = tbSupplierProposal;
-                    TabChange(ObjTabDetails);
-                    ObjESupplier.ProjectID = ObjEProject.ProjectID;
-                    FillLVSection();
-                    gcDeletedDetails.DataSource = null;
-                    gcProposedDetails.DataSource = null;
-                    if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
-                        btnSaveSupplierProposal.Enabled = false;
-                    cmbLVSectionProposal_Closed(null, null);
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
 
         private void cmbLVSectionProposal_Closed(object sender, ClosedEventArgs e)
         {
@@ -9768,7 +9658,6 @@ namespace CalcPro
                     gcDeletedDetails.DataSource = null;
                     chkSupplierLists.DataSource = null;
                 }
-                _IsBindSP = true;
             }
             catch (Exception ex)
             {
@@ -10509,32 +10398,6 @@ namespace CalcPro
         #region Update Supplier
 
         #region Events
-        private void navBarItemUpdateSupplierProposal_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                if (ObjEProject.ProjectID > 0)
-                {
-                    _IsBindUSP = false;
-                    ObjTabDetails = tbUpdateSupplier;
-                    TabChange(ObjTabDetails);
-                    radioGroup1.SelectedIndex = 0;
-                    FillProposalNumbers();
-                    gcDeletedDetails.DataSource = null;
-                    gcProposedDetails.DataSource = null;
-                    if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
-                    {
-                        layoutControl16.Enabled = false;
-                        btnSubmit.Enabled = false;
-                        gvSupplier.OptionsBehavior.Editable = false;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
 
         private void gvProposal_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
@@ -11473,7 +11336,6 @@ namespace CalcPro
                 }
                 if (SPID > 0)
                     Utility.Setfocus(gvProposal, "SupplierProposalID", SPID);
-                _IsBindUSP = true;
             }
             catch (Exception ex)
             {
@@ -13408,5 +13270,6 @@ namespace CalcPro
         #endregion
 
         #endregion
+
     }
 }

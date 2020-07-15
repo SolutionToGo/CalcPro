@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcPro", "OTTOPro\CalcPro.csproj", "{8D1C492E-FD4F-433C-9C76-BD6D85BE25AD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{B8A14BCD-6D96-4BDB-915B-F9518BBD23F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DataAccess\DAL.csproj", "{5B5ED23C-D2D6-4720-96BB-CA197E4D048F}"
@@ -13,16 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EL", "EL\EL.csproj", "{FB99
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GKSRVUtility", "GKSRVUtility\GKSRVUtility.vbproj", "{42F9F0E8-2E71-4802-A736-762FAA11D110}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcPro", "CalcPro\CalcPro.csproj", "{8D1C492E-FD4F-433C-9C76-BD6D85BE25AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8D1C492E-FD4F-433C-9C76-BD6D85BE25AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D1C492E-FD4F-433C-9C76-BD6D85BE25AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D1C492E-FD4F-433C-9C76-BD6D85BE25AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D1C492E-FD4F-433C-9C76-BD6D85BE25AD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B8A14BCD-6D96-4BDB-915B-F9518BBD23F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B8A14BCD-6D96-4BDB-915B-F9518BBD23F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8A14BCD-6D96-4BDB-915B-F9518BBD23F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{42F9F0E8-2E71-4802-A736-762FAA11D110}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42F9F0E8-2E71-4802-A736-762FAA11D110}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42F9F0E8-2E71-4802-A736-762FAA11D110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D1C492E-FD4F-433C-9C76-BD6D85BE25AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D1C492E-FD4F-433C-9C76-BD6D85BE25AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D1C492E-FD4F-433C-9C76-BD6D85BE25AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D1C492E-FD4F-433C-9C76-BD6D85BE25AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
