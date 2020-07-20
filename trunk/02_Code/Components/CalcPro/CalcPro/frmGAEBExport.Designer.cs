@@ -91,7 +91,6 @@
             // 
             // btnExport
             // 
-            this.btnExport.ImageOptions.Image = global::CalcPro.Properties.Resources.Export_16x16;
             this.btnExport.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnExport.Location = new System.Drawing.Point(469, 120);
             this.btnExport.Name = "btnExport";

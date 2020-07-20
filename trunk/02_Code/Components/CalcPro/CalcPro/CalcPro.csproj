@@ -1173,13 +1173,6 @@
     <None Include="Report Design\dsSurchargeCalculation.xss">
       <DependentUpon>dsSurchargeCalculation.xsd</DependentUpon>
     </None>
-    <None Include="Resources\1470736995_User_Customers.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1470736995_User_Customers1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\App-login-manager-icon.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BL\BL.csproj">
@@ -1217,22 +1210,25 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\stg_white.png" />
-    <None Include="Resources\Icon_V.png" />
-    <None Include="Resources\Icon_S.png" />
+    <None Include="Resources\LoadProject_32x32.png" />
+    <None Include="Resources\supplier_32x32.png" />
+    <None Include="Resources\Organization_32x32.png" />
+    <None Include="Resources\refresh_32x32.png" />
+    <None Include="Resources\projectLoad_32x32.png" />
+    <None Include="Resources\New_32x32.png" />
+    <None Include="Resources\formblattarticle_32x32.png" />
+    <None Include="Resources\fieldinfor_32x32.png" />
+    <None Include="Resources\projectblatt_32x32.png" />
+    <None Include="Resources\pricecompare_32x32.png" />
+    <None Include="Resources\import_32x32.png" />
+    <None Include="Resources\export_32x32.png" />
+    <None Include="Resources\percentdelete_32x32.png" />
+    <None Include="Resources\percentadd_32x32.png" />
+    <None Include="Resources\transfer_32x32.png" />
+    <None Include="Resources\paragraphcomment_32x32.png" />
+    <None Include="Resources\Save_32x32.png" />
     <None Include="Resources\Icon_Import1.png" />
     <None Include="Resources\Icon_Master-Article.png" />
-    <None Include="Resources\Icon_Special-Cost.png" />
-    <None Include="Resources\Icon_-Project-Properties.png" />
-    <None Include="Resources\Icon_Copy-LV-Position.png" />
-    <None Include="Resources\Icon_Bill-Invoice.png" />
-    <None Include="Resources\Icon_Delivery-Notes.png" />
-    <None Include="Resources\Icon_Update-Proposal.png" />
-    <None Include="Resources\Icon_Send-Supplier-Proposal.png" />
-    <None Include="Resources\Icon_Import.png" />
-    <None Include="Resources\Icon_Export.png" />
-    <None Include="Resources\Icon_Bulk-Operations.png" />
-    <None Include="Resources\Icon_LV-Detail.png" />
     <None Include="Resources\Icon_Change-PAssword.png" />
     <None Include="Resources\Icon_Shortcut.png" />
     <None Include="Resources\Icon_Text-Module.png" />
@@ -1241,85 +1237,26 @@
     <None Include="Resources\Icon_User-Information.png" />
     <None Include="Resources\Icon_Rabatt.png" />
     <None Include="Resources\TYP.png" />
-    <None Include="Resources\Icon_Supplier.png" />
-    <None Include="Resources\Icon_Otto.png" />
     <None Include="Resources\Icon_Kunden.png" />
-    <None Include="Resources\Icon_Load-Project.png" />
-    <None Include="Resources\Icon_New-Project.png" />
-    <None Include="Resources\LogoLatest - Copy1.png" />
-    <None Include="Resources\LogoLatest_Main.png" />
-    <None Include="Resources\Status-dialog-password-icon.png" />
-    <None Include="Resources\Save-icon %281%29.png" />
     <None Include="Resources\Save-icon.png" />
-    <None Include="Resources\Multi6.png" />
-    <None Include="Resources\Multi5.png" />
-    <None Include="Resources\user %281%29.png" />
-    <None Include="Resources\images %283%29.png" />
-    <None Include="Resources\images %282%29.png" />
-    <None Include="Resources\images %281%29.png" />
-    <None Include="Resources\images %281%29.jpg" />
-    <None Include="Resources\login-icon.png" />
-    <None Include="Resources\images.png" />
-    <None Include="Resources\images.jpg" />
-    <None Include="Resources\login1.jpg" />
-    <None Include="Resources\Mail_32x321.png" />
-    <None Include="Resources\Mail_16x161.png" />
-    <None Include="Resources\Mail_32x32.png" />
-    <None Include="Resources\Mail_16x16.png" />
-    <None Include="Resources\Open2_32x32.png" />
     <None Include="Resources\Open2_16x16.png" />
-    <None Include="Resources\TextBox_32x32.png" />
-    <None Include="Resources\TextBox_16x16.png" />
     <None Include="Resources\UpDownBars_32x32.png" />
     <None Include="Resources\UpDownBars_16x16.png" />
-    <None Include="Resources\Software.png" />
-    <None Include="Resources\Logo New.png" />
-    <None Include="Resources\Logo1.png" />
     <None Include="Resources\ExportFile_16x16.png" />
-    <None Include="Resources\Export_16x16.png" />
-    <None Include="Resources\Otto.png" />
     <None Include="Resources\Reset_32x32.png" />
-    <None Include="Resources\Last_16x16.png" />
-    <None Include="Resources\First_16x16.png" />
-    <None Include="Resources\LogoLatest - Copy.png" />
-    <None Include="Resources\LogoLatest.png" />
-    <None Include="Resources\Powered.png" />
-    <None Include="Resources\Logo.png" />
-    <None Include="Resources\LoadBtn.png" />
-    <None Include="Resources\NewBtn.png" />
-    <None Include="Resources\Edit_16x16.png" />
-    <None Include="Resources\AddFile_16x16.png" />
-    <None Include="Resources\Cancel_32x32.png" />
     <None Include="Resources\Cancel_16x16.png" />
     <None Include="Resources\Add_16x16.png" />
-    <None Include="Resources\Add_32x32.png" />
     <None Include="Resources\Apply_16x16.png" />
-    <None Include="Resources\Apply_32x32.png" />
-    <None Include="Resources\Close_16x16.png" />
     <None Include="Resources\Close_32x32.png" />
     <Content Include="IconLogo.ico" />
-    <None Include="Resources\BOCustomer_16x16.png" />
-    <None Include="Resources\BOCustomer_32x32.png" />
-    <None Include="Resources\BORole_16x16.png" />
-    <None Include="Resources\BORole_32x32.png" />
-    <None Include="Resources\BOFileAttachment_16x16.png" />
-    <None Include="Resources\BOFileAttachment_32x32.png" />
-    <None Include="Resources\DesignReport_16x16.png" />
     <None Include="Resources\DesignReport_32x32.png" />
-    <None Include="Resources\Diary-icon.png" />
-    <None Include="Resources\currency_euro_green.png" />
-    <None Include="Resources\BOUser_16x16.png" />
-    <None Include="Resources\BOUser_32x32.png" />
-    <None Include="Resources\BOPermission_32x32.png" />
-    <None Include="Resources\download.jpg" />
-    <None Include="Resources\download %281%29.jpg" />
     <None Include="Resources\Button-Refresh-icon.png" />
-    <None Include="Resources\defaultImage.png" />
     <None Include="Resources\building.jpg" />
     <None Include="Resources\CalcProLogo.png" />
-    <None Include="Resources\calcpro1.png" />
-    <Content Include="Resources\edit-icon %281%29.png" />
-    <Content Include="Resources\edit-icon.png" />
+    <None Include="Resources\commentarycalc_32x32.png" />
+    <None Include="Resources\copy_32x32.png" />
+    <None Include="Resources\deleteposition_32x32.png" />
+    <None Include="Resources\customers_32x32.png" />
     <None Include="Resources\Save_16x16.png" />
     <None Include="Resources\SaveAll_32x32.png" />
   </ItemGroup>

@@ -89,13 +89,13 @@
             // 
             // gcProjectSearch
             // 
-            this.gcProjectSearch.Location = new System.Drawing.Point(8, 8);
+            this.gcProjectSearch.Location = new System.Drawing.Point(12, 12);
             this.gcProjectSearch.MainView = this.dgProjectSearch;
             this.gcProjectSearch.Name = "gcProjectSearch";
             this.gcProjectSearch.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.riDate,
             this.btnLoadProject});
-            this.gcProjectSearch.Size = new System.Drawing.Size(1026, 560);
+            this.gcProjectSearch.Size = new System.Drawing.Size(1018, 552);
             this.gcProjectSearch.TabIndex = 3;
             this.gcProjectSearch.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.dgProjectSearch});
@@ -106,6 +106,10 @@
             this.dgProjectSearch.Appearance.FocusedCell.Options.UseBackColor = true;
             this.dgProjectSearch.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dgProjectSearch.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.dgProjectSearch.Appearance.HeaderPanel.Font = new System.Drawing.Font("Bahnschrift", 10F);
+            this.dgProjectSearch.Appearance.HeaderPanel.Options.UseFont = true;
+            this.dgProjectSearch.Appearance.Row.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.dgProjectSearch.Appearance.Row.Options.UseFont = true;
             this.dgProjectSearch.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.ProjectID,
             this.ProjectNumber,
@@ -152,7 +156,7 @@
             this.ProjectNumber.Name = "ProjectNumber";
             this.ProjectNumber.Visible = true;
             this.ProjectNumber.VisibleIndex = 0;
-            this.ProjectNumber.Width = 164;
+            this.ProjectNumber.Width = 102;
             // 
             // ComissionNumber
             // 
@@ -161,7 +165,7 @@
             this.ComissionNumber.Name = "ComissionNumber";
             this.ComissionNumber.Visible = true;
             this.ComissionNumber.VisibleIndex = 2;
-            this.ComissionNumber.Width = 204;
+            this.ComissionNumber.Width = 117;
             // 
             // CustomerName
             // 
@@ -170,7 +174,7 @@
             this.CustomerName.Name = "CustomerName";
             this.CustomerName.Visible = true;
             this.CustomerName.VisibleIndex = 3;
-            this.CustomerName.Width = 164;
+            this.CustomerName.Width = 208;
             // 
             // PlannerName
             // 
@@ -179,7 +183,7 @@
             this.PlannerName.Name = "PlannerName";
             this.PlannerName.Visible = true;
             this.PlannerName.VisibleIndex = 4;
-            this.PlannerName.Width = 172;
+            this.PlannerName.Width = 93;
             // 
             // ProjectDescription
             // 
@@ -188,7 +192,7 @@
             this.ProjectDescription.Name = "ProjectDescription";
             this.ProjectDescription.Visible = true;
             this.ProjectDescription.VisibleIndex = 1;
-            this.ProjectDescription.Width = 181;
+            this.ProjectDescription.Width = 168;
             // 
             // Created_By
             // 
@@ -258,6 +262,7 @@
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 5;
+            this.gridColumn9.Width = 64;
             // 
             // riDate
             // 
@@ -280,6 +285,7 @@
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 6;
+            this.gridColumn10.Width = 67;
             // 
             // gridColumn11
             // 
@@ -289,21 +295,27 @@
             // 
             // gridColumn12
             // 
-            this.gridColumn12.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.gridColumn12.AppearanceCell.Font = new System.Drawing.Font("Bahnschrift", 10F);
             this.gridColumn12.AppearanceCell.Options.UseFont = true;
+            this.gridColumn12.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn12.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.gridColumn12.Caption = "VK";
             this.gridColumn12.FieldName = "VK";
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.Visible = true;
             this.gridColumn12.VisibleIndex = 7;
+            this.gridColumn12.Width = 104;
             // 
             // gridColumn13
             // 
+            this.gridColumn13.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn13.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn13.Caption = "Load";
             this.gridColumn13.ColumnEdit = this.btnLoadProject;
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.Visible = true;
             this.gridColumn13.VisibleIndex = 8;
+            this.gridColumn13.Width = 77;
             // 
             // btnLoadProject
             // 
@@ -330,7 +342,7 @@
             this.layoutControlItem2.Control = this.gcProjectSearch;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(1028, 562);
+            this.layoutControlItem2.Size = new System.Drawing.Size(1022, 556);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 

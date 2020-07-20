@@ -114,7 +114,7 @@
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(167)))), ((int)(((byte)(65)))));
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(412, 109);
+            this.labelControl1.Location = new System.Drawing.Point(412, 114);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(268, 33);
             this.labelControl1.StyleController = this.layoutControl1;
@@ -127,11 +127,11 @@
             this.btnLogin.Appearance.Font = new System.Drawing.Font("Bahnschrift", 14F);
             this.btnLogin.Appearance.Options.UseBackColor = true;
             this.btnLogin.Appearance.Options.UseFont = true;
-            this.btnLogin.Location = new System.Drawing.Point(684, 294);
-            this.btnLogin.LookAndFeel.SkinName = "CategisSkin";
+            this.btnLogin.Location = new System.Drawing.Point(678, 291);
+            this.btnLogin.LookAndFeel.SkinName = "Office 2019 Colorful";
             this.btnLogin.LookAndFeel.UseDefaultLookAndFeel = false;
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(161, 28);
+            this.btnLogin.Size = new System.Drawing.Size(157, 36);
             this.btnLogin.TabIndex = 9;
             this.btnLogin.Text = "Login";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -143,18 +143,18 @@
             this.btnCancel.Appearance.Options.UseBackColor = true;
             this.btnCancel.Appearance.Options.UseFont = true;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(532, 294);
-            this.btnCancel.LookAndFeel.SkinName = "CategisSkin";
+            this.btnCancel.Location = new System.Drawing.Point(529, 291);
+            this.btnCancel.LookAndFeel.SkinName = "Office 2019 Colorful";
             this.btnCancel.LookAndFeel.UseDefaultLookAndFeel = false;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(148, 28);
+            this.btnCancel.Size = new System.Drawing.Size(145, 36);
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(412, 182);
+            this.txtUserName.Location = new System.Drawing.Point(412, 187);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(65)))));
             this.txtUserName.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift", 14F);
@@ -162,7 +162,7 @@
             this.txtUserName.Properties.Appearance.Options.UseBackColor = true;
             this.txtUserName.Properties.Appearance.Options.UseFont = true;
             this.txtUserName.Properties.Appearance.Options.UseForeColor = true;
-            this.txtUserName.Size = new System.Drawing.Size(433, 30);
+            this.txtUserName.Size = new System.Drawing.Size(423, 30);
             this.txtUserName.StyleController = this.layoutControl1;
             this.txtUserName.TabIndex = 6;
             conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
@@ -173,7 +173,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(412, 242);
+            this.txtPassword.Location = new System.Drawing.Point(412, 247);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(65)))));
             this.txtPassword.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift", 14F);
@@ -182,7 +182,7 @@
             this.txtPassword.Properties.Appearance.Options.UseFont = true;
             this.txtPassword.Properties.Appearance.Options.UseForeColor = true;
             this.txtPassword.Properties.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(433, 30);
+            this.txtPassword.Size = new System.Drawing.Size(423, 30);
             this.txtPassword.StyleController = this.layoutControl1;
             this.txtPassword.TabIndex = 5;
             conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
@@ -194,12 +194,12 @@
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = global::CalcPro.Properties.Resources.CalcProLogo;
-            this.pictureEdit1.Location = new System.Drawing.Point(2, 109);
+            this.pictureEdit1.Location = new System.Drawing.Point(12, 114);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit1.Size = new System.Drawing.Size(406, 172);
+            this.pictureEdit1.Size = new System.Drawing.Size(396, 164);
             this.pictureEdit1.StyleController = this.layoutControl1;
             this.pictureEdit1.TabIndex = 4;
             // 
@@ -227,25 +227,24 @@
             this.emptySpaceItem7,
             this.emptySpaceItem8});
             this.Root.Name = "Root";
-            this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.Root.Size = new System.Drawing.Size(847, 429);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.pictureEdit1;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 107);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 102);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(410, 176);
+            this.layoutControlItem1.Size = new System.Drawing.Size(400, 168);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.txtPassword;
-            this.layoutControlItem2.Location = new System.Drawing.Point(410, 214);
+            this.layoutControlItem2.Location = new System.Drawing.Point(400, 209);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(437, 60);
+            this.layoutControlItem2.Size = new System.Drawing.Size(427, 60);
             this.layoutControlItem2.Text = "Password";
             this.layoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(87, 23);
@@ -253,9 +252,9 @@
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.txtUserName;
-            this.layoutControlItem3.Location = new System.Drawing.Point(410, 154);
+            this.layoutControlItem3.Location = new System.Drawing.Point(400, 149);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(437, 60);
+            this.layoutControlItem3.Size = new System.Drawing.Size(427, 60);
             this.layoutControlItem3.Text = "Username";
             this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(87, 23);
@@ -263,18 +262,21 @@
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnCancel;
-            this.layoutControlItem5.Location = new System.Drawing.Point(530, 292);
+            this.layoutControlItem5.Location = new System.Drawing.Point(517, 279);
+            this.layoutControlItem5.MaxSize = new System.Drawing.Size(0, 40);
+            this.layoutControlItem5.MinSize = new System.Drawing.Size(60, 40);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(152, 32);
+            this.layoutControlItem5.Size = new System.Drawing.Size(149, 40);
+            this.layoutControlItem5.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 283);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 270);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(410, 146);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(400, 139);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem2
@@ -282,46 +284,49 @@
             this.emptySpaceItem2.AllowHotTrack = false;
             this.emptySpaceItem2.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(410, 107);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(400, 102);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(410, 0);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(400, 0);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(437, 107);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(427, 102);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem5
             // 
             this.emptySpaceItem5.AllowHotTrack = false;
-            this.emptySpaceItem5.Location = new System.Drawing.Point(410, 324);
+            this.emptySpaceItem5.Location = new System.Drawing.Point(400, 319);
             this.emptySpaceItem5.Name = "emptySpaceItem5";
-            this.emptySpaceItem5.Size = new System.Drawing.Size(437, 105);
+            this.emptySpaceItem5.Size = new System.Drawing.Size(427, 90);
             this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.btnLogin;
-            this.layoutControlItem6.Location = new System.Drawing.Point(682, 292);
+            this.layoutControlItem6.Location = new System.Drawing.Point(666, 279);
+            this.layoutControlItem6.MaxSize = new System.Drawing.Size(0, 44);
+            this.layoutControlItem6.MinSize = new System.Drawing.Size(60, 40);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(165, 32);
+            this.layoutControlItem6.Size = new System.Drawing.Size(161, 40);
+            this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
             // emptySpaceItem4
             // 
             this.emptySpaceItem4.AllowHotTrack = false;
-            this.emptySpaceItem4.Location = new System.Drawing.Point(410, 292);
+            this.emptySpaceItem4.Location = new System.Drawing.Point(400, 279);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(120, 32);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(117, 40);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.labelControl1;
-            this.layoutControlItem4.Location = new System.Drawing.Point(410, 107);
+            this.layoutControlItem4.Location = new System.Drawing.Point(400, 102);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(272, 37);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
@@ -330,25 +335,25 @@
             // emptySpaceItem6
             // 
             this.emptySpaceItem6.AllowHotTrack = false;
-            this.emptySpaceItem6.Location = new System.Drawing.Point(682, 107);
+            this.emptySpaceItem6.Location = new System.Drawing.Point(672, 102);
             this.emptySpaceItem6.Name = "emptySpaceItem6";
-            this.emptySpaceItem6.Size = new System.Drawing.Size(165, 37);
+            this.emptySpaceItem6.Size = new System.Drawing.Size(155, 37);
             this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem7
             // 
             this.emptySpaceItem7.AllowHotTrack = false;
-            this.emptySpaceItem7.Location = new System.Drawing.Point(410, 144);
+            this.emptySpaceItem7.Location = new System.Drawing.Point(400, 139);
             this.emptySpaceItem7.Name = "emptySpaceItem7";
-            this.emptySpaceItem7.Size = new System.Drawing.Size(437, 10);
+            this.emptySpaceItem7.Size = new System.Drawing.Size(427, 10);
             this.emptySpaceItem7.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem8
             // 
             this.emptySpaceItem8.AllowHotTrack = false;
-            this.emptySpaceItem8.Location = new System.Drawing.Point(410, 274);
+            this.emptySpaceItem8.Location = new System.Drawing.Point(400, 269);
             this.emptySpaceItem8.Name = "emptySpaceItem8";
-            this.emptySpaceItem8.Size = new System.Drawing.Size(437, 18);
+            this.emptySpaceItem8.Size = new System.Drawing.Size(427, 10);
             this.emptySpaceItem8.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControl2
@@ -392,6 +397,7 @@
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(1001, 583);
             this.Controls.Add(this.layoutControl2);
+            this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Glow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

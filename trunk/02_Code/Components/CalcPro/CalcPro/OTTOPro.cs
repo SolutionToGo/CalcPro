@@ -71,7 +71,6 @@ namespace CalcPro
                 }
                 frmProject Obj = new frmProject();
                 Obj.MdiParent = this;
-                label2.Visible = false;
                 pictureBox1.Visible = false;
                 Obj.Show();
             }
@@ -99,7 +98,6 @@ namespace CalcPro
                 }
                 frmLoadProject Obj = new frmLoadProject();
                 Obj.MdiParent = this;
-                label2.Visible = false;
                 pictureBox1.Visible = false;
                 Obj.Show();
             }
@@ -113,7 +111,7 @@ namespace CalcPro
         {
             try
             {
-                frmCalcPro.Instance.tsStatus.Text = null;
+                frmCalcPro.Instance.tsStatus.Caption = null;
                 tmrStatus.Stop();
             }
             catch (Exception ex)
@@ -851,7 +849,6 @@ namespace CalcPro
                 {
                     frmSpreadsheetControl Obj = new frmSpreadsheetControl();
                     Obj.MdiParent = this;
-                    label2.Visible = false;
                     pictureBox1.Visible = false;
                     Obj.Show();
                 }
@@ -922,21 +919,12 @@ namespace CalcPro
         }
 
         /// <summary>
-        /// code to set visible property of label
-        /// </summary>
-        /// <param name="_result"></param>
-        public void SetLableVisible(bool _result)
-        {
-            this.label2.Visible = _result;
-        }
-
-        /// <summary>
         /// Code to show status of messages on status bar
         /// </summary>
         /// <param name="Status"></param>
         public static void UpdateStatus(string Status)
         {
-            frmCalcPro.Instance.tsStatus.Text = Status;
+            frmCalcPro.Instance.tsStatus.Caption = Status;
             frmCalcPro.Instance.tmrStatus.Start();
         }
 

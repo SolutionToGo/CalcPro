@@ -74,7 +74,6 @@ namespace CalcPro
             if (frmCalcPro.Instance.MdiChildren.Count() == 1)
             {
                 frmCalcPro.Instance.SetPictureBoxVisible(true);
-                frmCalcPro.Instance.SetLableVisible(true);
             }
         }
 

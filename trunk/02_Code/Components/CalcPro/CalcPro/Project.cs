@@ -177,22 +177,8 @@ namespace CalcPro
                 }
                 splitContainerControl1.CollapsePanel = SplitCollapsePanel.Panel1;
                 splitContainerControl2.CollapsePanel = SplitCollapsePanel.Panel1;
-
-                //tbLVDetails.PageVisible = false;
-                //tbBulkProcess.PageVisible = false;
-                //tbMulti5.PageVisible = false;
-                //tbMulti6.PageVisible = false;
-                //tbOmlage.PageVisible = false;
-                //tbDeliveryNotes.PageVisible = false;
-                //tbInvoices.PageVisible = false;
-                //tbSupplierProposal.PageVisible = false;
-                //tbUpdateSupplier.PageVisible = false;
-                //tbCopyLVs.PageVisible = false;
-                //tbAufmassReport.PageVisible = false;
-                //tbReports.PageVisible = false;
                 Utility.SetLookupEditValue(cmbPositionKZ, "N-Normalposition");
                 chkCumulated.Checked = true;
-                //tbFormBlatt1.PageVisible = false;
                 SetRoundingPriceforColumn();
 
                 if (ProjectID > 0)
@@ -200,40 +186,40 @@ namespace CalcPro
                 if (txtkommissionNumber.Text != string.Empty)
                 {
                     DisalbeProjectControls();
-                } 
+                }
 
                 if (Utility.LVDetailsAccess == "9" || Utility.CalcAccess == "9")
                 {
-                    navBarItemLVDetails.Visible = false;
+                    tbLVDetails.Visible = false;
                     if (Utility.LVDetailsAccess == "9")
                     {
-                        navBarItemImport.Visible = false;
-                        navBarItemExport.Visible = false;
-                        nbCopyLVs.Visible = false;
+                        btnProjectImport.Visibility = BarItemVisibility.Never;
+                        btnProjectExport.Visibility = BarItemVisibility.Never;
+                        tbCopyLVs.Visible = false;
                     }
                     if (Utility.CalcAccess == "9")
                     {
-                        navBarItemBulkProcess.Visible = false;
-                        navBarItemMulti5.Visible = false;
-                        navBarItemMulti6.Visible = false;
-                        navBarItemSupplierProposal.Visible = false;
-                        navBarItemUpdateSupplierProposal.Visible = false;
-                        navBarItemUmlage.Visible = false;
+                        tbBulkProcess.Visible = false;
+                        tbMulti5.Visible = false;
+                        tbMulti6.Visible = false;
+                        tbSupplierProposal.Visible = false;
+                        tbUpdateSupplier.Visible = false;
+                        tbOmlage.Visible = false;
                     }
                     if (Utility.LVsectionAddAccess == "8" || Utility.LVSectionEditAccess == "8")
                     {
-                        navBarItemLVDetails.Visible = true;
+                        tbLVDetails.PageVisible = true;
                     }
                 }
                 if (Utility.ProjectDataAccess == "9")
-                    navBarItemProject.Visible = false;
+                    tbProjectDetails.PageVisible = false;
                 if (Utility.DeliveryAccess == "9")
-                    nbDeliveryNotes.Visible = false;
+                    tbDeliveryNotes.PageVisible = false;
                 if (Utility.InvoiceAccess == "9")
-                    nbInvoices.Visible = false;
+                    tbInvoices.PageVisible = false;
 
                 if (Utility.FormBlattArticleMappingAccess == "9" || Utility.FormBlattArticleMappingAccess == "7")
-                    nbFormBlattArticleMapping.Visible = false;
+                    btnArtSettings.Visibility = BarItemVisibility.Never;
 
                 if (Utility.KomissionDataAccess == "9" || Utility.KomissionDataAccess == "7")
                     txtkommissionNumber.Enabled = false;
@@ -259,6 +245,7 @@ namespace CalcPro
                 cmbPositionKZCD.Properties.DataSource = Utility.dtPositionKZ;
                 cmbPositionKZCD.Properties.DisplayMember = "KZDescription";
                 cmbPositionKZCD.Properties.ValueMember = "PositionKZListID";
+                tcProjectDetails_SelectedPageChanged(null, null);
             }
             catch (Exception ex)
             {
@@ -294,7 +281,6 @@ namespace CalcPro
                     if (frmCalcPro.Instance.MdiChildren.Count() == 1)
                     {
                         frmCalcPro.Instance.SetPictureBoxVisible(true);
-                        frmCalcPro.Instance.SetLableVisible(true);
                     }
                 }
                 else
@@ -321,11 +307,12 @@ namespace CalcPro
                 if (tcProjectDetails.SelectedTabPage == tbProjectDetails)
                 {
                     if (ObjEProject.IsFinalInvoice && Utility.ProjectDataAccess == "7")
-                        btnProjectSave.Enabled = false;
+                        btnSaveProject.Enabled = false;
                     if (tlPositions.Nodes.Count == 0)
                         ddlRaster.Enabled = true;
                     LoadExistingProject();
                     FormatLVFields();
+                    rpProjectMetaData.Visible = true;
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbLVDetails)
                 {
@@ -438,6 +425,7 @@ namespace CalcPro
                         splitContainerControl1.SplitterPosition = 350;
                     else if (splitContainerControl2.PanelVisibility == SplitPanelVisibility.Panel2)
                         splitContainerControl1.SplitterPosition = 560;
+                    rpPosition.Visible = true;
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbBulkProcess)
                 {
@@ -495,6 +483,7 @@ namespace CalcPro
                              || Utility.LVSectionEditAccess == "9" || Utility.LVSectionEditAccess == "7")
                             btnApply.Enabled = false;
                     }
+                    rpPosition.Visible = true;
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbMulti5)
                 {
@@ -528,6 +517,7 @@ namespace CalcPro
                         if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
                             btnMulti5UpdateSelbekosten.Enabled = false;
                     }
+                    rpCalculations.Visible = true;
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbMulti6)
                 {
@@ -564,6 +554,7 @@ namespace CalcPro
                         if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
                             btnMulti6UpdateSelbekosten.Enabled = false;
                     }
+                    rpCalculations.Visible = true;
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbOmlage)
                 {
@@ -585,6 +576,7 @@ namespace CalcPro
                             btnAddedCost.Enabled = false;
                         }
                     }
+                    rpCalculations.Visible = true;
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbSupplierProposal)
                 {
@@ -597,6 +589,7 @@ namespace CalcPro
                         if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
                             btnSaveSupplierProposal.Enabled = false;
                         cmbLVSectionProposal_Closed(null, null);
+                        rpProposal.Visible = true;
                     }
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbUpdateSupplier)
@@ -614,7 +607,70 @@ namespace CalcPro
                             gvSupplier.OptionsBehavior.Editable = false;
                         }
                         gvProposal_RowClick(null, null);
+                        rpProposal.Visible = true;
                     }
+                }
+                else if (tcProjectDetails.SelectedTabPage == tbDeliveryNotes)
+                {
+                    if (ObjEDeliveryNotes == null)
+                        ObjEDeliveryNotes = new EDeliveryNotes();
+                    if (ObjBDeliveryNotes == null)
+                        ObjBDeliveryNotes = new BDeliveryNotes();
+                    chkActiveDelivery.Checked = true;
+                    ObjEDeliveryNotes.ProjectID = ObjEProject.ProjectID;
+                    ObjEDeliveryNotes = ObjBDeliveryNotes.GetPositions(ObjEDeliveryNotes);
+                    gcPositions.DataSource = ObjEDeliveryNotes.dtPositions;
+                    NewBlattnumber();
+                    LoadNonActiveDelivery();
+                    ObjEDeliveryNotes = ObjBDeliveryNotes.GetBlattNumbers(ObjEDeliveryNotes);
+                    gcDeliveryNumbers.DataSource = ObjEDeliveryNotes.dtBlattNumbers;
+                    if (Utility.DeliveryAccess == "7" || ObjEProject.IsFinalInvoice)
+                        btnSave.Enabled = false;
+                    rpDelInv.Visible = true;
+                }
+                else if (tcProjectDetails.SelectedTabPage == tbInvoices)
+                {
+                    if (ObjEInvoice == null)
+                        ObjEInvoice = new EInvoice();
+                    if (oBJBInvoice == null)
+                        oBJBInvoice = new BInvoice();
+                    ObjEInvoice.ProjectID = ObjEProject.ProjectID;
+                    ObjEInvoice = oBJBInvoice.GeTBlattNumbers(ObjEInvoice);
+                    gcDeliveryNotes.DataSource = ObjEInvoice.dtBlattNumbers;
+                    ObjEInvoice = oBJBInvoice.GetInvoices(ObjEInvoice);
+                    gcInvoices.DataSource = ObjEInvoice.dtInvoices;
+                    if (Utility.InvoiceAccess == "7" || ObjEProject.IsFinalInvoice)
+                        btnGenerate.Enabled = false;
+                    if (ObjEProject.IsFinalInvoice)
+                    {
+                        chkFinalInvoice.Checked = true;
+                        if (Utility.RoleID != 14)
+                        {
+                            chkFinalInvoice.Enabled = false;
+                            btnFinalBill.Enabled = false;
+                        }
+                    }
+                    rpDelInv.Visible = true;
+                }
+                else if (tcProjectDetails.SelectedTabPage == tbCopyLVs)
+                {
+                    if (ObjEProject.ProjectID > 0)
+                    {
+                        BindPositionData();
+                        if (tlPositions.AllNodesCount >= 2)
+                        {
+                            FillProjectNumber();
+                            rgDropMode.SelectedIndex = 2;
+                        }
+                        else
+                        {
+                            if (!Utility._IsGermany)
+                                throw new Exception("Bitte legen Sie mindestens einen Titel und einen Untertitel an");
+                            else
+                                throw new Exception("Atleast one title and subtitle should be there in the project.");
+                        }
+                    }
+                    rpPosition.Visible = true;
                 }
             }
             catch (Exception ex)
@@ -693,10 +749,10 @@ namespace CalcPro
 
         #region Functions
 
-       /// <summary>
-       /// Code to Show and activate tab
-       /// </summary>
-       /// <param name="ObjTabDetails"></param>
+        /// <summary>
+        /// Code to Show and activate tab
+        /// </summary>
+        /// <param name="ObjTabDetails"></param>
         private void TabChange(XtraTabPage ObjTabDetails)
         {
             try
@@ -742,7 +798,7 @@ namespace CalcPro
                     {
                         if (ObjEProject.IsFinalInvoice)
                             return false;
-                        btnProjectSave_Click(null, null);
+                        btnSaveProject_ItemClick(null, null);
                         return true;
                     }
                 }
@@ -814,15 +870,15 @@ namespace CalcPro
         /// <param name="e"></param>
         void op_CustomizeCell(DevExpress.Export.CustomizeCellEventArgs e)
         {
-            if (e.ColumnFieldName == "MA_verkaufspreis" || 
-                e.ColumnFieldName == "MO_verkaufspreis" || 
-                e.ColumnFieldName == "EP" || 
+            if (e.ColumnFieldName == "MA_verkaufspreis" ||
+                e.ColumnFieldName == "MO_verkaufspreis" ||
+                e.ColumnFieldName == "EP" ||
                 e.ColumnFieldName == "GB")
             {
                 e.Handled = true;
                 decimal d = 0;
                 if (decimal.TryParse(Convert.ToString(e.Value), out d))
-                    e.Value = Math.Round(d,2,MidpointRounding.AwayFromZero);
+                    e.Value = Math.Round(d, 2, MidpointRounding.AwayFromZero);
             }
         }
 
@@ -916,10 +972,10 @@ namespace CalcPro
             }
         }
 
-     /// <summary>
-     /// Code to expand rows in master detail gridview
-     /// </summary>
-     /// <param name="View"></param>
+        /// <summary>
+        /// Code to expand rows in master detail gridview
+        /// </summary>
+        /// <param name="View"></param>
         public void ExpandAllRows(GridView View)
         {
             View.BeginUpdate();
@@ -939,274 +995,11 @@ namespace CalcPro
 
         #endregion
 
-        #region "NavigationBar Events"
-
-        private void navBarItemExport_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                ObjBProject.GetProjectDetails(ObjEProject);
-                if (ObjEProject.IsFinalInvoice)
-                    return;
-                BindPositionData();
-                if (ObjEProject.ActualLvs == 0)
-                {
-                    if (Utility._IsGermany == true)
-                        XtraMessageBox.Show("Es liegen keine LV Positionen für den Export vor!");
-                    else
-                        XtraMessageBox.Show("No LV Positions to Export.!");
-                    return;
-                }
-                if (ObjEProject.ProjectID > 0)
-                {
-                    if (objBGAEB == null)
-                        objBGAEB = new BGAEB();
-                    if (objEGAEB == null)
-                        objEGAEB = new EGAEB();
-                    string SelectedRaster = ObjEProject.LVRaster;
-                    bool _rtnOldRaster = false;
-                    objEGAEB.OldRaster = objBGAEB.GetOld_Raster(ObjEProject.ProjectID);
-                    if (objEGAEB.OldRaster != "")
-                    {
-                        objEGAEB.NewRaster = ObjEProject.LVRaster;
-                        frmSelectRaster frm = new frmSelectRaster(objEGAEB);
-                        frm.ShowDialog();
-                        if (frm.DialogResult == DialogResult.OK)
-                        {
-                            SelectedRaster = frm.LVRaster;
-                            if (ObjEProject.LVRaster != SelectedRaster)
-                                _rtnOldRaster = true;
-                        }
-                        else
-                            return;
-                    }
-                    int raster_count = SelectedRaster.Replace(".", string.Empty).Length;
-                    frmGAEBExport Obj = new frmGAEBExport(ObjEProject.ProjectNumber, ObjEProject.ProjectID, raster_count, SelectedRaster, _rtnOldRaster);
-                    Obj.KNr = ObjEProject.CommissionNumber;
-                    Obj.ShowDialog();
-                    if (File.Exists(Obj.OutputFilePath))
-                        Process.Start("explorer.exe", "/select, \"" + Obj.OutputFilePath + "\"");
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarItemImport_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                if (ObjEProject.ProjectID > 0)
-                {
-                    if (ObjEProject.IsFinalInvoice)
-                        return;
-                    frmGAEBImport Obj = new frmGAEBImport();
-                    Obj.ProjectID = ObjEProject.ProjectID;
-                    Obj.KNr = ObjEProject.CommissionNumber;
-                    Obj.ShowDialog();
-                    ProjectID = Obj.ProjectID;
-                    if (ProjectID > 0 && Obj.isbuild)
-                    {
-                        SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
-                        SplashScreenManager.Default.SetWaitFormDescription("Laden Projekt...");
-                        LoadExistingRasters();
-                        LoadExistingProject();
-                        BindPositionData();
-                        IntializeLVPositions();
-                        if (ObjEProject.ActualLvs == 0)
-                            ChkRaster.Enabled = true;
-                        else
-                            ChkRaster.Enabled = false;
-                        SplashScreenManager.CloseForm(false);
-                        frmCalcPro.UpdateStatus("Projektdatenimport mit Erfolg abgeschlossen");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                SplashScreenManager.CloseForm(false);
-                if (Utility._IsGermany == true)
-                {
-                    throw new Exception("Das ausgewählte Datei-Raster ist nicht mit dem ausgewählten Projektraster kompatibel!");
-                }
-                else
-                {
-                    Utility.ShowError(ex);
-                }
-            }
-        }
-
-        private void navBarControl1_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                navBarControl1.SelectedLink = e.Link;
-
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void nbArticleSettings_LinkPressed(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            frmArticleSettings Obj = new frmArticleSettings(ObjEProject);
-            Obj.ShowDialog();
-        }
-
-        private void nbFormBlattArticleMapping_LinkPressed(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                ObjEPosition.ProjectID = ObjEProject.ProjectID;
-                frmFormBlattarticles Obj = new frmFormBlattarticles(ObjEPosition);
-                Obj.ShowDialog();
-            }
-            catch (Exception ex) { }
-        }
-
-        private void nbProjectArticles_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                ObjEPosition.ProjectID = ObjEProject.ProjectID;
-                frmProjectArticles Obj = new frmProjectArticles(ObjEPosition);
-                Obj.ShowDialog();
-            }
-            catch (Exception ex) { }
-        }
-
-        private void nbBreakdownReport_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                rptSampleBreakdown rptMA = new rptSampleBreakdown();
-                rptMA.Name = "Einzelaufgliederung Beispiel";
-                //rptMA.Name = "Einzelaufgliederung Beispiel_" + ObjEProject.ProjectDescription.Replace("-", "");
-                ReportPrintTool printTool = new ReportPrintTool(rptMA);
-                rptMA.Parameters["ProjectID"].Value = ObjEProject.ProjectID;
-                rptMA.Parameters["InternX"].Value = ObjEProject.InternX;
-                rptMA.Parameters["InternS"].Value = ObjEProject.InternS;
-                rptMA.PrintingSystem.Document.AutoFitToPagesWidth = 1;
-                printTool.ShowRibbonPreview();
-            }
-            catch (Exception ex) { }
-        }
-
-        private void navBarItemConsolidateBlatt_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                rptConsolidatedBlatt rpt = new rptConsolidatedBlatt();
-                ReportPrintTool printTool = new ReportPrintTool(rpt);
-                rpt.Parameters["ProjectID"].Value = ObjEProject.ProjectID;
-                printTool.ShowRibbonPreview();
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarItemQuerKalkulation_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                frmQuerKalculation frm = new frmQuerKalculation(ObjEProject.ProjectID, ObjEProject.ProjectDescription);
-                frm.stRaster = ObjEProject.LVRaster;
-                frm.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarReports_ItemChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                TabChange(tbReports);
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarForms_ItemChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                // navBarItemProject_LinkClicked(null, null);
-                tbReports.PageVisible = false;
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void nbComparePrice_LinkPressed(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                if (tcProjectDetails.SelectedTabPage.Name == "tbLVDetails")
-                {
-                    if (tlPositions.Nodes.Count > 0)
-                    {
-                        panelControldoc.Visible = true;
-                        toggleSwitchType.Visible = true;
-                        dockPanelArticles.Show();
-                        dockPanelArticles_Click(null, null);
-                        lblArticles.Text = "Artikels :" + txtWG.Text + "/" + txtWA.Text + "/" + txtWI.Text;
-                        lblDimensions.Text = "Maße :" + txtDim1.Text + "/" + txtDim2.Text + "/" + txtDim3.Text;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void navBarItemCommonReport_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                frmReportSetting Obj = new frmReportSetting(ObjEProject.ProjectID, ObjEProject.ProjectDescription, ObjEProject.LVRaster);
-                Obj.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void nbQuerCalcV2_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                frmQuerKalculation frm = new frmQuerKalculation(ObjEProject.ProjectID, ObjEProject.ProjectDescription, 2);
-                frm.stRaster = ObjEProject.LVRaster;
-                frm.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        #endregion
-
         #region Project Meta data
 
         #region Events
 
-        private void btnProjectSave_Click(object sender, EventArgs e)
+        private void btnSaveProject_ItemClick(object sender, ItemClickEventArgs e)
         {
             try
             {
@@ -1273,6 +1066,233 @@ namespace CalcPro
             {
                 Utility.ShowError(ex);
             }
+        }
+
+        private void btnAngebotCommentary_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                string st = ObjBProject.GetAngebotCommentary(ObjEProject.ProjectID);
+                frmViewcommentory Obj = new frmViewcommentory();
+                Obj.LongDescription = st;
+                Obj.ShowDialog();
+                if (Obj._IsSave)
+                {
+                    ObjBProject.SaveAngebotCommentary(ObjEProject.ProjectID, Obj.LongDescription);
+                }
+            }
+            catch (Exception ex) { }
+        }
+
+        private void btnCaluclatorCommentary_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                string st = ObjBProject.GetProjectCommentary(ObjEProject.ProjectID);
+                frmViewcommentory Obj = new frmViewcommentory();
+                Obj.LongDescription = st;
+                Obj.ShowDialog();
+                if (Obj._IsSave)
+                {
+                    ObjBProject.SaveProjectCommentary(ObjEProject.ProjectID, Obj.LongDescription);
+                }
+            }
+            catch (Exception ex) { }
+        }
+
+        private void btnDataTransfer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                string strFilePath = string.Empty;
+                XtraOpenFileDialog dlg = new XtraOpenFileDialog();
+
+                dlg.InitialDirectory = @"C:\";
+                dlg.Title = "Dateiauswahl für Data File Import";
+
+                dlg.CheckFileExists = true;
+                dlg.CheckPathExists = true;
+
+                dlg.Filter = "All files (*.*)|*.*";
+                dlg.RestoreDirectory = true;
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
+                    SplashScreenManager.Default.SetWaitFormDescription("Datentransfer läuft … ");
+                    strFilePath = dlg.FileName;
+                    string fileExt = Path.GetExtension(strFilePath);
+                    if (fileExt.CompareTo(".xls") == 0 || fileExt.CompareTo(".xlsx") == 0)
+                    {
+                        DataTable dtExcel = new DataTable();
+                        dtExcel = Utility.ReadExcel(strFilePath, fileExt); //read excel file  
+                        dtExcel.Rows.RemoveAt(0);
+                        dtExcel.Columns.RemoveAt(0);
+                        dtExcel.Columns[0].ColumnName = "WG";
+                        dtExcel.Columns[1].ColumnName = "WI";
+                        dtExcel.Columns[2].ColumnName = "KG";
+                        if (ObjEProject == null)
+                            ObjEProject = new EProject();
+                        if (ObjBProject == null)
+                            ObjBProject = new BProject();
+                        ObjEProject.dtTemplateData = new DataTable();
+                        ObjEProject.dtTemplateData = dtExcel.Copy();
+                        ObjEProject.UserName = Utility.UserName;
+                        ObjEProject = ObjBProject.GetCockpitData(ObjEProject);
+                        if (ObjBProject == null)
+                            ObjBProject = new BProject();
+                        string strTemp = ObjBProject.InssertCockpitData(ObjEProject);
+                        if (!string.IsNullOrEmpty(strTemp))
+                            throw new Exception(strTemp);
+                        SplashScreenManager.CloseForm(false);
+                        frmCalcPro.UpdateStatus("Data tranfer done successfully");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                SplashScreenManager.CloseForm(false);
+                Utility.ShowError(ex);
+            }
+        }
+
+        private void btnProjectExport_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                ObjBProject.GetProjectDetails(ObjEProject);
+                if (ObjEProject.IsFinalInvoice)
+                    return;
+                BindPositionData();
+                if (ObjEProject.ActualLvs == 0)
+                {
+                    if (Utility._IsGermany == true)
+                        XtraMessageBox.Show("Es liegen keine LV Positionen für den Export vor!");
+                    else
+                        XtraMessageBox.Show("No LV Positions to Export.!");
+                    return;
+                }
+                if (ObjEProject.ProjectID > 0)
+                {
+                    if (objBGAEB == null)
+                        objBGAEB = new BGAEB();
+                    if (objEGAEB == null)
+                        objEGAEB = new EGAEB();
+                    string SelectedRaster = ObjEProject.LVRaster;
+                    bool _rtnOldRaster = false;
+                    objEGAEB.OldRaster = objBGAEB.GetOld_Raster(ObjEProject.ProjectID);
+                    if (objEGAEB.OldRaster != "")
+                    {
+                        objEGAEB.NewRaster = ObjEProject.LVRaster;
+                        frmSelectRaster frm = new frmSelectRaster(objEGAEB);
+                        frm.ShowDialog();
+                        if (frm.DialogResult == DialogResult.OK)
+                        {
+                            SelectedRaster = frm.LVRaster;
+                            if (ObjEProject.LVRaster != SelectedRaster)
+                                _rtnOldRaster = true;
+                        }
+                        else
+                            return;
+                    }
+                    int raster_count = SelectedRaster.Replace(".", string.Empty).Length;
+                    frmGAEBExport Obj = new frmGAEBExport(ObjEProject.ProjectNumber, ObjEProject.ProjectID, raster_count, SelectedRaster, _rtnOldRaster);
+                    Obj.KNr = ObjEProject.CommissionNumber;
+                    Obj.ShowDialog();
+                    if (File.Exists(Obj.OutputFilePath))
+                        Process.Start("explorer.exe", "/select, \"" + Obj.OutputFilePath + "\"");
+                }
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+
+        private void btnProjectImport_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                if (ObjEProject.ProjectID > 0)
+                {
+                    if (ObjEProject.IsFinalInvoice)
+                        return;
+                    frmGAEBImport Obj = new frmGAEBImport();
+                    Obj.ProjectID = ObjEProject.ProjectID;
+                    Obj.KNr = ObjEProject.CommissionNumber;
+                    Obj.ShowDialog();
+                    ProjectID = Obj.ProjectID;
+                    if (ProjectID > 0 && Obj.isbuild)
+                    {
+                        SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
+                        SplashScreenManager.Default.SetWaitFormDescription("Laden Projekt...");
+                        LoadExistingRasters();
+                        LoadExistingProject();
+                        BindPositionData();
+                        IntializeLVPositions();
+                        if (ObjEProject.ActualLvs == 0)
+                            ChkRaster.Enabled = true;
+                        else
+                            ChkRaster.Enabled = false;
+                        SplashScreenManager.CloseForm(false);
+                        frmCalcPro.UpdateStatus("Projektdatenimport mit Erfolg abgeschlossen");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                SplashScreenManager.CloseForm(false);
+                if (Utility._IsGermany == true)
+                {
+                    throw new Exception("Das ausgewählte Datei-Raster ist nicht mit dem ausgewählten Projektraster kompatibel!");
+                }
+                else
+                {
+                    Utility.ShowError(ex);
+                }
+            }
+        }
+
+        private void dbtnPriceComp_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                if (tcProjectDetails.SelectedTabPage == tbLVDetails)
+                {
+                    if (tlPositions.Nodes.Count > 0)
+                    {
+                        panelControldoc.Visible = true;
+                        toggleSwitchType.Visible = true;
+                        dockPanelArticles.Show();
+                        dockPanelArticles_Click(null, null);
+                        lblArticles.Text = "Artikels :" + txtWG.Text + "/" + txtWA.Text + "/" + txtWI.Text;
+                        lblDimensions.Text = "Maße :" + txtDim1.Text + "/" + txtDim2.Text + "/" + txtDim3.Text;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+
+        private void btnFormBlattArt_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            ObjEPosition.ProjectID = ObjEProject.ProjectID;
+            frmFormBlattarticles Obj = new frmFormBlattarticles(ObjEPosition);
+            Obj.ShowDialog();
+        }
+
+        private void btnProjectArt_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            ObjEPosition.ProjectID = ObjEProject.ProjectID;
+            frmProjectArticles Obj = new frmProjectArticles(ObjEPosition);
+            Obj.ShowDialog();
+        }
+
+        private void btnArtSettings_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmArticleSettings Obj = new frmArticleSettings(ObjEProject);
+            Obj.ShowDialog();
         }
 
         private void txtLVSprunge_KeyPress(object sender, KeyPressEventArgs e)
@@ -1390,93 +1410,6 @@ namespace CalcPro
             {
                 Utility.ShowError(ex);
             }
-        }
-
-        private void btnTransfer_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string strFilePath = string.Empty;
-                XtraOpenFileDialog dlg = new XtraOpenFileDialog();
-
-                dlg.InitialDirectory = @"C:\";
-                dlg.Title = "Dateiauswahl für Data File Import";
-
-                dlg.CheckFileExists = true;
-                dlg.CheckPathExists = true;
-
-                dlg.Filter = "All files (*.*)|*.*";
-                dlg.RestoreDirectory = true;
-                if (dlg.ShowDialog() == DialogResult.OK)
-                {
-                    SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
-                    SplashScreenManager.Default.SetWaitFormDescription("Datentransfer läuft … ");
-                    strFilePath = dlg.FileName;
-                    string fileExt = Path.GetExtension(strFilePath);
-                    if (fileExt.CompareTo(".xls") == 0 || fileExt.CompareTo(".xlsx") == 0)
-                    {
-                        DataTable dtExcel = new DataTable();
-                        dtExcel = Utility.ReadExcel(strFilePath, fileExt); //read excel file  
-                        dtExcel.Rows.RemoveAt(0);
-                        dtExcel.Columns.RemoveAt(0);
-                        dtExcel.Columns[0].ColumnName = "WG";
-                        dtExcel.Columns[1].ColumnName = "WI";
-                        dtExcel.Columns[2].ColumnName = "KG";
-                        if (ObjEProject == null)
-                            ObjEProject = new EProject();
-                        if (ObjBProject == null)
-                            ObjBProject = new BProject();
-                        ObjEProject.dtTemplateData = new DataTable();
-                        ObjEProject.dtTemplateData = dtExcel.Copy();
-                        ObjEProject.UserName = Utility.UserName;
-                        ObjEProject = ObjBProject.GetCockpitData(ObjEProject);
-                        if (ObjBProject == null)
-                            ObjBProject = new BProject();
-                        string strTemp = ObjBProject.InssertCockpitData(ObjEProject);
-                        if (!string.IsNullOrEmpty(strTemp))
-                            throw new Exception(strTemp);
-                        SplashScreenManager.CloseForm(false);
-                        frmCalcPro.UpdateStatus("Data tranfer done successfully");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                SplashScreenManager.CloseForm(false);
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void btnKommentarKalkulator_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string st = ObjBProject.GetProjectCommentary(ObjEProject.ProjectID);
-                frmViewcommentory Obj = new frmViewcommentory();
-                Obj.LongDescription = st;
-                Obj.ShowDialog();
-                if (Obj._IsSave)
-                {
-                    ObjBProject.SaveProjectCommentary(ObjEProject.ProjectID, Obj.LongDescription);
-                }
-            }
-            catch (Exception ex) { }
-        }
-
-        private void btnSchlussparagraphAngebot_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string st = ObjBProject.GetAngebotCommentary(ObjEProject.ProjectID);
-                frmViewcommentory Obj = new frmViewcommentory();
-                Obj.LongDescription = st;
-                Obj.ShowDialog();
-                if (Obj._IsSave)
-                {
-                    ObjBProject.SaveAngebotCommentary(ObjEProject.ProjectID, Obj.LongDescription);
-                }
-            }
-            catch (Exception ex) { }
         }
 
         #endregion
@@ -1671,7 +1604,7 @@ namespace CalcPro
                         txtLVSprunge.Enabled = false;
                     }
                     if (!string.IsNullOrEmpty(txtkommissionNumber.Text) && Utility.UserName.ToLower() != "poweradmin")
-                        btnProjectSave.Enabled = false;
+                        btnSaveProject.Enabled = false;
                     if (ObjEProject.dtDiscount != null)
                         gcDiscount.DataSource = ObjEProject.dtDiscount;
                 }
@@ -1730,7 +1663,7 @@ namespace CalcPro
             if (Utility.UserName.ToLower() != "poweradmin")
             {
                 txtMWST.Enabled = false;
-                btnProjectSave.Enabled = false;
+                btnSaveProject.Enabled = false;
             }
             txtBauvorhaben.Enabled = false;
             cmbKundeNo.Enabled = false;
@@ -3851,9 +3784,9 @@ namespace CalcPro
                         if (string.IsNullOrEmpty(stwG))
                             return;
                     }
-                    string strcolumnName = tlPositions.FocusedColumn.FieldName; 
-                        btnSaveLVDetails_Click(null, null);
-                        tlPositions.FocusedColumn = tlPositions.Columns[strcolumnName];
+                    string strcolumnName = tlPositions.FocusedColumn.FieldName;
+                    btnSaveLVDetails_Click(null, null);
+                    tlPositions.FocusedColumn = tlPositions.Columns[strcolumnName];
                 }
             }
             catch (Exception ex) { Utility.ShowError(ex); }
@@ -4078,7 +4011,7 @@ namespace CalcPro
                             }
                             else
                             {
-                                ParseLVAndDetailKZCopyLV(ObjEPosition.dtCopyPosition.Rows[0], strPositionOZ, 
+                                ParseLVAndDetailKZCopyLV(ObjEPosition.dtCopyPosition.Rows[0], strPositionOZ,
                                     strParentOZ, iSNOValue, string.Empty, false);
                                 if (string.IsNullOrEmpty(ObjEPosition.Position_OZ))
                                     return;
@@ -4143,7 +4076,7 @@ namespace CalcPro
                             DataRow dataRow = (tlPositions.GetDataRecordByNode(tlPositions.FocusedNode) as DataRowView).Row;
                             if (dataRow == null) return;
                             ParsePositionDetailsfoCopyLV(dataRow, strPositionOZ, strParentOZ, iSNOValue, string.Empty, iValue + 1);
-                             ObjEPosition.RoundOffValue = ObjEProject.RoundingPrice;
+                            ObjEPosition.RoundOffValue = ObjEProject.RoundingPrice;
                             ObjBPosition.SavePositionDetails(ObjEPosition, ObjEProject.LVRaster, ObjEProject.LVSprunge, true);
                             RefreshTreelist(ObjEPosition);
                         }
@@ -6151,7 +6084,7 @@ namespace CalcPro
             }
             return TotalValue.ToString("n2");
         }
-        
+
         /// <summary>
         ///  Code to set rouning rule on treelist column
         /// </summary>
@@ -6183,9 +6116,9 @@ namespace CalcPro
             tlPositions.Columns["GB"].Format.FormatString = _Mask;
         }
 
-       /// <summary>
-       /// Code to save Position or porject specific article
-       /// </summary>
+        /// <summary>
+        /// Code to save Position or porject specific article
+        /// </summary>
         private void SavePositionArticle()
         {
             try
@@ -7578,7 +7511,7 @@ namespace CalcPro
             }
             catch (Exception ex) { }
         }
-        
+
         /// <summary>
         /// Code to set mask for onhe stude textbox based on extract from ratser
         /// </summary>
@@ -8633,7 +8566,7 @@ namespace CalcPro
         #endregion
 
         #endregion
-        
+
         #region MULTIES
 
         #region Events
@@ -8653,7 +8586,7 @@ namespace CalcPro
                     gcMulti5.DataSource = ObjEMulti.dtArticles;
                 }
             }
-            catch (Exception ex){Utility.ShowError(ex);}
+            catch (Exception ex) { Utility.ShowError(ex); }
         }
 
         private void btnMulti5UpdateSelbekosten_Click(object sender, EventArgs e)
@@ -9066,32 +8999,6 @@ namespace CalcPro
         #region "Delivery Notes Code"
 
         #region Events
-        private void nbDeliveryNotes_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                TabChange(tbDeliveryNotes);
-                if (ObjEDeliveryNotes == null)
-                    ObjEDeliveryNotes = new EDeliveryNotes();
-                if (ObjBDeliveryNotes == null)
-                    ObjBDeliveryNotes = new BDeliveryNotes();
-                chkActiveDelivery.Checked = true;
-                ObjEDeliveryNotes.ProjectID = ObjEProject.ProjectID;
-                ObjEDeliveryNotes = ObjBDeliveryNotes.GetPositions(ObjEDeliveryNotes);
-                gcPositions.DataSource = ObjEDeliveryNotes.dtPositions;
-                NewBlattnumber();
-                LoadNonActiveDelivery();
-                ObjEDeliveryNotes = ObjBDeliveryNotes.GetBlattNumbers(ObjEDeliveryNotes);
-                gcDeliveryNumbers.DataSource = ObjEDeliveryNotes.dtBlattNumbers;
-                if (Utility.DeliveryAccess == "7" || ObjEProject.IsFinalInvoice)
-                    btnSave.Enabled = false;
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
         private void gcPositions_DragOver(object sender, DragEventArgs e)
         {
             try
@@ -9449,7 +9356,7 @@ namespace CalcPro
                 Utility.ShowError(ex);
             }
         }
-        
+
         #endregion
 
         #region Functions
@@ -9501,39 +9408,6 @@ namespace CalcPro
         #endregion
 
         #region "Invoice Changes"
-
-        private void nbInvoices_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                TabChange(tbInvoices);
-                if (ObjEInvoice == null)
-                    ObjEInvoice = new EInvoice();
-                if (oBJBInvoice == null)
-                    oBJBInvoice = new BInvoice();
-                ObjEInvoice.ProjectID = ObjEProject.ProjectID;
-                ObjEInvoice = oBJBInvoice.GeTBlattNumbers(ObjEInvoice);
-                gcDeliveryNotes.DataSource = ObjEInvoice.dtBlattNumbers;
-                ObjEInvoice = oBJBInvoice.GetInvoices(ObjEInvoice);
-                gcInvoices.DataSource = ObjEInvoice.dtInvoices;
-                if (Utility.InvoiceAccess == "7" || ObjEProject.IsFinalInvoice)
-                    btnGenerate.Enabled = false;
-                if (ObjEProject.IsFinalInvoice)
-                {
-                    chkFinalInvoice.Checked = true;
-                    if (Utility.RoleID != 14)
-                    {
-                        chkFinalInvoice.Enabled = false;
-                        btnFinalBill.Enabled = false;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
         private void btnGenerate_Click(object sender, EventArgs e)
         {
             try
@@ -11535,39 +11409,6 @@ namespace CalcPro
         #region Copy LVs
 
         #region Events
-        private void nbCopyLVs_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                if (ObjEProject.ProjectID > 0)
-                {
-                    BindPositionData();
-                    if (tlPositions.AllNodesCount >= 2)
-                    {
-                        ObjTabDetails = tbCopyLVs;
-                        TabChange(ObjTabDetails);
-                        FillProjectNumber();
-                        rgDropMode.SelectedIndex = 2;
-                    }
-                    else
-                    {
-                        if (!Utility._IsGermany)
-                        {
-                            throw new Exception("Bitte legen Sie mindestens einen Titel und einen Untertitel an");
-                        }
-                        else
-                        {
-                            throw new Exception("Atleast one title and subtitle should be there in the project.");
-                        }
-
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
 
         private void lookUpEditOldProject_EditValueChanged(object sender, EventArgs e)
         {
@@ -12359,25 +12200,6 @@ namespace CalcPro
         #endregion
 
         #region Delivery
-        private void navBarItemDeliveryNote_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                tbReports.PageVisible = false;
-                TabChange(tbAufmassReport);
-                if (ObjEDeliveryNotes == null)
-                    ObjEDeliveryNotes = new EDeliveryNotes();
-                if (ObjBDeliveryNotes == null)
-                    ObjBDeliveryNotes = new BDeliveryNotes();
-                ObjEDeliveryNotes.ProjectID = ObjEProject.ProjectID;
-                ObjEDeliveryNotes = ObjBDeliveryNotes.GetBlattNumbers(ObjEDeliveryNotes);
-                gcDeliveryNoteReport.DataSource = ObjEDeliveryNotes.dtBlattNumbers;
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
 
         private void gcDeliveryReportAddress_Click(object sender, EventArgs e)
         {
@@ -12451,39 +12273,6 @@ namespace CalcPro
         #endregion
 
         #region Form Blatt
-
-        private void nbFormBlatt_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            try
-            {
-                ObjBProject.GetProjectDetails(ObjEProject);
-                if (ObjEProject.ProjectID > 0 && ObjEProject.ActualLvs > 0)
-                {
-                    ObjTabDetails = tbFormBlatt1;
-                    TabChange(ObjTabDetails);
-                    RequiredFieldsFormBlatt.Add(txtAmount);
-                    RequiredFieldsFormBlatt.Add(txtsurcharge_1_2);
-                    RequiredFieldsFormBlatt.Add(txtSurcharge_1_3);
-                    if (ObjEFormBlatt == null)
-                        ObjEFormBlatt = new EFormBlatt();
-                    if (ObjBFormBlatt == null)
-                        ObjBFormBlatt = new BFormBlatt();
-                    ObjEFormBlatt.ProjectID = ObjEProject.ProjectID;
-
-                    ObjBFormBlatt.Get_tbl221_2(ObjEFormBlatt);
-                    if (ObjEFormBlatt.dtBlatt221_2 != null)
-                    {
-                        gc221_2.DataSource = ObjEFormBlatt.dtBlatt221_2;
-                        bgv221_2.BestFitColumns();
-                    }
-                }
-                txtAmount.Text = txtInternX.Text;
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
 
         private void btnFomBlatt_221_Click(object sender, EventArgs e)
         {
@@ -12566,35 +12355,8 @@ namespace CalcPro
         #endregion
 
         #region "Discount"
-        private void gvDeleteDiscount_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (gvDiscount.FocusedRowHandle != null)
-                {
-                    int IValue = 0;
-                    string strTemp = Convert.ToString(gvDiscount.GetFocusedRowCellValue("DiscountID"));
-                    if (int.TryParse(strTemp, out IValue))
-                    {
 
-                        if (ObjEProject == null)
-                            ObjEProject = new EProject();
-                        if (ObjBProject == null)
-                            ObjBProject = new BProject();
-                        ObjEProject.DiscountID = IValue;
-                        ObjEProject = ObjBProject.DeleteDiscount(ObjEProject);
-                        gvDiscount.DeleteRow(gvDiscount.FocusedRowHandle);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        TreeListNode tlTemp = null;
-        private void miAddDiscount_Click(object sender, EventArgs e)
+        private void btnAddDisc_ItemClick(object sender, ItemClickEventArgs e)
         {
             try
             {
@@ -12697,6 +12459,35 @@ namespace CalcPro
                 Utility.ShowError(ex);
             }
         }
+
+        private void btnDeleteDisc_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                if (gvDiscount.FocusedRowHandle > 0)
+                {
+                    int IValue = 0;
+                    string strTemp = Convert.ToString(gvDiscount.GetFocusedRowCellValue("DiscountID"));
+                    if (int.TryParse(strTemp, out IValue))
+                    {
+
+                        if (ObjEProject == null)
+                            ObjEProject = new EProject();
+                        if (ObjBProject == null)
+                            ObjBProject = new BProject();
+                        ObjEProject.DiscountID = IValue;
+                        ObjEProject = ObjBProject.DeleteDiscount(ObjEProject);
+                        gvDiscount.DeleteRow(gvDiscount.FocusedRowHandle);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+
+        TreeListNode tlTemp = null;
 
         /// <summary>
         /// Code to find the cumulated titles in selected titles range
@@ -12874,107 +12665,7 @@ namespace CalcPro
 
         #region "Title Blatt"
 
-        private void nbCoverSheet1_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
-            SplashScreenManager.Default.SetWaitFormDescription("Bitte warten…");
-            Microsoft.Office.Interop.Word.Application wordApp = new Microsoft.Office.Interop.Word.Application();
-            try
-            {
-                if (ObjEProject == null)
-                    ObjEProject = new EProject();
-                if (ObjBProject == null)
-                    ObjBProject = new BProject();
-
-                ObjEProject = ObjBProject.GetPath(ObjEProject);
-                if (string.IsNullOrEmpty(ObjEProject.CoverSheetPath))
-                    throw new Exception("Der angegeben Ordnerpfad zum Titelblatt existiert nicht (mehr)");
-                if (!Directory.Exists(ObjEProject.CoverSheetPath))
-                    throw new Exception("Kein gültiger Ordnerpfad zum Titelblatt");
-                string strFileName = ObjEProject.CoverSheetPath + "\\" + ObjEProject.ProjectNumber + "_Rechnung.Docx";
-                if (!File.Exists(strFileName))
-                {
-                    Object oMissing = System.Reflection.Missing.Value;
-                    Object appPath = Application.UserAppDataPath + "\\Rechnung_Template.dotx";
-                    Object oTemplatePath = ObjEProject.TemplatePath + "\\Rechnung_Template.dotx";
-                    System.IO.File.Copy(Convert.ToString(oTemplatePath), Convert.ToString(appPath), true);
-                    Microsoft.Office.Interop.Word.Document wordDoc = new Microsoft.Office.Interop.Word.Document();
-                    wordDoc = wordApp.Documents.Add(ref appPath, ref oMissing, ref oMissing, ref oMissing);
-                    UdpateMergefields(wordDoc, wordApp, ObjEProject, string.Empty, string.Empty, DateTime.Now);
-                    wordDoc.SaveAs(strFileName);
-                    wordDoc.Close();
-                    Thread.Sleep(1000);
-                }
-                if (!Utility.fileIsOpen(strFileName))
-                {
-                    Microsoft.Office.Interop.Word.Application ap = new Microsoft.Office.Interop.Word.Application();
-                    ap.Documents.Open(strFileName);
-                    ap.Visible = true;
-                    ap.Activate();
-                }
-                else
-                    throw new Exception("Das Angebotsdokument für die '" + ObjEProject.ProjectNumber + "' ist bereits geöffnet");
-            }
-            catch (Exception ex) { }
-            finally
-            {
-                SplashScreenManager.CloseForm(false);
-                wordApp.Quit();
-            }
-        }
-
-        private void nbCoverSheet2_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
-            SplashScreenManager.Default.SetWaitFormDescription("Bitte warten…");
-            Microsoft.Office.Interop.Word.Application wordApp = new Microsoft.Office.Interop.Word.Application();
-            try
-            {
-                if (ObjEProject == null)
-                    ObjEProject = new EProject();
-                if (ObjBProject == null)
-                    ObjBProject = new BProject();
-
-                ObjEProject = ObjBProject.GetPath(ObjEProject);
-                if (string.IsNullOrEmpty(ObjEProject.CoverSheetPath))
-                    throw new Exception("Der angegeben Ordnerpfad zum Titelblatt existiert nicht (mehr)");
-
-                if (!Directory.Exists(ObjEProject.CoverSheetPath))
-                    throw new Exception("Kein gültiger Ordnerpfad zum Titelblatt");
-
-                string strFileName = ObjEProject.CoverSheetPath + "\\" + ObjEProject.ProjectNumber + "_Aufmass.Docx";
-                if (!File.Exists(strFileName))
-                {
-                    Object oMissing = System.Reflection.Missing.Value;
-                    Object appPath = Application.UserAppDataPath + "\\Aufmass_Template.dotx";
-                    Object oTemplatePath = ObjEProject.TemplatePath + "\\Aufmass_Template.dotx";
-                    System.IO.File.Copy(Convert.ToString(oTemplatePath), Convert.ToString(appPath), true);
-                    Microsoft.Office.Interop.Word.Document wordDoc = new Microsoft.Office.Interop.Word.Document();
-                    wordDoc = wordApp.Documents.Add(ref appPath, ref oMissing, ref oMissing, ref oMissing);
-                    UdpateMergefields(wordDoc, wordApp, ObjEProject, string.Empty, string.Empty, DateTime.Now);
-                    wordDoc.SaveAs(strFileName);
-                    wordDoc.Close();
-                    Thread.Sleep(1000);
-                }
-                if (!Utility.fileIsOpen(strFileName))
-                {
-                    Microsoft.Office.Interop.Word.Application ap = new Microsoft.Office.Interop.Word.Application();
-                    ap.Documents.Open(strFileName);
-                    ap.Visible = true;
-                    ap.Activate();
-                }
-                else
-                    throw new Exception("Das Aufmassdokument für die '" + ObjEProject.ProjectNumber + "' ist bereits geöffnet");
-            }
-            catch (Exception ex) { }
-            finally
-            {
-                SplashScreenManager.CloseForm(false);
-                wordApp.Quit();
-            }
-        }
-
-        private void nbCoverSheet3_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        private void btnTitleBlattV011_ItemClick(object sender, ItemClickEventArgs e)
         {
             SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
             SplashScreenManager.Default.SetWaitFormDescription("Bitte warten…");
@@ -13028,57 +12719,7 @@ namespace CalcPro
             }
         }
 
-        private void nbAngebot1_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
-            SplashScreenManager.Default.SetWaitFormDescription("Bitte warten…");
-            Microsoft.Office.Interop.Word.Application wordApp = new Microsoft.Office.Interop.Word.Application();
-            try
-            {
-                if (ObjEProject == null)
-                    ObjEProject = new EProject();
-                if (ObjBProject == null)
-                    ObjBProject = new BProject();
-
-                ObjEProject = ObjBProject.GetPath(ObjEProject);
-                if (string.IsNullOrEmpty(ObjEProject.CoverSheetPath))
-                    throw new Exception("Der angegeben Ordnerpfad zum Titelblatt existiert nicht (mehr)");
-                if (!Directory.Exists(ObjEProject.CoverSheetPath))
-                    throw new Exception("Kein gültiger Ordnerpfad zum Titelblatt");
-                string strFileName = ObjEProject.CoverSheetPath + "\\" + "V-014-" + ObjEProject.ProjectNumber + ".Docx";
-                if (!File.Exists(strFileName))
-                {
-                    var FolderPath = new DirectoryInfo(ObjEProject.TemplatePath).GetFiles("V-014*.dotx", SearchOption.AllDirectories).OrderByDescending(d => d.LastWriteTimeUtc).First();
-                    Object oMissing = System.Reflection.Missing.Value;
-                    Object appPath = Application.UserAppDataPath + "\\" + FolderPath;
-                    Object oTemplatePath = ObjEProject.TemplatePath + "\\" + FolderPath;
-                    System.IO.File.Copy(Convert.ToString(oTemplatePath), Convert.ToString(appPath), true);
-                    Microsoft.Office.Interop.Word.Document wordDoc = new Microsoft.Office.Interop.Word.Document();
-                    wordDoc = wordApp.Documents.Add(ref appPath, ref oMissing, ref oMissing, ref oMissing);
-                    UdpateMergefields(wordDoc, wordApp, ObjEProject, string.Empty, string.Empty, DateTime.Now);
-                    wordDoc.SaveAs(strFileName);
-                    wordDoc.Close();
-                    Thread.Sleep(1000);
-                }
-                if (!Utility.fileIsOpen(strFileName))
-                {
-                    Microsoft.Office.Interop.Word.Application ap = new Microsoft.Office.Interop.Word.Application();
-                    ap.Documents.Open(strFileName);
-                    ap.Visible = true;
-                    ap.Activate();
-                }
-                else
-                    throw new Exception("Das Angebotdokument für die '" + ObjEProject.ProjectNumber + "' ist bereits geöffnet");
-            }
-            catch (Exception ex)
-            {
-                if (ex.Message.Contains("Sequence contains no elements"))
-                    XtraMessageBox.Show("Die erforderliche Dokumentenvorlage ist nicht eingestellt!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally { SplashScreenManager.CloseForm(false); wordApp.Quit(); }
-        }
-
-        private void nbAngebot2_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        private void btnTitleBlattV012_ItemClick(object sender, ItemClickEventArgs e)
         {
             SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
             SplashScreenManager.Default.SetWaitFormDescription("Bitte warten…");
@@ -13128,7 +12769,7 @@ namespace CalcPro
             finally { SplashScreenManager.CloseForm(false); wordApp.Quit(); }
         }
 
-        private void nbAngebot3_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        private void btnTitleBlattV013_ItemClick(object sender, ItemClickEventArgs e)
         {
             SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
             SplashScreenManager.Default.SetWaitFormDescription("Bitte warten…");
@@ -13186,7 +12827,156 @@ namespace CalcPro
             finally { SplashScreenManager.CloseForm(false); }
         }
 
-        
+        private void btnTitleBlattV014_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
+            SplashScreenManager.Default.SetWaitFormDescription("Bitte warten…");
+            Microsoft.Office.Interop.Word.Application wordApp = new Microsoft.Office.Interop.Word.Application();
+            try
+            {
+                if (ObjEProject == null)
+                    ObjEProject = new EProject();
+                if (ObjBProject == null)
+                    ObjBProject = new BProject();
+
+                ObjEProject = ObjBProject.GetPath(ObjEProject);
+                if (string.IsNullOrEmpty(ObjEProject.CoverSheetPath))
+                    throw new Exception("Der angegeben Ordnerpfad zum Titelblatt existiert nicht (mehr)");
+                if (!Directory.Exists(ObjEProject.CoverSheetPath))
+                    throw new Exception("Kein gültiger Ordnerpfad zum Titelblatt");
+                string strFileName = ObjEProject.CoverSheetPath + "\\" + "V-014-" + ObjEProject.ProjectNumber + ".Docx";
+                if (!File.Exists(strFileName))
+                {
+                    var FolderPath = new DirectoryInfo(ObjEProject.TemplatePath).GetFiles("V-014*.dotx", SearchOption.AllDirectories).OrderByDescending(d => d.LastWriteTimeUtc).First();
+                    Object oMissing = System.Reflection.Missing.Value;
+                    Object appPath = Application.UserAppDataPath + "\\" + FolderPath;
+                    Object oTemplatePath = ObjEProject.TemplatePath + "\\" + FolderPath;
+                    System.IO.File.Copy(Convert.ToString(oTemplatePath), Convert.ToString(appPath), true);
+                    Microsoft.Office.Interop.Word.Document wordDoc = new Microsoft.Office.Interop.Word.Document();
+                    wordDoc = wordApp.Documents.Add(ref appPath, ref oMissing, ref oMissing, ref oMissing);
+                    UdpateMergefields(wordDoc, wordApp, ObjEProject, string.Empty, string.Empty, DateTime.Now);
+                    wordDoc.SaveAs(strFileName);
+                    wordDoc.Close();
+                    Thread.Sleep(1000);
+                }
+                if (!Utility.fileIsOpen(strFileName))
+                {
+                    Microsoft.Office.Interop.Word.Application ap = new Microsoft.Office.Interop.Word.Application();
+                    ap.Documents.Open(strFileName);
+                    ap.Visible = true;
+                    ap.Activate();
+                }
+                else
+                    throw new Exception("Das Angebotdokument für die '" + ObjEProject.ProjectNumber + "' ist bereits geöffnet");
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.Contains("Sequence contains no elements"))
+                    XtraMessageBox.Show("Die erforderliche Dokumentenvorlage ist nicht eingestellt!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally { SplashScreenManager.CloseForm(false); wordApp.Quit(); }
+        }
+
+        private void btnTitleBlattDelivery_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
+            SplashScreenManager.Default.SetWaitFormDescription("Bitte warten…");
+            Microsoft.Office.Interop.Word.Application wordApp = new Microsoft.Office.Interop.Word.Application();
+            try
+            {
+                if (ObjEProject == null)
+                    ObjEProject = new EProject();
+                if (ObjBProject == null)
+                    ObjBProject = new BProject();
+
+                ObjEProject = ObjBProject.GetPath(ObjEProject);
+                if (string.IsNullOrEmpty(ObjEProject.CoverSheetPath))
+                    throw new Exception("Der angegeben Ordnerpfad zum Titelblatt existiert nicht (mehr)");
+
+                if (!Directory.Exists(ObjEProject.CoverSheetPath))
+                    throw new Exception("Kein gültiger Ordnerpfad zum Titelblatt");
+
+                string strFileName = ObjEProject.CoverSheetPath + "\\" + ObjEProject.ProjectNumber + "_Aufmass.Docx";
+                if (!File.Exists(strFileName))
+                {
+                    Object oMissing = System.Reflection.Missing.Value;
+                    Object appPath = Application.UserAppDataPath + "\\Aufmass_Template.dotx";
+                    Object oTemplatePath = ObjEProject.TemplatePath + "\\Aufmass_Template.dotx";
+                    System.IO.File.Copy(Convert.ToString(oTemplatePath), Convert.ToString(appPath), true);
+                    Microsoft.Office.Interop.Word.Document wordDoc = new Microsoft.Office.Interop.Word.Document();
+                    wordDoc = wordApp.Documents.Add(ref appPath, ref oMissing, ref oMissing, ref oMissing);
+                    UdpateMergefields(wordDoc, wordApp, ObjEProject, string.Empty, string.Empty, DateTime.Now);
+                    wordDoc.SaveAs(strFileName);
+                    wordDoc.Close();
+                    Thread.Sleep(1000);
+                }
+                if (!Utility.fileIsOpen(strFileName))
+                {
+                    Microsoft.Office.Interop.Word.Application ap = new Microsoft.Office.Interop.Word.Application();
+                    ap.Documents.Open(strFileName);
+                    ap.Visible = true;
+                    ap.Activate();
+                }
+                else
+                    throw new Exception("Das Aufmassdokument für die '" + ObjEProject.ProjectNumber + "' ist bereits geöffnet");
+            }
+            catch (Exception ex) { }
+            finally
+            {
+                SplashScreenManager.CloseForm(false);
+                wordApp.Quit();
+            }
+        }
+
+        private void btnTitleBlattInvoice_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
+            SplashScreenManager.Default.SetWaitFormDescription("Bitte warten…");
+            Microsoft.Office.Interop.Word.Application wordApp = new Microsoft.Office.Interop.Word.Application();
+            try
+            {
+                if (ObjEProject == null)
+                    ObjEProject = new EProject();
+                if (ObjBProject == null)
+                    ObjBProject = new BProject();
+
+                ObjEProject = ObjBProject.GetPath(ObjEProject);
+                if (string.IsNullOrEmpty(ObjEProject.CoverSheetPath))
+                    throw new Exception("Der angegeben Ordnerpfad zum Titelblatt existiert nicht (mehr)");
+                if (!Directory.Exists(ObjEProject.CoverSheetPath))
+                    throw new Exception("Kein gültiger Ordnerpfad zum Titelblatt");
+                string strFileName = ObjEProject.CoverSheetPath + "\\" + ObjEProject.ProjectNumber + "_Rechnung.Docx";
+                if (!File.Exists(strFileName))
+                {
+                    Object oMissing = System.Reflection.Missing.Value;
+                    Object appPath = Application.UserAppDataPath + "\\Rechnung_Template.dotx";
+                    Object oTemplatePath = ObjEProject.TemplatePath + "\\Rechnung_Template.dotx";
+                    System.IO.File.Copy(Convert.ToString(oTemplatePath), Convert.ToString(appPath), true);
+                    Microsoft.Office.Interop.Word.Document wordDoc = new Microsoft.Office.Interop.Word.Document();
+                    wordDoc = wordApp.Documents.Add(ref appPath, ref oMissing, ref oMissing, ref oMissing);
+                    UdpateMergefields(wordDoc, wordApp, ObjEProject, string.Empty, string.Empty, DateTime.Now);
+                    wordDoc.SaveAs(strFileName);
+                    wordDoc.Close();
+                    Thread.Sleep(1000);
+                }
+                if (!Utility.fileIsOpen(strFileName))
+                {
+                    Microsoft.Office.Interop.Word.Application ap = new Microsoft.Office.Interop.Word.Application();
+                    ap.Documents.Open(strFileName);
+                    ap.Visible = true;
+                    ap.Activate();
+                }
+                else
+                    throw new Exception("Das Angebotsdokument für die '" + ObjEProject.ProjectNumber + "' ist bereits geöffnet");
+            }
+            catch (Exception ex) { }
+            finally
+            {
+                SplashScreenManager.CloseForm(false);
+                wordApp.Quit();
+            }
+        }
+
         private void UdpateMergefields(Microsoft.Office.Interop.Word.Document wordDoc,
             Microsoft.Office.Interop.Word.Application wordApp, EProject eproject, string SupplierName,
             string SupplierAddress, DateTime dtDeliveryDeadLine)
@@ -13209,7 +12999,7 @@ namespace CalcPro
         }
 
         private void ReplaceMergeFieldValues(Microsoft.Office.Interop.Word.Field myMergeField,
-            Microsoft.Office.Interop.Word.Application wordApp,EProject eproject, string SupplierName,
+            Microsoft.Office.Interop.Word.Application wordApp, EProject eproject, string SupplierName,
             string SupplierAddress, DateTime dtDeliveryDeadLine)
         {
             try
@@ -13225,7 +13015,7 @@ namespace CalcPro
 
                     switch (fieldName)
                     {
-                        case "CustName" :
+                        case "CustName":
                             myMergeField.Select();
                             wordApp.Selection.TypeText(ObjEProject.KundeName);
                             break;
@@ -13264,12 +13054,138 @@ namespace CalcPro
                     }
                 }
             }
-            catch (Exception ex){throw ex;}
+            catch (Exception ex) { throw ex; }
         }
 
         #endregion
 
-        #endregion
+        #region "Report Buttons"
+        private void btnAngebotReport_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                frmReportSetting Obj = new frmReportSetting(ObjEProject.ProjectID, ObjEProject.ProjectDescription, ObjEProject.LVRaster);
+                Obj.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
 
+        private void btnQuerCalcV1_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                frmQuerKalculation frm = new frmQuerKalculation(ObjEProject.ProjectID, ObjEProject.ProjectDescription);
+                frm.stRaster = ObjEProject.LVRaster;
+                frm.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+
+        private void btnQuerCalcV2_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                frmQuerKalculation frm = new frmQuerKalculation(ObjEProject.ProjectID, ObjEProject.ProjectDescription, 2);
+                frm.stRaster = ObjEProject.LVRaster;
+                frm.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+
+        private void btnFormBlatt_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                ObjBProject.GetProjectDetails(ObjEProject);
+                if (ObjEProject.ProjectID > 0 && ObjEProject.ActualLvs > 0)
+                {
+                    ObjTabDetails = tbFormBlatt1;
+                    TabChange(ObjTabDetails);
+                    RequiredFieldsFormBlatt.Add(txtAmount);
+                    RequiredFieldsFormBlatt.Add(txtsurcharge_1_2);
+                    RequiredFieldsFormBlatt.Add(txtSurcharge_1_3);
+                    if (ObjEFormBlatt == null)
+                        ObjEFormBlatt = new EFormBlatt();
+                    if (ObjBFormBlatt == null)
+                        ObjBFormBlatt = new BFormBlatt();
+                    ObjEFormBlatt.ProjectID = ObjEProject.ProjectID;
+
+                    ObjBFormBlatt.Get_tbl221_2(ObjEFormBlatt);
+                    if (ObjEFormBlatt.dtBlatt221_2 != null)
+                    {
+                        gc221_2.DataSource = ObjEFormBlatt.dtBlatt221_2;
+                        bgv221_2.BestFitColumns();
+                    }
+                }
+                txtAmount.Text = txtInternX.Text;
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+
+        private void btnBreakdownReport_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                rptSampleBreakdown rptMA = new rptSampleBreakdown();
+                rptMA.Name = "Einzelaufgliederung Beispiel";
+                //rptMA.Name = "Einzelaufgliederung Beispiel_" + ObjEProject.ProjectDescription.Replace("-", "");
+                ReportPrintTool printTool = new ReportPrintTool(rptMA);
+                rptMA.Parameters["ProjectID"].Value = ObjEProject.ProjectID;
+                rptMA.Parameters["InternX"].Value = ObjEProject.InternX;
+                rptMA.Parameters["InternS"].Value = ObjEProject.InternS;
+                rptMA.PrintingSystem.Document.AutoFitToPagesWidth = 1;
+                printTool.ShowRibbonPreview();
+            }
+            catch (Exception ex) { }
+        }
+
+        private void btnConsolidatedBlatt_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                rptConsolidatedBlatt rpt = new rptConsolidatedBlatt();
+                ReportPrintTool printTool = new ReportPrintTool(rpt);
+                rpt.Parameters["ProjectID"].Value = ObjEProject.ProjectID;
+                printTool.ShowRibbonPreview();
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+
+        private void btnDeliveryNotes_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                tbReports.PageVisible = false;
+                TabChange(tbAufmassReport);
+                if (ObjEDeliveryNotes == null)
+                    ObjEDeliveryNotes = new EDeliveryNotes();
+                if (ObjBDeliveryNotes == null)
+                    ObjBDeliveryNotes = new BDeliveryNotes();
+                ObjEDeliveryNotes.ProjectID = ObjEProject.ProjectID;
+                ObjEDeliveryNotes = ObjBDeliveryNotes.GetBlattNumbers(ObjEDeliveryNotes);
+                gcDeliveryNoteReport.DataSource = ObjEDeliveryNotes.dtBlattNumbers;
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+        #endregion
+        #endregion
     }
 }
