@@ -127,6 +127,7 @@ namespace CalcPro
 
         private void frmCalcPro_Load(object sender, EventArgs e)
         {
+          
             try
             {
                 txtAppVersion.Caption = "Version Software : " + Utility.Appversion + Utility.VersionDate;
@@ -164,6 +165,8 @@ namespace CalcPro
                 }
             }
             catch (Exception ex){}
+
+           
         }
 
         private void btnShortCuts_ItemClick(object sender, ItemClickEventArgs e)
@@ -184,7 +187,8 @@ namespace CalcPro
             try
             {
                 frmLoadCustomerMaster Obj = new frmLoadCustomerMaster();
-                Obj.ShowDialog();
+                // Obj.ShowDialog();
+                ShowForm(Obj);
             }
             catch (Exception ex) { Utility.ShowError(ex); }
         }
@@ -206,9 +210,44 @@ namespace CalcPro
         }
 
         private void btnArticledata_ItemClick(object sender, ItemClickEventArgs e)
-        {            
-            frmArticlesData Obj = new frmArticlesData();
-            Obj.ShowDialog();
+        {
+            frmArticlesData obj = new frmArticlesData();
+            ShowForm( obj);
+           
+        }
+
+
+        void ShowForm(DevExpress.XtraBars.Ribbon.RibbonForm MdiChild)
+        {
+            try
+            {
+                foreach (Form frm in Application.OpenForms)
+                {
+                    if (frm.Name == MdiChild.Name)
+                        {
+                            frm.Close();
+                            break;
+                        }
+                    }
+
+                this.pictureBox1.Visible = false;
+                //this.ribbon.MergedPages.Clear();
+                MdiChild.MdiParent = this;
+                MdiChild.Show();
+                this.Ribbon.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
+                this.ribbon.SelectPage(MdiChild.Ribbon.Pages[0]);
+                if (MdiChild.Name == "frmArticleAccessories")
+                  this.ribbon.Minimized = true;
+                else
+                    this.ribbon.Minimized = false;
+
+
+
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
         }
 
         private void btnTextModule_ItemClick(object sender, ItemClickEventArgs e)
@@ -219,14 +258,15 @@ namespace CalcPro
 
         private void btnTyp_ItemClick(object sender, ItemClickEventArgs e)
         {            
-            frmType Obj = new frmType();          
-            Obj.ShowDialog();
+            frmType Obj = new frmType();
+            ShowForm(Obj);
         }
 
         private void btnRabatt_ItemClick(object sender, ItemClickEventArgs e)
         {            
-            frmRabattGroup Obj = new frmRabattGroup();           
-            Obj.ShowDialog();
+            frmRabattGroup Obj = new frmRabattGroup();
+            //Obj.ShowDialog();
+            ShowForm(Obj);
         }
 
         private void xtraTabbedMdiManager1_PageRemoved(object sender, DevExpress.XtraTabbedMdi.MdiTabPageEventArgs e)
@@ -314,8 +354,9 @@ namespace CalcPro
         
         private void btnAddAccessories_ItemClick(object sender, ItemClickEventArgs e)
         {           
-            frmArticleAccessories Obj = new frmArticleAccessories();           
-            Obj.ShowDialog();
+            frmArticleAccessories Obj = new frmArticleAccessories();
+            //Obj.ShowDialog();
+            ShowForm(Obj);
         }
 
         private void btnProjectImport_ItemClick(object sender, ItemClickEventArgs e)

@@ -17,7 +17,7 @@ using DataAccess;
 
 namespace CalcPro
 {
-    public partial class frmRabattGroup : DevExpress.XtraEditors.XtraForm
+    public partial class frmRabattGroup : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         /// <summary>
         /// This form is to add , edit and view the rabatt
@@ -48,7 +48,7 @@ namespace CalcPro
             try
             {
                 if (Utility.ArticleDataAccess == "7")
-                    btnAdd.Enabled = false;
+                    RbtnAdd.Enabled = false;
 
                 if (ObjEArticle == null)
                     ObjEArticle = new EArticles();
@@ -82,7 +82,7 @@ namespace CalcPro
                             ObjEArticle = new EArticles();
                         ObjEArticle.RID = _IDValue;
                         string stRabatt = Convert.ToString(gvRabatt.GetFocusedRowCellValue("Rabatt"));
-                        lblTypName.Text = "Typs Associated with Rabbat : " + stRabatt;
+                        layoutControlItem1.Text = "Typs Associated with Rabbat : " + stRabatt;
                         ObjEArticle = ObjBArticle.GetTypByRabatt(ObjEArticle);
                         gcTyp.DataSource = ObjEArticle.dtTypID;
                         gvTyp.Columns["RabattTypMapID"].Visible = false;
@@ -407,5 +407,30 @@ namespace CalcPro
             }
         }
         #endregion
+
+        private void RbtnCancel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnCancel_Click(0, e);
+        }
+
+        private void RbtnReset_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnReset_Click(0, e);
+        }
+
+        private void RbtnAdd_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnAdd_Click(0, e);
+        }
+
+        private void RbtnAddtype_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnAddtype_Click(0, e);
+        }
+
+        private void RbtnCopyRabatt_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnCopyRabatt_Click(0, e);
+        }
     }
 }

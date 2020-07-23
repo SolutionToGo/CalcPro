@@ -18,7 +18,7 @@ using DevExpress.XtraRichEdit;
 
 namespace CalcPro
 {
-    public partial class frmLoadCustomerMaster : DevExpress.XtraEditors.XtraForm
+    public partial class frmLoadCustomerMaster : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         ECustomer ObjECustomer = new ECustomer();
         BCustomer ObjBCustomer = new BCustomer();
@@ -85,8 +85,8 @@ namespace CalcPro
             {
                 if (Utility.CustomerDataAccess == "7")
                 {
-                    btnContactAdd.Enabled = false;
-                    btnAddressAdd.Enabled = false;
+                    RbtnAddContact.Enabled = false;
+                    RbtnAddAddress.Enabled = false;
                 }
                 BindCustomerData();
                 if (ObjECustomer.dsCustomer != null && ObjECustomer.dsCustomer.Tables[0].Rows.Count > 0)
@@ -444,6 +444,31 @@ namespace CalcPro
                     this.Close();
             }
             catch (Exception ex) { }
+        }
+
+        private void Rbtnreset_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnReset_Click(0, e);
+        }
+
+        private void RbtnNew_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnNew_Click(0,e);
+        }
+
+        private void RbtnSave_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnSave_Click(0, e);
+        }
+
+        private void RbtnAddContact_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnContactAdd_Click(0, e);
+        }
+
+        private void RbtnAddAddress_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnAddressAdd_Click(0, e);
         }
     }
 }

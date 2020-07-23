@@ -32,17 +32,17 @@ namespace CalcPro
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArticleAccessories));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.gcAccessories = new DevExpress.XtraGrid.GridControl();
             this.gvAccessories = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -68,6 +68,10 @@ namespace CalcPro
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.RbtnCancel = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcAccessories)).BeginInit();
@@ -79,35 +83,61 @@ namespace CalcPro
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
             // 
-            this.layoutControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(158)))), ((int)(((byte)(224)))));
+            this.layoutControl1.Appearance.Control.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.Control.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDisabled.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDropDown.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDropDown.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDropDownHeader.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDropDownHeader.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlFocused.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlReadOnly.Options.UseFont = true;
+            this.layoutControl1.Appearance.DisabledLayoutGroupCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.DisabledLayoutGroupCaption.Options.UseFont = true;
             this.layoutControl1.Controls.Add(this.gcAccessories);
             this.layoutControl1.Controls.Add(this.gcArticles);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl1.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Location = new System.Drawing.Point(0, 211);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(1128, 624);
+            this.layoutControl1.Size = new System.Drawing.Size(1316, 557);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // gcAccessories
             // 
-            this.gcAccessories.Location = new System.Drawing.Point(4, 457);
+            this.gcAccessories.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.gcAccessories.Location = new System.Drawing.Point(2, 419);
             this.gcAccessories.MainView = this.gvAccessories;
+            this.gcAccessories.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcAccessories.Name = "gcAccessories";
             this.gcAccessories.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnDelete});
-            this.gcAccessories.Size = new System.Drawing.Size(1120, 163);
+            this.gcAccessories.Size = new System.Drawing.Size(1312, 136);
             this.gcAccessories.TabIndex = 6;
             this.gcAccessories.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvAccessories});
             // 
             // gvAccessories
             // 
+            this.gvAccessories.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gvAccessories.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.gvAccessories.Appearance.FooterPanel.Font = new System.Drawing.Font("Bahnschrift", 10F);
+            this.gvAccessories.Appearance.FooterPanel.Options.UseFont = true;
+            this.gvAccessories.Appearance.HeaderPanel.Font = new System.Drawing.Font("Bahnschrift", 10F);
+            this.gvAccessories.Appearance.HeaderPanel.Options.UseFont = true;
+            this.gvAccessories.Appearance.Row.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.gvAccessories.Appearance.Row.Options.UseFont = true;
             this.gvAccessories.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn9,
             this.gridColumn10,
@@ -116,6 +146,7 @@ namespace CalcPro
             this.gridColumn13,
             this.gridColumn14,
             this.gridColumn15});
+            this.gvAccessories.DetailHeight = 431;
             this.gvAccessories.GridControl = this.gcAccessories;
             this.gvAccessories.Name = "gvAccessories";
             this.gvAccessories.OptionsView.ShowGroupPanel = false;
@@ -124,95 +155,112 @@ namespace CalcPro
             // 
             this.gridColumn9.Caption = "WG";
             this.gridColumn9.FieldName = "WG";
+            this.gridColumn9.MinWidth = 23;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.OptionsColumn.AllowEdit = false;
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 0;
-            this.gridColumn9.Width = 100;
+            this.gridColumn9.Width = 117;
             // 
             // gridColumn10
             // 
             this.gridColumn10.Caption = "WG Beschreibung";
             this.gridColumn10.FieldName = "WGDescription";
+            this.gridColumn10.MinWidth = 23;
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.OptionsColumn.AllowEdit = false;
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 1;
-            this.gridColumn10.Width = 250;
+            this.gridColumn10.Width = 292;
             // 
             // gridColumn11
             // 
             this.gridColumn11.Caption = "WA";
             this.gridColumn11.FieldName = "WA";
+            this.gridColumn11.MinWidth = 23;
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.OptionsColumn.AllowEdit = false;
             this.gridColumn11.Visible = true;
             this.gridColumn11.VisibleIndex = 2;
-            this.gridColumn11.Width = 88;
+            this.gridColumn11.Width = 103;
             // 
             // gridColumn12
             // 
             this.gridColumn12.Caption = "WA Beschreibung";
             this.gridColumn12.FieldName = "WADescription";
+            this.gridColumn12.MinWidth = 23;
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.OptionsColumn.AllowEdit = false;
             this.gridColumn12.Visible = true;
             this.gridColumn12.VisibleIndex = 3;
-            this.gridColumn12.Width = 250;
+            this.gridColumn12.Width = 292;
             // 
             // gridColumn13
             // 
             this.gridColumn13.Caption = "WI";
             this.gridColumn13.FieldName = "WI";
+            this.gridColumn13.MinWidth = 23;
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.OptionsColumn.AllowEdit = false;
             this.gridColumn13.Visible = true;
             this.gridColumn13.VisibleIndex = 4;
-            this.gridColumn13.Width = 71;
+            this.gridColumn13.Width = 83;
             // 
             // gridColumn14
             // 
             this.gridColumn14.Caption = "WI Beschreibung";
             this.gridColumn14.FieldName = "WIDescription";
+            this.gridColumn14.MinWidth = 23;
             this.gridColumn14.Name = "gridColumn14";
             this.gridColumn14.OptionsColumn.AllowEdit = false;
             this.gridColumn14.Visible = true;
             this.gridColumn14.VisibleIndex = 5;
-            this.gridColumn14.Width = 250;
+            this.gridColumn14.Width = 292;
             // 
             // gridColumn15
             // 
             this.gridColumn15.Caption = "Delete";
             this.gridColumn15.ColumnEdit = this.btnDelete;
+            this.gridColumn15.MinWidth = 23;
             this.gridColumn15.Name = "gridColumn15";
             this.gridColumn15.Visible = true;
             this.gridColumn15.VisibleIndex = 6;
-            this.gridColumn15.Width = 93;
+            this.gridColumn15.Width = 108;
             // 
             // btnDelete
             // 
             this.btnDelete.AutoHeight = false;
-            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             this.btnDelete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btnDelete.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnDelete_ButtonClick);
             // 
             // gcArticles
             // 
-            this.gcArticles.Location = new System.Drawing.Point(4, 20);
+            this.gcArticles.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.gcArticles.Location = new System.Drawing.Point(2, 26);
             this.gcArticles.MainView = this.gvArticles;
+            this.gcArticles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcArticles.Name = "gcArticles";
             this.gcArticles.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnAddAccessory});
-            this.gcArticles.Size = new System.Drawing.Size(1120, 417);
+            this.gcArticles.Size = new System.Drawing.Size(1312, 365);
             this.gcArticles.TabIndex = 4;
             this.gcArticles.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvArticles});
             // 
             // gvArticles
             // 
+            this.gvArticles.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gvArticles.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.gvArticles.Appearance.FooterPanel.Font = new System.Drawing.Font("Bahnschrift", 10F);
+            this.gvArticles.Appearance.FooterPanel.Options.UseFont = true;
+            this.gvArticles.Appearance.HeaderPanel.Font = new System.Drawing.Font("Bahnschrift", 10F);
+            this.gvArticles.Appearance.HeaderPanel.Options.UseFont = true;
+            this.gvArticles.Appearance.Row.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.gvArticles.Appearance.Row.Options.UseFont = true;
             this.gvArticles.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
@@ -222,6 +270,7 @@ namespace CalcPro
             this.gridColumn6,
             this.gridColumn7,
             this.gridColumn8});
+            this.gvArticles.DetailHeight = 431;
             this.gvArticles.GridControl = this.gcArticles;
             this.gvArticles.Name = "gvArticles";
             this.gvArticles.OptionsView.ShowGroupPanel = false;
@@ -231,71 +280,78 @@ namespace CalcPro
             // 
             this.gridColumn1.Caption = "WG";
             this.gridColumn1.FieldName = "WG";
+            this.gridColumn1.MinWidth = 23;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 100;
+            this.gridColumn1.Width = 117;
             // 
             // gridColumn2
             // 
             this.gridColumn2.Caption = "WG Beschreibung";
             this.gridColumn2.FieldName = "WGDescription";
+            this.gridColumn2.MinWidth = 23;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 215;
+            this.gridColumn2.Width = 251;
             // 
             // gridColumn3
             // 
             this.gridColumn3.Caption = "WA";
             this.gridColumn3.FieldName = "WA";
+            this.gridColumn3.MinWidth = 23;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowEdit = false;
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 100;
+            this.gridColumn3.Width = 117;
             // 
             // gridColumn4
             // 
             this.gridColumn4.Caption = "WA Beschreibung";
             this.gridColumn4.FieldName = "WADescription";
+            this.gridColumn4.MinWidth = 23;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowEdit = false;
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 3;
-            this.gridColumn4.Width = 215;
+            this.gridColumn4.Width = 251;
             // 
             // gridColumn5
             // 
             this.gridColumn5.Caption = "WI";
             this.gridColumn5.FieldName = "WI";
+            this.gridColumn5.MinWidth = 23;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowEdit = false;
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 4;
-            this.gridColumn5.Width = 100;
+            this.gridColumn5.Width = 117;
             // 
             // gridColumn6
             // 
             this.gridColumn6.Caption = "WI Beschreibung";
             this.gridColumn6.FieldName = "WIDescription";
+            this.gridColumn6.MinWidth = 23;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.OptionsColumn.AllowEdit = false;
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 5;
-            this.gridColumn6.Width = 215;
+            this.gridColumn6.Width = 251;
             // 
             // gridColumn7
             // 
             this.gridColumn7.Caption = "Has Accessories";
             this.gridColumn7.FieldName = "HasAccessories";
+            this.gridColumn7.MinWidth = 23;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.OptionsColumn.AllowEdit = false;
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 6;
-            this.gridColumn7.Width = 100;
+            this.gridColumn7.Width = 117;
             // 
             // gridColumn8
             // 
@@ -303,70 +359,121 @@ namespace CalcPro
             this.gridColumn8.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn8.Caption = "Add";
             this.gridColumn8.ColumnEdit = this.btnAddAccessory;
+            this.gridColumn8.MinWidth = 23;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 7;
-            this.gridColumn8.Width = 55;
+            this.gridColumn8.Width = 64;
             // 
             // btnAddAccessory
             // 
             this.btnAddAccessory.AutoHeight = false;
-            editorButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions4.Image")));
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
             this.btnAddAccessory.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnAddAccessory.Name = "btnAddAccessory";
             this.btnAddAccessory.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btnAddAccessory.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnAddAccessory_ButtonClick);
             // 
             // Root
             // 
-            this.Root.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.Root.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.Root.AppearanceGroup.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.Root.AppearanceGroup.Options.UseFont = true;
+            this.Root.AppearanceItemCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.Root.AppearanceItemCaption.Options.UseFont = true;
-            this.Root.AppearanceItemCaption.Options.UseForeColor = true;
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.Root.GroupBordersVisible = false;
+            this.Root.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
             this.layoutControlItem3});
             this.Root.Name = "Root";
-            this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.Root.Size = new System.Drawing.Size(1128, 624);
+            this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.Root.Size = new System.Drawing.Size(1316, 557);
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.gcArticles;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1124, 437);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1316, 393);
             this.layoutControlItem1.Text = "Artikelauswahl";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(359, 13);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(493, 21);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.gcAccessories;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 437);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 393);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(1124, 183);
+            this.layoutControlItem3.Size = new System.Drawing.Size(1316, 164);
             this.layoutControlItem3.Text = "Zubehörauswahl - Press F4 to add accessory for selected article";
             this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(359, 13);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(493, 21);
+            // 
+            // ribbonControl1
+            // 
+            this.ribbonControl1.AutoHideEmptyItems = true;
+            this.ribbonControl1.ExpandCollapseItem.Id = 0;
+            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl1.ExpandCollapseItem,
+            this.RbtnCancel});
+            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.MaxItemId = 2;
+            this.ribbonControl1.Name = "ribbonControl1";
+            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.ribbonPage1});
+            this.ribbonControl1.Size = new System.Drawing.Size(1316, 211);
+            this.ribbonControl1.Visible = false;
+            // 
+            // RbtnCancel
+            // 
+            this.RbtnCancel.Caption = "Abbrechen";
+            this.RbtnCancel.Id = 1;
+            this.RbtnCancel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("RbtnCancel.ImageOptions.SvgImage")));
+            this.RbtnCancel.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.RbtnCancel.ItemAppearance.Disabled.Options.UseFont = true;
+            this.RbtnCancel.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.RbtnCancel.ItemAppearance.Hovered.Options.UseFont = true;
+            this.RbtnCancel.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.RbtnCancel.ItemAppearance.Normal.Options.UseFont = true;
+            this.RbtnCancel.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.RbtnCancel.ItemAppearance.Pressed.Options.UseFont = true;
+            this.RbtnCancel.Name = "RbtnCancel";
+            this.RbtnCancel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.RbtnCancel_ItemClick);
+            // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.ribbonPage1.Appearance.Options.UseFont = true;
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "Zuordnung des Zubehör zu Artikelstammdaten";
+            // 
+            // ribbonPage2
+            // 
+            this.ribbonPage2.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.ribbonPage2.Appearance.Options.UseFont = true;
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "ribbonPage2";
             // 
             // frmArticleAccessories
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1128, 624);
+            this.ClientSize = new System.Drawing.Size(1316, 768);
             this.Controls.Add(this.layoutControl1);
+            this.Controls.Add(this.ribbonControl1);
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmArticleAccessories";
+            this.Ribbon = this.ribbonControl1;
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Zuordnung des Zubehör zu Artikelstammdaten";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmArticleAccessories_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmArticleAccessories_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
@@ -380,7 +487,9 @@ namespace CalcPro
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -411,5 +520,9 @@ namespace CalcPro
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnDelete;
+        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraBars.BarButtonItem RbtnCancel;
     }
 }

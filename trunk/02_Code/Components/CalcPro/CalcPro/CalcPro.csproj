@@ -72,8 +72,9 @@
     <Reference Include="Accessibility">
       <Private>True</Private>
     </Reference>
-    <Reference Include="CategisSkin">
-      <HintPath>..\..\..\..\..\..\OTTOPro\trunk\02_Code\CategisSkin\CategisSkin.dll</HintPath>
+    <Reference Include="CategisSkin, Version=18.2.13.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\CategisSkin.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.BonusSkins.v18.2, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -196,9 +197,6 @@
     <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="NormIdentifyLib">
-      <HintPath>..\..\..\..\..\..\..\OTTOPro\trunk\02_Code\ThirdParty\beispiel-dn-mit-NormIdentifyLib\dll\NormIdentifyLib.dll</HintPath>
-    </Reference>
     <Reference Include="System">
       <Private>True</Private>
     </Reference>
@@ -244,14 +242,11 @@
     <Reference Include="Trinity6.Definition">
       <HintPath>C:\Program Files (x86)\datacrossmedia\trinity6\bin\Trinity6.Definition.dll</HintPath>
     </Reference>
-    <Reference Include="Trinity6.Developer">
-      <HintPath>..\..\..\..\..\..\..\OTTOPro\trunk\02_Code\ThirdParty\beispiel-dn-mit-NormIdentifyLib\dll\Trinity6.Developer.dll</HintPath>
-    </Reference>
     <Reference Include="Trinity6.Etim">
       <HintPath>C:\Program Files (x86)\datacrossmedia\trinity6\bin\Trinity6.Etim.dll</HintPath>
     </Reference>
     <Reference Include="ZipLib">
-      <HintPath>..\..\..\..\..\..\..\OTTOPro\trunk\02_Code\ThirdParty\beispiel-dn-mit-NormIdentifyLib\dll\ZipLib.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\datacrossmedia\trinity6\bin\ZipLib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

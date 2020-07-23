@@ -18,7 +18,7 @@ using DataAccess;
 
 namespace CalcPro
 {
-    public partial class frmArticlesData : DevExpress.XtraEditors.XtraForm
+    public partial class frmArticlesData : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         /// <summary>
         /// This form is to Add, edit and view articels, dimensions and mappings
@@ -54,14 +54,14 @@ namespace CalcPro
             ObjEArticle.WIID = -1;
             txtWI.Text = string.Empty;
             txtWIDescription.Text = string.Empty;
-            txtFabrikat.Text = string.Empty;
+            txtfabricat.Text = string.Empty;
             txtDimension.Text = string.Empty;
             cmbME.SelectedIndex = cmbME.Properties.Items.IndexOf("h");
             txtMasseinheit.Text = string.Empty;
             txtTextKZ.Text = string.Empty;
             txtremark.Text = string.Empty;
             txtDatanormNr.Text = string.Empty;
-            lblArticle.Text = "Artikelübersicht zu : ";
+            layoutControlItem3.Text = "Artikelübersicht zu : ";
             BindDimensions(ObjEArticle.WIID);
         }
 
@@ -81,7 +81,7 @@ namespace CalcPro
                 Setfocus(gvWGWA, "WGID", _WGID);
                 BindWIData(ObjEArticle.WGID);
                 Setfocus(gvWI, "WIID", _WIID);
-                if (chkIsNew.Checked == true)
+                if (RchkIsNew.Checked == true)
                     btnNew_Click(null, null);
                 else
                 {
@@ -106,7 +106,7 @@ namespace CalcPro
         private void btnCancel_Click(object sender, EventArgs e)
         {
             _IsNew = false;
-            chkIsNew.Checked = false;
+            RchkIsNew.Checked = false;
             gvWGWA_FocusedRowChanged(null, null);
         }
 
@@ -153,14 +153,14 @@ namespace CalcPro
                         ObjEArticle.WIID = _WIIDValue;
                         txtWI.Text = gvWI.GetFocusedRowCellValue("WI") == DBNull.Value ? "" : gvWI.GetFocusedRowCellValue("WI").ToString();
                         txtWIDescription.Text = gvWI.GetFocusedRowCellValue("WIDescription") == DBNull.Value ? "" : gvWI.GetFocusedRowCellValue("WIDescription").ToString();
-                        txtFabrikat.Text = gvWI.GetFocusedRowCellValue("Fabrikate") == DBNull.Value ? "" : gvWI.GetFocusedRowCellValue("Fabrikate").ToString();
+                        txtfabricat.Text = gvWI.GetFocusedRowCellValue("Fabrikate") == DBNull.Value ? "" : gvWI.GetFocusedRowCellValue("Fabrikate").ToString();
                         txtMasseinheit.Text = gvWI.GetFocusedRowCellValue("Masseinheit") == DBNull.Value ? "" : gvWI.GetFocusedRowCellValue("Masseinheit").ToString();
                         txtDimension.Text = gvWI.GetFocusedRowCellValue("Dimension") == DBNull.Value ? "" : gvWI.GetFocusedRowCellValue("Dimension").ToString();
                         cmbME.SelectedIndex = cmbME.Properties.Items.IndexOf(gvWI.GetFocusedRowCellValue("Menegenheit") == DBNull.Value ? "" : gvWI.GetFocusedRowCellValue("Menegenheit").ToString());
                         txtremark.Text = gvWI.GetFocusedRowCellValue("Remarks") == DBNull.Value ? "" : gvWI.GetFocusedRowCellValue("Remarks").ToString();
                         txtTextKZ.Text = gvWI.GetFocusedRowCellValue("TextKZ") == DBNull.Value ? "" : gvWI.GetFocusedRowCellValue("TextKZ").ToString();
                         txtDatanormNr.Text = gvWI.GetFocusedRowCellValue("DataNormNumber") == DBNull.Value ? "" : gvWI.GetFocusedRowCellValue("DataNormNumber").ToString();
-                        lblArticle.Text = "Artikelübersicht zu : " + txtWG.Text + "/" + txtWA.Text + "/" + txtWI.Text;
+                        layoutControlItem3.Text = "Artikelübersicht zu : " + txtWG.Text + "/" + txtWA.Text + "/" + txtWI.Text;
                         BindDimensions(_WIIDValue);
                         DArticles Obj = new DArticles();
                         Obj.GetTypByWIID(ObjEArticle);
@@ -187,12 +187,12 @@ namespace CalcPro
             {
                 if(Utility.ArticleDataAccess == "7")
                 {
-                    btnNew.Enabled = false;
-                    btnSave.Enabled = false;
-                    btnSaveAs.Enabled = false;
-                    btnCancel.Enabled = false;
-                    btnAddDimension.Enabled = false;
-                    chkIsNew.Enabled = false;
+                    RbtnNew.Enabled = false;
+                    RbtnSave.Enabled = false;
+                    RbtnSaveAs.Enabled = false;
+                    RbtnCancel.Enabled = false;
+                    RbtnAddDimension.Enabled = false;
+                    RchkIsNew.Enabled = false;
                 }
                 if (ObjEArticle == null)
                     ObjEArticle = new EArticles();
@@ -568,7 +568,7 @@ namespace CalcPro
             ObjEArticle.WGDescription = txtWGDescription.Text;
             ObjEArticle.WADescription = txtWADescription.Text;
             ObjEArticle.WIDescription = txtWIDescription.Text;
-            ObjEArticle.Fabrikate = txtFabrikat.Text;
+            ObjEArticle.Fabrikate = txtfabricat.Text;
             ObjEArticle.Dimension = txtDimension.Text;
             ObjEArticle.Menegenheit = cmbME.Text;
             ObjEArticle.Masseinheit = txtMasseinheit.Text;
@@ -658,5 +658,35 @@ namespace CalcPro
             }
         }
         #endregion
+
+        private void RbtnNew_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnNew_Click(0, e);
+        }
+
+        private void RbtnSave_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnSave_Click(0, e);
+        }
+
+        private void RbtnCancel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnCancel_Click(0, e);
+        }
+
+        private void RbtnValidityDate_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnValidityDate_Click(0,e);
+        }
+
+        private void RbtnSaveAs_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnSaveAs_Click(0,e);
+        }
+
+        private void RbtnAddDimension_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnAddDimension_Click(0, e);
+        }
     }
 }

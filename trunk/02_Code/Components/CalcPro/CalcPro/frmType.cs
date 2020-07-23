@@ -15,7 +15,7 @@ using DataAccess;
 
 namespace CalcPro
 {
-    public partial class frmType : DevExpress.XtraEditors.XtraForm
+    public partial class frmType : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         /// <summary>
         /// This form is to show the list of typs and save typ information
@@ -40,7 +40,7 @@ namespace CalcPro
             try
             {
                 if (Utility.ArticleDataAccess == "7")
-                    btnSave.Enabled = false;
+                    Rbtnsave.Enabled = false;
                     
                 if (ObjEArticle == null)
                     ObjEArticle = new EArticles();
@@ -172,5 +172,15 @@ namespace CalcPro
             }
         }
         #endregion
+
+        private void Rbtncancel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnCancel_Click(0, e);
+        }
+
+        private void Rbtnsave_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnSave_Click(0, e);
+        }
     }
 } 
