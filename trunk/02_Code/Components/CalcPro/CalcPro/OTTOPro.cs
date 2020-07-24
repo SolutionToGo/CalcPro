@@ -219,22 +219,40 @@ namespace CalcPro
         }
 
 
-        void ShowForm(DevExpress.XtraBars.Ribbon.RibbonForm MdiChild)
+        void ShowForm(DevExpress.XtraBars.Ribbon.RibbonForm MdiChild,bool Isnew =true)
         {
             try
             {
                 foreach (Form frm in Application.OpenForms)
                 {
                     if (frm.Name == MdiChild.Name)
+                    {
+
+                        if ( ! Isnew)
+                        {
+
+                            MdiChild.Activate();
+                            this.ActivateMdiChild(MdiChild);
+                            this.ribbon.SelectPage(MdiChild.Ribbon.Pages[0]);
+                            MdiChild.WindowState = FormWindowState.Maximized;
+                            if (MdiChild.Name == "frmArticleAccessories")
+                                this.ribbon.Minimized = true;
+                            else
+                                this.ribbon.Minimized = false;
+                            return;
+                        }
+                        else
                         {
                             frm.Close();
+                            frm.Dispose();
                             break;
                         }
-                    }
 
+                    }
+                }
                 this.pictureBox1.Visible = false;
-                //this.ribbon.MergedPages.Clear();
                 MdiChild.MdiParent = this;
+                MdiChild.WindowState = FormWindowState.Maximized;
                 MdiChild.Show();
                 this.Ribbon.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
                 this.ribbon.SelectPage(MdiChild.Ribbon.Pages[0]);
@@ -242,9 +260,6 @@ namespace CalcPro
                   this.ribbon.Minimized = true;
                 else
                     this.ribbon.Minimized = false;
-
-
-
             }
             catch (Exception ex)
             {
@@ -993,7 +1008,22 @@ namespace CalcPro
                 btnRefreshProject_ItemClick(null, null);
             return base.ProcessCmdKey(ref msg, keyData);
         }
+
         #endregion
 
+        private void barMdiChildrenListItemProject_ListItemClick(object sender, ListItemClickEventArgs e)
+        {
+            
+            try
+            {
+                ShowForm(this.ActiveMdiChild as DevExpress.XtraBars.Ribbon.RibbonForm,false );
+            }
+            catch
+            {
+
+            }
+           
+
+        }
     }
 }

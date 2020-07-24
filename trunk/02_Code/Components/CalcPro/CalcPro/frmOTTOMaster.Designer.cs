@@ -108,7 +108,7 @@
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1255, 288, 450, 400);
             this.layoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(561, 257);
+            this.layoutControl1.Size = new System.Drawing.Size(561, 258);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -117,9 +117,9 @@
             this.btnCancelContact.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelContact.ImageOptions.Image = global::CalcPro.Properties.Resources.Cancel_16x16;
             this.btnCancelContact.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancelContact.Location = new System.Drawing.Point(295, 208);
+            this.btnCancelContact.Location = new System.Drawing.Point(291, 207);
             this.btnCancelContact.Name = "btnCancelContact";
-            this.btnCancelContact.Size = new System.Drawing.Size(106, 27);
+            this.btnCancelContact.Size = new System.Drawing.Size(108, 28);
             this.btnCancelContact.StyleController = this.layoutControl1;
             this.btnCancelContact.TabIndex = 8;
             this.btnCancelContact.Text = "Abbrechen";
@@ -130,9 +130,9 @@
             this.btnSaveContact.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnSaveContact.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_16x16;
             this.btnSaveContact.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnSaveContact.Location = new System.Drawing.Point(405, 208);
+            this.btnSaveContact.Location = new System.Drawing.Point(403, 207);
             this.btnSaveContact.Name = "btnSaveContact";
-            this.btnSaveContact.Size = new System.Drawing.Size(100, 27);
+            this.btnSaveContact.Size = new System.Drawing.Size(102, 28);
             this.btnSaveContact.StyleController = this.layoutControl1;
             this.btnSaveContact.TabIndex = 7;
             this.btnSaveContact.Text = "Speichern";
@@ -153,12 +153,12 @@
             this.checkEditDefaultContact.EnterMoveNextControl = true;
             this.checkEditDefaultContact.Location = new System.Drawing.Point(187, 182);
             this.checkEditDefaultContact.Name = "checkEditDefaultContact";
-            this.checkEditDefaultContact.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkEditDefaultContact.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            //this.checkEditDefaultContact.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            //this.checkEditDefaultContact.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.checkEditDefaultContact.Properties.Appearance.Options.UseFont = true;
             this.checkEditDefaultContact.Properties.Appearance.Options.UseForeColor = true;
-            this.checkEditDefaultContact.Properties.Caption = "Standardkontakt";
-            this.checkEditDefaultContact.Size = new System.Drawing.Size(318, 22);
+            this.checkEditDefaultContact.Properties.Caption = "";
+            this.checkEditDefaultContact.Size = new System.Drawing.Size(318, 19);
             this.checkEditDefaultContact.StyleController = this.layoutControl1;
             this.checkEditDefaultContact.TabIndex = 6;
             // 
@@ -225,7 +225,7 @@
             this.emptySpaceItem4,
             this.emptySpaceItem5});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(561, 257);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(561, 258);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // emptySpaceItem1
@@ -233,7 +233,7 @@
             this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.Location = new System.Drawing.Point(47, 227);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(450, 10);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(450, 11);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem2
@@ -286,34 +286,34 @@
             this.layoutControlItem7.Control = this.checkEditDefaultContact;
             this.layoutControlItem7.Location = new System.Drawing.Point(47, 170);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(450, 26);
+            this.layoutControlItem7.Size = new System.Drawing.Size(450, 25);
             this.layoutControlItem7.Text = "Standardkontakt";
             this.layoutControlItem7.TextSize = new System.Drawing.Size(125, 21);
             // 
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.btnSaveContact;
-            this.layoutControlItem8.Location = new System.Drawing.Point(393, 196);
+            this.layoutControlItem8.Location = new System.Drawing.Point(391, 195);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(104, 31);
+            this.layoutControlItem8.Size = new System.Drawing.Size(106, 32);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
             // 
             // layoutControlItem9
             // 
             this.layoutControlItem9.Control = this.btnCancelContact;
-            this.layoutControlItem9.Location = new System.Drawing.Point(283, 196);
+            this.layoutControlItem9.Location = new System.Drawing.Point(279, 195);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(110, 31);
+            this.layoutControlItem9.Size = new System.Drawing.Size(112, 32);
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(47, 196);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(47, 195);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(236, 31);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(232, 32);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem3
@@ -329,7 +329,7 @@
             this.emptySpaceItem4.AllowHotTrack = false;
             this.emptySpaceItem4.Location = new System.Drawing.Point(497, 0);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(44, 237);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(44, 238);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem5
@@ -337,14 +337,14 @@
             this.emptySpaceItem5.AllowHotTrack = false;
             this.emptySpaceItem5.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem5.Name = "emptySpaceItem5";
-            this.emptySpaceItem5.Size = new System.Drawing.Size(47, 237);
+            this.emptySpaceItem5.Size = new System.Drawing.Size(47, 238);
             this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
             // 
             // frmOTTOMaster
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.CancelButton = this.btnCancelContact;
-            this.ClientSize = new System.Drawing.Size(561, 257);
+            this.ClientSize = new System.Drawing.Size(561, 258);
             this.Controls.Add(this.layoutControl1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
