@@ -19,7 +19,7 @@ using DevExpress.XtraRichEdit;
 
 namespace CalcPro
 {
-    public partial class frmLoadSupplier : System.Windows.Forms.Form
+    public partial class frmLoadSupplier : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         /// <summary>
         /// This form is to show suppliers and its data
@@ -200,9 +200,9 @@ namespace CalcPro
             {
                 if (Utility.SupplierDataAccess == "7")
                 {
-                    btnAddAddress.Enabled = false;
-                    btnAddArticles.Enabled = false;
-                    btnAddContact.Enabled = false;
+                    RbtnAddAddress.Enabled = false;
+                    RbtnAddArtikle.Enabled = false;
+                    RbtnAddContact.Enabled = false;
                 }
                 ObjESupplier = ObjBSupplier.GetSupplier(ObjESupplier);
                 BindSupplierData();
@@ -530,5 +530,35 @@ namespace CalcPro
             catch (Exception ex) { throw; }
         }
         #endregion
+
+        private void RbtnReset_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnReset_Click(0, e);
+        }
+
+        private void RbtnNew_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnNew_Click(0, e);
+        }
+
+        private void RbtnSave_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnSave_Click(0, e);
+        }
+
+        private void RbtnAddContact_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnAddContact_Click(0, e);
+        }
+
+        private void RbtnAddAddress_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnAddAddress_Click(0, e);
+        }
+
+        private void RbtnAddArtikle_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnAddArticles_Click(0, e);
+        }
     }
 }

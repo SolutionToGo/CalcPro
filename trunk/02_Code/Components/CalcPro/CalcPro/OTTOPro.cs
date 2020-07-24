@@ -198,7 +198,8 @@ namespace CalcPro
             try
             {
                 frmLoadOTTOMaster Obj = new frmLoadOTTOMaster();
-                Obj.ShowDialog();
+                //Obj.ShowDialog();
+                ShowForm(Obj);
             }
             catch (Exception ex){Utility.ShowError(ex);}
         }
@@ -206,7 +207,8 @@ namespace CalcPro
         private void btnSupplier_ItemClick(object sender, ItemClickEventArgs e)
         {
             frmLoadSupplier Obj = new frmLoadSupplier();
-            Obj.ShowDialog();
+            //Obj.ShowDialog();
+            ShowForm(Obj);
         }
 
         private void btnArticledata_ItemClick(object sender, ItemClickEventArgs e)
