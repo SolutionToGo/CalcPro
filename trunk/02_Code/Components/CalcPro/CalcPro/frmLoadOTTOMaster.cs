@@ -15,11 +15,11 @@ using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 
 namespace CalcPro
 {
-    public partial class frmLoadOTTOMaster : DevExpress.XtraEditors.XtraForm
+    public partial class frmLoadOTTOMaster : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-       /// <summary>
-       /// This form is to add , edit and view Organization's details and its contacts
-       /// </summary>
+        /// <summary>
+        /// This form is to add , edit and view Organization's details and its contacts
+        /// </summary>
         #region variables
         EOTTO ObjEOTTO = new EOTTO();
         BOTTO ObjBOTTO = new BOTTO();
@@ -62,8 +62,8 @@ namespace CalcPro
             {
                 if (Utility.OTTODataAccess == "7")
                 {
-                    btnAddContact.Enabled = false;
-                    btnSave.Enabled = false;
+                    RbtnAddContact.Enabled = false;
+                   RbtnSave.Enabled = false;
                 }
                 ObjEOTTO = ObjBOTTO.GetOTTODetails(ObjEOTTO);
                 BindOTTOData();
@@ -352,5 +352,25 @@ namespace CalcPro
             catch (Exception ex) { throw; }
         }
         #endregion
+
+        private void Rbtnreset_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnReset_Click(0, e);
+        }
+
+        private void Rbtnnew_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnNew_Click(0, e);
+        }
+
+        private void RbtnSave_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnSave_Click(0, e);
+        }
+
+        private void RbtnAddContact_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnAddContact_Click(0, e);
+        }
     }
 }

@@ -77,7 +77,22 @@
             // 
             // layoutControl1
             // 
-            this.layoutControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(158)))), ((int)(((byte)(224)))));
+            this.layoutControl1.Appearance.Control.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.Control.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDisabled.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDropDown.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDropDown.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDropDownHeader.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDropDownHeader.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlFocused.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlReadOnly.Options.UseFont = true;
+            this.layoutControl1.Appearance.DisabledLayoutGroupCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.DisabledLayoutGroupCaption.Options.UseFont = true;
+            this.layoutControl1.Appearance.DisabledLayoutItem.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.DisabledLayoutItem.Options.UseFont = true;
             this.layoutControl1.Controls.Add(this.btnCancelContact);
             this.layoutControl1.Controls.Add(this.btnSaveContact);
             this.layoutControl1.Controls.Add(this.txtContactPerson);
@@ -87,6 +102,7 @@
             this.layoutControl1.Controls.Add(this.txtFax);
             this.layoutControl1.Controls.Add(this.txtemail);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutControl1.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1255, 288, 450, 400);
@@ -101,9 +117,9 @@
             this.btnCancelContact.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelContact.ImageOptions.Image = global::CalcPro.Properties.Resources.Cancel_16x16;
             this.btnCancelContact.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancelContact.Location = new System.Drawing.Point(300, 188);
+            this.btnCancelContact.Location = new System.Drawing.Point(295, 208);
             this.btnCancelContact.Name = "btnCancelContact";
-            this.btnCancelContact.Size = new System.Drawing.Size(98, 22);
+            this.btnCancelContact.Size = new System.Drawing.Size(106, 27);
             this.btnCancelContact.StyleController = this.layoutControl1;
             this.btnCancelContact.TabIndex = 8;
             this.btnCancelContact.Text = "Abbrechen";
@@ -114,9 +130,9 @@
             this.btnSaveContact.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnSaveContact.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_16x16;
             this.btnSaveContact.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnSaveContact.Location = new System.Drawing.Point(402, 188);
+            this.btnSaveContact.Location = new System.Drawing.Point(405, 208);
             this.btnSaveContact.Name = "btnSaveContact";
-            this.btnSaveContact.Size = new System.Drawing.Size(103, 22);
+            this.btnSaveContact.Size = new System.Drawing.Size(100, 27);
             this.btnSaveContact.StyleController = this.layoutControl1;
             this.btnSaveContact.TabIndex = 7;
             this.btnSaveContact.Text = "Speichern";
@@ -125,9 +141,9 @@
             // txtContactPerson
             // 
             this.txtContactPerson.EnterMoveNextControl = true;
-            this.txtContactPerson.Location = new System.Drawing.Point(144, 45);
+            this.txtContactPerson.Location = new System.Drawing.Point(187, 22);
             this.txtContactPerson.Name = "txtContactPerson";
-            this.txtContactPerson.Size = new System.Drawing.Size(361, 20);
+            this.txtContactPerson.Size = new System.Drawing.Size(318, 28);
             this.txtContactPerson.StyleController = this.layoutControl1;
             this.txtContactPerson.TabIndex = 1;
             this.txtContactPerson.Enter += new System.EventHandler(this.txtContactPerson_Enter);
@@ -135,23 +151,23 @@
             // checkEditDefaultContact
             // 
             this.checkEditDefaultContact.EnterMoveNextControl = true;
-            this.checkEditDefaultContact.Location = new System.Drawing.Point(59, 165);
+            this.checkEditDefaultContact.Location = new System.Drawing.Point(187, 182);
             this.checkEditDefaultContact.Name = "checkEditDefaultContact";
             this.checkEditDefaultContact.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkEditDefaultContact.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.checkEditDefaultContact.Properties.Appearance.Options.UseFont = true;
             this.checkEditDefaultContact.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditDefaultContact.Properties.Caption = "Standardkontakt";
-            this.checkEditDefaultContact.Size = new System.Drawing.Size(446, 19);
+            this.checkEditDefaultContact.Size = new System.Drawing.Size(318, 22);
             this.checkEditDefaultContact.StyleController = this.layoutControl1;
             this.checkEditDefaultContact.TabIndex = 6;
             // 
             // txtTelephone
             // 
             this.txtTelephone.EnterMoveNextControl = true;
-            this.txtTelephone.Location = new System.Drawing.Point(144, 69);
+            this.txtTelephone.Location = new System.Drawing.Point(187, 54);
             this.txtTelephone.Name = "txtTelephone";
-            this.txtTelephone.Size = new System.Drawing.Size(361, 20);
+            this.txtTelephone.Size = new System.Drawing.Size(318, 28);
             this.txtTelephone.StyleController = this.layoutControl1;
             this.txtTelephone.TabIndex = 2;
             this.txtTelephone.Enter += new System.EventHandler(this.txtContactPerson_Enter);
@@ -159,9 +175,9 @@
             // txtTaxNo
             // 
             this.txtTaxNo.EnterMoveNextControl = true;
-            this.txtTaxNo.Location = new System.Drawing.Point(144, 141);
+            this.txtTaxNo.Location = new System.Drawing.Point(187, 150);
             this.txtTaxNo.Name = "txtTaxNo";
-            this.txtTaxNo.Size = new System.Drawing.Size(361, 20);
+            this.txtTaxNo.Size = new System.Drawing.Size(318, 28);
             this.txtTaxNo.StyleController = this.layoutControl1;
             this.txtTaxNo.TabIndex = 5;
             this.txtTaxNo.Enter += new System.EventHandler(this.txtContactPerson_Enter);
@@ -169,9 +185,9 @@
             // txtFax
             // 
             this.txtFax.EnterMoveNextControl = true;
-            this.txtFax.Location = new System.Drawing.Point(144, 93);
+            this.txtFax.Location = new System.Drawing.Point(187, 86);
             this.txtFax.Name = "txtFax";
-            this.txtFax.Size = new System.Drawing.Size(361, 20);
+            this.txtFax.Size = new System.Drawing.Size(318, 28);
             this.txtFax.StyleController = this.layoutControl1;
             this.txtFax.TabIndex = 3;
             this.txtFax.Enter += new System.EventHandler(this.txtContactPerson_Enter);
@@ -179,19 +195,19 @@
             // txtemail
             // 
             this.txtemail.EnterMoveNextControl = true;
-            this.txtemail.Location = new System.Drawing.Point(144, 117);
+            this.txtemail.Location = new System.Drawing.Point(187, 118);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(361, 20);
+            this.txtemail.Size = new System.Drawing.Size(318, 28);
             this.txtemail.StyleController = this.layoutControl1;
             this.txtemail.TabIndex = 4;
             this.txtemail.Enter += new System.EventHandler(this.txtContactPerson_Enter);
             // 
             // layoutControlGroup1
             // 
-            this.layoutControlGroup1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.layoutControlGroup1.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlGroup1.AppearanceGroup.Font = new System.Drawing.Font("Bahnschrift", 10F);
+            this.layoutControlGroup1.AppearanceGroup.Options.UseFont = true;
+            this.layoutControlGroup1.AppearanceItemCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.layoutControlGroup1.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlGroup1.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup1.GroupBordersVisible = false;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
@@ -215,89 +231,89 @@
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(47, 202);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(47, 227);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(450, 35);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(450, 10);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.txtContactPerson;
-            this.layoutControlItem2.Location = new System.Drawing.Point(47, 33);
+            this.layoutControlItem2.Location = new System.Drawing.Point(47, 10);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(450, 24);
+            this.layoutControlItem2.Size = new System.Drawing.Size(450, 32);
             this.layoutControlItem2.Text = "AnsprPartner";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(82, 14);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(125, 21);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.txtTelephone;
-            this.layoutControlItem3.Location = new System.Drawing.Point(47, 57);
+            this.layoutControlItem3.Location = new System.Drawing.Point(47, 42);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(450, 24);
+            this.layoutControlItem3.Size = new System.Drawing.Size(450, 32);
             this.layoutControlItem3.Text = "Telefon";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(82, 14);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(125, 21);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.txtFax;
-            this.layoutControlItem4.Location = new System.Drawing.Point(47, 81);
+            this.layoutControlItem4.Location = new System.Drawing.Point(47, 74);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(450, 24);
+            this.layoutControlItem4.Size = new System.Drawing.Size(450, 32);
             this.layoutControlItem4.Text = "Fax";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(82, 14);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(125, 21);
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.txtemail;
-            this.layoutControlItem5.Location = new System.Drawing.Point(47, 105);
+            this.layoutControlItem5.Location = new System.Drawing.Point(47, 106);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(450, 24);
+            this.layoutControlItem5.Size = new System.Drawing.Size(450, 32);
             this.layoutControlItem5.Text = "Email";
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(82, 14);
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(125, 21);
             // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.txtTaxNo;
-            this.layoutControlItem6.Location = new System.Drawing.Point(47, 129);
+            this.layoutControlItem6.Location = new System.Drawing.Point(47, 138);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(450, 24);
+            this.layoutControlItem6.Size = new System.Drawing.Size(450, 32);
             this.layoutControlItem6.Text = "UStIdent";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(82, 14);
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(125, 21);
             // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.checkEditDefaultContact;
-            this.layoutControlItem7.Location = new System.Drawing.Point(47, 153);
+            this.layoutControlItem7.Location = new System.Drawing.Point(47, 170);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(450, 23);
-            this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem7.TextVisible = false;
+            this.layoutControlItem7.Size = new System.Drawing.Size(450, 26);
+            this.layoutControlItem7.Text = "Standardkontakt";
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(125, 21);
             // 
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.btnSaveContact;
-            this.layoutControlItem8.Location = new System.Drawing.Point(390, 176);
+            this.layoutControlItem8.Location = new System.Drawing.Point(393, 196);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(107, 26);
+            this.layoutControlItem8.Size = new System.Drawing.Size(104, 31);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
             // 
             // layoutControlItem9
             // 
             this.layoutControlItem9.Control = this.btnCancelContact;
-            this.layoutControlItem9.Location = new System.Drawing.Point(288, 176);
+            this.layoutControlItem9.Location = new System.Drawing.Point(283, 196);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(102, 26);
+            this.layoutControlItem9.Size = new System.Drawing.Size(110, 31);
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(47, 176);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(47, 196);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(241, 26);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(236, 31);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem3
@@ -305,7 +321,7 @@
             this.emptySpaceItem3.AllowHotTrack = false;
             this.emptySpaceItem3.Location = new System.Drawing.Point(47, 0);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(450, 33);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(450, 10);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem4
