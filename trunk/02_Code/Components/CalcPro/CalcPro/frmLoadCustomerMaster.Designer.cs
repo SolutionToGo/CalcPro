@@ -1008,8 +1008,6 @@
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "frmLoadCustomerMaster";
             this.Ribbon = this.ribbonControl1;
             this.ShowIcon = false;

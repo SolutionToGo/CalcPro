@@ -187,7 +187,6 @@ namespace CalcPro
             try
             {
                 frmLoadCustomerMaster Obj = new frmLoadCustomerMaster();
-                // Obj.ShowDialog();
                 ShowForm(Obj);
             }
             catch (Exception ex) { Utility.ShowError(ex); }
@@ -198,7 +197,6 @@ namespace CalcPro
             try
             {
                 frmLoadOTTOMaster Obj = new frmLoadOTTOMaster();
-                //Obj.ShowDialog();
                 ShowForm(Obj);
             }
             catch (Exception ex){Utility.ShowError(ex);}
@@ -207,7 +205,6 @@ namespace CalcPro
         private void btnSupplier_ItemClick(object sender, ItemClickEventArgs e)
         {
             frmLoadSupplier Obj = new frmLoadSupplier();
-            //Obj.ShowDialog();
             ShowForm(Obj);
         }
 
@@ -219,53 +216,7 @@ namespace CalcPro
         }
 
 
-        void ShowForm(DevExpress.XtraBars.Ribbon.RibbonForm MdiChild,bool Isnew =true)
-        {
-            try
-            {
-                foreach (Form frm in Application.OpenForms)
-                {
-                    if (frm.Name == MdiChild.Name)
-                    {
-
-                        if ( ! Isnew)
-                        {
-
-                            MdiChild.Activate();
-                            this.ActivateMdiChild(MdiChild);
-                            this.ribbon.SelectPage(MdiChild.Ribbon.Pages[0]);
-                            MdiChild.WindowState = FormWindowState.Maximized;
-                            if (MdiChild.Name == "frmArticleAccessories")
-                                this.ribbon.Minimized = true;
-                            else
-                                this.ribbon.Minimized = false;
-                            return;
-                        }
-                        else
-                        {
-                            frm.Close();
-                            frm.Dispose();
-                            break;
-                        }
-
-                    }
-                }
-                this.pictureBox1.Visible = false;
-                MdiChild.MdiParent = this;
-                MdiChild.WindowState = FormWindowState.Maximized;
-                MdiChild.Show();
-                this.Ribbon.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
-                this.ribbon.SelectPage(MdiChild.Ribbon.Pages[0]);
-                if (MdiChild.Name == "frmArticleAccessories")
-                  this.ribbon.Minimized = true;
-                else
-                    this.ribbon.Minimized = false;
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
+     
 
         private void btnTextModule_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -282,7 +233,6 @@ namespace CalcPro
         private void btnRabatt_ItemClick(object sender, ItemClickEventArgs e)
         {            
             frmRabattGroup Obj = new frmRabattGroup();
-            //Obj.ShowDialog();
             ShowForm(Obj);
         }
 
@@ -916,6 +866,15 @@ namespace CalcPro
                 Utility.ShowError(ex);
             }
         }
+
+        private void frmCalcPro_MdiChildActivate(object sender, EventArgs e)
+        {
+            try
+            {
+                ActivateChildForm(this.ActiveMdiChild as DevExpress.XtraBars.Ribbon.RibbonForm);
+            }
+            catch { }
+        }
         #endregion
 
         #region Functions
@@ -1008,22 +967,39 @@ namespace CalcPro
                 btnRefreshProject_ItemClick(null, null);
             return base.ProcessCmdKey(ref msg, keyData);
         }
-
-        #endregion
-
-        private void barMdiChildrenListItemProject_ListItemClick(object sender, ListItemClickEventArgs e)
+        void ShowForm(DevExpress.XtraBars.Ribbon.RibbonForm MdiChild)
         {
-            
             try
             {
-                ShowForm(this.ActiveMdiChild as DevExpress.XtraBars.Ribbon.RibbonForm,false );
+                foreach (Form frm in Application.OpenForms)
+                {
+                    if (frm.Name == MdiChild.Name)
+                    {
+                        frm.Close();
+                        frm.Dispose();
+                        break;
+                    }
+                }
+                this.pictureBox1.Visible = false;
+                MdiChild.MdiParent = this;
+                MdiChild.Show();
+                this.ribbon.SelectPage(MdiChild.Ribbon.Pages[0]);
             }
-            catch
+            catch (Exception ex)
             {
-
+                Utility.ShowError(ex);
             }
-           
-
         }
+
+        void ActivateChildForm(DevExpress.XtraBars.Ribbon.RibbonForm MdiChild)
+        {
+            this.ribbon.SelectPage(MdiChild.Ribbon.Pages[0]);
+            if (MdiChild.Name == "frmArticleAccessories")
+                this.ribbon.Minimized = true;
+            else
+                this.ribbon.Minimized = false;
+        }
+      
+        #endregion
     }
 }

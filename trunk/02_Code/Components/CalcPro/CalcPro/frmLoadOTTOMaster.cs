@@ -69,6 +69,7 @@ namespace CalcPro
                 BindOTTOData();
                 if (ObjEOTTO.dtOTTO != null && ObjEOTTO.dtOTTO.Rows.Count > 0)
                     cmbOTTO.EditValue = ObjEOTTO.dtOTTO.Rows[0][0];
+               // layoutControlGroup2. =
             }
             catch (Exception ex) { Utility.ShowError(ex); }
         }

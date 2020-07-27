@@ -250,19 +250,19 @@
             this.layoutControl1.Controls.Add(this.checkEditIsBranch);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.layoutControl1.Location = new System.Drawing.Point(0, 211);
+            this.layoutControl1.Location = new System.Drawing.Point(0, 183);
             this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(773, 272, 250, 350);
             this.layoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(1338, 508);
+            this.layoutControl1.Size = new System.Drawing.Size(1338, 536);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // cmbOTTO
             // 
-            this.cmbOTTO.Location = new System.Drawing.Point(204, 6);
+            this.cmbOTTO.Location = new System.Drawing.Point(204, -37);
             this.cmbOTTO.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbOTTO.Name = "cmbOTTO";
             this.cmbOTTO.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
@@ -284,11 +284,11 @@
             // gcOTTOContact
             // 
             this.gcOTTOContact.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.gcOTTOContact.Location = new System.Drawing.Point(748, 26);
+            this.gcOTTOContact.Location = new System.Drawing.Point(748, -18);
             this.gcOTTOContact.MainView = this.gvOTTOContact;
             this.gcOTTOContact.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcOTTOContact.Name = "gcOTTOContact";
-            this.gcOTTOContact.Size = new System.Drawing.Size(567, 551);
+            this.gcOTTOContact.Size = new System.Drawing.Size(567, 552);
             this.gcOTTOContact.TabIndex = 38;
             this.gcOTTOContact.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvOTTOContact});
@@ -393,7 +393,7 @@
             // txtFullName
             // 
             this.txtFullName.EnterMoveNextControl = true;
-            this.txtFullName.Location = new System.Drawing.Point(204, 40);
+            this.txtFullName.Location = new System.Drawing.Point(204, -3);
             this.txtFullName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Properties.Mask.ShowPlaceHolders = false;
@@ -410,7 +410,7 @@
             // txtShortName
             // 
             this.txtShortName.EnterMoveNextControl = true;
-            this.txtShortName.Location = new System.Drawing.Point(204, 72);
+            this.txtShortName.Location = new System.Drawing.Point(204, 29);
             this.txtShortName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtShortName.Name = "txtShortName";
             this.txtShortName.Properties.Mask.ShowPlaceHolders = false;
@@ -426,7 +426,7 @@
             // txtStreet
             // 
             this.txtStreet.EnterMoveNextControl = true;
-            this.txtStreet.Location = new System.Drawing.Point(577, 104);
+            this.txtStreet.Location = new System.Drawing.Point(577, 61);
             this.txtStreet.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtStreet.Name = "txtStreet";
             this.txtStreet.Size = new System.Drawing.Size(164, 28);
@@ -437,7 +437,7 @@
             // txtPostalCode
             // 
             this.txtPostalCode.EnterMoveNextControl = true;
-            this.txtPostalCode.Location = new System.Drawing.Point(204, 104);
+            this.txtPostalCode.Location = new System.Drawing.Point(204, 61);
             this.txtPostalCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPostalCode.Name = "txtPostalCode";
             this.txtPostalCode.Size = new System.Drawing.Size(170, 28);
@@ -448,7 +448,7 @@
             // txtCity
             // 
             this.txtCity.EnterMoveNextControl = true;
-            this.txtCity.Location = new System.Drawing.Point(204, 136);
+            this.txtCity.Location = new System.Drawing.Point(204, 93);
             this.txtCity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(170, 28);
@@ -459,7 +459,7 @@
             // txtCountry
             // 
             this.txtCountry.EnterMoveNextControl = true;
-            this.txtCountry.Location = new System.Drawing.Point(204, 200);
+            this.txtCountry.Location = new System.Drawing.Point(204, 157);
             this.txtCountry.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Size = new System.Drawing.Size(170, 28);
@@ -470,7 +470,7 @@
             // txtILN
             // 
             this.txtILN.EnterMoveNextControl = true;
-            this.txtILN.Location = new System.Drawing.Point(577, 200);
+            this.txtILN.Location = new System.Drawing.Point(577, 157);
             this.txtILN.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtILN.Name = "txtILN";
             this.txtILN.Size = new System.Drawing.Size(164, 28);
@@ -481,7 +481,7 @@
             // txtOTTOTelefone
             // 
             this.txtOTTOTelefone.EnterMoveNextControl = true;
-            this.txtOTTOTelefone.Location = new System.Drawing.Point(204, 264);
+            this.txtOTTOTelefone.Location = new System.Drawing.Point(204, 221);
             this.txtOTTOTelefone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtOTTOTelefone.Name = "txtOTTOTelefone";
             this.txtOTTOTelefone.Size = new System.Drawing.Size(170, 28);
@@ -492,7 +492,7 @@
             // txtTelefax
             // 
             this.txtTelefax.EnterMoveNextControl = true;
-            this.txtTelefax.Location = new System.Drawing.Point(577, 264);
+            this.txtTelefax.Location = new System.Drawing.Point(577, 221);
             this.txtTelefax.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTelefax.Name = "txtTelefax";
             this.txtTelefax.Size = new System.Drawing.Size(164, 28);
@@ -503,7 +503,7 @@
             // txtHotline
             // 
             this.txtHotline.EnterMoveNextControl = true;
-            this.txtHotline.Location = new System.Drawing.Point(204, 328);
+            this.txtHotline.Location = new System.Drawing.Point(204, 285);
             this.txtHotline.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtHotline.Name = "txtHotline";
             this.txtHotline.Size = new System.Drawing.Size(170, 28);
@@ -514,7 +514,7 @@
             // txtWebsite
             // 
             this.txtWebsite.EnterMoveNextControl = true;
-            this.txtWebsite.Location = new System.Drawing.Point(204, 296);
+            this.txtWebsite.Location = new System.Drawing.Point(204, 253);
             this.txtWebsite.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtWebsite.Name = "txtWebsite";
             this.txtWebsite.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
@@ -526,7 +526,7 @@
             // txtBankName
             // 
             this.txtBankName.EnterMoveNextControl = true;
-            this.txtBankName.Location = new System.Drawing.Point(577, 328);
+            this.txtBankName.Location = new System.Drawing.Point(577, 285);
             this.txtBankName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBankName.Name = "txtBankName";
             this.txtBankName.Size = new System.Drawing.Size(164, 28);
@@ -537,7 +537,7 @@
             // txtBankPCode
             // 
             this.txtBankPCode.EnterMoveNextControl = true;
-            this.txtBankPCode.Location = new System.Drawing.Point(204, 392);
+            this.txtBankPCode.Location = new System.Drawing.Point(204, 349);
             this.txtBankPCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBankPCode.Name = "txtBankPCode";
             this.txtBankPCode.Size = new System.Drawing.Size(170, 28);
@@ -548,7 +548,7 @@
             // txtBankAccNo
             // 
             this.txtBankAccNo.EnterMoveNextControl = true;
-            this.txtBankAccNo.Location = new System.Drawing.Point(577, 392);
+            this.txtBankAccNo.Location = new System.Drawing.Point(577, 349);
             this.txtBankAccNo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBankAccNo.Name = "txtBankAccNo";
             this.txtBankAccNo.Size = new System.Drawing.Size(164, 28);
@@ -559,7 +559,7 @@
             // txtIBAN
             // 
             this.txtIBAN.EnterMoveNextControl = true;
-            this.txtIBAN.Location = new System.Drawing.Point(204, 424);
+            this.txtIBAN.Location = new System.Drawing.Point(204, 381);
             this.txtIBAN.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtIBAN.Name = "txtIBAN";
             this.txtIBAN.Size = new System.Drawing.Size(170, 28);
@@ -570,7 +570,7 @@
             // txtBIC
             // 
             this.txtBIC.EnterMoveNextControl = true;
-            this.txtBIC.Location = new System.Drawing.Point(577, 424);
+            this.txtBIC.Location = new System.Drawing.Point(577, 381);
             this.txtBIC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBIC.Name = "txtBIC";
             this.txtBIC.Size = new System.Drawing.Size(164, 28);
@@ -581,7 +581,7 @@
             // txtUSTNr
             // 
             this.txtUSTNr.EnterMoveNextControl = true;
-            this.txtUSTNr.Location = new System.Drawing.Point(204, 456);
+            this.txtUSTNr.Location = new System.Drawing.Point(204, 413);
             this.txtUSTNr.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUSTNr.Name = "txtUSTNr";
             this.txtUSTNr.Size = new System.Drawing.Size(170, 28);
@@ -592,7 +592,7 @@
             // txtDVNr
             // 
             this.txtDVNr.EnterMoveNextControl = true;
-            this.txtDVNr.Location = new System.Drawing.Point(577, 456);
+            this.txtDVNr.Location = new System.Drawing.Point(577, 413);
             this.txtDVNr.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDVNr.Name = "txtDVNr";
             this.txtDVNr.Size = new System.Drawing.Size(164, 28);
@@ -603,7 +603,7 @@
             // txtTenderNo
             // 
             this.txtTenderNo.EnterMoveNextControl = true;
-            this.txtTenderNo.Location = new System.Drawing.Point(204, 488);
+            this.txtTenderNo.Location = new System.Drawing.Point(204, 445);
             this.txtTenderNo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenderNo.Name = "txtTenderNo";
             this.txtTenderNo.Size = new System.Drawing.Size(170, 28);
@@ -614,7 +614,7 @@
             // txtDebtorNo
             // 
             this.txtDebtorNo.EnterMoveNextControl = true;
-            this.txtDebtorNo.Location = new System.Drawing.Point(577, 488);
+            this.txtDebtorNo.Location = new System.Drawing.Point(577, 445);
             this.txtDebtorNo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDebtorNo.Name = "txtDebtorNo";
             this.txtDebtorNo.Size = new System.Drawing.Size(164, 28);
@@ -625,7 +625,7 @@
             // txtCountryType
             // 
             this.txtCountryType.EnterMoveNextControl = true;
-            this.txtCountryType.Location = new System.Drawing.Point(204, 520);
+            this.txtCountryType.Location = new System.Drawing.Point(204, 477);
             this.txtCountryType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCountryType.Name = "txtCountryType";
             this.txtCountryType.Size = new System.Drawing.Size(170, 28);
@@ -636,7 +636,7 @@
             // txtIndustry
             // 
             this.txtIndustry.EnterMoveNextControl = true;
-            this.txtIndustry.Location = new System.Drawing.Point(577, 520);
+            this.txtIndustry.Location = new System.Drawing.Point(577, 477);
             this.txtIndustry.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtIndustry.Name = "txtIndustry";
             this.txtIndustry.Size = new System.Drawing.Size(164, 28);
@@ -647,7 +647,7 @@
             // txtseatofcompany
             // 
             this.txtseatofcompany.EnterMoveNextControl = true;
-            this.txtseatofcompany.Location = new System.Drawing.Point(204, 168);
+            this.txtseatofcompany.Location = new System.Drawing.Point(204, 125);
             this.txtseatofcompany.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtseatofcompany.Name = "txtseatofcompany";
             this.txtseatofcompany.Size = new System.Drawing.Size(170, 28);
@@ -658,7 +658,7 @@
             // txtMD
             // 
             this.txtMD.EnterMoveNextControl = true;
-            this.txtMD.Location = new System.Drawing.Point(577, 168);
+            this.txtMD.Location = new System.Drawing.Point(577, 125);
             this.txtMD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMD.Name = "txtMD";
             this.txtMD.Size = new System.Drawing.Size(164, 28);
@@ -669,7 +669,7 @@
             // txtComplementary
             // 
             this.txtComplementary.EnterMoveNextControl = true;
-            this.txtComplementary.Location = new System.Drawing.Point(577, 136);
+            this.txtComplementary.Location = new System.Drawing.Point(577, 93);
             this.txtComplementary.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtComplementary.Name = "txtComplementary";
             this.txtComplementary.Size = new System.Drawing.Size(164, 28);
@@ -680,7 +680,7 @@
             // txtArtNU
             // 
             this.txtArtNU.EnterMoveNextControl = true;
-            this.txtArtNU.Location = new System.Drawing.Point(577, 232);
+            this.txtArtNU.Location = new System.Drawing.Point(577, 189);
             this.txtArtNU.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtArtNU.Name = "txtArtNU";
             this.txtArtNU.Size = new System.Drawing.Size(164, 28);
@@ -691,7 +691,7 @@
             // txtArtBevBew
             // 
             this.txtArtBevBew.EnterMoveNextControl = true;
-            this.txtArtBevBew.Location = new System.Drawing.Point(204, 232);
+            this.txtArtBevBew.Location = new System.Drawing.Point(204, 189);
             this.txtArtBevBew.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtArtBevBew.Name = "txtArtBevBew";
             this.txtArtBevBew.Size = new System.Drawing.Size(170, 28);
@@ -702,7 +702,7 @@
             // txtBGBez
             // 
             this.txtBGBez.EnterMoveNextControl = true;
-            this.txtBGBez.Location = new System.Drawing.Point(577, 360);
+            this.txtBGBez.Location = new System.Drawing.Point(577, 317);
             this.txtBGBez.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBGBez.Name = "txtBGBez";
             this.txtBGBez.Size = new System.Drawing.Size(164, 28);
@@ -713,7 +713,7 @@
             // txtBGDatum
             // 
             this.txtBGDatum.EnterMoveNextControl = true;
-            this.txtBGDatum.Location = new System.Drawing.Point(204, 360);
+            this.txtBGDatum.Location = new System.Drawing.Point(204, 317);
             this.txtBGDatum.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBGDatum.Name = "txtBGDatum";
             this.txtBGDatum.Size = new System.Drawing.Size(170, 28);
@@ -724,7 +724,7 @@
             // txtBGNr
             // 
             this.txtBGNr.EnterMoveNextControl = true;
-            this.txtBGNr.Location = new System.Drawing.Point(577, 296);
+            this.txtBGNr.Location = new System.Drawing.Point(577, 253);
             this.txtBGNr.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBGNr.Name = "txtBGNr";
             this.txtBGNr.Size = new System.Drawing.Size(164, 28);
@@ -735,7 +735,7 @@
             // checkEditIsBranch
             // 
             this.checkEditIsBranch.EnterMoveNextControl = true;
-            this.checkEditIsBranch.Location = new System.Drawing.Point(204, 552);
+            this.checkEditIsBranch.Location = new System.Drawing.Point(204, 509);
             this.checkEditIsBranch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkEditIsBranch.Name = "checkEditIsBranch";
             this.checkEditIsBranch.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -762,7 +762,7 @@
             this.layoutControlGroup2});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1317, 579);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1317, 580);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem2
@@ -770,7 +770,7 @@
             this.layoutControlItem2.Control = this.gcOTTOContact;
             this.layoutControlItem2.Location = new System.Drawing.Point(746, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(571, 579);
+            this.layoutControlItem2.Size = new System.Drawing.Size(571, 580);
             this.layoutControlItem2.Text = "AnsprPartner ";
             this.layoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(196, 21);
@@ -780,7 +780,7 @@
             this.simpleSeparator1.AllowHotTrack = false;
             this.simpleSeparator1.Location = new System.Drawing.Point(0, 0);
             this.simpleSeparator1.Name = "simpleSeparator1";
-            this.simpleSeparator1.Size = new System.Drawing.Size(746, 1);
+            this.simpleSeparator1.Size = new System.Drawing.Size(746, 2);
             // 
             // layoutControlGroup2
             // 
@@ -822,7 +822,7 @@
             this.layoutControlItem19,
             this.layoutControlItem28,
             this.layoutControlItem7});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 1);
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 2);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
             this.layoutControlGroup2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroup2.Size = new System.Drawing.Size(746, 578);
@@ -1161,7 +1161,7 @@
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1338, 211);
+            this.ribbonControl1.Size = new System.Drawing.Size(1338, 183);
             // 
             // Rbtnreset
             // 
@@ -1258,8 +1258,6 @@
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "frmLoadOTTOMaster";
             this.Ribbon = this.ribbonControl1;
             this.ShowIcon = false;

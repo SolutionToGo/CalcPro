@@ -110,20 +110,20 @@
             this.layoutControl1.Controls.Add(this.gcTyp);
             this.layoutControl1.Controls.Add(this.txtTyp);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(0, 211);
+            this.layoutControl1.Location = new System.Drawing.Point(0, 183);
             this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(989, 198, 450, 400);
             this.layoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(1162, 655);
+            this.layoutControl1.Size = new System.Drawing.Size(1162, 683);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // cmbSupplier
             // 
             this.cmbSupplier.EnterMoveNextControl = true;
-            this.cmbSupplier.Location = new System.Drawing.Point(71, 127);
+            this.cmbSupplier.Location = new System.Drawing.Point(71, 129);
             this.cmbSupplier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbSupplier.Name = "cmbSupplier";
             this.cmbSupplier.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -145,7 +145,7 @@
             // cmbWI
             // 
             this.cmbWI.EnterMoveNextControl = true;
-            this.cmbWI.Location = new System.Drawing.Point(71, 95);
+            this.cmbWI.Location = new System.Drawing.Point(71, 97);
             this.cmbWI.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbWI.Name = "cmbWI";
             this.cmbWI.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -168,7 +168,7 @@
             // cmbWGWA
             // 
             this.cmbWGWA.EnterMoveNextControl = true;
-            this.cmbWGWA.Location = new System.Drawing.Point(71, 63);
+            this.cmbWGWA.Location = new System.Drawing.Point(71, 65);
             this.cmbWGWA.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbWGWA.Name = "cmbWGWA";
             this.cmbWGWA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -193,11 +193,11 @@
             // gcTyp
             // 
             this.gcTyp.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.gcTyp.Location = new System.Drawing.Point(2, 162);
+            this.gcTyp.Location = new System.Drawing.Point(2, 164);
             this.gcTyp.MainView = this.gvTyp;
             this.gcTyp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcTyp.Name = "gcTyp";
-            this.gcTyp.Size = new System.Drawing.Size(1158, 491);
+            this.gcTyp.Size = new System.Drawing.Size(1158, 517);
             this.gcTyp.TabIndex = 7;
             this.gcTyp.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvTyp});
@@ -326,7 +326,7 @@
             // txtTyp
             // 
             this.txtTyp.EnterMoveNextControl = true;
-            this.txtTyp.Location = new System.Drawing.Point(71, 31);
+            this.txtTyp.Location = new System.Drawing.Point(71, 33);
             this.txtTyp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTyp.Name = "txtTyp";
             this.txtTyp.Size = new System.Drawing.Size(599, 28);
@@ -352,15 +352,15 @@
             this.layoutControlGroup2});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1162, 655);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1162, 683);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.gcTyp;
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 160);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 162);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(1162, 495);
+            this.layoutControlItem7.Size = new System.Drawing.Size(1162, 521);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
@@ -369,7 +369,7 @@
             this.emptySpaceItem2.AllowHotTrack = false;
             this.emptySpaceItem2.Location = new System.Drawing.Point(675, 0);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(487, 160);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(487, 162);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup2
@@ -387,7 +387,7 @@
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
             this.layoutControlGroup2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup2.Size = new System.Drawing.Size(675, 160);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(675, 162);
             this.layoutControlGroup2.Text = "Typ";
             // 
             // layoutControlItem4
@@ -438,7 +438,7 @@
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1162, 211);
+            this.ribbonControl1.Size = new System.Drawing.Size(1162, 183);
             // 
             // Rbtncancel
             // 
@@ -502,10 +502,7 @@
             this.ClientSize = new System.Drawing.Size(1162, 866);
             this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.ribbonControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "frmType";
             this.Ribbon = this.ribbonControl1;
             this.ShowIcon = false;
