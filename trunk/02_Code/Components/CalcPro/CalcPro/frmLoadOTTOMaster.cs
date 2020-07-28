@@ -209,7 +209,8 @@ namespace CalcPro
             txtseatofcompany.Text = string.Empty;
             txtMD.Text = string.Empty;
             txtComplementary.Text = string.Empty;
-            checkEditIsBranch.Checked = false;
+            checkEditIsBranch.EditValue = false;
+           
         }
 
         private void btnReset_Click(object sender, EventArgs e)
