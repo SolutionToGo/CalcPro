@@ -42,6 +42,7 @@
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtNewRaster.Properties)).BeginInit();
@@ -54,6 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -81,7 +83,7 @@
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1036, 183, 450, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(534, 211);
+            this.layoutControl1.Size = new System.Drawing.Size(534, 222);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -90,10 +92,10 @@
             this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnOk.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnOk.ImageOptions.Image")));
             this.btnOk.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnOk.Location = new System.Drawing.Point(412, 162);
+            this.btnOk.Location = new System.Drawing.Point(410, 172);
             this.btnOk.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(100, 27);
+            this.btnOk.Size = new System.Drawing.Size(102, 28);
             this.btnOk.StyleController = this.layoutControl1;
             this.btnOk.TabIndex = 8;
             this.btnOk.Text = "Speichern";
@@ -104,10 +106,10 @@
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.Cancel_16x16;
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancel.Location = new System.Drawing.Point(302, 162);
+            this.btnCancel.Location = new System.Drawing.Point(298, 172);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(106, 27);
+            this.btnCancel.Size = new System.Drawing.Size(108, 28);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Abbrechen";
@@ -115,7 +117,7 @@
             // 
             // txtNewRaster
             // 
-            this.txtNewRaster.Location = new System.Drawing.Point(191, 130);
+            this.txtNewRaster.Location = new System.Drawing.Point(191, 125);
             this.txtNewRaster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNewRaster.Name = "txtNewRaster";
             this.txtNewRaster.Properties.ReadOnly = true;
@@ -126,7 +128,7 @@
             // 
             // rgRasterNumbers
             // 
-            this.rgRasterNumbers.Location = new System.Drawing.Point(22, 52);
+            this.rgRasterNumbers.Location = new System.Drawing.Point(22, 54);
             this.rgRasterNumbers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rgRasterNumbers.Name = "rgRasterNumbers";
             this.rgRasterNumbers.Properties.AllowMouseWheel = false;
@@ -135,7 +137,7 @@
             this.rgRasterNumbers.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Erhöhung um eine Stelle"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Zurücksetzen auf initiales Stellenraster")});
-            this.rgRasterNumbers.Size = new System.Drawing.Size(490, 74);
+            this.rgRasterNumbers.Size = new System.Drawing.Size(490, 67);
             this.rgRasterNumbers.StyleController = this.layoutControl1;
             this.rgRasterNumbers.TabIndex = 5;
             this.rgRasterNumbers.SelectedIndexChanged += new System.EventHandler(this.rgRasterNumbers_SelectedIndexChanged);
@@ -159,16 +161,18 @@
             this.layoutControlGroup1.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
             this.layoutControlItem2,
             this.layoutControlItem3,
             this.layoutControlItem4,
             this.emptySpaceItem1,
-            this.layoutControlItem5});
+            this.layoutControlItem5,
+            this.emptySpaceItem2});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(20, 20, 20, 20);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(534, 211);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(534, 222);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -177,7 +181,7 @@
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.MinSize = new System.Drawing.Size(140, 30);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(494, 30);
+            this.layoutControlItem1.Size = new System.Drawing.Size(494, 32);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.Text = "Initiales Stellenraster";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(166, 21);
@@ -185,16 +189,16 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.rgRasterNumbers;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 30);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 32);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(494, 78);
+            this.layoutControlItem2.Size = new System.Drawing.Size(494, 71);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.txtNewRaster;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 108);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 103);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(494, 32);
             this.layoutControlItem3.Text = "Neues Stellenraster";
@@ -203,35 +207,43 @@
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.btnCancel;
-            this.layoutControlItem4.Location = new System.Drawing.Point(280, 140);
+            this.layoutControlItem4.Location = new System.Drawing.Point(276, 150);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(110, 31);
+            this.layoutControlItem4.Size = new System.Drawing.Size(112, 32);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 140);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 150);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(280, 31);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(276, 32);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnOk;
-            this.layoutControlItem5.Location = new System.Drawing.Point(390, 140);
+            this.layoutControlItem5.Location = new System.Drawing.Point(388, 150);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(104, 31);
+            this.layoutControlItem5.Size = new System.Drawing.Size(106, 32);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
+            // 
+            // emptySpaceItem2
+            // 
+            this.emptySpaceItem2.AllowHotTrack = false;
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 135);
+            this.emptySpaceItem2.Name = "emptySpaceItem2";
+            this.emptySpaceItem2.Size = new System.Drawing.Size(494, 15);
+            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // frmAddRaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(534, 211);
+            this.ClientSize = new System.Drawing.Size(534, 222);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -256,6 +268,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -275,5 +288,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
     }
 }
