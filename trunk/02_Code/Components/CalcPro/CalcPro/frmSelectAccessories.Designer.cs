@@ -50,6 +50,7 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcArticles)).BeginInit();
@@ -61,20 +62,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
             // 
             this.layoutControl1.AllowCustomization = false;
-            this.layoutControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(158)))), ((int)(((byte)(224)))));
+            this.layoutControl1.Appearance.Control.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.Control.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDisabled.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDropDown.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDropDown.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDropDownHeader.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDropDownHeader.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlFocused.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlReadOnly.Options.UseFont = true;
             this.layoutControl1.Controls.Add(this.btnCancel);
             this.layoutControl1.Controls.Add(this.btnOK);
             this.layoutControl1.Controls.Add(this.gcArticles);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(1054, 455);
+            this.layoutControl1.Size = new System.Drawing.Size(1230, 560);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -83,9 +97,10 @@
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.Cancel_16x16;
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancel.Location = new System.Drawing.Point(811, 421);
+            this.btnCancel.Location = new System.Drawing.Point(941, 510);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(119, 22);
+            this.btnCancel.Size = new System.Drawing.Size(137, 27);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Abbrechen";
@@ -95,9 +110,10 @@
             // 
             this.btnOK.ImageOptions.Image = global::CalcPro.Properties.Resources.Apply_16x16;
             this.btnOK.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnOK.Location = new System.Drawing.Point(934, 421);
+            this.btnOK.Location = new System.Drawing.Point(1082, 510);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(108, 22);
+            this.btnOK.Size = new System.Drawing.Size(125, 27);
             this.btnOK.StyleController = this.layoutControl1;
             this.btnOK.TabIndex = 7;
             this.btnOK.Text = "Ok";
@@ -105,12 +121,14 @@
             // 
             // gcArticles
             // 
-            this.gcArticles.Location = new System.Drawing.Point(12, 12);
+            this.gcArticles.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.gcArticles.Location = new System.Drawing.Point(23, 23);
             this.gcArticles.MainView = this.gvArticles;
+            this.gcArticles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcArticles.Name = "gcArticles";
             this.gcArticles.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.rpMenge});
-            this.gcArticles.Size = new System.Drawing.Size(1030, 405);
+            this.gcArticles.Size = new System.Drawing.Size(1184, 468);
             this.gcArticles.TabIndex = 6;
             this.gcArticles.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvArticles,
@@ -118,10 +136,14 @@
             // 
             // gvArticles
             // 
-            this.gvArticles.Appearance.FocusedCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(158)))), ((int)(((byte)(224)))));
-            this.gvArticles.Appearance.FocusedCell.Options.UseBackColor = true;
-            this.gvArticles.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.gvArticles.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gvArticles.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.gvArticles.Appearance.FooterPanel.Font = new System.Drawing.Font("Bahnschrift", 10F);
+            this.gvArticles.Appearance.FooterPanel.Options.UseFont = true;
+            this.gvArticles.Appearance.HeaderPanel.Font = new System.Drawing.Font("Bahnschrift", 10F);
             this.gvArticles.Appearance.HeaderPanel.Options.UseFont = true;
+            this.gvArticles.Appearance.Row.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.gvArticles.Appearance.Row.Options.UseFont = true;
             this.gvArticles.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
@@ -133,6 +155,7 @@
             this.gridColumn6,
             this.gridColumn7,
             this.gridColumn8});
+            this.gvArticles.DetailHeight = 431;
             this.gvArticles.GridControl = this.gcArticles;
             this.gvArticles.Name = "gvArticles";
             this.gvArticles.OptionsCustomization.AllowColumnMoving = false;
@@ -144,97 +167,108 @@
             // 
             this.gridColumn1.Caption = "ID";
             this.gridColumn1.FieldName = "AccessoriesID";
+            this.gridColumn1.MinWidth = 23;
             this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Width = 87;
             // 
             // gridColumn2
             // 
             this.gridColumn2.Caption = "WG";
             this.gridColumn2.FieldName = "WG";
+            this.gridColumn2.MinWidth = 23;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 0;
-            this.gridColumn2.Width = 77;
+            this.gridColumn2.Width = 90;
             // 
             // gridColumn3
             // 
             this.gridColumn3.Caption = "WA";
             this.gridColumn3.FieldName = "WA";
+            this.gridColumn3.MinWidth = 23;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowEdit = false;
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 1;
-            this.gridColumn3.Width = 83;
+            this.gridColumn3.Width = 97;
             // 
             // gridColumn4
             // 
             this.gridColumn4.Caption = "WI";
             this.gridColumn4.FieldName = "WI";
+            this.gridColumn4.MinWidth = 23;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowEdit = false;
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 2;
-            this.gridColumn4.Width = 91;
+            this.gridColumn4.Width = 106;
             // 
             // gridColumn10
             // 
             this.gridColumn10.Caption = "WA Beschreibung";
             this.gridColumn10.FieldName = "WADescription";
+            this.gridColumn10.MinWidth = 23;
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.OptionsColumn.AllowEdit = false;
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 3;
-            this.gridColumn10.Width = 155;
+            this.gridColumn10.Width = 181;
             // 
             // gridColumn9
             // 
             this.gridColumn9.Caption = "WI Beschreibung";
             this.gridColumn9.FieldName = "WIDescription";
+            this.gridColumn9.MinWidth = 23;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.OptionsColumn.AllowEdit = false;
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 4;
-            this.gridColumn9.Width = 149;
+            this.gridColumn9.Width = 174;
             // 
             // gridColumn5
             // 
             this.gridColumn5.Caption = "A";
             this.gridColumn5.FieldName = "A";
+            this.gridColumn5.MinWidth = 23;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowEdit = false;
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 5;
-            this.gridColumn5.Width = 129;
+            this.gridColumn5.Width = 150;
             // 
             // gridColumn6
             // 
             this.gridColumn6.Caption = "B";
             this.gridColumn6.FieldName = "B";
+            this.gridColumn6.MinWidth = 23;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.OptionsColumn.AllowEdit = false;
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 6;
-            this.gridColumn6.Width = 113;
+            this.gridColumn6.Width = 132;
             // 
             // gridColumn7
             // 
             this.gridColumn7.Caption = "L";
             this.gridColumn7.FieldName = "L";
+            this.gridColumn7.MinWidth = 23;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.OptionsColumn.AllowEdit = false;
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 7;
-            this.gridColumn7.Width = 96;
+            this.gridColumn7.Width = 112;
             // 
             // gridColumn8
             // 
             this.gridColumn8.Caption = "Menge";
             this.gridColumn8.ColumnEdit = this.rpMenge;
             this.gridColumn8.FieldName = "MENGE";
+            this.gridColumn8.MinWidth = 23;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 8;
-            this.gridColumn8.Width = 119;
+            this.gridColumn8.Width = 139;
             // 
             // rpMenge
             // 
@@ -247,20 +281,26 @@
             // 
             // gridView1
             // 
+            this.gridView1.DetailHeight = 431;
             this.gridView1.GridControl = this.gcArticles;
             this.gridView1.Name = "gridView1";
             // 
             // layoutControlGroup1
             // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.AppearanceGroup.Font = new System.Drawing.Font("Bahnschrift", 10F);
+            this.layoutControlGroup1.AppearanceGroup.Options.UseFont = true;
+            this.layoutControlGroup1.AppearanceItemCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControlGroup1.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlGroup1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
             this.layoutControlItem3,
             this.emptySpaceItem1,
-            this.layoutControlItem2});
+            this.layoutControlItem2,
+            this.emptySpaceItem2});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1054, 455);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(20, 20, 20, 20);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1230, 560);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -268,44 +308,53 @@
             this.layoutControlItem1.Control = this.gcArticles;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1034, 409);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1188, 472);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.btnCancel;
-            this.layoutControlItem3.Location = new System.Drawing.Point(799, 409);
+            this.layoutControlItem3.Location = new System.Drawing.Point(918, 487);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(123, 26);
+            this.layoutControlItem3.Size = new System.Drawing.Size(141, 31);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 409);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 487);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(799, 26);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(918, 31);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.btnOK;
-            this.layoutControlItem2.Location = new System.Drawing.Point(922, 409);
+            this.layoutControlItem2.Location = new System.Drawing.Point(1059, 487);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(112, 26);
+            this.layoutControlItem2.Size = new System.Drawing.Size(129, 31);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
+            // emptySpaceItem2
+            // 
+            this.emptySpaceItem2.AllowHotTrack = false;
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 472);
+            this.emptySpaceItem2.Name = "emptySpaceItem2";
+            this.emptySpaceItem2.Size = new System.Drawing.Size(1188, 15);
+            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
+            // 
             // frmSelectAccessories
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(1054, 455);
+            this.ClientSize = new System.Drawing.Size(1230, 560);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmSelectAccessories";
@@ -325,6 +374,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -353,5 +403,6 @@
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
     }
 }

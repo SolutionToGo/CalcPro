@@ -39,6 +39,7 @@
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcTyp)).BeginInit();
@@ -48,20 +49,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
             // 
-            this.layoutControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(158)))), ((int)(((byte)(224)))));
+            this.layoutControl1.Appearance.Control.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.Control.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDisabled.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDropDown.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDropDown.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDropDownHeader.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDropDownHeader.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlFocused.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlReadOnly.Options.UseFont = true;
             this.layoutControl1.Controls.Add(this.btnCancel);
             this.layoutControl1.Controls.Add(this.btnOk);
             this.layoutControl1.Controls.Add(this.gcTyp);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(326, 125, 450, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(985, 536);
+            this.layoutControl1.Size = new System.Drawing.Size(1149, 660);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -70,9 +84,10 @@
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImageOptions.Image")));
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancel.Location = new System.Drawing.Point(806, 511);
+            this.btnCancel.Location = new System.Drawing.Point(928, 611);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(88, 22);
+            this.btnCancel.Size = new System.Drawing.Size(106, 27);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Abbrechen";
@@ -82,9 +97,10 @@
             // 
             this.btnOk.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnOk.ImageOptions.Image")));
             this.btnOk.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnOk.Location = new System.Drawing.Point(898, 511);
+            this.btnOk.Location = new System.Drawing.Point(1038, 611);
+            this.btnOk.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(84, 22);
+            this.btnOk.Size = new System.Drawing.Size(89, 27);
             this.btnOk.StyleController = this.layoutControl1;
             this.btnOk.TabIndex = 5;
             this.btnOk.Text = "OK";
@@ -92,10 +108,12 @@
             // 
             // gcTyp
             // 
-            this.gcTyp.Location = new System.Drawing.Point(3, 3);
+            this.gcTyp.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.gcTyp.Location = new System.Drawing.Point(22, 22);
             this.gcTyp.MainView = this.gvTyp;
+            this.gcTyp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcTyp.Name = "gcTyp";
-            this.gcTyp.Size = new System.Drawing.Size(979, 504);
+            this.gcTyp.Size = new System.Drawing.Size(1105, 569);
             this.gcTyp.TabIndex = 4;
             this.gcTyp.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvTyp});
@@ -103,12 +121,15 @@
             // 
             // gvTyp
             // 
-            this.gvTyp.Appearance.FocusedCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(158)))), ((int)(((byte)(224)))));
-            this.gvTyp.Appearance.FocusedCell.Options.UseBackColor = true;
-            this.gvTyp.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(158)))), ((int)(((byte)(224)))));
+            this.gvTyp.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gvTyp.Appearance.FocusedRow.Options.UseBackColor = true;
-            this.gvTyp.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.gvTyp.Appearance.FooterPanel.Font = new System.Drawing.Font("Bahnschrift", 10F);
+            this.gvTyp.Appearance.FooterPanel.Options.UseFont = true;
+            this.gvTyp.Appearance.HeaderPanel.Font = new System.Drawing.Font("Bahnschrift", 10F);
             this.gvTyp.Appearance.HeaderPanel.Options.UseFont = true;
+            this.gvTyp.Appearance.Row.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.gvTyp.Appearance.Row.Options.UseFont = true;
+            this.gvTyp.DetailHeight = 431;
             this.gvTyp.GridControl = this.gcTyp;
             this.gvTyp.Name = "gvTyp";
             this.gvTyp.OptionsBehavior.Editable = false;
@@ -117,16 +138,21 @@
             // 
             // layoutControlGroup1
             // 
+            this.layoutControlGroup1.AppearanceGroup.Font = new System.Drawing.Font("Bahnschrift", 10F);
+            this.layoutControlGroup1.AppearanceGroup.Options.UseFont = true;
+            this.layoutControlGroup1.AppearanceItemCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControlGroup1.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup1.GroupBordersVisible = false;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
             this.layoutControlItem2,
             this.layoutControlItem3,
-            this.emptySpaceItem1});
+            this.emptySpaceItem1,
+            this.emptySpaceItem2});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(985, 536);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(20, 20, 20, 20);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1149, 660);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -134,44 +160,53 @@
             this.layoutControlItem1.Control = this.gcTyp;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(983, 508);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1109, 573);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.btnOk;
-            this.layoutControlItem2.Location = new System.Drawing.Point(895, 508);
+            this.layoutControlItem2.Location = new System.Drawing.Point(1016, 589);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(88, 26);
+            this.layoutControlItem2.Size = new System.Drawing.Size(93, 31);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.btnCancel;
-            this.layoutControlItem3.Location = new System.Drawing.Point(803, 508);
+            this.layoutControlItem3.Location = new System.Drawing.Point(906, 589);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(92, 26);
+            this.layoutControlItem3.Size = new System.Drawing.Size(110, 31);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 508);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 589);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(803, 26);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(906, 31);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem2
+            // 
+            this.emptySpaceItem2.AllowHotTrack = false;
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 573);
+            this.emptySpaceItem2.Name = "emptySpaceItem2";
+            this.emptySpaceItem2.Size = new System.Drawing.Size(1109, 16);
+            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // frmTypList
             // 
             this.AcceptButton = this.btnOk;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(985, 536);
+            this.ClientSize = new System.Drawing.Size(1149, 660);
             this.Controls.Add(this.layoutControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmTypList";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
@@ -187,6 +222,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -203,5 +239,6 @@
         private DevExpress.XtraEditors.SimpleButton btnCancel;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
     }
 }

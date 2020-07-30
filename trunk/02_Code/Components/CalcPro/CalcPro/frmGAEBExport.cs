@@ -18,7 +18,7 @@ using System.Globalization;
 using EL;
 namespace CalcPro
 {
-    public partial class frmGAEBExport : Form
+    public partial class frmGAEBExport : DevExpress.XtraEditors.XtraForm
     {
         /// <summary>
         /// This form is to exporting a project to GAEB file

@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CalcPro
-{    public partial class frmGAEBImport : Form
+{    public partial class frmGAEBImport : DevExpress.XtraEditors.XtraForm
     {
         /// <summary>
         /// This form is to import GAEB file on a project

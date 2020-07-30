@@ -119,13 +119,13 @@
             this.layoutControl1.Controls.Add(this.dateEditValidityDate);
             this.layoutControl1.Controls.Add(this.txtRabatt);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(0, 183);
+            this.layoutControl1.Location = new System.Drawing.Point(0, 211);
             this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(773, 378, 450, 400);
             this.layoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(1338, 703);
+            this.layoutControl1.Size = new System.Drawing.Size(1338, 675);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -136,7 +136,7 @@
             this.gcTyp.MainView = this.gvTyp;
             this.gcTyp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcTyp.Name = "gcTyp";
-            this.gcTyp.Size = new System.Drawing.Size(656, 198);
+            this.gcTyp.Size = new System.Drawing.Size(656, 170);
             this.gcTyp.TabIndex = 11;
             this.gcTyp.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvTyp});
@@ -161,7 +161,7 @@
             // gcRabatt
             // 
             this.gcRabatt.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.gcRabatt.Location = new System.Drawing.Point(2, 228);
+            this.gcRabatt.Location = new System.Drawing.Point(2, 200);
             this.gcRabatt.MainView = this.gvRabatt;
             this.gcRabatt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcRabatt.Name = "gcRabatt";
@@ -288,7 +288,7 @@
             // txtMulti4
             // 
             this.txtMulti4.EnterMoveNextControl = true;
-            this.txtMulti4.Location = new System.Drawing.Point(294, 193);
+            this.txtMulti4.Location = new System.Drawing.Point(294, 165);
             this.txtMulti4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMulti4.Name = "txtMulti4";
             this.txtMulti4.Properties.DisplayFormat.FormatString = "n3";
@@ -309,7 +309,7 @@
             // txtMulti3
             // 
             this.txtMulti3.EnterMoveNextControl = true;
-            this.txtMulti3.Location = new System.Drawing.Point(294, 161);
+            this.txtMulti3.Location = new System.Drawing.Point(294, 133);
             this.txtMulti3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMulti3.Name = "txtMulti3";
             this.txtMulti3.Properties.DisplayFormat.FormatString = "n3";
@@ -330,7 +330,7 @@
             // txtMulti2
             // 
             this.txtMulti2.EnterMoveNextControl = true;
-            this.txtMulti2.Location = new System.Drawing.Point(294, 129);
+            this.txtMulti2.Location = new System.Drawing.Point(294, 101);
             this.txtMulti2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMulti2.Name = "txtMulti2";
             this.txtMulti2.Properties.DisplayFormat.FormatString = "n3";
@@ -351,7 +351,7 @@
             // txtMulti1
             // 
             this.txtMulti1.EnterMoveNextControl = true;
-            this.txtMulti1.Location = new System.Drawing.Point(294, 97);
+            this.txtMulti1.Location = new System.Drawing.Point(294, 69);
             this.txtMulti1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMulti1.Name = "txtMulti1";
             this.txtMulti1.Properties.DisplayFormat.FormatString = "n3";
@@ -373,7 +373,7 @@
             // 
             this.dateEditValidityDate.EditValue = null;
             this.dateEditValidityDate.EnterMoveNextControl = true;
-            this.dateEditValidityDate.Location = new System.Drawing.Point(294, 65);
+            this.dateEditValidityDate.Location = new System.Drawing.Point(294, 37);
             this.dateEditValidityDate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateEditValidityDate.Name = "dateEditValidityDate";
             this.dateEditValidityDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -395,7 +395,7 @@
             // txtRabatt
             // 
             this.txtRabatt.EnterMoveNextControl = true;
-            this.txtRabatt.Location = new System.Drawing.Point(294, 33);
+            this.txtRabatt.Location = new System.Drawing.Point(294, 5);
             this.txtRabatt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtRabatt.Name = "txtRabatt";
             this.txtRabatt.Size = new System.Drawing.Size(379, 28);
@@ -419,13 +419,13 @@
             this.layoutControlGroup2});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1338, 703);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1338, 675);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.gcRabatt;
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 226);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 198);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(1338, 477);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
@@ -436,7 +436,7 @@
             this.layoutControlItem1.Control = this.gcTyp;
             this.layoutControlItem1.Location = new System.Drawing.Point(678, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(660, 226);
+            this.layoutControlItem1.Size = new System.Drawing.Size(660, 198);
             this.layoutControlItem1.Text = "Mapping von TYP zu der Rabattgruppe";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(286, 21);
@@ -459,8 +459,9 @@
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
             this.layoutControlGroup2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup2.Size = new System.Drawing.Size(678, 226);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(678, 198);
             this.layoutControlGroup2.Text = "Rabatt";
+            this.layoutControlGroup2.TextVisible = false;
             // 
             // layoutControlItem2
             // 
@@ -535,7 +536,7 @@
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1338, 183);
+            this.ribbonControl1.Size = new System.Drawing.Size(1338, 211);
             // 
             // RbtnCancel
             // 
@@ -588,7 +589,7 @@
             // 
             // RbtnAddtype
             // 
-            this.RbtnAddtype.Caption = "Hinzufügen";
+            this.RbtnAddtype.Caption = "Neuen Typ hinzufügen";
             this.RbtnAddtype.Id = 4;
             this.RbtnAddtype.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("RbtnAddtype.ImageOptions.SvgImage")));
             this.RbtnAddtype.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);

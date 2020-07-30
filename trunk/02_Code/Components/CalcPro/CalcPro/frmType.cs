@@ -106,6 +106,14 @@ namespace CalcPro
             }
         }
 
+        void ClearTyp()
+        {
+            txtTyp.Text = string.Empty;
+            cmbSupplier.Text = string.Empty ;
+            cmbWGWA.Text = string.Empty;
+            cmbWI.Text= string.Empty;
+        }
+
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -126,6 +134,16 @@ namespace CalcPro
             }
         }
 
+        private void Rbtncancel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnCancel_Click(0, e);
+        }
+
+        private void Rbtnsave_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnSave_Click(0, e);
+            ClearTyp();
+        }
         private void gvDeleteTyp_Click(object sender, EventArgs e)
         {
             try
@@ -171,16 +189,9 @@ namespace CalcPro
                 throw;
             }
         }
+
         #endregion
 
-        private void Rbtncancel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            btnCancel_Click(0, e);
-        }
-
-        private void Rbtnsave_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            btnSave_Click(0, e);
-        }
+      
     }
 } 

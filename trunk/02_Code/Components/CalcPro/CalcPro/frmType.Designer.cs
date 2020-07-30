@@ -50,6 +50,7 @@
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.txtTyp = new DevExpress.XtraEditors.TextEdit();
+            this.btnsave = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
@@ -58,6 +59,8 @@
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.dxValidationProvider1 = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.Rbtncancel = new DevExpress.XtraBars.BarButtonItem();
@@ -81,6 +84,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -109,21 +114,22 @@
             this.layoutControl1.Controls.Add(this.cmbWGWA);
             this.layoutControl1.Controls.Add(this.gcTyp);
             this.layoutControl1.Controls.Add(this.txtTyp);
+            this.layoutControl1.Controls.Add(this.btnsave);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(0, 183);
+            this.layoutControl1.Location = new System.Drawing.Point(0, 211);
             this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(989, 198, 450, 400);
             this.layoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(1162, 683);
+            this.layoutControl1.Size = new System.Drawing.Size(1162, 655);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // cmbSupplier
             // 
             this.cmbSupplier.EnterMoveNextControl = true;
-            this.cmbSupplier.Location = new System.Drawing.Point(71, 129);
+            this.cmbSupplier.Location = new System.Drawing.Point(71, 101);
             this.cmbSupplier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbSupplier.Name = "cmbSupplier";
             this.cmbSupplier.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -145,7 +151,7 @@
             // cmbWI
             // 
             this.cmbWI.EnterMoveNextControl = true;
-            this.cmbWI.Location = new System.Drawing.Point(71, 97);
+            this.cmbWI.Location = new System.Drawing.Point(71, 69);
             this.cmbWI.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbWI.Name = "cmbWI";
             this.cmbWI.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -168,7 +174,7 @@
             // cmbWGWA
             // 
             this.cmbWGWA.EnterMoveNextControl = true;
-            this.cmbWGWA.Location = new System.Drawing.Point(71, 65);
+            this.cmbWGWA.Location = new System.Drawing.Point(71, 37);
             this.cmbWGWA.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbWGWA.Name = "cmbWGWA";
             this.cmbWGWA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -193,7 +199,7 @@
             // gcTyp
             // 
             this.gcTyp.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.gcTyp.Location = new System.Drawing.Point(2, 164);
+            this.gcTyp.Location = new System.Drawing.Point(2, 136);
             this.gcTyp.MainView = this.gvTyp;
             this.gcTyp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcTyp.Name = "gcTyp";
@@ -326,7 +332,7 @@
             // txtTyp
             // 
             this.txtTyp.EnterMoveNextControl = true;
-            this.txtTyp.Location = new System.Drawing.Point(71, 33);
+            this.txtTyp.Location = new System.Drawing.Point(71, 5);
             this.txtTyp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTyp.Name = "txtTyp";
             this.txtTyp.Size = new System.Drawing.Size(599, 28);
@@ -337,6 +343,17 @@
             conditionValidationRule4.ErrorText = "This value is not valid";
             conditionValidationRule4.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Warning;
             this.dxValidationProvider1.SetValidationRule(this.txtTyp, conditionValidationRule4);
+            // 
+            // btnsave
+            // 
+            this.btnsave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnsave.ImageOptions.SvgImage")));
+            this.btnsave.Location = new System.Drawing.Point(677, 88);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(177, 44);
+            this.btnsave.StyleController = this.layoutControl1;
+            this.btnsave.TabIndex = 8;
+            this.btnsave.Text = " Speichern   ";
+            this.btnsave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // layoutControlGroup1
             // 
@@ -349,16 +366,18 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem7,
             this.emptySpaceItem2,
-            this.layoutControlGroup2});
+            this.layoutControlGroup2,
+            this.emptySpaceItem3,
+            this.layoutControlItem5});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1162, 683);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1162, 655);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.gcTyp;
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 162);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 134);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(1162, 521);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
@@ -367,9 +386,9 @@
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(675, 0);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(856, 0);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(487, 162);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(306, 134);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup2
@@ -387,8 +406,9 @@
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
             this.layoutControlGroup2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup2.Size = new System.Drawing.Size(675, 162);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(675, 134);
             this.layoutControlGroup2.Text = "Typ";
+            this.layoutControlGroup2.TextVisible = false;
             // 
             // layoutControlItem4
             // 
@@ -426,6 +446,23 @@
             this.layoutControlItem3.Text = "Supplier";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(63, 21);
             // 
+            // emptySpaceItem3
+            // 
+            this.emptySpaceItem3.AllowHotTrack = false;
+            this.emptySpaceItem3.Location = new System.Drawing.Point(675, 0);
+            this.emptySpaceItem3.Name = "emptySpaceItem3";
+            this.emptySpaceItem3.Size = new System.Drawing.Size(181, 86);
+            this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // layoutControlItem5
+            // 
+            this.layoutControlItem5.Control = this.btnsave;
+            this.layoutControlItem5.Location = new System.Drawing.Point(675, 86);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.Size = new System.Drawing.Size(181, 48);
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem5.TextVisible = false;
+            // 
             // ribbonControl1
             // 
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
@@ -438,7 +475,7 @@
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1162, 183);
+            this.ribbonControl1.Size = new System.Drawing.Size(1162, 211);
             // 
             // Rbtncancel
             // 
@@ -459,7 +496,7 @@
             // 
             // Rbtnsave
             // 
-            this.Rbtnsave.Caption = "Speichern";
+            this.Rbtnsave.Caption = " Speichern   ";
             this.Rbtnsave.Id = 2;
             this.Rbtnsave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Rbtnsave.ImageOptions.SvgImage")));
             this.Rbtnsave.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
@@ -484,8 +521,6 @@
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.Rbtncancel);
-            this.ribbonPageGroup1.ItemLinks.Add(this.Rbtnsave);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
             // ribbonPage2
@@ -527,6 +562,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);
@@ -567,5 +604,8 @@
         private DevExpress.XtraBars.BarButtonItem Rbtncancel;
         private DevExpress.XtraBars.BarButtonItem Rbtnsave;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
+        private DevExpress.XtraEditors.SimpleButton btnsave;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
     }
 }

@@ -35,7 +35,6 @@
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -45,7 +44,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
@@ -53,26 +51,39 @@
             // 
             // layoutControl1
             // 
-            this.layoutControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(158)))), ((int)(((byte)(224)))));
+            this.layoutControl1.Appearance.Control.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.Control.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDisabled.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDropDown.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDropDown.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDropDownHeader.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDropDownHeader.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlFocused.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlReadOnly.Options.UseFont = true;
             this.layoutControl1.Controls.Add(this.cmbSupplierList);
             this.layoutControl1.Controls.Add(this.btnOk);
             this.layoutControl1.Controls.Add(this.btnCancel);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(834, 214, 450, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(345, 157);
+            this.layoutControl1.Size = new System.Drawing.Size(402, 145);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // cmbSupplierList
             // 
-            this.cmbSupplierList.Location = new System.Drawing.Point(12, 66);
+            this.cmbSupplierList.Location = new System.Drawing.Point(23, 47);
+            this.cmbSupplierList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbSupplierList.Name = "cmbSupplierList";
             this.cmbSupplierList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbSupplierList.Size = new System.Drawing.Size(321, 20);
+            this.cmbSupplierList.Size = new System.Drawing.Size(356, 28);
             this.cmbSupplierList.StyleController = this.layoutControl1;
             this.cmbSupplierList.TabIndex = 4;
             // 
@@ -80,9 +91,10 @@
             // 
             this.btnOk.ImageOptions.Image = global::CalcPro.Properties.Resources.Apply_16x16;
             this.btnOk.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnOk.Location = new System.Drawing.Point(261, 90);
+            this.btnOk.Location = new System.Drawing.Point(316, 95);
+            this.btnOk.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(72, 22);
+            this.btnOk.Size = new System.Drawing.Size(63, 27);
             this.btnOk.StyleController = this.layoutControl1;
             this.btnOk.TabIndex = 5;
             this.btnOk.Text = "Ok";
@@ -93,9 +105,10 @@
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.Cancel_16x16;
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancel.Location = new System.Drawing.Point(177, 90);
+            this.btnCancel.Location = new System.Drawing.Point(206, 95);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(80, 22);
+            this.btnCancel.Size = new System.Drawing.Size(106, 27);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Abbrechen";
@@ -103,83 +116,74 @@
             // 
             // layoutControlGroup1
             // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.AppearanceGroup.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControlGroup1.AppearanceGroup.Options.UseFont = true;
+            this.layoutControlGroup1.AppearanceItemCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControlGroup1.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem3,
             this.emptySpaceItem1,
-            this.emptySpaceItem2,
-            this.emptySpaceItem3,
             this.layoutControlItem1,
-            this.layoutControlItem2});
+            this.layoutControlItem2,
+            this.emptySpaceItem3});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(345, 157);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(20, 20, 20, 20);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(402, 145);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.btnCancel;
-            this.layoutControlItem3.Location = new System.Drawing.Point(165, 78);
+            this.layoutControlItem3.Location = new System.Drawing.Point(183, 72);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(84, 26);
+            this.layoutControlItem3.Size = new System.Drawing.Size(110, 31);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 78);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 72);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(165, 26);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(183, 31);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem2
-            // 
-            this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 0);
-            this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(325, 37);
-            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 104);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 56);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(325, 33);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(360, 16);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem1
             // 
-            this.layoutControlItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.layoutControlItem1.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
-            this.layoutControlItem1.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem1.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem1.Control = this.cmbSupplierList;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 37);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(325, 41);
+            this.layoutControlItem1.Size = new System.Drawing.Size(360, 56);
             this.layoutControlItem1.Text = "Verfügbare Lieferanten";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(142, 14);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(174, 21);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.btnOk;
-            this.layoutControlItem2.Location = new System.Drawing.Point(249, 78);
+            this.layoutControlItem2.Location = new System.Drawing.Point(293, 72);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(76, 26);
+            this.layoutControlItem2.Size = new System.Drawing.Size(67, 31);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // frmSelectsupplier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(345, 157);
+            this.ClientSize = new System.Drawing.Size(402, 145);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmSelectsupplier";
@@ -193,7 +197,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
@@ -211,7 +214,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
     }

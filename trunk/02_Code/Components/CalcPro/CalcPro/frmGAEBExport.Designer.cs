@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.cmbLVSection = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.btnExport = new DevExpress.XtraEditors.SimpleButton();
             this.btnBrowse = new DevExpress.XtraEditors.SimpleButton();
             this.cmbFormatType = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -42,15 +43,11 @@
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.dlg = new System.Windows.Forms.FolderBrowserDialog();
-            this.cmbLVSection = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.cmbLVSection1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.dlg = new System.Windows.Forms.FolderBrowserDialog();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSection.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFormatType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFilePath.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFileName.Properties)).BeginInit();
@@ -62,17 +59,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSection.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbLVSection1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
             // 
             this.layoutControl1.AllowCustomization = false;
+            this.layoutControl1.Appearance.Control.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.Control.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDisabled.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDropDown.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDropDown.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlDropDownHeader.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlDropDownHeader.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlFocused.Options.UseFont = true;
+            this.layoutControl1.Appearance.ControlReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControl1.Appearance.ControlReadOnly.Options.UseFont = true;
             this.layoutControl1.Controls.Add(this.cmbLVSection);
             this.layoutControl1.Controls.Add(this.btnExport);
             this.layoutControl1.Controls.Add(this.btnBrowse);
@@ -82,19 +86,32 @@
             this.layoutControl1.Controls.Add(this.txtProjectName);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1181, 228, 250, 350);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(611, 195);
+            this.layoutControl1.Size = new System.Drawing.Size(815, 204);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // cmbLVSection
+            // 
+            this.cmbLVSection.Location = new System.Drawing.Point(201, 151);
+            this.cmbLVSection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbLVSection.Name = "cmbLVSection";
+            this.cmbLVSection.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbLVSection.Size = new System.Drawing.Size(415, 28);
+            this.cmbLVSection.StyleController = this.layoutControl1;
+            this.cmbLVSection.TabIndex = 10;
             // 
             // btnExport
             // 
             this.btnExport.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnExport.Location = new System.Drawing.Point(469, 120);
+            this.btnExport.Location = new System.Drawing.Point(622, 151);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(97, 22);
+            this.btnExport.Size = new System.Drawing.Size(169, 27);
             this.btnExport.StyleController = this.layoutControl1;
             this.btnExport.TabIndex = 9;
             this.btnExport.Text = "Export";
@@ -104,9 +121,10 @@
             // 
             this.btnBrowse.ImageOptions.Image = global::CalcPro.Properties.Resources.ExportFile_16x16;
             this.btnBrowse.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnBrowse.Location = new System.Drawing.Point(469, 70);
+            this.btnBrowse.Location = new System.Drawing.Point(622, 87);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(97, 22);
+            this.btnBrowse.Size = new System.Drawing.Size(169, 27);
             this.btnBrowse.StyleController = this.layoutControl1;
             this.btnBrowse.TabIndex = 8;
             this.btnBrowse.Text = "Durchsuchen";
@@ -114,7 +132,8 @@
             // 
             // cmbFormatType
             // 
-            this.cmbFormatType.Location = new System.Drawing.Point(186, 96);
+            this.cmbFormatType.Location = new System.Drawing.Point(201, 119);
+            this.cmbFormatType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbFormatType.Name = "cmbFormatType";
             this.cmbFormatType.Properties.AllowMouseWheel = false;
             this.cmbFormatType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -122,42 +141,47 @@
             this.cmbFormatType.Properties.DropDownRows = 12;
             this.cmbFormatType.Properties.PopupSizeable = true;
             this.cmbFormatType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbFormatType.Size = new System.Drawing.Size(380, 20);
+            this.cmbFormatType.Size = new System.Drawing.Size(590, 28);
             this.cmbFormatType.StyleController = this.layoutControl1;
             this.cmbFormatType.TabIndex = 7;
             // 
             // txtFilePath
             // 
-            this.txtFilePath.Location = new System.Drawing.Point(186, 70);
+            this.txtFilePath.Location = new System.Drawing.Point(201, 87);
+            this.txtFilePath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFilePath.Name = "txtFilePath";
             this.txtFilePath.Properties.ReadOnly = true;
-            this.txtFilePath.Size = new System.Drawing.Size(279, 20);
+            this.txtFilePath.Size = new System.Drawing.Size(415, 28);
             this.txtFilePath.StyleController = this.layoutControl1;
             this.txtFilePath.TabIndex = 6;
             // 
             // txtFileName
             // 
-            this.txtFileName.Location = new System.Drawing.Point(186, 46);
+            this.txtFileName.Location = new System.Drawing.Point(201, 55);
+            this.txtFileName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFileName.Name = "txtFileName";
-            this.txtFileName.Size = new System.Drawing.Size(380, 20);
+            this.txtFileName.Size = new System.Drawing.Size(590, 28);
             this.txtFileName.StyleController = this.layoutControl1;
             this.txtFileName.TabIndex = 5;
             // 
             // txtProjectName
             // 
-            this.txtProjectName.Location = new System.Drawing.Point(186, 22);
+            this.txtProjectName.Location = new System.Drawing.Point(201, 23);
+            this.txtProjectName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtProjectName.Name = "txtProjectName";
             this.txtProjectName.Properties.ReadOnly = true;
-            this.txtProjectName.Size = new System.Drawing.Size(380, 20);
+            this.txtProjectName.Size = new System.Drawing.Size(590, 28);
             this.txtProjectName.StyleController = this.layoutControl1;
             this.txtProjectName.TabIndex = 4;
             // 
             // layoutControlGroup1
             // 
-            this.layoutControlGroup1.AppearanceGroup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(158)))), ((int)(((byte)(224)))));
-            this.layoutControlGroup1.AppearanceGroup.Options.UseBackColor = true;
+            this.layoutControlGroup1.AppearanceGroup.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControlGroup1.AppearanceGroup.Options.UseFont = true;
+            this.layoutControlGroup1.AppearanceItemCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControlGroup1.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
             this.layoutControlItem2,
@@ -165,126 +189,65 @@
             this.layoutControlItem4,
             this.layoutControlItem5,
             this.layoutControlItem6,
-            this.emptySpaceItem1,
-            this.emptySpaceItem2,
-            this.emptySpaceItem4,
-            this.emptySpaceItem3,
             this.cmbLVSection1});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(611, 195);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(20, 20, 20, 20);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(815, 204);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
             // 
-            this.layoutControlItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.layoutControlItem1.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
-            this.layoutControlItem1.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem1.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem1.Control = this.txtProjectName;
-            this.layoutControlItem1.Location = new System.Drawing.Point(32, 10);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(526, 24);
+            this.layoutControlItem1.Size = new System.Drawing.Size(773, 32);
             this.layoutControlItem1.Text = "Ausgewähltes Projekt ";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(139, 14);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(173, 21);
             // 
             // layoutControlItem2
             // 
-            this.layoutControlItem2.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.layoutControlItem2.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
-            this.layoutControlItem2.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem2.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem2.Control = this.txtFileName;
-            this.layoutControlItem2.Location = new System.Drawing.Point(32, 34);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 32);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(526, 24);
+            this.layoutControlItem2.Size = new System.Drawing.Size(773, 32);
             this.layoutControlItem2.Text = "Export-Dateiname ";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(139, 14);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(173, 21);
             // 
             // layoutControlItem3
             // 
-            this.layoutControlItem3.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.layoutControlItem3.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
-            this.layoutControlItem3.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem3.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem3.Control = this.txtFilePath;
-            this.layoutControlItem3.Location = new System.Drawing.Point(32, 58);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 64);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(425, 26);
+            this.layoutControlItem3.Size = new System.Drawing.Size(598, 32);
             this.layoutControlItem3.Text = "Export-Dateipfad ";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(139, 14);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(173, 21);
             // 
             // layoutControlItem4
             // 
-            this.layoutControlItem4.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.layoutControlItem4.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
-            this.layoutControlItem4.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem4.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem4.Control = this.cmbFormatType;
-            this.layoutControlItem4.Location = new System.Drawing.Point(32, 84);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(526, 24);
+            this.layoutControlItem4.Size = new System.Drawing.Size(773, 32);
             this.layoutControlItem4.Text = "Formattyp ";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(139, 14);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(173, 21);
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnBrowse;
-            this.layoutControlItem5.Location = new System.Drawing.Point(457, 58);
+            this.layoutControlItem5.Location = new System.Drawing.Point(598, 64);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(101, 26);
+            this.layoutControlItem5.Size = new System.Drawing.Size(175, 32);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.btnExport;
-            this.layoutControlItem6.Location = new System.Drawing.Point(457, 108);
+            this.layoutControlItem6.Location = new System.Drawing.Point(598, 128);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(101, 26);
+            this.layoutControlItem6.Size = new System.Drawing.Size(175, 34);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
-            // 
-            // emptySpaceItem1
-            // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 0);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(32, 134);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem2
-            // 
-            this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(558, 0);
-            this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(33, 134);
-            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem4
-            // 
-            this.emptySpaceItem4.AllowHotTrack = false;
-            this.emptySpaceItem4.Location = new System.Drawing.Point(0, 134);
-            this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(591, 41);
-            this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem3
-            // 
-            this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(32, 0);
-            this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(526, 10);
-            this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // cmbLVSection
-            // 
-            this.cmbLVSection.Location = new System.Drawing.Point(186, 120);
-            this.cmbLVSection.Name = "cmbLVSection";
-            this.cmbLVSection.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbLVSection.Size = new System.Drawing.Size(279, 20);
-            this.cmbLVSection.StyleController = this.layoutControl1;
-            this.cmbLVSection.TabIndex = 10;
             // 
             // cmbLVSection1
             // 
@@ -293,20 +256,21 @@
             this.cmbLVSection1.AppearanceItemCaption.Options.UseFont = true;
             this.cmbLVSection1.AppearanceItemCaption.Options.UseForeColor = true;
             this.cmbLVSection1.Control = this.cmbLVSection;
-            this.cmbLVSection1.Location = new System.Drawing.Point(32, 108);
+            this.cmbLVSection1.Location = new System.Drawing.Point(0, 128);
             this.cmbLVSection1.Name = "cmbLVSection1";
-            this.cmbLVSection1.Size = new System.Drawing.Size(425, 26);
+            this.cmbLVSection1.Size = new System.Drawing.Size(598, 34);
             this.cmbLVSection1.Text = "LV Sektion";
-            this.cmbLVSection1.TextSize = new System.Drawing.Size(139, 14);
+            this.cmbLVSection1.TextSize = new System.Drawing.Size(173, 18);
             // 
             // frmGAEBExport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(611, 195);
+            this.ClientSize = new System.Drawing.Size(815, 204);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmGAEBExport";
@@ -319,6 +283,7 @@
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmGAEBExport_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSection.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFormatType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFilePath.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFileName.Properties)).EndInit();
@@ -330,11 +295,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSection.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbLVSection1)).EndInit();
             this.ResumeLayout(false);
 
@@ -357,10 +317,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private System.Windows.Forms.FolderBrowserDialog dlg;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
         private DevExpress.XtraEditors.CheckedComboBoxEdit cmbLVSection;
         private DevExpress.XtraLayout.LayoutControlItem cmbLVSection1;
     }
