@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule5 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule2 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule3 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
-            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule4 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmType));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.cmbSupplier = new DevExpress.XtraEditors.LookUpEdit();
@@ -62,12 +62,12 @@
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.dxValidationProvider1 = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
-            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.Rbtncancel = new DevExpress.XtraBars.BarButtonItem();
             this.Rbtnsave = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSupplier.Properties)).BeginInit();
@@ -122,7 +122,7 @@
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(989, 198, 450, 400);
             this.layoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(1162, 655);
+            this.layoutControl1.Size = new System.Drawing.Size(1178, 701);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -140,13 +140,13 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ShortName", "Kurzbezeichnung")});
             this.cmbSupplier.Properties.NullText = "";
             this.cmbSupplier.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.cmbSupplier.Size = new System.Drawing.Size(599, 28);
+            this.cmbSupplier.Size = new System.Drawing.Size(608, 28);
             this.cmbSupplier.StyleController = this.layoutControl1;
             this.cmbSupplier.TabIndex = 4;
-            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule1.ErrorText = "This value is not valid";
-            conditionValidationRule1.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Warning;
-            this.dxValidationProvider1.SetValidationRule(this.cmbSupplier, conditionValidationRule1);
+            conditionValidationRule5.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule5.ErrorText = "This value is not valid";
+            conditionValidationRule5.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Warning;
+            this.dxValidationProvider1.SetValidationRule(this.cmbSupplier, conditionValidationRule5);
             // 
             // cmbWI
             // 
@@ -163,13 +163,13 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("WIDescription", "WIDescription")});
             this.cmbWI.Properties.NullText = "";
             this.cmbWI.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.cmbWI.Size = new System.Drawing.Size(599, 28);
+            this.cmbWI.Size = new System.Drawing.Size(608, 28);
             this.cmbWI.StyleController = this.layoutControl1;
             this.cmbWI.TabIndex = 3;
-            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule2.ErrorText = "This value is not valid";
-            conditionValidationRule2.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Warning;
-            this.dxValidationProvider1.SetValidationRule(this.cmbWI, conditionValidationRule2);
+            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule1.ErrorText = "This value is not valid";
+            conditionValidationRule1.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Warning;
+            this.dxValidationProvider1.SetValidationRule(this.cmbWI, conditionValidationRule1);
             // 
             // cmbWGWA
             // 
@@ -188,13 +188,13 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("WGWADesc", "WGWADesc")});
             this.cmbWGWA.Properties.NullText = "";
             this.cmbWGWA.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.cmbWGWA.Size = new System.Drawing.Size(599, 28);
+            this.cmbWGWA.Size = new System.Drawing.Size(608, 28);
             this.cmbWGWA.StyleController = this.layoutControl1;
             this.cmbWGWA.TabIndex = 2;
-            conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule3.ErrorText = "This value is not valid";
-            conditionValidationRule3.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Warning;
-            this.dxValidationProvider1.SetValidationRule(this.cmbWGWA, conditionValidationRule3);
+            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule2.ErrorText = "This value is not valid";
+            conditionValidationRule2.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Warning;
+            this.dxValidationProvider1.SetValidationRule(this.cmbWGWA, conditionValidationRule2);
             // 
             // gcTyp
             // 
@@ -203,7 +203,7 @@
             this.gcTyp.MainView = this.gvTyp;
             this.gcTyp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcTyp.Name = "gcTyp";
-            this.gcTyp.Size = new System.Drawing.Size(1158, 517);
+            this.gcTyp.Size = new System.Drawing.Size(1174, 563);
             this.gcTyp.TabIndex = 7;
             this.gcTyp.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvTyp});
@@ -335,21 +335,22 @@
             this.txtTyp.Location = new System.Drawing.Point(71, 5);
             this.txtTyp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTyp.Name = "txtTyp";
-            this.txtTyp.Size = new System.Drawing.Size(599, 28);
+            this.txtTyp.Size = new System.Drawing.Size(608, 28);
             this.txtTyp.StyleController = this.layoutControl1;
             this.txtTyp.TabIndex = 1;
             this.txtTyp.Tag = "Typ";
-            conditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule4.ErrorText = "This value is not valid";
-            conditionValidationRule4.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Warning;
-            this.dxValidationProvider1.SetValidationRule(this.txtTyp, conditionValidationRule4);
+            conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule3.ErrorText = "This value is not valid";
+            conditionValidationRule3.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Warning;
+            this.dxValidationProvider1.SetValidationRule(this.txtTyp, conditionValidationRule3);
             // 
             // btnsave
             // 
-            this.btnsave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnsave.ImageOptions.SvgImage")));
-            this.btnsave.Location = new System.Drawing.Point(677, 88);
+            this.btnsave.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x322;
+            this.btnsave.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnsave.Location = new System.Drawing.Point(686, 96);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(177, 44);
+            this.btnsave.Size = new System.Drawing.Size(136, 36);
             this.btnsave.StyleController = this.layoutControl1;
             this.btnsave.TabIndex = 8;
             this.btnsave.Text = " Speichern   ";
@@ -371,7 +372,7 @@
             this.layoutControlItem5});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1162, 655);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1178, 701);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem7
@@ -379,16 +380,16 @@
             this.layoutControlItem7.Control = this.gcTyp;
             this.layoutControlItem7.Location = new System.Drawing.Point(0, 134);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(1162, 521);
+            this.layoutControlItem7.Size = new System.Drawing.Size(1178, 567);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(856, 0);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(824, 0);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(306, 134);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(354, 134);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup2
@@ -406,7 +407,7 @@
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
             this.layoutControlGroup2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup2.Size = new System.Drawing.Size(675, 134);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(684, 134);
             this.layoutControlGroup2.Text = "Typ";
             this.layoutControlGroup2.TextVisible = false;
             // 
@@ -415,7 +416,7 @@
             this.layoutControlItem4.Control = this.txtTyp;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(669, 32);
+            this.layoutControlItem4.Size = new System.Drawing.Size(678, 32);
             this.layoutControlItem4.Text = "Typ ";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(63, 21);
             // 
@@ -424,7 +425,7 @@
             this.layoutControlItem1.Control = this.cmbWGWA;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 32);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(669, 32);
+            this.layoutControlItem1.Size = new System.Drawing.Size(678, 32);
             this.layoutControlItem1.Text = "WG/WA";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(63, 21);
             // 
@@ -433,7 +434,7 @@
             this.layoutControlItem2.Control = this.cmbWI;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 64);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(669, 32);
+            this.layoutControlItem2.Size = new System.Drawing.Size(678, 32);
             this.layoutControlItem2.Text = "WI";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(63, 21);
             // 
@@ -442,40 +443,33 @@
             this.layoutControlItem3.Control = this.cmbSupplier;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(669, 32);
+            this.layoutControlItem3.Size = new System.Drawing.Size(678, 32);
             this.layoutControlItem3.Text = "Supplier";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(63, 21);
             // 
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(675, 0);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(684, 0);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(181, 86);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(140, 94);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnsave;
-            this.layoutControlItem5.Location = new System.Drawing.Point(675, 86);
+            this.layoutControlItem5.Location = new System.Drawing.Point(684, 94);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(181, 48);
+            this.layoutControlItem5.Size = new System.Drawing.Size(140, 40);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
-            // ribbonControl1
+            // ribbonPage2
             // 
-            this.ribbonControl1.ExpandCollapseItem.Id = 0;
-            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl1.ExpandCollapseItem,
-            this.Rbtncancel,
-            this.Rbtnsave});
-            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 3;
-            this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1162, 211);
+            this.ribbonPage2.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.ribbonPage2.Appearance.Options.UseFont = true;
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "ribbonPage2";
             // 
             // Rbtncancel
             // 
@@ -523,20 +517,27 @@
             // 
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
-            // ribbonPage2
+            // ribbonControl1
             // 
-            this.ribbonPage2.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
-            this.ribbonPage2.Appearance.Options.UseFont = true;
-            this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "ribbonPage2";
+            this.ribbonControl1.ExpandCollapseItem.Id = 0;
+            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl1.ExpandCollapseItem});
+            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.MaxItemId = 3;
+            this.ribbonControl1.Name = "ribbonControl1";
+            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.ribbonPage1});
+            this.ribbonControl1.Size = new System.Drawing.Size(1178, 211);
+            this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // frmType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1162, 866);
+            this.ClientSize = new System.Drawing.Size(1178, 912);
             this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.ribbonControl1);
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmType";
             this.Ribbon = this.ribbonControl1;
@@ -546,6 +547,7 @@
             this.Text = "Typ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmType_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmType_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cmbSupplier.Properties)).EndInit();
@@ -597,15 +599,15 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider dxValidationProvider1;
-        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
-        private DevExpress.XtraBars.BarButtonItem Rbtncancel;
-        private DevExpress.XtraBars.BarButtonItem Rbtnsave;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
         private DevExpress.XtraEditors.SimpleButton btnsave;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraBars.BarButtonItem Rbtncancel;
+        private DevExpress.XtraBars.BarButtonItem Rbtnsave;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
     }
 }

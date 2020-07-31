@@ -211,12 +211,25 @@ namespace CalcPro
         private void btnArticledata_ItemClick(object sender, ItemClickEventArgs e)
         {
             frmArticlesData obj = new frmArticlesData();
-            ShowForm( obj);
-           
+            ShowForm(obj);
+            //frmSupplierMaster obj = new frmSupplierMaster();
+            //obj.ShowDialog();
+            //frmTextModule obj1 = new frmTextModule();
+            //obj1.ShowDialog();
+
+            //frmType obj2 = new frmType();
+            //obj2.ShowDialog();
+
+            //frmTypList obj3 = new frmTypList();
+            //obj3.ShowDialog();
+
+            //frmSupplierList obj4 = new frmSupplierList();
+            //obj4.ShowDialog();
+
         }
 
 
-     
+
 
         private void btnTextModule_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -941,7 +954,7 @@ namespace CalcPro
         /// <param name="Status"></param>
         public static void UpdateStatus(string Status)
         {
-            frmCalcPro.Instance.tsStatus.Caption = Status;
+            frmCalcPro.Instance.tsStatus.Caption = Status;           
             frmCalcPro.Instance.tmrStatus.Start();
         }
 
@@ -994,10 +1007,10 @@ namespace CalcPro
         void ActivateChildForm(DevExpress.XtraBars.Ribbon.RibbonForm MdiChild)
         {
             this.ribbon.SelectPage(MdiChild.Ribbon.Pages[0]);
-            if (MdiChild.Name == "frmArticleAccessories")
-                this.ribbon.Minimized = true;
-            else
-                this.ribbon.Minimized = false;
+            //if (MdiChild.Name == "frmArticleAccessories"   || MdiChild.Name == "frmtype")
+            //    this.ribbon.Minimized = true;
+            //else
+            //    this.ribbon.Minimized = false;
         }
       
         #endregion

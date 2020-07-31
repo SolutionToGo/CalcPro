@@ -197,7 +197,7 @@ namespace CalcPro
                             btnAdd.Enabled = true;
                     }
 
-                    if (int.TryParse(cmbTextArea.SelectedValue.ToString(), out _TextAreaID))
+                    if (int.TryParse(Convert.ToString(cmbTextArea.EditValue), out _TextAreaID))
                     {
                         if (_TextAreaID > 0)
                         {
@@ -225,7 +225,7 @@ namespace CalcPro
             {
                 if (cmbCategory.Text != string.Empty)
                 {
-                    if (int.TryParse(cmbCategory.SelectedValue.ToString(), out _CategoryID))
+                    if (int.TryParse(Convert.ToString(cmbCategory.EditValue), out _CategoryID))
 
                         if (_CategoryID > 0)
                         {
@@ -324,9 +324,11 @@ namespace CalcPro
                         dv.RowFilter = "TextAreas <> 'RECHNUNGSLEGUNG'";
                         dt = dv.ToTable().Copy();
                     }
-                    cmbTextArea.DataSource = dt;
-                    cmbTextArea.DisplayMember = "TextAreas";
-                    cmbTextArea.ValueMember = "TextAreaID";
+
+                    cmbTextArea.Properties.DataSource = dt;
+                    cmbTextArea.Properties.DisplayMember = "TextAreas";
+                    cmbTextArea.Properties.ValueMember = "TextAreaID";
+                    
                 }
             }
             catch (Exception ex)
@@ -365,11 +367,11 @@ namespace CalcPro
                 ObjBProposal.GetCategories(ObjEProposal, Convert.ToInt32(_TextAreaID));
                 if (ObjEProposal.dsCategory != null)
                 {
-                    cmbCategory.DataSource = null;
-                    cmbCategory.DataSource = ObjEProposal.dsCategory.Tables[0];
-                    cmbCategory.DisplayMember = "CategoryName";
-                    cmbCategory.ValueMember = "CategoryID";
-                    cmbCategory.SelectedIndex = -1;
+                    cmbCategory.Properties.DataSource = null;
+                    cmbCategory.Properties.DataSource = ObjEProposal.dsCategory.Tables[0];
+                    cmbCategory.Properties.DisplayMember = "CategoryName";
+                    cmbCategory.Properties.ValueMember = "CategoryID";
+                   // cmbCategory.Properties. = -1;
                 }
             }
             catch (Exception ex)

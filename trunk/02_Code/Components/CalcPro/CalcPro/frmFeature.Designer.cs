@@ -103,12 +103,12 @@
             // 
             // btnSaveFeature
             // 
-            this.btnSaveFeature.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_16x16;
+            this.btnSaveFeature.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
             this.btnSaveFeature.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnSaveFeature.Location = new System.Drawing.Point(822, 803);
+            this.btnSaveFeature.Location = new System.Drawing.Point(791, 803);
             this.btnSaveFeature.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSaveFeature.Name = "btnSaveFeature";
-            this.btnSaveFeature.Size = new System.Drawing.Size(99, 28);
+            this.btnSaveFeature.Size = new System.Drawing.Size(130, 28);
             this.btnSaveFeature.StyleController = this.layoutControl1;
             this.btnSaveFeature.TabIndex = 10;
             this.btnSaveFeature.Text = "Speichern";
@@ -252,11 +252,10 @@
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.btnSaveFeature;
-            this.layoutControlItem6.Location = new System.Drawing.Point(799, 780);
-            this.layoutControlItem6.MaxSize = new System.Drawing.Size(103, 32);
+            this.layoutControlItem6.Location = new System.Drawing.Point(768, 780);
             this.layoutControlItem6.MinSize = new System.Drawing.Size(103, 32);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(103, 32);
+            this.layoutControlItem6.Size = new System.Drawing.Size(134, 32);
             this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
@@ -266,7 +265,7 @@
             this.emptySpaceItem4.AllowHotTrack = false;
             this.emptySpaceItem4.Location = new System.Drawing.Point(0, 780);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(799, 32);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(768, 32);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem7

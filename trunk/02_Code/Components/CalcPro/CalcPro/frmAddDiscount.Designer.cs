@@ -103,12 +103,12 @@
             // btbCancel
             // 
             this.btbCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btbCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.Cancel_16x16;
+            this.btbCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.discountdel_32x32;
             this.btbCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btbCancel.Location = new System.Drawing.Point(290, 281);
+            this.btbCancel.Location = new System.Drawing.Point(290, 273);
             this.btbCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btbCancel.Name = "btbCancel";
-            this.btbCancel.Size = new System.Drawing.Size(123, 28);
+            this.btbCancel.Size = new System.Drawing.Size(123, 36);
             this.btbCancel.StyleController = this.layoutControl1;
             this.btbCancel.TabIndex = 8;
             this.btbCancel.Text = "Abbrechen";
@@ -116,12 +116,12 @@
             // 
             // btnSave
             // 
-            this.btnSave.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_16x16;
+            this.btnSave.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
             this.btnSave.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnSave.Location = new System.Drawing.Point(417, 281);
+            this.btnSave.Location = new System.Drawing.Point(417, 273);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(143, 28);
+            this.btnSave.Size = new System.Drawing.Size(143, 36);
             this.btnSave.StyleController = this.layoutControl1;
             this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Speichern";
@@ -214,18 +214,18 @@
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btbCancel;
-            this.layoutControlItem5.Location = new System.Drawing.Point(268, 259);
+            this.layoutControlItem5.Location = new System.Drawing.Point(268, 251);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(127, 32);
+            this.layoutControlItem5.Size = new System.Drawing.Size(127, 40);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 259);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 251);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(268, 32);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(268, 40);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem6
@@ -240,9 +240,9 @@
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.btnSave;
-            this.layoutControlItem4.Location = new System.Drawing.Point(395, 259);
+            this.layoutControlItem4.Location = new System.Drawing.Point(395, 251);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(147, 32);
+            this.layoutControlItem4.Size = new System.Drawing.Size(147, 40);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
@@ -251,7 +251,7 @@
             this.emptySpaceItem2.AllowHotTrack = false;
             this.emptySpaceItem2.Location = new System.Drawing.Point(0, 240);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(542, 19);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(542, 11);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // frmAddDiscount

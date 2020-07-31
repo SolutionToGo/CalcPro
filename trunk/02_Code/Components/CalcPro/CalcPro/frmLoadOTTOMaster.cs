@@ -374,5 +374,15 @@ namespace CalcPro
         {
             btnAddContact_Click(0, e);
         }
+
+        private void frmLoadOTTOMaster_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                if (e.KeyData == Keys.Escape)
+                    this.Close();
+            }
+            catch (Exception ex) { }
+        }
     }
 }

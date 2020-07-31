@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArticlesData));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.RbtnSave = new DevExpress.XtraBars.BarButtonItem();
             this.RbtnCancel = new DevExpress.XtraBars.BarButtonItem();
@@ -215,7 +214,7 @@
             // 
             this.RbtnSave.Caption = "Speichern";
             this.RbtnSave.Id = 1;
-            this.RbtnSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("RbtnSave.ImageOptions.SvgImage")));
+            this.RbtnSave.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
             this.RbtnSave.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RbtnSave.ItemAppearance.Disabled.Options.UseFont = true;
             this.RbtnSave.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
@@ -225,13 +224,14 @@
             this.RbtnSave.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RbtnSave.ItemAppearance.Pressed.Options.UseFont = true;
             this.RbtnSave.Name = "RbtnSave";
+            this.RbtnSave.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.RbtnSave.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.RbtnSave_ItemClick);
             // 
             // RbtnCancel
             // 
             this.RbtnCancel.Caption = "&Abbrechen";
             this.RbtnCancel.Id = 2;
-            this.RbtnCancel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("RbtnCancel.ImageOptions.SvgImage")));
+            this.RbtnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.deleteposition_32x321;
             this.RbtnCancel.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RbtnCancel.ItemAppearance.Disabled.Options.UseFont = true;
             this.RbtnCancel.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
@@ -241,13 +241,14 @@
             this.RbtnCancel.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RbtnCancel.ItemAppearance.Pressed.Options.UseFont = true;
             this.RbtnCancel.Name = "RbtnCancel";
+            this.RbtnCancel.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.RbtnCancel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.RbtnCancel_ItemClick);
             // 
             // RbtnValidityDate
             // 
             this.RbtnValidityDate.Caption = "Gültigkeitsdatum";
             this.RbtnValidityDate.Id = 3;
-            this.RbtnValidityDate.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("RbtnValidityDate.ImageOptions.SvgImage")));
+            this.RbtnValidityDate.ImageOptions.Image = global::CalcPro.Properties.Resources.GuttikeitDate_32x32;
             this.RbtnValidityDate.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RbtnValidityDate.ItemAppearance.Disabled.Options.UseFont = true;
             this.RbtnValidityDate.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
@@ -257,6 +258,7 @@
             this.RbtnValidityDate.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RbtnValidityDate.ItemAppearance.Pressed.Options.UseFont = true;
             this.RbtnValidityDate.Name = "RbtnValidityDate";
+            this.RbtnValidityDate.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.RbtnValidityDate.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.RbtnValidityDate_ItemClick);
             // 
             // barButtonItem4
@@ -269,7 +271,7 @@
             // 
             this.RbtnSaveAs.Caption = "Listenpreise abändern";
             this.RbtnSaveAs.Id = 5;
-            this.RbtnSaveAs.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("RbtnSaveAs.ImageOptions.SvgImage")));
+            this.RbtnSaveAs.ImageOptions.Image = global::CalcPro.Properties.Resources.Change_ListPrice_32x32;
             this.RbtnSaveAs.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RbtnSaveAs.ItemAppearance.Disabled.Options.UseFont = true;
             this.RbtnSaveAs.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
@@ -279,13 +281,14 @@
             this.RbtnSaveAs.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RbtnSaveAs.ItemAppearance.Pressed.Options.UseFont = true;
             this.RbtnSaveAs.Name = "RbtnSaveAs";
+            this.RbtnSaveAs.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.RbtnSaveAs.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.RbtnSaveAs_ItemClick);
             // 
             // RbtnAddDimension
             // 
             this.RbtnAddDimension.Caption = "Maße hinzufügen";
             this.RbtnAddDimension.Id = 6;
-            this.RbtnAddDimension.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("RbtnAddDimension.ImageOptions.SvgImage")));
+            this.RbtnAddDimension.ImageOptions.Image = global::CalcPro.Properties.Resources.AddDimensions_32x32;
             this.RbtnAddDimension.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RbtnAddDimension.ItemAppearance.Disabled.Options.UseFont = true;
             this.RbtnAddDimension.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
@@ -295,13 +298,14 @@
             this.RbtnAddDimension.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RbtnAddDimension.ItemAppearance.Pressed.Options.UseFont = true;
             this.RbtnAddDimension.Name = "RbtnAddDimension";
+            this.RbtnAddDimension.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.RbtnAddDimension.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.RbtnAddDimension_ItemClick);
             // 
             // RbtnNew
             // 
             this.RbtnNew.Caption = "Neu";
             this.RbtnNew.Id = 7;
-            this.RbtnNew.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("RbtnNew.ImageOptions.SvgImage")));
+            this.RbtnNew.ImageOptions.Image = global::CalcPro.Properties.Resources.New_32x321;
             this.RbtnNew.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RbtnNew.ItemAppearance.Disabled.Options.UseFont = true;
             this.RbtnNew.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
@@ -311,6 +315,7 @@
             this.RbtnNew.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RbtnNew.ItemAppearance.Pressed.Options.UseFont = true;
             this.RbtnNew.Name = "RbtnNew";
+            this.RbtnNew.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.RbtnNew.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.RbtnNew_ItemClick);
             // 
             // RchkIsNew
@@ -318,7 +323,7 @@
             this.RchkIsNew.Caption = "Neu Anlegen";
             this.RchkIsNew.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
             this.RchkIsNew.Id = 8;
-            this.RchkIsNew.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("RchkIsNew.ImageOptions.SvgImage")));
+            this.RchkIsNew.ImageOptions.Image = global::CalcPro.Properties.Resources.checkbox_New_32x32;
             this.RchkIsNew.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RchkIsNew.ItemAppearance.Disabled.Options.UseFont = true;
             this.RchkIsNew.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
@@ -328,6 +333,7 @@
             this.RchkIsNew.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RchkIsNew.ItemAppearance.Pressed.Options.UseFont = true;
             this.RchkIsNew.Name = "RchkIsNew";
+            this.RchkIsNew.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // ribbonPage1
             // 

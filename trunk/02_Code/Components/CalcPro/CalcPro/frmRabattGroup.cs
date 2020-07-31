@@ -432,5 +432,15 @@ namespace CalcPro
         {
             btnCopyRabatt_Click(0, e);
         }
+
+        private void frmRabattGroup_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                if (e.KeyData == Keys.Escape)
+                    this.Close();
+            }
+            catch (Exception ex) { }
+        }
     }
 }

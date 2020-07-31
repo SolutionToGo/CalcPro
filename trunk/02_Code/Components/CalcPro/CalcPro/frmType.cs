@@ -190,8 +190,22 @@ namespace CalcPro
             }
         }
 
+
         #endregion
 
-      
+        private void frmType_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                if (e.KeyData == Keys.Escape)
+                    this.Close();
+            }
+            catch (Exception ex) { }
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 } 
