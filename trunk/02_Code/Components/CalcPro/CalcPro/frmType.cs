@@ -15,7 +15,7 @@ using DataAccess;
 
 namespace CalcPro
 {
-    public partial class frmType : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class frmType : DevExpress.XtraEditors.XtraForm
     {
         /// <summary>
         /// This form is to show the list of typs and save typ information

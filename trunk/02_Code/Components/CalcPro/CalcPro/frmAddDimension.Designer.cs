@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule2 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
-            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule3 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.txtMinuten = new DevExpress.XtraEditors.TextEdit();
             this.txtListenPrice = new DevExpress.XtraEditors.TextEdit();
             this.txtL = new DevExpress.XtraEditors.TextEdit();
             this.txtB = new DevExpress.XtraEditors.TextEdit();
             this.txtA = new DevExpress.XtraEditors.TextEdit();
+            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -48,9 +48,9 @@
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.dxValidationProviderA = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
             this.dxValidationProviderB = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
-            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMinuten.Properties)).BeginInit();
@@ -67,9 +67,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProviderA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProviderB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -102,37 +102,9 @@
             this.layoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.layoutControl1.Padding = new System.Windows.Forms.Padding(20);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(529, 249);
+            this.layoutControl1.Size = new System.Drawing.Size(529, 265);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
-            // 
-            // btnSave
-            // 
-            this.btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSave.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
-            this.btnSave.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnSave.Location = new System.Drawing.Point(376, 198);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(131, 29);
-            this.btnSave.StyleController = this.layoutControl1;
-            this.btnSave.TabIndex = 6;
-            this.btnSave.Text = "Speichern";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.discountdel_32x32;
-            this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancel.Location = new System.Drawing.Point(249, 198);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(123, 29);
-            this.btnCancel.StyleController = this.layoutControl1;
-            this.btnCancel.TabIndex = 7;
-            this.btnCancel.Text = "Abbrechen";
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // txtMinuten
             // 
@@ -193,9 +165,9 @@
             this.txtB.StyleController = this.layoutControl1;
             this.txtB.TabIndex = 2;
             this.txtB.Tag = "B";
-            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule2.ErrorText = "Bitte eingeben B";
-            this.dxValidationProviderB.SetValidationRule(this.txtB, conditionValidationRule2);
+            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule1.ErrorText = "Bitte eingeben B";
+            this.dxValidationProviderB.SetValidationRule(this.txtB, conditionValidationRule1);
             this.txtB.Enter += new System.EventHandler(this.txtA_Enter);
             this.txtB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtA_KeyPress);
             // 
@@ -212,11 +184,39 @@
             this.txtA.StyleController = this.layoutControl1;
             this.txtA.TabIndex = 1;
             this.txtA.Tag = "A";
-            conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule3.ErrorText = "Bitte eingeben A";
-            this.dxValidationProviderA.SetValidationRule(this.txtA, conditionValidationRule3);
+            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule2.ErrorText = "Bitte eingeben A";
+            this.dxValidationProviderA.SetValidationRule(this.txtA, conditionValidationRule2);
             this.txtA.Enter += new System.EventHandler(this.txtA_Enter);
             this.txtA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtA_KeyPress);
+            // 
+            // btnSave
+            // 
+            this.btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnSave.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
+            this.btnSave.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnSave.Location = new System.Drawing.Point(376, 203);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(131, 40);
+            this.btnSave.StyleController = this.layoutControl1;
+            this.btnSave.TabIndex = 6;
+            this.btnSave.Text = "Speichern";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.discountdel_32x32;
+            this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnCancel.Location = new System.Drawing.Point(249, 203);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(123, 40);
+            this.btnCancel.StyleController = this.layoutControl1;
+            this.btnCancel.TabIndex = 7;
+            this.btnCancel.Text = "Abbrechen";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // layoutControlGroup1
             // 
@@ -239,16 +239,16 @@
             this.emptySpaceItem1});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(20, 20, 20, 20);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(529, 249);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(529, 265);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem13
             // 
             this.layoutControlItem13.Control = this.btnCancel;
-            this.layoutControlItem13.Location = new System.Drawing.Point(227, 176);
+            this.layoutControlItem13.Location = new System.Drawing.Point(227, 181);
             this.layoutControlItem13.MinSize = new System.Drawing.Size(107, 33);
             this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(127, 33);
+            this.layoutControlItem13.Size = new System.Drawing.Size(127, 44);
             this.layoutControlItem13.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem13.TextVisible = false;
@@ -301,10 +301,10 @@
             // layoutControlItem14
             // 
             this.layoutControlItem14.Control = this.btnSave;
-            this.layoutControlItem14.Location = new System.Drawing.Point(354, 176);
+            this.layoutControlItem14.Location = new System.Drawing.Point(354, 181);
             this.layoutControlItem14.MinSize = new System.Drawing.Size(100, 33);
             this.layoutControlItem14.Name = "layoutControlItem14";
-            this.layoutControlItem14.Size = new System.Drawing.Size(135, 33);
+            this.layoutControlItem14.Size = new System.Drawing.Size(135, 44);
             this.layoutControlItem14.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem14.TextVisible = false;
@@ -314,15 +314,15 @@
             this.emptySpaceItem2.AllowHotTrack = false;
             this.emptySpaceItem2.Location = new System.Drawing.Point(0, 160);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(489, 16);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(489, 21);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 176);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 181);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(227, 33);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(227, 44);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // frmAddDimension
@@ -331,7 +331,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(529, 249);
+            this.ClientSize = new System.Drawing.Size(529, 265);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -360,9 +360,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProviderA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProviderB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             this.ResumeLayout(false);
 
         }

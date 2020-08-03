@@ -68,9 +68,6 @@ namespace CalcPro
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.RbtnCancel = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -83,7 +80,6 @@ namespace CalcPro
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -106,24 +102,24 @@ namespace CalcPro
             this.layoutControl1.Controls.Add(this.gcArticles);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.layoutControl1.Location = new System.Drawing.Point(0, 183);
+            this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(1316, 585);
+            this.layoutControl1.Size = new System.Drawing.Size(1316, 768);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // gcAccessories
             // 
             this.gcAccessories.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.gcAccessories.Location = new System.Drawing.Point(2, 439);
+            this.gcAccessories.Location = new System.Drawing.Point(2, 568);
             this.gcAccessories.MainView = this.gvAccessories;
             this.gcAccessories.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcAccessories.Name = "gcAccessories";
             this.gcAccessories.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnDelete});
-            this.gcAccessories.Size = new System.Drawing.Size(1312, 144);
+            this.gcAccessories.Size = new System.Drawing.Size(1312, 198);
             this.gcAccessories.TabIndex = 6;
             this.gcAccessories.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvAccessories});
@@ -246,7 +242,7 @@ namespace CalcPro
             this.gcArticles.Name = "gcArticles";
             this.gcArticles.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnAddAccessory});
-            this.gcArticles.Size = new System.Drawing.Size(1312, 385);
+            this.gcArticles.Size = new System.Drawing.Size(1312, 514);
             this.gcArticles.TabIndex = 4;
             this.gcArticles.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvArticles});
@@ -389,14 +385,14 @@ namespace CalcPro
             this.layoutControlItem3});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.Root.Size = new System.Drawing.Size(1316, 585);
+            this.Root.Size = new System.Drawing.Size(1316, 768);
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.gcArticles;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1316, 413);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1316, 542);
             this.layoutControlItem1.Text = "Artikelauswahl";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(493, 21);
@@ -404,50 +400,12 @@ namespace CalcPro
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.gcAccessories;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 413);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 542);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(1316, 172);
+            this.layoutControlItem3.Size = new System.Drawing.Size(1316, 226);
             this.layoutControlItem3.Text = "Zubehörauswahl - Press F4 to add accessory for selected article";
             this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(493, 21);
-            // 
-            // ribbonControl1
-            // 
-            this.ribbonControl1.AutoHideEmptyItems = true;
-            this.ribbonControl1.ExpandCollapseItem.Id = 0;
-            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl1.ExpandCollapseItem,
-            this.RbtnCancel});
-            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 2;
-            this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1316, 183);
-            this.ribbonControl1.Visible = false;
-            // 
-            // RbtnCancel
-            // 
-            this.RbtnCancel.Caption = "Abbrechen";
-            this.RbtnCancel.Id = 1;
-            this.RbtnCancel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("RbtnCancel.ImageOptions.SvgImage")));
-            this.RbtnCancel.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.RbtnCancel.ItemAppearance.Disabled.Options.UseFont = true;
-            this.RbtnCancel.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.RbtnCancel.ItemAppearance.Hovered.Options.UseFont = true;
-            this.RbtnCancel.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.RbtnCancel.ItemAppearance.Normal.Options.UseFont = true;
-            this.RbtnCancel.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.RbtnCancel.ItemAppearance.Pressed.Options.UseFont = true;
-            this.RbtnCancel.Name = "RbtnCancel";
-            this.RbtnCancel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.RbtnCancel_ItemClick);
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
-            this.ribbonPage1.Appearance.Options.UseFont = true;
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Zuordnung des Zubehör zu Artikelstammdaten";
             // 
             // ribbonPage2
             // 
@@ -462,11 +420,9 @@ namespace CalcPro
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1316, 768);
             this.Controls.Add(this.layoutControl1);
-            this.Controls.Add(this.ribbonControl1);
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmArticleAccessories";
-            this.Ribbon = this.ribbonControl1;
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -485,9 +441,7 @@ namespace CalcPro
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -518,9 +472,6 @@ namespace CalcPro
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnDelete;
-        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
-        private DevExpress.XtraBars.BarButtonItem RbtnCancel;
     }
 }

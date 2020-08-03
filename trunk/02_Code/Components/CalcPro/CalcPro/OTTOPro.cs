@@ -240,7 +240,8 @@ namespace CalcPro
         private void btnTyp_ItemClick(object sender, ItemClickEventArgs e)
         {            
             frmType Obj = new frmType();
-            ShowForm(Obj);
+            Obj.Show();
+            //ShowForm(Obj);
         }
 
         private void btnRabatt_ItemClick(object sender, ItemClickEventArgs e)
@@ -335,8 +336,8 @@ namespace CalcPro
         private void btnAddAccessories_ItemClick(object sender, ItemClickEventArgs e)
         {           
             frmArticleAccessories Obj = new frmArticleAccessories();
-            //Obj.ShowDialog();
-            ShowForm(Obj);
+            Obj.ShowDialog();
+           
         }
 
         private void btnProjectImport_ItemClick(object sender, ItemClickEventArgs e)

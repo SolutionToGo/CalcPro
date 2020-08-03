@@ -13,7 +13,7 @@ using EL;
 
 namespace CalcPro
 {
-    public partial class frmArticleAccessories : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class frmArticleAccessories : DevExpress.XtraEditors.XtraForm
     {
         /// <summary>
         /// This form contains article accessories information
@@ -137,6 +137,11 @@ namespace CalcPro
         private void RbtnCancel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.Close();
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
