@@ -91,7 +91,7 @@ namespace CalcPro
             {
                 if (cmbRoleName.Text != string.Empty)
                 {
-                    if (int.TryParse(cmbRoleName.SelectedValue.ToString(), out _RoleID))
+                    if (int.TryParse(cmbRoleName.EditValue.ToString(), out _RoleID))
 
                         if (_RoleID > 0)
                         {
@@ -249,7 +249,7 @@ namespace CalcPro
                     if (int.TryParse(gvUser.GetFocusedRowCellValue("UserID").ToString(), out _IDValue))
                         ObjEUserInfo.UserID = _IDValue;
                     if (int.TryParse(gvUser.GetFocusedRowCellValue("RoleID").ToString(), out _RoleID))
-                        cmbRoleName.SelectedValue = _RoleID;
+                        cmbRoleName.EditValue = _RoleID;
                     txtUserName.Text = gvUser.GetFocusedRowCellValue("UserName") == DBNull.Value ? "" : gvUser.GetFocusedRowCellValue("UserName").ToString();
                     txtFName.Text = gvUser.GetFocusedRowCellValue("FirstName") == DBNull.Value ? "" : gvUser.GetFocusedRowCellValue("FirstName").ToString();
                     txtLName.Text = gvUser.GetFocusedRowCellValue("LastName") == DBNull.Value ? "" : gvUser.GetFocusedRowCellValue("LastName").ToString();
@@ -294,11 +294,11 @@ namespace CalcPro
                 ObjBUserInfo.GetUserRoles(ObjEUserInfo);
                 if (ObjEUserInfo.dsUserRole != null)
                 {
-                    cmbRoleName.DataSource = null;
-                    cmbRoleName.DataSource = ObjEUserInfo.dsUserRole.Tables[0];
-                    cmbRoleName.DisplayMember = "RoleName";
-                    cmbRoleName.ValueMember = "RoleID";
-                    cmbRoleName.SelectedIndex = -1;
+                    cmbRoleName.Properties.DataSource = null;
+                    cmbRoleName.Properties.DataSource = ObjEUserInfo.dsUserRole.Tables[0];
+                    cmbRoleName.Properties.DisplayMember = "RoleName";
+                    cmbRoleName.Properties.ValueMember = "RoleID";
+                    cmbRoleName.ItemIndex = -1;
                 }
             }
             catch (Exception ex)
@@ -313,7 +313,7 @@ namespace CalcPro
         private void ClearData()
         {
             ObjEUserInfo.UserID = -1;
-            cmbRoleName.SelectedIndex = -1;
+            cmbRoleName.ItemIndex = -1;
             txtUserName.Text=string.Empty;
             txtFName.Text=string.Empty;
             txtLName.Text=string.Empty;

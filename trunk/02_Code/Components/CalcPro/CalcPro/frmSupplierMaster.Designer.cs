@@ -64,9 +64,7 @@
             this.txtAddrPostalCode = new DevExpress.XtraEditors.TextEdit();
             this.txtAddrShortName = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem23 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem8 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem21 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -77,6 +75,7 @@
             this.layoutControlItem24 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tcSupplier)).BeginInit();
@@ -112,9 +111,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtAddrPostalCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAddrShortName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).BeginInit();
@@ -125,6 +122,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -147,7 +145,7 @@
             this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(596, 361);
+            this.layoutControl1.Size = new System.Drawing.Size(596, 362);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -170,7 +168,7 @@
             this.tcSupplier.Name = "tcSupplier";
             this.tcSupplier.SelectedTabPage = this.tbSupplierContact;
             this.tcSupplier.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
-            this.tcSupplier.Size = new System.Drawing.Size(552, 317);
+            this.tcSupplier.Size = new System.Drawing.Size(552, 318);
             this.tcSupplier.TabIndex = 4;
             this.tcSupplier.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tbSupplierContact,
@@ -182,7 +180,7 @@
             this.tbSupplierContact.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbSupplierContact.Name = "tbSupplierContact";
             this.tbSupplierContact.PageVisible = false;
-            this.tbSupplierContact.Size = new System.Drawing.Size(550, 315);
+            this.tbSupplierContact.Size = new System.Drawing.Size(550, 316);
             this.tbSupplierContact.Text = "Lieferant Kontakt";
             // 
             // layoutControl3
@@ -215,7 +213,7 @@
             this.layoutControl3.Name = "layoutControl3";
             this.layoutControl3.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(764, 306, 450, 400);
             this.layoutControl3.Root = this.layoutControlGroup3;
-            this.layoutControl3.Size = new System.Drawing.Size(550, 315);
+            this.layoutControl3.Size = new System.Drawing.Size(550, 316);
             this.layoutControl3.TabIndex = 0;
             this.layoutControl3.Text = "layoutControl3";
             // 
@@ -227,7 +225,7 @@
             this.btnSaveContact.Location = new System.Drawing.Point(392, 264);
             this.btnSaveContact.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSaveContact.Name = "btnSaveContact";
-            this.btnSaveContact.Size = new System.Drawing.Size(146, 39);
+            this.btnSaveContact.Size = new System.Drawing.Size(146, 40);
             this.btnSaveContact.StyleController = this.layoutControl3;
             this.btnSaveContact.TabIndex = 13;
             this.btnSaveContact.Text = "Speichern";
@@ -241,7 +239,7 @@
             this.btnCancelContact.Location = new System.Drawing.Point(258, 264);
             this.btnCancelContact.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancelContact.Name = "btnCancelContact";
-            this.btnCancelContact.Size = new System.Drawing.Size(130, 39);
+            this.btnCancelContact.Size = new System.Drawing.Size(130, 40);
             this.btnCancelContact.StyleController = this.layoutControl3;
             this.btnCancelContact.TabIndex = 12;
             this.btnCancelContact.Text = "Abbrechen";
@@ -345,7 +343,7 @@
             this.layoutControlItem15,
             this.layoutControlItem16});
             this.layoutControlGroup3.Name = "Root";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(550, 315);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(550, 316);
             this.layoutControlGroup3.TextVisible = false;
             // 
             // layoutControlItem14
@@ -354,7 +352,7 @@
             this.layoutControlItem14.Location = new System.Drawing.Point(246, 252);
             this.layoutControlItem14.MinSize = new System.Drawing.Size(103, 32);
             this.layoutControlItem14.Name = "layoutControlItem14";
-            this.layoutControlItem14.Size = new System.Drawing.Size(134, 43);
+            this.layoutControlItem14.Size = new System.Drawing.Size(134, 44);
             this.layoutControlItem14.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem14.TextVisible = false;
@@ -364,7 +362,7 @@
             this.emptySpaceItem3.AllowHotTrack = false;
             this.emptySpaceItem3.Location = new System.Drawing.Point(0, 252);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(246, 43);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(246, 44);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem7
@@ -444,7 +442,7 @@
             this.layoutControlItem16.Location = new System.Drawing.Point(380, 252);
             this.layoutControlItem16.MinSize = new System.Drawing.Size(110, 32);
             this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(150, 43);
+            this.layoutControlItem16.Size = new System.Drawing.Size(150, 44);
             this.layoutControlItem16.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem16.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem16.TextVisible = false;
@@ -463,7 +461,7 @@
             this.tbSupplierAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbSupplierAddress.Name = "tbSupplierAddress";
             this.tbSupplierAddress.PageVisible = false;
-            this.tbSupplierAddress.Size = new System.Drawing.Size(550, 315);
+            this.tbSupplierAddress.Size = new System.Drawing.Size(550, 316);
             this.tbSupplierAddress.Text = "Lieferant Adresse";
             // 
             // layoutControl4
@@ -494,16 +492,16 @@
             this.layoutControl4.Name = "layoutControl4";
             this.layoutControl4.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(764, 306, 450, 400);
             this.layoutControl4.Root = this.layoutControlGroup4;
-            this.layoutControl4.Size = new System.Drawing.Size(550, 315);
+            this.layoutControl4.Size = new System.Drawing.Size(550, 316);
             this.layoutControl4.TabIndex = 0;
             this.layoutControl4.Text = "layoutControl4";
             // 
             // txtAddrStreetNo
             // 
-            this.txtAddrStreetNo.Location = new System.Drawing.Point(105, 44);
-            this.txtAddrStreetNo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAddrStreetNo.Location = new System.Drawing.Point(10, 66);
+            this.txtAddrStreetNo.Margin = new System.Windows.Forms.Padding(0);
             this.txtAddrStreetNo.Name = "txtAddrStreetNo";
-            this.txtAddrStreetNo.Size = new System.Drawing.Size(414, 60);
+            this.txtAddrStreetNo.Size = new System.Drawing.Size(530, 73);
             this.txtAddrStreetNo.TabIndex = 12;
             this.txtAddrStreetNo.Text = "";
             this.txtAddrStreetNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAddrStreetNo_KeyDown);
@@ -511,11 +509,11 @@
             // btnSaveAddress
             // 
             this.btnSaveAddress.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSaveAddress.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_16x16;
-            this.btnSaveAddress.Location = new System.Drawing.Point(437, 149);
+            this.btnSaveAddress.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
+            this.btnSaveAddress.Location = new System.Drawing.Point(421, 266);
             this.btnSaveAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSaveAddress.Name = "btnSaveAddress";
-            this.btnSaveAddress.Size = new System.Drawing.Size(101, 28);
+            this.btnSaveAddress.Size = new System.Drawing.Size(117, 38);
             this.btnSaveAddress.StyleController = this.layoutControl4;
             this.btnSaveAddress.TabIndex = 11;
             this.btnSaveAddress.Text = "Speichern";
@@ -524,11 +522,11 @@
             // btnCancelAddress
             // 
             this.btnCancelAddress.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelAddress.ImageOptions.Image = global::CalcPro.Properties.Resources.Cancel_16x16;
-            this.btnCancelAddress.Location = new System.Drawing.Point(327, 149);
+            this.btnCancelAddress.ImageOptions.Image = global::CalcPro.Properties.Resources.discountdel_32x32;
+            this.btnCancelAddress.Location = new System.Drawing.Point(286, 266);
             this.btnCancelAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancelAddress.Name = "btnCancelAddress";
-            this.btnCancelAddress.Size = new System.Drawing.Size(106, 28);
+            this.btnCancelAddress.Size = new System.Drawing.Size(131, 38);
             this.btnCancelAddress.StyleController = this.layoutControl4;
             this.btnCancelAddress.TabIndex = 10;
             this.btnCancelAddress.Text = "Abbrechen";
@@ -536,7 +534,7 @@
             // 
             // chkDefaultAddress
             // 
-            this.chkDefaultAddress.Location = new System.Drawing.Point(12, 108);
+            this.chkDefaultAddress.Location = new System.Drawing.Point(12, 141);
             this.chkDefaultAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chkDefaultAddress.Name = "chkDefaultAddress";
             this.chkDefaultAddress.Properties.Caption = "Standard Addresse";
@@ -546,29 +544,29 @@
             // 
             // txtAddrCountry
             // 
-            this.txtAddrCountry.Location = new System.Drawing.Point(105, 245);
+            this.txtAddrCountry.Location = new System.Drawing.Point(105, 234);
             this.txtAddrCountry.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAddrCountry.Name = "txtAddrCountry";
-            this.txtAddrCountry.Size = new System.Drawing.Size(433, 28);
+            this.txtAddrCountry.Size = new System.Drawing.Size(168, 28);
             this.txtAddrCountry.StyleController = this.layoutControl4;
             this.txtAddrCountry.TabIndex = 8;
             // 
             // txtAddrcity
             // 
-            this.txtAddrcity.Location = new System.Drawing.Point(105, 181);
+            this.txtAddrcity.Location = new System.Drawing.Point(105, 170);
             this.txtAddrcity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAddrcity.Name = "txtAddrcity";
             this.txtAddrcity.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtAddrcity.Size = new System.Drawing.Size(433, 28);
+            this.txtAddrcity.Size = new System.Drawing.Size(168, 28);
             this.txtAddrcity.StyleController = this.layoutControl4;
             this.txtAddrcity.TabIndex = 7;
             // 
             // txtAddrPostalCode
             // 
-            this.txtAddrPostalCode.Location = new System.Drawing.Point(105, 213);
+            this.txtAddrPostalCode.Location = new System.Drawing.Point(105, 202);
             this.txtAddrPostalCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAddrPostalCode.Name = "txtAddrPostalCode";
-            this.txtAddrPostalCode.Size = new System.Drawing.Size(433, 28);
+            this.txtAddrPostalCode.Size = new System.Drawing.Size(168, 28);
             this.txtAddrPostalCode.StyleController = this.layoutControl4;
             this.txtAddrPostalCode.TabIndex = 6;
             // 
@@ -592,55 +590,37 @@
             this.layoutControlGroup4.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup4.GroupBordersVisible = false;
             this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.emptySpaceItem4,
             this.layoutControlItem23,
-            this.emptySpaceItem8,
-            this.layoutControlItem19,
-            this.layoutControlItem20,
-            this.layoutControlItem21,
             this.layoutControlItem17,
             this.layoutControlItem26,
             this.layoutControlItem22,
             this.emptySpaceItem1,
-            this.layoutControlItem24});
+            this.layoutControlItem24,
+            this.emptySpaceItem2,
+            this.layoutControlItem20,
+            this.layoutControlItem19,
+            this.layoutControlItem21});
             this.layoutControlGroup4.Name = "Root";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(550, 315);
+            this.layoutControlGroup4.Size = new System.Drawing.Size(550, 316);
             this.layoutControlGroup4.TextVisible = false;
-            // 
-            // emptySpaceItem4
-            // 
-            this.emptySpaceItem4.AllowHotTrack = false;
-            this.emptySpaceItem4.Location = new System.Drawing.Point(0, 264);
-            this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(530, 31);
-            this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem23
             // 
             this.layoutControlItem23.Control = this.btnCancelAddress;
-            this.layoutControlItem23.Location = new System.Drawing.Point(315, 137);
-            this.layoutControlItem23.MaxSize = new System.Drawing.Size(110, 32);
+            this.layoutControlItem23.Location = new System.Drawing.Point(274, 254);
             this.layoutControlItem23.MinSize = new System.Drawing.Size(110, 32);
             this.layoutControlItem23.Name = "layoutControlItem23";
-            this.layoutControlItem23.Size = new System.Drawing.Size(110, 32);
+            this.layoutControlItem23.Size = new System.Drawing.Size(135, 42);
             this.layoutControlItem23.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem23.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem23.TextVisible = false;
             // 
-            // emptySpaceItem8
-            // 
-            this.emptySpaceItem8.AllowHotTrack = false;
-            this.emptySpaceItem8.Location = new System.Drawing.Point(0, 125);
-            this.emptySpaceItem8.Name = "emptySpaceItem8";
-            this.emptySpaceItem8.Size = new System.Drawing.Size(530, 11);
-            this.emptySpaceItem8.TextSize = new System.Drawing.Size(0, 0);
-            // 
             // layoutControlItem19
             // 
             this.layoutControlItem19.Control = this.txtAddrPostalCode;
-            this.layoutControlItem19.Location = new System.Drawing.Point(0, 201);
+            this.layoutControlItem19.Location = new System.Drawing.Point(0, 190);
             this.layoutControlItem19.Name = "layoutControlItem19";
-            this.layoutControlItem19.Size = new System.Drawing.Size(530, 32);
+            this.layoutControlItem19.Size = new System.Drawing.Size(265, 32);
             this.layoutControlItem19.Text = "PLZ ";
             this.layoutControlItem19.TextSize = new System.Drawing.Size(90, 21);
             this.layoutControlItem19.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
@@ -648,9 +628,9 @@
             // layoutControlItem20
             // 
             this.layoutControlItem20.Control = this.txtAddrcity;
-            this.layoutControlItem20.Location = new System.Drawing.Point(0, 169);
+            this.layoutControlItem20.Location = new System.Drawing.Point(0, 158);
             this.layoutControlItem20.Name = "layoutControlItem20";
-            this.layoutControlItem20.Size = new System.Drawing.Size(530, 32);
+            this.layoutControlItem20.Size = new System.Drawing.Size(265, 32);
             this.layoutControlItem20.Text = "Ort ";
             this.layoutControlItem20.TextSize = new System.Drawing.Size(90, 21);
             this.layoutControlItem20.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
@@ -658,9 +638,9 @@
             // layoutControlItem21
             // 
             this.layoutControlItem21.Control = this.txtAddrCountry;
-            this.layoutControlItem21.Location = new System.Drawing.Point(0, 233);
+            this.layoutControlItem21.Location = new System.Drawing.Point(0, 222);
             this.layoutControlItem21.Name = "layoutControlItem21";
-            this.layoutControlItem21.Size = new System.Drawing.Size(530, 32);
+            this.layoutControlItem21.Size = new System.Drawing.Size(265, 32);
             this.layoutControlItem21.Text = "LandBez ";
             this.layoutControlItem21.TextSize = new System.Drawing.Size(90, 21);
             this.layoutControlItem21.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
@@ -678,18 +658,19 @@
             // 
             this.layoutControlItem26.Control = this.txtAddrStreetNo;
             this.layoutControlItem26.Location = new System.Drawing.Point(0, 32);
-            this.layoutControlItem26.MaxSize = new System.Drawing.Size(511, 64);
             this.layoutControlItem26.MinSize = new System.Drawing.Size(511, 64);
             this.layoutControlItem26.Name = "layoutControlItem26";
-            this.layoutControlItem26.Size = new System.Drawing.Size(530, 64);
+            this.layoutControlItem26.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.layoutControlItem26.Size = new System.Drawing.Size(530, 97);
             this.layoutControlItem26.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem26.Text = "Anschrift";
+            this.layoutControlItem26.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem26.TextSize = new System.Drawing.Size(90, 21);
             // 
             // layoutControlItem22
             // 
             this.layoutControlItem22.Control = this.chkDefaultAddress;
-            this.layoutControlItem22.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem22.Location = new System.Drawing.Point(0, 129);
             this.layoutControlItem22.Name = "layoutControlItem22";
             this.layoutControlItem22.Size = new System.Drawing.Size(530, 29);
             this.layoutControlItem22.TextSize = new System.Drawing.Size(0, 0);
@@ -698,19 +679,18 @@
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 136);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 254);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(315, 32);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(274, 42);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem24
             // 
             this.layoutControlItem24.Control = this.btnSaveAddress;
-            this.layoutControlItem24.Location = new System.Drawing.Point(425, 137);
-            this.layoutControlItem24.MaxSize = new System.Drawing.Size(105, 32);
+            this.layoutControlItem24.Location = new System.Drawing.Point(409, 254);
             this.layoutControlItem24.MinSize = new System.Drawing.Size(105, 32);
             this.layoutControlItem24.Name = "layoutControlItem24";
-            this.layoutControlItem24.Size = new System.Drawing.Size(105, 32);
+            this.layoutControlItem24.Size = new System.Drawing.Size(121, 42);
             this.layoutControlItem24.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem24.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem24.TextVisible = false;
@@ -727,7 +707,7 @@
             this.layoutControlItem1});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(20, 20, 20, 20);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(596, 361);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(596, 362);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -735,16 +715,24 @@
             this.layoutControlItem1.Control = this.tcSupplier;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(556, 321);
+            this.layoutControlItem1.Size = new System.Drawing.Size(556, 322);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
+            // 
+            // emptySpaceItem2
+            // 
+            this.emptySpaceItem2.AllowHotTrack = false;
+            this.emptySpaceItem2.Location = new System.Drawing.Point(265, 158);
+            this.emptySpaceItem2.Name = "emptySpaceItem2";
+            this.emptySpaceItem2.Size = new System.Drawing.Size(265, 96);
+            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // frmSupplierMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancelAddress;
-            this.ClientSize = new System.Drawing.Size(596, 361);
+            this.ClientSize = new System.Drawing.Size(596, 362);
             this.Controls.Add(this.layoutControl1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
@@ -791,9 +779,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtAddrPostalCode.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAddrShortName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).EndInit();
@@ -804,6 +790,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -839,14 +826,12 @@
         private DevExpress.XtraEditors.TextEdit txtAddrcity;
         private DevExpress.XtraEditors.TextEdit txtAddrPostalCode;
         private DevExpress.XtraEditors.TextEdit txtAddrShortName;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem19;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem20;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem21;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem23;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem24;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem7;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem8;
         private System.Windows.Forms.RichTextBox txtAddrStreetNo;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
@@ -859,5 +844,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem26;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem22;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
     }
 }

@@ -44,7 +44,6 @@
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbRole.Properties)).BeginInit();
@@ -57,7 +56,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -105,10 +103,10 @@
             // 
             this.btnSaveFeature.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
             this.btnSaveFeature.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnSaveFeature.Location = new System.Drawing.Point(791, 803);
+            this.btnSaveFeature.Location = new System.Drawing.Point(791, 793);
             this.btnSaveFeature.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSaveFeature.Name = "btnSaveFeature";
-            this.btnSaveFeature.Size = new System.Drawing.Size(130, 28);
+            this.btnSaveFeature.Size = new System.Drawing.Size(130, 38);
             this.btnSaveFeature.StyleController = this.layoutControl1;
             this.btnSaveFeature.TabIndex = 10;
             this.btnSaveFeature.Text = "Speichern";
@@ -225,8 +223,7 @@
             this.emptySpaceItem2,
             this.layoutControlItem6,
             this.emptySpaceItem4,
-            this.layoutControlItem7,
-            this.emptySpaceItem1});
+            this.layoutControlItem7});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(20, 20, 20, 20);
             this.layoutControlGroup1.Size = new System.Drawing.Size(944, 854);
@@ -252,10 +249,10 @@
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.btnSaveFeature;
-            this.layoutControlItem6.Location = new System.Drawing.Point(768, 780);
+            this.layoutControlItem6.Location = new System.Drawing.Point(768, 770);
             this.layoutControlItem6.MinSize = new System.Drawing.Size(103, 32);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(134, 32);
+            this.layoutControlItem6.Size = new System.Drawing.Size(134, 42);
             this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
@@ -263,9 +260,9 @@
             // emptySpaceItem4
             // 
             this.emptySpaceItem4.AllowHotTrack = false;
-            this.emptySpaceItem4.Location = new System.Drawing.Point(0, 780);
+            this.emptySpaceItem4.Location = new System.Drawing.Point(0, 770);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(768, 32);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(768, 42);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem7
@@ -276,14 +273,6 @@
             this.layoutControlItem7.Size = new System.Drawing.Size(306, 32);
             this.layoutControlItem7.Text = "Role";
             this.layoutControlItem7.TextSize = new System.Drawing.Size(34, 21);
-            // 
-            // emptySpaceItem1
-            // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 770);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(902, 10);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // frmFeature
             // 
@@ -315,7 +304,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -338,6 +326,5 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit rpiAccessLevels;
         private DevExpress.XtraEditors.LookUpEdit cmbRole;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
     }
 }

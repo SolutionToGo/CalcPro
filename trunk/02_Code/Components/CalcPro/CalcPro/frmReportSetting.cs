@@ -84,7 +84,7 @@ namespace CalcPro
                     }
                     else if (radioGroupSelection.SelectedIndex == 1)
                     {
-                        if (gvAddRemovePositions.RowCount == 0)
+                        if (gvAddRemovePositions.DefaultView .RowCount  == 0)
                         {
                             if (Utility._IsGermany == true)
                                 XtraMessageBox.Show("Bitte machen Sie VON / BIS Angaben.");
@@ -94,11 +94,13 @@ namespace CalcPro
                         }
                         string tfrom = null;
                         string tTo = null;
-                        foreach (DataGridViewRow dr in gvAddRemovePositions.Rows)
+                        DataRow dr;
+                        for (int i=0;  i< gridView1.RowCount; i++)
                         {
+                            dr = gridView1.GetDataRow(i);
                             DataRow drPos = dtPos.NewRow();
-                            tfrom = Convert.ToString(dr.Cells[0].Value);
-                            tTo = Convert.ToString(dr.Cells[1].Value);
+                            tfrom = Convert.ToString(dr[0].ToString());
+                            tTo = Convert.ToString(dr[1].ToString());
                             string _fromParent = string.Empty;
                             string _ToParent = string.Empty;
                             if (tfrom.Contains("."))
@@ -163,6 +165,12 @@ namespace CalcPro
                 txtReportName.Text = "ANGEBOT";
                 dtpReportDate.DateTime = DateTime.Now;
                 cmbLVSection.EditValue = null;
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Bis", typeof(string));
+                dt.Columns.Add("Von", typeof(string));
+                dt.Columns[0].ReadOnly = false;
+                dt.Columns[1].ReadOnly = false;
+                gvAddRemovePositions.DataSource = dt;
             }
             catch (Exception ex){Utility.ShowError(ex);}
         }
@@ -201,8 +209,8 @@ namespace CalcPro
             {
                 if (e.Button == MouseButtons.Right)
                 {
-                    this.contextMenuStrip1.Show(this.gvAddRemovePositions, e.Location);
-                    contextMenuStrip1.Show(Cursor.Position);
+                   // this.contextMenuStrip1.Show(this.gvAddRemovePositions, e.Location);
+                    //contextMenuStrip1.Show(Cursor.Position);
                 }
             }
             catch (Exception ex)
@@ -215,7 +223,8 @@ namespace CalcPro
         {
             try
             {
-                gvAddRemovePositions.Rows.Add();
+                //gvAddRemovePositions.Rows.Add();
+                gridView1.AddNewRow();
             }
             catch (Exception ex)
             {
@@ -227,11 +236,12 @@ namespace CalcPro
         {
             try
             {
-                if (this.gvAddRemovePositions.SelectedRows.Count > 0)
+                if (gridView1.SelectedRowsCount > 0)
                 {
-                    foreach (DataGridViewRow item in this.gvAddRemovePositions.SelectedRows)
+                    foreach (int i in gridView1.GetSelectedRows())
                     {
-                        gvAddRemovePositions.Rows.RemoveAt(item.Index);
+                        // gvAddRemovePositions.Rows.RemoveAt(item.Index);
+                        gridView1.DeleteRow(gridView1.FocusedRowHandle);
                     }
                 }
             }
@@ -810,5 +820,15 @@ namespace CalcPro
             catch (Exception ex) { throw ex; }
         }
         #endregion
+
+        private void btndelete_Click(object sender, EventArgs e)
+        {
+            gridView1.DeleteRow(gridView1.FocusedRowHandle);
+        }
+        public class MyListItems
+        {
+            string Vos = "";
+            string Bis = "";
+        }
     }
 }

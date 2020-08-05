@@ -33,7 +33,6 @@ namespace CalcPro
         private void InitializeComponent()
         {
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArticleAccessories));
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -106,14 +105,14 @@ namespace CalcPro
             this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(1316, 768);
+            this.layoutControl1.Size = new System.Drawing.Size(1316, 770);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // gcAccessories
             // 
             this.gcAccessories.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.gcAccessories.Location = new System.Drawing.Point(2, 568);
+            this.gcAccessories.Location = new System.Drawing.Point(2, 570);
             this.gcAccessories.MainView = this.gvAccessories;
             this.gcAccessories.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcAccessories.Name = "gcAccessories";
@@ -226,7 +225,7 @@ namespace CalcPro
             // btnDelete
             // 
             this.btnDelete.AutoHeight = false;
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            editorButtonImageOptions1.Image = global::CalcPro.Properties.Resources.discountdel_16x16;
             this.btnDelete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnDelete.Name = "btnDelete";
@@ -242,7 +241,7 @@ namespace CalcPro
             this.gcArticles.Name = "gcArticles";
             this.gcArticles.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnAddAccessory});
-            this.gcArticles.Size = new System.Drawing.Size(1312, 514);
+            this.gcArticles.Size = new System.Drawing.Size(1312, 516);
             this.gcArticles.TabIndex = 4;
             this.gcArticles.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvArticles});
@@ -363,8 +362,10 @@ namespace CalcPro
             // 
             // btnAddAccessory
             // 
+            this.btnAddAccessory.Appearance.Image = global::CalcPro.Properties.Resources.discountadd_32x32;
+            this.btnAddAccessory.Appearance.Options.UseImage = true;
             this.btnAddAccessory.AutoHeight = false;
-            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
+            editorButtonImageOptions2.Image = global::CalcPro.Properties.Resources.discountadd_16x16;
             this.btnAddAccessory.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnAddAccessory.Name = "btnAddAccessory";
@@ -385,14 +386,14 @@ namespace CalcPro
             this.layoutControlItem3});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.Root.Size = new System.Drawing.Size(1316, 768);
+            this.Root.Size = new System.Drawing.Size(1316, 770);
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.gcArticles;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1316, 542);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1316, 544);
             this.layoutControlItem1.Text = "Artikelauswahl";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(493, 21);
@@ -400,7 +401,7 @@ namespace CalcPro
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.gcAccessories;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 542);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 544);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(1316, 226);
             this.layoutControlItem3.Text = "Zubehörauswahl - Press F4 to add accessory for selected article";
@@ -418,7 +419,7 @@ namespace CalcPro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1316, 768);
+            this.ClientSize = new System.Drawing.Size(1316, 770);
             this.Controls.Add(this.layoutControl1);
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

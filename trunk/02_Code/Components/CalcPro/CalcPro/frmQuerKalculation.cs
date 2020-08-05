@@ -11,6 +11,9 @@ using DevExpress.XtraEditors;
 using CalcPro.Report_Design;
 using DevExpress.XtraReports.UI;
 using BL;
+using DevExpress.XtraEditors.Repository;
+using DevExpress.XtraGrid.Columns;
+using DevExpress.XtraGrid.Views.Base;
 
 namespace CalcPro
 {
@@ -81,52 +84,7 @@ namespace CalcPro
                 Utility.ShowError(ex);
             }
         }
-
-        private void gvAddRemovePositions_MouseClick(object sender, MouseEventArgs e)
-        {
-            try
-            {
-                if (e.Button == MouseButtons.Right)
-                {
-                    this.contextMenuStrip1.Show(this.gvAddRemovePositions, e.Location);
-                    contextMenuStrip1.Show(Cursor.Position);
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void ToolStripMenuItemAdd_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                gvAddRemovePositions.Rows.Add();
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
-        private void ToolStripMenuItemRemove_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (this.gvAddRemovePositions.SelectedRows.Count > 0)
-                {
-                    foreach (DataGridViewRow item in this.gvAddRemovePositions.SelectedRows)
-                    {
-                        gvAddRemovePositions.Rows.RemoveAt(item.Index);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
+        
 
         private void radioGroupSelection_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -189,7 +147,7 @@ namespace CalcPro
                 }
                 else if (radioGroupSelection.SelectedIndex == 1)
                 {
-                    if (gvAddRemovePositions.RowCount == 0)
+                    if (gvAddRemovePositions.DefaultView.RowCount == 0)
                     {
                         if (Utility._IsGermany == true)
                         {
@@ -203,11 +161,15 @@ namespace CalcPro
                     }
                     string tfrom = null;
                     string tTo = null;
-                    foreach (DataGridViewRow dr in gvAddRemovePositions.Rows)
-                    {
+                    //  foreach (int i in gridView1.rows())
+                    //{
+                    DataRow dr;
+                    for (int i = 0; i < gridView1.RowCount; i++)
+                    { 
+                        dr= gridView1.GetDataRow(i);
                         DataRow drPos = dtPos.NewRow();
-                        tfrom = dr.Cells[0].Value.ToString();
-                        tTo = dr.Cells[1].Value.ToString();
+                        tfrom = dr[0].ToString();
+                        tTo = dr[1].ToString();
                         string _fromParent = string.Empty;
                         string _ToParent = string.Empty;
                         if (tfrom.Contains("."))
@@ -280,6 +242,8 @@ namespace CalcPro
                 Utility.ShowError(ex);
             }
         }
+        
+      
 
         private void frmQuerKalculation_Load(object sender, EventArgs e)
         {
@@ -287,7 +251,14 @@ namespace CalcPro
             {
                 if (objBGAEB == null)
                     objBGAEB = new BGAEB();
+               
                 DataTable dtLVSection = new DataTable();
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Bis", typeof(string));
+                dt.Columns.Add("Von", typeof(string));
+                dt.Columns[0].ReadOnly = false;
+                dt.Columns[1].ReadOnly = false;
+                gvAddRemovePositions.DataSource = dt;
                 dtLVSection = objBGAEB.GetLVSection(ProjectID);
                 if (Utility.LVSectionEditAccess == "7")
                 {
@@ -309,6 +280,13 @@ namespace CalcPro
         {
             this.Close();
         }
+
         #endregion
+       
+        private void btndelete_Click(object sender, EventArgs e)
+        {
+            gridView1.DeleteSelectedRows();
+            gridView1.DeleteRow(gridView1.FocusedRowHandle);
+        }
     }
 }
