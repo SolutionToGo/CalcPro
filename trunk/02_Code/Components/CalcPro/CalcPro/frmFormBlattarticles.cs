@@ -58,7 +58,7 @@ namespace CalcPro
                     ObjBFormBlatt = new BFormBlatt();
                 if (cmbFormBlatttypes.Text != string.Empty)
                 {
-                    if (int.TryParse(Convert.ToString(cmbFormBlatttypes.SelectedValue), out _FormBlattTyPeID))
+                    if (int.TryParse(Convert.ToString(cmbFormBlatttypes.EditValue), out _FormBlattTyPeID))
 
                         if (_FormBlattTyPeID > 0)
                         {
@@ -130,10 +130,10 @@ namespace CalcPro
                 ObjBFormBlatt.Get_FormBlattTypes(ObjEFormBlatt);
                 if (ObjEFormBlatt.dtBlattTypes != null)
                 {
-                    cmbFormBlatttypes.DataSource = ObjEFormBlatt.dtBlattTypes;
-                    cmbFormBlatttypes.ValueMember = "LookupID";
-                    cmbFormBlatttypes.DisplayMember = "Value";
-                    cmbFormBlatttypes.SelectedIndex = -1;
+                    cmbFormBlatttypes.Properties.DataSource = ObjEFormBlatt.dtBlattTypes;
+                    cmbFormBlatttypes.Properties.ValueMember = "LookupID";
+                    cmbFormBlatttypes.Properties.DisplayMember = "Value";
+                    cmbFormBlatttypes.ItemIndex = -1;
                 }
             }
             catch (Exception ex)

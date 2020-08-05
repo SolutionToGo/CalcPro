@@ -31,7 +31,6 @@
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.btnSaveFormBlattArticles = new DevExpress.XtraEditors.SimpleButton();
-            this.cmbFormBlatttypes = new System.Windows.Forms.ComboBox();
             this.gcFormBlattArticles = new DevExpress.XtraGrid.GridControl();
             this.gvFormBlattArticles = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn92 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -44,24 +43,26 @@
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.cmbFormBlatttypes = new DevExpress.XtraEditors.LookUpEdit();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcFormBlattArticles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvFormBlattArticles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbFormBlatttypes.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -78,9 +79,9 @@
             this.layoutControl1.Appearance.ControlFocused.Options.UseFont = true;
             this.layoutControl1.Appearance.ControlReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.layoutControl1.Appearance.ControlReadOnly.Options.UseFont = true;
+            this.layoutControl1.Controls.Add(this.cmbFormBlatttypes);
             this.layoutControl1.Controls.Add(this.btnCancel);
             this.layoutControl1.Controls.Add(this.btnSaveFormBlattArticles);
-            this.layoutControl1.Controls.Add(this.cmbFormBlatttypes);
             this.layoutControl1.Controls.Add(this.gcFormBlattArticles);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
@@ -97,10 +98,10 @@
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.discountdel_32x321;
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancel.Location = new System.Drawing.Point(676, 671);
+            this.btnCancel.Location = new System.Drawing.Point(672, 669);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(122, 36);
+            this.btnCancel.Size = new System.Drawing.Size(124, 38);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 13;
             this.btnCancel.Text = "Abbrechen";
@@ -110,36 +111,25 @@
             // 
             this.btnSaveFormBlattArticles.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
             this.btnSaveFormBlattArticles.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnSaveFormBlattArticles.Location = new System.Drawing.Point(802, 671);
+            this.btnSaveFormBlattArticles.Location = new System.Drawing.Point(800, 669);
             this.btnSaveFormBlattArticles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSaveFormBlattArticles.Name = "btnSaveFormBlattArticles";
-            this.btnSaveFormBlattArticles.Size = new System.Drawing.Size(116, 36);
+            this.btnSaveFormBlattArticles.Size = new System.Drawing.Size(118, 38);
             this.btnSaveFormBlattArticles.StyleController = this.layoutControl1;
             this.btnSaveFormBlattArticles.TabIndex = 12;
             this.btnSaveFormBlattArticles.Text = "Speichern";
             this.btnSaveFormBlattArticles.Click += new System.EventHandler(this.btnSaveFormBlattArticles_Click);
-            // 
-            // cmbFormBlatttypes
-            // 
-            this.cmbFormBlatttypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFormBlatttypes.FormattingEnabled = true;
-            this.cmbFormBlatttypes.Location = new System.Drawing.Point(118, 23);
-            this.cmbFormBlatttypes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cmbFormBlatttypes.Name = "cmbFormBlatttypes";
-            this.cmbFormBlatttypes.Size = new System.Drawing.Size(355, 24);
-            this.cmbFormBlatttypes.TabIndex = 11;
-            this.cmbFormBlatttypes.SelectionChangeCommitted += new System.EventHandler(this.cmbFormBlatttypes_SelectionChangeCommitted);
             // 
             // gcFormBlattArticles
             // 
             this.gcFormBlattArticles.EmbeddedNavigator.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gcFormBlattArticles.EmbeddedNavigator.Appearance.Options.UseFont = true;
             this.gcFormBlattArticles.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.gcFormBlattArticles.Location = new System.Drawing.Point(23, 53);
+            this.gcFormBlattArticles.Location = new System.Drawing.Point(23, 55);
             this.gcFormBlattArticles.MainView = this.gvFormBlattArticles;
             this.gcFormBlattArticles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcFormBlattArticles.Name = "gcFormBlattArticles";
-            this.gcFormBlattArticles.Size = new System.Drawing.Size(895, 604);
+            this.gcFormBlattArticles.Size = new System.Drawing.Size(895, 600);
             this.gcFormBlattArticles.TabIndex = 10;
             this.gcFormBlattArticles.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvFormBlattArticles});
@@ -275,12 +265,12 @@
             this.layoutControlGroup1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
-            this.layoutControlItem2,
-            this.emptySpaceItem1,
             this.layoutControlItem3,
             this.emptySpaceItem2,
             this.layoutControlItem4,
-            this.emptySpaceItem3});
+            this.emptySpaceItem3,
+            this.layoutControlItem5,
+            this.emptySpaceItem1});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(20, 20, 20, 20);
             this.layoutControlGroup1.Size = new System.Drawing.Size(941, 730);
@@ -289,62 +279,74 @@
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.gcFormBlattArticles;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 30);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 32);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(899, 608);
+            this.layoutControlItem1.Size = new System.Drawing.Size(899, 604);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
-            // 
-            // layoutControlItem2
-            // 
-            this.layoutControlItem2.Control = this.cmbFormBlatttypes;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(454, 30);
-            this.layoutControlItem2.Text = "Auswählen :";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(92, 21);
-            // 
-            // emptySpaceItem1
-            // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(454, 0);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(445, 30);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.btnSaveFormBlattArticles;
-            this.layoutControlItem3.Location = new System.Drawing.Point(779, 648);
+            this.layoutControlItem3.Location = new System.Drawing.Point(777, 646);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(120, 40);
+            this.layoutControlItem3.Size = new System.Drawing.Size(122, 42);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 648);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 646);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(653, 40);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(649, 42);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.btnCancel;
-            this.layoutControlItem4.Location = new System.Drawing.Point(653, 648);
+            this.layoutControlItem4.Location = new System.Drawing.Point(649, 646);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(126, 40);
+            this.layoutControlItem4.Size = new System.Drawing.Size(128, 42);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 638);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 636);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
             this.emptySpaceItem3.Size = new System.Drawing.Size(899, 10);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // cmbFormBlatttypes
+            // 
+            this.cmbFormBlatttypes.Location = new System.Drawing.Point(138, 23);
+            this.cmbFormBlatttypes.Name = "cmbFormBlatttypes";
+            this.cmbFormBlatttypes.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbFormBlatttypes.Properties.NullText = "";
+            this.cmbFormBlatttypes.Properties.EditValueChanged += new System.EventHandler(this.cmbFormBlatttypes_SelectionChangeCommitted);
+            this.cmbFormBlatttypes.Size = new System.Drawing.Size(456, 28);
+            this.cmbFormBlatttypes.StyleController = this.layoutControl1;
+            this.cmbFormBlatttypes.TabIndex = 14;
+            // 
+            // layoutControlItem5
+            // 
+            this.layoutControlItem5.Control = this.cmbFormBlatttypes;
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.Size = new System.Drawing.Size(575, 32);
+            this.layoutControlItem5.Text = "    Auswählen :";
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(112, 21);
+            // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(575, 0);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(324, 32);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // frmFormBlattarticles
             // 
@@ -370,12 +372,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.gvFormBlattArticles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbFormBlatttypes.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -393,9 +396,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn98;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn99;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
-        private System.Windows.Forms.ComboBox cmbFormBlatttypes;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraEditors.SimpleButton btnSaveFormBlattArticles;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
@@ -404,5 +404,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
+        private DevExpress.XtraEditors.LookUpEdit cmbFormBlatttypes;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
     }
 }

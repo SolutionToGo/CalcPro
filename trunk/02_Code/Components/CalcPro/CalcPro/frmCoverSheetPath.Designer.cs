@@ -83,7 +83,7 @@
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1214, 229, 450, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(943, 152);
+            this.layoutControl1.Size = new System.Drawing.Size(943, 184);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -91,10 +91,10 @@
             // 
             this.btnTemplateBrowse.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemplateBrowse.ImageOptions.Image")));
             this.btnTemplateBrowse.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnTemplateBrowse.Location = new System.Drawing.Point(782, 53);
+            this.btnTemplateBrowse.Location = new System.Drawing.Point(800, 54);
             this.btnTemplateBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTemplateBrowse.Name = "btnTemplateBrowse";
-            this.btnTemplateBrowse.Size = new System.Drawing.Size(118, 27);
+            this.btnTemplateBrowse.Size = new System.Drawing.Size(121, 28);
             this.btnTemplateBrowse.StyleController = this.layoutControl1;
             this.btnTemplateBrowse.TabIndex = 5;
             this.btnTemplateBrowse.Text = "Browsen";
@@ -104,10 +104,10 @@
             // 
             this.btnBrowse.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBrowse.ImageOptions.Image")));
             this.btnBrowse.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnBrowse.Location = new System.Drawing.Point(782, 22);
+            this.btnBrowse.Location = new System.Drawing.Point(800, 22);
             this.btnBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(118, 27);
+            this.btnBrowse.Size = new System.Drawing.Size(121, 28);
             this.btnBrowse.StyleController = this.layoutControl1;
             this.btnBrowse.TabIndex = 5;
             this.btnBrowse.Text = "Browsen";
@@ -118,16 +118,16 @@
             this.txtCoverSheetPath.Location = new System.Drawing.Point(372, 22);
             this.txtCoverSheetPath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCoverSheetPath.Name = "txtCoverSheetPath";
-            this.txtCoverSheetPath.Size = new System.Drawing.Size(406, 25);
+            this.txtCoverSheetPath.Size = new System.Drawing.Size(424, 25);
             this.txtCoverSheetPath.TabIndex = 4;
             this.txtCoverSheetPath.Enter += new System.EventHandler(this.txtCoverSheetPath_Enter);
             // 
             // txtTemplatePath
             // 
-            this.txtTemplatePath.Location = new System.Drawing.Point(372, 53);
+            this.txtTemplatePath.Location = new System.Drawing.Point(372, 54);
             this.txtTemplatePath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTemplatePath.Name = "txtTemplatePath";
-            this.txtTemplatePath.Size = new System.Drawing.Size(406, 28);
+            this.txtTemplatePath.Size = new System.Drawing.Size(424, 28);
             this.txtTemplatePath.StyleController = this.layoutControl1;
             this.txtTemplatePath.TabIndex = 7;
             this.txtTemplatePath.Enter += new System.EventHandler(this.txtCoverSheetPath_Enter);
@@ -136,10 +136,10 @@
             // 
             this.btnSave.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
             this.btnSave.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnSave.Location = new System.Drawing.Point(773, 95);
+            this.btnSave.Location = new System.Drawing.Point(789, 124);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(127, 36);
+            this.btnSave.Size = new System.Drawing.Size(132, 38);
             this.btnSave.StyleController = this.layoutControl1;
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "&Speichern";
@@ -150,10 +150,10 @@
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.discountdel_32x32;
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancel.Location = new System.Drawing.Point(636, 95);
+            this.btnCancel.Location = new System.Drawing.Point(647, 124);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(133, 36);
+            this.btnCancel.Size = new System.Drawing.Size(138, 38);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "&Abbrechen";
@@ -179,7 +179,7 @@
             this.emptySpaceItem2});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(20, 20, 20, 20);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(922, 153);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(943, 184);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -187,69 +187,69 @@
             this.layoutControlItem1.Control = this.txtCoverSheetPath;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(760, 31);
+            this.layoutControlItem1.Size = new System.Drawing.Size(778, 32);
             this.layoutControlItem1.Text = "Dokumentenpfad zum Titelblatt";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(347, 21);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.btnBrowse;
-            this.layoutControlItem2.Location = new System.Drawing.Point(760, 0);
+            this.layoutControlItem2.Location = new System.Drawing.Point(778, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(122, 31);
+            this.layoutControlItem2.Size = new System.Drawing.Size(125, 32);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnTemplateBrowse;
-            this.layoutControlItem5.Location = new System.Drawing.Point(760, 31);
+            this.layoutControlItem5.Location = new System.Drawing.Point(778, 32);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(122, 32);
+            this.layoutControlItem5.Size = new System.Drawing.Size(125, 32);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.btnSave;
-            this.layoutControlItem3.Location = new System.Drawing.Point(751, 73);
+            this.layoutControlItem3.Location = new System.Drawing.Point(767, 102);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(131, 40);
+            this.layoutControlItem3.Size = new System.Drawing.Size(136, 42);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.txtTemplatePath;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 31);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 32);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(760, 32);
+            this.layoutControlItem4.Size = new System.Drawing.Size(778, 32);
             this.layoutControlItem4.Text = "Dokumentenpfad zu den Dokumentenvorlagen";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(347, 21);
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 73);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 102);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(614, 40);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(625, 42);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.btnCancel;
-            this.layoutControlItem6.Location = new System.Drawing.Point(614, 73);
+            this.layoutControlItem6.Location = new System.Drawing.Point(625, 102);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(137, 40);
+            this.layoutControlItem6.Size = new System.Drawing.Size(142, 42);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 63);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 64);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(882, 10);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(903, 38);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // frmCoverSheetPath
@@ -257,7 +257,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(943, 152);
+            this.ClientSize = new System.Drawing.Size(943, 184);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
