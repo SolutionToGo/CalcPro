@@ -353,6 +353,16 @@ namespace CalcPro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap discountadd_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("discountadd_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap discountadd_32x32 {
             get {
                 object obj = ResourceManager.GetObject("discountadd_32x32", resourceCulture);
@@ -366,6 +376,16 @@ namespace CalcPro.Properties {
         internal static System.Drawing.Bitmap discountdel_16x16 {
             get {
                 object obj = ResourceManager.GetObject("discountdel_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap discountdel_16x161 {
+            get {
+                object obj = ResourceManager.GetObject("discountdel_16x161", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

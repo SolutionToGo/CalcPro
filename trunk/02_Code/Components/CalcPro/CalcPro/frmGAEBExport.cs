@@ -105,7 +105,7 @@ namespace CalcPro
             DialogResult result = dlg.ShowDialog();
             if (result == DialogResult.OK)
             {
-                txtFilePath.Text = dlg.SelectedPath;
+                txtFilePath.Text = dlg.FileName;
             }
         }
 
