@@ -60,12 +60,11 @@
             this.layoutControl1.Appearance.Control.Options.UseFont = true;
             this.layoutControl1.Appearance.Control.Options.UseForeColor = true;
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(20, 20);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.layoutControl1.Location = new System.Drawing.Point(5, 5);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(932, 79, 250, 350);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(495, 258);
+            this.layoutControl1.Size = new System.Drawing.Size(449, 232);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -85,104 +84,103 @@
             this.simpleLabelItem8,
             this.simpleLabelItem9});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(495, 258);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(449, 232);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // simpleLabelItem1
             // 
             this.simpleLabelItem1.AllowHotTrack = false;
-            this.simpleLabelItem1.Location = new System.Drawing.Point(0, 100);
+            this.simpleLabelItem1.Location = new System.Drawing.Point(0, 80);
             this.simpleLabelItem1.Name = "simpleLabelItem1";
-            this.simpleLabelItem1.Size = new System.Drawing.Size(473, 25);
+            this.simpleLabelItem1.Size = new System.Drawing.Size(431, 20);
             this.simpleLabelItem1.Text = "F1  \t       Langtext öffnen / schließen";
-            this.simpleLabelItem1.TextSize = new System.Drawing.Size(286, 21);
+            this.simpleLabelItem1.TextSize = new System.Drawing.Size(205, 16);
             // 
             // simpleLabelItem2
             // 
             this.simpleLabelItem2.AllowHotTrack = false;
-            this.simpleLabelItem2.Location = new System.Drawing.Point(0, 125);
+            this.simpleLabelItem2.Location = new System.Drawing.Point(0, 100);
             this.simpleLabelItem2.Name = "simpleLabelItem2";
-            this.simpleLabelItem2.Size = new System.Drawing.Size(473, 25);
+            this.simpleLabelItem2.Size = new System.Drawing.Size(431, 20);
             this.simpleLabelItem2.Text = "F2         \tSuche";
-            this.simpleLabelItem2.TextSize = new System.Drawing.Size(286, 21);
+            this.simpleLabelItem2.TextSize = new System.Drawing.Size(205, 16);
             // 
             // simpleLabelItem3
             // 
             this.simpleLabelItem3.AllowHotTrack = false;
-            this.simpleLabelItem3.Location = new System.Drawing.Point(0, 150);
+            this.simpleLabelItem3.Location = new System.Drawing.Point(0, 120);
             this.simpleLabelItem3.Name = "simpleLabelItem3";
-            this.simpleLabelItem3.Size = new System.Drawing.Size(473, 25);
+            this.simpleLabelItem3.Size = new System.Drawing.Size(431, 20);
             this.simpleLabelItem3.Text = "F4         \tkopieren";
-            this.simpleLabelItem3.TextSize = new System.Drawing.Size(286, 21);
+            this.simpleLabelItem3.TextSize = new System.Drawing.Size(205, 16);
             // 
             // simpleLabelItem4
             // 
             this.simpleLabelItem4.AllowHotTrack = false;
-            this.simpleLabelItem4.Location = new System.Drawing.Point(0, 175);
+            this.simpleLabelItem4.Location = new System.Drawing.Point(0, 140);
             this.simpleLabelItem4.Name = "simpleLabelItem4";
-            this.simpleLabelItem4.Size = new System.Drawing.Size(473, 25);
+            this.simpleLabelItem4.Size = new System.Drawing.Size(431, 20);
             this.simpleLabelItem4.Text = "F6         \tumschalten Kostendetails";
-            this.simpleLabelItem4.TextSize = new System.Drawing.Size(286, 21);
+            this.simpleLabelItem4.TextSize = new System.Drawing.Size(205, 16);
             // 
             // simpleLabelItem5
             // 
             this.simpleLabelItem5.AllowHotTrack = false;
-            this.simpleLabelItem5.Location = new System.Drawing.Point(0, 75);
+            this.simpleLabelItem5.Location = new System.Drawing.Point(0, 60);
             this.simpleLabelItem5.Name = "simpleLabelItem5";
-            this.simpleLabelItem5.Size = new System.Drawing.Size(473, 25);
+            this.simpleLabelItem5.Size = new System.Drawing.Size(431, 20);
             this.simpleLabelItem5.Text = "F10\t       nur speichern";
-            this.simpleLabelItem5.TextSize = new System.Drawing.Size(286, 21);
+            this.simpleLabelItem5.TextSize = new System.Drawing.Size(205, 16);
             // 
             // simpleLabelItem6
             // 
             this.simpleLabelItem6.AllowHotTrack = false;
-            this.simpleLabelItem6.Location = new System.Drawing.Point(0, 50);
+            this.simpleLabelItem6.Location = new System.Drawing.Point(0, 40);
             this.simpleLabelItem6.Name = "simpleLabelItem6";
-            this.simpleLabelItem6.Size = new System.Drawing.Size(473, 25);
+            this.simpleLabelItem6.Size = new System.Drawing.Size(431, 20);
             this.simpleLabelItem6.Text = "F9             Speichern";
-            this.simpleLabelItem6.TextSize = new System.Drawing.Size(286, 21);
+            this.simpleLabelItem6.TextSize = new System.Drawing.Size(205, 16);
             // 
             // simpleLabelItem7
             // 
             this.simpleLabelItem7.AllowHotTrack = false;
-            this.simpleLabelItem7.Location = new System.Drawing.Point(0, 25);
+            this.simpleLabelItem7.Location = new System.Drawing.Point(0, 20);
             this.simpleLabelItem7.Name = "simpleLabelItem7";
-            this.simpleLabelItem7.Size = new System.Drawing.Size(473, 25);
+            this.simpleLabelItem7.Size = new System.Drawing.Size(431, 20);
             this.simpleLabelItem7.Text = "Esc            Abbrechen";
-            this.simpleLabelItem7.TextSize = new System.Drawing.Size(286, 21);
+            this.simpleLabelItem7.TextSize = new System.Drawing.Size(205, 16);
             // 
             // simpleLabelItem8
             // 
             this.simpleLabelItem8.AllowHotTrack = false;
             this.simpleLabelItem8.Location = new System.Drawing.Point(0, 0);
             this.simpleLabelItem8.Name = "simpleLabelItem8";
-            this.simpleLabelItem8.Size = new System.Drawing.Size(473, 25);
+            this.simpleLabelItem8.Size = new System.Drawing.Size(431, 20);
             this.simpleLabelItem8.Text = "Alt + N      Neu";
-            this.simpleLabelItem8.TextSize = new System.Drawing.Size(286, 21);
+            this.simpleLabelItem8.TextSize = new System.Drawing.Size(205, 16);
             // 
             // simpleLabelItem9
             // 
             this.simpleLabelItem9.AllowHotTrack = false;
             this.simpleLabelItem9.CustomizationFormText = "F5";
-            this.simpleLabelItem9.Location = new System.Drawing.Point(0, 200);
+            this.simpleLabelItem9.Location = new System.Drawing.Point(0, 160);
             this.simpleLabelItem9.Name = "simpleLabelItem9";
-            this.simpleLabelItem9.Size = new System.Drawing.Size(473, 34);
+            this.simpleLabelItem9.Size = new System.Drawing.Size(431, 56);
             this.simpleLabelItem9.Text = "F5             Project Refresh";
-            this.simpleLabelItem9.TextSize = new System.Drawing.Size(286, 21);
+            this.simpleLabelItem9.TextSize = new System.Drawing.Size(205, 16);
             // 
             // frmShortCuts
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 298);
+            this.ClientSize = new System.Drawing.Size(459, 242);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmShortCuts";
-            this.Padding = new System.Windows.Forms.Padding(20);
+            this.Padding = new System.Windows.Forms.Padding(5);
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

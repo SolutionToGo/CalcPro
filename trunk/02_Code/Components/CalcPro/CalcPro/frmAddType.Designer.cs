@@ -49,24 +49,21 @@
             this.layoutControl1.Controls.Add(this.gcAddTyp);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(567, 13, 450, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(597, 378);
+            this.layoutControl1.Size = new System.Drawing.Size(512, 307);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // gcAddTyp
             // 
-            this.gcAddTyp.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.gcAddTyp.Location = new System.Drawing.Point(22, 22);
+            this.gcAddTyp.Location = new System.Drawing.Point(7, 7);
             this.gcAddTyp.MainView = this.gvAddTyp;
-            this.gcAddTyp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcAddTyp.Name = "gcAddTyp";
             this.gcAddTyp.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemDateEdit1});
-            this.gcAddTyp.Size = new System.Drawing.Size(553, 334);
+            this.gcAddTyp.Size = new System.Drawing.Size(498, 293);
             this.gcAddTyp.TabIndex = 4;
             this.gcAddTyp.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvAddTyp});
@@ -81,7 +78,6 @@
             this.gvAddTyp.Appearance.HeaderPanel.Options.UseFont = true;
             this.gvAddTyp.Appearance.Row.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.gvAddTyp.Appearance.Row.Options.UseFont = true;
-            this.gvAddTyp.DetailHeight = 431;
             this.gvAddTyp.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.gvAddTyp.GridControl = this.gcAddTyp;
             this.gvAddTyp.Name = "gvAddTyp";
@@ -123,8 +119,8 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(20, 20, 20, 20);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(597, 378);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(512, 307);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -132,19 +128,18 @@
             this.layoutControlItem1.Control = this.gcAddTyp;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(557, 338);
+            this.layoutControlItem1.Size = new System.Drawing.Size(502, 297);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // frmAddType
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(597, 378);
+            this.ClientSize = new System.Drawing.Size(512, 307);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmAddType";

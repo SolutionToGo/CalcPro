@@ -759,12 +759,13 @@
             // spreadsheetControl1
             // 
             this.spreadsheetControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.spreadsheetControl1.Location = new System.Drawing.Point(0, 143);
+            this.spreadsheetControl1.Location = new System.Drawing.Point(0, 211);
+            this.spreadsheetControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.spreadsheetControl1.MenuManager = this.ribbonControl1;
             this.spreadsheetControl1.Name = "spreadsheetControl1";
             this.spreadsheetControl1.Options.Import.Csv.Encoding = ((System.Text.Encoding)(resources.GetObject("spreadsheetControl1.Options.Import.Csv.Encoding")));
             this.spreadsheetControl1.Options.Import.Txt.Encoding = ((System.Text.Encoding)(resources.GetObject("spreadsheetControl1.Options.Import.Txt.Encoding")));
-            this.spreadsheetControl1.Size = new System.Drawing.Size(1359, 635);
+            this.spreadsheetControl1.Size = new System.Drawing.Size(1585, 747);
             this.spreadsheetControl1.TabIndex = 0;
             this.spreadsheetControl1.Text = "c";
             this.spreadsheetControl1.UnhandledException += new DevExpress.XtraSpreadsheet.UnhandledExceptionEventHandler(this.spreadsheetControl1_UnhandledException);
@@ -772,6 +773,7 @@
             // ribbonControl1
             // 
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
+            this.ribbonControl1.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
             this.spreadsheetCommandBarButtonItem1,
@@ -1120,6 +1122,7 @@
             this.barEditItem4,
             this.btnOpen});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 352;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
@@ -1146,7 +1149,7 @@
             this.repositoryItemLookUpEdit1,
             this.repositoryItemDateEdit1,
             this.dtpValidityDate});
-            this.ribbonControl1.Size = new System.Drawing.Size(1359, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(1585, 211);
             // 
             // spreadsheetCommandBarButtonItem1
             // 
@@ -1462,7 +1465,7 @@
             this.commandBarGalleryDropDown1.Gallery.DrawImageBackground = false;
             this.commandBarGalleryDropDown1.Gallery.ImageSize = new System.Drawing.Size(65, 46);
             this.commandBarGalleryDropDown1.Gallery.ItemAutoSizeMode = DevExpress.XtraBars.Ribbon.Gallery.GalleryItemAutoSizeMode.None;
-            this.commandBarGalleryDropDown1.Gallery.ItemSize = new System.Drawing.Size(136, 26);
+            this.commandBarGalleryDropDown1.Gallery.ItemSize = new System.Drawing.Size(170, 32);
             this.commandBarGalleryDropDown1.Gallery.RowCount = 14;
             this.commandBarGalleryDropDown1.Gallery.ShowGroupCaption = false;
             this.commandBarGalleryDropDown1.Gallery.ShowItemText = true;
@@ -4590,6 +4593,8 @@
             // 
             // chartsDesignRibbonPage1
             // 
+            this.chartsDesignRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.chartsDesignRibbonPage1.Appearance.Options.UseFont = true;
             this.chartsDesignRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.chartsDesignTypeRibbonPageGroup1,
             this.chartsDesignDataRibbonPageGroup1,
@@ -4627,6 +4632,8 @@
             // 
             // chartsLayoutRibbonPage1
             // 
+            this.chartsLayoutRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.chartsLayoutRibbonPage1.Appearance.Options.UseFont = true;
             this.chartsLayoutRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.chartsLayoutAxesRibbonPageGroup1,
             this.chartsLayoutLabelsRibbonPageGroup1,
@@ -4657,6 +4664,8 @@
             // 
             // chartsFormatRibbonPage1
             // 
+            this.chartsFormatRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.chartsFormatRibbonPage1.Appearance.Options.UseFont = true;
             this.chartsFormatRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.chartsFormatArrangeRibbonPageGroup1});
             this.chartsFormatRibbonPage1.Name = "chartsFormatRibbonPage1";
@@ -4678,6 +4687,8 @@
             // 
             // tableToolsDesignRibbonPage1
             // 
+            this.tableToolsDesignRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.tableToolsDesignRibbonPage1.Appearance.Options.UseFont = true;
             this.tableToolsDesignRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.tablePropertiesRibbonPageGroup1,
             this.tableToolsRibbonPageGroup1,
@@ -4722,6 +4733,8 @@
             // 
             // drawingFormatRibbonPage1
             // 
+            this.drawingFormatRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.drawingFormatRibbonPage1.Appearance.Options.UseFont = true;
             this.drawingFormatRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.drawingFormatArrangeRibbonPageGroup1});
             this.drawingFormatRibbonPage1.Name = "drawingFormatRibbonPage1";
@@ -4743,6 +4756,8 @@
             // 
             // pictureFormatRibbonPage1
             // 
+            this.pictureFormatRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.pictureFormatRibbonPage1.Appearance.Options.UseFont = true;
             this.pictureFormatRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.pictureFormatArrangeRibbonPageGroup1});
             this.pictureFormatRibbonPage1.Name = "pictureFormatRibbonPage1";
@@ -4765,6 +4780,8 @@
             // 
             // pivotTableAnalyzeRibbonPage1
             // 
+            this.pivotTableAnalyzeRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.pivotTableAnalyzeRibbonPage1.Appearance.Options.UseFont = true;
             this.pivotTableAnalyzeRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.pivotTableAnalyzePivotTableRibbonPageGroup1,
             this.pivotTableAnalyzeActiveFieldRibbonPageGroup1,
@@ -4822,6 +4839,8 @@
             // 
             // pivotTableDesignRibbonPage1
             // 
+            this.pivotTableDesignRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.pivotTableDesignRibbonPage1.Appearance.Options.UseFont = true;
             this.pivotTableDesignRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.pivotTableDesignLayoutRibbonPageGroup1,
             this.pivotTableDesignPivotTableStyleOptionsRibbonPageGroup1,
@@ -4853,6 +4872,8 @@
             // 
             // fileRibbonPage1
             // 
+            this.fileRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.fileRibbonPage1.Appearance.Options.UseFont = true;
             this.fileRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.commonRibbonPageGroup1,
             this.infoRibbonPageGroup1,
@@ -4903,6 +4924,8 @@
             // 
             // homeRibbonPage1
             // 
+            this.homeRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.homeRibbonPage1.Appearance.Options.UseFont = true;
             this.homeRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.clipboardRibbonPageGroup1,
             this.fontRibbonPageGroup1,
@@ -4976,6 +4999,8 @@
             // 
             // insertRibbonPage1
             // 
+            this.insertRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.insertRibbonPage1.Appearance.Options.UseFont = true;
             this.insertRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.tablesRibbonPageGroup1,
             this.illustrationsRibbonPageGroup1,
@@ -5018,6 +5043,8 @@
             // 
             // pageLayoutRibbonPage1
             // 
+            this.pageLayoutRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.pageLayoutRibbonPage1.Appearance.Options.UseFont = true;
             this.pageLayoutRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.pageSetupRibbonPageGroup1,
             this.pageSetupShowRibbonPageGroup1,
@@ -5054,6 +5081,8 @@
             // 
             // formulasRibbonPage1
             // 
+            this.formulasRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.formulasRibbonPage1.Appearance.Options.UseFont = true;
             this.formulasRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.functionLibraryRibbonPageGroup1,
             this.formulaDefinedNamesRibbonPageGroup1,
@@ -5095,6 +5124,8 @@
             // 
             // dataRibbonPage1
             // 
+            this.dataRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.dataRibbonPage1.Appearance.Options.UseFont = true;
             this.dataRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.sortAndFilterRibbonPageGroup1,
             this.dataToolsRibbonPageGroup1,
@@ -5126,6 +5157,8 @@
             // 
             // reviewRibbonPage1
             // 
+            this.reviewRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.reviewRibbonPage1.Appearance.Options.UseFont = true;
             this.reviewRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.commentsRibbonPageGroup1,
             this.changesRibbonPageGroup1});
@@ -5150,6 +5183,8 @@
             // 
             // viewRibbonPage1
             // 
+            this.viewRibbonPage1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.viewRibbonPage1.Appearance.Options.UseFont = true;
             this.viewRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.showRibbonPageGroup1,
             this.zoomRibbonPageGroup1,
@@ -5512,11 +5547,12 @@
             // 
             // frmSpreadsheetControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1359, 778);
+            this.ClientSize = new System.Drawing.Size(1585, 958);
             this.Controls.Add(this.spreadsheetControl1);
             this.Controls.Add(this.ribbonControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmSpreadsheetControl";
             this.Ribbon = this.ribbonControl1;
             this.ShowIcon = false;

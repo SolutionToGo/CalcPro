@@ -45,9 +45,9 @@ namespace CalcPro
                 if (Utility.LVDetailsAccess == "7")
                     layoutControl1.Enabled = false;
                 cmbLVSection.Enabled = true;
-                cmbLVSection.DataSource = ObjBGAEB.GetLVSection(ProjectID);
-                cmbLVSection.DisplayMember = "LVSectionName";
-                cmbLVSection.ValueMember = "LVSectionID";
+                cmbLVSection.Properties.DataSource = ObjBGAEB.GetLVSection(ProjectID);
+                cmbLVSection.Properties.DisplayMember = "LVSectionName";
+                cmbLVSection.Properties.ValueMember = "LVSectionID";
             }
             catch (Exception ex)
             {

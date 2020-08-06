@@ -102,23 +102,22 @@ namespace CalcPro
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(1316, 770);
+            this.layoutControl1.Size = new System.Drawing.Size(1128, 626);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // gcAccessories
             // 
             this.gcAccessories.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.gcAccessories.Location = new System.Drawing.Point(2, 570);
+            this.gcAccessories.Location = new System.Drawing.Point(7, 461);
             this.gcAccessories.MainView = this.gvAccessories;
             this.gcAccessories.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcAccessories.Name = "gcAccessories";
             this.gcAccessories.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnDelete});
-            this.gcAccessories.Size = new System.Drawing.Size(1312, 198);
+            this.gcAccessories.Size = new System.Drawing.Size(1114, 158);
             this.gcAccessories.TabIndex = 6;
             this.gcAccessories.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvAccessories});
@@ -214,6 +213,9 @@ namespace CalcPro
             // 
             // gridColumn15
             // 
+            this.gridColumn15.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn15.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn15.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.gridColumn15.Caption = "Delete";
             this.gridColumn15.ColumnEdit = this.btnDelete;
             this.gridColumn15.MinWidth = 23;
@@ -235,13 +237,13 @@ namespace CalcPro
             // gcArticles
             // 
             this.gcArticles.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.gcArticles.Location = new System.Drawing.Point(2, 26);
+            this.gcArticles.Location = new System.Drawing.Point(7, 26);
             this.gcArticles.MainView = this.gvArticles;
             this.gcArticles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcArticles.Name = "gcArticles";
             this.gcArticles.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnAddAccessory});
-            this.gcArticles.Size = new System.Drawing.Size(1312, 516);
+            this.gcArticles.Size = new System.Drawing.Size(1114, 412);
             this.gcArticles.TabIndex = 4;
             this.gcArticles.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvArticles});
@@ -352,6 +354,7 @@ namespace CalcPro
             // 
             this.gridColumn8.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn8.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn8.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.gridColumn8.Caption = "Add";
             this.gridColumn8.ColumnEdit = this.btnAddAccessory;
             this.gridColumn8.MinWidth = 23;
@@ -385,28 +388,28 @@ namespace CalcPro
             this.layoutControlItem1,
             this.layoutControlItem3});
             this.Root.Name = "Root";
-            this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.Root.Size = new System.Drawing.Size(1316, 770);
+            this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.Root.Size = new System.Drawing.Size(1128, 626);
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.gcArticles;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1316, 544);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1118, 435);
             this.layoutControlItem1.Text = "Artikelauswahl";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(493, 21);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(373, 16);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.gcAccessories;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 544);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 435);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(1316, 226);
+            this.layoutControlItem3.Size = new System.Drawing.Size(1118, 181);
             this.layoutControlItem3.Text = "Zubehörauswahl - Press F4 to add accessory for selected article";
             this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(493, 21);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(373, 16);
             // 
             // ribbonPage2
             // 
@@ -417,12 +420,11 @@ namespace CalcPro
             // 
             // frmArticleAccessories
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1316, 770);
+            this.ClientSize = new System.Drawing.Size(1128, 626);
             this.Controls.Add(this.layoutControl1);
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmArticleAccessories";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;

@@ -43,7 +43,6 @@
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem6 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtConfirmPassword.Properties)).BeginInit();
@@ -58,7 +57,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -84,11 +82,10 @@
             this.layoutControl1.Controls.Add(this.txtUserName);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(899, 12, 450, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(629, 228);
+            this.layoutControl1.Size = new System.Drawing.Size(539, 154);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -96,10 +93,9 @@
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.discountdel_32x321;
-            this.btnCancel.Location = new System.Drawing.Point(338, 164);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Location = new System.Drawing.Point(291, 112);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(133, 41);
+            this.btnCancel.Size = new System.Drawing.Size(119, 34);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Abbrechen";
@@ -108,10 +104,9 @@
             // btnSave
             // 
             this.btnSave.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
-            this.btnSave.Location = new System.Drawing.Point(475, 164);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSave.Location = new System.Drawing.Point(414, 112);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(131, 41);
+            this.btnSave.Size = new System.Drawing.Size(117, 34);
             this.btnSave.StyleController = this.layoutControl1;
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Speichern";
@@ -119,43 +114,39 @@
             // 
             // txtConfirmPassword
             // 
-            this.txtConfirmPassword.Location = new System.Drawing.Point(259, 119);
-            this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(186, 86);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Properties.PasswordChar = '*';
-            this.txtConfirmPassword.Size = new System.Drawing.Size(347, 28);
+            this.txtConfirmPassword.Size = new System.Drawing.Size(345, 22);
             this.txtConfirmPassword.StyleController = this.layoutControl1;
             this.txtConfirmPassword.TabIndex = 7;
             this.txtConfirmPassword.Enter += new System.EventHandler(this.txtUserName_Enter);
             // 
             // txtNewPassword
             // 
-            this.txtNewPassword.Location = new System.Drawing.Point(259, 87);
-            this.txtNewPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNewPassword.Location = new System.Drawing.Point(186, 60);
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.Properties.PasswordChar = '*';
-            this.txtNewPassword.Size = new System.Drawing.Size(347, 28);
+            this.txtNewPassword.Size = new System.Drawing.Size(345, 22);
             this.txtNewPassword.StyleController = this.layoutControl1;
             this.txtNewPassword.TabIndex = 6;
             this.txtNewPassword.Enter += new System.EventHandler(this.txtUserName_Enter);
             // 
             // txtOldPassword
             // 
-            this.txtOldPassword.Location = new System.Drawing.Point(259, 55);
-            this.txtOldPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtOldPassword.Location = new System.Drawing.Point(186, 34);
             this.txtOldPassword.Name = "txtOldPassword";
             this.txtOldPassword.Properties.PasswordChar = '*';
-            this.txtOldPassword.Size = new System.Drawing.Size(347, 28);
+            this.txtOldPassword.Size = new System.Drawing.Size(345, 22);
             this.txtOldPassword.StyleController = this.layoutControl1;
             this.txtOldPassword.TabIndex = 5;
             this.txtOldPassword.Enter += new System.EventHandler(this.txtUserName_Enter);
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(259, 23);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtUserName.Location = new System.Drawing.Point(186, 8);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(347, 28);
+            this.txtUserName.Size = new System.Drawing.Size(345, 22);
             this.txtUserName.StyleController = this.layoutControl1;
             this.txtUserName.TabIndex = 4;
             this.txtUserName.Enter += new System.EventHandler(this.txtUserName_Enter);
@@ -174,11 +165,10 @@
             this.layoutControlItem4,
             this.layoutControlItem6,
             this.emptySpaceItem2,
-            this.layoutControlItem5,
-            this.emptySpaceItem6});
+            this.layoutControlItem5});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(20, 20, 20, 20);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(629, 228);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(539, 154);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -186,44 +176,44 @@
             this.layoutControlItem1.Control = this.txtUserName;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(587, 32);
+            this.layoutControlItem1.Size = new System.Drawing.Size(527, 26);
             this.layoutControlItem1.Text = "Nutzername";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(233, 21);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(175, 16);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.txtOldPassword;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 32);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 26);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(587, 32);
+            this.layoutControlItem2.Size = new System.Drawing.Size(527, 26);
             this.layoutControlItem2.Text = "Altes Passwort";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(233, 21);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(175, 16);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.txtNewPassword;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 64);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 52);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(587, 32);
+            this.layoutControlItem3.Size = new System.Drawing.Size(527, 26);
             this.layoutControlItem3.Text = "Neues Passwort";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(233, 21);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(175, 16);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.txtConfirmPassword;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 78);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(587, 32);
+            this.layoutControlItem4.Size = new System.Drawing.Size(527, 26);
             this.layoutControlItem4.Text = "Neues Passwort (Bestätigung)";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(233, 21);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(175, 16);
             // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.btnCancel;
-            this.layoutControlItem6.Location = new System.Drawing.Point(315, 141);
-            this.layoutControlItem6.MinSize = new System.Drawing.Size(103, 32);
+            this.layoutControlItem6.Location = new System.Drawing.Point(283, 104);
+            this.layoutControlItem6.MinSize = new System.Drawing.Size(88, 26);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(137, 45);
+            this.layoutControlItem6.Size = new System.Drawing.Size(123, 38);
             this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
@@ -231,39 +221,30 @@
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 141);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 104);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(315, 45);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(283, 38);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnSave;
-            this.layoutControlItem5.Location = new System.Drawing.Point(452, 141);
-            this.layoutControlItem5.MinSize = new System.Drawing.Size(98, 32);
+            this.layoutControlItem5.Location = new System.Drawing.Point(406, 104);
+            this.layoutControlItem5.MinSize = new System.Drawing.Size(84, 26);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(135, 45);
+            this.layoutControlItem5.Size = new System.Drawing.Size(121, 38);
             this.layoutControlItem5.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
-            // emptySpaceItem6
-            // 
-            this.emptySpaceItem6.AllowHotTrack = false;
-            this.emptySpaceItem6.Location = new System.Drawing.Point(0, 128);
-            this.emptySpaceItem6.Name = "emptySpaceItem6";
-            this.emptySpaceItem6.Size = new System.Drawing.Size(587, 13);
-            this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
-            // 
             // frmResetPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(629, 228);
+            this.ClientSize = new System.Drawing.Size(539, 154);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmResetPassword";
@@ -286,7 +267,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -308,6 +288,5 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem6;
     }
 }

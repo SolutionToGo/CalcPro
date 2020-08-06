@@ -212,20 +212,6 @@ namespace CalcPro
         {
             frmArticlesData obj = new frmArticlesData();
             ShowForm(obj);
-            //frmSupplierMaster obj = new frmSupplierMaster();
-            //obj.ShowDialog();
-            //frmTextModule obj1 = new frmTextModule();
-            //obj1.ShowDialog();
-
-            //frmType obj2 = new frmType();
-            //obj2.ShowDialog();
-
-            //frmTypList obj3 = new frmTypList();
-            //obj3.ShowDialog();
-
-            //frmSupplierList obj4 = new frmSupplierList();
-            //obj4.ShowDialog();
-
         }
 
 
@@ -241,7 +227,6 @@ namespace CalcPro
         {            
             frmType Obj = new frmType();
             Obj.Show();
-            //ShowForm(Obj);
         }
 
         private void btnRabatt_ItemClick(object sender, ItemClickEventArgs e)
@@ -334,7 +319,7 @@ namespace CalcPro
         }
         
         private void btnAddAccessories_ItemClick(object sender, ItemClickEventArgs e)
-        {           
+        {
             frmArticleAccessories Obj = new frmArticleAccessories();
             Obj.ShowDialog();
            

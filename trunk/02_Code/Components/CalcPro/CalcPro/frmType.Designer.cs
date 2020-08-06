@@ -113,20 +113,18 @@
             this.layoutControl1.Controls.Add(this.btnsave);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(989, 198, 450, 400);
             this.layoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(1178, 912);
+            this.layoutControl1.Size = new System.Drawing.Size(1010, 600);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // cmbSupplier
             // 
             this.cmbSupplier.EnterMoveNextControl = true;
-            this.cmbSupplier.Location = new System.Drawing.Point(71, 101);
-            this.cmbSupplier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmbSupplier.Location = new System.Drawing.Point(67, 93);
             this.cmbSupplier.Name = "cmbSupplier";
             this.cmbSupplier.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -136,7 +134,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ShortName", "Kurzbezeichnung")});
             this.cmbSupplier.Properties.NullText = "";
             this.cmbSupplier.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.cmbSupplier.Size = new System.Drawing.Size(608, 28);
+            this.cmbSupplier.Size = new System.Drawing.Size(508, 22);
             this.cmbSupplier.StyleController = this.layoutControl1;
             this.cmbSupplier.TabIndex = 4;
             conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
@@ -147,8 +145,7 @@
             // cmbWI
             // 
             this.cmbWI.EnterMoveNextControl = true;
-            this.cmbWI.Location = new System.Drawing.Point(71, 69);
-            this.cmbWI.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmbWI.Location = new System.Drawing.Point(67, 67);
             this.cmbWI.Name = "cmbWI";
             this.cmbWI.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -159,7 +156,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("WIDescription", "WIDescription")});
             this.cmbWI.Properties.NullText = "";
             this.cmbWI.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.cmbWI.Size = new System.Drawing.Size(608, 28);
+            this.cmbWI.Size = new System.Drawing.Size(508, 22);
             this.cmbWI.StyleController = this.layoutControl1;
             this.cmbWI.TabIndex = 3;
             conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
@@ -170,8 +167,7 @@
             // cmbWGWA
             // 
             this.cmbWGWA.EnterMoveNextControl = true;
-            this.cmbWGWA.Location = new System.Drawing.Point(71, 37);
-            this.cmbWGWA.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmbWGWA.Location = new System.Drawing.Point(67, 41);
             this.cmbWGWA.Name = "cmbWGWA";
             this.cmbWGWA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -184,7 +180,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("WGWADesc", "WGWADesc")});
             this.cmbWGWA.Properties.NullText = "";
             this.cmbWGWA.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.cmbWGWA.Size = new System.Drawing.Size(608, 28);
+            this.cmbWGWA.Size = new System.Drawing.Size(508, 22);
             this.cmbWGWA.StyleController = this.layoutControl1;
             this.cmbWGWA.TabIndex = 2;
             conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
@@ -194,12 +190,10 @@
             // 
             // gcTyp
             // 
-            this.gcTyp.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.gcTyp.Location = new System.Drawing.Point(2, 136);
+            this.gcTyp.Location = new System.Drawing.Point(7, 127);
             this.gcTyp.MainView = this.gvTyp;
-            this.gcTyp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcTyp.Name = "gcTyp";
-            this.gcTyp.Size = new System.Drawing.Size(1174, 774);
+            this.gcTyp.Size = new System.Drawing.Size(996, 466);
             this.gcTyp.TabIndex = 7;
             this.gcTyp.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvTyp});
@@ -224,7 +218,6 @@
             this.gridColumn7,
             this.gridColumn8,
             this.gridColumn9});
-            this.gvTyp.DetailHeight = 431;
             this.gvTyp.GridControl = this.gcTyp;
             this.gvTyp.Name = "gvTyp";
             this.gvTyp.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
@@ -247,91 +240,72 @@
             // 
             this.gridColumn1.Caption = "TypID";
             this.gridColumn1.FieldName = "TypID";
-            this.gridColumn1.MinWidth = 23;
             this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Width = 87;
             // 
             // gridColumn2
             // 
             this.gridColumn2.Caption = "WIID";
             this.gridColumn2.FieldName = "WIID";
-            this.gridColumn2.MinWidth = 23;
             this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Width = 87;
             // 
             // gridColumn3
             // 
             this.gridColumn3.Caption = "SupplierID";
             this.gridColumn3.FieldName = "SupplierID";
-            this.gridColumn3.MinWidth = 23;
             this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Width = 87;
             // 
             // gridColumn4
             // 
             this.gridColumn4.Caption = "WGID";
             this.gridColumn4.FieldName = "WGID";
-            this.gridColumn4.MinWidth = 23;
             this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Width = 87;
             // 
             // gridColumn5
             // 
             this.gridColumn5.Caption = "Typ";
             this.gridColumn5.FieldName = "Typ";
-            this.gridColumn5.MinWidth = 23;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 0;
-            this.gridColumn5.Width = 87;
             // 
             // gridColumn6
             // 
             this.gridColumn6.Caption = "WG";
             this.gridColumn6.FieldName = "WG";
-            this.gridColumn6.MinWidth = 23;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 1;
-            this.gridColumn6.Width = 87;
             // 
             // gridColumn7
             // 
             this.gridColumn7.Caption = "WA";
             this.gridColumn7.FieldName = "WA";
-            this.gridColumn7.MinWidth = 23;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 2;
-            this.gridColumn7.Width = 87;
             // 
             // gridColumn8
             // 
             this.gridColumn8.Caption = "WI";
             this.gridColumn8.FieldName = "WI";
-            this.gridColumn8.MinWidth = 23;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 3;
-            this.gridColumn8.Width = 87;
             // 
             // gridColumn9
             // 
             this.gridColumn9.Caption = "Lieferant";
             this.gridColumn9.FieldName = "FullName";
-            this.gridColumn9.MinWidth = 23;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 4;
-            this.gridColumn9.Width = 87;
             // 
             // txtTyp
             // 
             this.txtTyp.EnterMoveNextControl = true;
-            this.txtTyp.Location = new System.Drawing.Point(71, 5);
-            this.txtTyp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTyp.Location = new System.Drawing.Point(67, 15);
             this.txtTyp.Name = "txtTyp";
-            this.txtTyp.Size = new System.Drawing.Size(608, 28);
+            this.txtTyp.Size = new System.Drawing.Size(508, 22);
             this.txtTyp.StyleController = this.layoutControl1;
             this.txtTyp.TabIndex = 1;
             this.txtTyp.Tag = "Typ";
@@ -344,9 +318,10 @@
             // 
             this.btnsave.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x322;
             this.btnsave.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnsave.Location = new System.Drawing.Point(686, 96);
+            this.btnsave.Location = new System.Drawing.Point(587, 87);
+            this.btnsave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(136, 36);
+            this.btnsave.Size = new System.Drawing.Size(115, 36);
             this.btnsave.StyleController = this.layoutControl1;
             this.btnsave.TabIndex = 8;
             this.btnsave.Text = " Speichern   ";
@@ -360,6 +335,7 @@
             this.layoutControlGroup1.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem7,
             this.emptySpaceItem2,
@@ -367,25 +343,25 @@
             this.emptySpaceItem3,
             this.layoutControlItem5});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1178, 912);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1010, 600);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.gcTyp;
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 134);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 120);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(1178, 778);
+            this.layoutControlItem7.Size = new System.Drawing.Size(1000, 470);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(824, 0);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(699, 0);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(354, 134);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(301, 120);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup2
@@ -402,8 +378,8 @@
             this.layoutControlItem3});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup2.Size = new System.Drawing.Size(684, 134);
+            this.layoutControlGroup2.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(580, 120);
             this.layoutControlGroup2.Text = "Typ";
             this.layoutControlGroup2.TextVisible = false;
             // 
@@ -412,51 +388,51 @@
             this.layoutControlItem4.Control = this.txtTyp;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(678, 32);
+            this.layoutControlItem4.Size = new System.Drawing.Size(564, 26);
             this.layoutControlItem4.Text = "Typ ";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(63, 21);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(49, 16);
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.cmbWGWA;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 32);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 26);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(678, 32);
+            this.layoutControlItem1.Size = new System.Drawing.Size(564, 26);
             this.layoutControlItem1.Text = "WG/WA";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(63, 21);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(49, 16);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.cmbWI;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 64);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 52);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(678, 32);
+            this.layoutControlItem2.Size = new System.Drawing.Size(564, 26);
             this.layoutControlItem2.Text = "WI";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(63, 21);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(49, 16);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.cmbSupplier;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 78);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(678, 32);
+            this.layoutControlItem3.Size = new System.Drawing.Size(564, 26);
             this.layoutControlItem3.Text = "Supplier";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(63, 21);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(49, 16);
             // 
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(684, 0);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(580, 0);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(140, 94);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(119, 80);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnsave;
-            this.layoutControlItem5.Location = new System.Drawing.Point(684, 94);
+            this.layoutControlItem5.Location = new System.Drawing.Point(580, 80);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(140, 40);
+            this.layoutControlItem5.Size = new System.Drawing.Size(119, 40);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
@@ -502,12 +478,11 @@
             // 
             // frmType
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1178, 912);
+            this.ClientSize = new System.Drawing.Size(1010, 600);
             this.Controls.Add(this.layoutControl1);
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmType";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

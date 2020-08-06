@@ -183,7 +183,6 @@
             this.btnDataNormImport,
             this.tsStatus});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbon.MaxItemId = 82;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -195,7 +194,7 @@
             this.repositoryItemCheckEdit1});
             this.ribbon.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbon.ShowToolbarCustomizeItem = false;
-            this.ribbon.Size = new System.Drawing.Size(1444, 211);
+            this.ribbon.Size = new System.Drawing.Size(1185, 171);
             this.ribbon.StatusBar = this.ribbonStatusBar1;
             this.ribbon.Toolbar.ShowCustomizeItem = false;
             // 
@@ -1058,7 +1057,6 @@
             // 
             this.ribbonPageGroup3.ItemLinks.Add(this.btnChangePassword);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "ribbonPageGroup3";
             // 
             // chkAutoSave
             // 
@@ -1068,11 +1066,10 @@
             // ribbonStatusBar1
             // 
             this.ribbonStatusBar1.ItemLinks.Add(this.tsStatus);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 906);
-            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 617);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbon;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1444, 28);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1185, 22);
             // 
             // BarButtonItem10
             // 
@@ -1098,10 +1095,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::CalcPro.Properties.Resources.CalcProLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 211);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 171);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1444, 723);
+            this.pictureBox1.Size = new System.Drawing.Size(1185, 468);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -1118,9 +1114,9 @@
             this.lblUserName.BackColor = System.Drawing.Color.Transparent;
             this.lblUserName.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.lblUserName.ForeColor = System.Drawing.Color.Blue;
-            this.lblUserName.Location = new System.Drawing.Point(1239, 110);
+            this.lblUserName.Location = new System.Drawing.Point(1062, 89);
             this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(0, 17);
+            this.lblUserName.Size = new System.Drawing.Size(0, 13);
             this.lblUserName.TabIndex = 21;
             // 
             // lblDBVersion
@@ -1130,17 +1126,16 @@
             this.lblDBVersion.BackColor = System.Drawing.Color.Transparent;
             this.lblDBVersion.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.lblDBVersion.ForeColor = System.Drawing.Color.Blue;
-            this.lblDBVersion.Location = new System.Drawing.Point(1239, 133);
+            this.lblDBVersion.Location = new System.Drawing.Point(1062, 108);
             this.lblDBVersion.Name = "lblDBVersion";
-            this.lblDBVersion.Size = new System.Drawing.Size(0, 17);
+            this.lblDBVersion.Size = new System.Drawing.Size(0, 13);
             this.lblDBVersion.TabIndex = 24;
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(1290, 774);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.simpleButton1.Location = new System.Drawing.Point(1106, 629);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(87, 28);
+            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
             this.simpleButton1.TabIndex = 27;
             this.simpleButton1.Text = "simpleButton1";
             this.simpleButton1.Visible = false;
@@ -1159,9 +1154,9 @@
             this.Appearance.ForeColor = System.Drawing.Color.Black;
             this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseForeColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1444, 934);
+            this.ClientSize = new System.Drawing.Size(1185, 639);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.lblDBVersion);
@@ -1171,7 +1166,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmCalcPro";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar1;

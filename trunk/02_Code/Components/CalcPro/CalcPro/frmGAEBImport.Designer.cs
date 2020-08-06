@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGAEBImport));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.cmbLVSection = new System.Windows.Forms.ComboBox();
             this.btnOk = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.btnBrowse = new DevExpress.XtraEditors.SimpleButton();
@@ -40,6 +39,7 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.cmbLVSection = new DevExpress.XtraEditors.LookUpEdit();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -49,6 +49,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSection.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,33 +75,20 @@
             this.layoutControl1.Controls.Add(this.txtImportFilePath);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(924, 261, 250, 350);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(612, 103);
+            this.layoutControl1.Size = new System.Drawing.Size(525, 66);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
-            // 
-            // cmbLVSection
-            // 
-            this.cmbLVSection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLVSection.Enabled = false;
-            this.cmbLVSection.FormattingEnabled = true;
-            this.cmbLVSection.Location = new System.Drawing.Point(157, 54);
-            this.cmbLVSection.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbLVSection.Name = "cmbLVSection";
-            this.cmbLVSection.Size = new System.Drawing.Size(201, 24);
-            this.cmbLVSection.TabIndex = 10;
             // 
             // btnOk
             // 
             this.btnOk.ImageOptions.Image = global::CalcPro.Properties.Resources.Apply_16x16;
             this.btnOk.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnOk.Location = new System.Drawing.Point(362, 54);
-            this.btnOk.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOk.Location = new System.Drawing.Point(308, 33);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(77, 27);
+            this.btnOk.Size = new System.Drawing.Size(92, 22);
             this.btnOk.StyleController = this.layoutControl1;
             this.btnOk.TabIndex = 9;
             this.btnOk.Text = "Import";
@@ -111,10 +99,9 @@
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.Cancel_16x16;
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancel.Location = new System.Drawing.Point(443, 54);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancel.Location = new System.Drawing.Point(404, 33);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(150, 27);
+            this.btnCancel.Size = new System.Drawing.Size(114, 22);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Abbrechen";
@@ -124,10 +111,9 @@
             // 
             this.btnBrowse.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBrowse.ImageOptions.Image")));
             this.btnBrowse.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnBrowse.Location = new System.Drawing.Point(443, 22);
-            this.btnBrowse.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBrowse.Location = new System.Drawing.Point(404, 7);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(150, 27);
+            this.btnBrowse.Size = new System.Drawing.Size(114, 22);
             this.btnBrowse.StyleController = this.layoutControl1;
             this.btnBrowse.TabIndex = 6;
             this.btnBrowse.Text = "Durchsuchen";
@@ -135,11 +121,10 @@
             // 
             // txtImportFilePath
             // 
-            this.txtImportFilePath.Location = new System.Drawing.Point(157, 22);
-            this.txtImportFilePath.Margin = new System.Windows.Forms.Padding(4);
+            this.txtImportFilePath.Location = new System.Drawing.Point(113, 7);
             this.txtImportFilePath.Name = "txtImportFilePath";
             this.txtImportFilePath.Properties.ReadOnly = true;
-            this.txtImportFilePath.Size = new System.Drawing.Size(282, 28);
+            this.txtImportFilePath.Size = new System.Drawing.Size(287, 22);
             this.txtImportFilePath.StyleController = this.layoutControl1;
             this.txtImportFilePath.TabIndex = 4;
             // 
@@ -158,8 +143,8 @@
             this.layoutControlItem4,
             this.layoutControlItem2});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(17, 17, 20, 20);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(612, 103);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(525, 66);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -167,55 +152,65 @@
             this.layoutControlItem1.Control = this.txtImportFilePath;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(424, 32);
+            this.layoutControlItem1.Size = new System.Drawing.Size(397, 26);
             this.layoutControlItem1.Text = "Import-Dateipfad ";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(135, 21);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(103, 16);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.btnBrowse;
-            this.layoutControlItem3.Location = new System.Drawing.Point(424, 0);
+            this.layoutControlItem3.Location = new System.Drawing.Point(397, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(154, 32);
+            this.layoutControlItem3.Size = new System.Drawing.Size(118, 26);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnCancel;
-            this.layoutControlItem5.Location = new System.Drawing.Point(424, 32);
+            this.layoutControlItem5.Location = new System.Drawing.Point(397, 26);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(154, 31);
+            this.layoutControlItem5.Size = new System.Drawing.Size(118, 30);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.btnOk;
-            this.layoutControlItem4.Location = new System.Drawing.Point(343, 32);
+            this.layoutControlItem4.Location = new System.Drawing.Point(301, 26);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(81, 31);
+            this.layoutControlItem4.Size = new System.Drawing.Size(96, 30);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
+            // 
+            // cmbLVSection
+            // 
+            this.cmbLVSection.Location = new System.Drawing.Point(113, 33);
+            this.cmbLVSection.Name = "cmbLVSection";
+            this.cmbLVSection.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbLVSection.Properties.NullText = "";
+            this.cmbLVSection.Size = new System.Drawing.Size(191, 22);
+            this.cmbLVSection.StyleController = this.layoutControl1;
+            this.cmbLVSection.TabIndex = 10;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.cmbLVSection;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 32);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 26);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(343, 31);
-            this.layoutControlItem2.Text = "LV Sektion ";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(135, 21);
+            this.layoutControlItem2.Size = new System.Drawing.Size(301, 30);
+            this.layoutControlItem2.Text = "LV Section";
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(103, 16);
             // 
             // frmGAEBImport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(612, 103);
+            this.ClientSize = new System.Drawing.Size(525, 66);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmGAEBImport";
@@ -233,6 +228,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSection.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             this.ResumeLayout(false);
 
@@ -250,7 +246,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
-        private System.Windows.Forms.ComboBox cmbLVSection;
+        private DevExpress.XtraEditors.LookUpEdit cmbLVSection;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
     }
 }

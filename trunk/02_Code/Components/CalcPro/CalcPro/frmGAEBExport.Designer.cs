@@ -86,32 +86,29 @@
             this.layoutControl1.Controls.Add(this.txtProjectName);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1181, 228, 250, 350);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(815, 204);
+            this.layoutControl1.Size = new System.Drawing.Size(611, 145);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // cmbLVSection
             // 
-            this.cmbLVSection.Location = new System.Drawing.Point(201, 151);
-            this.cmbLVSection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbLVSection.Location = new System.Drawing.Point(141, 112);
             this.cmbLVSection.Name = "cmbLVSection";
             this.cmbLVSection.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbLVSection.Size = new System.Drawing.Size(415, 28);
+            this.cmbLVSection.Size = new System.Drawing.Size(326, 22);
             this.cmbLVSection.StyleController = this.layoutControl1;
             this.cmbLVSection.TabIndex = 10;
             // 
             // btnExport
             // 
             this.btnExport.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnExport.Location = new System.Drawing.Point(622, 151);
-            this.btnExport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExport.Location = new System.Drawing.Point(471, 112);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(169, 27);
+            this.btnExport.Size = new System.Drawing.Size(132, 22);
             this.btnExport.StyleController = this.layoutControl1;
             this.btnExport.TabIndex = 9;
             this.btnExport.Text = "Export";
@@ -121,10 +118,9 @@
             // 
             this.btnBrowse.ImageOptions.Image = global::CalcPro.Properties.Resources.ExportFile_16x16;
             this.btnBrowse.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnBrowse.Location = new System.Drawing.Point(622, 87);
-            this.btnBrowse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBrowse.Location = new System.Drawing.Point(471, 60);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(169, 27);
+            this.btnBrowse.Size = new System.Drawing.Size(132, 22);
             this.btnBrowse.StyleController = this.layoutControl1;
             this.btnBrowse.TabIndex = 8;
             this.btnBrowse.Text = "Durchsuchen";
@@ -132,8 +128,7 @@
             // 
             // cmbFormatType
             // 
-            this.cmbFormatType.Location = new System.Drawing.Point(201, 119);
-            this.cmbFormatType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbFormatType.Location = new System.Drawing.Point(141, 86);
             this.cmbFormatType.Name = "cmbFormatType";
             this.cmbFormatType.Properties.AllowMouseWheel = false;
             this.cmbFormatType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -141,36 +136,33 @@
             this.cmbFormatType.Properties.DropDownRows = 12;
             this.cmbFormatType.Properties.PopupSizeable = true;
             this.cmbFormatType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbFormatType.Size = new System.Drawing.Size(590, 28);
+            this.cmbFormatType.Size = new System.Drawing.Size(462, 22);
             this.cmbFormatType.StyleController = this.layoutControl1;
             this.cmbFormatType.TabIndex = 7;
             // 
             // txtFilePath
             // 
-            this.txtFilePath.Location = new System.Drawing.Point(201, 87);
-            this.txtFilePath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFilePath.Location = new System.Drawing.Point(141, 60);
             this.txtFilePath.Name = "txtFilePath";
             this.txtFilePath.Properties.ReadOnly = true;
-            this.txtFilePath.Size = new System.Drawing.Size(415, 28);
+            this.txtFilePath.Size = new System.Drawing.Size(326, 22);
             this.txtFilePath.StyleController = this.layoutControl1;
             this.txtFilePath.TabIndex = 6;
             // 
             // txtFileName
             // 
-            this.txtFileName.Location = new System.Drawing.Point(201, 55);
-            this.txtFileName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFileName.Location = new System.Drawing.Point(141, 34);
             this.txtFileName.Name = "txtFileName";
-            this.txtFileName.Size = new System.Drawing.Size(590, 28);
+            this.txtFileName.Size = new System.Drawing.Size(462, 22);
             this.txtFileName.StyleController = this.layoutControl1;
             this.txtFileName.TabIndex = 5;
             // 
             // txtProjectName
             // 
-            this.txtProjectName.Location = new System.Drawing.Point(201, 23);
-            this.txtProjectName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProjectName.Location = new System.Drawing.Point(141, 8);
             this.txtProjectName.Name = "txtProjectName";
             this.txtProjectName.Properties.ReadOnly = true;
-            this.txtProjectName.Size = new System.Drawing.Size(590, 28);
+            this.txtProjectName.Size = new System.Drawing.Size(462, 22);
             this.txtProjectName.StyleController = this.layoutControl1;
             this.txtProjectName.TabIndex = 4;
             // 
@@ -191,8 +183,8 @@
             this.layoutControlItem6,
             this.cmbLVSection1});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(20, 20, 20, 20);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(815, 204);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(611, 145);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -200,52 +192,52 @@
             this.layoutControlItem1.Control = this.txtProjectName;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(773, 32);
+            this.layoutControlItem1.Size = new System.Drawing.Size(599, 26);
             this.layoutControlItem1.Text = "Ausgewähltes Projekt ";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(173, 21);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(130, 16);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.txtFileName;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 32);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 26);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(773, 32);
+            this.layoutControlItem2.Size = new System.Drawing.Size(599, 26);
             this.layoutControlItem2.Text = "Export-Dateiname ";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(173, 21);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(130, 16);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.txtFilePath;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 64);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 52);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(598, 32);
+            this.layoutControlItem3.Size = new System.Drawing.Size(463, 26);
             this.layoutControlItem3.Text = "Export-Dateipfad ";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(173, 21);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(130, 16);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.cmbFormatType;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 78);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(773, 32);
+            this.layoutControlItem4.Size = new System.Drawing.Size(599, 26);
             this.layoutControlItem4.Text = "Formattyp ";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(173, 21);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(130, 16);
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnBrowse;
-            this.layoutControlItem5.Location = new System.Drawing.Point(598, 64);
+            this.layoutControlItem5.Location = new System.Drawing.Point(463, 52);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(175, 32);
+            this.layoutControlItem5.Size = new System.Drawing.Size(136, 26);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.btnExport;
-            this.layoutControlItem6.Location = new System.Drawing.Point(598, 128);
+            this.layoutControlItem6.Location = new System.Drawing.Point(463, 104);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(175, 34);
+            this.layoutControlItem6.Size = new System.Drawing.Size(136, 29);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
@@ -256,21 +248,20 @@
             this.cmbLVSection1.AppearanceItemCaption.Options.UseFont = true;
             this.cmbLVSection1.AppearanceItemCaption.Options.UseForeColor = true;
             this.cmbLVSection1.Control = this.cmbLVSection;
-            this.cmbLVSection1.Location = new System.Drawing.Point(0, 128);
+            this.cmbLVSection1.Location = new System.Drawing.Point(0, 104);
             this.cmbLVSection1.Name = "cmbLVSection1";
-            this.cmbLVSection1.Size = new System.Drawing.Size(598, 34);
+            this.cmbLVSection1.Size = new System.Drawing.Size(463, 29);
             this.cmbLVSection1.Text = "LV Sektion";
-            this.cmbLVSection1.TextSize = new System.Drawing.Size(173, 18);
+            this.cmbLVSection1.TextSize = new System.Drawing.Size(130, 14);
             // 
             // frmGAEBExport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 204);
+            this.ClientSize = new System.Drawing.Size(611, 145);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmGAEBExport";
