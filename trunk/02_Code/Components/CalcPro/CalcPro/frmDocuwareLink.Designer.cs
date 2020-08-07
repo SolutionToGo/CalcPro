@@ -78,9 +78,10 @@
             // 
             // txtLink1
             // 
-            this.txtLink1.Location = new System.Drawing.Point(103, 7);
+            this.txtLink1.Location = new System.Drawing.Point(142, 8);
+            this.txtLink1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLink1.Name = "txtLink1";
-            this.txtLink1.Size = new System.Drawing.Size(380, 22);
+            this.txtLink1.Size = new System.Drawing.Size(421, 28);
             this.txtLink1.StyleController = this.layoutControl1;
             this.txtLink1.TabIndex = 1;
             this.txtLink1.TextChanged += new System.EventHandler(this.textEdit1_TextChanged);
@@ -113,10 +114,11 @@
             this.layoutControl1.Controls.Add(this.txtLink1);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(984, 604, 450, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(747, 131);
+            this.layoutControl1.Size = new System.Drawing.Size(871, 161);
             this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -125,9 +127,10 @@
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.discountdel_32x321;
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancel.Location = new System.Drawing.Point(487, 85);
+            this.btnCancel.Location = new System.Drawing.Point(567, 104);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(124, 36);
+            this.btnCancel.Size = new System.Drawing.Size(145, 38);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 0;
             this.btnCancel.Text = "Abbrechen";
@@ -137,9 +140,10 @@
             // 
             this.btnOK.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
             this.btnOK.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnOK.Location = new System.Drawing.Point(615, 85);
+            this.btnOK.Location = new System.Drawing.Point(716, 104);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(125, 36);
+            this.btnOK.Size = new System.Drawing.Size(147, 38);
             this.btnOK.StyleController = this.layoutControl1;
             this.btnOK.TabIndex = 0;
             this.btnOK.Text = "Speichern";
@@ -149,9 +153,10 @@
             // 
             this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
             this.simpleButton3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton3.Location = new System.Drawing.Point(487, 59);
+            this.simpleButton3.Location = new System.Drawing.Point(567, 72);
+            this.simpleButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(124, 22);
+            this.simpleButton3.Size = new System.Drawing.Size(145, 28);
             this.simpleButton3.StyleController = this.layoutControl1;
             this.simpleButton3.TabIndex = 2;
             this.simpleButton3.Text = "Suchen";
@@ -161,9 +166,10 @@
             // 
             this.btnOpenLink3.ImageOptions.Image = global::CalcPro.Properties.Resources.Open2_16x16;
             this.btnOpenLink3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnOpenLink3.Location = new System.Drawing.Point(615, 59);
+            this.btnOpenLink3.Location = new System.Drawing.Point(716, 72);
+            this.btnOpenLink3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpenLink3.Name = "btnOpenLink3";
-            this.btnOpenLink3.Size = new System.Drawing.Size(125, 22);
+            this.btnOpenLink3.Size = new System.Drawing.Size(147, 28);
             this.btnOpenLink3.StyleController = this.layoutControl1;
             this.btnOpenLink3.TabIndex = 6;
             this.btnOpenLink3.Text = "Öffnen";
@@ -173,9 +179,10 @@
             // 
             this.btnOpenLink2.ImageOptions.Image = global::CalcPro.Properties.Resources.Open2_16x16;
             this.btnOpenLink2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnOpenLink2.Location = new System.Drawing.Point(615, 33);
+            this.btnOpenLink2.Location = new System.Drawing.Point(716, 40);
+            this.btnOpenLink2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpenLink2.Name = "btnOpenLink2";
-            this.btnOpenLink2.Size = new System.Drawing.Size(125, 22);
+            this.btnOpenLink2.Size = new System.Drawing.Size(147, 28);
             this.btnOpenLink2.StyleController = this.layoutControl1;
             this.btnOpenLink2.TabIndex = 5;
             this.btnOpenLink2.Text = "Öffnen";
@@ -185,9 +192,10 @@
             // 
             this.btnOpenLink1.ImageOptions.Image = global::CalcPro.Properties.Resources.Open2_16x16;
             this.btnOpenLink1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnOpenLink1.Location = new System.Drawing.Point(615, 7);
+            this.btnOpenLink1.Location = new System.Drawing.Point(716, 8);
+            this.btnOpenLink1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpenLink1.Name = "btnOpenLink1";
-            this.btnOpenLink1.Size = new System.Drawing.Size(125, 22);
+            this.btnOpenLink1.Size = new System.Drawing.Size(147, 28);
             this.btnOpenLink1.StyleController = this.layoutControl1;
             this.btnOpenLink1.TabIndex = 4;
             this.btnOpenLink1.Text = "Öffnen";
@@ -197,9 +205,10 @@
             // 
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(487, 33);
+            this.simpleButton2.Location = new System.Drawing.Point(567, 40);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(124, 22);
+            this.simpleButton2.Size = new System.Drawing.Size(145, 28);
             this.simpleButton2.StyleController = this.layoutControl1;
             this.simpleButton2.TabIndex = 2;
             this.simpleButton2.Text = "Suchen";
@@ -209,9 +218,10 @@
             // 
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(487, 7);
+            this.simpleButton1.Location = new System.Drawing.Point(567, 8);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(124, 22);
+            this.simpleButton1.Size = new System.Drawing.Size(145, 28);
             this.simpleButton1.StyleController = this.layoutControl1;
             this.simpleButton1.TabIndex = 2;
             this.simpleButton1.Text = "Suchen";
@@ -219,9 +229,10 @@
             // 
             // txtLink3
             // 
-            this.txtLink3.Location = new System.Drawing.Point(103, 59);
+            this.txtLink3.Location = new System.Drawing.Point(142, 72);
+            this.txtLink3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLink3.Name = "txtLink3";
-            this.txtLink3.Size = new System.Drawing.Size(380, 22);
+            this.txtLink3.Size = new System.Drawing.Size(421, 28);
             this.txtLink3.StyleController = this.layoutControl1;
             this.txtLink3.TabIndex = 1;
             this.txtLink3.TextChanged += new System.EventHandler(this.textEdit3_TextChanged);
@@ -229,9 +240,10 @@
             // 
             // txtLink2
             // 
-            this.txtLink2.Location = new System.Drawing.Point(103, 33);
+            this.txtLink2.Location = new System.Drawing.Point(142, 40);
+            this.txtLink2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLink2.Name = "txtLink2";
-            this.txtLink2.Size = new System.Drawing.Size(380, 22);
+            this.txtLink2.Size = new System.Drawing.Size(421, 28);
             this.txtLink2.StyleController = this.layoutControl1;
             this.txtLink2.TabIndex = 1;
             this.txtLink2.TextChanged += new System.EventHandler(this.textEdit2_TextChanged);
@@ -260,8 +272,8 @@
             this.emptySpaceItem6,
             this.layoutControlItem11});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(747, 131);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(871, 161);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -269,105 +281,105 @@
             this.layoutControlItem1.Control = this.txtLink1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(480, 26);
+            this.layoutControlItem1.Size = new System.Drawing.Size(559, 32);
             this.layoutControlItem1.Text = "Docuware Link1";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(93, 16);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(131, 21);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.txtLink2;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 26);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 32);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(480, 26);
+            this.layoutControlItem2.Size = new System.Drawing.Size(559, 32);
             this.layoutControlItem2.Text = "Docuware Link2";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(93, 16);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(131, 21);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.txtLink3;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 52);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 64);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(480, 26);
-            this.layoutControlItem3.Text = "Docuware Link3";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(93, 16);
+            this.layoutControlItem3.Size = new System.Drawing.Size(559, 32);
+            this.layoutControlItem3.Text = "Docuware Link3  ";
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(131, 21);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.simpleButton1;
-            this.layoutControlItem4.Location = new System.Drawing.Point(480, 0);
+            this.layoutControlItem4.Location = new System.Drawing.Point(559, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(128, 26);
+            this.layoutControlItem4.Size = new System.Drawing.Size(149, 32);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.simpleButton2;
-            this.layoutControlItem5.Location = new System.Drawing.Point(480, 26);
+            this.layoutControlItem5.Location = new System.Drawing.Point(559, 32);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(128, 26);
+            this.layoutControlItem5.Size = new System.Drawing.Size(149, 32);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.simpleButton3;
-            this.layoutControlItem6.Location = new System.Drawing.Point(480, 52);
+            this.layoutControlItem6.Location = new System.Drawing.Point(559, 64);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(128, 26);
+            this.layoutControlItem6.Size = new System.Drawing.Size(149, 32);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.btnOpenLink1;
-            this.layoutControlItem7.Location = new System.Drawing.Point(608, 0);
+            this.layoutControlItem7.Location = new System.Drawing.Point(708, 0);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(129, 26);
+            this.layoutControlItem7.Size = new System.Drawing.Size(151, 32);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.btnOpenLink2;
-            this.layoutControlItem8.Location = new System.Drawing.Point(608, 26);
+            this.layoutControlItem8.Location = new System.Drawing.Point(708, 32);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(129, 26);
+            this.layoutControlItem8.Size = new System.Drawing.Size(151, 32);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
             // 
             // layoutControlItem9
             // 
             this.layoutControlItem9.Control = this.btnOpenLink3;
-            this.layoutControlItem9.Location = new System.Drawing.Point(608, 52);
+            this.layoutControlItem9.Location = new System.Drawing.Point(708, 64);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(129, 26);
+            this.layoutControlItem9.Size = new System.Drawing.Size(151, 32);
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
             // 
             // layoutControlItem10
             // 
             this.layoutControlItem10.Control = this.btnOK;
-            this.layoutControlItem10.Location = new System.Drawing.Point(608, 78);
+            this.layoutControlItem10.Location = new System.Drawing.Point(708, 96);
             this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(129, 43);
+            this.layoutControlItem10.Size = new System.Drawing.Size(151, 53);
             this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem10.TextVisible = false;
             // 
             // emptySpaceItem6
             // 
             this.emptySpaceItem6.AllowHotTrack = false;
-            this.emptySpaceItem6.Location = new System.Drawing.Point(0, 78);
+            this.emptySpaceItem6.Location = new System.Drawing.Point(0, 96);
             this.emptySpaceItem6.Name = "emptySpaceItem6";
-            this.emptySpaceItem6.Size = new System.Drawing.Size(480, 43);
+            this.emptySpaceItem6.Size = new System.Drawing.Size(559, 53);
             this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem11
             // 
             this.layoutControlItem11.Control = this.btnCancel;
-            this.layoutControlItem11.Location = new System.Drawing.Point(480, 78);
+            this.layoutControlItem11.Location = new System.Drawing.Point(559, 96);
             this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(128, 43);
+            this.layoutControlItem11.Size = new System.Drawing.Size(149, 53);
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem11.TextVisible = false;
             // 
@@ -377,13 +389,14 @@
             // 
             // frmDocuwareLink
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(747, 131);
+            this.ClientSize = new System.Drawing.Size(871, 161);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmDocuwareLink";

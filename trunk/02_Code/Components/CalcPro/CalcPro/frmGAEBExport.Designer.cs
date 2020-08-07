@@ -97,12 +97,12 @@
             // 
             // cmbLVSection
             // 
-            this.cmbLVSection.Location = new System.Drawing.Point(185, 137);
+            this.cmbLVSection.Location = new System.Drawing.Point(190, 137);
             this.cmbLVSection.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbLVSection.Name = "cmbLVSection";
             this.cmbLVSection.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbLVSection.Size = new System.Drawing.Size(360, 28);
+            this.cmbLVSection.Size = new System.Drawing.Size(355, 28);
             this.cmbLVSection.StyleController = this.layoutControl1;
             this.cmbLVSection.TabIndex = 10;
             // 
@@ -112,7 +112,7 @@
             this.btnExport.Location = new System.Drawing.Point(549, 137);
             this.btnExport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(155, 27);
+            this.btnExport.Size = new System.Drawing.Size(155, 28);
             this.btnExport.StyleController = this.layoutControl1;
             this.btnExport.TabIndex = 9;
             this.btnExport.Text = "Export";
@@ -125,7 +125,7 @@
             this.btnBrowse.Location = new System.Drawing.Point(549, 73);
             this.btnBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(155, 27);
+            this.btnBrowse.Size = new System.Drawing.Size(155, 28);
             this.btnBrowse.StyleController = this.layoutControl1;
             this.btnBrowse.TabIndex = 8;
             this.btnBrowse.Text = "Durchsuchen";
@@ -133,7 +133,7 @@
             // 
             // cmbFormatType
             // 
-            this.cmbFormatType.Location = new System.Drawing.Point(185, 105);
+            this.cmbFormatType.Location = new System.Drawing.Point(190, 105);
             this.cmbFormatType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbFormatType.Name = "cmbFormatType";
             this.cmbFormatType.Properties.AllowMouseWheel = false;
@@ -142,36 +142,40 @@
             this.cmbFormatType.Properties.DropDownRows = 12;
             this.cmbFormatType.Properties.PopupSizeable = true;
             this.cmbFormatType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbFormatType.Size = new System.Drawing.Size(519, 28);
+            this.cmbFormatType.Size = new System.Drawing.Size(514, 28);
             this.cmbFormatType.StyleController = this.layoutControl1;
             this.cmbFormatType.TabIndex = 7;
             // 
             // txtFilePath
             // 
-            this.txtFilePath.Location = new System.Drawing.Point(185, 73);
+            this.txtFilePath.Location = new System.Drawing.Point(190, 73);
             this.txtFilePath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFilePath.Name = "txtFilePath";
+            this.txtFilePath.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txtFilePath.Properties.Appearance.Options.UseBackColor = true;
             this.txtFilePath.Properties.ReadOnly = true;
-            this.txtFilePath.Size = new System.Drawing.Size(360, 28);
+            this.txtFilePath.Size = new System.Drawing.Size(355, 28);
             this.txtFilePath.StyleController = this.layoutControl1;
             this.txtFilePath.TabIndex = 6;
             // 
             // txtFileName
             // 
-            this.txtFileName.Location = new System.Drawing.Point(185, 41);
+            this.txtFileName.Location = new System.Drawing.Point(190, 41);
             this.txtFileName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFileName.Name = "txtFileName";
-            this.txtFileName.Size = new System.Drawing.Size(519, 28);
+            this.txtFileName.Size = new System.Drawing.Size(514, 28);
             this.txtFileName.StyleController = this.layoutControl1;
             this.txtFileName.TabIndex = 5;
             // 
             // txtProjectName
             // 
-            this.txtProjectName.Location = new System.Drawing.Point(185, 9);
+            this.txtProjectName.Location = new System.Drawing.Point(190, 9);
             this.txtProjectName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtProjectName.Name = "txtProjectName";
+            this.txtProjectName.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txtProjectName.Properties.Appearance.Options.UseBackColor = true;
             this.txtProjectName.Properties.ReadOnly = true;
-            this.txtProjectName.Size = new System.Drawing.Size(519, 28);
+            this.txtProjectName.Size = new System.Drawing.Size(514, 28);
             this.txtProjectName.StyleController = this.layoutControl1;
             this.txtProjectName.TabIndex = 4;
             // 
@@ -202,8 +206,8 @@
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(699, 32);
-            this.layoutControlItem1.Text = "Ausgewähltes Projekt ";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(173, 21);
+            this.layoutControlItem1.Text = "Ausgewähltes Projekt  ";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(178, 21);
             // 
             // layoutControlItem2
             // 
@@ -212,7 +216,7 @@
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(699, 32);
             this.layoutControlItem2.Text = "Export-Dateiname ";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(173, 21);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(178, 21);
             // 
             // layoutControlItem3
             // 
@@ -221,7 +225,7 @@
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(540, 32);
             this.layoutControlItem3.Text = "Export-Dateipfad ";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(173, 21);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(178, 21);
             // 
             // layoutControlItem4
             // 
@@ -230,7 +234,7 @@
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(699, 32);
             this.layoutControlItem4.Text = "Formattyp ";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(173, 21);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(178, 21);
             // 
             // layoutControlItem5
             // 
@@ -252,16 +256,12 @@
             // 
             // cmbLVSection1
             // 
-            this.cmbLVSection1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.cmbLVSection1.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
-            this.cmbLVSection1.AppearanceItemCaption.Options.UseFont = true;
-            this.cmbLVSection1.AppearanceItemCaption.Options.UseForeColor = true;
             this.cmbLVSection1.Control = this.cmbLVSection;
             this.cmbLVSection1.Location = new System.Drawing.Point(0, 128);
             this.cmbLVSection1.Name = "cmbLVSection1";
             this.cmbLVSection1.Size = new System.Drawing.Size(540, 36);
             this.cmbLVSection1.Text = "LV Sektion";
-            this.cmbLVSection1.TextSize = new System.Drawing.Size(173, 18);
+            this.cmbLVSection1.TextSize = new System.Drawing.Size(178, 21);
             // 
             // frmGAEBExport
             // 

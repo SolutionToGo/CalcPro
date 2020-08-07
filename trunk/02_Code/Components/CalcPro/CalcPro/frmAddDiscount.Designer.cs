@@ -80,19 +80,21 @@
             this.layoutControl1.Controls.Add(this.txtFromOZ);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(988, 213, 450, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(499, 283);
+            this.layoutControl1.Size = new System.Drawing.Size(582, 348);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // txtShortdescription
             // 
-            this.txtShortdescription.Location = new System.Drawing.Point(64, 85);
+            this.txtShortdescription.Location = new System.Drawing.Point(93, 104);
+            this.txtShortdescription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtShortdescription.MaxLength = 80;
             this.txtShortdescription.Name = "txtShortdescription";
-            this.txtShortdescription.Size = new System.Drawing.Size(428, 151);
+            this.txtShortdescription.Size = new System.Drawing.Size(481, 194);
             this.txtShortdescription.TabIndex = 9;
             this.txtShortdescription.Text = "";
             // 
@@ -101,9 +103,10 @@
             this.btbCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btbCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.discountdel_32x32;
             this.btbCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btbCancel.Location = new System.Drawing.Point(249, 240);
+            this.btbCancel.Location = new System.Drawing.Point(290, 302);
+            this.btbCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btbCancel.Name = "btbCancel";
-            this.btbCancel.Size = new System.Drawing.Size(111, 36);
+            this.btbCancel.Size = new System.Drawing.Size(130, 38);
             this.btbCancel.StyleController = this.layoutControl1;
             this.btbCancel.TabIndex = 8;
             this.btbCancel.Text = "Abbrechen";
@@ -113,9 +116,10 @@
             // 
             this.btnSave.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
             this.btnSave.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnSave.Location = new System.Drawing.Point(364, 240);
+            this.btnSave.Location = new System.Drawing.Point(424, 302);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(128, 36);
+            this.btnSave.Size = new System.Drawing.Size(150, 38);
             this.btnSave.StyleController = this.layoutControl1;
             this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Speichern";
@@ -123,31 +127,34 @@
             // 
             // txtDiscount
             // 
-            this.txtDiscount.Location = new System.Drawing.Point(64, 59);
+            this.txtDiscount.Location = new System.Drawing.Point(93, 72);
+            this.txtDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDiscount.Name = "txtDiscount";
             this.txtDiscount.Properties.Mask.EditMask = "\\d{0,2}(\\R.\\d{0,2})";
             this.txtDiscount.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtDiscount.Properties.Mask.ShowPlaceHolders = false;
             this.txtDiscount.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtDiscount.Size = new System.Drawing.Size(428, 22);
+            this.txtDiscount.Size = new System.Drawing.Size(481, 28);
             this.txtDiscount.StyleController = this.layoutControl1;
             this.txtDiscount.TabIndex = 6;
             this.txtDiscount.Enter += new System.EventHandler(this.txtToOZ_Enter);
             // 
             // txtToOZ
             // 
-            this.txtToOZ.Location = new System.Drawing.Point(64, 33);
+            this.txtToOZ.Location = new System.Drawing.Point(93, 40);
+            this.txtToOZ.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtToOZ.Name = "txtToOZ";
-            this.txtToOZ.Size = new System.Drawing.Size(428, 22);
+            this.txtToOZ.Size = new System.Drawing.Size(481, 28);
             this.txtToOZ.StyleController = this.layoutControl1;
             this.txtToOZ.TabIndex = 5;
             this.txtToOZ.Enter += new System.EventHandler(this.txtToOZ_Enter);
             // 
             // txtFromOZ
             // 
-            this.txtFromOZ.Location = new System.Drawing.Point(64, 7);
+            this.txtFromOZ.Location = new System.Drawing.Point(93, 8);
+            this.txtFromOZ.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFromOZ.Name = "txtFromOZ";
-            this.txtFromOZ.Size = new System.Drawing.Size(428, 22);
+            this.txtFromOZ.Size = new System.Drawing.Size(481, 28);
             this.txtFromOZ.StyleController = this.layoutControl1;
             this.txtFromOZ.TabIndex = 4;
             this.txtFromOZ.Enter += new System.EventHandler(this.txtFromOZ_Enter);
@@ -170,8 +177,8 @@
             this.layoutControlItem6,
             this.layoutControlItem4});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(499, 283);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(582, 348);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -179,71 +186,72 @@
             this.layoutControlItem1.Control = this.txtFromOZ;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(489, 26);
+            this.layoutControlItem1.Size = new System.Drawing.Size(570, 32);
             this.layoutControlItem1.Text = "Von OZ";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(54, 16);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(82, 21);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.txtToOZ;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 26);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 32);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(489, 26);
+            this.layoutControlItem2.Size = new System.Drawing.Size(570, 32);
             this.layoutControlItem2.Text = "Bis OZ";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(54, 16);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(82, 21);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.txtDiscount;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 52);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 64);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(489, 26);
+            this.layoutControlItem3.Size = new System.Drawing.Size(570, 32);
             this.layoutControlItem3.Text = "Nachlass";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(54, 16);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(82, 21);
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btbCancel;
-            this.layoutControlItem5.Location = new System.Drawing.Point(242, 233);
+            this.layoutControlItem5.Location = new System.Drawing.Point(282, 294);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(115, 40);
+            this.layoutControlItem5.Size = new System.Drawing.Size(134, 42);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 233);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 294);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(242, 40);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(282, 42);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.txtShortdescription;
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 78);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(489, 155);
-            this.layoutControlItem6.Text = "Kurz Text";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(54, 16);
+            this.layoutControlItem6.Size = new System.Drawing.Size(570, 198);
+            this.layoutControlItem6.Text = "Kurz Text  ";
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(82, 21);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.btnSave;
-            this.layoutControlItem4.Location = new System.Drawing.Point(357, 233);
+            this.layoutControlItem4.Location = new System.Drawing.Point(416, 294);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(132, 40);
+            this.layoutControlItem4.Size = new System.Drawing.Size(154, 42);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
             // frmAddDiscount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btbCancel;
-            this.ClientSize = new System.Drawing.Size(499, 283);
+            this.ClientSize = new System.Drawing.Size(582, 348);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmAddDiscount";

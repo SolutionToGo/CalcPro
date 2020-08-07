@@ -55,13 +55,15 @@ namespace CalcPro
             InitializeComponent();
             _CustomerType = _Type;
             ObjECustomer = ObjECustomer1;
-        }
+
+         }
         #endregion
 
         #region Events
 
        private void frmCustomerMaster_Load(object sender, EventArgs e)
         {
+         
             try
             {
                 if(Utility.CustomerDataAccess == "7")
@@ -132,7 +134,7 @@ namespace CalcPro
                 Utility.ShowError(ex);
             }
         }
-
+      
         private void btnSaveAddress_Click(object sender, EventArgs e)
         {
             try
@@ -182,6 +184,18 @@ namespace CalcPro
             {
                 Utility.ShowError(ex);
             }
+        }
+        private void frmCustomerMaster_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                if (e.KeyData == Keys.Escape)
+                {
+                    btnCancelCustomer_Click(0, e);
+                }
+
+            }
+            catch (Exception ex) { }
         }
 
         private void txtContactName_Enter(object sender, EventArgs e)
@@ -312,16 +326,11 @@ namespace CalcPro
 
         }
 
+
+
         #endregion
 
-        private void frmCustomerMaster_KeyDown(object sender, KeyEventArgs e)
-        {
-            try
-            {
-                if (e.KeyData == Keys.Escape)
-                    this.Close();
-            }
-            catch (Exception ex) { }
-        }
+
+      
     }
 }

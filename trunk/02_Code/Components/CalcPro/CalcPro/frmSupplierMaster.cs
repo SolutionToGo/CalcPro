@@ -130,6 +130,15 @@ namespace CalcPro
                 Utility.ShowError(ex);
             }
         }
+        private void frmSupplierMaster_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                if (e.KeyData == Keys.Escape)
+                    btnCancel_Click(0, e);
+            }
+            catch (Exception ex) { }
+        }
 
         private void txtContactName_Enter(object sender, EventArgs e)
         {
@@ -245,14 +254,6 @@ namespace CalcPro
         }
         #endregion
 
-        private void frmSupplierMaster_KeyDown(object sender, KeyEventArgs e)
-        {
-            try
-            {
-                if (e.KeyData == Keys.Escape)
-                    this.Close();
-            }
-            catch (Exception ex) { }
-        }
+       
     }
 }

@@ -60,7 +60,18 @@ namespace CalcPro
         {
             LoadProject(true);
         }
+        private void frmLoadProject_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                if (e.KeyData == Keys.Escape)
+                {
+                    this.Close();
+                }
 
+            }
+            catch (Exception ex) { }
+        }
         private void frmLoadProject_KeyPress(object sender, KeyPressEventArgs e)
         {
             if(e.KeyChar == (char)Keys.Enter)
@@ -244,5 +255,6 @@ namespace CalcPro
         }
         #endregion
 
+        
     }
 }
