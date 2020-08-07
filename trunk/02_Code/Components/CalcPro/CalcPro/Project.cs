@@ -144,6 +144,10 @@ namespace CalcPro
         {
             InitializeComponent();
             this.tlPositions.GetNodeDisplayValue += new DevExpress.XtraTreeList.GetNodeDisplayValueEventHandler(this.treeList1_GetNodeDisplayValue);
+            this.ChkLVCreateNew.CheckedChanged += ChkLVCreateNew_CheckedChanged;
+            this.chkCostMontageEntry.CheckedChanged += chkCostMontageEntry_CheckedChanged;
+            this.cmbLVSelectTreeListColumns.EditValueChanged += cmbLVSelectTreeListColumns_EditValueChanged;
+            this.rpLVDropMode.SelectedIndexChanged += rpLVDropMode_SelectedIndexChanged;
         }
 
         #endregion
@@ -602,7 +606,7 @@ namespace CalcPro
                         gcProposedDetails.DataSource = null;
                         if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
                         {
-                            layoutControl16.Enabled = false;
+                            //layoutControl16.Enabled = false;
                             btnSubmit.Enabled = false;
                             gvSupplier.OptionsBehavior.Editable = false;
                         }
@@ -958,7 +962,7 @@ namespace CalcPro
                         gcProposedDetails.DataSource = null;
                         if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
                         {
-                            layoutControl16.Enabled = false;
+                            //layoutControl16.Enabled = false;
                             btnSubmit.Enabled = false;
                             gvSupplier.OptionsBehavior.Editable = false;
                         }
@@ -4220,22 +4224,6 @@ namespace CalcPro
             }
         }
 
-        private void cmbSelectGridviewOptions_CustomDisplayText(object sender, CustomDisplayTextEventArgs e)
-        {
-            try
-            {
-                if (cmbSelectGridviewOptions.EditValue.ToString() == ""
-                    || cmbSelectGridviewOptions.EditValue == null)
-                {
-                    cmbSelectGridviewOptions.Text = "Auswahl";
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
-
         private void txtSurchargeFrom_Validating(object sender, CancelEventArgs e)
         {
             if (txtSurchargeTo.Text != "")
@@ -5432,10 +5420,7 @@ namespace CalcPro
 
         private void ChkManualMontageentry_CheckedChanged(object sender, EventArgs e)
         {
-            if (ChkManualMontageentry.Checked == true)
-                txtLPMO.ReadOnly = false;
-            else
-                txtLPMO.ReadOnly = true;
+            
         }
 
         private void txtType_Leave_1(object sender, EventArgs e)
@@ -10287,7 +10272,7 @@ namespace CalcPro
                     {
                         if (Utility.LVSectionEditAccess == "7")
                         {
-                            layoutControl16.Enabled = false;
+                            //layoutControl16.Enabled = false;
                             btnSubmit.Enabled = false;
                             gvSupplier.OptionsBehavior.Editable = false;
                         }
@@ -10298,7 +10283,7 @@ namespace CalcPro
                         {
                             if (Utility.CalcAccess != "7")
                             {
-                                layoutControl16.Enabled = true;
+                                //layoutControl16.Enabled = true;
                                 btnSubmit.Enabled = true;
                                 gvSupplier.OptionsBehavior.Editable = true;
                             }
@@ -10689,34 +10674,33 @@ namespace CalcPro
         {
             try
             {
-                int iRowindex = gvSupplier.FocusedRowHandle;
-                if (iRowindex != null && iRowindex >= 0)
+                if (gvSupplier.FocusedRowHandle >= 0)
                 {
-                    txtListPrice.Text = ObjESupplier.dtPositions.Rows[iRowindex]["MA_listprice"] == DBNull.Value ? ""
-                        : ObjESupplier.dtPositions.Rows[iRowindex]["MA_listprice"].ToString();
-                    txtUpdatesuppliertext.Rtf = ObjESupplier.dtPositions.Rows[iRowindex]["ShortDescription"] == DBNull.Value ? ""
-                        : ObjESupplier.dtPositions.Rows[iRowindex]["ShortDescription"].ToString();
-                    txtProposalMenge.Text = ObjESupplier.dtPositions.Rows[iRowindex]["Menge"] == DBNull.Value ? ""
-                        : ObjESupplier.dtPositions.Rows[iRowindex]["Menge"].ToString();
-                    txtProposalDim1.Text = ObjESupplier.dtPositions.Rows[iRowindex]["A"] == DBNull.Value ? ""
-                        : ObjESupplier.dtPositions.Rows[iRowindex]["A"].ToString();
-                    txtProposalDim2.Text = ObjESupplier.dtPositions.Rows[iRowindex]["B"] == DBNull.Value ? ""
-                        : ObjESupplier.dtPositions.Rows[iRowindex]["B"].ToString();
-                    txtProposalDim3.Text = ObjESupplier.dtPositions.Rows[iRowindex]["L"] == DBNull.Value ? ""
-                        : ObjESupplier.dtPositions.Rows[iRowindex]["L"].ToString();
-                    txtME.Text = ObjESupplier.dtPositions.Rows[iRowindex]["ME"] == DBNull.Value ? ""
-                        : ObjESupplier.dtPositions.Rows[iRowindex]["ME"].ToString();
-                    txtMulti1.Text = ObjESupplier.dtPositions.Rows[iRowindex]["MA_Multi1"] == DBNull.Value ? ""
-                        : ObjESupplier.dtPositions.Rows[iRowindex]["MA_Multi1"].ToString();
-                    txtMulti2.Text = ObjESupplier.dtPositions.Rows[iRowindex]["MA_multi2"] == DBNull.Value ? ""
-                        : ObjESupplier.dtPositions.Rows[iRowindex]["MA_multi2"].ToString();
-                    txtMulti3.Text = ObjESupplier.dtPositions.Rows[iRowindex]["MA_multi3"] == DBNull.Value ? ""
-                        : ObjESupplier.dtPositions.Rows[iRowindex]["MA_multi3"].ToString();
-                    txtMulti4.Text = ObjESupplier.dtPositions.Rows[iRowindex]["MA_multi4"] == DBNull.Value ? ""
-                        : ObjESupplier.dtPositions.Rows[iRowindex]["MA_multi4"].ToString();
-                    txtSupplierName.Text = ObjESupplier.dtPositions.Rows[iRowindex]["LiefrantMA"] == DBNull.Value ? ""
-                        : ObjESupplier.dtPositions.Rows[iRowindex]["LiefrantMA"].ToString();
-                    txtEinkuafpreisUSP.EditValue = ObjESupplier.dtPositions.Rows[iRowindex]["MA_einkaufspreis"];
+                    txtListPrice.Text = ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["MA_listprice"] == DBNull.Value ? ""
+                        : ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["MA_listprice"].ToString();
+                    txtUpdatesuppliertext.Rtf = ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["ShortDescription"] == DBNull.Value ? ""
+                        : ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["ShortDescription"].ToString();
+                    txtProposalMenge.Text = ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["Menge"] == DBNull.Value ? ""
+                        : ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["Menge"].ToString();
+                    txtProposalDim1.Text = ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["A"] == DBNull.Value ? ""
+                        : ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["A"].ToString();
+                    txtProposalDim2.Text = ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["B"] == DBNull.Value ? ""
+                        : ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["B"].ToString();
+                    txtProposalDim3.Text = ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["L"] == DBNull.Value ? ""
+                        : ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["L"].ToString();
+                    txtME.Text = ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["ME"] == DBNull.Value ? ""
+                        : ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["ME"].ToString();
+                    txtMulti1.Text = ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["MA_Multi1"] == DBNull.Value ? ""
+                        : ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["MA_Multi1"].ToString();
+                    txtMulti2.Text = ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["MA_multi2"] == DBNull.Value ? ""
+                        : ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["MA_multi2"].ToString();
+                    txtMulti3.Text = ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["MA_multi3"] == DBNull.Value ? ""
+                        : ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["MA_multi3"].ToString();
+                    txtMulti4.Text = ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["MA_multi4"] == DBNull.Value ? ""
+                        : ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["MA_multi4"].ToString();
+                    txtSupplierName.Text = ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["LiefrantMA"] == DBNull.Value ? ""
+                        : ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["LiefrantMA"].ToString();
+                    txtEinkuafpreisUSP.EditValue = ObjESupplier.dtPositions.Rows[gvSupplier.FocusedRowHandle]["MA_einkaufspreis"];
                     gvSupplier_FocusedColumnChanged(null, null);
                 }
             }
@@ -13186,6 +13170,124 @@ namespace CalcPro
             }
         }
         #endregion
+
         #endregion
+
+        
+        private void btnLVNew_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnNew_Click(null, null);
+        }
+
+        private void btnLVSave_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnSaveLVDetails_Click(null, null);
+        }
+
+        private void btnLVCancel_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnCancel_Click(null, null);
+        }
+
+        private void btnLVExport_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnExportExcel_Click(null, null);
+        }
+
+        private void btnLVAddLVSec_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnAddPositionKZ_Click(null, null);
+        }
+
+        private void btnLVPrevious_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnPrevious_Click(null, null);
+        }
+
+        private void btnLVNext_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnNext_Click(null, null);
+        }
+
+        private void btnLVLang_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnLongDescription_Click(null, null);
+        }
+
+        private void btnCostDocuware_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnDocuwareLink_Click(null, null);
+        }
+
+        private void btnCostAddAceess_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnAddAccessories_Click(null, null);
+        }
+
+        private void btnCostValidityDate_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnValiditydates_Click(null, null);
+        }
+
+        private void btnRefershTabularView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnRefreshTreeView_Click(null, null);
+        }
+
+        private void btnBulkSaveA_ItemClick(object sender, ItemClickEventArgs e)
+        {
+                
+        }
+
+        private void btnBulkSaveB_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void btnBulkApply_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void btnProjRefresh_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            RefreshProject();
+        }
+
+        private void ChkLVCreateNew_CheckedChanged(object sender, System.EventArgs e)
+        {
+            try
+            {
+                if (Convert.ToBoolean(ChkLVCreateNew.ValueChecked) == true)
+                    txtLPMO.ReadOnly = false;
+                else
+                    txtLPMO.ReadOnly = true;
+                chkCreateNew_CheckedChanged(null, null);
+            }
+            catch (Exception ex) { Utility.ShowError(ex); }
+        }
+
+        private void chkCostMontageEntry_CheckedChanged(object sender, System.EventArgs e)
+        {
+            try
+            {
+
+                if (Convert.ToBoolean(chkCostMontageEntry.ValueChecked) == true)
+                    txtLPMO.ReadOnly = false;
+                else
+                    txtLPMO.ReadOnly = true;
+            }
+            catch (Exception ex) { Utility.ShowError(ex); }
+        }
+
+        private void cmbLVSelectTreeListColumns_EditValueChanged(object sender, System.EventArgs e)
+        {
+            
+        }
+
+        private void rpLVDropMode_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+            
+        }
     }
 }
