@@ -102,5 +102,10 @@ namespace CalcPro
             catch (Exception ex) { }
         }
         #endregion
+
+        private void FrmCategory_Load(object sender, EventArgs e)
+        {
+            //
+        }
     }
 }
