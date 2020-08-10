@@ -213,6 +213,16 @@ namespace CalcPro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calcpro_withalign {
+            get {
+                object obj = ResourceManager.GetObject("calcpro_withalign", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CalcProLogo {
             get {
                 object obj = ResourceManager.GetObject("CalcProLogo", resourceCulture);

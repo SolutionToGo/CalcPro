@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule5 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule2 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule3 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule4 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
@@ -88,12 +88,11 @@
             this.layoutControl1.Controls.Add(this.txtWADesc);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(742, 72, 650, 400);
             this.layoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(646, 123);
+            this.layoutControl1.Size = new System.Drawing.Size(554, 105);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -102,10 +101,9 @@
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.discountdel_32x32;
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancel.Location = new System.Drawing.Point(375, 72);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Location = new System.Drawing.Point(322, 59);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(132, 38);
+            this.btnCancel.Size = new System.Drawing.Size(113, 38);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Abbrechen";
@@ -115,10 +113,9 @@
             // 
             this.btnSave.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
             this.btnSave.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnSave.Location = new System.Drawing.Point(511, 72);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSave.Location = new System.Drawing.Point(439, 59);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(127, 38);
+            this.btnSave.Size = new System.Drawing.Size(108, 38);
             this.btnSave.StyleController = this.layoutControl1;
             this.btnSave.TabIndex = 5;
             this.btnSave.Text = "Speichern";
@@ -128,61 +125,57 @@
             // 
             this.txtWG.Enabled = false;
             this.txtWG.EnterMoveNextControl = true;
-            this.txtWG.Location = new System.Drawing.Point(153, 8);
-            this.txtWG.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtWG.Location = new System.Drawing.Point(117, 7);
             this.txtWG.Name = "txtWG";
             this.txtWG.Properties.Mask.EditMask = "[0-9]{0,3}?";
             this.txtWG.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtWG.Properties.Mask.ShowPlaceHolders = false;
-            this.txtWG.Size = new System.Drawing.Size(62, 28);
+            this.txtWG.Size = new System.Drawing.Size(67, 22);
             this.txtWG.StyleController = this.layoutControl1;
             this.txtWG.TabIndex = 1;
-            conditionValidationRule5.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule5.ErrorText = "Mandatory";
-            this.dxValidationProvider1.SetValidationRule(this.txtWG, conditionValidationRule5);
+            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule1.ErrorText = "Mandatory";
+            this.dxValidationProvider1.SetValidationRule(this.txtWG, conditionValidationRule1);
             // 
             // txtWGDesc
             // 
             this.txtWGDesc.EnterMoveNextControl = true;
-            this.txtWGDesc.Location = new System.Drawing.Point(364, 8);
-            this.txtWGDesc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtWGDesc.Location = new System.Drawing.Point(298, 7);
             this.txtWGDesc.Name = "txtWGDesc";
-            this.txtWGDesc.Size = new System.Drawing.Size(274, 28);
+            this.txtWGDesc.Size = new System.Drawing.Size(249, 22);
             this.txtWGDesc.StyleController = this.layoutControl1;
             this.txtWGDesc.TabIndex = 2;
-            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule1.ErrorText = "Mandatory";
-            this.dxValidationProvider1.SetValidationRule(this.txtWGDesc, conditionValidationRule1);
+            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule2.ErrorText = "Mandatory";
+            this.dxValidationProvider1.SetValidationRule(this.txtWGDesc, conditionValidationRule2);
             // 
             // txtWA
             // 
             this.txtWA.Enabled = false;
             this.txtWA.EnterMoveNextControl = true;
-            this.txtWA.Location = new System.Drawing.Point(153, 40);
-            this.txtWA.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtWA.Location = new System.Drawing.Point(117, 33);
             this.txtWA.Name = "txtWA";
             this.txtWA.Properties.Mask.EditMask = "[0-9]{0,3}?";
             this.txtWA.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtWA.Properties.Mask.ShowPlaceHolders = false;
-            this.txtWA.Size = new System.Drawing.Size(62, 28);
+            this.txtWA.Size = new System.Drawing.Size(67, 22);
             this.txtWA.StyleController = this.layoutControl1;
             this.txtWA.TabIndex = 3;
-            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule2.ErrorText = "Mandatory";
-            this.dxValidationProvider1.SetValidationRule(this.txtWA, conditionValidationRule2);
+            conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule3.ErrorText = "Mandatory";
+            this.dxValidationProvider1.SetValidationRule(this.txtWA, conditionValidationRule3);
             // 
             // txtWADesc
             // 
             this.txtWADesc.EnterMoveNextControl = true;
-            this.txtWADesc.Location = new System.Drawing.Point(364, 40);
-            this.txtWADesc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtWADesc.Location = new System.Drawing.Point(298, 33);
             this.txtWADesc.Name = "txtWADesc";
-            this.txtWADesc.Size = new System.Drawing.Size(274, 28);
+            this.txtWADesc.Size = new System.Drawing.Size(249, 22);
             this.txtWADesc.StyleController = this.layoutControl1;
             this.txtWADesc.TabIndex = 4;
-            conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule3.ErrorText = "Mandatory";
-            this.dxValidationProvider1.SetValidationRule(this.txtWADesc, conditionValidationRule3);
+            conditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule4.ErrorText = "Mandatory";
+            this.dxValidationProvider1.SetValidationRule(this.txtWADesc, conditionValidationRule4);
             // 
             // layoutControlGroup1
             // 
@@ -202,8 +195,8 @@
             this.layoutControlItem4,
             this.layoutControlItem8});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(646, 123);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(554, 105);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -211,76 +204,75 @@
             this.layoutControlItem1.Control = this.txtWG;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(211, 32);
+            this.layoutControlItem1.Size = new System.Drawing.Size(181, 26);
             this.layoutControlItem1.Text = "WG";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(142, 21);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(107, 16);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.txtWA;
             this.layoutControlItem3.CustomizationFormText = "layoutControlItem1";
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 32);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 26);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(211, 32);
+            this.layoutControlItem3.Size = new System.Drawing.Size(181, 26);
             this.layoutControlItem3.Text = "WA";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(142, 21);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(107, 16);
             // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.btnSave;
-            this.layoutControlItem7.Location = new System.Drawing.Point(503, 64);
+            this.layoutControlItem7.Location = new System.Drawing.Point(432, 52);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(131, 47);
+            this.layoutControlItem7.Size = new System.Drawing.Size(112, 43);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 64);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 52);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(367, 47);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(315, 43);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.txtWGDesc;
             this.layoutControlItem2.CustomizationFormText = "layoutControlItem1";
-            this.layoutControlItem2.Location = new System.Drawing.Point(211, 0);
+            this.layoutControlItem2.Location = new System.Drawing.Point(181, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(423, 32);
+            this.layoutControlItem2.Size = new System.Drawing.Size(363, 26);
             this.layoutControlItem2.Text = "WG Beschreibung  ";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(142, 21);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(107, 16);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.txtWADesc;
             this.layoutControlItem4.CustomizationFormText = "layoutControlItem1";
-            this.layoutControlItem4.Location = new System.Drawing.Point(211, 32);
+            this.layoutControlItem4.Location = new System.Drawing.Point(181, 26);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(423, 32);
+            this.layoutControlItem4.Size = new System.Drawing.Size(363, 26);
             this.layoutControlItem4.Text = "WA Beschreibung";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(142, 21);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(107, 16);
             // 
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.btnCancel;
-            this.layoutControlItem8.Location = new System.Drawing.Point(367, 64);
+            this.layoutControlItem8.Location = new System.Drawing.Point(315, 52);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(136, 47);
+            this.layoutControlItem8.Size = new System.Drawing.Size(117, 43);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
             // 
             // frmAddProjectArticles
             // 
             this.AcceptButton = this.btnSave;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(646, 123);
+            this.ClientSize = new System.Drawing.Size(554, 105);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmAddProjectArticles";

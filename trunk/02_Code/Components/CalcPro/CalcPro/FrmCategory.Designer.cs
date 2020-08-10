@@ -69,11 +69,10 @@
             this.layoutControl1.Controls.Add(this.txtCategory);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(972, 191, 450, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(470, 126);
+            this.layoutControl1.Size = new System.Drawing.Size(403, 111);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -82,10 +81,9 @@
             this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnOk.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
             this.btnOk.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnOk.Location = new System.Drawing.Point(330, 66);
-            this.btnOk.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnOk.Location = new System.Drawing.Point(277, 55);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(118, 38);
+            this.btnOk.Size = new System.Drawing.Size(107, 38);
             this.btnOk.StyleController = this.layoutControl1;
             this.btnOk.TabIndex = 6;
             this.btnOk.Text = "Speichern";
@@ -96,10 +94,9 @@
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.discountdel_32x32;
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancel.Location = new System.Drawing.Point(202, 66);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Location = new System.Drawing.Point(162, 55);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(124, 38);
+            this.btnCancel.Size = new System.Drawing.Size(111, 38);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Abbrechen";
@@ -107,10 +104,9 @@
             // 
             // txtCategory
             // 
-            this.txtCategory.Location = new System.Drawing.Point(202, 22);
-            this.txtCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCategory.Location = new System.Drawing.Point(156, 18);
             this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(246, 28);
+            this.txtCategory.Size = new System.Drawing.Size(228, 22);
             this.txtCategory.StyleController = this.layoutControl1;
             this.txtCategory.TabIndex = 4;
             this.txtCategory.Enter += new System.EventHandler(this.txtCategory_Enter);
@@ -131,8 +127,8 @@
             this.layoutControlItem3,
             this.emptySpaceItem1});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(20, 20, 20, 20);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(470, 126);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(17, 17, 16, 16);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(403, 111);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -140,53 +136,52 @@
             this.layoutControlItem1.Control = this.txtCategory;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(430, 32);
+            this.layoutControlItem1.Size = new System.Drawing.Size(369, 26);
             this.layoutControlItem1.Text = "Kategorie Bezeichnung ";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(177, 21);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(134, 16);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.btnCancel;
-            this.layoutControlItem2.Location = new System.Drawing.Point(180, 44);
+            this.layoutControlItem2.Location = new System.Drawing.Point(143, 37);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(128, 42);
+            this.layoutControlItem2.Size = new System.Drawing.Size(115, 42);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 44);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 37);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(180, 42);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(143, 42);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.btnOk;
-            this.layoutControlItem3.Location = new System.Drawing.Point(308, 44);
+            this.layoutControlItem3.Location = new System.Drawing.Point(258, 37);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(122, 42);
+            this.layoutControlItem3.Size = new System.Drawing.Size(111, 42);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 32);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 26);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(430, 12);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(369, 11);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // FrmCategory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(470, 126);
+            this.ClientSize = new System.Drawing.Size(403, 111);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCategory";

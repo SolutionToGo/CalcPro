@@ -143,10 +143,9 @@ namespace CalcPro
         public frmProject()
         {
             InitializeComponent();
+            chkCreateNew.EditValue = false;
+            ChkManualMontageentry.EditValue = false;
             this.tlPositions.GetNodeDisplayValue += new DevExpress.XtraTreeList.GetNodeDisplayValueEventHandler(this.treeList1_GetNodeDisplayValue);
-            this.ChkLVCreateNew.CheckedChanged += ChkLVCreateNew_CheckedChanged;
-            this.chkCostMontageEntry.CheckedChanged += chkCostMontageEntry_CheckedChanged;
-            this.cmbLVSelectTreeListColumns.EditValueChanged += cmbLVSelectTreeListColumns_EditValueChanged;
             this.rpLVDropMode.SelectedIndexChanged += rpLVDropMode_SelectedIndexChanged;
         }
 
@@ -710,8 +709,8 @@ namespace CalcPro
                             else if (splitContainerControl2.SplitterPosition == 0 && splitContainerControl1.PanelVisibility == SplitPanelVisibility.Panel1)
                             {
                                 splitContainerControl1.PanelVisibility = SplitPanelVisibility.Both;
-                                splitContainerControl2.SplitterPosition = 350;
-                                splitContainerControl1.SplitterPosition = 350;
+                                splitContainerControl2.SplitterPosition = 310;
+                                splitContainerControl1.SplitterPosition = 310;
                             }
                         }
                     }
@@ -1903,9 +1902,9 @@ namespace CalcPro
 
                     bool MontageEntry = false;
                     if (bool.TryParse(Convert.ToString(tlPositions.FocusedNode["MontageEntry"]), out MontageEntry))
-                        ChkManualMontageentry.Checked = MontageEntry;
+                        ChkManualMontageentry.EditValue = MontageEntry;
                     else
-                        ChkManualMontageentry.Checked = MontageEntry;
+                        ChkManualMontageentry.EditValue = MontageEntry;
 
                     txtWG.Text = txtWGCD.Text = Position.OldWG = tlPositions.FocusedNode["WG"] == DBNull.Value ? "" : tlPositions.FocusedNode["WG"].ToString();
                     txtWI.Text = txtWICD.Text = tlPositions.FocusedNode["WI"] == DBNull.Value ? "" : tlPositions.FocusedNode["WI"].ToString();
@@ -2138,15 +2137,9 @@ namespace CalcPro
                         if (e != null)
                         {
                             if (e.Node.HasChildren)
-                            {
                                 btnLongDescription.Enabled = false;
-                                btnLangtext1.Enabled = false;
-                            }
                             else
-                            {
                                 btnLongDescription.Enabled = true;
-                                btnLangtext1.Enabled = true;
-                            }
                         }
                     }
                     txtMo_TextChanged(null, null);
@@ -2425,7 +2418,7 @@ namespace CalcPro
                     frmCalcPro.UpdateStatus("'" + ObjEPosition.Position_OZ + "'" + " Vorgang abgeschlossen: Speichern der OZ");
                 else
                     frmCalcPro.UpdateStatus("'" + ObjEPosition.Position_OZ + "'" + " OZ Saved Successfully");
-                if (chkCreateNew.Checked == true)
+                if (Convert.ToBoolean(chkCreateNew.EditValue) == true)
                     btnNew_Click(null, null);
                 else
                 {
@@ -2702,7 +2695,7 @@ namespace CalcPro
                     CalculateGrundMultiMO();
                     CalculateEinkuafpreisMO();
 
-                    if (ChkManualMontageentry.Checked == true)
+                    if (Convert.ToBoolean(ChkManualMontageentry.EditValue) == true)
                     {
                         decimal HourlyRate = getDValue(txtStdSatz.Text);
                         decimal factor = getDValue(txtFaktor.Text);
@@ -2912,7 +2905,7 @@ namespace CalcPro
                     txtHours.EditValue = 0;
                 if (_IsNewMode || !Position.HaveDetailsKz)
                 {
-                    if (ChkManualMontageentry.Checked == false)
+                    if (Convert.ToBoolean(ChkManualMontageentry.EditValue) == false)
                     {
                         txtHours.Text = Convert.ToString(Math.Round(getDValue(txtMin.Text)
                             / Convert.ToDecimal(60), 8));
@@ -2931,7 +2924,7 @@ namespace CalcPro
             {
                 if (_IsNewMode || !Position.HaveDetailsKz)
                 {
-                    if (ChkManualMontageentry.Checked == false)
+                    if (Convert.ToBoolean(ChkManualMontageentry.EditValue) == false)
                     {
                         if (!string.IsNullOrEmpty(Convert.ToString(txtHours.EditValue))
                             && !string.IsNullOrEmpty(Convert.ToString(txtFaktor.EditValue))
@@ -3229,7 +3222,7 @@ namespace CalcPro
         {
             try
             {
-                if (chkCreateNew.Checked == false)
+                if (Convert.ToBoolean(chkCreateNew.EditValue) == false)
                 {
                     Color _Color = Color.FromArgb(255, 135, 0);
                     tlPositions.Appearance.HeaderPanel.BackColor = _Color;
@@ -3359,7 +3352,7 @@ namespace CalcPro
                     EnableDisableLVAndCostDetails(false, false, false, false);
                     EnableDisableButtons(true, true, false, true, true);
                     _IsEditMode = false;
-                    chkCreateNew.Checked = false;
+                    chkCreateNew.EditValue = false;
                     tlPositions_FocusedNodeChanged(null, null);
                     tlPositions.OptionsBehavior.ReadOnly = false;
                     Color _Color = Color.FromArgb(0, 158, 224);
@@ -3800,7 +3793,7 @@ namespace CalcPro
         {
             try
             {
-                if (chkCreateNew.Checked == true)
+                if (Convert.ToBoolean(chkCreateNew.EditValue) == true)
                 {
                     if (!_IsNewMode)
                         btnNew_Click(null, null);
@@ -4299,75 +4292,7 @@ namespace CalcPro
 
         private void cmbSelectGridviewOptions_Closed(object sender, ClosedEventArgs e)
         {
-            bool isFound_MA = false;
-            bool isFound_MO = false;
-            bool isFound_Einfr = false;
-            bool isFound_Seleb = false;
-            bool isFound_Verkf = false;
-            try
-            {
-                foreach (var item in cmbSelectGridviewOptions.Text.Split(','))
-                {
-                    if (item.Trim() == "MA Multies")
-                        isFound_MA = true;
-                    if (item.Trim() == "MO Multies")
-                        isFound_MO = true;
-                    if (item.Trim() == "Einkaufspreis")
-                        isFound_Einfr = true;
-                    if (item.Trim() == "Selbstkosten")
-                        isFound_Seleb = true;
-                    if (item.Trim() == "Verkaufspreis")
-                        isFound_Verkf = true;
-                }
-                tlPositions.Columns["MA_Multi1"].VisibleIndex = 11;
-                tlPositions.Columns["MA_multi2"].VisibleIndex = 12;
-                tlPositions.Columns["MA_multi3"].VisibleIndex = 13;
-                tlPositions.Columns["MA_multi4"].VisibleIndex = 14;
-                tlPositions.Columns["MA_Multi1"].Visible = isFound_MA;
-                tlPositions.Columns["MA_multi2"].Visible = isFound_MA;
-                tlPositions.Columns["MA_multi3"].Visible = isFound_MA;
-                tlPositions.Columns["MA_multi4"].Visible = isFound_MA;
-
-                tlPositions.Columns["MO_multi1"].VisibleIndex = 15;
-                tlPositions.Columns["MO_multi2"].VisibleIndex = 16;
-                tlPositions.Columns["MO_multi3"].VisibleIndex = 17;
-                tlPositions.Columns["MO_multi4"].VisibleIndex = 18;
-                tlPositions.Columns["MO_multi1"].Visible = isFound_MO;
-                tlPositions.Columns["MO_multi2"].Visible = isFound_MO;
-                tlPositions.Columns["MO_multi3"].Visible = isFound_MO;
-                tlPositions.Columns["MO_multi4"].Visible = isFound_MO;
-
-                tlPositions.Columns["MA_einkaufspreis"].VisibleIndex = 19;
-                tlPositions.Columns["MO_Einkaufspreis"].VisibleIndex = 20;
-                tlPositions.Columns["MA_einkaufspreis"].Visible = isFound_Einfr;
-                tlPositions.Columns["MO_Einkaufspreis"].Visible = isFound_Einfr;
-
-                tlPositions.Columns["MA_selbstkostenMulti"].VisibleIndex = 21;
-                tlPositions.Columns["MA_selbstkosten"].VisibleIndex = 22;
-                tlPositions.Columns["MO_selbstkostenMulti"].VisibleIndex = 23;
-                tlPositions.Columns["MO_selbstkosten"].VisibleIndex = 24;
-                tlPositions.Columns["MA_selbstkostenMulti"].Visible = isFound_Seleb;
-                tlPositions.Columns["MO_selbstkostenMulti"].Visible = isFound_Seleb;
-                tlPositions.Columns["MA_selbstkosten"].Visible = isFound_Seleb;
-                tlPositions.Columns["MO_selbstkosten"].Visible = isFound_Seleb;
-
-                tlPositions.Columns["MA_verkaufspreis_Multi"].VisibleIndex = 25;
-                tlPositions.Columns["MA_verkaufspreis"].VisibleIndex = 26;
-                tlPositions.Columns["MO_verkaufspreisMulti"].VisibleIndex = 27;
-                tlPositions.Columns["MO_verkaufspreis"].VisibleIndex = 28;
-                tlPositions.Columns["MA_verkaufspreis_Multi"].Visible = isFound_Verkf;
-                tlPositions.Columns["MO_verkaufspreisMulti"].Visible = isFound_Verkf;
-                tlPositions.Columns["MA_verkaufspreis"].Visible = isFound_Verkf;
-                tlPositions.Columns["MO_verkaufspreis"].Visible = isFound_Verkf;
-
-                tlPositions.Columns["EP"].VisibleIndex = 29;
-                tlPositions.Columns["GB"].VisibleIndex = 30;
-                //tlPositions.BestFitColumns();
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
+            
         }
 
         private void txtType_Leave(object sender, EventArgs e)
@@ -6258,7 +6183,7 @@ namespace CalcPro
         {
             try
             {
-                ChkManualMontageentry.Checked = false;
+                ChkManualMontageentry.EditValue = false;
                 txtPosition.Enabled = true;
                 ObjEPosition.PositionID = -1;
                 if (strPositiontype == string.Empty)
@@ -6303,7 +6228,6 @@ namespace CalcPro
                     txtLVPositionCD.Text = string.Empty;
                     FormatLVFields();
                     btnLongDescription.Enabled = true;
-                    btnLangtext1.Enabled = true;
                     tlPositions.OptionsBehavior.ReadOnly = true;
                     LongDescription = string.Empty;
                     cmbPositionKZ.Enabled = true;
@@ -6319,7 +6243,7 @@ namespace CalcPro
                 }
                 else if (strPositiontype.ToLower() == "h")
                 {
-                    chkCreateNew.Checked = false;
+                    chkCreateNew.EditValue = false;
                     chkCreateNew.Enabled = false;
                     txtMo.Text = "";
                     txtMa.Text = "";
@@ -6351,7 +6275,6 @@ namespace CalcPro
                     txtPosition.Text = "";
                     FormatLVFields();
                     btnLongDescription.Enabled = true;
-                    btnLangtext1.Enabled = true;
                     tlPositions.OptionsBehavior.ReadOnly = true;
                     LongDescription = string.Empty;
                     cmbPositionKZ.Enabled = true;
@@ -6405,7 +6328,6 @@ namespace CalcPro
                     txtLVPositionCD.Text = string.Empty;
                     FormatLVFields();
                     btnLongDescription.Enabled = true;
-                    btnLangtext1.Enabled = true;
                     tlPositions.OptionsBehavior.ReadOnly = true;
                     LongDescription = string.Empty;
                     cmbPositionKZ.Enabled = true;
@@ -7368,7 +7290,7 @@ namespace CalcPro
                 {
                     if (int.TryParse(tlPositions.FocusedNode["PositionID"].ToString(), out PosID))
                     {
-                        if (_IsNewMode == true || chkCreateNew.Checked == true)
+                        if (_IsNewMode == true || Convert.ToBoolean(chkCreateNew.EditValue) == true)
                         {
                             PosID = -1;
                         }
@@ -7769,15 +7691,15 @@ namespace CalcPro
             {
                 if (radioGroupActionA.SelectedIndex == 1)
                 {
-                    lciMulti5MA.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciMulti5MO.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciMulti6MA.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciMulti6MO.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+                    lciMulti5MA.Enabled = false;
+                    lciMulti5MO.Enabled = false;
+                    lciMulti6MA.Enabled = false;
+                    lciMulti6MO.Enabled = false;
 
-                    txtMulti5MA.Text = "";
-                    txtMulti5MO.Text = "";
-                    txtMulti6MA.Text = "";
-                    txtMulti6MO.Text = "";
+                    txtMulti5MA.EditValue = null;
+                    txtMulti5MO.EditValue = null;
+                    txtMulti6MA.EditValue = null;
+                    txtMulti6MO.EditValue = null;
 
                     checkEditSectionAMulti5MA.Checked = false;
                     checkEditSectionAMulti5MO.Checked = false;
@@ -7994,37 +7916,34 @@ namespace CalcPro
                 {
                     if (checkEditArtikelnummerWG.Checked == true)
                     {
-                        lciArtikelnummerWG.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
-                        lciWarenart.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
-                        lciWarenident.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
-                        txtArtikelnummerWG.Text = "";
-                        txtArtikelnummerWA.Text = "";
-                        txtArtikelnummerWI.Text = "";
+                        lciArtikelnummerWG.Enabled = true;
+                        lciWarenart.Enabled = true;
+                        lciWarenident.Enabled = true;
                     }
                     else
                     {
-                        lciArtikelnummerWG.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                        lciWarenart.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                        lciWarenident.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                        txtArtikelnummerWG.Text = "";
-                        txtArtikelnummerWA.Text = "";
-                        txtArtikelnummerWI.Text = "";
+                        lciArtikelnummerWG.Enabled = false;
+                        lciWarenart.Enabled = false;
+                        lciWarenident.Enabled = false;
                     }
+                    txtArtikelnummerWG.EditValue = null;
+                    txtArtikelnummerWA.EditValue = null;
+                    txtArtikelnummerWI.EditValue = null;
                 }
                 else
                 {
-                    lciPositionKZ.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciPosMenge.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciMaterialKZ.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciMontageKZ.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciPreisErstaztext.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciArtikelnummerWG.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciWarenart.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciWarenident.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciFabrikat.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciTyp.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciLieferantMA.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciNachtragsnummer.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+                    lciPositionKZ.Enabled = false;
+                    lciPosMenge.Enabled = false;
+                    lciMaterialKZ.Enabled = false;
+                    lciMontageKZ.Enabled = false;
+                    lciPreisErstaztext.Enabled = false;
+                    lciArtikelnummerWG.Enabled = false;
+                    lciWarenart.Enabled = false;
+                    lciWarenident.Enabled = false;
+                    lciFabrikat.Enabled = false;
+                    lciTyp.Enabled = false;
+                    lciLieferantMA.Enabled = false;
+                    lciNachtragsnummer.Enabled = false;
                 }
             }
             catch (Exception ex)
@@ -8256,7 +8175,7 @@ namespace CalcPro
             {
                 if (txtMaterialKz.Text.ToLower() == "s")
                 {
-                    txtMontageKZ.Text = "";
+                    txtMontageKZ.EditValue = null;
                     txtMontageKZ.Enabled = false;
                 }
                 else
@@ -8440,21 +8359,21 @@ namespace CalcPro
                 {
                     if (tCheckEditEdit.Checked == true)
                     {
-                        tLayoutItem.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
-                        tText.Text = "";
+                        tLayoutItem.Enabled = true;
+                        tText.EditValue = null;
                     }
                     else
                     {
-                        tLayoutItem.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                        tText.Text = "";
+                        tLayoutItem.Enabled = false;
+                        tText.EditValue = null;
                     }
                 }
                 else
                 {
-                    lciMulti5MA.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciMulti5MO.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciMulti6MA.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciMulti6MO.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+                    lciMulti5MA.Enabled = false;
+                    lciMulti5MO.Enabled = false;
+                    lciMulti6MA.Enabled = false;
+                    lciMulti6MO.Enabled = false;
                 }
             }
             catch (Exception ex)
@@ -8468,18 +8387,18 @@ namespace CalcPro
         /// </summary>
         private void HideTextBoxes()
         {
-            lciPositionKZ.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-            lciPosMenge.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-            lciMaterialKZ.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-            lciMontageKZ.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-            lciPreisErstaztext.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-            lciArtikelnummerWG.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-            lciWarenart.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-            lciWarenident.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-            lciFabrikat.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-            lciTyp.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-            lciLieferantMA.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-            lciNachtragsnummer.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+            lciPositionKZ.Enabled = false;
+            lciPosMenge.Enabled = false;
+            lciMaterialKZ.Enabled = false;
+            lciMontageKZ.Enabled =  false;
+            lciPreisErstaztext.Enabled = false;
+            lciArtikelnummerWG.Enabled = false;
+            lciWarenart.Enabled = false;
+            lciWarenident.Enabled = false;
+            lciFabrikat.Enabled = false;
+            lciTyp.Enabled = false;
+            lciLieferantMA.Enabled = false;
+            lciNachtragsnummer.Enabled = false;
 
             checkEditPositionMenge.Checked = false;
             checkEditMaterialKz.Checked = false;
@@ -8517,29 +8436,29 @@ namespace CalcPro
                 {
                     if (tCheckEditEdit.Checked == true)
                     {
-                        tLayoutItem.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
-                        tText.Text = "";
+                        tLayoutItem.Enabled = true;
+                        tText.EditValue = null;
                     }
                     else
                     {
-                        tLayoutItem.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                        tText.Text = "";
+                        tLayoutItem.Enabled = false;
+                        tText.EditValue = null;
                     }
                 }
                 else
                 {
-                    lciPositionKZ.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciPosMenge.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciMaterialKZ.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciMontageKZ.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciPreisErstaztext.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciArtikelnummerWG.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciWarenart.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciWarenident.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciFabrikat.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciTyp.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciLieferantMA.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-                    lciNachtragsnummer.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+                    lciPositionKZ.Enabled = false;
+                    lciPosMenge.Enabled = false;
+                    lciMaterialKZ.Enabled = false;
+                    lciMontageKZ.Enabled = false;
+                    lciPreisErstaztext.Enabled = false;
+                    lciArtikelnummerWG.Enabled = false;
+                    lciWarenart.Enabled = false;
+                    lciWarenident.Enabled = false;
+                    lciFabrikat.Enabled = false;
+                    lciTyp.Enabled = false;
+                    lciLieferantMA.Enabled = false;
+                    lciNachtragsnummer.Enabled = false;
                 }
             }
             catch (Exception ex)
@@ -13173,7 +13092,6 @@ namespace CalcPro
 
         #endregion
 
-        
         private void btnLVNew_ItemClick(object sender, ItemClickEventArgs e)
         {
             btnNew_Click(null, null);
@@ -13234,31 +13152,16 @@ namespace CalcPro
             btnRefreshTreeView_Click(null, null);
         }
 
-        private void btnBulkSaveA_ItemClick(object sender, ItemClickEventArgs e)
-        {
-                
-        }
-
-        private void btnBulkSaveB_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnBulkApply_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
         private void btnProjRefresh_ItemClick(object sender, ItemClickEventArgs e)
         {
             RefreshProject();
         }
 
-        private void ChkLVCreateNew_CheckedChanged(object sender, System.EventArgs e)
+        private void chkCreateNewBarItem_EditValueChanged(object sender, EventArgs e)
         {
             try
             {
-                if (Convert.ToBoolean(ChkLVCreateNew.ValueChecked) == true)
+                if (Convert.ToBoolean(chkCreateNew.EditValue) == true)
                     txtLPMO.ReadOnly = false;
                 else
                     txtLPMO.ReadOnly = true;
@@ -13266,28 +13169,167 @@ namespace CalcPro
             }
             catch (Exception ex) { Utility.ShowError(ex); }
         }
-
-        private void chkCostMontageEntry_CheckedChanged(object sender, System.EventArgs e)
+        private void chkCostMontageEntryItem_EditValueChanged(object sender, EventArgs e)
         {
             try
             {
-
-                if (Convert.ToBoolean(chkCostMontageEntry.ValueChecked) == true)
+                if (Convert.ToBoolean(ChkManualMontageentry.EditValue) == true)
                     txtLPMO.ReadOnly = false;
                 else
                     txtLPMO.ReadOnly = true;
             }
             catch (Exception ex) { Utility.ShowError(ex); }
         }
-
-        private void cmbLVSelectTreeListColumns_EditValueChanged(object sender, System.EventArgs e)
+        private void cmbSelectTreelistColumnsItem_EditValueChanged(object sender, EventArgs e)
         {
-            
+            bool isFound_MA = false;
+            bool isFound_MO = false;
+            bool isFound_Einfr = false;
+            bool isFound_Seleb = false;
+            bool isFound_Verkf = false;
+            try
+            {
+                foreach (var item in Convert.ToString(cmbSelectTreelistColumnsItem.EditValue).Split(','))
+                {
+                    if (item.Trim() == "MA Multies")
+                        isFound_MA = true;
+                    if (item.Trim() == "MO Multies")
+                        isFound_MO = true;
+                    if (item.Trim() == "Einkaufspreis")
+                        isFound_Einfr = true;
+                    if (item.Trim() == "Selbstkosten")
+                        isFound_Seleb = true;
+                    if (item.Trim() == "Verkaufspreis")
+                        isFound_Verkf = true;
+                }
+                tlPositions.Columns["MA_Multi1"].VisibleIndex = 11;
+                tlPositions.Columns["MA_multi2"].VisibleIndex = 12;
+                tlPositions.Columns["MA_multi3"].VisibleIndex = 13;
+                tlPositions.Columns["MA_multi4"].VisibleIndex = 14;
+                tlPositions.Columns["MA_Multi1"].Visible = isFound_MA;
+                tlPositions.Columns["MA_multi2"].Visible = isFound_MA;
+                tlPositions.Columns["MA_multi3"].Visible = isFound_MA;
+                tlPositions.Columns["MA_multi4"].Visible = isFound_MA;
+
+                tlPositions.Columns["MO_multi1"].VisibleIndex = 15;
+                tlPositions.Columns["MO_multi2"].VisibleIndex = 16;
+                tlPositions.Columns["MO_multi3"].VisibleIndex = 17;
+                tlPositions.Columns["MO_multi4"].VisibleIndex = 18;
+                tlPositions.Columns["MO_multi1"].Visible = isFound_MO;
+                tlPositions.Columns["MO_multi2"].Visible = isFound_MO;
+                tlPositions.Columns["MO_multi3"].Visible = isFound_MO;
+                tlPositions.Columns["MO_multi4"].Visible = isFound_MO;
+
+                tlPositions.Columns["MA_einkaufspreis"].VisibleIndex = 19;
+                tlPositions.Columns["MO_Einkaufspreis"].VisibleIndex = 20;
+                tlPositions.Columns["MA_einkaufspreis"].Visible = isFound_Einfr;
+                tlPositions.Columns["MO_Einkaufspreis"].Visible = isFound_Einfr;
+
+                tlPositions.Columns["MA_selbstkostenMulti"].VisibleIndex = 21;
+                tlPositions.Columns["MA_selbstkosten"].VisibleIndex = 22;
+                tlPositions.Columns["MO_selbstkostenMulti"].VisibleIndex = 23;
+                tlPositions.Columns["MO_selbstkosten"].VisibleIndex = 24;
+                tlPositions.Columns["MA_selbstkostenMulti"].Visible = isFound_Seleb;
+                tlPositions.Columns["MO_selbstkostenMulti"].Visible = isFound_Seleb;
+                tlPositions.Columns["MA_selbstkosten"].Visible = isFound_Seleb;
+                tlPositions.Columns["MO_selbstkosten"].Visible = isFound_Seleb;
+
+                tlPositions.Columns["MA_verkaufspreis_Multi"].VisibleIndex = 25;
+                tlPositions.Columns["MA_verkaufspreis"].VisibleIndex = 26;
+                tlPositions.Columns["MO_verkaufspreisMulti"].VisibleIndex = 27;
+                tlPositions.Columns["MO_verkaufspreis"].VisibleIndex = 28;
+                tlPositions.Columns["MA_verkaufspreis_Multi"].Visible = isFound_Verkf;
+                tlPositions.Columns["MO_verkaufspreisMulti"].Visible = isFound_Verkf;
+                tlPositions.Columns["MA_verkaufspreis"].Visible = isFound_Verkf;
+                tlPositions.Columns["MO_verkaufspreis"].Visible = isFound_Verkf;
+
+                tlPositions.Columns["EP"].VisibleIndex = 29;
+                tlPositions.Columns["GB"].VisibleIndex = 30;
+                //tlPositions.BestFitColumns();
+            }
+            catch (Exception ex)
+            {
+                Utility.ShowError(ex);
+            }
+        }
+        private void btnModifyItem_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnModify_Click(null, null);
+        }
+
+        private void btnBulkSaveA_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnSaveActionA_Click(null, null);
+        }
+
+        private void btnBulkSaveB_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnSavesectionB_Click(null, null);
+        }
+
+        private void btnBulkApply_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnApply_Click(null, null);
         }
 
         private void rpLVDropMode_SelectedIndexChanged(object sender, System.EventArgs e)
         {
-            
+
+        }
+
+        private void btnSelbLoad_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnMulti5LoadArticles_Click(null, null);
+        }
+
+        private void btnSelbSubmit_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnMulti5UpdateSelbekosten_Click(null, null);
+        }
+
+        private void btnVerkLoad_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnMulti6LoadArticles_Click(null, null);
+        }
+
+        private void btnVerkSubmit_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnMulti6UpdateSelbekosten_Click(null, null);
+        }
+
+        private void btnUmlExport_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnUmlageExport_Click(null, null);
+        }
+
+        private void btnUmlSave_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnUmlageSave_Click(null, null);
+        }
+
+        private void btnUmlSubmit_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnAddedCost_Click(null, null);
+        }
+
+        private void barButtonItem57_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnSaveSupplierProposal_Click(null, null);
+        }
+
+        private void btnSaveUSP_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnSubmit_Click(null, null);
+        }
+
+        private void btnExportUSP_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnExportProposalPositions_Click(null, null);
+        }
+
+        private void bnSaveTemparary1_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            btnSaveTemparary_Click(null, null);
         }
     }
 }

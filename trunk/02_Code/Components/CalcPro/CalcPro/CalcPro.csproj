@@ -1216,6 +1216,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\calcpro_withalign1.png" />
     <None Include="Resources\LoadProject_32x32.png" />
     <None Include="Resources\supplier_32x32.png" />
     <None Include="Resources\Organization_32x32.png" />

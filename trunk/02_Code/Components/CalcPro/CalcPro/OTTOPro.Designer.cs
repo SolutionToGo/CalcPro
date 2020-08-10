@@ -1094,7 +1094,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::CalcPro.Properties.Resources.CalcProLogo;
+            this.pictureBox1.Image = global::CalcPro.Properties.Resources.calcpro_withalign;
             this.pictureBox1.Location = new System.Drawing.Point(0, 171);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1185, 468);
