@@ -73,8 +73,6 @@
             this.layoutControl1.Appearance.ControlFocused.Options.UseFont = true;
             this.layoutControl1.Appearance.ControlReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.layoutControl1.Appearance.ControlReadOnly.Options.UseFont = true;
-            this.layoutControl1.Appearance.DisabledLayoutItem.ForeColor = System.Drawing.Color.White;
-            this.layoutControl1.Appearance.DisabledLayoutItem.Options.UseForeColor = true;
             this.layoutControl1.Controls.Add(this.ChkNewRaster);
             this.layoutControl1.Controls.Add(this.chkOldRaster);
             this.layoutControl1.Controls.Add(this.btnOk);

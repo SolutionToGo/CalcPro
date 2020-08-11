@@ -307,6 +307,73 @@ namespace CalcPro
                     return;
                 }
 
+                switch (tcProjectDetails.SelectedTabPage.Name.ToString())
+                {
+                    case "tbProjectDetails":
+                        rpProjectMetaData.Visible = true;
+                        this.ribbonControl1.SelectPage(rpProjectMetaData);
+                        break;
+                    case "tbLVDetails":
+                        rpPosition.Visible = true;
+                        this.ribbonControl1.SelectPage(rpPosition);
+                        break;
+                    case "tbMulti5":
+                        rpCalculations.Visible = true;
+                        rpgSelb.Visible = true;
+                        rpgVerka.Visible = false;
+                        rpgUmlage.Visible = false;
+                        this.ribbonControl1.SelectPage(rpCalculations);
+                        break;
+                    case "tbMulti6":
+                        rpCalculations.Visible = true;
+                        rpgSelb.Visible = false;
+                        rpgVerka.Visible = true;
+                        rpgUmlage.Visible = false;
+                        this.ribbonControl1.SelectPage(rpCalculations);
+                        break;
+                    case "tbOmlage":
+                        rpCalculations.Visible = true;
+                        rpgSelb.Visible = false;
+                        rpgVerka.Visible = false;
+                        rpgUmlage.Visible = true;
+                        this.ribbonControl1.SelectPage(rpCalculations);
+                        break;
+                    case "tbBulkProcess":
+                        rpBulkProcess.Visible = true;
+                        rpgBuilkProccess.Visible = true;
+                        rpgLVCopy.Visible = false;
+                        this.ribbonControl1.SelectPage(rpBulkProcess);
+                        break;
+                    case "tbInvoices":
+                        this.ribbonControl1.SelectPage(rpDelInv);
+                        break;
+                    case "tbSupplierProposal":
+                        rpProposal.Visible = true;
+                        rpgSP.Visible = true;
+                        rpgUSP.Visible = false;
+                        rpgFilter.Visible = false;
+                        rpgProposalViews.Visible = false;
+                        this.ribbonControl1.SelectPage(rpProposal);
+                        break;
+                    case "tbUpdateSupplier":
+                        rpProposal.Visible = true;
+                        rpgSP.Visible = false;
+                        rpgUSP.Visible = true;
+                        rpgFilter.Visible = true;
+                        rpgProposalViews.Visible = true;
+                        this.ribbonControl1.SelectPage(rpProposal);
+                        break;
+                    case "tbAufmassReport":
+                        this.ribbonControl1.SelectPage(rpDelInv);
+                        break;
+                    case "tbCopyLVs":
+                        rpBulkProcess.Visible = true;
+                        rpgBuilkProccess.Visible = false;
+                        rpgLVCopy.Visible = true;
+                        this.ribbonControl1.SelectPage(rpBulkProcess);
+                        break;
+                }
+
                 if (tcProjectDetails.SelectedTabPage == tbProjectDetails)
                 {
                     if (ObjEProject.IsFinalInvoice && Utility.ProjectDataAccess == "7")
@@ -315,7 +382,6 @@ namespace CalcPro
                         ddlRaster.Enabled = true;
                     LoadExistingProject();
                     FormatLVFields();
-                    rpProjectMetaData.Visible = true;
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbLVDetails)
                 {
@@ -428,7 +494,6 @@ namespace CalcPro
                         splitContainerControl1.SplitterPosition = 350;
                     else if (splitContainerControl2.PanelVisibility == SplitPanelVisibility.Panel2)
                         splitContainerControl1.SplitterPosition = 560;
-                    rpPosition.Visible = true;
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbBulkProcess)
                 {
@@ -486,7 +551,6 @@ namespace CalcPro
                              || Utility.LVSectionEditAccess == "9" || Utility.LVSectionEditAccess == "7")
                             btnApply.Enabled = false;
                     }
-                    rpPosition.Visible = true;
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbMulti5)
                 {
@@ -520,7 +584,6 @@ namespace CalcPro
                         if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
                             btnMulti5UpdateSelbekosten.Enabled = false;
                     }
-                    rpCalculations.Visible = true;
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbMulti6)
                 {
@@ -557,7 +620,6 @@ namespace CalcPro
                         if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
                             btnMulti6UpdateSelbekosten.Enabled = false;
                     }
-                    rpCalculations.Visible = true;
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbOmlage)
                 {
@@ -579,7 +641,6 @@ namespace CalcPro
                             btnAddedCost.Enabled = false;
                         }
                     }
-                    rpCalculations.Visible = true;
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbSupplierProposal)
                 {
@@ -592,14 +653,13 @@ namespace CalcPro
                         if (Utility.CalcAccess == "7" || ObjEProject.IsFinalInvoice)
                             btnSaveSupplierProposal.Enabled = false;
                         cmbLVSectionProposal_Closed(null, null);
-                        rpProposal.Visible = true;
                     }
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbUpdateSupplier)
                 {
                     if (ObjEProject.ProjectID > 0)
                     {
-                        radioGroup1.SelectedIndex = 0;
+                        rgProposalViews.EditValue = 0;
                         FillProposalNumbers();
                         gcDeletedDetails.DataSource = null;
                         gcProposedDetails.DataSource = null;
@@ -610,7 +670,6 @@ namespace CalcPro
                             gvSupplier.OptionsBehavior.Editable = false;
                         }
                         gvProposal_RowClick(null, null);
-                        rpProposal.Visible = true;
                     }
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbDeliveryNotes)
@@ -629,7 +688,6 @@ namespace CalcPro
                     gcDeliveryNumbers.DataSource = ObjEDeliveryNotes.dtBlattNumbers;
                     if (Utility.DeliveryAccess == "7" || ObjEProject.IsFinalInvoice)
                         btnSave.Enabled = false;
-                    rpDelInv.Visible = true;
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbInvoices)
                 {
@@ -653,7 +711,6 @@ namespace CalcPro
                             btnFinalBill.Enabled = false;
                         }
                     }
-                    rpDelInv.Visible = true;
                 }
                 else if (tcProjectDetails.SelectedTabPage == tbCopyLVs)
                 {
@@ -663,7 +720,7 @@ namespace CalcPro
                         if (tlPositions.AllNodesCount >= 2)
                         {
                             FillProjectNumber();
-                            rgDropMode.SelectedIndex = 2;
+                            rgDropMode1.EditValue = 2;
                         }
                         else
                         {
@@ -673,7 +730,6 @@ namespace CalcPro
                                 throw new Exception("Atleast one title and subtitle should be there in the project.");
                         }
                     }
-                    rpPosition.Visible = true;
                 }
             }
             catch (Exception ex)
@@ -955,7 +1011,7 @@ namespace CalcPro
                 {
                     if (ObjEProject.ProjectID > 0)
                     {
-                        radioGroup1.SelectedIndex = 0;
+                        rgProposalViews.EditValue = 0;
                         FillProposalNumbers();
                         gcDeletedDetails.DataSource = null;
                         gcProposedDetails.DataSource = null;
@@ -10222,13 +10278,13 @@ namespace CalcPro
                             gcSupplier.Controls.Remove(c);
                         gvSupplier.Columns.Clear();
                         ObjESupplier.SupplierProposalID = iValue;
-                        if (radioGroup1.SelectedIndex == 0)
+                        if (Convert.ToInt16(rgProposalViews.EditValue) == 0)
                         {
                             ObjESupplier = ObjBSupplier.GetProposalPostions(ObjESupplier);
                             gcSupplier.DataSource = ObjESupplier.dtPositions;
                         }
                         else
-                            radioGroup1.SelectedIndex = 0;
+                            rgProposalViews.EditValue = 0;
 
                         gvSupplier.FormatRules.Clear();
 
@@ -10635,9 +10691,9 @@ namespace CalcPro
             {
                 if (gvSupplier.RowCount == 0)
                     return;
-                radioGroup1.SelectedIndex = 0;
+                rgProposalViews.EditValue = 0;
 
-                if (radioGroup1.SelectedIndex != 0)
+                if (Convert.ToInt16(rgProposalViews.EditValue) != 0)
                 {
                     if (!Utility._IsGermany)
                         throw new Exception("Please Select List Price Per Unit Proposal View");
@@ -10712,7 +10768,7 @@ namespace CalcPro
             {
                 if (gvSupplier.RowCount == 0)
                     return;
-                if (radioGroup1.SelectedIndex != 0)
+                if (Convert.ToInt16(rgProposalViews.EditValue) != 0)
                 {
                     if (!Utility._IsGermany)
                         throw new Exception("Please Select List Price Per Unit Proposal View");
@@ -10756,11 +10812,11 @@ namespace CalcPro
                         ObjESupplier.dtPositions.Rows[iRowIndex][strSupliercolumnName + "Multi4"] = ObjESupplier.Multi4 = 1;
                     ObjESupplier.PID = new DataTable();
                     ObjESupplier.PID.Columns.Add("ID", typeof(int));
-                    if (rgFilter.SelectedIndex == 0)
+                    if (Convert.ToInt16(rgFilter.EditValue) == 0)
                         ObjESupplier.IsSingle = true;
-                    else if (rgFilter.SelectedIndex == 1)
+                    else if (Convert.ToInt16(rgFilter.EditValue) == 1)
                         ObjESupplier.IsSingle = false;
-                    else if (rgFilter.SelectedIndex == 2)
+                    else if (Convert.ToInt16(rgFilter.EditValue) == 2)
                     {
                         DataTable dtTemp = ObjESupplier.dtPositions.Copy();
                         DataRow[] FilteredFromRow = dtTemp.Select("Position_OZ = '" + Utility.PrepareOZ(txtFromOZSupplier.Text, ObjEProject.LVRaster) + "'");
@@ -10798,7 +10854,7 @@ namespace CalcPro
                     ObjESupplier.PSupplierID = gvSuppliers.GetRowCellValue(ivalue, "ProposalSupplierID");
 
                     ObjESupplier = ObjBSupplier.SaveProposaleValues(ObjESupplier);
-                    if (rgFilter.SelectedIndex != 0)
+                    if (Convert.ToInt16(rgFilter.EditValue) != 0)
                     {
                         gvProposal_RowClick(null, null);
                         gvSupplier.FocusedRowHandle = iRowIndex;
@@ -11020,7 +11076,7 @@ namespace CalcPro
 
         private void rgFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (rgFilter.SelectedIndex == 2)
+            if (Convert.ToInt16(rgFilter.EditValue) == 2)
             {
                 lvFromOZSupplier.Enabled = true;
                 lvToOZSupplier.Enabled = true;
@@ -11220,7 +11276,7 @@ namespace CalcPro
         {
             try
             {
-                if (radioGroup1.SelectedIndex != 0)
+                if (Convert.ToInt16(rgProposalViews.EditValue) != 0)
                 {
                     if (!Utility._IsGermany)
                         throw new Exception("Please Select List Price Per Unit Proposal View");
@@ -11372,7 +11428,7 @@ namespace CalcPro
                     return;
                 if (_PosKZ == "NG")
                 {
-                    if (rgDropMode.SelectedIndex == 2)
+                    if (Convert.ToInt16(rgDropMode1.EditValue) == 2)
                     {
                         if (!Utility._IsGermany)
                             throw new Exception("Please select different copy mode");
@@ -11392,7 +11448,7 @@ namespace CalcPro
                     }
                     string strSelectedOZ = "";
                     string strNO = "";
-                    if (rgDropMode.SelectedIndex == 0)
+                    if (Convert.ToInt16(rgDropMode1.EditValue) == 0)
                     {
                         if (node.FirstNode != null)
                         {
@@ -11419,7 +11475,7 @@ namespace CalcPro
                         else
                             I_index = iTemp - 1;
                     }
-                    else if (rgDropMode.SelectedIndex == 1)
+                    else if (Convert.ToInt16(rgDropMode1.EditValue) == 1)
                     {
                         if (node.LastNode != null)
                         {
@@ -11431,7 +11487,7 @@ namespace CalcPro
                         if (!int.TryParse(strNO, out I_index))
                             I_index = 0;
                     }
-                    string _Suggested_OZ = SuggestOZForCopy(strSelectedOZ, "", rgDropMode.SelectedIndex);
+                    string _Suggested_OZ = SuggestOZForCopy(strSelectedOZ, "", Convert.ToInt16(rgDropMode1.EditValue));
 
                     string str = string.Empty;
                     string strRaster = ObjEProject.LVRaster;
@@ -11474,7 +11530,7 @@ namespace CalcPro
                     ParentOZ = Convert.ToString(node.ParentNode.GetValue("Position_OZ"));
                     string strSelectedOZ = "";
                     string strnextLV = "";
-                    if (rgDropMode.SelectedIndex == 2)
+                    if (Convert.ToInt16(rgDropMode1.EditValue) == 2)
                     {
                         strSelectedOZ = Convert.ToString(node["Position_OZ"]);
                         int INodeIndex = tlNewProject.GetNodeIndex(node);
@@ -11499,7 +11555,7 @@ namespace CalcPro
                         if (!int.TryParse(strNo, out I_index))
                             I_index = 0;
                     }
-                    else if (rgDropMode.SelectedIndex == 1)
+                    else if (Convert.ToInt16(rgDropMode1.EditValue) == 1)
                     {
                         string strNO = Convert.ToString(node.ParentNode.LastNode["SNO"]);
                         strSelectedOZ = Convert.ToString(node.ParentNode.LastNode["Position_OZ"]);
@@ -11532,7 +11588,7 @@ namespace CalcPro
                         else
                             I_index = iTemp - 1;
                     }
-                    string _Suggested_OZ = SuggestOZForCopy(strSelectedOZ, strnextLV, rgDropMode.SelectedIndex);
+                    string _Suggested_OZ = SuggestOZForCopy(strSelectedOZ, strnextLV, Convert.ToInt16(rgDropMode1.EditValue));
 
                     frmNewOZ Obj = new frmNewOZ();
                     Obj.strNewOZ = _Suggested_OZ;
@@ -13073,7 +13129,6 @@ namespace CalcPro
         {
             try
             {
-                tbReports.PageVisible = false;
                 TabChange(tbAufmassReport);
                 if (ObjEDeliveryNotes == null)
                     ObjEDeliveryNotes = new EDeliveryNotes();
@@ -13169,6 +13224,7 @@ namespace CalcPro
             }
             catch (Exception ex) { Utility.ShowError(ex); }
         }
+
         private void chkCostMontageEntryItem_EditValueChanged(object sender, EventArgs e)
         {
             try
@@ -13180,6 +13236,7 @@ namespace CalcPro
             }
             catch (Exception ex) { Utility.ShowError(ex); }
         }
+
         private void cmbSelectTreelistColumnsItem_EditValueChanged(object sender, EventArgs e)
         {
             bool isFound_MA = false;
@@ -13252,6 +13309,7 @@ namespace CalcPro
                 Utility.ShowError(ex);
             }
         }
+
         private void btnModifyItem_ItemClick(object sender, ItemClickEventArgs e)
         {
             btnModify_Click(null, null);
@@ -13330,6 +13388,39 @@ namespace CalcPro
         private void bnSaveTemparary1_ItemClick(object sender, ItemClickEventArgs e)
         {
             btnSaveTemparary_Click(null, null);
+        }
+
+        private void rgFilter1_EditValueChanged(object sender, EventArgs e)
+        {
+            rgFilter_SelectedIndexChanged(null, null);
+        }
+
+        private void rgProposalViews_EditValueChanged(object sender, EventArgs e)
+        {
+            radioGroup1_SelectedIndexChanged(null, null);
+        }
+
+        private void ribbonControl1_SelectedPageChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ribbonControl1.SelectedPage == rpReports)
+                    return;
+                if (ribbonControl1.SelectedPage == rpGAEB)
+                    return;
+                foreach (DevExpress.XtraBars.Ribbon.RibbonPage Rb in this.Ribbon.Pages)
+                {
+                    if (Rb != ribbonControl1.SelectedPage)
+                    {
+                        if (Rb != rpReports)
+                        {
+                            if (Rb != rpGAEB)
+                                Rb.Visible = false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex) { }
         }
     }
 }
