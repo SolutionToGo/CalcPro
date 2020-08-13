@@ -60,7 +60,7 @@ namespace CalcPro
             try
             {
                 if (tlLVDetails.FocusedNode != null)
-                    txtLAngtext.Rtf = Convert.ToString(tlLVDetails.FocusedNode["Longdiscription"]);
+                    txtLAngtext.RtfText = Convert.ToString(tlLVDetails.FocusedNode["Longdiscription"]);
             }
             catch (Exception ex)
             {
