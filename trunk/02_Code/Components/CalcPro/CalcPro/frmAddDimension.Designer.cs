@@ -98,7 +98,7 @@
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(879, 144, 450, 404);
             this.layoutControl1.OptionsFocus.EnableAutoTabOrder = false;
-            this.layoutControl1.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.layoutControl1.Padding = new System.Windows.Forms.Padding(20);
             this.layoutControl1.Root = this.layoutControlGroup1;
             this.layoutControl1.Size = new System.Drawing.Size(528, 222);
             this.layoutControl1.TabIndex = 0;
@@ -205,7 +205,7 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.discountdel_32x32;
+            this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.CancelButton_32x32;
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnCancel.Location = new System.Drawing.Point(247, 168);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalcPro));
-            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem3 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem10 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip11 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem11 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip12 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem12 = new DevExpress.Utils.ToolTipItem();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnNewProject = new DevExpress.XtraBars.BarButtonItem();
             this.btnLoadProject = new DevExpress.XtraBars.BarButtonItem();
@@ -183,6 +183,7 @@
             this.btnDataNormImport,
             this.tsStatus});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
+            this.ribbon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbon.MaxItemId = 82;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -194,7 +195,7 @@
             this.repositoryItemCheckEdit1});
             this.ribbon.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbon.ShowToolbarCustomizeItem = false;
-            this.ribbon.Size = new System.Drawing.Size(1185, 171);
+            this.ribbon.Size = new System.Drawing.Size(1382, 211);
             this.ribbon.StatusBar = this.ribbonStatusBar1;
             this.ribbon.Toolbar.ShowCustomizeItem = false;
             // 
@@ -205,12 +206,20 @@
             this.btnNewProject.ImageOptions.Image = global::CalcPro.Properties.Resources.New_32x32;
             this.btnNewProject.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnNewProject.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnNewProject.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.btnNewProject.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnNewProject.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnNewProject.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnNewProject.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.btnNewProject.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnNewProject.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnNewProject.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnNewProject.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.btnNewProject.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnNewProject.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnNewProject.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnNewProject.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.btnNewProject.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnNewProject.Name = "btnNewProject";
             this.btnNewProject.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnNewProject.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNewProject_ItemClick);
@@ -222,12 +231,20 @@
             this.btnLoadProject.ImageOptions.Image = global::CalcPro.Properties.Resources.LoadProject_32x32;
             this.btnLoadProject.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnLoadProject.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnLoadProject.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.btnLoadProject.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnLoadProject.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnLoadProject.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnLoadProject.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.btnLoadProject.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnLoadProject.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnLoadProject.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnLoadProject.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.btnLoadProject.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnLoadProject.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnLoadProject.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnLoadProject.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.btnLoadProject.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnLoadProject.Name = "btnLoadProject";
             this.btnLoadProject.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnLoadProject.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLoadProject_ItemClick);
@@ -264,12 +281,20 @@
             this.btnProjectImport.ImageOptions.Image = global::CalcPro.Properties.Resources.projectLoad_32x32;
             this.btnProjectImport.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnProjectImport.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnProjectImport.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.btnProjectImport.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnProjectImport.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnProjectImport.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnProjectImport.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.btnProjectImport.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnProjectImport.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnProjectImport.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnProjectImport.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.btnProjectImport.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnProjectImport.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnProjectImport.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnProjectImport.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.btnProjectImport.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnProjectImport.Name = "btnProjectImport";
             this.btnProjectImport.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnProjectImport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProjectImport_ItemClick);
@@ -324,12 +349,20 @@
             this.btnShortCuts.ImageOptions.Image = global::CalcPro.Properties.Resources.shortcuts_32x32;
             this.btnShortCuts.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnShortCuts.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnShortCuts.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.btnShortCuts.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnShortCuts.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnShortCuts.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnShortCuts.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.btnShortCuts.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnShortCuts.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnShortCuts.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnShortCuts.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.btnShortCuts.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnShortCuts.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnShortCuts.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnShortCuts.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.btnShortCuts.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnShortCuts.Name = "btnShortCuts";
             this.btnShortCuts.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnShortCuts.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnShortCuts_ItemClick);
@@ -349,12 +382,20 @@
             this.barButtonItemExitProject.ImageOptions.LargeImage = global::CalcPro.Properties.Resources.discountdel_32x322;
             this.barButtonItemExitProject.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.barButtonItemExitProject.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barButtonItemExitProject.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.barButtonItemExitProject.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.barButtonItemExitProject.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.barButtonItemExitProject.ItemAppearance.Hovered.Options.UseFont = true;
+            this.barButtonItemExitProject.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.barButtonItemExitProject.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.barButtonItemExitProject.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.barButtonItemExitProject.ItemAppearance.Normal.Options.UseFont = true;
+            this.barButtonItemExitProject.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.barButtonItemExitProject.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.barButtonItemExitProject.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.barButtonItemExitProject.ItemAppearance.Pressed.Options.UseFont = true;
+            this.barButtonItemExitProject.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.barButtonItemExitProject.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.barButtonItemExitProject.Name = "barButtonItemExitProject";
             this.barButtonItemExitProject.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             this.barButtonItemExitProject.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemExitProject_ItemClick);
@@ -459,12 +500,20 @@
             this.btnTyp.ImageOptions.Image = global::CalcPro.Properties.Resources.typ_32x321;
             this.btnTyp.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnTyp.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnTyp.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.btnTyp.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnTyp.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnTyp.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnTyp.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.btnTyp.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnTyp.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnTyp.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnTyp.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.btnTyp.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnTyp.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnTyp.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnTyp.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.btnTyp.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnTyp.Name = "btnTyp";
             this.btnTyp.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnTyp.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTyp_ItemClick);
@@ -510,12 +559,20 @@
             this.btnFeature.ImageOptions.Image = global::CalcPro.Properties.Resources.userfeatures_32x32;
             this.btnFeature.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnFeature.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnFeature.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.btnFeature.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnFeature.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnFeature.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnFeature.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.btnFeature.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnFeature.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnFeature.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnFeature.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.btnFeature.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnFeature.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnFeature.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnFeature.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.btnFeature.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnFeature.Name = "btnFeature";
             this.btnFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnFeature.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnFeature_ItemClick);
@@ -544,12 +601,20 @@
             this.btnChangePassword.ImageOptions.Image = global::CalcPro.Properties.Resources.changepassword_32x32;
             this.btnChangePassword.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnChangePassword.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnChangePassword.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.btnChangePassword.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnChangePassword.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnChangePassword.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnChangePassword.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.btnChangePassword.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnChangePassword.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnChangePassword.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnChangePassword.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.btnChangePassword.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnChangePassword.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnChangePassword.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnChangePassword.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.btnChangePassword.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnChangePassword.Name = "btnChangePassword";
             this.btnChangePassword.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnChangePassword.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnChangePassword_ItemClick);
@@ -561,12 +626,20 @@
             this.barMdiChildrenListItemProject.ImageOptions.Image = global::CalcPro.Properties.Resources.recentwindows_32x32;
             this.barMdiChildrenListItemProject.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.barMdiChildrenListItemProject.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barMdiChildrenListItemProject.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.barMdiChildrenListItemProject.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.barMdiChildrenListItemProject.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.barMdiChildrenListItemProject.ItemAppearance.Hovered.Options.UseFont = true;
+            this.barMdiChildrenListItemProject.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.barMdiChildrenListItemProject.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.barMdiChildrenListItemProject.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.barMdiChildrenListItemProject.ItemAppearance.Normal.Options.UseFont = true;
+            this.barMdiChildrenListItemProject.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.barMdiChildrenListItemProject.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.barMdiChildrenListItemProject.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.barMdiChildrenListItemProject.ItemAppearance.Pressed.Options.UseFont = true;
+            this.barMdiChildrenListItemProject.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.barMdiChildrenListItemProject.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.barMdiChildrenListItemProject.Name = "barMdiChildrenListItemProject";
             this.barMdiChildrenListItemProject.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barMdiChildrenListItemProject.ShowNumbers = false;
@@ -608,12 +681,20 @@
             this.btnReportSetting.ImageOptions.Image = global::CalcPro.Properties.Resources.reportsettings_32x32;
             this.btnReportSetting.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnReportSetting.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnReportSetting.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.btnReportSetting.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnReportSetting.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnReportSetting.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnReportSetting.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.btnReportSetting.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnReportSetting.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnReportSetting.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnReportSetting.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.btnReportSetting.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnReportSetting.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnReportSetting.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnReportSetting.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.btnReportSetting.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnReportSetting.Name = "btnReportSetting";
             this.btnReportSetting.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnReportSetting.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnReportSetting_ItemClick);
@@ -626,12 +707,20 @@
             this.bbCoverSheetPath.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bbCoverSheetPath.ImageOptions.LargeImage")));
             this.bbCoverSheetPath.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.bbCoverSheetPath.ItemAppearance.Disabled.Options.UseFont = true;
+            this.bbCoverSheetPath.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.bbCoverSheetPath.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.bbCoverSheetPath.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.bbCoverSheetPath.ItemAppearance.Hovered.Options.UseFont = true;
+            this.bbCoverSheetPath.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.bbCoverSheetPath.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.bbCoverSheetPath.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.bbCoverSheetPath.ItemAppearance.Normal.Options.UseFont = true;
+            this.bbCoverSheetPath.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.bbCoverSheetPath.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.bbCoverSheetPath.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.bbCoverSheetPath.ItemAppearance.Pressed.Options.UseFont = true;
+            this.bbCoverSheetPath.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.bbCoverSheetPath.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.bbCoverSheetPath.Name = "bbCoverSheetPath";
             this.bbCoverSheetPath.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbCoverSheetPath_ItemClick);
             // 
@@ -642,12 +731,20 @@
             this.bbTitleBlattEdit.ImageOptions.Image = global::CalcPro.Properties.Resources.formblattarticle_32x321;
             this.bbTitleBlattEdit.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.bbTitleBlattEdit.ItemAppearance.Disabled.Options.UseFont = true;
+            this.bbTitleBlattEdit.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.bbTitleBlattEdit.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.bbTitleBlattEdit.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.bbTitleBlattEdit.ItemAppearance.Hovered.Options.UseFont = true;
+            this.bbTitleBlattEdit.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.bbTitleBlattEdit.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.bbTitleBlattEdit.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.bbTitleBlattEdit.ItemAppearance.Normal.Options.UseFont = true;
+            this.bbTitleBlattEdit.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.bbTitleBlattEdit.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.bbTitleBlattEdit.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.bbTitleBlattEdit.ItemAppearance.Pressed.Options.UseFont = true;
+            this.bbTitleBlattEdit.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.bbTitleBlattEdit.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.bbTitleBlattEdit.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.bbAngebot),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnAngebot2),
@@ -774,12 +871,20 @@
             this.chkAutoSave1.ImageOptions.Image = global::CalcPro.Properties.Resources.autosave_32x32;
             this.chkAutoSave1.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.chkAutoSave1.ItemAppearance.Disabled.Options.UseFont = true;
+            this.chkAutoSave1.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.chkAutoSave1.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.chkAutoSave1.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.chkAutoSave1.ItemAppearance.Hovered.Options.UseFont = true;
+            this.chkAutoSave1.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.chkAutoSave1.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.chkAutoSave1.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.chkAutoSave1.ItemAppearance.Normal.Options.UseFont = true;
+            this.chkAutoSave1.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.chkAutoSave1.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.chkAutoSave1.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.chkAutoSave1.ItemAppearance.Pressed.Options.UseFont = true;
+            this.chkAutoSave1.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.chkAutoSave1.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.chkAutoSave1.Name = "chkAutoSave1";
             this.chkAutoSave1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.chkAutoSave1.EditValueChanged += new System.EventHandler(this.chkAutoSave1_EditValueChanged);
@@ -796,17 +901,25 @@
             this.nbDeletePosition.ImageOptions.Image = global::CalcPro.Properties.Resources.deleteposition_32x32;
             this.nbDeletePosition.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.nbDeletePosition.ItemAppearance.Disabled.Options.UseFont = true;
+            this.nbDeletePosition.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.nbDeletePosition.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.nbDeletePosition.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.nbDeletePosition.ItemAppearance.Hovered.Options.UseFont = true;
+            this.nbDeletePosition.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.nbDeletePosition.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.nbDeletePosition.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.nbDeletePosition.ItemAppearance.Normal.Options.UseFont = true;
+            this.nbDeletePosition.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.nbDeletePosition.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.nbDeletePosition.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.nbDeletePosition.ItemAppearance.Pressed.Options.UseFont = true;
+            this.nbDeletePosition.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.nbDeletePosition.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.nbDeletePosition.Name = "nbDeletePosition";
             this.nbDeletePosition.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipItem1.Text = "AF5 - Löschen";
-            superToolTip1.Items.Add(toolTipItem1);
-            this.nbDeletePosition.SuperTip = superToolTip1;
+            toolTipItem10.Text = "AF5 - Löschen";
+            superToolTip10.Items.Add(toolTipItem10);
+            this.nbDeletePosition.SuperTip = superToolTip10;
             this.nbDeletePosition.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.nbDeletePosition_ItemClick);
             // 
             // nbCopyPosition
@@ -816,17 +929,25 @@
             this.nbCopyPosition.ImageOptions.Image = global::CalcPro.Properties.Resources.copy_32x32;
             this.nbCopyPosition.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.nbCopyPosition.ItemAppearance.Disabled.Options.UseFont = true;
+            this.nbCopyPosition.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.nbCopyPosition.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.nbCopyPosition.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.nbCopyPosition.ItemAppearance.Hovered.Options.UseFont = true;
+            this.nbCopyPosition.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.nbCopyPosition.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.nbCopyPosition.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.nbCopyPosition.ItemAppearance.Normal.Options.UseFont = true;
+            this.nbCopyPosition.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.nbCopyPosition.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.nbCopyPosition.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.nbCopyPosition.ItemAppearance.Pressed.Options.UseFont = true;
+            this.nbCopyPosition.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.nbCopyPosition.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.nbCopyPosition.Name = "nbCopyPosition";
             this.nbCopyPosition.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipItem2.Text = "F4 - Kopieren";
-            superToolTip2.Items.Add(toolTipItem2);
-            this.nbCopyPosition.SuperTip = superToolTip2;
+            toolTipItem11.Text = "F4 - Kopieren";
+            superToolTip11.Items.Add(toolTipItem11);
+            this.nbCopyPosition.SuperTip = superToolTip11;
             this.nbCopyPosition.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.nbCopyPosition_ItemClick);
             // 
             // nbCopyDetailKZ
@@ -841,12 +962,20 @@
             this.btnRefreshProject.ImageOptions.Image = global::CalcPro.Properties.Resources.refresh_32x32;
             this.btnRefreshProject.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnRefreshProject.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnRefreshProject.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.btnRefreshProject.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnRefreshProject.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnRefreshProject.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnRefreshProject.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.btnRefreshProject.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnRefreshProject.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnRefreshProject.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnRefreshProject.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.btnRefreshProject.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnRefreshProject.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnRefreshProject.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnRefreshProject.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.btnRefreshProject.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnRefreshProject.Name = "btnRefreshProject";
             this.btnRefreshProject.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnRefreshProject.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRefreshProject_ItemClick);
@@ -858,12 +987,20 @@
             this.btnSendLogfile.ImageOptions.Image = global::CalcPro.Properties.Resources.logfile_32x32;
             this.btnSendLogfile.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnSendLogfile.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnSendLogfile.ItemAppearance.Disabled.Options.UseTextOptions = true;
+            this.btnSendLogfile.ItemAppearance.Disabled.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnSendLogfile.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnSendLogfile.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnSendLogfile.ItemAppearance.Hovered.Options.UseTextOptions = true;
+            this.btnSendLogfile.ItemAppearance.Hovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnSendLogfile.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnSendLogfile.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnSendLogfile.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.btnSendLogfile.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnSendLogfile.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.btnSendLogfile.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnSendLogfile.ItemAppearance.Pressed.Options.UseTextOptions = true;
+            this.btnSendLogfile.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btnSendLogfile.Name = "btnSendLogfile";
             this.btnSendLogfile.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnSendLogfile.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSendLogfile_ItemClick);
@@ -1067,10 +1204,11 @@
             // ribbonStatusBar1
             // 
             this.ribbonStatusBar1.ItemLinks.Add(this.tsStatus);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 617);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 758);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbon;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1185, 22);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1382, 28);
             // 
             // BarButtonItem10
             // 
@@ -1079,12 +1217,12 @@
             this.BarButtonItem10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarButtonItem10.ImageOptions.Image")));
             this.BarButtonItem10.Name = "BarButtonItem10";
             this.BarButtonItem10.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipTitleItem1.Text = "Otto Pro";
-            toolTipItem3.LeftIndent = 6;
-            toolTipItem3.Text = "Maintains Customer Information";
-            superToolTip3.Items.Add(toolTipTitleItem1);
-            superToolTip3.Items.Add(toolTipItem3);
-            this.BarButtonItem10.SuperTip = superToolTip3;
+            toolTipTitleItem4.Text = "Otto Pro";
+            toolTipItem12.LeftIndent = 6;
+            toolTipItem12.Text = "Maintains Customer Information";
+            superToolTip12.Items.Add(toolTipTitleItem4);
+            superToolTip12.Items.Add(toolTipItem12);
+            this.BarButtonItem10.SuperTip = superToolTip12;
             // 
             // tmrStatus
             // 
@@ -1096,9 +1234,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::CalcPro.Properties.Resources.calcpro_withalign;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 171);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 211);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1185, 468);
+            this.pictureBox1.Size = new System.Drawing.Size(1382, 575);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -1115,9 +1254,9 @@
             this.lblUserName.BackColor = System.Drawing.Color.Transparent;
             this.lblUserName.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.lblUserName.ForeColor = System.Drawing.Color.Blue;
-            this.lblUserName.Location = new System.Drawing.Point(1062, 89);
+            this.lblUserName.Location = new System.Drawing.Point(1239, 110);
             this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(0, 13);
+            this.lblUserName.Size = new System.Drawing.Size(0, 17);
             this.lblUserName.TabIndex = 21;
             // 
             // lblDBVersion
@@ -1127,16 +1266,17 @@
             this.lblDBVersion.BackColor = System.Drawing.Color.Transparent;
             this.lblDBVersion.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.lblDBVersion.ForeColor = System.Drawing.Color.Blue;
-            this.lblDBVersion.Location = new System.Drawing.Point(1062, 108);
+            this.lblDBVersion.Location = new System.Drawing.Point(1239, 133);
             this.lblDBVersion.Name = "lblDBVersion";
-            this.lblDBVersion.Size = new System.Drawing.Size(0, 13);
+            this.lblDBVersion.Size = new System.Drawing.Size(0, 17);
             this.lblDBVersion.TabIndex = 24;
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(1106, 629);
+            this.simpleButton1.Location = new System.Drawing.Point(1290, 774);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton1.Size = new System.Drawing.Size(87, 28);
             this.simpleButton1.TabIndex = 27;
             this.simpleButton1.Text = "simpleButton1";
             this.simpleButton1.Visible = false;
@@ -1155,9 +1295,9 @@
             this.Appearance.ForeColor = System.Drawing.Color.Black;
             this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseForeColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1185, 639);
+            this.ClientSize = new System.Drawing.Size(1382, 786);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.lblDBVersion);
@@ -1167,6 +1307,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmCalcPro";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar1;

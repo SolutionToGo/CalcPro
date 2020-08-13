@@ -114,12 +114,12 @@
             // btnOk
             // 
             this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOk.ImageOptions.Image = global::CalcPro.Properties.Resources.Apply_16x16;
+            this.btnOk.ImageOptions.Image = global::CalcPro.Properties.Resources.OK_32x32;
             this.btnOk.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnOk.Location = new System.Drawing.Point(396, 156);
             this.btnOk.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(87, 28);
+            this.btnOk.Size = new System.Drawing.Size(87, 41);
             this.btnOk.StyleController = this.layoutControl1;
             this.btnOk.TabIndex = 10;
             this.btnOk.Text = "OK";
@@ -128,7 +128,7 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.discountdel_32x321;
+            this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.CancelButton_32x32;
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnCancel.Location = new System.Drawing.Point(246, 156);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -244,8 +244,7 @@
             // 
             this.layoutControlItem7.Control = this.btnOk;
             this.layoutControlItem7.Location = new System.Drawing.Point(387, 147);
-            this.layoutControlItem7.MaxSize = new System.Drawing.Size(91, 32);
-            this.layoutControlItem7.MinSize = new System.Drawing.Size(91, 32);
+            this.layoutControlItem7.MinSize = new System.Drawing.Size(54, 32);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(91, 45);
             this.layoutControlItem7.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;

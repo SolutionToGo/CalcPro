@@ -53,10 +53,12 @@
             // 
             // gcArticleSettings
             // 
-            this.gcArticleSettings.Location = new System.Drawing.Point(7, 7);
+            this.gcArticleSettings.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.gcArticleSettings.Location = new System.Drawing.Point(8, 8);
             this.gcArticleSettings.MainView = this.gvArticleSettings;
+            this.gcArticleSettings.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcArticleSettings.Name = "gcArticleSettings";
-            this.gcArticleSettings.Size = new System.Drawing.Size(493, 345);
+            this.gcArticleSettings.Size = new System.Drawing.Size(571, 428);
             this.gcArticleSettings.TabIndex = 0;
             this.gcArticleSettings.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvArticleSettings});
@@ -74,6 +76,7 @@
             this.gvArticleSettings.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2});
+            this.gvArticleSettings.DetailHeight = 431;
             this.gvArticleSettings.GridControl = this.gcArticleSettings;
             this.gvArticleSettings.Name = "gvArticleSettings";
             this.gvArticleSettings.OptionsCustomization.AllowFilter = false;
@@ -85,10 +88,12 @@
             // 
             this.gridColumn1.Caption = "Artikelstammparameter";
             this.gridColumn1.FieldName = "SettingName";
+            this.gridColumn1.MinWidth = 23;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 87;
             // 
             // gridColumn2
             // 
@@ -96,9 +101,11 @@
             this.gridColumn2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn2.Caption = "Datenübernahme";
             this.gridColumn2.FieldName = "IsVisible";
+            this.gridColumn2.MinWidth = 23;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.Width = 87;
             // 
             // layoutControl1
             // 
@@ -119,10 +126,11 @@
             this.layoutControl1.Controls.Add(this.gcArticleSettings);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(850, 153, 650, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(507, 399);
+            this.layoutControl1.Size = new System.Drawing.Size(587, 486);
             this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -130,9 +138,10 @@
             // 
             this.btnSave.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
             this.btnSave.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnSave.Location = new System.Drawing.Point(395, 356);
+            this.btnSave.Location = new System.Drawing.Point(457, 440);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(105, 36);
+            this.btnSave.Size = new System.Drawing.Size(122, 38);
             this.btnSave.StyleController = this.layoutControl1;
             this.btnSave.TabIndex = 5;
             this.btnSave.Text = "Speichern";
@@ -141,11 +150,12 @@
             // simpleButton1
             // 
             this.simpleButton1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.simpleButton1.ImageOptions.Image = global::CalcPro.Properties.Resources.discountdel_32x32;
+            this.simpleButton1.ImageOptions.Image = global::CalcPro.Properties.Resources.CancelButton_32x32;
             this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(281, 356);
+            this.simpleButton1.Location = new System.Drawing.Point(325, 440);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(110, 36);
+            this.simpleButton1.Size = new System.Drawing.Size(128, 38);
             this.simpleButton1.StyleController = this.layoutControl1;
             this.simpleButton1.TabIndex = 4;
             this.simpleButton1.Text = "Abbrechen";
@@ -166,8 +176,8 @@
             this.layoutControlItem3,
             this.emptySpaceItem1});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(507, 399);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(587, 486);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -175,46 +185,47 @@
             this.layoutControlItem1.Control = this.gcArticleSettings;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(497, 349);
+            this.layoutControlItem1.Size = new System.Drawing.Size(575, 432);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.simpleButton1;
-            this.layoutControlItem2.Location = new System.Drawing.Point(274, 349);
+            this.layoutControlItem2.Location = new System.Drawing.Point(317, 432);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(114, 40);
+            this.layoutControlItem2.Size = new System.Drawing.Size(132, 42);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.btnSave;
-            this.layoutControlItem3.Location = new System.Drawing.Point(388, 349);
+            this.layoutControlItem3.Location = new System.Drawing.Point(449, 432);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(109, 40);
+            this.layoutControlItem3.Size = new System.Drawing.Size(126, 42);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 349);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 432);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(274, 40);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(317, 42);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // frmArticleSettings
             // 
             this.AcceptButton = this.btnSave;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.simpleButton1;
-            this.ClientSize = new System.Drawing.Size(507, 399);
+            this.ClientSize = new System.Drawing.Size(587, 486);
             this.ControlBox = false;
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmArticleSettings";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;

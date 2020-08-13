@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.cmbLVSection = new DevExpress.XtraEditors.CheckedComboBoxEdit();
-            this.btnExport = new DevExpress.XtraEditors.SimpleButton();
-            this.btnBrowse = new DevExpress.XtraEditors.SimpleButton();
             this.cmbFormatType = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtFilePath = new DevExpress.XtraEditors.TextEdit();
             this.txtFileName = new DevExpress.XtraEditors.TextEdit();
@@ -42,10 +40,12 @@
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.cmbLVSection1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.dlg = new DevExpress.XtraEditors.XtraSaveFileDialog(this.components);
+            this.btnExport = new DevExpress.XtraEditors.SimpleButton();
+            this.btnBrowse = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbLVSection.Properties)).BeginInit();
@@ -58,9 +58,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSection1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -91,12 +91,13 @@
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1181, 228, 250, 350);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(713, 178);
+            this.layoutControl1.Size = new System.Drawing.Size(713, 196);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // cmbLVSection
             // 
+            this.cmbLVSection.EditValue = "";
             this.cmbLVSection.Location = new System.Drawing.Point(190, 137);
             this.cmbLVSection.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbLVSection.Name = "cmbLVSection";
@@ -105,31 +106,6 @@
             this.cmbLVSection.Size = new System.Drawing.Size(355, 28);
             this.cmbLVSection.StyleController = this.layoutControl1;
             this.cmbLVSection.TabIndex = 10;
-            // 
-            // btnExport
-            // 
-            this.btnExport.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnExport.Location = new System.Drawing.Point(549, 137);
-            this.btnExport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(155, 28);
-            this.btnExport.StyleController = this.layoutControl1;
-            this.btnExport.TabIndex = 9;
-            this.btnExport.Text = "Export";
-            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
-            // 
-            // btnBrowse
-            // 
-            this.btnBrowse.ImageOptions.Image = global::CalcPro.Properties.Resources.ExportFile_16x16;
-            this.btnBrowse.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnBrowse.Location = new System.Drawing.Point(549, 73);
-            this.btnBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(155, 28);
-            this.btnBrowse.StyleController = this.layoutControl1;
-            this.btnBrowse.TabIndex = 8;
-            this.btnBrowse.Text = "Durchsuchen";
-            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // cmbFormatType
             // 
@@ -197,7 +173,7 @@
             this.cmbLVSection1});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(713, 178);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(713, 196);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -222,8 +198,10 @@
             // 
             this.layoutControlItem3.Control = this.txtFilePath;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 64);
+            this.layoutControlItem3.MinSize = new System.Drawing.Size(247, 32);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(540, 32);
+            this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem3.Text = "Export-Dateipfad ";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(178, 21);
             // 
@@ -235,6 +213,41 @@
             this.layoutControlItem4.Size = new System.Drawing.Size(699, 32);
             this.layoutControlItem4.Text = "Formattyp ";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(178, 21);
+            // 
+            // cmbLVSection1
+            // 
+            this.cmbLVSection1.Control = this.cmbLVSection;
+            this.cmbLVSection1.Location = new System.Drawing.Point(0, 128);
+            this.cmbLVSection1.Name = "cmbLVSection1";
+            this.cmbLVSection1.Size = new System.Drawing.Size(540, 54);
+            this.cmbLVSection1.Text = "LV Sektion";
+            this.cmbLVSection1.TextSize = new System.Drawing.Size(178, 21);
+            // 
+            // btnExport
+            // 
+            this.btnExport.ImageOptions.Image = global::CalcPro.Properties.Resources.export_16x16;
+            this.btnExport.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnExport.Location = new System.Drawing.Point(549, 137);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(155, 28);
+            this.btnExport.StyleController = this.layoutControl1;
+            this.btnExport.TabIndex = 9;
+            this.btnExport.Text = "Export";
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // btnBrowse
+            // 
+            this.btnBrowse.ImageOptions.Image = global::CalcPro.Properties.Resources.browsepath_16x16;
+            this.btnBrowse.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnBrowse.Location = new System.Drawing.Point(549, 73);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(155, 28);
+            this.btnBrowse.StyleController = this.layoutControl1;
+            this.btnBrowse.TabIndex = 8;
+            this.btnBrowse.Text = "Durchsuchen";
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // layoutControlItem5
             // 
@@ -250,24 +263,15 @@
             this.layoutControlItem6.Control = this.btnExport;
             this.layoutControlItem6.Location = new System.Drawing.Point(540, 128);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(159, 36);
+            this.layoutControlItem6.Size = new System.Drawing.Size(159, 54);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
-            // 
-            // cmbLVSection1
-            // 
-            this.cmbLVSection1.Control = this.cmbLVSection;
-            this.cmbLVSection1.Location = new System.Drawing.Point(0, 128);
-            this.cmbLVSection1.Name = "cmbLVSection1";
-            this.cmbLVSection1.Size = new System.Drawing.Size(540, 36);
-            this.cmbLVSection1.Text = "LV Sektion";
-            this.cmbLVSection1.TextSize = new System.Drawing.Size(178, 21);
             // 
             // frmGAEBExport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 178);
+            this.ClientSize = new System.Drawing.Size(713, 196);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
@@ -294,9 +298,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSection1)).EndInit();
             this.ResumeLayout(false);
 
         }

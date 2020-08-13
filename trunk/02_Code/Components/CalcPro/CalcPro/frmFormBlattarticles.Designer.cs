@@ -107,12 +107,12 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.discountdel_32x321;
+            this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.CancelButton_32x32;
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancel.Location = new System.Drawing.Point(678, 685);
+            this.btnCancel.Location = new System.Drawing.Point(678, 683);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(129, 36);
+            this.btnCancel.Size = new System.Drawing.Size(129, 38);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 13;
             this.btnCancel.Text = "Abbrechen";
@@ -122,10 +122,10 @@
             // 
             this.btnSaveFormBlattArticles.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
             this.btnSaveFormBlattArticles.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnSaveFormBlattArticles.Location = new System.Drawing.Point(811, 685);
+            this.btnSaveFormBlattArticles.Location = new System.Drawing.Point(811, 683);
             this.btnSaveFormBlattArticles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSaveFormBlattArticles.Name = "btnSaveFormBlattArticles";
-            this.btnSaveFormBlattArticles.Size = new System.Drawing.Size(121, 36);
+            this.btnSaveFormBlattArticles.Size = new System.Drawing.Size(121, 38);
             this.btnSaveFormBlattArticles.StyleController = this.layoutControl1;
             this.btnSaveFormBlattArticles.TabIndex = 12;
             this.btnSaveFormBlattArticles.Text = "Speichern";
@@ -140,7 +140,7 @@
             this.gcFormBlattArticles.MainView = this.gvFormBlattArticles;
             this.gcFormBlattArticles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcFormBlattArticles.Name = "gcFormBlattArticles";
-            this.gcFormBlattArticles.Size = new System.Drawing.Size(923, 640);
+            this.gcFormBlattArticles.Size = new System.Drawing.Size(923, 638);
             this.gcFormBlattArticles.TabIndex = 10;
             this.gcFormBlattArticles.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvFormBlattArticles});
@@ -295,33 +295,33 @@
             this.layoutControlItem1.Control = this.gcFormBlattArticles;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 32);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(927, 644);
+            this.layoutControlItem1.Size = new System.Drawing.Size(927, 642);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.btnSaveFormBlattArticles;
-            this.layoutControlItem3.Location = new System.Drawing.Point(802, 676);
+            this.layoutControlItem3.Location = new System.Drawing.Point(802, 674);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(125, 40);
+            this.layoutControlItem3.Size = new System.Drawing.Size(125, 42);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 676);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 674);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(669, 40);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(669, 42);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.btnCancel;
-            this.layoutControlItem4.Location = new System.Drawing.Point(669, 676);
+            this.layoutControlItem4.Location = new System.Drawing.Point(669, 674);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(133, 40);
+            this.layoutControlItem4.Size = new System.Drawing.Size(133, 42);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 

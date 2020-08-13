@@ -113,7 +113,7 @@
             // dtpDeliveryDeadline
             // 
             this.dtpDeliveryDeadline.EditValue = null;
-            this.dtpDeliveryDeadline.Location = new System.Drawing.Point(193, 257);
+            this.dtpDeliveryDeadline.Location = new System.Drawing.Point(193, 247);
             this.dtpDeliveryDeadline.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtpDeliveryDeadline.Name = "dtpDeliveryDeadline";
             this.dtpDeliveryDeadline.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -130,12 +130,12 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.Cancel_16x16;
+            this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.CancelButton_32x32;
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancel.Location = new System.Drawing.Point(499, 330);
+            this.btnCancel.Location = new System.Drawing.Point(495, 320);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(131, 28);
+            this.btnCancel.Size = new System.Drawing.Size(135, 38);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "&Abbrechen";
@@ -143,12 +143,12 @@
             // 
             // btnOk
             // 
-            this.btnOk.ImageOptions.Image = global::CalcPro.Properties.Resources.Apply_16x16;
+            this.btnOk.ImageOptions.Image = global::CalcPro.Properties.Resources.OK_32x32;
             this.btnOk.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnOk.Location = new System.Drawing.Point(388, 330);
+            this.btnOk.Location = new System.Drawing.Point(388, 320);
             this.btnOk.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(107, 28);
+            this.btnOk.Size = new System.Drawing.Size(103, 38);
             this.btnOk.StyleController = this.layoutControl1;
             this.btnOk.TabIndex = 9;
             this.btnOk.Text = "Ok";
@@ -156,10 +156,11 @@
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(506, 289);
+            this.btnBrowse.ImageOptions.Image = global::CalcPro.Properties.Resources.browsepath_16x16;
+            this.btnBrowse.Location = new System.Drawing.Point(480, 279);
             this.btnBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(115, 28);
+            this.btnBrowse.Size = new System.Drawing.Size(141, 28);
             this.btnBrowse.StyleController = this.layoutControl1;
             this.btnBrowse.TabIndex = 8;
             this.btnBrowse.Text = "Durchsuchen";
@@ -167,19 +168,19 @@
             // 
             // txtFilePath
             // 
-            this.txtFilePath.Location = new System.Drawing.Point(193, 289);
+            this.txtFilePath.Location = new System.Drawing.Point(193, 279);
             this.txtFilePath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFilePath.Name = "txtFilePath";
             this.txtFilePath.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtFilePath.Properties.Appearance.Options.UseBackColor = true;
             this.txtFilePath.Properties.ReadOnly = true;
-            this.txtFilePath.Size = new System.Drawing.Size(309, 28);
+            this.txtFilePath.Size = new System.Drawing.Size(283, 28);
             this.txtFilePath.StyleController = this.layoutControl1;
             this.txtFilePath.TabIndex = 7;
             // 
             // txtFileName
             // 
-            this.txtFileName.Location = new System.Drawing.Point(193, 225);
+            this.txtFileName.Location = new System.Drawing.Point(193, 215);
             this.txtFileName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFileName.Name = "txtFileName";
             this.txtFileName.Size = new System.Drawing.Size(428, 28);
@@ -188,7 +189,7 @@
             // 
             // txtProjectNumber
             // 
-            this.txtProjectNumber.Location = new System.Drawing.Point(193, 193);
+            this.txtProjectNumber.Location = new System.Drawing.Point(193, 183);
             this.txtProjectNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtProjectNumber.Name = "txtProjectNumber";
             this.txtProjectNumber.Properties.Appearance.BackColor = System.Drawing.Color.White;
@@ -209,7 +210,7 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "D83(GAEB 1990)"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "P83(GAEB 2000)"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "X83(GAEB XML)")});
-            this.rgGAEBVersion.Size = new System.Drawing.Size(603, 98);
+            this.rgGAEBVersion.Size = new System.Drawing.Size(603, 88);
             this.rgGAEBVersion.StyleController = this.layoutControl1;
             this.rgGAEBVersion.TabIndex = 4;
             // 
@@ -243,7 +244,7 @@
             this.tabbedControlGroup2.Name = "tabbedControlGroup2";
             this.tabbedControlGroup2.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
             this.tabbedControlGroup2.SelectedTabPage = this.layoutControlGroup3;
-            this.tabbedControlGroup2.Size = new System.Drawing.Size(626, 148);
+            this.tabbedControlGroup2.Size = new System.Drawing.Size(626, 138);
             this.tabbedControlGroup2.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup3});
             // 
@@ -259,7 +260,7 @@
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
             this.layoutControlGroup3.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
-            this.layoutControlGroup3.Size = new System.Drawing.Size(607, 102);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(607, 92);
             this.layoutControlGroup3.Text = "GAEB Version";
             // 
             // layoutControlItem1
@@ -269,7 +270,7 @@
             this.layoutControlItem1.Control = this.rgGAEBVersion;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(607, 102);
+            this.layoutControlItem1.Size = new System.Drawing.Size(607, 92);
             this.layoutControlItem1.Text = "GAEB Version";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
@@ -278,27 +279,27 @@
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.btnOk;
-            this.layoutControlItem6.Location = new System.Drawing.Point(380, 322);
+            this.layoutControlItem6.Location = new System.Drawing.Point(380, 312);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(111, 32);
+            this.layoutControlItem6.Size = new System.Drawing.Size(107, 42);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.btnCancel;
-            this.layoutControlItem7.Location = new System.Drawing.Point(491, 322);
+            this.layoutControlItem7.Location = new System.Drawing.Point(487, 312);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(135, 32);
+            this.layoutControlItem7.Size = new System.Drawing.Size(139, 42);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 322);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 312);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(380, 32);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(380, 42);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup2
@@ -314,7 +315,7 @@
             this.layoutControlItem4,
             this.layoutControlItem5,
             this.layoutControlItem8});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 148);
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 138);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
             this.layoutControlGroup2.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
             this.layoutControlGroup2.Size = new System.Drawing.Size(626, 174);
@@ -343,16 +344,16 @@
             this.layoutControlItem4.Control = this.txtFilePath;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(489, 32);
+            this.layoutControlItem4.Size = new System.Drawing.Size(463, 32);
             this.layoutControlItem4.Text = "Export-Dateipfad ";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(173, 21);
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnBrowse;
-            this.layoutControlItem5.Location = new System.Drawing.Point(489, 96);
+            this.layoutControlItem5.Location = new System.Drawing.Point(463, 96);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(119, 32);
+            this.layoutControlItem5.Size = new System.Drawing.Size(145, 32);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
