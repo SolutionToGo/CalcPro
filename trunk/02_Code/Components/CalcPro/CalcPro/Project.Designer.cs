@@ -32,6 +32,7 @@
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraEditors.DXErrorProvider.CompareAgainstControlValidationRule compareAgainstControlValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.CompareAgainstControlValidationRule();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProject));
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule2 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule3 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
@@ -56,7 +57,6 @@
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue5 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule3 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue6 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProject));
             this.gvProposalArticles = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn110 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn111 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -184,6 +184,118 @@
             this.gridBand2 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.bandedGridColumn11 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.lcCostDetails = new DevExpress.XtraLayout.LayoutControl();
+            this.dtpValidityDate = new DevExpress.XtraEditors.DateEdit();
+            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.dbtnPriceComp = new DevExpress.XtraBars.BarButtonItem();
+            this.btnArtSettings = new DevExpress.XtraBars.BarButtonItem();
+            this.btnFormBlattArt = new DevExpress.XtraBars.BarButtonItem();
+            this.btnProjectArt = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSaveProject = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAngebotCommentary = new DevExpress.XtraBars.BarButtonItem();
+            this.btnCaluclatorCommentary = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDataTransfer = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAddDisc = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDeleteDisc = new DevExpress.XtraBars.BarButtonItem();
+            this.btnNew = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSaveLVDetails = new DevExpress.XtraBars.BarButtonItem();
+            this.btnCancel = new DevExpress.XtraBars.BarButtonItem();
+            this.chkCreateNew = new DevExpress.XtraBars.BarEditItem();
+            this.ChkLVCreateNew = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.btnExportExcel = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAddLVSection = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPrevious = new DevExpress.XtraBars.BarButtonItem();
+            this.btnNext = new DevExpress.XtraBars.BarButtonItem();
+            this.btnLongDescription = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSaveActionA = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSavesectionB = new DevExpress.XtraBars.BarButtonItem();
+            this.btnApply = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDocuwareLink = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAddAccessories = new DevExpress.XtraBars.BarButtonItem();
+            this.ChkManualMontageentry = new DevExpress.XtraBars.BarEditItem();
+            this.chkCostMontageEntry = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.btnValiditydates = new DevExpress.XtraBars.BarButtonItem();
+            this.btnProjRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.btnProjectExport = new DevExpress.XtraBars.BarButtonItem();
+            this.btnProjectImport = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMulti5LoadArticles = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMulti5UpdateSelbekosten = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMulti6LoadArticles = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMulti6UpdateSelbekosten = new DevExpress.XtraBars.BarButtonItem();
+            this.btnUmlageSave = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAddedCost = new DevExpress.XtraBars.BarButtonItem();
+            this.btnUmlageExport = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDelSave = new DevExpress.XtraBars.BarButtonItem();
+            this.barEditItem5 = new DevExpress.XtraBars.BarEditItem();
+            this.chkDelActiveDelivery = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.btnInvoiceSave = new DevExpress.XtraBars.BarButtonItem();
+            this.btnInvoiceView = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem56 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSaveSupplierProposal = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSubmit = new DevExpress.XtraBars.BarButtonItem();
+            this.btnExportProposalPositions = new DevExpress.XtraBars.BarButtonItem();
+            this.bnSaveTemparary1 = new DevExpress.XtraBars.BarButtonItem();
+            this.rgProposalViews = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemRadioGroup1 = new DevExpress.XtraEditors.Repository.RepositoryItemRadioGroup();
+            this.rgFilter = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemRadioGroup2 = new DevExpress.XtraEditors.Repository.RepositoryItemRadioGroup();
+            this.rgDropMode1 = new DevExpress.XtraBars.BarEditItem();
+            this.rpLVDropMode = new DevExpress.XtraEditors.Repository.RepositoryItemRadioGroup();
+            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
+            this.btnAngebotReport = new DevExpress.XtraBars.BarButtonItem();
+            this.btnQuerCalcV1 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnQuerCalcV2 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnFormBlatt = new DevExpress.XtraBars.BarButtonItem();
+            this.btnBreakdownReport = new DevExpress.XtraBars.BarButtonItem();
+            this.btnConsolidatedBlatt = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDeliveryNotes = new DevExpress.XtraBars.BarButtonItem();
+            this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
+            this.btnTitleBlattV011 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTitleBlattV012 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTitleBlattV013 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTitleBlattV014 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTitleBlattDelivery = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTitleBlattInvoice = new DevExpress.XtraBars.BarButtonItem();
+            this.btnRefreshTreeView = new DevExpress.XtraBars.BarButtonItem();
+            this.cmbSelectTreelistColumnsItem = new DevExpress.XtraBars.BarEditItem();
+            this.chkSelectTreelistColumns = new DevExpress.XtraEditors.Repository.RepositoryItemCheckedComboBoxEdit();
+            this.btnModify = new DevExpress.XtraBars.BarButtonItem();
+            this.cmbLVSectionProposalItem = new DevExpress.XtraBars.BarEditItem();
+            this.cmbLVSectionProposal = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.btnCopyPosition = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDeletePosition = new DevExpress.XtraBars.BarButtonItem();
+            this.rpProjectMetaData = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rpgProjectMetaData = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgDiscount = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgOthers = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpPosition = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rpgLVDetails = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgRefresh = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpBulkProcess = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rpgBuilkProccess = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgLVCopy = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpCalculations = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rpgSelb = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgVerka = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgUmlage = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpDelInv = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rpgDelivery = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgInvoice = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpProposal = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rpgSP = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgUSP = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgFilter = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgProposalViews = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpGAEB = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rpgGAEB = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpReports = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rpgReports = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgTitleBlatt = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.cmbLVSelectTreeListColumns = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.cmbCostSelectColumns = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.txtGrundMultiMO1 = new DevExpress.XtraEditors.TextEdit();
@@ -201,7 +313,6 @@
             this.txtDetailKZCD = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.dtpValidityDate = new System.Windows.Forms.DateTimePicker();
             this.txtEP = new DevExpress.XtraEditors.TextEdit();
             this.txtLiefrantMA = new DevExpress.XtraEditors.TextEdit();
             this.txtPreisText = new DevExpress.XtraEditors.MemoEdit();
@@ -261,22 +372,14 @@
             this.cmbPositionKZCD = new DevExpress.XtraEditors.LookUpEdit();
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.emptySpaceItem21 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem242 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem246 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem249 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem250 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem251 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem253 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem29 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem30 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem31 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem255 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lccmbLVStatus = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem256 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem35 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem36 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -294,8 +397,6 @@
             this.layoutControlItem74 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem79 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem19 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem42 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem213 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem41 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -308,13 +409,8 @@
             this.layoutControlItem77 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem80 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem81 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem40 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem34 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem29 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem118 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem78 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem75 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem127 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem257 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem47 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem44 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -334,42 +430,30 @@
             this.layoutControlItem60 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem61 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem62 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem64 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem98 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem116 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem119 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem120 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem20 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem28 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem123 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem131 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem133 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem134 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem122 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem82 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem90 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem44 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem97 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem7 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.layoutControlItem123 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem8 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem11 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.layoutControlItem241 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem22 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem43 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem51 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem31 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem33 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem43 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem65 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem45 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem56 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem63 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem109 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem117 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem23 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem26 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem246 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem6 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlItem29 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem30 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem31 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem7 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlItem40 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem8 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.lccmbLVStatus = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem123 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem241 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem13 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem18 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem11 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.repositoryItemButtonEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.tcProjectDetails = new DevExpress.XtraTab.XtraTabControl();
             this.tbProjectDetails = new DevExpress.XtraTab.XtraTabPage();
@@ -832,17 +916,13 @@
             this.gridColumn46 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn47 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumnPositionsStatus = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cmbLVSectionProposal = new DevExpress.XtraEditors.LookUpEdit();
             this.layoutControlItem160 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup23 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.emptySpaceItem47 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.layoutControlItem157 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem195 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem163 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem162 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem155 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem156 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem137 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.tbUpdateSupplier = new DevExpress.XtraTab.XtraTabPage();
             this.layoutControl15 = new DevExpress.XtraLayout.LayoutControl();
             this.txtEinkuafpreisUSP = new DevExpress.XtraEditors.TextEdit();
@@ -1065,116 +1145,7 @@
             this.ProposalSupplierID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ProposalName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
-            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.dbtnPriceComp = new DevExpress.XtraBars.BarButtonItem();
-            this.btnArtSettings = new DevExpress.XtraBars.BarButtonItem();
-            this.btnFormBlattArt = new DevExpress.XtraBars.BarButtonItem();
-            this.btnProjectArt = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSaveProject = new DevExpress.XtraBars.BarButtonItem();
-            this.btnAngebotCommentary = new DevExpress.XtraBars.BarButtonItem();
-            this.btnCaluclatorCommentary = new DevExpress.XtraBars.BarButtonItem();
-            this.btnDataTransfer = new DevExpress.XtraBars.BarButtonItem();
-            this.btnAddDisc = new DevExpress.XtraBars.BarButtonItem();
-            this.btnDeleteDisc = new DevExpress.XtraBars.BarButtonItem();
-            this.btnNew = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSaveLVDetails = new DevExpress.XtraBars.BarButtonItem();
-            this.btnCancel = new DevExpress.XtraBars.BarButtonItem();
-            this.chkCreateNew = new DevExpress.XtraBars.BarEditItem();
-            this.ChkLVCreateNew = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.btnExportExcel = new DevExpress.XtraBars.BarButtonItem();
-            this.btnAddLVSection = new DevExpress.XtraBars.BarButtonItem();
-            this.btnPrevious = new DevExpress.XtraBars.BarButtonItem();
-            this.btnNext = new DevExpress.XtraBars.BarButtonItem();
-            this.btnLongDescription = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSaveActionA = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSavesectionB = new DevExpress.XtraBars.BarButtonItem();
-            this.btnApply = new DevExpress.XtraBars.BarButtonItem();
-            this.btnDocuwareLink = new DevExpress.XtraBars.BarButtonItem();
-            this.btnAddAccessories = new DevExpress.XtraBars.BarButtonItem();
-            this.ChkManualMontageentry = new DevExpress.XtraBars.BarEditItem();
-            this.chkCostMontageEntry = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.btnValiditydates = new DevExpress.XtraBars.BarButtonItem();
-            this.btnProjRefresh = new DevExpress.XtraBars.BarButtonItem();
-            this.btnProjectExport = new DevExpress.XtraBars.BarButtonItem();
-            this.btnProjectImport = new DevExpress.XtraBars.BarButtonItem();
-            this.btnMulti5LoadArticles = new DevExpress.XtraBars.BarButtonItem();
-            this.btnMulti5UpdateSelbekosten = new DevExpress.XtraBars.BarButtonItem();
-            this.btnMulti6LoadArticles = new DevExpress.XtraBars.BarButtonItem();
-            this.btnMulti6UpdateSelbekosten = new DevExpress.XtraBars.BarButtonItem();
-            this.btnUmlageSave = new DevExpress.XtraBars.BarButtonItem();
-            this.btnAddedCost = new DevExpress.XtraBars.BarButtonItem();
-            this.btnUmlageExport = new DevExpress.XtraBars.BarButtonItem();
-            this.btnDelSave = new DevExpress.XtraBars.BarButtonItem();
-            this.barEditItem5 = new DevExpress.XtraBars.BarEditItem();
-            this.chkDelActiveDelivery = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.btnInvoiceSave = new DevExpress.XtraBars.BarButtonItem();
-            this.btnInvoiceView = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem56 = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSaveSupplierProposal = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSubmit = new DevExpress.XtraBars.BarButtonItem();
-            this.btnExportProposalPositions = new DevExpress.XtraBars.BarButtonItem();
-            this.bnSaveTemparary1 = new DevExpress.XtraBars.BarButtonItem();
-            this.rgProposalViews = new DevExpress.XtraBars.BarEditItem();
-            this.repositoryItemRadioGroup1 = new DevExpress.XtraEditors.Repository.RepositoryItemRadioGroup();
-            this.rgFilter = new DevExpress.XtraBars.BarEditItem();
-            this.repositoryItemRadioGroup2 = new DevExpress.XtraEditors.Repository.RepositoryItemRadioGroup();
-            this.rgDropMode1 = new DevExpress.XtraBars.BarEditItem();
-            this.rpLVDropMode = new DevExpress.XtraEditors.Repository.RepositoryItemRadioGroup();
-            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
-            this.btnAngebotReport = new DevExpress.XtraBars.BarButtonItem();
-            this.btnQuerCalcV1 = new DevExpress.XtraBars.BarButtonItem();
-            this.btnQuerCalcV2 = new DevExpress.XtraBars.BarButtonItem();
-            this.btnFormBlatt = new DevExpress.XtraBars.BarButtonItem();
-            this.btnBreakdownReport = new DevExpress.XtraBars.BarButtonItem();
-            this.btnConsolidatedBlatt = new DevExpress.XtraBars.BarButtonItem();
-            this.btnDeliveryNotes = new DevExpress.XtraBars.BarButtonItem();
-            this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
-            this.btnTitleBlattV011 = new DevExpress.XtraBars.BarButtonItem();
-            this.btnTitleBlattV012 = new DevExpress.XtraBars.BarButtonItem();
-            this.btnTitleBlattV013 = new DevExpress.XtraBars.BarButtonItem();
-            this.btnTitleBlattV014 = new DevExpress.XtraBars.BarButtonItem();
-            this.btnTitleBlattDelivery = new DevExpress.XtraBars.BarButtonItem();
-            this.btnTitleBlattInvoice = new DevExpress.XtraBars.BarButtonItem();
-            this.btnRefreshTreeView = new DevExpress.XtraBars.BarButtonItem();
-            this.cmbSelectTreelistColumnsItem = new DevExpress.XtraBars.BarEditItem();
-            this.chkSelectTreelistColumns = new DevExpress.XtraEditors.Repository.RepositoryItemCheckedComboBoxEdit();
-            this.btnModify = new DevExpress.XtraBars.BarButtonItem();
-            this.rpProjectMetaData = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rpgProjectMetaData = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgDiscount = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgOthers = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpPosition = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rpgLVDetails = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgRefresh = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpBulkProcess = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rpgBuilkProccess = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgLVCopy = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpCalculations = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rpgSelb = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgVerka = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgUmlage = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpDelInv = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rpgDelivery = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgInvoice = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpProposal = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rpgSP = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgUSP = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgFilter = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgProposalViews = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpGAEB = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rpgGAEB = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpReports = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rpgReports = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgTitleBlatt = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.cmbLVSelectTreeListColumns = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.cmbCostSelectColumns = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.gvProposalArticles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcProposedSupplier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvProposedSupplier)).BeginInit();
@@ -1260,6 +1231,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.rpiAll)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcCostDetails)).BeginInit();
             this.lcCostDetails.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtpValidityDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtpValidityDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChkLVCreateNew)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkCostMontageEntry)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkDelActiveDelivery)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRadioGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRadioGroup2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rpLVDropMode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkSelectTreelistColumns)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSectionProposal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSelectTreeListColumns)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbCostSelectColumns)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGrundMultiMO1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGrundMultiME1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLVPositionCD.Properties)).BeginInit();
@@ -1330,22 +1315,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbPositionKZCD.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem242)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem246)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem249)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem250)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem251)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem253)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem255)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lccmbLVStatus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem256)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem36)).BeginInit();
@@ -1363,8 +1340,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem74)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem79)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem213)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem41)).BeginInit();
@@ -1377,13 +1352,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem77)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem80)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem81)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem118)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem78)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem75)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem127)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem257)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem44)).BeginInit();
@@ -1403,42 +1373,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem60)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem61)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem62)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem64)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem98)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem116)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem119)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem120)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem123)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem131)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem133)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem134)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem122)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem82)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem90)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem44)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem97)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem123)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem241)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem43)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem65)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem56)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem63)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem109)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem117)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem246)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lccmbLVStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem123)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem241)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcProjectDetails)).BeginInit();
             this.tcProjectDetails.SuspendLayout();
@@ -1752,17 +1710,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.gcLVDetailsforSupplier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvLVDetailsforSupplier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rpiDescription)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSectionProposal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem160)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem47)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem157)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem195)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem163)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem162)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem155)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem156)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem137)).BeginInit();
             this.tbUpdateSupplier.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl15)).BeginInit();
             this.layoutControl15.SuspendLayout();
@@ -1878,17 +1832,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem108)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem124)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ChkLVCreateNew)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkCostMontageEntry)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkDelActiveDelivery)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRadioGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRadioGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rpLVDropMode)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkSelectTreelistColumns)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSelectTreeListColumns)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbCostSelectColumns)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).BeginInit();
             this.SuspendLayout();
             // 
             // gvProposalArticles
@@ -1958,13 +1901,13 @@
             gridLevelNode1.RelationName = "Level1";
             this.gcProposedSupplier.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
             gridLevelNode1});
-            this.gcProposedSupplier.Location = new System.Drawing.Point(3, 48);
+            this.gcProposedSupplier.Location = new System.Drawing.Point(3, 22);
             this.gcProposedSupplier.MainView = this.gvProposedSupplier;
             this.gcProposedSupplier.Name = "gcProposedSupplier";
             this.gcProposedSupplier.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemTextEdit3,
             this.repositoryItemRichTextEdit3});
-            this.gcProposedSupplier.Size = new System.Drawing.Size(1059, 295);
+            this.gcProposedSupplier.Size = new System.Drawing.Size(1059, 321);
             this.gcProposedSupplier.TabIndex = 27;
             this.gcProposedSupplier.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvProposedSupplier,
@@ -2314,7 +2257,7 @@
             this.LCGLVDetails.OptionsFocus.EnableAutoTabOrder = false;
             this.LCGLVDetails.OptionsFocus.MoveFocusRightToLeft = true;
             this.LCGLVDetails.Root = this.layoutControlGroup4;
-            this.LCGLVDetails.Size = new System.Drawing.Size(1703, 292);
+            this.LCGLVDetails.Size = new System.Drawing.Size(1703, 296);
             this.LCGLVDetails.TabIndex = 37;
             this.LCGLVDetails.Text = "layoutControl3";
             // 
@@ -2358,45 +2301,45 @@
             // 
             // txtStufe4Title
             // 
-            this.txtStufe4Title.Location = new System.Drawing.Point(181, 104);
+            this.txtStufe4Title.Location = new System.Drawing.Point(189, 104);
             this.txtStufe4Title.Name = "txtStufe4Title";
             this.txtStufe4Title.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtStufe4Title.Properties.Appearance.Options.UseFont = true;
             this.txtStufe4Title.Properties.ReadOnly = true;
-            this.txtStufe4Title.Size = new System.Drawing.Size(340, 22);
+            this.txtStufe4Title.Size = new System.Drawing.Size(332, 22);
             this.txtStufe4Title.StyleController = this.LCGLVDetails;
             this.txtStufe4Title.TabIndex = 25;
             // 
             // txtStufe3Title
             // 
-            this.txtStufe3Title.Location = new System.Drawing.Point(181, 78);
+            this.txtStufe3Title.Location = new System.Drawing.Point(189, 78);
             this.txtStufe3Title.Name = "txtStufe3Title";
             this.txtStufe3Title.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtStufe3Title.Properties.Appearance.Options.UseFont = true;
             this.txtStufe3Title.Properties.ReadOnly = true;
-            this.txtStufe3Title.Size = new System.Drawing.Size(340, 22);
+            this.txtStufe3Title.Size = new System.Drawing.Size(332, 22);
             this.txtStufe3Title.StyleController = this.LCGLVDetails;
             this.txtStufe3Title.TabIndex = 24;
             // 
             // txtStufe2Title
             // 
-            this.txtStufe2Title.Location = new System.Drawing.Point(181, 52);
+            this.txtStufe2Title.Location = new System.Drawing.Point(189, 52);
             this.txtStufe2Title.Name = "txtStufe2Title";
             this.txtStufe2Title.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtStufe2Title.Properties.Appearance.Options.UseFont = true;
             this.txtStufe2Title.Properties.ReadOnly = true;
-            this.txtStufe2Title.Size = new System.Drawing.Size(340, 22);
+            this.txtStufe2Title.Size = new System.Drawing.Size(332, 22);
             this.txtStufe2Title.StyleController = this.LCGLVDetails;
             this.txtStufe2Title.TabIndex = 23;
             // 
             // txtStufe1Title
             // 
-            this.txtStufe1Title.Location = new System.Drawing.Point(181, 26);
+            this.txtStufe1Title.Location = new System.Drawing.Point(189, 26);
             this.txtStufe1Title.Name = "txtStufe1Title";
             this.txtStufe1Title.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtStufe1Title.Properties.Appearance.Options.UseFont = true;
             this.txtStufe1Title.Properties.ReadOnly = true;
-            this.txtStufe1Title.Size = new System.Drawing.Size(340, 22);
+            this.txtStufe1Title.Size = new System.Drawing.Size(332, 22);
             this.txtStufe1Title.StyleController = this.LCGLVDetails;
             this.txtStufe1Title.TabIndex = 22;
             // 
@@ -2569,7 +2512,7 @@
             this.txtStufe1Short.Properties.AllowMouseWheel = false;
             this.txtStufe1Short.Properties.Mask.EditMask = "\\d{0,}";
             this.txtStufe1Short.Properties.MaxLength = 2;
-            this.txtStufe1Short.Size = new System.Drawing.Size(95, 22);
+            this.txtStufe1Short.Size = new System.Drawing.Size(103, 22);
             this.txtStufe1Short.StyleController = this.LCGLVDetails;
             this.txtStufe1Short.TabIndex = 0;
             this.txtStufe1Short.Tag = "Stufe1";
@@ -2596,7 +2539,7 @@
             this.txtStufe3Short.Properties.AllowMouseWheel = false;
             this.txtStufe3Short.Properties.Mask.EditMask = "\\d{0,}";
             this.txtStufe3Short.Properties.MaxLength = 2;
-            this.txtStufe3Short.Size = new System.Drawing.Size(95, 22);
+            this.txtStufe3Short.Size = new System.Drawing.Size(103, 22);
             this.txtStufe3Short.StyleController = this.LCGLVDetails;
             this.txtStufe3Short.TabIndex = 2;
             this.txtStufe3Short.Tag = "Stufe3";
@@ -2611,7 +2554,7 @@
             this.txtStufe4Short.Properties.AllowMouseWheel = false;
             this.txtStufe4Short.Properties.Mask.EditMask = "\\d{0,}";
             this.txtStufe4Short.Properties.MaxLength = 2;
-            this.txtStufe4Short.Size = new System.Drawing.Size(95, 22);
+            this.txtStufe4Short.Size = new System.Drawing.Size(103, 22);
             this.txtStufe4Short.StyleController = this.LCGLVDetails;
             this.txtStufe4Short.TabIndex = 3;
             this.txtStufe4Short.Tag = "Stufe4";
@@ -2626,7 +2569,7 @@
             this.txtStufe2Short.Properties.AllowMouseWheel = false;
             this.txtStufe2Short.Properties.Mask.EditMask = "\\d{0,}";
             this.txtStufe2Short.Properties.MaxLength = 2;
-            this.txtStufe2Short.Size = new System.Drawing.Size(95, 22);
+            this.txtStufe2Short.Size = new System.Drawing.Size(103, 22);
             this.txtStufe2Short.StyleController = this.LCGLVDetails;
             this.txtStufe2Short.TabIndex = 1;
             this.txtStufe2Short.Tag = "Stufe2";
@@ -2700,7 +2643,7 @@
             this.layoutControlGroup1});
             this.layoutControlGroup4.Name = "Root";
             this.layoutControlGroup4.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup4.Size = new System.Drawing.Size(1703, 292);
+            this.layoutControlGroup4.Size = new System.Drawing.Size(1703, 296);
             this.layoutControlGroup4.TextVisible = false;
             // 
             // layoutControlGroup1
@@ -2739,7 +2682,7 @@
             this.layoutControlGroup1.Name = "layoutControlGroup1";
             this.layoutControlGroup1.OptionsItemText.TextToControlDistance = 5;
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1703, 292);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1703, 296);
             this.layoutControlGroup1.Text = "LV Detailsicht";
             // 
             // lciStufe2Short
@@ -2747,7 +2690,7 @@
             this.lciStufe2Short.Control = this.txtStufe2Short;
             this.lciStufe2Short.Location = new System.Drawing.Point(0, 26);
             this.lciStufe2Short.Name = "lciStufe2Short";
-            this.lciStufe2Short.Size = new System.Drawing.Size(176, 26);
+            this.lciStufe2Short.Size = new System.Drawing.Size(184, 26);
             this.lciStufe2Short.Text = "Stufe 2 ";
             this.lciStufe2Short.TextSize = new System.Drawing.Size(74, 16);
             // 
@@ -2756,7 +2699,7 @@
             this.lciStufe3Short.Control = this.txtStufe3Short;
             this.lciStufe3Short.Location = new System.Drawing.Point(0, 52);
             this.lciStufe3Short.Name = "lciStufe3Short";
-            this.lciStufe3Short.Size = new System.Drawing.Size(176, 26);
+            this.lciStufe3Short.Size = new System.Drawing.Size(184, 26);
             this.lciStufe3Short.Text = "Stufe 3 ";
             this.lciStufe3Short.TextSize = new System.Drawing.Size(74, 16);
             // 
@@ -2765,7 +2708,7 @@
             this.lciStufe4Short.Control = this.txtStufe4Short;
             this.lciStufe4Short.Location = new System.Drawing.Point(0, 78);
             this.lciStufe4Short.Name = "lciStufe4Short";
-            this.lciStufe4Short.Size = new System.Drawing.Size(176, 26);
+            this.lciStufe4Short.Size = new System.Drawing.Size(184, 26);
             this.lciStufe4Short.Text = "Stufe 4 ";
             this.lciStufe4Short.TextSize = new System.Drawing.Size(74, 16);
             // 
@@ -2903,9 +2846,9 @@
             // layoutControlItem240
             // 
             this.layoutControlItem240.Control = this.txtStufe1Title;
-            this.layoutControlItem240.Location = new System.Drawing.Point(176, 0);
+            this.layoutControlItem240.Location = new System.Drawing.Point(184, 0);
             this.layoutControlItem240.Name = "layoutControlItem240";
-            this.layoutControlItem240.Size = new System.Drawing.Size(344, 26);
+            this.layoutControlItem240.Size = new System.Drawing.Size(336, 26);
             this.layoutControlItem240.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem240.TextVisible = false;
             // 
@@ -2914,34 +2857,34 @@
             this.lciStufe1Short.Control = this.txtStufe1Short;
             this.lciStufe1Short.Location = new System.Drawing.Point(0, 0);
             this.lciStufe1Short.Name = "lciStufe1Short";
-            this.lciStufe1Short.Size = new System.Drawing.Size(176, 26);
+            this.lciStufe1Short.Size = new System.Drawing.Size(184, 26);
             this.lciStufe1Short.Text = "Stufe 1 ";
             this.lciStufe1Short.TextSize = new System.Drawing.Size(74, 16);
             // 
             // lciStufe2Title
             // 
             this.lciStufe2Title.Control = this.txtStufe2Title;
-            this.lciStufe2Title.Location = new System.Drawing.Point(176, 26);
+            this.lciStufe2Title.Location = new System.Drawing.Point(184, 26);
             this.lciStufe2Title.Name = "lciStufe2Title";
-            this.lciStufe2Title.Size = new System.Drawing.Size(344, 26);
+            this.lciStufe2Title.Size = new System.Drawing.Size(336, 26);
             this.lciStufe2Title.TextSize = new System.Drawing.Size(0, 0);
             this.lciStufe2Title.TextVisible = false;
             // 
             // lciStufe3Title
             // 
             this.lciStufe3Title.Control = this.txtStufe3Title;
-            this.lciStufe3Title.Location = new System.Drawing.Point(176, 52);
+            this.lciStufe3Title.Location = new System.Drawing.Point(184, 52);
             this.lciStufe3Title.Name = "lciStufe3Title";
-            this.lciStufe3Title.Size = new System.Drawing.Size(344, 26);
+            this.lciStufe3Title.Size = new System.Drawing.Size(336, 26);
             this.lciStufe3Title.TextSize = new System.Drawing.Size(0, 0);
             this.lciStufe3Title.TextVisible = false;
             // 
             // lciStufe4Title
             // 
             this.lciStufe4Title.Control = this.txtStufe4Title;
-            this.lciStufe4Title.Location = new System.Drawing.Point(176, 78);
+            this.lciStufe4Title.Location = new System.Drawing.Point(184, 78);
             this.lciStufe4Title.Name = "lciStufe4Title";
-            this.lciStufe4Title.Size = new System.Drawing.Size(344, 26);
+            this.lciStufe4Title.Size = new System.Drawing.Size(336, 26);
             this.lciStufe4Title.TextSize = new System.Drawing.Size(0, 0);
             this.lciStufe4Title.TextVisible = false;
             // 
@@ -2962,7 +2905,7 @@
             this.lblsurchargeme.MaxSize = new System.Drawing.Size(89, 59);
             this.lblsurchargeme.MinSize = new System.Drawing.Size(89, 59);
             this.lblsurchargeme.Name = "lblsurchargeme";
-            this.lblsurchargeme.Size = new System.Drawing.Size(89, 62);
+            this.lblsurchargeme.Size = new System.Drawing.Size(89, 66);
             this.lblsurchargeme.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.lblsurchargeme.Text = "Sur MA %";
             this.lblsurchargeme.TextLocation = DevExpress.Utils.Locations.Top;
@@ -2977,7 +2920,7 @@
             this.lblsurchargemo.MaxSize = new System.Drawing.Size(89, 59);
             this.lblsurchargemo.MinSize = new System.Drawing.Size(89, 59);
             this.lblsurchargemo.Name = "lblsurchargemo";
-            this.lblsurchargemo.Size = new System.Drawing.Size(89, 62);
+            this.lblsurchargemo.Size = new System.Drawing.Size(89, 66);
             this.lblsurchargemo.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.lblsurchargemo.Text = "Sur MO %";
             this.lblsurchargemo.TextLocation = DevExpress.Utils.Locations.Top;
@@ -2992,7 +2935,7 @@
             this.lblDscount.MaxSize = new System.Drawing.Size(89, 59);
             this.lblDscount.MinSize = new System.Drawing.Size(89, 59);
             this.lblDscount.Name = "lblDscount";
-            this.lblDscount.Size = new System.Drawing.Size(89, 62);
+            this.lblDscount.Size = new System.Drawing.Size(89, 66);
             this.lblDscount.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.lblDscount.Text = "Discount";
             this.lblDscount.TextLocation = DevExpress.Utils.Locations.Top;
@@ -3007,7 +2950,7 @@
             this.lblsurchargefrom.MaxSize = new System.Drawing.Size(89, 59);
             this.lblsurchargefrom.MinSize = new System.Drawing.Size(89, 59);
             this.lblsurchargefrom.Name = "lblsurchargefrom";
-            this.lblsurchargefrom.Size = new System.Drawing.Size(89, 62);
+            this.lblsurchargefrom.Size = new System.Drawing.Size(89, 66);
             this.lblsurchargefrom.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.lblsurchargefrom.Text = "Von OZ";
             this.lblsurchargefrom.TextLocation = DevExpress.Utils.Locations.Top;
@@ -3018,7 +2961,7 @@
             this.emptySpaceItem24.AllowHotTrack = false;
             this.emptySpaceItem24.Location = new System.Drawing.Point(445, 203);
             this.emptySpaceItem24.Name = "emptySpaceItem24";
-            this.emptySpaceItem24.Size = new System.Drawing.Size(1252, 62);
+            this.emptySpaceItem24.Size = new System.Drawing.Size(1252, 66);
             this.emptySpaceItem24.TextSize = new System.Drawing.Size(0, 0);
             // 
             // lblsurchargeto
@@ -3030,7 +2973,7 @@
             this.lblsurchargeto.MaxSize = new System.Drawing.Size(89, 59);
             this.lblsurchargeto.MinSize = new System.Drawing.Size(89, 59);
             this.lblsurchargeto.Name = "lblsurchargeto";
-            this.lblsurchargeto.Size = new System.Drawing.Size(89, 62);
+            this.lblsurchargeto.Size = new System.Drawing.Size(89, 66);
             this.lblsurchargeto.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.lblsurchargeto.Text = "Bis OZ";
             this.lblsurchargeto.TextLocation = DevExpress.Utils.Locations.Top;
@@ -3257,7 +3200,7 @@
             this.toggleSwitchType.Properties.OnText = "Anzeige Laufendes Projekt";
             this.toggleSwitchType.Properties.ValueOff = true;
             this.toggleSwitchType.Properties.ValueOn = false;
-            this.toggleSwitchType.Size = new System.Drawing.Size(232, 25);
+            this.toggleSwitchType.Size = new System.Drawing.Size(232, 19);
             this.toggleSwitchType.TabIndex = 0;
             this.toggleSwitchType.Toggled += new System.EventHandler(this.toggleSwitchType_Toggled);
             // 
@@ -3496,6 +3439,7 @@
             this.lcCostDetails.Appearance.ControlFocused.Options.UseFont = true;
             this.lcCostDetails.Appearance.ControlReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.lcCostDetails.Appearance.ControlReadOnly.Options.UseFont = true;
+            this.lcCostDetails.Controls.Add(this.dtpValidityDate);
             this.lcCostDetails.Controls.Add(this.labelControl7);
             this.lcCostDetails.Controls.Add(this.labelControl6);
             this.lcCostDetails.Controls.Add(this.txtGrundMultiMO1);
@@ -3513,7 +3457,6 @@
             this.lcCostDetails.Controls.Add(this.txtDetailKZCD);
             this.lcCostDetails.Controls.Add(this.labelControl2);
             this.lcCostDetails.Controls.Add(this.labelControl1);
-            this.lcCostDetails.Controls.Add(this.dtpValidityDate);
             this.lcCostDetails.Controls.Add(this.txtEP);
             this.lcCostDetails.Controls.Add(this.txtLiefrantMA);
             this.lcCostDetails.Controls.Add(this.txtPreisText);
@@ -3574,7 +3517,7 @@
             this.lcCostDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lcCostDetails.Location = new System.Drawing.Point(0, 0);
             this.lcCostDetails.Name = "lcCostDetails";
-            this.lcCostDetails.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1453, 364, 250, 350);
+            this.lcCostDetails.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(645, 71, 250, 350);
             this.lcCostDetails.OptionsFocus.EnableAutoTabOrder = false;
             this.lcCostDetails.OptionsView.ItemBorderColor = System.Drawing.Color.Empty;
             this.lcCostDetails.Root = this.layoutControlGroup6;
@@ -3582,69 +3525,1674 @@
             this.lcCostDetails.TabIndex = 39;
             this.lcCostDetails.Text = "layoutControl6";
             // 
+            // dtpValidityDate
+            // 
+            this.dtpValidityDate.EditValue = null;
+            this.dtpValidityDate.Location = new System.Drawing.Point(595, -106);
+            this.dtpValidityDate.MenuManager = this.ribbonControl1;
+            this.dtpValidityDate.Name = "dtpValidityDate";
+            this.dtpValidityDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtpValidityDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtpValidityDate.Properties.DisplayFormat.FormatString = "y";
+            this.dtpValidityDate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dtpValidityDate.Properties.EditFormat.FormatString = "y";
+            this.dtpValidityDate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dtpValidityDate.Properties.Mask.EditMask = "y";
+            this.dtpValidityDate.Properties.VistaCalendarInitialViewStyle = DevExpress.XtraEditors.VistaCalendarInitialViewStyle.YearView;
+            this.dtpValidityDate.Properties.VistaCalendarViewStyle = DevExpress.XtraEditors.VistaCalendarViewStyle.YearView;
+            this.dtpValidityDate.Size = new System.Drawing.Size(126, 22);
+            this.dtpValidityDate.StyleController = this.lcCostDetails;
+            this.dtpValidityDate.TabIndex = 74;
+            // 
+            // ribbonControl1
+            // 
+            this.ribbonControl1.AutoSaveLayoutToXml = true;
+            this.ribbonControl1.ExpandCollapseItem.Id = 0;
+            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl1.ExpandCollapseItem,
+            this.dbtnPriceComp,
+            this.btnArtSettings,
+            this.btnFormBlattArt,
+            this.btnProjectArt,
+            this.btnSaveProject,
+            this.btnAngebotCommentary,
+            this.btnCaluclatorCommentary,
+            this.btnDataTransfer,
+            this.btnAddDisc,
+            this.btnDeleteDisc,
+            this.btnNew,
+            this.btnSaveLVDetails,
+            this.btnCancel,
+            this.chkCreateNew,
+            this.btnExportExcel,
+            this.btnAddLVSection,
+            this.btnPrevious,
+            this.btnNext,
+            this.btnLongDescription,
+            this.btnSaveActionA,
+            this.btnSavesectionB,
+            this.btnApply,
+            this.btnDocuwareLink,
+            this.btnAddAccessories,
+            this.ChkManualMontageentry,
+            this.btnValiditydates,
+            this.btnProjRefresh,
+            this.btnProjectExport,
+            this.btnProjectImport,
+            this.btnMulti5LoadArticles,
+            this.btnMulti5UpdateSelbekosten,
+            this.btnMulti6LoadArticles,
+            this.btnMulti6UpdateSelbekosten,
+            this.btnUmlageSave,
+            this.btnAddedCost,
+            this.btnUmlageExport,
+            this.btnDelSave,
+            this.barEditItem5,
+            this.btnInvoiceSave,
+            this.btnInvoiceView,
+            this.barButtonItem56,
+            this.btnSaveSupplierProposal,
+            this.btnSubmit,
+            this.btnExportProposalPositions,
+            this.bnSaveTemparary1,
+            this.rgProposalViews,
+            this.rgFilter,
+            this.rgDropMode1,
+            this.barSubItem1,
+            this.btnAngebotReport,
+            this.btnQuerCalcV1,
+            this.btnQuerCalcV2,
+            this.btnFormBlatt,
+            this.btnBreakdownReport,
+            this.btnConsolidatedBlatt,
+            this.btnDeliveryNotes,
+            this.barSubItem2,
+            this.btnTitleBlattV011,
+            this.btnTitleBlattV014,
+            this.btnTitleBlattV013,
+            this.btnTitleBlattDelivery,
+            this.btnTitleBlattInvoice,
+            this.btnTitleBlattV012,
+            this.btnRefreshTreeView,
+            this.cmbSelectTreelistColumnsItem,
+            this.btnModify,
+            this.cmbLVSectionProposalItem,
+            this.btnCopyPosition,
+            this.btnDeletePosition});
+            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.MaxItemId = 94;
+            this.ribbonControl1.Name = "ribbonControl1";
+            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.rpProjectMetaData,
+            this.rpPosition,
+            this.rpBulkProcess,
+            this.rpCalculations,
+            this.rpDelInv,
+            this.rpProposal,
+            this.rpGAEB,
+            this.rpReports});
+            this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.ChkLVCreateNew,
+            this.cmbLVSelectTreeListColumns,
+            this.cmbCostSelectColumns,
+            this.chkCostMontageEntry,
+            this.chkDelActiveDelivery,
+            this.repositoryItemRadioGroup1,
+            this.repositoryItemRadioGroup2,
+            this.rpLVDropMode,
+            this.repositoryItemCheckEdit2,
+            this.chkSelectTreelistColumns,
+            this.cmbLVSectionProposal});
+            this.ribbonControl1.ShowToolbarCustomizeItem = false;
+            this.ribbonControl1.Size = new System.Drawing.Size(1717, 171);
+            this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
+            this.ribbonControl1.SelectedPageChanged += new System.EventHandler(this.ribbonControl1_SelectedPageChanged);
+            // 
+            // dbtnPriceComp
+            // 
+            this.dbtnPriceComp.Caption = "Preisvergleich";
+            this.dbtnPriceComp.Id = 1;
+            this.dbtnPriceComp.ImageOptions.Image = global::CalcPro.Properties.Resources.pricecompare_32x32;
+            this.dbtnPriceComp.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.dbtnPriceComp.ItemAppearance.Disabled.Options.UseFont = true;
+            this.dbtnPriceComp.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.dbtnPriceComp.ItemAppearance.Hovered.Options.UseFont = true;
+            this.dbtnPriceComp.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.dbtnPriceComp.ItemAppearance.Normal.Options.UseFont = true;
+            this.dbtnPriceComp.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.dbtnPriceComp.ItemAppearance.Pressed.Options.UseFont = true;
+            this.dbtnPriceComp.Name = "dbtnPriceComp";
+            this.dbtnPriceComp.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.dbtnPriceComp.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.dbtnPriceComp_ItemClick);
+            // 
+            // btnArtSettings
+            // 
+            this.btnArtSettings.Caption = "Felddefinition Artikelstamm";
+            this.btnArtSettings.Id = 14;
+            this.btnArtSettings.ImageOptions.Image = global::CalcPro.Properties.Resources.fieldinfor_32x32;
+            this.btnArtSettings.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnArtSettings.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnArtSettings.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnArtSettings.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnArtSettings.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnArtSettings.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnArtSettings.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnArtSettings.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnArtSettings.Name = "btnArtSettings";
+            this.btnArtSettings.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnArtSettings.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            this.btnArtSettings.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnArtSettings_ItemClick);
+            // 
+            // btnFormBlattArt
+            // 
+            this.btnFormBlattArt.Caption = "Formblatt Artikel";
+            this.btnFormBlattArt.Id = 15;
+            this.btnFormBlattArt.ImageOptions.Image = global::CalcPro.Properties.Resources.formblattarticle_32x32;
+            this.btnFormBlattArt.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnFormBlattArt.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnFormBlattArt.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnFormBlattArt.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnFormBlattArt.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnFormBlattArt.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnFormBlattArt.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnFormBlattArt.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnFormBlattArt.Name = "btnFormBlattArt";
+            this.btnFormBlattArt.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnFormBlattArt.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnFormBlattArt_ItemClick);
+            // 
+            // btnProjectArt
+            // 
+            this.btnProjectArt.Caption = "Projekt Artikel";
+            this.btnProjectArt.Id = 16;
+            this.btnProjectArt.ImageOptions.Image = global::CalcPro.Properties.Resources.projectblatt_32x32;
+            this.btnProjectArt.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjectArt.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnProjectArt.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjectArt.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnProjectArt.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjectArt.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnProjectArt.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjectArt.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnProjectArt.Name = "btnProjectArt";
+            this.btnProjectArt.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnProjectArt.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProjectArt_ItemClick);
+            // 
+            // btnSaveProject
+            // 
+            this.btnSaveProject.Caption = "Speichern Projekt";
+            this.btnSaveProject.Id = 18;
+            this.btnSaveProject.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x32;
+            this.btnSaveProject.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveProject.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnSaveProject.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveProject.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnSaveProject.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveProject.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnSaveProject.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveProject.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnSaveProject.Name = "btnSaveProject";
+            this.btnSaveProject.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnSaveProject.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSaveProject_ItemClick);
+            // 
+            // btnAngebotCommentary
+            // 
+            this.btnAngebotCommentary.Caption = "Schlussparagraph Angebot";
+            this.btnAngebotCommentary.Id = 19;
+            this.btnAngebotCommentary.ImageOptions.Image = global::CalcPro.Properties.Resources.commentarycalc_32x32;
+            this.btnAngebotCommentary.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAngebotCommentary.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnAngebotCommentary.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAngebotCommentary.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnAngebotCommentary.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAngebotCommentary.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnAngebotCommentary.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAngebotCommentary.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnAngebotCommentary.Name = "btnAngebotCommentary";
+            this.btnAngebotCommentary.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnAngebotCommentary.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAngebotCommentary_ItemClick);
+            // 
+            // btnCaluclatorCommentary
+            // 
+            this.btnCaluclatorCommentary.Caption = "Kommentar Kalkulator";
+            this.btnCaluclatorCommentary.Id = 20;
+            this.btnCaluclatorCommentary.ImageOptions.Image = global::CalcPro.Properties.Resources.paragraphcomment_32x32;
+            this.btnCaluclatorCommentary.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnCaluclatorCommentary.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnCaluclatorCommentary.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnCaluclatorCommentary.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnCaluclatorCommentary.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnCaluclatorCommentary.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnCaluclatorCommentary.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnCaluclatorCommentary.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnCaluclatorCommentary.Name = "btnCaluclatorCommentary";
+            this.btnCaluclatorCommentary.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnCaluclatorCommentary.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCaluclatorCommentary_ItemClick);
+            // 
+            // btnDataTransfer
+            // 
+            this.btnDataTransfer.Caption = "Daten ins OTTO Projektcockpit laden";
+            this.btnDataTransfer.Id = 21;
+            this.btnDataTransfer.ImageOptions.Image = global::CalcPro.Properties.Resources.transfer_32x32;
+            this.btnDataTransfer.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDataTransfer.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnDataTransfer.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDataTransfer.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnDataTransfer.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDataTransfer.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnDataTransfer.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDataTransfer.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnDataTransfer.Name = "btnDataTransfer";
+            this.btnDataTransfer.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnDataTransfer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDataTransfer_ItemClick);
+            // 
+            // btnAddDisc
+            // 
+            this.btnAddDisc.Caption = "Hinzufügen Discount";
+            this.btnAddDisc.Id = 22;
+            this.btnAddDisc.ImageOptions.Image = global::CalcPro.Properties.Resources.percentadd_32x32;
+            this.btnAddDisc.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddDisc.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnAddDisc.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddDisc.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnAddDisc.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddDisc.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnAddDisc.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddDisc.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnAddDisc.Name = "btnAddDisc";
+            this.btnAddDisc.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnAddDisc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAddDisc_ItemClick);
+            // 
+            // btnDeleteDisc
+            // 
+            this.btnDeleteDisc.Caption = "Löschen Discount";
+            this.btnDeleteDisc.Id = 23;
+            this.btnDeleteDisc.ImageOptions.Image = global::CalcPro.Properties.Resources.percentdelete_32x32;
+            this.btnDeleteDisc.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDeleteDisc.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnDeleteDisc.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDeleteDisc.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnDeleteDisc.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDeleteDisc.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnDeleteDisc.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDeleteDisc.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnDeleteDisc.Name = "btnDeleteDisc";
+            this.btnDeleteDisc.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnDeleteDisc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDeleteDisc_ItemClick);
+            // 
+            // btnNew
+            // 
+            this.btnNew.Caption = "Neu";
+            this.btnNew.Id = 24;
+            this.btnNew.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnNew.ImageOptions.SvgImage")));
+            this.btnNew.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnNew.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnNew.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnNew.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnNew.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnNew.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnNew.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnNew.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnNew.Name = "btnNew";
+            this.btnNew.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVNew_ItemClick);
+            // 
+            // btnSaveLVDetails
+            // 
+            this.btnSaveLVDetails.Caption = "Speichern";
+            this.btnSaveLVDetails.Id = 25;
+            this.btnSaveLVDetails.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSaveLVDetails.ImageOptions.SvgImage")));
+            this.btnSaveLVDetails.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveLVDetails.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnSaveLVDetails.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveLVDetails.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnSaveLVDetails.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveLVDetails.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnSaveLVDetails.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveLVDetails.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnSaveLVDetails.Name = "btnSaveLVDetails";
+            this.btnSaveLVDetails.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVSave_ItemClick);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Caption = "Abbrechen";
+            this.btnCancel.Id = 26;
+            this.btnCancel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCancel.ImageOptions.SvgImage")));
+            this.btnCancel.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnCancel.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnCancel.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnCancel.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnCancel.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnCancel.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnCancel.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnCancel.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVCancel_ItemClick);
+            // 
+            // chkCreateNew
+            // 
+            this.chkCreateNew.Caption = "Neu Anlegen";
+            this.chkCreateNew.Edit = this.ChkLVCreateNew;
+            this.chkCreateNew.Id = 27;
+            this.chkCreateNew.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkCreateNew.ItemAppearance.Disabled.Options.UseFont = true;
+            this.chkCreateNew.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkCreateNew.ItemAppearance.Hovered.Options.UseFont = true;
+            this.chkCreateNew.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkCreateNew.ItemAppearance.Normal.Options.UseFont = true;
+            this.chkCreateNew.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkCreateNew.ItemAppearance.Pressed.Options.UseFont = true;
+            this.chkCreateNew.Name = "chkCreateNew";
+            this.chkCreateNew.EditValueChanged += new System.EventHandler(this.chkCreateNewBarItem_EditValueChanged);
+            // 
+            // ChkLVCreateNew
+            // 
+            this.ChkLVCreateNew.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.ChkLVCreateNew.Appearance.Options.UseFont = true;
+            this.ChkLVCreateNew.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.ChkLVCreateNew.AppearanceDisabled.Options.UseFont = true;
+            this.ChkLVCreateNew.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.ChkLVCreateNew.AppearanceFocused.Options.UseFont = true;
+            this.ChkLVCreateNew.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.ChkLVCreateNew.AppearanceReadOnly.Options.UseFont = true;
+            this.ChkLVCreateNew.AutoHeight = false;
+            this.ChkLVCreateNew.Name = "ChkLVCreateNew";
+            // 
+            // btnExportExcel
+            // 
+            this.btnExportExcel.Caption = "LV Angaben exportieren";
+            this.btnExportExcel.Id = 29;
+            this.btnExportExcel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnExportExcel.ImageOptions.SvgImage")));
+            this.btnExportExcel.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnExportExcel.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnExportExcel.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnExportExcel.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnExportExcel.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnExportExcel.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnExportExcel.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnExportExcel.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnExportExcel.Name = "btnExportExcel";
+            this.btnExportExcel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVExport_ItemClick);
+            // 
+            // btnAddLVSection
+            // 
+            this.btnAddLVSection.Caption = "Add LV Section";
+            this.btnAddLVSection.Id = 30;
+            this.btnAddLVSection.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAddLVSection.ImageOptions.SvgImage")));
+            this.btnAddLVSection.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddLVSection.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnAddLVSection.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddLVSection.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnAddLVSection.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddLVSection.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnAddLVSection.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddLVSection.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnAddLVSection.Name = "btnAddLVSection";
+            this.btnAddLVSection.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVAddLVSec_ItemClick);
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.Caption = "Previous";
+            this.btnPrevious.Id = 31;
+            this.btnPrevious.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnPrevious.ImageOptions.SvgImage")));
+            this.btnPrevious.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnPrevious.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnPrevious.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnPrevious.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnPrevious.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnPrevious.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnPrevious.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnPrevious.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVPrevious_ItemClick);
+            // 
+            // btnNext
+            // 
+            this.btnNext.Caption = "Next";
+            this.btnNext.Id = 32;
+            this.btnNext.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnNext.ImageOptions.SvgImage")));
+            this.btnNext.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnNext.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnNext.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnNext.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnNext.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnNext.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnNext.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnNext.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnNext.Name = "btnNext";
+            this.btnNext.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVNext_ItemClick);
+            // 
+            // btnLongDescription
+            // 
+            this.btnLongDescription.Caption = "Bearbeiten";
+            this.btnLongDescription.Id = 33;
+            this.btnLongDescription.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnLongDescription.ImageOptions.SvgImage")));
+            this.btnLongDescription.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnLongDescription.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnLongDescription.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnLongDescription.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnLongDescription.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnLongDescription.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnLongDescription.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnLongDescription.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnLongDescription.Name = "btnLongDescription";
+            this.btnLongDescription.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVLang_ItemClick);
+            // 
+            // btnSaveActionA
+            // 
+            this.btnSaveActionA.Caption = "Save Section A";
+            this.btnSaveActionA.Id = 34;
+            this.btnSaveActionA.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSaveActionA.ImageOptions.SvgImage")));
+            this.btnSaveActionA.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveActionA.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnSaveActionA.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveActionA.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnSaveActionA.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveActionA.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnSaveActionA.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveActionA.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnSaveActionA.Name = "btnSaveActionA";
+            this.btnSaveActionA.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBulkSaveA_ItemClick);
+            // 
+            // btnSavesectionB
+            // 
+            this.btnSavesectionB.Caption = "Save Section B";
+            this.btnSavesectionB.Id = 35;
+            this.btnSavesectionB.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSavesectionB.ImageOptions.SvgImage")));
+            this.btnSavesectionB.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSavesectionB.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnSavesectionB.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSavesectionB.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnSavesectionB.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSavesectionB.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnSavesectionB.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSavesectionB.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnSavesectionB.Name = "btnSavesectionB";
+            this.btnSavesectionB.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBulkSaveB_ItemClick);
+            // 
+            // btnApply
+            // 
+            this.btnApply.Caption = "Anwenden Filter";
+            this.btnApply.Id = 36;
+            this.btnApply.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnApply.ImageOptions.SvgImage")));
+            this.btnApply.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnApply.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnApply.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnApply.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnApply.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnApply.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnApply.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnApply.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnApply.Name = "btnApply";
+            this.btnApply.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBulkApply_ItemClick);
+            // 
+            // btnDocuwareLink
+            // 
+            this.btnDocuwareLink.Caption = "Docuware Link";
+            this.btnDocuwareLink.Id = 44;
+            this.btnDocuwareLink.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDocuwareLink.ImageOptions.SvgImage")));
+            this.btnDocuwareLink.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDocuwareLink.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnDocuwareLink.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDocuwareLink.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnDocuwareLink.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDocuwareLink.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnDocuwareLink.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDocuwareLink.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnDocuwareLink.Name = "btnDocuwareLink";
+            this.btnDocuwareLink.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCostDocuware_ItemClick);
+            // 
+            // btnAddAccessories
+            // 
+            this.btnAddAccessories.Caption = "Zubehör hinzufügen";
+            this.btnAddAccessories.Id = 45;
+            this.btnAddAccessories.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAddAccessories.ImageOptions.SvgImage")));
+            this.btnAddAccessories.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddAccessories.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnAddAccessories.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddAccessories.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnAddAccessories.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddAccessories.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnAddAccessories.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddAccessories.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnAddAccessories.Name = "btnAddAccessories";
+            this.btnAddAccessories.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCostAddAceess_ItemClick);
+            // 
+            // ChkManualMontageentry
+            // 
+            this.ChkManualMontageentry.Caption = "Direkte Erfassung Montagelistenpreis";
+            this.ChkManualMontageentry.Edit = this.chkCostMontageEntry;
+            this.ChkManualMontageentry.Id = 46;
+            this.ChkManualMontageentry.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.ChkManualMontageentry.ItemAppearance.Disabled.Options.UseFont = true;
+            this.ChkManualMontageentry.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.ChkManualMontageentry.ItemAppearance.Hovered.Options.UseFont = true;
+            this.ChkManualMontageentry.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.ChkManualMontageentry.ItemAppearance.Normal.Options.UseFont = true;
+            this.ChkManualMontageentry.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.ChkManualMontageentry.ItemAppearance.Pressed.Options.UseFont = true;
+            this.ChkManualMontageentry.Name = "ChkManualMontageentry";
+            this.ChkManualMontageentry.EditValueChanged += new System.EventHandler(this.chkCostMontageEntryItem_EditValueChanged);
+            // 
+            // chkCostMontageEntry
+            // 
+            this.chkCostMontageEntry.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkCostMontageEntry.Appearance.Options.UseFont = true;
+            this.chkCostMontageEntry.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkCostMontageEntry.AppearanceDisabled.Options.UseFont = true;
+            this.chkCostMontageEntry.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkCostMontageEntry.AppearanceFocused.Options.UseFont = true;
+            this.chkCostMontageEntry.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkCostMontageEntry.AppearanceReadOnly.Options.UseFont = true;
+            this.chkCostMontageEntry.AutoHeight = false;
+            this.chkCostMontageEntry.Name = "chkCostMontageEntry";
+            // 
+            // btnValiditydates
+            // 
+            this.btnValiditydates.Caption = "Gültigkeitsdatum";
+            this.btnValiditydates.Id = 47;
+            this.btnValiditydates.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnValiditydates.ImageOptions.SvgImage")));
+            this.btnValiditydates.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnValiditydates.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnValiditydates.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnValiditydates.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnValiditydates.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnValiditydates.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnValiditydates.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnValiditydates.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnValiditydates.Name = "btnValiditydates";
+            this.btnValiditydates.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCostValidityDate_ItemClick);
+            // 
+            // btnProjRefresh
+            // 
+            this.btnProjRefresh.Caption = "Refresh Project";
+            this.btnProjRefresh.Id = 48;
+            this.btnProjRefresh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnProjRefresh.ImageOptions.SvgImage")));
+            this.btnProjRefresh.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjRefresh.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnProjRefresh.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjRefresh.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnProjRefresh.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjRefresh.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnProjRefresh.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjRefresh.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnProjRefresh.Name = "btnProjRefresh";
+            this.btnProjRefresh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProjRefresh_ItemClick);
+            // 
+            // btnProjectExport
+            // 
+            this.btnProjectExport.Caption = "Export";
+            this.btnProjectExport.Id = 49;
+            this.btnProjectExport.ImageOptions.Image = global::CalcPro.Properties.Resources.export_32x32;
+            this.btnProjectExport.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjectExport.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnProjectExport.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjectExport.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnProjectExport.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjectExport.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnProjectExport.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjectExport.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnProjectExport.Name = "btnProjectExport";
+            this.btnProjectExport.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnProjectExport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProjectExport_ItemClick);
+            // 
+            // btnProjectImport
+            // 
+            this.btnProjectImport.Caption = "Import";
+            this.btnProjectImport.Id = 50;
+            this.btnProjectImport.ImageOptions.Image = global::CalcPro.Properties.Resources.import_32x32;
+            this.btnProjectImport.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjectImport.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnProjectImport.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjectImport.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnProjectImport.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjectImport.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnProjectImport.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnProjectImport.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnProjectImport.Name = "btnProjectImport";
+            this.btnProjectImport.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnProjectImport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProjectImport_ItemClick);
+            // 
+            // btnMulti5LoadArticles
+            // 
+            this.btnMulti5LoadArticles.Caption = "Laden Sie alle";
+            this.btnMulti5LoadArticles.Id = 51;
+            this.btnMulti5LoadArticles.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMulti5LoadArticles.ImageOptions.SvgImage")));
+            this.btnMulti5LoadArticles.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti5LoadArticles.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnMulti5LoadArticles.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti5LoadArticles.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnMulti5LoadArticles.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti5LoadArticles.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnMulti5LoadArticles.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti5LoadArticles.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnMulti5LoadArticles.Name = "btnMulti5LoadArticles";
+            this.btnMulti5LoadArticles.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSelbLoad_ItemClick);
+            // 
+            // btnMulti5UpdateSelbekosten
+            // 
+            this.btnMulti5UpdateSelbekosten.Caption = "Anwenden der Gemeinkosten multis";
+            this.btnMulti5UpdateSelbekosten.Id = 52;
+            this.btnMulti5UpdateSelbekosten.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMulti5UpdateSelbekosten.ImageOptions.SvgImage")));
+            this.btnMulti5UpdateSelbekosten.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti5UpdateSelbekosten.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnMulti5UpdateSelbekosten.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti5UpdateSelbekosten.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnMulti5UpdateSelbekosten.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti5UpdateSelbekosten.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnMulti5UpdateSelbekosten.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti5UpdateSelbekosten.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnMulti5UpdateSelbekosten.Name = "btnMulti5UpdateSelbekosten";
+            this.btnMulti5UpdateSelbekosten.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSelbSubmit_ItemClick);
+            // 
+            // btnMulti6LoadArticles
+            // 
+            this.btnMulti6LoadArticles.Caption = "Laden Sie alle";
+            this.btnMulti6LoadArticles.Id = 53;
+            this.btnMulti6LoadArticles.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMulti6LoadArticles.ImageOptions.SvgImage")));
+            this.btnMulti6LoadArticles.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti6LoadArticles.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnMulti6LoadArticles.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti6LoadArticles.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnMulti6LoadArticles.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti6LoadArticles.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnMulti6LoadArticles.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti6LoadArticles.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnMulti6LoadArticles.Name = "btnMulti6LoadArticles";
+            this.btnMulti6LoadArticles.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnVerkLoad_ItemClick);
+            // 
+            // btnMulti6UpdateSelbekosten
+            // 
+            this.btnMulti6UpdateSelbekosten.Caption = "Anwenden der Verkaufsmargen multis";
+            this.btnMulti6UpdateSelbekosten.Id = 54;
+            this.btnMulti6UpdateSelbekosten.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMulti6UpdateSelbekosten.ImageOptions.SvgImage")));
+            this.btnMulti6UpdateSelbekosten.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti6UpdateSelbekosten.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnMulti6UpdateSelbekosten.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti6UpdateSelbekosten.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnMulti6UpdateSelbekosten.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti6UpdateSelbekosten.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnMulti6UpdateSelbekosten.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnMulti6UpdateSelbekosten.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnMulti6UpdateSelbekosten.Name = "btnMulti6UpdateSelbekosten";
+            this.btnMulti6UpdateSelbekosten.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnVerkSubmit_ItemClick);
+            // 
+            // btnUmlageSave
+            // 
+            this.btnUmlageSave.Caption = "Speichern Und Aktualisieren";
+            this.btnUmlageSave.Id = 55;
+            this.btnUmlageSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnUmlageSave.ImageOptions.SvgImage")));
+            this.btnUmlageSave.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnUmlageSave.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnUmlageSave.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnUmlageSave.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnUmlageSave.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnUmlageSave.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnUmlageSave.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnUmlageSave.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnUmlageSave.Name = "btnUmlageSave";
+            this.btnUmlageSave.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUmlSave_ItemClick);
+            // 
+            // btnAddedCost
+            // 
+            this.btnAddedCost.Caption = "Ausführen der Kostenumlagen";
+            this.btnAddedCost.Id = 56;
+            this.btnAddedCost.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAddedCost.ImageOptions.SvgImage")));
+            this.btnAddedCost.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddedCost.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnAddedCost.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddedCost.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnAddedCost.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddedCost.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnAddedCost.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnAddedCost.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnAddedCost.Name = "btnAddedCost";
+            this.btnAddedCost.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUmlSubmit_ItemClick);
+            // 
+            // btnUmlageExport
+            // 
+            this.btnUmlageExport.Caption = "Kostenumlagen exportieren";
+            this.btnUmlageExport.Id = 57;
+            this.btnUmlageExport.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnUmlageExport.ImageOptions.SvgImage")));
+            this.btnUmlageExport.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnUmlageExport.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnUmlageExport.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnUmlageExport.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnUmlageExport.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnUmlageExport.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnUmlageExport.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnUmlageExport.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnUmlageExport.Name = "btnUmlageExport";
+            this.btnUmlageExport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUmlExport_ItemClick);
+            // 
+            // btnDelSave
+            // 
+            this.btnDelSave.Caption = "Aufmass speichern";
+            this.btnDelSave.Id = 58;
+            this.btnDelSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDelSave.ImageOptions.SvgImage")));
+            this.btnDelSave.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDelSave.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnDelSave.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDelSave.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnDelSave.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDelSave.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnDelSave.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnDelSave.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnDelSave.Name = "btnDelSave";
+            // 
+            // barEditItem5
+            // 
+            this.barEditItem5.Caption = "Aktives Aufmass";
+            this.barEditItem5.Edit = this.chkDelActiveDelivery;
+            this.barEditItem5.Id = 59;
+            this.barEditItem5.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barEditItem5.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barEditItem5.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barEditItem5.ItemAppearance.Hovered.Options.UseFont = true;
+            this.barEditItem5.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barEditItem5.ItemAppearance.Normal.Options.UseFont = true;
+            this.barEditItem5.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barEditItem5.ItemAppearance.Pressed.Options.UseFont = true;
+            this.barEditItem5.Name = "barEditItem5";
+            // 
+            // chkDelActiveDelivery
+            // 
+            this.chkDelActiveDelivery.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkDelActiveDelivery.Appearance.Options.UseFont = true;
+            this.chkDelActiveDelivery.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkDelActiveDelivery.AppearanceDisabled.Options.UseFont = true;
+            this.chkDelActiveDelivery.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkDelActiveDelivery.AppearanceFocused.Options.UseFont = true;
+            this.chkDelActiveDelivery.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkDelActiveDelivery.AppearanceReadOnly.Options.UseFont = true;
+            this.chkDelActiveDelivery.AutoHeight = false;
+            this.chkDelActiveDelivery.Name = "chkDelActiveDelivery";
+            // 
+            // btnInvoiceSave
+            // 
+            this.btnInvoiceSave.Caption = "Speichern";
+            this.btnInvoiceSave.Id = 60;
+            this.btnInvoiceSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnInvoiceSave.ImageOptions.SvgImage")));
+            this.btnInvoiceSave.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnInvoiceSave.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnInvoiceSave.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnInvoiceSave.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnInvoiceSave.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnInvoiceSave.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnInvoiceSave.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnInvoiceSave.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnInvoiceSave.Name = "btnInvoiceSave";
+            // 
+            // btnInvoiceView
+            // 
+            this.btnInvoiceView.Caption = "Rechnung erstellen";
+            this.btnInvoiceView.Id = 61;
+            this.btnInvoiceView.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnInvoiceView.ImageOptions.SvgImage")));
+            this.btnInvoiceView.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnInvoiceView.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnInvoiceView.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnInvoiceView.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnInvoiceView.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnInvoiceView.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnInvoiceView.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnInvoiceView.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnInvoiceView.Name = "btnInvoiceView";
+            // 
+            // barButtonItem56
+            // 
+            this.barButtonItem56.Caption = "Schlussrechnung";
+            this.barButtonItem56.Id = 62;
+            this.barButtonItem56.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem56.ImageOptions.SvgImage")));
+            this.barButtonItem56.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barButtonItem56.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barButtonItem56.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barButtonItem56.ItemAppearance.Hovered.Options.UseFont = true;
+            this.barButtonItem56.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barButtonItem56.ItemAppearance.Normal.Options.UseFont = true;
+            this.barButtonItem56.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barButtonItem56.ItemAppearance.Pressed.Options.UseFont = true;
+            this.barButtonItem56.Name = "barButtonItem56";
+            // 
+            // btnSaveSupplierProposal
+            // 
+            this.btnSaveSupplierProposal.Caption = "Speichern";
+            this.btnSaveSupplierProposal.Id = 63;
+            this.btnSaveSupplierProposal.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSaveSupplierProposal.ImageOptions.SvgImage")));
+            this.btnSaveSupplierProposal.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveSupplierProposal.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnSaveSupplierProposal.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveSupplierProposal.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnSaveSupplierProposal.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveSupplierProposal.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnSaveSupplierProposal.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSaveSupplierProposal.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnSaveSupplierProposal.Name = "btnSaveSupplierProposal";
+            this.btnSaveSupplierProposal.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem57_ItemClick);
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Caption = "Übertrag der Daten";
+            this.btnSubmit.Id = 64;
+            this.btnSubmit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSubmit.ImageOptions.SvgImage")));
+            this.btnSubmit.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSubmit.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnSubmit.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSubmit.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnSubmit.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSubmit.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnSubmit.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnSubmit.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSaveUSP_ItemClick);
+            // 
+            // btnExportProposalPositions
+            // 
+            this.btnExportProposalPositions.Caption = "Preisvergleich exportieren";
+            this.btnExportProposalPositions.Id = 65;
+            this.btnExportProposalPositions.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnExportProposalPositions.ImageOptions.SvgImage")));
+            this.btnExportProposalPositions.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnExportProposalPositions.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnExportProposalPositions.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnExportProposalPositions.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnExportProposalPositions.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnExportProposalPositions.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnExportProposalPositions.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnExportProposalPositions.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnExportProposalPositions.Name = "btnExportProposalPositions";
+            this.btnExportProposalPositions.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnExportUSP_ItemClick);
+            // 
+            // bnSaveTemparary1
+            // 
+            this.bnSaveTemparary1.Caption = "Speichern der Angaben zu MULTI";
+            this.bnSaveTemparary1.Id = 66;
+            this.bnSaveTemparary1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bnSaveTemparary1.ImageOptions.SvgImage")));
+            this.bnSaveTemparary1.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.bnSaveTemparary1.ItemAppearance.Disabled.Options.UseFont = true;
+            this.bnSaveTemparary1.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.bnSaveTemparary1.ItemAppearance.Hovered.Options.UseFont = true;
+            this.bnSaveTemparary1.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.bnSaveTemparary1.ItemAppearance.Normal.Options.UseFont = true;
+            this.bnSaveTemparary1.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.bnSaveTemparary1.ItemAppearance.Pressed.Options.UseFont = true;
+            this.bnSaveTemparary1.Name = "bnSaveTemparary1";
+            this.bnSaveTemparary1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bnSaveTemparary1_ItemClick);
+            // 
+            // rgProposalViews
+            // 
+            this.rgProposalViews.Edit = this.repositoryItemRadioGroup1;
+            this.rgProposalViews.EditHeight = 100;
+            this.rgProposalViews.EditWidth = 500;
+            this.rgProposalViews.Id = 67;
+            this.rgProposalViews.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rgProposalViews.ItemAppearance.Disabled.Options.UseFont = true;
+            this.rgProposalViews.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rgProposalViews.ItemAppearance.Hovered.Options.UseFont = true;
+            this.rgProposalViews.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rgProposalViews.ItemAppearance.Normal.Options.UseFont = true;
+            this.rgProposalViews.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rgProposalViews.ItemAppearance.Pressed.Options.UseFont = true;
+            this.rgProposalViews.Name = "rgProposalViews";
+            this.rgProposalViews.EditValueChanged += new System.EventHandler(this.rgProposalViews_EditValueChanged);
+            // 
+            // repositoryItemRadioGroup1
+            // 
+            this.repositoryItemRadioGroup1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.repositoryItemRadioGroup1.Appearance.Options.UseFont = true;
+            this.repositoryItemRadioGroup1.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.repositoryItemRadioGroup1.AppearanceDisabled.Options.UseFont = true;
+            this.repositoryItemRadioGroup1.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.repositoryItemRadioGroup1.AppearanceFocused.Options.UseFont = true;
+            this.repositoryItemRadioGroup1.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.repositoryItemRadioGroup1.AppearanceReadOnly.Options.UseFont = true;
+            this.repositoryItemRadioGroup1.Columns = 2;
+            this.repositoryItemRadioGroup1.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Listenpreis je Einheit"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Listenpreis je Einheit mit Multis"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Listenpreis für Gesamtmenge"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Listenpreis für Gesamtmenge mit Multis")});
+            this.repositoryItemRadioGroup1.ItemsLayout = DevExpress.XtraEditors.RadioGroupItemsLayout.Flow;
+            this.repositoryItemRadioGroup1.Name = "repositoryItemRadioGroup1";
+            // 
+            // rgFilter
+            // 
+            this.rgFilter.Edit = this.repositoryItemRadioGroup2;
+            this.rgFilter.EditHeight = 100;
+            this.rgFilter.EditWidth = 300;
+            this.rgFilter.Id = 69;
+            this.rgFilter.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rgFilter.ItemAppearance.Disabled.Options.UseFont = true;
+            this.rgFilter.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rgFilter.ItemAppearance.Hovered.Options.UseFont = true;
+            this.rgFilter.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rgFilter.ItemAppearance.Normal.Options.UseFont = true;
+            this.rgFilter.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rgFilter.ItemAppearance.Pressed.Options.UseFont = true;
+            this.rgFilter.Name = "rgFilter";
+            this.rgFilter.EditValueChanged += new System.EventHandler(this.rgFilter1_EditValueChanged);
+            // 
+            // repositoryItemRadioGroup2
+            // 
+            this.repositoryItemRadioGroup2.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.repositoryItemRadioGroup2.Appearance.Options.UseFont = true;
+            this.repositoryItemRadioGroup2.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.repositoryItemRadioGroup2.AppearanceDisabled.Options.UseFont = true;
+            this.repositoryItemRadioGroup2.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.repositoryItemRadioGroup2.AppearanceFocused.Options.UseFont = true;
+            this.repositoryItemRadioGroup2.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.repositoryItemRadioGroup2.AppearanceReadOnly.Options.UseFont = true;
+            this.repositoryItemRadioGroup2.Columns = 1;
+            this.repositoryItemRadioGroup2.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Ohne"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Update all positions"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Auswahl LV Positionen nach")});
+            this.repositoryItemRadioGroup2.Name = "repositoryItemRadioGroup2";
+            // 
+            // rgDropMode1
+            // 
+            this.rgDropMode1.Edit = this.rpLVDropMode;
+            this.rgDropMode1.EditHeight = 100;
+            this.rgDropMode1.EditWidth = 600;
+            this.rgDropMode1.Id = 70;
+            this.rgDropMode1.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rgDropMode1.ItemAppearance.Disabled.Options.UseFont = true;
+            this.rgDropMode1.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rgDropMode1.ItemAppearance.Hovered.Options.UseFont = true;
+            this.rgDropMode1.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rgDropMode1.ItemAppearance.Normal.Options.UseFont = true;
+            this.rgDropMode1.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rgDropMode1.ItemAppearance.Pressed.Options.UseFont = true;
+            this.rgDropMode1.Name = "rgDropMode1";
+            // 
+            // rpLVDropMode
+            // 
+            this.rpLVDropMode.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rpLVDropMode.Appearance.Options.UseFont = true;
+            this.rpLVDropMode.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rpLVDropMode.AppearanceDisabled.Options.UseFont = true;
+            this.rpLVDropMode.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rpLVDropMode.AppearanceFocused.Options.UseFont = true;
+            this.rpLVDropMode.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.rpLVDropMode.AppearanceReadOnly.Options.UseFont = true;
+            this.rpLVDropMode.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "An den Anfang des Positionsbereichs"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "An das Ende des Positionsbereichs"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Benutzerdefinierte Positionierung")});
+            this.rpLVDropMode.Name = "rpLVDropMode";
+            // 
+            // barSubItem1
+            // 
+            this.barSubItem1.Caption = "Reports";
+            this.barSubItem1.Id = 71;
+            this.barSubItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barSubItem1.ImageOptions.SvgImage")));
+            this.barSubItem1.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barSubItem1.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.ItemAppearance.Hovered.Options.UseFont = true;
+            this.barSubItem1.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.ItemAppearance.Normal.Options.UseFont = true;
+            this.barSubItem1.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.ItemAppearance.Pressed.Options.UseFont = true;
+            this.barSubItem1.ItemInMenuAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.ItemInMenuAppearance.Disabled.Options.UseFont = true;
+            this.barSubItem1.ItemInMenuAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.ItemInMenuAppearance.Hovered.Options.UseFont = true;
+            this.barSubItem1.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.ItemInMenuAppearance.Normal.Options.UseFont = true;
+            this.barSubItem1.ItemInMenuAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.ItemInMenuAppearance.Pressed.Options.UseFont = true;
+            this.barSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnAngebotReport),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnQuerCalcV1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnQuerCalcV2),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnFormBlatt),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnBreakdownReport),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnConsolidatedBlatt),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnDeliveryNotes)});
+            this.barSubItem1.MenuAppearance.AppearanceMenu.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.MenuAppearance.AppearanceMenu.Disabled.Options.UseFont = true;
+            this.barSubItem1.MenuAppearance.AppearanceMenu.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.MenuAppearance.AppearanceMenu.Hovered.Options.UseFont = true;
+            this.barSubItem1.MenuAppearance.AppearanceMenu.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.MenuAppearance.AppearanceMenu.Normal.Options.UseFont = true;
+            this.barSubItem1.MenuAppearance.AppearanceMenu.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.MenuAppearance.AppearanceMenu.Pressed.Options.UseFont = true;
+            this.barSubItem1.MenuAppearance.HeaderItemAppearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.MenuAppearance.HeaderItemAppearance.Options.UseFont = true;
+            this.barSubItem1.MenuAppearance.MenuBar.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.MenuAppearance.MenuBar.Options.UseFont = true;
+            this.barSubItem1.MenuAppearance.MenuCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.MenuAppearance.MenuCaption.Options.UseFont = true;
+            this.barSubItem1.MenuAppearance.SideStrip.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.MenuAppearance.SideStrip.Options.UseFont = true;
+            this.barSubItem1.MenuAppearance.SideStripNonRecent.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem1.MenuAppearance.SideStripNonRecent.Options.UseFont = true;
+            this.barSubItem1.Name = "barSubItem1";
+            // 
+            // btnAngebotReport
+            // 
+            this.btnAngebotReport.Caption = "Angebot";
+            this.btnAngebotReport.Id = 73;
+            this.btnAngebotReport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAngebotReport.ImageOptions.Image")));
+            this.btnAngebotReport.Name = "btnAngebotReport";
+            this.btnAngebotReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAngebotReport_ItemClick);
+            // 
+            // btnQuerCalcV1
+            // 
+            this.btnQuerCalcV1.Caption = "QuerKalkulation V1";
+            this.btnQuerCalcV1.Id = 74;
+            this.btnQuerCalcV1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuerCalcV1.ImageOptions.Image")));
+            this.btnQuerCalcV1.Name = "btnQuerCalcV1";
+            this.btnQuerCalcV1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQuerCalcV1_ItemClick);
+            // 
+            // btnQuerCalcV2
+            // 
+            this.btnQuerCalcV2.Caption = "QuerKalkulation V2";
+            this.btnQuerCalcV2.Id = 75;
+            this.btnQuerCalcV2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuerCalcV2.ImageOptions.Image")));
+            this.btnQuerCalcV2.Name = "btnQuerCalcV2";
+            this.btnQuerCalcV2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQuerCalcV2_ItemClick);
+            // 
+            // btnFormBlatt
+            // 
+            this.btnFormBlatt.Caption = "Formblatt";
+            this.btnFormBlatt.Id = 76;
+            this.btnFormBlatt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFormBlatt.ImageOptions.Image")));
+            this.btnFormBlatt.Name = "btnFormBlatt";
+            this.btnFormBlatt.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnFormBlatt_ItemClick);
+            // 
+            // btnBreakdownReport
+            // 
+            this.btnBreakdownReport.Caption = "Einzelaufgliederung Beispiel";
+            this.btnBreakdownReport.Id = 77;
+            this.btnBreakdownReport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBreakdownReport.ImageOptions.Image")));
+            this.btnBreakdownReport.Name = "btnBreakdownReport";
+            this.btnBreakdownReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBreakdownReport_ItemClick);
+            // 
+            // btnConsolidatedBlatt
+            // 
+            this.btnConsolidatedBlatt.Caption = "Aufmasszusammenstellung";
+            this.btnConsolidatedBlatt.Id = 78;
+            this.btnConsolidatedBlatt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnConsolidatedBlatt.ImageOptions.Image")));
+            this.btnConsolidatedBlatt.Name = "btnConsolidatedBlatt";
+            this.btnConsolidatedBlatt.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnConsolidatedBlatt_ItemClick);
+            // 
+            // btnDeliveryNotes
+            // 
+            this.btnDeliveryNotes.Caption = "Aufmasse";
+            this.btnDeliveryNotes.Id = 79;
+            this.btnDeliveryNotes.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDeliveryNotes.ImageOptions.Image")));
+            this.btnDeliveryNotes.Name = "btnDeliveryNotes";
+            this.btnDeliveryNotes.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDeliveryNotes_ItemClick);
+            // 
+            // barSubItem2
+            // 
+            this.barSubItem2.Caption = "Title Blatt";
+            this.barSubItem2.Id = 80;
+            this.barSubItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barSubItem2.ImageOptions.SvgImage")));
+            this.barSubItem2.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barSubItem2.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.ItemAppearance.Hovered.Options.UseFont = true;
+            this.barSubItem2.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.ItemAppearance.Normal.Options.UseFont = true;
+            this.barSubItem2.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.ItemAppearance.Pressed.Options.UseFont = true;
+            this.barSubItem2.ItemInMenuAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.ItemInMenuAppearance.Disabled.Options.UseFont = true;
+            this.barSubItem2.ItemInMenuAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.ItemInMenuAppearance.Hovered.Options.UseFont = true;
+            this.barSubItem2.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.ItemInMenuAppearance.Normal.Options.UseFont = true;
+            this.barSubItem2.ItemInMenuAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.ItemInMenuAppearance.Pressed.Options.UseFont = true;
+            this.barSubItem2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnTitleBlattV011),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnTitleBlattV012),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnTitleBlattV013),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnTitleBlattV014),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnTitleBlattDelivery),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnTitleBlattInvoice)});
+            this.barSubItem2.MenuAppearance.AppearanceMenu.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.MenuAppearance.AppearanceMenu.Disabled.Options.UseFont = true;
+            this.barSubItem2.MenuAppearance.AppearanceMenu.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.MenuAppearance.AppearanceMenu.Hovered.Options.UseFont = true;
+            this.barSubItem2.MenuAppearance.AppearanceMenu.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.MenuAppearance.AppearanceMenu.Normal.Options.UseFont = true;
+            this.barSubItem2.MenuAppearance.AppearanceMenu.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.MenuAppearance.AppearanceMenu.Pressed.Options.UseFont = true;
+            this.barSubItem2.MenuAppearance.HeaderItemAppearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.MenuAppearance.HeaderItemAppearance.Options.UseFont = true;
+            this.barSubItem2.MenuAppearance.MenuBar.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.MenuAppearance.MenuBar.Options.UseFont = true;
+            this.barSubItem2.MenuAppearance.MenuCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.MenuAppearance.MenuCaption.Options.UseFont = true;
+            this.barSubItem2.MenuAppearance.SideStrip.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.MenuAppearance.SideStrip.Options.UseFont = true;
+            this.barSubItem2.MenuAppearance.SideStripNonRecent.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.barSubItem2.MenuAppearance.SideStripNonRecent.Options.UseFont = true;
+            this.barSubItem2.Name = "barSubItem2";
+            // 
+            // btnTitleBlattV011
+            // 
+            this.btnTitleBlattV011.Caption = "Standardanschreiben Angebot V‐011";
+            this.btnTitleBlattV011.Id = 81;
+            this.btnTitleBlattV011.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTitleBlattV011.ImageOptions.Image")));
+            this.btnTitleBlattV011.Name = "btnTitleBlattV011";
+            this.btnTitleBlattV011.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTitleBlattV011_ItemClick);
+            // 
+            // btnTitleBlattV012
+            // 
+            this.btnTitleBlattV012.Caption = "Anhang / Schlussblatt V-012";
+            this.btnTitleBlattV012.Id = 86;
+            this.btnTitleBlattV012.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTitleBlattV012.ImageOptions.Image")));
+            this.btnTitleBlattV012.Name = "btnTitleBlattV012";
+            this.btnTitleBlattV012.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTitleBlattV012_ItemClick);
+            // 
+            // btnTitleBlattV013
+            // 
+            this.btnTitleBlattV013.Caption = "Angebot3 V-013";
+            this.btnTitleBlattV013.Id = 83;
+            this.btnTitleBlattV013.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTitleBlattV013.ImageOptions.Image")));
+            this.btnTitleBlattV013.Name = "btnTitleBlattV013";
+            this.btnTitleBlattV013.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTitleBlattV013_ItemClick);
+            // 
+            // btnTitleBlattV014
+            // 
+            this.btnTitleBlattV014.Caption = "Angebotsdeckblatt V‐014";
+            this.btnTitleBlattV014.Id = 82;
+            this.btnTitleBlattV014.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTitleBlattV014.ImageOptions.Image")));
+            this.btnTitleBlattV014.Name = "btnTitleBlattV014";
+            this.btnTitleBlattV014.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTitleBlattV014_ItemClick);
+            // 
+            // btnTitleBlattDelivery
+            // 
+            this.btnTitleBlattDelivery.Caption = "Titelblatt (Aufmass)";
+            this.btnTitleBlattDelivery.Id = 84;
+            this.btnTitleBlattDelivery.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTitleBlattDelivery.ImageOptions.Image")));
+            this.btnTitleBlattDelivery.Name = "btnTitleBlattDelivery";
+            this.btnTitleBlattDelivery.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTitleBlattDelivery_ItemClick);
+            // 
+            // btnTitleBlattInvoice
+            // 
+            this.btnTitleBlattInvoice.Caption = "Titelblatt (Rechnung)";
+            this.btnTitleBlattInvoice.Id = 85;
+            this.btnTitleBlattInvoice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTitleBlattInvoice.ImageOptions.Image")));
+            this.btnTitleBlattInvoice.Name = "btnTitleBlattInvoice";
+            this.btnTitleBlattInvoice.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTitleBlattInvoice_ItemClick);
+            // 
+            // btnRefreshTreeView
+            // 
+            this.btnRefreshTreeView.Caption = "Tabellenansicht aktualisieren";
+            this.btnRefreshTreeView.Id = 87;
+            this.btnRefreshTreeView.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnRefreshTreeView.ImageOptions.SvgImage")));
+            this.btnRefreshTreeView.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnRefreshTreeView.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnRefreshTreeView.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnRefreshTreeView.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnRefreshTreeView.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnRefreshTreeView.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnRefreshTreeView.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.btnRefreshTreeView.ItemAppearance.Pressed.Options.UseFont = true;
+            this.btnRefreshTreeView.Name = "btnRefreshTreeView";
+            this.btnRefreshTreeView.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRefershTabularView_ItemClick);
+            // 
+            // cmbSelectTreelistColumnsItem
+            // 
+            this.cmbSelectTreelistColumnsItem.Caption = "Auswahl";
+            this.cmbSelectTreelistColumnsItem.Edit = this.chkSelectTreelistColumns;
+            this.cmbSelectTreelistColumnsItem.EditWidth = 201;
+            this.cmbSelectTreelistColumnsItem.Id = 89;
+            this.cmbSelectTreelistColumnsItem.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbSelectTreelistColumnsItem.ItemAppearance.Disabled.Options.UseFont = true;
+            this.cmbSelectTreelistColumnsItem.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbSelectTreelistColumnsItem.ItemAppearance.Hovered.Options.UseFont = true;
+            this.cmbSelectTreelistColumnsItem.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbSelectTreelistColumnsItem.ItemAppearance.Normal.Options.UseFont = true;
+            this.cmbSelectTreelistColumnsItem.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbSelectTreelistColumnsItem.ItemAppearance.Pressed.Options.UseFont = true;
+            this.cmbSelectTreelistColumnsItem.Name = "cmbSelectTreelistColumnsItem";
+            this.cmbSelectTreelistColumnsItem.EditValueChanged += new System.EventHandler(this.cmbSelectTreelistColumnsItem_EditValueChanged);
+            // 
+            // chkSelectTreelistColumns
+            // 
+            this.chkSelectTreelistColumns.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkSelectTreelistColumns.Appearance.Options.UseFont = true;
+            this.chkSelectTreelistColumns.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkSelectTreelistColumns.AppearanceDisabled.Options.UseFont = true;
+            this.chkSelectTreelistColumns.AppearanceDropDown.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkSelectTreelistColumns.AppearanceDropDown.Options.UseFont = true;
+            this.chkSelectTreelistColumns.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkSelectTreelistColumns.AppearanceFocused.Options.UseFont = true;
+            this.chkSelectTreelistColumns.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.chkSelectTreelistColumns.AppearanceReadOnly.Options.UseFont = true;
+            this.chkSelectTreelistColumns.AutoHeight = false;
+            this.chkSelectTreelistColumns.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.chkSelectTreelistColumns.Items.AddRange(new DevExpress.XtraEditors.Controls.CheckedListBoxItem[] {
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem("MA Multies", "MA Multies"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem("MO Multies", "MO Multies"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem("Einkaufspreis", "Einkaufspreis"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem("Selbstkosten", "Selbstkosten"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem("Verkaufspreis", "Verkaufspreis")});
+            this.chkSelectTreelistColumns.Name = "chkSelectTreelistColumns";
+            this.chkSelectTreelistColumns.NullText = "Auswahl";
+            // 
+            // btnModify
+            // 
+            this.btnModify.Caption = "&Ändern";
+            this.btnModify.Id = 90;
+            this.btnModify.Name = "btnModify";
+            this.btnModify.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            this.btnModify.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnModifyItem_ItemClick);
+            // 
+            // cmbLVSectionProposalItem
+            // 
+            this.cmbLVSectionProposalItem.Caption = "LV Sektion";
+            this.cmbLVSectionProposalItem.Edit = this.cmbLVSectionProposal;
+            this.cmbLVSectionProposalItem.EditWidth = 150;
+            this.cmbLVSectionProposalItem.Id = 91;
+            this.cmbLVSectionProposalItem.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbLVSectionProposalItem.ItemAppearance.Disabled.Options.UseFont = true;
+            this.cmbLVSectionProposalItem.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbLVSectionProposalItem.ItemAppearance.Hovered.Options.UseFont = true;
+            this.cmbLVSectionProposalItem.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbLVSectionProposalItem.ItemAppearance.Normal.Options.UseFont = true;
+            this.cmbLVSectionProposalItem.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbLVSectionProposalItem.ItemAppearance.Pressed.Options.UseFont = true;
+            this.cmbLVSectionProposalItem.Name = "cmbLVSectionProposalItem";
+            this.cmbLVSectionProposalItem.EditValueChanged += new System.EventHandler(this.cmbLVSectionProposalItem_EditValueChanged);
+            // 
+            // cmbLVSectionProposal
+            // 
+            this.cmbLVSectionProposal.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbLVSectionProposal.Appearance.Options.UseFont = true;
+            this.cmbLVSectionProposal.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbLVSectionProposal.AppearanceDisabled.Options.UseFont = true;
+            this.cmbLVSectionProposal.AppearanceDropDown.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbLVSectionProposal.AppearanceDropDown.Options.UseFont = true;
+            this.cmbLVSectionProposal.AppearanceDropDownHeader.Font = new System.Drawing.Font("Bahnschrift", 10F);
+            this.cmbLVSectionProposal.AppearanceDropDownHeader.Options.UseFont = true;
+            this.cmbLVSectionProposal.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbLVSectionProposal.AppearanceFocused.Options.UseFont = true;
+            this.cmbLVSectionProposal.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbLVSectionProposal.AppearanceReadOnly.Options.UseFont = true;
+            this.cmbLVSectionProposal.AutoHeight = false;
+            this.cmbLVSectionProposal.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbLVSectionProposal.Name = "cmbLVSectionProposal";
+            this.cmbLVSectionProposal.NullText = "";
+            // 
+            // btnCopyPosition
+            // 
+            this.btnCopyPosition.Caption = "Kopieren";
+            this.btnCopyPosition.Id = 92;
+            this.btnCopyPosition.ImageOptions.Image = global::CalcPro.Properties.Resources.copy_32x32;
+            this.btnCopyPosition.Name = "btnCopyPosition";
+            this.btnCopyPosition.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnCopyPosition.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCopyPosition_ItemClick);
+            // 
+            // btnDeletePosition
+            // 
+            this.btnDeletePosition.Caption = "Löschen";
+            this.btnDeletePosition.Id = 93;
+            this.btnDeletePosition.ImageOptions.Image = global::CalcPro.Properties.Resources.deleteposition_32x32;
+            this.btnDeletePosition.Name = "btnDeletePosition";
+            this.btnDeletePosition.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnDeletePosition.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDeletePosition_ItemClick);
+            // 
+            // rpProjectMetaData
+            // 
+            this.rpProjectMetaData.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.rpProjectMetaData.Appearance.Options.UseFont = true;
+            this.rpProjectMetaData.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.rpgProjectMetaData,
+            this.rpgDiscount,
+            this.rpgOthers});
+            this.rpProjectMetaData.Name = "rpProjectMetaData";
+            this.rpProjectMetaData.Text = "Projekteigenschaften";
+            this.rpProjectMetaData.Visible = false;
+            // 
+            // rpgProjectMetaData
+            // 
+            this.rpgProjectMetaData.ItemLinks.Add(this.btnSaveProject);
+            this.rpgProjectMetaData.ItemLinks.Add(this.btnAngebotCommentary);
+            this.rpgProjectMetaData.ItemLinks.Add(this.btnCaluclatorCommentary);
+            this.rpgProjectMetaData.ItemLinks.Add(this.btnDataTransfer);
+            this.rpgProjectMetaData.Name = "rpgProjectMetaData";
+            this.rpgProjectMetaData.Text = "Projekteigenschaften";
+            // 
+            // rpgDiscount
+            // 
+            this.rpgDiscount.ItemLinks.Add(this.btnAddDisc);
+            this.rpgDiscount.ItemLinks.Add(this.btnDeleteDisc);
+            this.rpgDiscount.Name = "rpgDiscount";
+            this.rpgDiscount.Text = "Discount";
+            // 
+            // rpgOthers
+            // 
+            this.rpgOthers.ItemLinks.Add(this.btnFormBlattArt);
+            this.rpgOthers.ItemLinks.Add(this.btnProjectArt);
+            this.rpgOthers.ItemLinks.Add(this.btnArtSettings);
+            this.rpgOthers.Name = "rpgOthers";
+            this.rpgOthers.Text = "Others";
+            // 
+            // rpPosition
+            // 
+            this.rpPosition.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.rpPosition.Appearance.Options.UseFont = true;
+            this.rpPosition.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.rpgLVDetails,
+            this.ribbonPageGroup3,
+            this.ribbonPageGroup4,
+            this.ribbonPageGroup5,
+            this.rpgRefresh});
+            this.rpPosition.Name = "rpPosition";
+            this.rpPosition.Text = "Positionen ";
+            this.rpPosition.Visible = false;
+            // 
+            // rpgLVDetails
+            // 
+            this.rpgLVDetails.ItemLinks.Add(this.btnNew);
+            this.rpgLVDetails.ItemLinks.Add(this.btnSaveLVDetails);
+            this.rpgLVDetails.ItemLinks.Add(this.btnCancel);
+            this.rpgLVDetails.ItemLinks.Add(this.btnCopyPosition);
+            this.rpgLVDetails.ItemLinks.Add(this.btnDeletePosition);
+            this.rpgLVDetails.ItemLinks.Add(this.chkCreateNew);
+            this.rpgLVDetails.ItemLinks.Add(this.ChkManualMontageentry);
+            this.rpgLVDetails.ItemLinks.Add(this.cmbSelectTreelistColumnsItem);
+            this.rpgLVDetails.ItemLinks.Add(this.btnModify);
+            this.rpgLVDetails.Name = "rpgLVDetails";
+            this.rpgLVDetails.Text = "LV Detailsicht";
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnPrevious);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnNext);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnRefreshTreeView);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnExportExcel);
+            this.ribbonPageGroup3.ItemLinks.Add(this.dbtnPriceComp);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "Navigation";
+            // 
+            // ribbonPageGroup4
+            // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnLongDescription);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnDocuwareLink);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            this.ribbonPageGroup4.Text = "Documents";
+            // 
+            // ribbonPageGroup5
+            // 
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnAddLVSection);
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnAddAccessories);
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnValiditydates);
+            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
+            this.ribbonPageGroup5.Text = "Meta Data";
+            // 
+            // rpgRefresh
+            // 
+            this.rpgRefresh.ItemLinks.Add(this.btnProjRefresh);
+            this.rpgRefresh.Name = "rpgRefresh";
+            this.rpgRefresh.Text = "Refresh";
+            // 
+            // rpBulkProcess
+            // 
+            this.rpBulkProcess.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.rpBulkProcess.Appearance.Options.UseFont = true;
+            this.rpBulkProcess.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.rpgBuilkProccess,
+            this.rpgLVCopy});
+            this.rpBulkProcess.Name = "rpBulkProcess";
+            this.rpBulkProcess.Text = "Globale LV Bearbeitung";
+            this.rpBulkProcess.Visible = false;
+            // 
+            // rpgBuilkProccess
+            // 
+            this.rpgBuilkProccess.ItemLinks.Add(this.btnSaveActionA);
+            this.rpgBuilkProccess.ItemLinks.Add(this.btnSavesectionB);
+            this.rpgBuilkProccess.ItemLinks.Add(this.btnApply);
+            this.rpgBuilkProccess.Name = "rpgBuilkProccess";
+            this.rpgBuilkProccess.Text = "Globale LV Bearbeitung";
+            // 
+            // rpgLVCopy
+            // 
+            this.rpgLVCopy.ItemLinks.Add(this.rgDropMode1);
+            this.rpgLVCopy.Name = "rpgLVCopy";
+            this.rpgLVCopy.Text = "LV Positionen kopieren / Drop Mode";
+            // 
+            // rpCalculations
+            // 
+            this.rpCalculations.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.rpCalculations.Appearance.Options.UseFont = true;
+            this.rpCalculations.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.rpgSelb,
+            this.rpgVerka,
+            this.rpgUmlage});
+            this.rpCalculations.Name = "rpCalculations";
+            this.rpCalculations.Text = "Calculations";
+            this.rpCalculations.Visible = false;
+            // 
+            // rpgSelb
+            // 
+            this.rpgSelb.ItemLinks.Add(this.btnMulti5LoadArticles);
+            this.rpgSelb.ItemLinks.Add(this.btnMulti5UpdateSelbekosten);
+            this.rpgSelb.Name = "rpgSelb";
+            this.rpgSelb.Text = "Gemeinkosten";
+            // 
+            // rpgVerka
+            // 
+            this.rpgVerka.ItemLinks.Add(this.btnMulti6LoadArticles);
+            this.rpgVerka.ItemLinks.Add(this.btnMulti6UpdateSelbekosten);
+            this.rpgVerka.Name = "rpgVerka";
+            this.rpgVerka.Text = "Verkaufsmargen";
+            // 
+            // rpgUmlage
+            // 
+            this.rpgUmlage.ItemLinks.Add(this.btnUmlageSave);
+            this.rpgUmlage.ItemLinks.Add(this.btnAddedCost);
+            this.rpgUmlage.ItemLinks.Add(this.btnUmlageExport);
+            this.rpgUmlage.Name = "rpgUmlage";
+            this.rpgUmlage.Text = "Kostenumlagen";
+            // 
+            // rpDelInv
+            // 
+            this.rpDelInv.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.rpDelInv.Appearance.Options.UseFont = true;
+            this.rpDelInv.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.rpgDelivery,
+            this.rpgInvoice});
+            this.rpDelInv.Name = "rpDelInv";
+            this.rpDelInv.Text = "Aufmasse & Rechnungen";
+            this.rpDelInv.Visible = false;
+            // 
+            // rpgDelivery
+            // 
+            this.rpgDelivery.ItemLinks.Add(this.btnDelSave);
+            this.rpgDelivery.ItemLinks.Add(this.barEditItem5);
+            this.rpgDelivery.Name = "rpgDelivery";
+            this.rpgDelivery.Text = "Aufmasse";
+            // 
+            // rpgInvoice
+            // 
+            this.rpgInvoice.ItemLinks.Add(this.btnInvoiceSave);
+            this.rpgInvoice.ItemLinks.Add(this.btnInvoiceView);
+            this.rpgInvoice.ItemLinks.Add(this.barButtonItem56);
+            this.rpgInvoice.Name = "rpgInvoice";
+            this.rpgInvoice.Text = "Rechnungen";
+            // 
+            // rpProposal
+            // 
+            this.rpProposal.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.rpProposal.Appearance.Options.UseFont = true;
+            this.rpProposal.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.rpgSP,
+            this.rpgUSP,
+            this.rpgFilter,
+            this.rpgProposalViews});
+            this.rpProposal.Name = "rpProposal";
+            this.rpProposal.Text = "Angebotsanfrage";
+            this.rpProposal.Visible = false;
+            // 
+            // rpgSP
+            // 
+            this.rpgSP.ItemLinks.Add(this.btnSaveSupplierProposal);
+            this.rpgSP.ItemLinks.Add(this.cmbLVSectionProposalItem);
+            this.rpgSP.Name = "rpgSP";
+            this.rpgSP.Text = "Angebotsanfrage Lieferanten";
+            // 
+            // rpgUSP
+            // 
+            this.rpgUSP.ItemLinks.Add(this.btnSubmit);
+            this.rpgUSP.ItemLinks.Add(this.btnExportProposalPositions);
+            this.rpgUSP.ItemLinks.Add(this.bnSaveTemparary1);
+            this.rpgUSP.Name = "rpgUSP";
+            this.rpgUSP.Text = "Angebotsanfrage Datenerfassung";
+            // 
+            // rpgFilter
+            // 
+            this.rpgFilter.ItemLinks.Add(this.rgFilter);
+            this.rpgFilter.Name = "rpgFilter";
+            this.rpgFilter.Text = "Filter";
+            // 
+            // rpgProposalViews
+            // 
+            this.rpgProposalViews.ItemLinks.Add(this.rgProposalViews);
+            this.rpgProposalViews.Name = "rpgProposalViews";
+            this.rpgProposalViews.Text = "Views";
+            // 
+            // rpGAEB
+            // 
+            this.rpGAEB.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.rpGAEB.Appearance.Options.UseFont = true;
+            this.rpGAEB.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.rpgGAEB});
+            this.rpGAEB.Name = "rpGAEB";
+            this.rpGAEB.Text = "GAEB";
+            // 
+            // rpgGAEB
+            // 
+            this.rpgGAEB.ItemLinks.Add(this.btnProjectExport);
+            this.rpgGAEB.ItemLinks.Add(this.btnProjectImport);
+            this.rpgGAEB.Name = "rpgGAEB";
+            this.rpgGAEB.Text = "GAEB";
+            // 
+            // rpReports
+            // 
+            this.rpReports.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
+            this.rpReports.Appearance.Options.UseFont = true;
+            this.rpReports.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.rpgReports,
+            this.rpgTitleBlatt});
+            this.rpReports.Name = "rpReports";
+            this.rpReports.Text = "Dokumente";
+            // 
+            // rpgReports
+            // 
+            this.rpgReports.ItemLinks.Add(this.barSubItem1);
+            this.rpgReports.Name = "rpgReports";
+            this.rpgReports.ShowCaptionButton = false;
+            // 
+            // rpgTitleBlatt
+            // 
+            this.rpgTitleBlatt.ItemLinks.Add(this.barSubItem2);
+            this.rpgTitleBlatt.Name = "rpgTitleBlatt";
+            this.rpgTitleBlatt.ShowCaptionButton = false;
+            // 
+            // cmbLVSelectTreeListColumns
+            // 
+            this.cmbLVSelectTreeListColumns.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbLVSelectTreeListColumns.Appearance.Options.UseFont = true;
+            this.cmbLVSelectTreeListColumns.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbLVSelectTreeListColumns.AppearanceDisabled.Options.UseFont = true;
+            this.cmbLVSelectTreeListColumns.AppearanceDropDown.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbLVSelectTreeListColumns.AppearanceDropDown.Options.UseFont = true;
+            this.cmbLVSelectTreeListColumns.AppearanceDropDownHeader.Font = new System.Drawing.Font("Bahnschrift", 10F);
+            this.cmbLVSelectTreeListColumns.AppearanceDropDownHeader.Options.UseFont = true;
+            this.cmbLVSelectTreeListColumns.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbLVSelectTreeListColumns.AppearanceFocused.Options.UseFont = true;
+            this.cmbLVSelectTreeListColumns.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.cmbLVSelectTreeListColumns.AppearanceReadOnly.Options.UseFont = true;
+            this.cmbLVSelectTreeListColumns.AutoHeight = false;
+            this.cmbLVSelectTreeListColumns.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbLVSelectTreeListColumns.Name = "cmbLVSelectTreeListColumns";
+            this.cmbLVSelectTreeListColumns.NullText = "Auswahl";
+            // 
+            // cmbCostSelectColumns
+            // 
+            this.cmbCostSelectColumns.AutoHeight = false;
+            this.cmbCostSelectColumns.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbCostSelectColumns.Name = "cmbCostSelectColumns";
+            // 
+            // repositoryItemCheckEdit2
+            // 
+            this.repositoryItemCheckEdit2.AutoHeight = false;
+            this.repositoryItemCheckEdit2.Name = "repositoryItemCheckEdit2";
+            // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(1207, 370);
+            this.labelControl7.Location = new System.Drawing.Point(1554, 55);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(79, 23);
+            this.labelControl7.Size = new System.Drawing.Size(74, 16);
             this.labelControl7.StyleController = this.lcCostDetails;
             this.labelControl7.TabIndex = 72;
             this.labelControl7.Text = "Gesamtpreis";
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(1207, 333);
+            this.labelControl6.Location = new System.Drawing.Point(1554, 35);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(79, 23);
+            this.labelControl6.Size = new System.Drawing.Size(69, 16);
             this.labelControl6.StyleController = this.lcCostDetails;
             this.labelControl6.TabIndex = 71;
             this.labelControl6.Text = "EP Gesamt";
             // 
             // txtGrundMultiMO1
             // 
-            this.txtGrundMultiMO1.Location = new System.Drawing.Point(254, 365);
+            this.txtGrundMultiMO1.Location = new System.Drawing.Point(224, 63);
             this.txtGrundMultiMO1.Name = "txtGrundMultiMO1";
             this.txtGrundMultiMO1.Properties.Mask.EditMask = "n3";
             this.txtGrundMultiMO1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtGrundMultiMO1.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtGrundMultiMO1.Properties.ReadOnly = true;
-            this.txtGrundMultiMO1.Size = new System.Drawing.Size(101, 22);
+            this.txtGrundMultiMO1.Size = new System.Drawing.Size(130, 22);
             this.txtGrundMultiMO1.StyleController = this.lcCostDetails;
             this.txtGrundMultiMO1.TabIndex = 33;
             this.txtGrundMultiMO1.TabStop = false;
             // 
             // txtGrundMultiME1
             // 
-            this.txtGrundMultiME1.Location = new System.Drawing.Point(254, 330);
+            this.txtGrundMultiME1.Location = new System.Drawing.Point(224, 37);
             this.txtGrundMultiME1.Name = "txtGrundMultiME1";
             this.txtGrundMultiME1.Properties.Mask.EditMask = "n3";
             this.txtGrundMultiME1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtGrundMultiME1.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtGrundMultiME1.Properties.ReadOnly = true;
-            this.txtGrundMultiME1.Size = new System.Drawing.Size(101, 22);
+            this.txtGrundMultiME1.Size = new System.Drawing.Size(130, 22);
             this.txtGrundMultiME1.StyleController = this.lcCostDetails;
             this.txtGrundMultiME1.TabIndex = 24;
             this.txtGrundMultiME1.TabStop = false;
             // 
             // txtLVPositionCD
             // 
-            this.txtLVPositionCD.Location = new System.Drawing.Point(89, 56);
+            this.txtLVPositionCD.Location = new System.Drawing.Point(14, -151);
             this.txtLVPositionCD.Name = "txtLVPositionCD";
             this.txtLVPositionCD.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtLVPositionCD.Properties.Appearance.Options.UseBackColor = true;
-            this.txtLVPositionCD.Size = new System.Drawing.Size(161, 22);
+            this.txtLVPositionCD.Size = new System.Drawing.Size(172, 22);
             this.txtLVPositionCD.StyleController = this.lcCostDetails;
             this.txtLVPositionCD.TabIndex = 0;
             this.txtLVPositionCD.EditValueChanged += new System.EventHandler(this.txtLVPositionCD_EditValueChanged);
             // 
             // txtDim
             // 
-            this.txtDim.Location = new System.Drawing.Point(424, 168);
+            this.txtDim.Location = new System.Drawing.Point(224, -57);
             this.txtDim.Name = "txtDim";
             this.txtDim.Properties.AllowMouseWheel = false;
             this.txtDim.Properties.Appearance.Options.UseTextOptions = true;
             this.txtDim.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.txtDim.Size = new System.Drawing.Size(70, 22);
+            this.txtDim.Size = new System.Drawing.Size(153, 22);
             this.txtDim.StyleController = this.lcCostDetails;
             this.txtDim.TabIndex = 12;
             this.txtDim.Enter += new System.EventHandler(this.txtWG_Enter);
@@ -3654,9 +5202,9 @@
             this.labelControl5.Appearance.Options.UseTextOptions = true;
             this.labelControl5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.labelControl5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl5.Location = new System.Drawing.Point(14, 504);
+            this.labelControl5.Location = new System.Drawing.Point(14, 140);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(100, 30);
+            this.labelControl5.Size = new System.Drawing.Size(68, 16);
             this.labelControl5.StyleController = this.lcCostDetails;
             this.labelControl5.TabIndex = 66;
             this.labelControl5.Text = "Montage";
@@ -3666,16 +5214,16 @@
             this.labelControl4.Appearance.Options.UseTextOptions = true;
             this.labelControl4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl4.Location = new System.Drawing.Point(14, 480);
+            this.labelControl4.Location = new System.Drawing.Point(14, 120);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(100, 20);
+            this.labelControl4.Size = new System.Drawing.Size(68, 16);
             this.labelControl4.StyleController = this.lcCostDetails;
             this.labelControl4.TabIndex = 65;
             this.labelControl4.Text = "Material";
             // 
             // cmbCDME
             // 
-            this.cmbCDME.Location = new System.Drawing.Point(93, 274);
+            this.cmbCDME.Location = new System.Drawing.Point(118, -10);
             this.cmbCDME.Name = "cmbCDME";
             this.cmbCDME.Properties.AllowMouseWheel = false;
             this.cmbCDME.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -3694,20 +5242,20 @@
             "Stk",
             "lfdm",
             "%"});
-            this.cmbCDME.Size = new System.Drawing.Size(71, 22);
+            this.cmbCDME.Size = new System.Drawing.Size(93, 22);
             this.cmbCDME.StyleController = this.lcCostDetails;
             this.cmbCDME.TabIndex = 16;
             this.cmbCDME.TextChanged += new System.EventHandler(this.cmbME_TextChanged);
             // 
             // txtMengeCD
             // 
-            this.txtMengeCD.Location = new System.Drawing.Point(14, 274);
+            this.txtMengeCD.Location = new System.Drawing.Point(14, -10);
             this.txtMengeCD.Name = "txtMengeCD";
             this.txtMengeCD.Properties.AllowMouseWheel = false;
             this.txtMengeCD.Properties.Mask.EditMask = "N3";
             this.txtMengeCD.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtMengeCD.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtMengeCD.Size = new System.Drawing.Size(75, 22);
+            this.txtMengeCD.Size = new System.Drawing.Size(100, 22);
             this.txtMengeCD.StyleController = this.lcCostDetails;
             this.txtMengeCD.TabIndex = 15;
             this.txtMengeCD.EditValueChanged += new System.EventHandler(this.txtMengeCD_EditValueChanged);
@@ -3717,10 +5265,10 @@
             // 
             // txtTypeCD
             // 
-            this.txtTypeCD.Location = new System.Drawing.Point(119, 168);
+            this.txtTypeCD.Location = new System.Drawing.Point(127, -57);
             this.txtTypeCD.Name = "txtTypeCD";
             this.txtTypeCD.Properties.AllowMouseWheel = false;
-            this.txtTypeCD.Size = new System.Drawing.Size(73, 22);
+            this.txtTypeCD.Size = new System.Drawing.Size(93, 22);
             this.txtTypeCD.StyleController = this.lcCostDetails;
             this.txtTypeCD.TabIndex = 8;
             this.txtTypeCD.TextChanged += new System.EventHandler(this.txtTypeCD_TextChanged);
@@ -3730,7 +5278,7 @@
             // 
             // txtWICD
             // 
-            this.txtWICD.Location = new System.Drawing.Point(154, 112);
+            this.txtWICD.Location = new System.Drawing.Point(208, -104);
             this.txtWICD.Name = "txtWICD";
             this.txtWICD.Properties.AllowMouseWheel = false;
             this.txtWICD.Properties.Appearance.Options.UseTextOptions = true;
@@ -3738,7 +5286,7 @@
             this.txtWICD.Properties.Mask.EditMask = "[0-9]{0,3}?";
             this.txtWICD.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtWICD.Properties.Mask.ShowPlaceHolders = false;
-            this.txtWICD.Size = new System.Drawing.Size(66, 22);
+            this.txtWICD.Size = new System.Drawing.Size(93, 22);
             this.txtWICD.StyleController = this.lcCostDetails;
             this.txtWICD.TabIndex = 5;
             this.txtWICD.TextChanged += new System.EventHandler(this.txtWICD_TextChanged);
@@ -3749,7 +5297,7 @@
             // 
             // txtWACD
             // 
-            this.txtWACD.Location = new System.Drawing.Point(84, 112);
+            this.txtWACD.Location = new System.Drawing.Point(111, -104);
             this.txtWACD.Name = "txtWACD";
             this.txtWACD.Properties.AllowMouseWheel = false;
             this.txtWACD.Properties.Appearance.Options.UseTextOptions = true;
@@ -3757,7 +5305,7 @@
             this.txtWACD.Properties.Mask.EditMask = "[0-9]{0,3}?";
             this.txtWACD.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtWACD.Properties.Mask.ShowPlaceHolders = false;
-            this.txtWACD.Size = new System.Drawing.Size(66, 22);
+            this.txtWACD.Size = new System.Drawing.Size(93, 22);
             this.txtWACD.StyleController = this.lcCostDetails;
             this.txtWACD.TabIndex = 4;
             this.txtWACD.TextChanged += new System.EventHandler(this.txtWACD_TextChanged);
@@ -3768,7 +5316,7 @@
             // 
             // txtWGCD
             // 
-            this.txtWGCD.Location = new System.Drawing.Point(14, 112);
+            this.txtWGCD.Location = new System.Drawing.Point(14, -104);
             this.txtWGCD.Name = "txtWGCD";
             this.txtWGCD.Properties.AllowMouseWheel = false;
             this.txtWGCD.Properties.Appearance.Options.UseTextOptions = true;
@@ -3776,7 +5324,7 @@
             this.txtWGCD.Properties.Mask.EditMask = "[0-9]{0,3}?";
             this.txtWGCD.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtWGCD.Properties.Mask.ShowPlaceHolders = false;
-            this.txtWGCD.Size = new System.Drawing.Size(66, 22);
+            this.txtWGCD.Size = new System.Drawing.Size(93, 22);
             this.txtWGCD.StyleController = this.lcCostDetails;
             this.txtWGCD.TabIndex = 3;
             this.txtWGCD.TextChanged += new System.EventHandler(this.txtWGCD_TextChanged);
@@ -3787,12 +5335,12 @@
             // 
             // txtDetailKZCD
             // 
-            this.txtDetailKZCD.Location = new System.Drawing.Point(324, 56);
+            this.txtDetailKZCD.Location = new System.Drawing.Point(190, -151);
             this.txtDetailKZCD.Name = "txtDetailKZCD";
             this.txtDetailKZCD.Properties.AllowMouseWheel = false;
             this.txtDetailKZCD.Properties.Mask.EditMask = "\\d{0,}";
             this.txtDetailKZCD.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtDetailKZCD.Size = new System.Drawing.Size(61, 22);
+            this.txtDetailKZCD.Size = new System.Drawing.Size(93, 22);
             this.txtDetailKZCD.StyleController = this.lcCostDetails;
             this.txtDetailKZCD.TabIndex = 2;
             this.txtDetailKZCD.EditValueChanged += new System.EventHandler(this.txtDetailKZCD_EditValueChanged);
@@ -3801,43 +5349,26 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Options.UseTextOptions = true;
-            this.labelControl2.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl2.Location = new System.Drawing.Point(14, 365);
+            this.labelControl2.Location = new System.Drawing.Point(14, 55);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(100, 24);
+            this.labelControl2.Size = new System.Drawing.Size(69, 16);
             this.labelControl2.StyleController = this.lcCostDetails;
             this.labelControl2.TabIndex = 58;
             this.labelControl2.Text = "Montage";
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Options.UseTextOptions = true;
-            this.labelControl1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl1.Location = new System.Drawing.Point(14, 340);
+            this.labelControl1.Location = new System.Drawing.Point(14, 35);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(100, 21);
+            this.labelControl1.Size = new System.Drawing.Size(69, 16);
             this.labelControl1.StyleController = this.lcCostDetails;
             this.labelControl1.TabIndex = 57;
             this.labelControl1.Text = "Material";
             // 
-            // dtpValidityDate
-            // 
-            this.dtpValidityDate.CustomFormat = "MMMM yyyy";
-            this.dtpValidityDate.Enabled = false;
-            this.dtpValidityDate.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.dtpValidityDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpValidityDate.Location = new System.Drawing.Point(224, 112);
-            this.dtpValidityDate.Name = "dtpValidityDate";
-            this.dtpValidityDate.Size = new System.Drawing.Size(218, 25);
-            this.dtpValidityDate.TabIndex = 6;
-            // 
             // txtEP
             // 
             this.txtEP.Enabled = false;
-            this.txtEP.Location = new System.Drawing.Point(1098, 330);
+            this.txtEP.Location = new System.Drawing.Point(1362, 37);
             this.txtEP.Name = "txtEP";
             this.txtEP.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.txtEP.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift", 10F);
@@ -3845,44 +5376,44 @@
             this.txtEP.Properties.Appearance.Options.UseFont = true;
             this.txtEP.Properties.Mask.EditMask = "n2";
             this.txtEP.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txtEP.Size = new System.Drawing.Size(105, 22);
+            this.txtEP.Size = new System.Drawing.Size(178, 22);
             this.txtEP.StyleController = this.lcCostDetails;
             this.txtEP.TabIndex = 31;
             this.txtEP.TabStop = false;
             // 
             // txtLiefrantMA
             // 
-            this.txtLiefrantMA.Location = new System.Drawing.Point(498, 168);
+            this.txtLiefrantMA.Location = new System.Drawing.Point(381, -57);
             this.txtLiefrantMA.Name = "txtLiefrantMA";
             this.txtLiefrantMA.Properties.AllowMouseWheel = false;
             this.txtLiefrantMA.Properties.Appearance.BackColor = System.Drawing.Color.Moccasin;
             this.txtLiefrantMA.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift", 10F);
             this.txtLiefrantMA.Properties.Appearance.Options.UseBackColor = true;
             this.txtLiefrantMA.Properties.Appearance.Options.UseFont = true;
-            this.txtLiefrantMA.Size = new System.Drawing.Size(241, 22);
+            this.txtLiefrantMA.Size = new System.Drawing.Size(340, 22);
             this.txtLiefrantMA.StyleController = this.lcCostDetails;
             this.txtLiefrantMA.TabIndex = 13;
             this.txtLiefrantMA.Enter += new System.EventHandler(this.txtWG_Enter);
             // 
             // txtPreisText
             // 
-            this.txtPreisText.Location = new System.Drawing.Point(919, 400);
+            this.txtPreisText.Location = new System.Drawing.Point(1026, -106);
             this.txtPreisText.Name = "txtPreisText";
             this.txtPreisText.Properties.MaxLength = 200;
-            this.txtPreisText.Size = new System.Drawing.Size(284, 46);
+            this.txtPreisText.Size = new System.Drawing.Size(368, 71);
             this.txtPreisText.StyleController = this.lcCostDetails;
             this.txtPreisText.TabIndex = 61;
             // 
             // txtLPMO
             // 
-            this.txtLPMO.Location = new System.Drawing.Point(118, 365);
+            this.txtLPMO.Location = new System.Drawing.Point(87, 63);
             this.txtLPMO.Name = "txtLPMO";
             this.txtLPMO.Properties.Mask.EditMask = "n2";
             this.txtLPMO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtLPMO.Properties.ReadOnly = true;
             this.txtLPMO.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtLPMO.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtLPMO.Size = new System.Drawing.Size(132, 22);
+            this.txtLPMO.Size = new System.Drawing.Size(133, 22);
             this.txtLPMO.StyleController = this.lcCostDetails;
             this.txtLPMO.TabIndex = 32;
             this.txtLPMO.Tag = "Einzelpreise MO";
@@ -3890,12 +5421,12 @@
             // 
             // txtLPMe
             // 
-            this.txtLPMe.Location = new System.Drawing.Point(118, 330);
+            this.txtLPMe.Location = new System.Drawing.Point(87, 37);
             this.txtLPMe.Name = "txtLPMe";
             this.txtLPMe.Properties.AllowMouseWheel = false;
             this.txtLPMe.Properties.Mask.EditMask = "n2";
             this.txtLPMe.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txtLPMe.Size = new System.Drawing.Size(132, 22);
+            this.txtLPMe.Size = new System.Drawing.Size(133, 22);
             this.txtLPMe.StyleController = this.lcCostDetails;
             this.txtLPMe.TabIndex = 23;
             this.txtLPMe.Tag = "Einzelpreise MA";
@@ -3906,14 +5437,14 @@
             // 
             // txtValue4MO
             // 
-            this.txtValue4MO.Location = new System.Drawing.Point(847, 496);
+            this.txtValue4MO.Location = new System.Drawing.Point(1077, 146);
             this.txtValue4MO.Name = "txtValue4MO";
             this.txtValue4MO.Properties.Mask.EditMask = "n2";
             this.txtValue4MO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtValue4MO.Properties.ReadOnly = true;
             this.txtValue4MO.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtValue4MO.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtValue4MO.Size = new System.Drawing.Size(114, 22);
+            this.txtValue4MO.Size = new System.Drawing.Size(145, 22);
             this.txtValue4MO.StyleController = this.lcCostDetails;
             this.txtValue4MO.TabIndex = 58;
             this.txtValue4MO.TabStop = false;
@@ -3922,14 +5453,14 @@
             // 
             // txtGrundValueMO
             // 
-            this.txtGrundValueMO.Location = new System.Drawing.Point(1103, 495);
+            this.txtGrundValueMO.Location = new System.Drawing.Point(1362, 146);
             this.txtGrundValueMO.Name = "txtGrundValueMO";
             this.txtGrundValueMO.Properties.Mask.EditMask = "n2";
             this.txtGrundValueMO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtGrundValueMO.Properties.ReadOnly = true;
             this.txtGrundValueMO.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtGrundValueMO.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtGrundValueMO.Size = new System.Drawing.Size(100, 22);
+            this.txtGrundValueMO.Size = new System.Drawing.Size(178, 22);
             this.txtGrundValueMO.StyleController = this.lcCostDetails;
             this.txtGrundValueMO.TabIndex = 60;
             this.txtGrundValueMO.TabStop = false;
@@ -3937,13 +5468,13 @@
             // 
             // txtGrundMultiMO
             // 
-            this.txtGrundMultiMO.Location = new System.Drawing.Point(994, 495);
+            this.txtGrundMultiMO.Location = new System.Drawing.Point(1226, 146);
             this.txtGrundMultiMO.Name = "txtGrundMultiMO";
             this.txtGrundMultiMO.Properties.Mask.EditMask = "n3";
             this.txtGrundMultiMO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtGrundMultiMO.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtGrundMultiMO.Properties.ReadOnly = true;
-            this.txtGrundMultiMO.Size = new System.Drawing.Size(105, 22);
+            this.txtGrundMultiMO.Size = new System.Drawing.Size(132, 22);
             this.txtGrundMultiMO.StyleController = this.lcCostDetails;
             this.txtGrundMultiMO.TabIndex = 59;
             this.txtGrundMultiMO.TabStop = false;
@@ -3951,13 +5482,13 @@
             // 
             // txtGrundMultiME
             // 
-            this.txtGrundMultiME.Location = new System.Drawing.Point(994, 469);
+            this.txtGrundMultiME.Location = new System.Drawing.Point(1226, 118);
             this.txtGrundMultiME.Name = "txtGrundMultiME";
             this.txtGrundMultiME.Properties.Mask.EditMask = "n3";
             this.txtGrundMultiME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtGrundMultiME.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtGrundMultiME.Properties.ReadOnly = true;
-            this.txtGrundMultiME.Size = new System.Drawing.Size(105, 22);
+            this.txtGrundMultiME.Size = new System.Drawing.Size(132, 22);
             this.txtGrundMultiME.StyleController = this.lcCostDetails;
             this.txtGrundMultiME.TabIndex = 49;
             this.txtGrundMultiME.TabStop = false;
@@ -3966,14 +5497,14 @@
             // txtStdSatz
             // 
             this.txtStdSatz.Enabled = false;
-            this.txtStdSatz.Location = new System.Drawing.Point(539, 274);
+            this.txtStdSatz.Location = new System.Drawing.Point(816, -10);
             this.txtStdSatz.Name = "txtStdSatz";
             this.txtStdSatz.Properties.AllowMouseWheel = false;
             this.txtStdSatz.Properties.Mask.EditMask = "n2";
             this.txtStdSatz.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtStdSatz.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtStdSatz.Properties.ReadOnly = true;
-            this.txtStdSatz.Size = new System.Drawing.Size(70, 22);
+            this.txtStdSatz.Size = new System.Drawing.Size(93, 22);
             this.txtStdSatz.StyleController = this.lcCostDetails;
             this.txtStdSatz.TabIndex = 22;
             this.txtStdSatz.Tag = "Std.Satz";
@@ -3982,24 +5513,24 @@
             // 
             // txtFabrikate
             // 
-            this.txtFabrikate.Location = new System.Drawing.Point(14, 168);
+            this.txtFabrikate.Location = new System.Drawing.Point(14, -57);
             this.txtFabrikate.Name = "txtFabrikate";
             this.txtFabrikate.Properties.AllowMouseWheel = false;
-            this.txtFabrikate.Size = new System.Drawing.Size(101, 22);
+            this.txtFabrikate.Size = new System.Drawing.Size(109, 22);
             this.txtFabrikate.StyleController = this.lcCostDetails;
             this.txtFabrikate.TabIndex = 7;
             this.txtFabrikate.Enter += new System.EventHandler(this.txtWG_Enter);
             // 
             // txtGrundValueME
             // 
-            this.txtGrundValueME.Location = new System.Drawing.Point(1103, 469);
+            this.txtGrundValueME.Location = new System.Drawing.Point(1362, 120);
             this.txtGrundValueME.Name = "txtGrundValueME";
             this.txtGrundValueME.Properties.Mask.EditMask = "n2";
             this.txtGrundValueME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtGrundValueME.Properties.ReadOnly = true;
             this.txtGrundValueME.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtGrundValueME.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtGrundValueME.Size = new System.Drawing.Size(100, 22);
+            this.txtGrundValueME.Size = new System.Drawing.Size(178, 22);
             this.txtGrundValueME.StyleController = this.lcCostDetails;
             this.txtGrundValueME.TabIndex = 50;
             this.txtGrundValueME.TabStop = false;
@@ -4007,14 +5538,14 @@
             // 
             // txtValue3MO
             // 
-            this.txtValue3MO.Location = new System.Drawing.Point(636, 496);
+            this.txtValue3MO.Location = new System.Drawing.Point(780, 146);
             this.txtValue3MO.Name = "txtValue3MO";
             this.txtValue3MO.Properties.Mask.EditMask = "n2";
             this.txtValue3MO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtValue3MO.Properties.ReadOnly = true;
             this.txtValue3MO.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtValue3MO.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtValue3MO.Size = new System.Drawing.Size(100, 22);
+            this.txtValue3MO.Size = new System.Drawing.Size(155, 22);
             this.txtValue3MO.StyleController = this.lcCostDetails;
             this.txtValue3MO.TabIndex = 56;
             this.txtValue3MO.TabStop = false;
@@ -4023,14 +5554,14 @@
             // 
             // txtValue2MO
             // 
-            this.txtValue2MO.Location = new System.Drawing.Point(416, 496);
+            this.txtValue2MO.Location = new System.Drawing.Point(496, 146);
             this.txtValue2MO.Name = "txtValue2MO";
             this.txtValue2MO.Properties.Mask.EditMask = "n2";
             this.txtValue2MO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtValue2MO.Properties.ReadOnly = true;
             this.txtValue2MO.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtValue2MO.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtValue2MO.Size = new System.Drawing.Size(101, 22);
+            this.txtValue2MO.Size = new System.Drawing.Size(142, 22);
             this.txtValue2MO.StyleController = this.lcCostDetails;
             this.txtValue2MO.TabIndex = 54;
             this.txtValue2MO.TabStop = false;
@@ -4041,7 +5572,7 @@
             // txtFinalGB
             // 
             this.txtFinalGB.Enabled = false;
-            this.txtFinalGB.Location = new System.Drawing.Point(1098, 365);
+            this.txtFinalGB.Location = new System.Drawing.Point(1362, 63);
             this.txtFinalGB.Name = "txtFinalGB";
             this.txtFinalGB.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.txtFinalGB.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift", 10F);
@@ -4050,7 +5581,7 @@
             this.txtFinalGB.Properties.Mask.EditMask = "n2";
             this.txtFinalGB.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtFinalGB.Properties.ReadOnly = true;
-            this.txtFinalGB.Size = new System.Drawing.Size(105, 22);
+            this.txtFinalGB.Size = new System.Drawing.Size(178, 22);
             this.txtFinalGB.StyleController = this.lcCostDetails;
             this.txtFinalGB.TabIndex = 40;
             this.txtFinalGB.TabStop = false;
@@ -4058,14 +5589,14 @@
             // txtGrandTotalMO
             // 
             this.txtGrandTotalMO.Enabled = false;
-            this.txtGrandTotalMO.Location = new System.Drawing.Point(994, 365);
+            this.txtGrandTotalMO.Location = new System.Drawing.Point(1196, 63);
             this.txtGrandTotalMO.Name = "txtGrandTotalMO";
             this.txtGrandTotalMO.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift", 10F);
             this.txtGrandTotalMO.Properties.Appearance.Options.UseFont = true;
             this.txtGrandTotalMO.Properties.Mask.EditMask = "n2";
             this.txtGrandTotalMO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtGrandTotalMO.Properties.ReadOnly = true;
-            this.txtGrandTotalMO.Size = new System.Drawing.Size(100, 22);
+            this.txtGrandTotalMO.Size = new System.Drawing.Size(162, 22);
             this.txtGrandTotalMO.StyleController = this.lcCostDetails;
             this.txtGrandTotalMO.TabIndex = 39;
             this.txtGrandTotalMO.TabStop = false;
@@ -4074,14 +5605,14 @@
             // txtGrandTotalME
             // 
             this.txtGrandTotalME.Enabled = false;
-            this.txtGrandTotalME.Location = new System.Drawing.Point(994, 330);
+            this.txtGrandTotalME.Location = new System.Drawing.Point(1196, 37);
             this.txtGrandTotalME.Name = "txtGrandTotalME";
             this.txtGrandTotalME.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift", 10F);
             this.txtGrandTotalME.Properties.Appearance.Options.UseFont = true;
             this.txtGrandTotalME.Properties.Mask.EditMask = "n2";
             this.txtGrandTotalME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtGrandTotalME.Properties.ReadOnly = true;
-            this.txtGrandTotalME.Size = new System.Drawing.Size(100, 22);
+            this.txtGrandTotalME.Size = new System.Drawing.Size(162, 22);
             this.txtGrandTotalME.StyleController = this.lcCostDetails;
             this.txtGrandTotalME.TabIndex = 30;
             this.txtGrandTotalME.TabStop = false;
@@ -4089,14 +5620,14 @@
             // 
             // txtValue1MO
             // 
-            this.txtValue1MO.Location = new System.Drawing.Point(191, 496);
+            this.txtValue1MO.Location = new System.Drawing.Point(222, 144);
             this.txtValue1MO.Name = "txtValue1MO";
             this.txtValue1MO.Properties.Mask.EditMask = "n2";
             this.txtValue1MO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtValue1MO.Properties.ReadOnly = true;
             this.txtValue1MO.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtValue1MO.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtValue1MO.Size = new System.Drawing.Size(111, 22);
+            this.txtValue1MO.Size = new System.Drawing.Size(132, 22);
             this.txtValue1MO.StyleController = this.lcCostDetails;
             this.txtValue1MO.TabIndex = 52;
             this.txtValue1MO.TabStop = false;
@@ -4106,13 +5637,13 @@
             // 
             // txtMulti1MO
             // 
-            this.txtMulti1MO.Location = new System.Drawing.Point(118, 495);
+            this.txtMulti1MO.Location = new System.Drawing.Point(86, 144);
             this.txtMulti1MO.Name = "txtMulti1MO";
             this.txtMulti1MO.Properties.AllowMouseWheel = false;
             this.txtMulti1MO.Properties.Mask.EditMask = "n3";
             this.txtMulti1MO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtMulti1MO.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtMulti1MO.Size = new System.Drawing.Size(69, 22);
+            this.txtMulti1MO.Size = new System.Drawing.Size(132, 22);
             this.txtMulti1MO.StyleController = this.lcCostDetails;
             this.txtMulti1MO.TabIndex = 51;
             this.txtMulti1MO.Tag = "Multi 1 MO";
@@ -4124,13 +5655,13 @@
             // 
             // txtMulti2MO
             // 
-            this.txtMulti2MO.Location = new System.Drawing.Point(343, 495);
+            this.txtMulti2MO.Location = new System.Drawing.Point(358, 144);
             this.txtMulti2MO.Name = "txtMulti2MO";
             this.txtMulti2MO.Properties.AllowMouseWheel = false;
             this.txtMulti2MO.Properties.Mask.EditMask = "n3";
             this.txtMulti2MO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtMulti2MO.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtMulti2MO.Size = new System.Drawing.Size(69, 22);
+            this.txtMulti2MO.Size = new System.Drawing.Size(134, 22);
             this.txtMulti2MO.StyleController = this.lcCostDetails;
             this.txtMulti2MO.TabIndex = 53;
             this.txtMulti2MO.Tag = "Multi 2 MO";
@@ -4142,35 +5673,35 @@
             // 
             // chkVerkaufspreisMO
             // 
-            this.chkVerkaufspreisMO.Location = new System.Drawing.Point(965, 365);
+            this.chkVerkaufspreisMO.Location = new System.Drawing.Point(1174, 55);
             this.chkVerkaufspreisMO.Name = "chkVerkaufspreisMO";
             this.chkVerkaufspreisMO.Properties.Caption = "";
             this.chkVerkaufspreisMO.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.chkVerkaufspreisMO.Size = new System.Drawing.Size(25, 18);
+            this.chkVerkaufspreisMO.Size = new System.Drawing.Size(18, 18);
             this.chkVerkaufspreisMO.StyleController = this.lcCostDetails;
             this.chkVerkaufspreisMO.TabIndex = 69;
             this.chkVerkaufspreisMO.CheckedChanged += new System.EventHandler(this.chkVerkaufspreisMO_CheckedChanged);
             // 
             // chkVerkaufspreisME
             // 
-            this.chkVerkaufspreisME.Location = new System.Drawing.Point(963, 339);
+            this.chkVerkaufspreisME.Location = new System.Drawing.Point(1172, 35);
             this.chkVerkaufspreisME.Name = "chkVerkaufspreisME";
             this.chkVerkaufspreisME.Properties.Caption = "";
             this.chkVerkaufspreisME.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.chkVerkaufspreisME.Size = new System.Drawing.Size(29, 18);
+            this.chkVerkaufspreisME.Size = new System.Drawing.Size(22, 18);
             this.chkVerkaufspreisME.StyleController = this.lcCostDetails;
             this.chkVerkaufspreisME.TabIndex = 65;
             this.chkVerkaufspreisME.CheckedChanged += new System.EventHandler(this.chkVerkaufspreisME_CheckedChanged);
             // 
             // txtVerkaufspreisValueMO
             // 
-            this.txtVerkaufspreisValueMO.Location = new System.Drawing.Point(847, 365);
+            this.txtVerkaufspreisValueMO.Location = new System.Drawing.Point(999, 63);
             this.txtVerkaufspreisValueMO.Name = "txtVerkaufspreisValueMO";
             this.txtVerkaufspreisValueMO.Properties.Mask.EditMask = "n2";
             this.txtVerkaufspreisValueMO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtVerkaufspreisValueMO.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtVerkaufspreisValueMO.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtVerkaufspreisValueMO.Size = new System.Drawing.Size(114, 22);
+            this.txtVerkaufspreisValueMO.Size = new System.Drawing.Size(171, 22);
             this.txtVerkaufspreisValueMO.StyleController = this.lcCostDetails;
             this.txtVerkaufspreisValueMO.TabIndex = 38;
             this.txtVerkaufspreisValueMO.TabStop = false;
@@ -4182,13 +5713,13 @@
             // 
             // txtMulti3MO
             // 
-            this.txtMulti3MO.Location = new System.Drawing.Point(563, 495);
+            this.txtMulti3MO.Location = new System.Drawing.Point(642, 144);
             this.txtMulti3MO.Name = "txtMulti3MO";
             this.txtMulti3MO.Properties.AllowMouseWheel = false;
             this.txtMulti3MO.Properties.Mask.EditMask = "n3";
             this.txtMulti3MO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtMulti3MO.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtMulti3MO.Size = new System.Drawing.Size(69, 22);
+            this.txtMulti3MO.Size = new System.Drawing.Size(134, 22);
             this.txtMulti3MO.StyleController = this.lcCostDetails;
             this.txtMulti3MO.TabIndex = 55;
             this.txtMulti3MO.Tag = "Multi 3 MO";
@@ -4200,13 +5731,13 @@
             // 
             // txtVerkaufspreisMultiMO
             // 
-            this.txtVerkaufspreisMultiMO.Location = new System.Drawing.Point(740, 365);
+            this.txtVerkaufspreisMultiMO.Location = new System.Drawing.Point(872, 63);
             this.txtVerkaufspreisMultiMO.Name = "txtVerkaufspreisMultiMO";
             this.txtVerkaufspreisMultiMO.Properties.AllowMouseWheel = false;
             this.txtVerkaufspreisMultiMO.Properties.Mask.EditMask = "n3";
             this.txtVerkaufspreisMultiMO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtVerkaufspreisMultiMO.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtVerkaufspreisMultiMO.Size = new System.Drawing.Size(103, 22);
+            this.txtVerkaufspreisMultiMO.Size = new System.Drawing.Size(123, 22);
             this.txtVerkaufspreisMultiMO.StyleController = this.lcCostDetails;
             this.txtVerkaufspreisMultiMO.TabIndex = 37;
             this.txtVerkaufspreisMultiMO.TextChanged += new System.EventHandler(this.txtSelbstkostenValueMO_TextChanged);
@@ -4217,13 +5748,13 @@
             // 
             // txtMulti4MO
             // 
-            this.txtMulti4MO.Location = new System.Drawing.Point(774, 495);
+            this.txtMulti4MO.Location = new System.Drawing.Point(939, 144);
             this.txtMulti4MO.Name = "txtMulti4MO";
             this.txtMulti4MO.Properties.AllowMouseWheel = false;
             this.txtMulti4MO.Properties.Mask.EditMask = "n3";
             this.txtMulti4MO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtMulti4MO.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtMulti4MO.Size = new System.Drawing.Size(69, 22);
+            this.txtMulti4MO.Size = new System.Drawing.Size(134, 22);
             this.txtMulti4MO.StyleController = this.lcCostDetails;
             this.txtMulti4MO.TabIndex = 57;
             this.txtMulti4MO.TextChanged += new System.EventHandler(this.txtValue3MO_TextChanged);
@@ -4234,13 +5765,13 @@
             // 
             // txtVerkaufspreisValueME
             // 
-            this.txtVerkaufspreisValueME.Location = new System.Drawing.Point(847, 331);
+            this.txtVerkaufspreisValueME.Location = new System.Drawing.Point(999, 37);
             this.txtVerkaufspreisValueME.Name = "txtVerkaufspreisValueME";
             this.txtVerkaufspreisValueME.Properties.Mask.EditMask = "n2";
             this.txtVerkaufspreisValueME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtVerkaufspreisValueME.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtVerkaufspreisValueME.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtVerkaufspreisValueME.Size = new System.Drawing.Size(114, 22);
+            this.txtVerkaufspreisValueME.Size = new System.Drawing.Size(171, 22);
             this.txtVerkaufspreisValueME.StyleController = this.lcCostDetails;
             this.txtVerkaufspreisValueME.TabIndex = 29;
             this.txtVerkaufspreisValueME.TabStop = false;
@@ -4253,13 +5784,13 @@
             // txtMulti1ME
             // 
             this.txtMulti1ME.CausesValidation = false;
-            this.txtMulti1ME.Location = new System.Drawing.Point(118, 469);
+            this.txtMulti1ME.Location = new System.Drawing.Point(86, 118);
             this.txtMulti1ME.Name = "txtMulti1ME";
             this.txtMulti1ME.Properties.AllowMouseWheel = false;
             this.txtMulti1ME.Properties.Mask.EditMask = "n3";
             this.txtMulti1ME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtMulti1ME.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtMulti1ME.Size = new System.Drawing.Size(69, 22);
+            this.txtMulti1ME.Size = new System.Drawing.Size(132, 22);
             this.txtMulti1ME.StyleController = this.lcCostDetails;
             this.txtMulti1ME.TabIndex = 41;
             this.txtMulti1ME.Tag = "Multi 1 MA";
@@ -4271,14 +5802,14 @@
             // 
             // txtValue1ME
             // 
-            this.txtValue1ME.Location = new System.Drawing.Point(191, 470);
+            this.txtValue1ME.Location = new System.Drawing.Point(222, 118);
             this.txtValue1ME.Name = "txtValue1ME";
             this.txtValue1ME.Properties.Mask.EditMask = "n2";
             this.txtValue1ME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtValue1ME.Properties.ReadOnly = true;
             this.txtValue1ME.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtValue1ME.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtValue1ME.Size = new System.Drawing.Size(111, 22);
+            this.txtValue1ME.Size = new System.Drawing.Size(132, 22);
             this.txtValue1ME.StyleController = this.lcCostDetails;
             this.txtValue1ME.TabIndex = 42;
             this.txtValue1ME.TabStop = false;
@@ -4288,12 +5819,12 @@
             // 
             // txtDim3
             // 
-            this.txtDim3.Location = new System.Drawing.Point(350, 168);
+            this.txtDim3.Location = new System.Drawing.Point(498, -104);
             this.txtDim3.Name = "txtDim3";
             this.txtDim3.Properties.AllowMouseWheel = false;
             this.txtDim3.Properties.Appearance.Options.UseTextOptions = true;
             this.txtDim3.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.txtDim3.Size = new System.Drawing.Size(70, 22);
+            this.txtDim3.Size = new System.Drawing.Size(93, 22);
             this.txtDim3.StyleController = this.lcCostDetails;
             this.txtDim3.TabIndex = 11;
             this.txtDim3.Enter += new System.EventHandler(this.txtWG_Enter);
@@ -4303,13 +5834,13 @@
             // 
             // txtVerkaufspreisMultiME
             // 
-            this.txtVerkaufspreisMultiME.Location = new System.Drawing.Point(727, 330);
+            this.txtVerkaufspreisMultiME.Location = new System.Drawing.Point(872, 37);
             this.txtVerkaufspreisMultiME.Name = "txtVerkaufspreisMultiME";
             this.txtVerkaufspreisMultiME.Properties.AllowMouseWheel = false;
             this.txtVerkaufspreisMultiME.Properties.Mask.EditMask = "n3";
             this.txtVerkaufspreisMultiME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtVerkaufspreisMultiME.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtVerkaufspreisMultiME.Size = new System.Drawing.Size(116, 22);
+            this.txtVerkaufspreisMultiME.Size = new System.Drawing.Size(123, 22);
             this.txtVerkaufspreisMultiME.StyleController = this.lcCostDetails;
             this.txtVerkaufspreisMultiME.TabIndex = 28;
             this.txtVerkaufspreisMultiME.TextChanged += new System.EventHandler(this.txtSelbstkostenValueME_TextChanged);
@@ -4320,14 +5851,14 @@
             // 
             // txtValue2ME
             // 
-            this.txtValue2ME.Location = new System.Drawing.Point(416, 470);
+            this.txtValue2ME.Location = new System.Drawing.Point(496, 120);
             this.txtValue2ME.Name = "txtValue2ME";
             this.txtValue2ME.Properties.Mask.EditMask = "n2";
             this.txtValue2ME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtValue2ME.Properties.ReadOnly = true;
             this.txtValue2ME.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtValue2ME.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtValue2ME.Size = new System.Drawing.Size(101, 22);
+            this.txtValue2ME.Size = new System.Drawing.Size(142, 22);
             this.txtValue2ME.StyleController = this.lcCostDetails;
             this.txtValue2ME.TabIndex = 44;
             this.txtValue2ME.TabStop = false;
@@ -4337,14 +5868,14 @@
             // 
             // txtMo
             // 
-            this.txtMo.Location = new System.Drawing.Point(243, 274);
+            this.txtMo.Location = new System.Drawing.Point(312, -10);
             this.txtMo.Name = "txtMo";
             this.txtMo.Properties.AllowMouseWheel = false;
             this.txtMo.Properties.Appearance.Options.UseTextOptions = true;
             this.txtMo.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtMo.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtMo.Properties.MaxLength = 1;
-            this.txtMo.Size = new System.Drawing.Size(72, 22);
+            this.txtMo.Size = new System.Drawing.Size(93, 22);
             this.txtMo.StyleController = this.lcCostDetails;
             this.txtMo.TabIndex = 18;
             this.txtMo.TextChanged += new System.EventHandler(this.txtMo_TextChanged);
@@ -4353,11 +5884,11 @@
             // 
             // chkSelbstkostenMO
             // 
-            this.chkSelbstkostenMO.Location = new System.Drawing.Point(711, 365);
+            this.chkSelbstkostenMO.Location = new System.Drawing.Point(846, 58);
             this.chkSelbstkostenMO.Name = "chkSelbstkostenMO";
             this.chkSelbstkostenMO.Properties.Caption = "";
             this.chkSelbstkostenMO.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.chkSelbstkostenMO.Size = new System.Drawing.Size(25, 18);
+            this.chkSelbstkostenMO.Size = new System.Drawing.Size(22, 18);
             this.chkSelbstkostenMO.StyleController = this.lcCostDetails;
             this.chkSelbstkostenMO.TabIndex = 67;
             this.chkSelbstkostenMO.CheckedChanged += new System.EventHandler(this.chkSelbstkostenMO_CheckedChanged);
@@ -4365,25 +5896,25 @@
             // chkSelbstkostenME
             // 
             this.chkSelbstkostenME.AllowDrop = true;
-            this.chkSelbstkostenME.Location = new System.Drawing.Point(702, 339);
+            this.chkSelbstkostenME.Location = new System.Drawing.Point(848, 34);
             this.chkSelbstkostenME.Name = "chkSelbstkostenME";
             this.chkSelbstkostenME.Properties.Caption = "";
             this.chkSelbstkostenME.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.chkSelbstkostenME.Size = new System.Drawing.Size(19, 18);
+            this.chkSelbstkostenME.Size = new System.Drawing.Size(18, 18);
             this.chkSelbstkostenME.StyleController = this.lcCostDetails;
             this.chkSelbstkostenME.TabIndex = 64;
             this.chkSelbstkostenME.CheckedChanged += new System.EventHandler(this.chkSelbstkostenME_CheckedChanged);
             // 
             // txtSelbstkostenValueMO
             // 
-            this.txtSelbstkostenValueMO.Location = new System.Drawing.Point(621, 365);
+            this.txtSelbstkostenValueMO.Location = new System.Drawing.Point(674, 61);
             this.txtSelbstkostenValueMO.Name = "txtSelbstkostenValueMO";
             this.txtSelbstkostenValueMO.Properties.Mask.EditMask = "n2";
             this.txtSelbstkostenValueMO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtSelbstkostenValueMO.Properties.ReadOnly = true;
             this.txtSelbstkostenValueMO.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtSelbstkostenValueMO.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtSelbstkostenValueMO.Size = new System.Drawing.Size(86, 22);
+            this.txtSelbstkostenValueMO.Size = new System.Drawing.Size(168, 22);
             this.txtSelbstkostenValueMO.StyleController = this.lcCostDetails;
             this.txtSelbstkostenValueMO.TabIndex = 36;
             this.txtSelbstkostenValueMO.TabStop = false;
@@ -4392,14 +5923,14 @@
             // 
             // txtValue3ME
             // 
-            this.txtValue3ME.Location = new System.Drawing.Point(636, 470);
+            this.txtValue3ME.Location = new System.Drawing.Point(780, 120);
             this.txtValue3ME.Name = "txtValue3ME";
             this.txtValue3ME.Properties.Mask.EditMask = "n2";
             this.txtValue3ME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtValue3ME.Properties.ReadOnly = true;
             this.txtValue3ME.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtValue3ME.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtValue3ME.Size = new System.Drawing.Size(100, 22);
+            this.txtValue3ME.Size = new System.Drawing.Size(155, 22);
             this.txtValue3ME.StyleController = this.lcCostDetails;
             this.txtValue3ME.TabIndex = 46;
             this.txtValue3ME.TabStop = false;
@@ -4409,13 +5940,13 @@
             // 
             // txtSelbstkostenMultiMO
             // 
-            this.txtSelbstkostenMultiMO.Location = new System.Drawing.Point(507, 365);
+            this.txtSelbstkostenMultiMO.Location = new System.Drawing.Point(553, 63);
             this.txtSelbstkostenMultiMO.Name = "txtSelbstkostenMultiMO";
             this.txtSelbstkostenMultiMO.Properties.AllowMouseWheel = false;
             this.txtSelbstkostenMultiMO.Properties.Mask.EditMask = "n3";
             this.txtSelbstkostenMultiMO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtSelbstkostenMultiMO.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtSelbstkostenMultiMO.Size = new System.Drawing.Size(110, 22);
+            this.txtSelbstkostenMultiMO.Size = new System.Drawing.Size(117, 22);
             this.txtSelbstkostenMultiMO.StyleController = this.lcCostDetails;
             this.txtSelbstkostenMultiMO.TabIndex = 35;
             this.txtSelbstkostenMultiMO.TextChanged += new System.EventHandler(this.txtEinkaufspreisMO_TextChanged);
@@ -4426,13 +5957,13 @@
             // 
             // txtMulti2ME
             // 
-            this.txtMulti2ME.Location = new System.Drawing.Point(343, 469);
+            this.txtMulti2ME.Location = new System.Drawing.Point(358, 118);
             this.txtMulti2ME.Name = "txtMulti2ME";
             this.txtMulti2ME.Properties.AllowMouseWheel = false;
             this.txtMulti2ME.Properties.Mask.EditMask = "n3";
             this.txtMulti2ME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtMulti2ME.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtMulti2ME.Size = new System.Drawing.Size(69, 22);
+            this.txtMulti2ME.Size = new System.Drawing.Size(134, 22);
             this.txtMulti2ME.StyleController = this.lcCostDetails;
             this.txtMulti2ME.TabIndex = 43;
             this.txtMulti2ME.Tag = "Multi 2 MA";
@@ -4444,14 +5975,14 @@
             // 
             // txtSelbstkostenValueME
             // 
-            this.txtSelbstkostenValueME.Location = new System.Drawing.Point(621, 331);
+            this.txtSelbstkostenValueME.Location = new System.Drawing.Point(674, 35);
             this.txtSelbstkostenValueME.Name = "txtSelbstkostenValueME";
             this.txtSelbstkostenValueME.Properties.Mask.EditMask = "n2";
             this.txtSelbstkostenValueME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtSelbstkostenValueME.Properties.ReadOnly = true;
             this.txtSelbstkostenValueME.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtSelbstkostenValueME.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtSelbstkostenValueME.Size = new System.Drawing.Size(75, 22);
+            this.txtSelbstkostenValueME.Size = new System.Drawing.Size(168, 22);
             this.txtSelbstkostenValueME.StyleController = this.lcCostDetails;
             this.txtSelbstkostenValueME.TabIndex = 27;
             this.txtSelbstkostenValueME.TabStop = false;
@@ -4460,14 +5991,14 @@
             // 
             // txtValue4ME
             // 
-            this.txtValue4ME.Location = new System.Drawing.Point(847, 470);
+            this.txtValue4ME.Location = new System.Drawing.Point(1077, 120);
             this.txtValue4ME.Name = "txtValue4ME";
             this.txtValue4ME.Properties.Mask.EditMask = "n2";
             this.txtValue4ME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtValue4ME.Properties.ReadOnly = true;
             this.txtValue4ME.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtValue4ME.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtValue4ME.Size = new System.Drawing.Size(114, 22);
+            this.txtValue4ME.Size = new System.Drawing.Size(145, 22);
             this.txtValue4ME.StyleController = this.lcCostDetails;
             this.txtValue4ME.TabIndex = 48;
             this.txtValue4ME.TabStop = false;
@@ -4476,12 +6007,12 @@
             // 
             // txtDim2
             // 
-            this.txtDim2.Location = new System.Drawing.Point(274, 168);
+            this.txtDim2.Location = new System.Drawing.Point(402, -104);
             this.txtDim2.Name = "txtDim2";
             this.txtDim2.Properties.AllowMouseWheel = false;
             this.txtDim2.Properties.Appearance.Options.UseTextOptions = true;
             this.txtDim2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.txtDim2.Size = new System.Drawing.Size(72, 22);
+            this.txtDim2.Size = new System.Drawing.Size(92, 22);
             this.txtDim2.StyleController = this.lcCostDetails;
             this.txtDim2.TabIndex = 10;
             this.txtDim2.Enter += new System.EventHandler(this.txtWG_Enter);
@@ -4491,13 +6022,13 @@
             // 
             // txtSelbstkostenMultiME
             // 
-            this.txtSelbstkostenMultiME.Location = new System.Drawing.Point(507, 330);
+            this.txtSelbstkostenMultiME.Location = new System.Drawing.Point(553, 37);
             this.txtSelbstkostenMultiME.Name = "txtSelbstkostenMultiME";
             this.txtSelbstkostenMultiME.Properties.AllowMouseWheel = false;
             this.txtSelbstkostenMultiME.Properties.Mask.EditMask = "n3";
             this.txtSelbstkostenMultiME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtSelbstkostenMultiME.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtSelbstkostenMultiME.Size = new System.Drawing.Size(110, 22);
+            this.txtSelbstkostenMultiME.Size = new System.Drawing.Size(117, 22);
             this.txtSelbstkostenMultiME.StyleController = this.lcCostDetails;
             this.txtSelbstkostenMultiME.TabIndex = 26;
             this.txtSelbstkostenMultiME.TextChanged += new System.EventHandler(this.txtEinkaufspreisME_TextChanged);
@@ -4508,14 +6039,14 @@
             // 
             // txtMa
             // 
-            this.txtMa.Location = new System.Drawing.Point(168, 274);
+            this.txtMa.Location = new System.Drawing.Point(215, -10);
             this.txtMa.Name = "txtMa";
             this.txtMa.Properties.AllowMouseWheel = false;
             this.txtMa.Properties.Appearance.Options.UseTextOptions = true;
             this.txtMa.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtMa.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtMa.Properties.MaxLength = 1;
-            this.txtMa.Size = new System.Drawing.Size(71, 22);
+            this.txtMa.Size = new System.Drawing.Size(93, 22);
             this.txtMa.StyleController = this.lcCostDetails;
             this.txtMa.TabIndex = 17;
             this.txtMa.TextChanged += new System.EventHandler(this.txtMa_TextChanged);
@@ -4524,13 +6055,13 @@
             // 
             // txtMulti3ME
             // 
-            this.txtMulti3ME.Location = new System.Drawing.Point(563, 469);
+            this.txtMulti3ME.Location = new System.Drawing.Point(642, 118);
             this.txtMulti3ME.Name = "txtMulti3ME";
             this.txtMulti3ME.Properties.AllowMouseWheel = false;
             this.txtMulti3ME.Properties.Mask.EditMask = "n3";
             this.txtMulti3ME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtMulti3ME.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtMulti3ME.Size = new System.Drawing.Size(69, 22);
+            this.txtMulti3ME.Size = new System.Drawing.Size(134, 22);
             this.txtMulti3ME.StyleController = this.lcCostDetails;
             this.txtMulti3ME.TabIndex = 45;
             this.txtMulti3ME.Tag = "Multi 3 MA";
@@ -4542,36 +6073,36 @@
             // 
             // chkEinkaufspreisMO
             // 
-            this.chkEinkaufspreisMO.Location = new System.Drawing.Point(484, 365);
+            this.chkEinkaufspreisMO.Location = new System.Drawing.Point(531, 59);
             this.chkEinkaufspreisMO.Name = "chkEinkaufspreisMO";
             this.chkEinkaufspreisMO.Properties.Caption = "";
             this.chkEinkaufspreisMO.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.chkEinkaufspreisMO.Size = new System.Drawing.Size(19, 18);
+            this.chkEinkaufspreisMO.Size = new System.Drawing.Size(18, 18);
             this.chkEinkaufspreisMO.StyleController = this.lcCostDetails;
             this.chkEinkaufspreisMO.TabIndex = 66;
             this.chkEinkaufspreisMO.CheckedChanged += new System.EventHandler(this.chkEinkaufspreisMO_CheckedChanged);
             // 
             // chkEinkaufspreisME
             // 
-            this.chkEinkaufspreisME.Location = new System.Drawing.Point(484, 340);
+            this.chkEinkaufspreisME.Location = new System.Drawing.Point(531, 37);
             this.chkEinkaufspreisME.Name = "chkEinkaufspreisME";
             this.chkEinkaufspreisME.Properties.Caption = "";
             this.chkEinkaufspreisME.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.chkEinkaufspreisME.Size = new System.Drawing.Size(19, 18);
+            this.chkEinkaufspreisME.Size = new System.Drawing.Size(18, 18);
             this.chkEinkaufspreisME.StyleController = this.lcCostDetails;
             this.chkEinkaufspreisME.TabIndex = 63;
             this.chkEinkaufspreisME.CheckedChanged += new System.EventHandler(this.chkEinkaufspreisME_CheckedChanged);
             // 
             // txtEinkaufspreisMO
             // 
-            this.txtEinkaufspreisMO.Location = new System.Drawing.Point(359, 365);
+            this.txtEinkaufspreisMO.Location = new System.Drawing.Point(358, 63);
             this.txtEinkaufspreisMO.Name = "txtEinkaufspreisMO";
             this.txtEinkaufspreisMO.Properties.Mask.EditMask = "n2";
             this.txtEinkaufspreisMO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtEinkaufspreisMO.Properties.ReadOnly = true;
             this.txtEinkaufspreisMO.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtEinkaufspreisMO.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtEinkaufspreisMO.Size = new System.Drawing.Size(121, 22);
+            this.txtEinkaufspreisMO.Size = new System.Drawing.Size(169, 22);
             this.txtEinkaufspreisMO.StyleController = this.lcCostDetails;
             this.txtEinkaufspreisMO.TabIndex = 34;
             this.txtEinkaufspreisMO.TabStop = false;
@@ -4579,12 +6110,12 @@
             // 
             // txtDim1
             // 
-            this.txtDim1.Location = new System.Drawing.Point(196, 168);
+            this.txtDim1.Location = new System.Drawing.Point(305, -104);
             this.txtDim1.Name = "txtDim1";
             this.txtDim1.Properties.AllowMouseWheel = false;
             this.txtDim1.Properties.Appearance.Options.UseTextOptions = true;
             this.txtDim1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.txtDim1.Size = new System.Drawing.Size(74, 22);
+            this.txtDim1.Size = new System.Drawing.Size(93, 22);
             this.txtDim1.StyleController = this.lcCostDetails;
             this.txtDim1.TabIndex = 9;
             this.txtDim1.Enter += new System.EventHandler(this.txtWG_Enter);
@@ -4594,13 +6125,13 @@
             // 
             // txtMulti4ME
             // 
-            this.txtMulti4ME.Location = new System.Drawing.Point(774, 469);
+            this.txtMulti4ME.Location = new System.Drawing.Point(939, 118);
             this.txtMulti4ME.Name = "txtMulti4ME";
             this.txtMulti4ME.Properties.AllowMouseWheel = false;
             this.txtMulti4ME.Properties.Mask.EditMask = "n3";
             this.txtMulti4ME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtMulti4ME.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtMulti4ME.Size = new System.Drawing.Size(69, 22);
+            this.txtMulti4ME.Size = new System.Drawing.Size(134, 22);
             this.txtMulti4ME.StyleController = this.lcCostDetails;
             this.txtMulti4ME.TabIndex = 47;
             this.txtMulti4ME.TextChanged += new System.EventHandler(this.txtValue3ME_TextChanged);
@@ -4611,14 +6142,14 @@
             // 
             // txtEinkaufspreisME
             // 
-            this.txtEinkaufspreisME.Location = new System.Drawing.Point(359, 330);
+            this.txtEinkaufspreisME.Location = new System.Drawing.Point(358, 37);
             this.txtEinkaufspreisME.Name = "txtEinkaufspreisME";
             this.txtEinkaufspreisME.Properties.Mask.EditMask = "n2";
             this.txtEinkaufspreisME.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtEinkaufspreisME.Properties.ReadOnly = true;
             this.txtEinkaufspreisME.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtEinkaufspreisME.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtEinkaufspreisME.Size = new System.Drawing.Size(121, 22);
+            this.txtEinkaufspreisME.Size = new System.Drawing.Size(169, 22);
             this.txtEinkaufspreisME.StyleController = this.lcCostDetails;
             this.txtEinkaufspreisME.TabIndex = 25;
             this.txtEinkaufspreisME.TabStop = false;
@@ -4626,13 +6157,13 @@
             // 
             // txtFaktor
             // 
-            this.txtFaktor.Location = new System.Drawing.Point(464, 274);
+            this.txtFaktor.Location = new System.Drawing.Point(719, -10);
             this.txtFaktor.Name = "txtFaktor";
             this.txtFaktor.Properties.AllowMouseWheel = false;
             this.txtFaktor.Properties.Mask.EditMask = "n3";
             this.txtFaktor.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtFaktor.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtFaktor.Size = new System.Drawing.Size(71, 22);
+            this.txtFaktor.Size = new System.Drawing.Size(93, 22);
             this.txtFaktor.StyleController = this.lcCostDetails;
             this.txtFaktor.TabIndex = 21;
             this.txtFaktor.Tag = "Faktor";
@@ -4642,7 +6173,7 @@
             // 
             // txtHours
             // 
-            this.txtHours.Location = new System.Drawing.Point(391, 274);
+            this.txtHours.Location = new System.Drawing.Point(622, -10);
             this.txtHours.Name = "txtHours";
             this.txtHours.Properties.AllowMouseWheel = false;
             this.txtHours.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -4653,7 +6184,7 @@
             this.txtHours.Properties.ReadOnly = true;
             this.txtHours.Properties.Enter += new System.EventHandler(this.txtValue1MO_Properties_Enter);
             this.txtHours.Properties.Leave += new System.EventHandler(this.txtValue1MO_Properties_Leave);
-            this.txtHours.Size = new System.Drawing.Size(69, 22);
+            this.txtHours.Size = new System.Drawing.Size(93, 22);
             this.txtHours.StyleController = this.lcCostDetails;
             this.txtHours.TabIndex = 20;
             this.txtHours.Tag = "Std";
@@ -4662,7 +6193,7 @@
             // 
             // txtMin
             // 
-            this.txtMin.Location = new System.Drawing.Point(319, 274);
+            this.txtMin.Location = new System.Drawing.Point(409, -10);
             this.txtMin.Name = "txtMin";
             this.txtMin.Properties.AllowMouseWheel = false;
             this.txtMin.Properties.Appearance.BackColor = System.Drawing.Color.Moccasin;
@@ -4672,7 +6203,7 @@
             this.txtMin.Properties.Mask.EditMask = "n3";
             this.txtMin.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtMin.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtMin.Size = new System.Drawing.Size(68, 22);
+            this.txtMin.Size = new System.Drawing.Size(209, 22);
             this.txtMin.StyleController = this.lcCostDetails;
             this.txtMin.TabIndex = 19;
             this.txtMin.Tag = "Minutes";
@@ -4682,17 +6213,17 @@
             // 
             // txtShortDescriptionCD
             // 
-            this.txtShortDescriptionCD.Location = new System.Drawing.Point(86, 203);
+            this.txtShortDescriptionCD.Location = new System.Drawing.Point(725, -106);
             this.txtShortDescriptionCD.Name = "txtShortDescriptionCD";
             this.txtShortDescriptionCD.Properties.MaxLength = 80;
-            this.txtShortDescriptionCD.Size = new System.Drawing.Size(345, 46);
+            this.txtShortDescriptionCD.Size = new System.Drawing.Size(297, 71);
             this.txtShortDescriptionCD.StyleController = this.lcCostDetails;
             this.txtShortDescriptionCD.TabIndex = 14;
             this.txtShortDescriptionCD.TextChanged += new System.EventHandler(this.txtShortDescriptionCD_TextChanged);
             // 
             // cmbLVStatus
             // 
-            this.cmbLVStatus.Location = new System.Drawing.Point(501, 213);
+            this.cmbLVStatus.Location = new System.Drawing.Point(913, -10);
             this.cmbLVStatus.Name = "cmbLVStatus";
             this.cmbLVStatus.Properties.AllowMouseWheel = false;
             this.cmbLVStatus.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -4701,14 +6232,14 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("LVStatus", "LVStatus")});
             this.cmbLVStatus.Properties.NullText = "";
             this.cmbLVStatus.Properties.PopupSizeable = false;
-            this.cmbLVStatus.Size = new System.Drawing.Size(220, 22);
+            this.cmbLVStatus.Size = new System.Drawing.Size(112, 22);
             this.cmbLVStatus.StyleController = this.lcCostDetails;
             this.cmbLVStatus.TabIndex = 73;
             this.cmbLVStatus.Tag = "LV-Status";
             // 
             // cmbPositionKZCD
             // 
-            this.cmbPositionKZCD.Location = new System.Drawing.Point(254, 56);
+            this.cmbPositionKZCD.Location = new System.Drawing.Point(287, -151);
             this.cmbPositionKZCD.Name = "cmbPositionKZCD";
             this.cmbPositionKZCD.Properties.AllowMouseWheel = false;
             this.cmbPositionKZCD.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -4719,7 +6250,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("KZDescription", "Description")});
             this.cmbPositionKZCD.Properties.NullText = "";
             this.cmbPositionKZCD.Properties.PopupSizeable = false;
-            this.cmbPositionKZCD.Size = new System.Drawing.Size(66, 22);
+            this.cmbPositionKZCD.Size = new System.Drawing.Size(383, 22);
             this.cmbPositionKZCD.StyleController = this.lcCostDetails;
             this.cmbPositionKZCD.TabIndex = 1;
             this.cmbPositionKZCD.EditValueChanged += new System.EventHandler(this.cmbPositionKZCD_EditValueChanged);
@@ -4736,28 +6267,20 @@
             this.layoutControlGroup2});
             this.layoutControlGroup6.Name = "Root";
             this.layoutControlGroup6.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup6.Size = new System.Drawing.Size(1447, 550);
+            this.layoutControlGroup6.Size = new System.Drawing.Size(1686, 389);
             // 
             // layoutControlGroup2
             // 
             this.layoutControlGroup2.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.emptySpaceItem21,
             this.layoutControlItem242,
-            this.layoutControlItem246,
             this.layoutControlItem249,
             this.layoutControlItem250,
             this.layoutControlItem251,
-            this.layoutControlItem19,
             this.layoutControlItem20,
             this.layoutControlItem253,
-            this.layoutControlItem29,
-            this.layoutControlItem30,
-            this.layoutControlItem31,
             this.layoutControlItem3,
-            this.layoutControlItem12,
             this.layoutControlItem255,
-            this.lccmbLVStatus,
             this.layoutControlItem256,
             this.layoutControlItem35,
             this.layoutControlItem36,
@@ -4775,8 +6298,6 @@
             this.layoutControlItem74,
             this.layoutControlItem79,
             this.layoutControlItem13,
-            this.emptySpaceItem3,
-            this.emptySpaceItem19,
             this.layoutControlItem42,
             this.layoutControlItem213,
             this.layoutControlItem41,
@@ -4789,13 +6310,8 @@
             this.layoutControlItem77,
             this.layoutControlItem80,
             this.layoutControlItem81,
-            this.layoutControlItem40,
-            this.emptySpaceItem34,
-            this.emptySpaceItem29,
-            this.emptySpaceItem118,
             this.layoutControlItem78,
             this.layoutControlItem75,
-            this.emptySpaceItem127,
             this.layoutControlItem257,
             this.layoutControlItem47,
             this.layoutControlItem44,
@@ -4815,104 +6331,58 @@
             this.layoutControlItem60,
             this.layoutControlItem61,
             this.layoutControlItem62,
-            this.emptySpaceItem4,
-            this.emptySpaceItem64,
-            this.emptySpaceItem98,
-            this.emptySpaceItem116,
-            this.emptySpaceItem119,
-            this.emptySpaceItem120,
-            this.emptySpaceItem20,
             this.layoutControlItem28,
-            this.emptySpaceItem123,
-            this.emptySpaceItem131,
-            this.emptySpaceItem133,
-            this.emptySpaceItem134,
-            this.emptySpaceItem122,
             this.layoutControlItem82,
             this.layoutControlItem90,
-            this.emptySpaceItem44,
-            this.emptySpaceItem97,
-            this.emptySpaceItem7,
-            this.layoutControlItem123,
-            this.emptySpaceItem8,
-            this.emptySpaceItem11,
-            this.layoutControlItem241,
-            this.emptySpaceItem22,
             this.layoutControlItem43,
             this.layoutControlItem51,
-            this.emptySpaceItem31,
-            this.emptySpaceItem33,
-            this.emptySpaceItem43,
-            this.emptySpaceItem65,
-            this.emptySpaceItem45,
             this.layoutControlItem56,
-            this.emptySpaceItem63,
-            this.emptySpaceItem109,
-            this.emptySpaceItem117,
-            this.emptySpaceItem23,
-            this.layoutControlItem26});
+            this.layoutControlItem26,
+            this.layoutControlItem246,
+            this.layoutControlItem6,
+            this.emptySpaceItem6,
+            this.layoutControlItem29,
+            this.layoutControlItem30,
+            this.layoutControlItem31,
+            this.layoutControlItem12,
+            this.emptySpaceItem7,
+            this.layoutControlItem40,
+            this.emptySpaceItem8,
+            this.lccmbLVStatus,
+            this.layoutControlItem123,
+            this.layoutControlItem241,
+            this.emptySpaceItem3,
+            this.emptySpaceItem13,
+            this.emptySpaceItem18,
+            this.emptySpaceItem11});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
             this.layoutControlGroup2.OptionsItemText.TextToControlDistance = 5;
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1447, 550);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(1686, 389);
             this.layoutControlGroup2.Text = "Kostendetails";
-            // 
-            // emptySpaceItem21
-            // 
-            this.emptySpaceItem21.AllowHotTrack = false;
-            this.emptySpaceItem21.Location = new System.Drawing.Point(962, 0);
-            this.emptySpaceItem21.MaxSize = new System.Drawing.Size(194, 274);
-            this.emptySpaceItem21.MinSize = new System.Drawing.Size(194, 274);
-            this.emptySpaceItem21.Name = "emptySpaceItem21";
-            this.emptySpaceItem21.Size = new System.Drawing.Size(231, 274);
-            this.emptySpaceItem21.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem21.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem242
             // 
             this.layoutControlItem242.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem242.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem242.Control = this.cmbPositionKZCD;
-            this.layoutControlItem242.Location = new System.Drawing.Point(240, 0);
-            this.layoutControlItem242.MaxSize = new System.Drawing.Size(0, 52);
-            this.layoutControlItem242.MinSize = new System.Drawing.Size(70, 52);
+            this.layoutControlItem242.Location = new System.Drawing.Point(273, 0);
             this.layoutControlItem242.Name = "layoutControlItem242";
-            this.layoutControlItem242.Size = new System.Drawing.Size(70, 56);
-            this.layoutControlItem242.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem242.Size = new System.Drawing.Size(387, 47);
             this.layoutControlItem242.Text = "Positions KZ ";
             this.layoutControlItem242.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem242.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem242.TextSize = new System.Drawing.Size(74, 16);
             this.layoutControlItem242.TextToControlDistance = 5;
             // 
-            // layoutControlItem246
-            // 
-            this.layoutControlItem246.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.layoutControlItem246.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem246.Control = this.txtDetailKZCD;
-            this.layoutControlItem246.Location = new System.Drawing.Point(310, 0);
-            this.layoutControlItem246.MaxSize = new System.Drawing.Size(65, 56);
-            this.layoutControlItem246.MinSize = new System.Drawing.Size(65, 56);
-            this.layoutControlItem246.Name = "layoutControlItem246";
-            this.layoutControlItem246.Size = new System.Drawing.Size(65, 56);
-            this.layoutControlItem246.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem246.Text = "Det KZ ";
-            this.layoutControlItem246.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem246.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem246.TextSize = new System.Drawing.Size(41, 16);
-            this.layoutControlItem246.TextToControlDistance = 5;
-            // 
             // layoutControlItem249
             // 
             this.layoutControlItem249.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem249.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem249.Control = this.txtWGCD;
-            this.layoutControlItem249.Location = new System.Drawing.Point(0, 56);
-            this.layoutControlItem249.MaxSize = new System.Drawing.Size(70, 56);
-            this.layoutControlItem249.MinSize = new System.Drawing.Size(70, 56);
+            this.layoutControlItem249.Location = new System.Drawing.Point(0, 47);
             this.layoutControlItem249.Name = "layoutControlItem249";
-            this.layoutControlItem249.Size = new System.Drawing.Size(70, 56);
-            this.layoutControlItem249.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem249.Size = new System.Drawing.Size(97, 47);
             this.layoutControlItem249.Text = "WG";
             this.layoutControlItem249.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem249.TextLocation = DevExpress.Utils.Locations.Top;
@@ -4924,12 +6394,9 @@
             this.layoutControlItem250.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem250.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem250.Control = this.txtWACD;
-            this.layoutControlItem250.Location = new System.Drawing.Point(70, 56);
-            this.layoutControlItem250.MaxSize = new System.Drawing.Size(70, 56);
-            this.layoutControlItem250.MinSize = new System.Drawing.Size(70, 56);
+            this.layoutControlItem250.Location = new System.Drawing.Point(97, 47);
             this.layoutControlItem250.Name = "layoutControlItem250";
-            this.layoutControlItem250.Size = new System.Drawing.Size(70, 56);
-            this.layoutControlItem250.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem250.Size = new System.Drawing.Size(97, 47);
             this.layoutControlItem250.Text = "WA";
             this.layoutControlItem250.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem250.TextLocation = DevExpress.Utils.Locations.Top;
@@ -4941,41 +6408,23 @@
             this.layoutControlItem251.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem251.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem251.Control = this.txtWICD;
-            this.layoutControlItem251.Location = new System.Drawing.Point(140, 56);
-            this.layoutControlItem251.MaxSize = new System.Drawing.Size(70, 56);
-            this.layoutControlItem251.MinSize = new System.Drawing.Size(70, 56);
+            this.layoutControlItem251.Location = new System.Drawing.Point(194, 47);
             this.layoutControlItem251.Name = "layoutControlItem251";
-            this.layoutControlItem251.Size = new System.Drawing.Size(70, 56);
-            this.layoutControlItem251.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem251.Size = new System.Drawing.Size(97, 47);
             this.layoutControlItem251.Text = "WI";
             this.layoutControlItem251.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem251.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem251.TextSize = new System.Drawing.Size(15, 16);
             this.layoutControlItem251.TextToControlDistance = 5;
             // 
-            // layoutControlItem19
-            // 
-            this.layoutControlItem19.Control = this.dtpValidityDate;
-            this.layoutControlItem19.Location = new System.Drawing.Point(210, 56);
-            this.layoutControlItem19.Name = "layoutControlItem19";
-            this.layoutControlItem19.Size = new System.Drawing.Size(222, 56);
-            this.layoutControlItem19.Text = "Gültigkeit ";
-            this.layoutControlItem19.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem19.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem19.TextSize = new System.Drawing.Size(57, 16);
-            this.layoutControlItem19.TextToControlDistance = 5;
-            // 
             // layoutControlItem20
             // 
             this.layoutControlItem20.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem20.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem20.Control = this.txtFabrikate;
-            this.layoutControlItem20.Location = new System.Drawing.Point(0, 112);
-            this.layoutControlItem20.MaxSize = new System.Drawing.Size(105, 54);
-            this.layoutControlItem20.MinSize = new System.Drawing.Size(105, 54);
+            this.layoutControlItem20.Location = new System.Drawing.Point(0, 94);
             this.layoutControlItem20.Name = "layoutControlItem20";
-            this.layoutControlItem20.Size = new System.Drawing.Size(105, 56);
-            this.layoutControlItem20.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem20.Size = new System.Drawing.Size(113, 47);
             this.layoutControlItem20.Text = "Fabrikat ";
             this.layoutControlItem20.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem20.TextLocation = DevExpress.Utils.Locations.Top;
@@ -4987,143 +6436,51 @@
             this.layoutControlItem253.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem253.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem253.Control = this.txtTypeCD;
-            this.layoutControlItem253.Location = new System.Drawing.Point(105, 112);
-            this.layoutControlItem253.MaxSize = new System.Drawing.Size(77, 56);
-            this.layoutControlItem253.MinSize = new System.Drawing.Size(77, 56);
+            this.layoutControlItem253.Location = new System.Drawing.Point(113, 94);
             this.layoutControlItem253.Name = "layoutControlItem253";
-            this.layoutControlItem253.Size = new System.Drawing.Size(77, 56);
-            this.layoutControlItem253.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem253.Size = new System.Drawing.Size(97, 47);
             this.layoutControlItem253.Text = "Typ ";
             this.layoutControlItem253.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem253.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem253.TextSize = new System.Drawing.Size(22, 16);
             this.layoutControlItem253.TextToControlDistance = 5;
             // 
-            // layoutControlItem29
-            // 
-            this.layoutControlItem29.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.layoutControlItem29.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem29.Control = this.txtDim1;
-            this.layoutControlItem29.Location = new System.Drawing.Point(182, 112);
-            this.layoutControlItem29.MaxSize = new System.Drawing.Size(78, 56);
-            this.layoutControlItem29.MinSize = new System.Drawing.Size(78, 56);
-            this.layoutControlItem29.Name = "layoutControlItem29";
-            this.layoutControlItem29.Size = new System.Drawing.Size(78, 56);
-            this.layoutControlItem29.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem29.Text = "A";
-            this.layoutControlItem29.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem29.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem29.TextSize = new System.Drawing.Size(9, 16);
-            this.layoutControlItem29.TextToControlDistance = 5;
-            // 
-            // layoutControlItem30
-            // 
-            this.layoutControlItem30.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.layoutControlItem30.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem30.Control = this.txtDim2;
-            this.layoutControlItem30.Location = new System.Drawing.Point(260, 112);
-            this.layoutControlItem30.MaxSize = new System.Drawing.Size(76, 56);
-            this.layoutControlItem30.MinSize = new System.Drawing.Size(76, 56);
-            this.layoutControlItem30.Name = "layoutControlItem30";
-            this.layoutControlItem30.Size = new System.Drawing.Size(76, 56);
-            this.layoutControlItem30.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem30.Text = "B";
-            this.layoutControlItem30.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem30.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem30.TextSize = new System.Drawing.Size(8, 16);
-            this.layoutControlItem30.TextToControlDistance = 5;
-            // 
-            // layoutControlItem31
-            // 
-            this.layoutControlItem31.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.layoutControlItem31.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem31.Control = this.txtDim3;
-            this.layoutControlItem31.Location = new System.Drawing.Point(336, 112);
-            this.layoutControlItem31.MaxSize = new System.Drawing.Size(74, 56);
-            this.layoutControlItem31.MinSize = new System.Drawing.Size(74, 56);
-            this.layoutControlItem31.Name = "layoutControlItem31";
-            this.layoutControlItem31.Size = new System.Drawing.Size(74, 56);
-            this.layoutControlItem31.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem31.Text = "L";
-            this.layoutControlItem31.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem31.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem31.TextSize = new System.Drawing.Size(7, 16);
-            this.layoutControlItem31.TextToControlDistance = 5;
-            // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem3.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem3.Control = this.txtDim;
-            this.layoutControlItem3.Location = new System.Drawing.Point(410, 112);
-            this.layoutControlItem3.MaxSize = new System.Drawing.Size(74, 56);
-            this.layoutControlItem3.MinSize = new System.Drawing.Size(74, 56);
+            this.layoutControlItem3.Location = new System.Drawing.Point(210, 94);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(74, 56);
-            this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem3.Size = new System.Drawing.Size(157, 47);
             this.layoutControlItem3.Text = "Dim";
             this.layoutControlItem3.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(23, 16);
             this.layoutControlItem3.TextToControlDistance = 5;
             // 
-            // layoutControlItem12
-            // 
-            this.layoutControlItem12.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.layoutControlItem12.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem12.Control = this.txtLiefrantMA;
-            this.layoutControlItem12.Location = new System.Drawing.Point(484, 112);
-            this.layoutControlItem12.Name = "layoutControlItem12";
-            this.layoutControlItem12.Size = new System.Drawing.Size(245, 56);
-            this.layoutControlItem12.Text = "Lieferant MA";
-            this.layoutControlItem12.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem12.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem12.TextSize = new System.Drawing.Size(74, 16);
-            this.layoutControlItem12.TextToControlDistance = 5;
-            // 
             // layoutControlItem255
             // 
             this.layoutControlItem255.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem255.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem255.Control = this.txtMengeCD;
-            this.layoutControlItem255.Location = new System.Drawing.Point(0, 218);
-            this.layoutControlItem255.MaxSize = new System.Drawing.Size(79, 56);
-            this.layoutControlItem255.MinSize = new System.Drawing.Size(79, 56);
+            this.layoutControlItem255.Location = new System.Drawing.Point(0, 141);
             this.layoutControlItem255.Name = "layoutControlItem255";
-            this.layoutControlItem255.Size = new System.Drawing.Size(79, 56);
-            this.layoutControlItem255.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem255.Size = new System.Drawing.Size(104, 47);
             this.layoutControlItem255.Text = "Menge";
             this.layoutControlItem255.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem255.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem255.TextSize = new System.Drawing.Size(38, 16);
             this.layoutControlItem255.TextToControlDistance = 5;
             // 
-            // lccmbLVStatus
-            // 
-            this.lccmbLVStatus.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.lccmbLVStatus.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.lccmbLVStatus.Control = this.cmbLVStatus;
-            this.lccmbLVStatus.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lccmbLVStatus.Location = new System.Drawing.Point(421, 178);
-            this.lccmbLVStatus.Name = "lccmbLVStatus";
-            this.lccmbLVStatus.Size = new System.Drawing.Size(290, 26);
-            this.lccmbLVStatus.Text = "LV-Status ";
-            this.lccmbLVStatus.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.lccmbLVStatus.TextLocation = DevExpress.Utils.Locations.Left;
-            this.lccmbLVStatus.TextSize = new System.Drawing.Size(61, 16);
-            this.lccmbLVStatus.TextToControlDistance = 5;
-            // 
             // layoutControlItem256
             // 
             this.layoutControlItem256.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem256.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem256.Control = this.cmbCDME;
-            this.layoutControlItem256.Location = new System.Drawing.Point(79, 218);
-            this.layoutControlItem256.MaxSize = new System.Drawing.Size(75, 56);
-            this.layoutControlItem256.MinSize = new System.Drawing.Size(75, 56);
+            this.layoutControlItem256.Location = new System.Drawing.Point(104, 141);
             this.layoutControlItem256.Name = "layoutControlItem256";
-            this.layoutControlItem256.Size = new System.Drawing.Size(75, 56);
-            this.layoutControlItem256.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem256.Size = new System.Drawing.Size(97, 47);
             this.layoutControlItem256.Text = "ME";
             this.layoutControlItem256.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem256.TextLocation = DevExpress.Utils.Locations.Top;
@@ -5135,12 +6492,9 @@
             this.layoutControlItem35.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem35.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem35.Control = this.txtMa;
-            this.layoutControlItem35.Location = new System.Drawing.Point(154, 218);
-            this.layoutControlItem35.MaxSize = new System.Drawing.Size(75, 56);
-            this.layoutControlItem35.MinSize = new System.Drawing.Size(75, 56);
+            this.layoutControlItem35.Location = new System.Drawing.Point(201, 141);
             this.layoutControlItem35.Name = "layoutControlItem35";
-            this.layoutControlItem35.Size = new System.Drawing.Size(75, 56);
-            this.layoutControlItem35.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem35.Size = new System.Drawing.Size(97, 47);
             this.layoutControlItem35.Text = "MA";
             this.layoutControlItem35.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem35.TextLocation = DevExpress.Utils.Locations.Top;
@@ -5152,12 +6506,9 @@
             this.layoutControlItem36.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem36.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem36.Control = this.txtMo;
-            this.layoutControlItem36.Location = new System.Drawing.Point(229, 218);
-            this.layoutControlItem36.MaxSize = new System.Drawing.Size(76, 56);
-            this.layoutControlItem36.MinSize = new System.Drawing.Size(76, 56);
+            this.layoutControlItem36.Location = new System.Drawing.Point(298, 141);
             this.layoutControlItem36.Name = "layoutControlItem36";
-            this.layoutControlItem36.Size = new System.Drawing.Size(76, 56);
-            this.layoutControlItem36.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem36.Size = new System.Drawing.Size(97, 47);
             this.layoutControlItem36.Text = "MO";
             this.layoutControlItem36.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem36.TextLocation = DevExpress.Utils.Locations.Top;
@@ -5169,12 +6520,9 @@
             this.layoutControlItem32.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem32.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem32.Control = this.txtMin;
-            this.layoutControlItem32.Location = new System.Drawing.Point(305, 218);
-            this.layoutControlItem32.MaxSize = new System.Drawing.Size(72, 56);
-            this.layoutControlItem32.MinSize = new System.Drawing.Size(72, 56);
+            this.layoutControlItem32.Location = new System.Drawing.Point(395, 141);
             this.layoutControlItem32.Name = "layoutControlItem32";
-            this.layoutControlItem32.Size = new System.Drawing.Size(72, 56);
-            this.layoutControlItem32.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem32.Size = new System.Drawing.Size(213, 47);
             this.layoutControlItem32.Text = "Min";
             this.layoutControlItem32.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem32.TextLocation = DevExpress.Utils.Locations.Top;
@@ -5186,12 +6534,9 @@
             this.layoutControlItem33.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem33.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem33.Control = this.txtHours;
-            this.layoutControlItem33.Location = new System.Drawing.Point(377, 218);
-            this.layoutControlItem33.MaxSize = new System.Drawing.Size(73, 56);
-            this.layoutControlItem33.MinSize = new System.Drawing.Size(73, 56);
+            this.layoutControlItem33.Location = new System.Drawing.Point(608, 141);
             this.layoutControlItem33.Name = "layoutControlItem33";
-            this.layoutControlItem33.Size = new System.Drawing.Size(73, 56);
-            this.layoutControlItem33.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem33.Size = new System.Drawing.Size(97, 47);
             this.layoutControlItem33.Text = "Std";
             this.layoutControlItem33.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem33.TextLocation = DevExpress.Utils.Locations.Top;
@@ -5203,12 +6548,9 @@
             this.layoutControlItem34.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem34.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem34.Control = this.txtFaktor;
-            this.layoutControlItem34.Location = new System.Drawing.Point(450, 218);
-            this.layoutControlItem34.MaxSize = new System.Drawing.Size(75, 56);
-            this.layoutControlItem34.MinSize = new System.Drawing.Size(75, 56);
+            this.layoutControlItem34.Location = new System.Drawing.Point(705, 141);
             this.layoutControlItem34.Name = "layoutControlItem34";
-            this.layoutControlItem34.Size = new System.Drawing.Size(75, 56);
-            this.layoutControlItem34.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem34.Size = new System.Drawing.Size(97, 47);
             this.layoutControlItem34.Text = "Faktor";
             this.layoutControlItem34.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem34.TextLocation = DevExpress.Utils.Locations.Top;
@@ -5220,12 +6562,9 @@
             this.layoutControlItem37.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem37.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem37.Control = this.txtStdSatz;
-            this.layoutControlItem37.Location = new System.Drawing.Point(525, 218);
-            this.layoutControlItem37.MaxSize = new System.Drawing.Size(74, 56);
-            this.layoutControlItem37.MinSize = new System.Drawing.Size(74, 56);
+            this.layoutControlItem37.Location = new System.Drawing.Point(802, 141);
             this.layoutControlItem37.Name = "layoutControlItem37";
-            this.layoutControlItem37.Size = new System.Drawing.Size(74, 56);
-            this.layoutControlItem37.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem37.Size = new System.Drawing.Size(97, 47);
             this.layoutControlItem37.Text = "Std.Satz";
             this.layoutControlItem37.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem37.TextLocation = DevExpress.Utils.Locations.Top;
@@ -5237,11 +6576,11 @@
             this.layoutControlItem39.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem39.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem39.Control = this.txtLPMe;
-            this.layoutControlItem39.Location = new System.Drawing.Point(104, 274);
-            this.layoutControlItem39.MaxSize = new System.Drawing.Size(136, 56);
-            this.layoutControlItem39.MinSize = new System.Drawing.Size(136, 56);
+            this.layoutControlItem39.Location = new System.Drawing.Point(73, 188);
+            this.layoutControlItem39.MaxSize = new System.Drawing.Size(137, 47);
+            this.layoutControlItem39.MinSize = new System.Drawing.Size(137, 47);
             this.layoutControlItem39.Name = "layoutControlItem39";
-            this.layoutControlItem39.Size = new System.Drawing.Size(136, 56);
+            this.layoutControlItem39.Size = new System.Drawing.Size(137, 47);
             this.layoutControlItem39.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem39.Text = "ListenPreis";
             this.layoutControlItem39.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
@@ -5254,11 +6593,11 @@
             this.layoutControlItem63.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem63.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem63.Control = this.txtEinkaufspreisME;
-            this.layoutControlItem63.Location = new System.Drawing.Point(345, 274);
-            this.layoutControlItem63.MaxSize = new System.Drawing.Size(125, 56);
-            this.layoutControlItem63.MinSize = new System.Drawing.Size(125, 56);
+            this.layoutControlItem63.Location = new System.Drawing.Point(344, 188);
+            this.layoutControlItem63.MaxSize = new System.Drawing.Size(173, 47);
+            this.layoutControlItem63.MinSize = new System.Drawing.Size(173, 47);
             this.layoutControlItem63.Name = "layoutControlItem63";
-            this.layoutControlItem63.Size = new System.Drawing.Size(125, 56);
+            this.layoutControlItem63.Size = new System.Drawing.Size(173, 47);
             this.layoutControlItem63.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem63.Text = "Einkaufspreis";
             this.layoutControlItem63.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
@@ -5269,97 +6608,106 @@
             // layoutControlItem64
             // 
             this.layoutControlItem64.Control = this.chkEinkaufspreisME;
-            this.layoutControlItem64.Location = new System.Drawing.Point(470, 305);
-            this.layoutControlItem64.MaxSize = new System.Drawing.Size(23, 25);
-            this.layoutControlItem64.MinSize = new System.Drawing.Size(23, 25);
+            this.layoutControlItem64.Location = new System.Drawing.Point(517, 188);
+            this.layoutControlItem64.MaxSize = new System.Drawing.Size(22, 43);
+            this.layoutControlItem64.MinSize = new System.Drawing.Size(22, 43);
             this.layoutControlItem64.Name = "layoutControlItem64";
-            this.layoutControlItem64.Size = new System.Drawing.Size(23, 25);
+            this.layoutControlItem64.Size = new System.Drawing.Size(22, 43);
             this.layoutControlItem64.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem64.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem64.TextVisible = false;
+            this.layoutControlItem64.Text = "  ";
+            this.layoutControlItem64.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem64.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem64.TextSize = new System.Drawing.Size(6, 16);
+            this.layoutControlItem64.TextToControlDistance = 5;
             // 
             // layoutControlItem67
             // 
             this.layoutControlItem67.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem67.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem67.Control = this.txtSelbstkostenMultiME;
-            this.layoutControlItem67.Location = new System.Drawing.Point(493, 274);
-            this.layoutControlItem67.MaxSize = new System.Drawing.Size(114, 56);
-            this.layoutControlItem67.MinSize = new System.Drawing.Size(114, 56);
+            this.layoutControlItem67.Location = new System.Drawing.Point(539, 188);
+            this.layoutControlItem67.MaxSize = new System.Drawing.Size(121, 47);
+            this.layoutControlItem67.MinSize = new System.Drawing.Size(121, 47);
             this.layoutControlItem67.Name = "layoutControlItem67";
-            this.layoutControlItem67.Size = new System.Drawing.Size(114, 56);
+            this.layoutControlItem67.Size = new System.Drawing.Size(121, 47);
             this.layoutControlItem67.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem67.Text = "Selbstkosten";
+            this.layoutControlItem67.Text = "Gemeinkosten";
             this.layoutControlItem67.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem67.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem67.TextSize = new System.Drawing.Size(76, 16);
+            this.layoutControlItem67.TextSize = new System.Drawing.Size(82, 16);
             this.layoutControlItem67.TextToControlDistance = 5;
             // 
             // layoutControlItem68
             // 
             this.layoutControlItem68.Control = this.txtSelbstkostenValueME;
-            this.layoutControlItem68.Location = new System.Drawing.Point(607, 296);
-            this.layoutControlItem68.MinSize = new System.Drawing.Size(60, 34);
+            this.layoutControlItem68.Location = new System.Drawing.Point(660, 188);
+            this.layoutControlItem68.MaxSize = new System.Drawing.Size(172, 45);
+            this.layoutControlItem68.MinSize = new System.Drawing.Size(172, 45);
             this.layoutControlItem68.Name = "layoutControlItem68";
-            this.layoutControlItem68.Size = new System.Drawing.Size(79, 34);
+            this.layoutControlItem68.Size = new System.Drawing.Size(172, 45);
             this.layoutControlItem68.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem68.Text = "  ";
             this.layoutControlItem68.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem68.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem68.TextVisible = false;
+            this.layoutControlItem68.TextSize = new System.Drawing.Size(69, 16);
             // 
             // layoutControlItem69
             // 
             this.layoutControlItem69.Control = this.chkSelbstkostenME;
-            this.layoutControlItem69.Location = new System.Drawing.Point(686, 302);
-            this.layoutControlItem69.MaxSize = new System.Drawing.Size(27, 28);
-            this.layoutControlItem69.MinSize = new System.Drawing.Size(27, 28);
+            this.layoutControlItem69.Location = new System.Drawing.Point(832, 188);
+            this.layoutControlItem69.MaxSize = new System.Drawing.Size(26, 42);
+            this.layoutControlItem69.MinSize = new System.Drawing.Size(26, 42);
             this.layoutControlItem69.Name = "layoutControlItem69";
-            this.layoutControlItem69.Size = new System.Drawing.Size(27, 28);
+            this.layoutControlItem69.Size = new System.Drawing.Size(26, 42);
             this.layoutControlItem69.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem69.Spacing = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
+            this.layoutControlItem69.Text = " ";
             this.layoutControlItem69.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem69.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem69.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem69.TextSize = new System.Drawing.Size(3, 16);
             this.layoutControlItem69.TextToControlDistance = 0;
-            this.layoutControlItem69.TextVisible = false;
             // 
             // layoutControlItem73
             // 
             this.layoutControlItem73.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem73.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem73.Control = this.txtVerkaufspreisMultiME;
-            this.layoutControlItem73.Location = new System.Drawing.Point(713, 274);
-            this.layoutControlItem73.MinSize = new System.Drawing.Size(89, 56);
+            this.layoutControlItem73.Location = new System.Drawing.Point(858, 188);
+            this.layoutControlItem73.MaxSize = new System.Drawing.Size(127, 47);
+            this.layoutControlItem73.MinSize = new System.Drawing.Size(127, 47);
             this.layoutControlItem73.Name = "layoutControlItem73";
-            this.layoutControlItem73.Size = new System.Drawing.Size(120, 56);
+            this.layoutControlItem73.Size = new System.Drawing.Size(127, 47);
             this.layoutControlItem73.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem73.Text = "Verkaufspreis";
+            this.layoutControlItem73.Text = "Verkaufsmargen";
             this.layoutControlItem73.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem73.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem73.TextSize = new System.Drawing.Size(83, 16);
+            this.layoutControlItem73.TextSize = new System.Drawing.Size(98, 16);
             this.layoutControlItem73.TextToControlDistance = 5;
             // 
             // layoutControlItem74
             // 
             this.layoutControlItem74.Control = this.txtVerkaufspreisValueME;
-            this.layoutControlItem74.Location = new System.Drawing.Point(833, 296);
-            this.layoutControlItem74.MinSize = new System.Drawing.Size(60, 34);
+            this.layoutControlItem74.Location = new System.Drawing.Point(985, 188);
+            this.layoutControlItem74.MaxSize = new System.Drawing.Size(175, 47);
+            this.layoutControlItem74.MinSize = new System.Drawing.Size(175, 47);
             this.layoutControlItem74.Name = "layoutControlItem74";
-            this.layoutControlItem74.Size = new System.Drawing.Size(118, 34);
+            this.layoutControlItem74.Size = new System.Drawing.Size(175, 47);
             this.layoutControlItem74.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem74.Text = "  ";
+            this.layoutControlItem74.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem74.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem74.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem74.TextVisible = false;
+            this.layoutControlItem74.TextSize = new System.Drawing.Size(6, 16);
+            this.layoutControlItem74.TextToControlDistance = 5;
             // 
             // layoutControlItem79
             // 
             this.layoutControlItem79.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem79.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem79.Control = this.txtGrandTotalME;
-            this.layoutControlItem79.Location = new System.Drawing.Point(980, 274);
-            this.layoutControlItem79.MaxSize = new System.Drawing.Size(104, 56);
-            this.layoutControlItem79.MinSize = new System.Drawing.Size(104, 56);
+            this.layoutControlItem79.Location = new System.Drawing.Point(1182, 188);
+            this.layoutControlItem79.MaxSize = new System.Drawing.Size(166, 47);
+            this.layoutControlItem79.MinSize = new System.Drawing.Size(166, 47);
             this.layoutControlItem79.Name = "layoutControlItem79";
-            this.layoutControlItem79.Size = new System.Drawing.Size(104, 56);
+            this.layoutControlItem79.Size = new System.Drawing.Size(166, 47);
             this.layoutControlItem79.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem79.Text = "EP";
             this.layoutControlItem79.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
@@ -5372,11 +6720,11 @@
             this.layoutControlItem13.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem13.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem13.Control = this.txtEP;
-            this.layoutControlItem13.Location = new System.Drawing.Point(1084, 274);
-            this.layoutControlItem13.MaxSize = new System.Drawing.Size(109, 56);
-            this.layoutControlItem13.MinSize = new System.Drawing.Size(109, 56);
+            this.layoutControlItem13.Location = new System.Drawing.Point(1348, 188);
+            this.layoutControlItem13.MaxSize = new System.Drawing.Size(182, 47);
+            this.layoutControlItem13.MinSize = new System.Drawing.Size(182, 47);
             this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(109, 56);
+            this.layoutControlItem13.Size = new System.Drawing.Size(182, 47);
             this.layoutControlItem13.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem13.Text = "MA EP + MO EP";
             this.layoutControlItem13.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
@@ -5384,42 +6732,27 @@
             this.layoutControlItem13.TextSize = new System.Drawing.Size(87, 16);
             this.layoutControlItem13.TextToControlDistance = 5;
             // 
-            // emptySpaceItem3
-            // 
-            this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 274);
-            this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(104, 31);
-            this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem19
-            // 
-            this.emptySpaceItem19.AllowHotTrack = false;
-            this.emptySpaceItem19.Location = new System.Drawing.Point(607, 274);
-            this.emptySpaceItem19.Name = "emptySpaceItem19";
-            this.emptySpaceItem19.Size = new System.Drawing.Size(79, 22);
-            this.emptySpaceItem19.TextSize = new System.Drawing.Size(0, 0);
-            // 
             // layoutControlItem42
             // 
             this.layoutControlItem42.Control = this.labelControl1;
-            this.layoutControlItem42.Location = new System.Drawing.Point(0, 305);
-            this.layoutControlItem42.MaxSize = new System.Drawing.Size(104, 25);
-            this.layoutControlItem42.MinSize = new System.Drawing.Size(104, 25);
+            this.layoutControlItem42.Location = new System.Drawing.Point(0, 188);
+            this.layoutControlItem42.MaxSize = new System.Drawing.Size(73, 39);
+            this.layoutControlItem42.MinSize = new System.Drawing.Size(73, 39);
             this.layoutControlItem42.Name = "layoutControlItem42";
-            this.layoutControlItem42.Size = new System.Drawing.Size(104, 25);
+            this.layoutControlItem42.Size = new System.Drawing.Size(73, 39);
             this.layoutControlItem42.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem42.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem42.TextVisible = false;
+            this.layoutControlItem42.Text = "   ";
+            this.layoutControlItem42.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem42.TextSize = new System.Drawing.Size(69, 16);
             // 
             // layoutControlItem213
             // 
             this.layoutControlItem213.Control = this.labelControl2;
-            this.layoutControlItem213.Location = new System.Drawing.Point(0, 330);
-            this.layoutControlItem213.MaxSize = new System.Drawing.Size(104, 28);
-            this.layoutControlItem213.MinSize = new System.Drawing.Size(104, 28);
+            this.layoutControlItem213.Location = new System.Drawing.Point(0, 227);
+            this.layoutControlItem213.MaxSize = new System.Drawing.Size(73, 20);
+            this.layoutControlItem213.MinSize = new System.Drawing.Size(73, 20);
             this.layoutControlItem213.Name = "layoutControlItem213";
-            this.layoutControlItem213.Size = new System.Drawing.Size(104, 35);
+            this.layoutControlItem213.Size = new System.Drawing.Size(73, 34);
             this.layoutControlItem213.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem213.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem213.TextVisible = false;
@@ -5429,12 +6762,9 @@
             this.layoutControlItem41.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem41.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem41.Control = this.txtLPMO;
-            this.layoutControlItem41.Location = new System.Drawing.Point(104, 330);
-            this.layoutControlItem41.MaxSize = new System.Drawing.Size(136, 35);
-            this.layoutControlItem41.MinSize = new System.Drawing.Size(136, 35);
+            this.layoutControlItem41.Location = new System.Drawing.Point(73, 235);
             this.layoutControlItem41.Name = "layoutControlItem41";
-            this.layoutControlItem41.Size = new System.Drawing.Size(136, 35);
-            this.layoutControlItem41.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem41.Size = new System.Drawing.Size(137, 26);
             this.layoutControlItem41.Text = "Montage";
             this.layoutControlItem41.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem41.TextSize = new System.Drawing.Size(0, 0);
@@ -5443,58 +6773,45 @@
             // layoutControlItem65
             // 
             this.layoutControlItem65.Control = this.txtEinkaufspreisMO;
-            this.layoutControlItem65.Location = new System.Drawing.Point(345, 330);
-            this.layoutControlItem65.MaxSize = new System.Drawing.Size(125, 34);
-            this.layoutControlItem65.MinSize = new System.Drawing.Size(125, 34);
+            this.layoutControlItem65.Location = new System.Drawing.Point(344, 235);
             this.layoutControlItem65.Name = "layoutControlItem65";
-            this.layoutControlItem65.Size = new System.Drawing.Size(125, 35);
-            this.layoutControlItem65.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem65.Size = new System.Drawing.Size(173, 26);
             this.layoutControlItem65.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem65.TextVisible = false;
             // 
             // layoutControlItem66
             // 
             this.layoutControlItem66.Control = this.chkEinkaufspreisMO;
-            this.layoutControlItem66.Location = new System.Drawing.Point(470, 330);
-            this.layoutControlItem66.MaxSize = new System.Drawing.Size(23, 28);
-            this.layoutControlItem66.MinSize = new System.Drawing.Size(23, 28);
+            this.layoutControlItem66.Location = new System.Drawing.Point(517, 231);
             this.layoutControlItem66.Name = "layoutControlItem66";
-            this.layoutControlItem66.Size = new System.Drawing.Size(23, 35);
-            this.layoutControlItem66.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem66.Size = new System.Drawing.Size(22, 30);
             this.layoutControlItem66.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem66.TextVisible = false;
             // 
             // layoutControlItem70
             // 
             this.layoutControlItem70.Control = this.txtSelbstkostenMultiMO;
-            this.layoutControlItem70.Location = new System.Drawing.Point(493, 330);
-            this.layoutControlItem70.MaxSize = new System.Drawing.Size(114, 34);
-            this.layoutControlItem70.MinSize = new System.Drawing.Size(114, 34);
+            this.layoutControlItem70.Location = new System.Drawing.Point(539, 235);
             this.layoutControlItem70.Name = "layoutControlItem70";
-            this.layoutControlItem70.Size = new System.Drawing.Size(114, 35);
-            this.layoutControlItem70.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem70.Size = new System.Drawing.Size(121, 26);
             this.layoutControlItem70.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem70.TextVisible = false;
             // 
             // layoutControlItem71
             // 
             this.layoutControlItem71.Control = this.txtSelbstkostenValueMO;
-            this.layoutControlItem71.Location = new System.Drawing.Point(607, 330);
-            this.layoutControlItem71.MinSize = new System.Drawing.Size(60, 34);
+            this.layoutControlItem71.Location = new System.Drawing.Point(660, 233);
             this.layoutControlItem71.Name = "layoutControlItem71";
-            this.layoutControlItem71.Size = new System.Drawing.Size(90, 35);
-            this.layoutControlItem71.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem71.Size = new System.Drawing.Size(172, 28);
             this.layoutControlItem71.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem71.TextVisible = false;
             // 
             // layoutControlItem72
             // 
             this.layoutControlItem72.Control = this.chkSelbstkostenMO;
-            this.layoutControlItem72.Location = new System.Drawing.Point(697, 330);
-            this.layoutControlItem72.MinSize = new System.Drawing.Size(29, 29);
+            this.layoutControlItem72.Location = new System.Drawing.Point(832, 230);
             this.layoutControlItem72.Name = "layoutControlItem72";
-            this.layoutControlItem72.Size = new System.Drawing.Size(29, 35);
-            this.layoutControlItem72.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem72.Size = new System.Drawing.Size(26, 31);
             this.layoutControlItem72.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem72.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem72.TextToControlDistance = 0;
@@ -5503,11 +6820,9 @@
             // layoutControlItem76
             // 
             this.layoutControlItem76.Control = this.txtVerkaufspreisMultiMO;
-            this.layoutControlItem76.Location = new System.Drawing.Point(726, 330);
-            this.layoutControlItem76.MinSize = new System.Drawing.Size(60, 34);
+            this.layoutControlItem76.Location = new System.Drawing.Point(858, 235);
             this.layoutControlItem76.Name = "layoutControlItem76";
-            this.layoutControlItem76.Size = new System.Drawing.Size(107, 35);
-            this.layoutControlItem76.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem76.Size = new System.Drawing.Size(127, 26);
             this.layoutControlItem76.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem76.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem76.TextToControlDistance = 0;
@@ -5516,22 +6831,18 @@
             // layoutControlItem77
             // 
             this.layoutControlItem77.Control = this.txtVerkaufspreisValueMO;
-            this.layoutControlItem77.Location = new System.Drawing.Point(833, 330);
-            this.layoutControlItem77.MinSize = new System.Drawing.Size(60, 34);
+            this.layoutControlItem77.Location = new System.Drawing.Point(985, 235);
             this.layoutControlItem77.Name = "layoutControlItem77";
-            this.layoutControlItem77.Size = new System.Drawing.Size(118, 35);
-            this.layoutControlItem77.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem77.Size = new System.Drawing.Size(175, 26);
             this.layoutControlItem77.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem77.TextVisible = false;
             // 
             // layoutControlItem80
             // 
             this.layoutControlItem80.Control = this.txtGrandTotalMO;
-            this.layoutControlItem80.Location = new System.Drawing.Point(980, 330);
-            this.layoutControlItem80.MinSize = new System.Drawing.Size(60, 34);
+            this.layoutControlItem80.Location = new System.Drawing.Point(1182, 235);
             this.layoutControlItem80.Name = "layoutControlItem80";
-            this.layoutControlItem80.Size = new System.Drawing.Size(104, 35);
-            this.layoutControlItem80.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem80.Size = new System.Drawing.Size(166, 26);
             this.layoutControlItem80.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem80.TextVisible = false;
             // 
@@ -5540,12 +6851,9 @@
             this.layoutControlItem81.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem81.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem81.Control = this.txtFinalGB;
-            this.layoutControlItem81.Location = new System.Drawing.Point(1084, 330);
-            this.layoutControlItem81.MaxSize = new System.Drawing.Size(109, 35);
-            this.layoutControlItem81.MinSize = new System.Drawing.Size(109, 35);
+            this.layoutControlItem81.Location = new System.Drawing.Point(1348, 235);
             this.layoutControlItem81.Name = "layoutControlItem81";
-            this.layoutControlItem81.Size = new System.Drawing.Size(109, 35);
-            this.layoutControlItem81.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem81.Size = new System.Drawing.Size(182, 26);
             this.layoutControlItem81.Text = "GB";
             this.layoutControlItem81.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem81.TextLocation = DevExpress.Utils.Locations.Top;
@@ -5553,106 +6861,72 @@
             this.layoutControlItem81.TextToControlDistance = 0;
             this.layoutControlItem81.TextVisible = false;
             // 
-            // layoutControlItem40
-            // 
-            this.layoutControlItem40.Control = this.txtPreisText;
-            this.layoutControlItem40.Location = new System.Drawing.Point(833, 365);
-            this.layoutControlItem40.MaxSize = new System.Drawing.Size(360, 50);
-            this.layoutControlItem40.MinSize = new System.Drawing.Size(360, 50);
-            this.layoutControlItem40.Name = "layoutControlItem40";
-            this.layoutControlItem40.OptionsToolTip.IconToolTip = "200 Figuren";
-            this.layoutControlItem40.Size = new System.Drawing.Size(360, 50);
-            this.layoutControlItem40.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem40.Text = "Preis Text";
-            this.layoutControlItem40.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItem40.TextSize = new System.Drawing.Size(69, 16);
-            // 
-            // emptySpaceItem34
-            // 
-            this.emptySpaceItem34.AllowHotTrack = false;
-            this.emptySpaceItem34.Location = new System.Drawing.Point(104, 365);
-            this.emptySpaceItem34.Name = "emptySpaceItem34";
-            this.emptySpaceItem34.Size = new System.Drawing.Size(729, 50);
-            this.emptySpaceItem34.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem29
-            // 
-            this.emptySpaceItem29.AllowHotTrack = false;
-            this.emptySpaceItem29.Location = new System.Drawing.Point(470, 274);
-            this.emptySpaceItem29.Name = "emptySpaceItem29";
-            this.emptySpaceItem29.Size = new System.Drawing.Size(23, 31);
-            this.emptySpaceItem29.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem118
-            // 
-            this.emptySpaceItem118.AllowHotTrack = false;
-            this.emptySpaceItem118.Location = new System.Drawing.Point(686, 274);
-            this.emptySpaceItem118.Name = "emptySpaceItem118";
-            this.emptySpaceItem118.Size = new System.Drawing.Size(27, 28);
-            this.emptySpaceItem118.TextSize = new System.Drawing.Size(0, 0);
-            // 
             // layoutControlItem78
             // 
             this.layoutControlItem78.Control = this.chkVerkaufspreisMO;
-            this.layoutControlItem78.Location = new System.Drawing.Point(951, 330);
-            this.layoutControlItem78.MaxSize = new System.Drawing.Size(29, 34);
-            this.layoutControlItem78.MinSize = new System.Drawing.Size(29, 34);
+            this.layoutControlItem78.Location = new System.Drawing.Point(1160, 227);
             this.layoutControlItem78.Name = "layoutControlItem78";
-            this.layoutControlItem78.Size = new System.Drawing.Size(29, 35);
-            this.layoutControlItem78.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem78.Size = new System.Drawing.Size(22, 34);
+            this.layoutControlItem78.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem78.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem78.TextToControlDistance = 0;
             this.layoutControlItem78.TextVisible = false;
             // 
             // layoutControlItem75
             // 
             this.layoutControlItem75.Control = this.chkVerkaufspreisME;
-            this.layoutControlItem75.Location = new System.Drawing.Point(951, 306);
-            this.layoutControlItem75.MaxSize = new System.Drawing.Size(29, 24);
-            this.layoutControlItem75.MinSize = new System.Drawing.Size(29, 24);
+            this.layoutControlItem75.Location = new System.Drawing.Point(1160, 188);
+            this.layoutControlItem75.MaxSize = new System.Drawing.Size(22, 39);
+            this.layoutControlItem75.MinSize = new System.Drawing.Size(22, 39);
             this.layoutControlItem75.Name = "layoutControlItem75";
             this.layoutControlItem75.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem75.Size = new System.Drawing.Size(29, 24);
+            this.layoutControlItem75.Size = new System.Drawing.Size(22, 39);
             this.layoutControlItem75.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem75.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem75.TextVisible = false;
-            // 
-            // emptySpaceItem127
-            // 
-            this.emptySpaceItem127.AllowHotTrack = false;
-            this.emptySpaceItem127.Location = new System.Drawing.Point(951, 274);
-            this.emptySpaceItem127.Name = "emptySpaceItem127";
-            this.emptySpaceItem127.Size = new System.Drawing.Size(29, 32);
-            this.emptySpaceItem127.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem75.Text = "  ";
+            this.layoutControlItem75.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem75.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem75.TextSize = new System.Drawing.Size(6, 16);
+            this.layoutControlItem75.TextToControlDistance = 5;
             // 
             // layoutControlItem257
             // 
             this.layoutControlItem257.Control = this.labelControl4;
-            this.layoutControlItem257.Location = new System.Drawing.Point(0, 445);
-            this.layoutControlItem257.MaxSize = new System.Drawing.Size(104, 24);
-            this.layoutControlItem257.MinSize = new System.Drawing.Size(104, 24);
+            this.layoutControlItem257.Location = new System.Drawing.Point(0, 271);
+            this.layoutControlItem257.MaxSize = new System.Drawing.Size(72, 41);
+            this.layoutControlItem257.MinSize = new System.Drawing.Size(72, 41);
             this.layoutControlItem257.Name = "layoutControlItem257";
-            this.layoutControlItem257.Size = new System.Drawing.Size(104, 24);
+            this.layoutControlItem257.Size = new System.Drawing.Size(72, 41);
             this.layoutControlItem257.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem257.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem257.TextVisible = false;
+            this.layoutControlItem257.Text = "  ";
+            this.layoutControlItem257.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem257.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem257.TextSize = new System.Drawing.Size(6, 16);
+            this.layoutControlItem257.TextToControlDistance = 5;
             // 
             // layoutControlItem47
             // 
             this.layoutControlItem47.Control = this.txtValue1ME;
-            this.layoutControlItem47.Location = new System.Drawing.Point(177, 435);
+            this.layoutControlItem47.Location = new System.Drawing.Point(208, 271);
+            this.layoutControlItem47.MaxSize = new System.Drawing.Size(136, 45);
+            this.layoutControlItem47.MinSize = new System.Drawing.Size(136, 45);
             this.layoutControlItem47.Name = "layoutControlItem47";
-            this.layoutControlItem47.Size = new System.Drawing.Size(115, 26);
-            this.layoutControlItem47.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem47.TextVisible = false;
+            this.layoutControlItem47.Size = new System.Drawing.Size(136, 45);
+            this.layoutControlItem47.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem47.Text = "  ";
+            this.layoutControlItem47.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem47.TextSize = new System.Drawing.Size(69, 16);
             // 
             // layoutControlItem44
             // 
             this.layoutControlItem44.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem44.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem44.Control = this.txtMulti2ME;
-            this.layoutControlItem44.Location = new System.Drawing.Point(329, 415);
+            this.layoutControlItem44.Location = new System.Drawing.Point(344, 271);
+            this.layoutControlItem44.MaxSize = new System.Drawing.Size(138, 45);
+            this.layoutControlItem44.MinSize = new System.Drawing.Size(138, 45);
             this.layoutControlItem44.Name = "layoutControlItem44";
-            this.layoutControlItem44.Size = new System.Drawing.Size(73, 45);
+            this.layoutControlItem44.Size = new System.Drawing.Size(138, 45);
+            this.layoutControlItem44.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem44.Text = "Multi 2";
             this.layoutControlItem44.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem44.TextSize = new System.Drawing.Size(69, 16);
@@ -5660,20 +6934,29 @@
             // layoutControlItem48
             // 
             this.layoutControlItem48.Control = this.txtValue2ME;
-            this.layoutControlItem48.Location = new System.Drawing.Point(402, 435);
+            this.layoutControlItem48.Location = new System.Drawing.Point(482, 271);
+            this.layoutControlItem48.MaxSize = new System.Drawing.Size(146, 47);
+            this.layoutControlItem48.MinSize = new System.Drawing.Size(146, 47);
             this.layoutControlItem48.Name = "layoutControlItem48";
-            this.layoutControlItem48.Size = new System.Drawing.Size(105, 26);
-            this.layoutControlItem48.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem48.TextVisible = false;
+            this.layoutControlItem48.Size = new System.Drawing.Size(146, 47);
+            this.layoutControlItem48.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem48.Text = "  ";
+            this.layoutControlItem48.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem48.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem48.TextSize = new System.Drawing.Size(6, 16);
+            this.layoutControlItem48.TextToControlDistance = 5;
             // 
             // layoutControlItem45
             // 
             this.layoutControlItem45.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem45.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem45.Control = this.txtMulti3ME;
-            this.layoutControlItem45.Location = new System.Drawing.Point(549, 415);
+            this.layoutControlItem45.Location = new System.Drawing.Point(628, 271);
+            this.layoutControlItem45.MaxSize = new System.Drawing.Size(138, 45);
+            this.layoutControlItem45.MinSize = new System.Drawing.Size(138, 45);
             this.layoutControlItem45.Name = "layoutControlItem45";
-            this.layoutControlItem45.Size = new System.Drawing.Size(73, 45);
+            this.layoutControlItem45.Size = new System.Drawing.Size(138, 45);
+            this.layoutControlItem45.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem45.Text = "Multi 3";
             this.layoutControlItem45.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem45.TextSize = new System.Drawing.Size(69, 16);
@@ -5681,20 +6964,29 @@
             // layoutControlItem49
             // 
             this.layoutControlItem49.Control = this.txtValue3ME;
-            this.layoutControlItem49.Location = new System.Drawing.Point(622, 435);
+            this.layoutControlItem49.Location = new System.Drawing.Point(766, 271);
+            this.layoutControlItem49.MaxSize = new System.Drawing.Size(159, 47);
+            this.layoutControlItem49.MinSize = new System.Drawing.Size(159, 47);
             this.layoutControlItem49.Name = "layoutControlItem49";
-            this.layoutControlItem49.Size = new System.Drawing.Size(104, 26);
-            this.layoutControlItem49.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem49.TextVisible = false;
+            this.layoutControlItem49.Size = new System.Drawing.Size(159, 47);
+            this.layoutControlItem49.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem49.Text = "  ";
+            this.layoutControlItem49.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem49.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem49.TextSize = new System.Drawing.Size(6, 16);
+            this.layoutControlItem49.TextToControlDistance = 5;
             // 
             // layoutControlItem46
             // 
             this.layoutControlItem46.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem46.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem46.Control = this.txtMulti4ME;
-            this.layoutControlItem46.Location = new System.Drawing.Point(760, 415);
+            this.layoutControlItem46.Location = new System.Drawing.Point(925, 271);
+            this.layoutControlItem46.MaxSize = new System.Drawing.Size(138, 45);
+            this.layoutControlItem46.MinSize = new System.Drawing.Size(138, 45);
             this.layoutControlItem46.Name = "layoutControlItem46";
-            this.layoutControlItem46.Size = new System.Drawing.Size(73, 45);
+            this.layoutControlItem46.Size = new System.Drawing.Size(138, 45);
+            this.layoutControlItem46.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem46.Text = "Multi 4";
             this.layoutControlItem46.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem46.TextSize = new System.Drawing.Size(69, 16);
@@ -5702,20 +6994,29 @@
             // layoutControlItem50
             // 
             this.layoutControlItem50.Control = this.txtValue4ME;
-            this.layoutControlItem50.Location = new System.Drawing.Point(833, 435);
+            this.layoutControlItem50.Location = new System.Drawing.Point(1063, 271);
+            this.layoutControlItem50.MaxSize = new System.Drawing.Size(149, 47);
+            this.layoutControlItem50.MinSize = new System.Drawing.Size(149, 47);
             this.layoutControlItem50.Name = "layoutControlItem50";
-            this.layoutControlItem50.Size = new System.Drawing.Size(118, 26);
-            this.layoutControlItem50.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem50.TextVisible = false;
+            this.layoutControlItem50.Size = new System.Drawing.Size(149, 47);
+            this.layoutControlItem50.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem50.Text = "  ";
+            this.layoutControlItem50.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem50.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem50.TextSize = new System.Drawing.Size(6, 16);
+            this.layoutControlItem50.TextToControlDistance = 5;
             // 
             // layoutControlItem59
             // 
             this.layoutControlItem59.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem59.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem59.Control = this.txtGrundMultiME;
-            this.layoutControlItem59.Location = new System.Drawing.Point(980, 415);
+            this.layoutControlItem59.Location = new System.Drawing.Point(1212, 271);
+            this.layoutControlItem59.MaxSize = new System.Drawing.Size(136, 45);
+            this.layoutControlItem59.MinSize = new System.Drawing.Size(136, 45);
             this.layoutControlItem59.Name = "layoutControlItem59";
-            this.layoutControlItem59.Size = new System.Drawing.Size(109, 45);
+            this.layoutControlItem59.Size = new System.Drawing.Size(136, 47);
+            this.layoutControlItem59.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem59.Text = "Grund-Multi";
             this.layoutControlItem59.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem59.TextSize = new System.Drawing.Size(69, 16);
@@ -5723,11 +7024,11 @@
             // layoutControlItem258
             // 
             this.layoutControlItem258.Control = this.labelControl5;
-            this.layoutControlItem258.Location = new System.Drawing.Point(0, 469);
-            this.layoutControlItem258.MaxSize = new System.Drawing.Size(104, 34);
-            this.layoutControlItem258.MinSize = new System.Drawing.Size(104, 34);
+            this.layoutControlItem258.Location = new System.Drawing.Point(0, 312);
+            this.layoutControlItem258.MaxSize = new System.Drawing.Size(72, 20);
+            this.layoutControlItem258.MinSize = new System.Drawing.Size(72, 20);
             this.layoutControlItem258.Name = "layoutControlItem258";
-            this.layoutControlItem258.Size = new System.Drawing.Size(104, 36);
+            this.layoutControlItem258.Size = new System.Drawing.Size(72, 32);
             this.layoutControlItem258.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem258.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem258.TextVisible = false;
@@ -5735,239 +7036,114 @@
             // layoutControlItem55
             // 
             this.layoutControlItem55.Control = this.txtValue1MO;
-            this.layoutControlItem55.Location = new System.Drawing.Point(177, 461);
-            this.layoutControlItem55.MaxSize = new System.Drawing.Size(115, 34);
-            this.layoutControlItem55.MinSize = new System.Drawing.Size(115, 34);
+            this.layoutControlItem55.Location = new System.Drawing.Point(208, 316);
             this.layoutControlItem55.Name = "layoutControlItem55";
-            this.layoutControlItem55.Size = new System.Drawing.Size(115, 44);
-            this.layoutControlItem55.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem55.Size = new System.Drawing.Size(136, 28);
             this.layoutControlItem55.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem55.TextVisible = false;
             // 
             // layoutControlItem52
             // 
             this.layoutControlItem52.Control = this.txtMulti2MO;
-            this.layoutControlItem52.Location = new System.Drawing.Point(329, 460);
+            this.layoutControlItem52.Location = new System.Drawing.Point(344, 316);
             this.layoutControlItem52.Name = "layoutControlItem52";
-            this.layoutControlItem52.Size = new System.Drawing.Size(73, 45);
+            this.layoutControlItem52.Size = new System.Drawing.Size(138, 28);
             this.layoutControlItem52.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem52.TextVisible = false;
             // 
             // layoutControlItem53
             // 
             this.layoutControlItem53.Control = this.txtMulti3MO;
-            this.layoutControlItem53.Location = new System.Drawing.Point(549, 460);
+            this.layoutControlItem53.Location = new System.Drawing.Point(628, 316);
             this.layoutControlItem53.Name = "layoutControlItem53";
-            this.layoutControlItem53.Size = new System.Drawing.Size(73, 45);
+            this.layoutControlItem53.Size = new System.Drawing.Size(138, 28);
             this.layoutControlItem53.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem53.TextVisible = false;
             // 
             // layoutControlItem57
             // 
             this.layoutControlItem57.Control = this.txtValue3MO;
-            this.layoutControlItem57.Location = new System.Drawing.Point(622, 461);
-            this.layoutControlItem57.MaxSize = new System.Drawing.Size(104, 34);
-            this.layoutControlItem57.MinSize = new System.Drawing.Size(104, 34);
+            this.layoutControlItem57.Location = new System.Drawing.Point(766, 318);
             this.layoutControlItem57.Name = "layoutControlItem57";
-            this.layoutControlItem57.Size = new System.Drawing.Size(104, 44);
-            this.layoutControlItem57.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem57.Size = new System.Drawing.Size(159, 26);
             this.layoutControlItem57.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem57.TextVisible = false;
             // 
             // layoutControlItem54
             // 
             this.layoutControlItem54.Control = this.txtMulti4MO;
-            this.layoutControlItem54.Location = new System.Drawing.Point(760, 460);
+            this.layoutControlItem54.Location = new System.Drawing.Point(925, 316);
             this.layoutControlItem54.Name = "layoutControlItem54";
-            this.layoutControlItem54.Size = new System.Drawing.Size(73, 45);
+            this.layoutControlItem54.Size = new System.Drawing.Size(138, 28);
             this.layoutControlItem54.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem54.TextVisible = false;
             // 
             // layoutControlItem58
             // 
             this.layoutControlItem58.Control = this.txtValue4MO;
-            this.layoutControlItem58.Location = new System.Drawing.Point(833, 461);
-            this.layoutControlItem58.MaxSize = new System.Drawing.Size(118, 34);
-            this.layoutControlItem58.MinSize = new System.Drawing.Size(118, 34);
+            this.layoutControlItem58.Location = new System.Drawing.Point(1063, 318);
             this.layoutControlItem58.Name = "layoutControlItem58";
-            this.layoutControlItem58.Size = new System.Drawing.Size(118, 44);
-            this.layoutControlItem58.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem58.Size = new System.Drawing.Size(149, 26);
             this.layoutControlItem58.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem58.TextVisible = false;
             // 
             // layoutControlItem60
             // 
             this.layoutControlItem60.Control = this.txtGrundValueME;
-            this.layoutControlItem60.Location = new System.Drawing.Point(1089, 434);
+            this.layoutControlItem60.Location = new System.Drawing.Point(1348, 271);
+            this.layoutControlItem60.MaxSize = new System.Drawing.Size(182, 47);
+            this.layoutControlItem60.MinSize = new System.Drawing.Size(182, 47);
             this.layoutControlItem60.Name = "layoutControlItem60";
-            this.layoutControlItem60.Size = new System.Drawing.Size(104, 26);
-            this.layoutControlItem60.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem60.TextVisible = false;
+            this.layoutControlItem60.Size = new System.Drawing.Size(182, 47);
+            this.layoutControlItem60.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem60.Text = "  ";
+            this.layoutControlItem60.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem60.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem60.TextSize = new System.Drawing.Size(6, 16);
+            this.layoutControlItem60.TextToControlDistance = 5;
             // 
             // layoutControlItem61
             // 
             this.layoutControlItem61.Control = this.txtGrundMultiMO;
-            this.layoutControlItem61.Location = new System.Drawing.Point(980, 460);
+            this.layoutControlItem61.Location = new System.Drawing.Point(1212, 318);
             this.layoutControlItem61.Name = "layoutControlItem61";
-            this.layoutControlItem61.Size = new System.Drawing.Size(109, 45);
+            this.layoutControlItem61.Size = new System.Drawing.Size(136, 26);
             this.layoutControlItem61.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem61.TextVisible = false;
             // 
             // layoutControlItem62
             // 
             this.layoutControlItem62.Control = this.txtGrundValueMO;
-            this.layoutControlItem62.Location = new System.Drawing.Point(1089, 460);
-            this.layoutControlItem62.MaxSize = new System.Drawing.Size(104, 34);
-            this.layoutControlItem62.MinSize = new System.Drawing.Size(104, 34);
+            this.layoutControlItem62.Location = new System.Drawing.Point(1348, 318);
             this.layoutControlItem62.Name = "layoutControlItem62";
-            this.layoutControlItem62.Size = new System.Drawing.Size(104, 45);
-            this.layoutControlItem62.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem62.Size = new System.Drawing.Size(182, 26);
             this.layoutControlItem62.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem62.TextVisible = false;
-            // 
-            // emptySpaceItem4
-            // 
-            this.emptySpaceItem4.AllowHotTrack = false;
-            this.emptySpaceItem4.Location = new System.Drawing.Point(177, 415);
-            this.emptySpaceItem4.MaxSize = new System.Drawing.Size(115, 20);
-            this.emptySpaceItem4.MinSize = new System.Drawing.Size(115, 20);
-            this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(115, 20);
-            this.emptySpaceItem4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem64
-            // 
-            this.emptySpaceItem64.AllowHotTrack = false;
-            this.emptySpaceItem64.Location = new System.Drawing.Point(622, 415);
-            this.emptySpaceItem64.MaxSize = new System.Drawing.Size(104, 20);
-            this.emptySpaceItem64.MinSize = new System.Drawing.Size(104, 20);
-            this.emptySpaceItem64.Name = "emptySpaceItem64";
-            this.emptySpaceItem64.Size = new System.Drawing.Size(104, 20);
-            this.emptySpaceItem64.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem64.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem98
-            // 
-            this.emptySpaceItem98.AllowHotTrack = false;
-            this.emptySpaceItem98.Location = new System.Drawing.Point(0, 415);
-            this.emptySpaceItem98.MaxSize = new System.Drawing.Size(104, 30);
-            this.emptySpaceItem98.MinSize = new System.Drawing.Size(104, 30);
-            this.emptySpaceItem98.Name = "emptySpaceItem98";
-            this.emptySpaceItem98.Size = new System.Drawing.Size(104, 30);
-            this.emptySpaceItem98.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem98.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem116
-            // 
-            this.emptySpaceItem116.AllowHotTrack = false;
-            this.emptySpaceItem116.Location = new System.Drawing.Point(711, 168);
-            this.emptySpaceItem116.Name = "emptySpaceItem116";
-            this.emptySpaceItem116.Size = new System.Drawing.Size(251, 50);
-            this.emptySpaceItem116.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem119
-            // 
-            this.emptySpaceItem119.AllowHotTrack = false;
-            this.emptySpaceItem119.Location = new System.Drawing.Point(729, 112);
-            this.emptySpaceItem119.Name = "emptySpaceItem119";
-            this.emptySpaceItem119.Size = new System.Drawing.Size(233, 56);
-            this.emptySpaceItem119.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem120
-            // 
-            this.emptySpaceItem120.AllowHotTrack = false;
-            this.emptySpaceItem120.Location = new System.Drawing.Point(375, 0);
-            this.emptySpaceItem120.MaxSize = new System.Drawing.Size(587, 56);
-            this.emptySpaceItem120.MinSize = new System.Drawing.Size(587, 56);
-            this.emptySpaceItem120.Name = "emptySpaceItem120";
-            this.emptySpaceItem120.Size = new System.Drawing.Size(587, 56);
-            this.emptySpaceItem120.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem120.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem20
-            // 
-            this.emptySpaceItem20.AllowHotTrack = false;
-            this.emptySpaceItem20.Location = new System.Drawing.Point(833, 274);
-            this.emptySpaceItem20.Name = "emptySpaceItem20";
-            this.emptySpaceItem20.Size = new System.Drawing.Size(118, 22);
-            this.emptySpaceItem20.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem28
             // 
             this.layoutControlItem28.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem28.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem28.Control = this.txtLVPositionCD;
-            this.layoutControlItem28.Location = new System.Drawing.Point(0, 21);
-            this.layoutControlItem28.MaxSize = new System.Drawing.Size(0, 34);
-            this.layoutControlItem28.MinSize = new System.Drawing.Size(120, 34);
+            this.layoutControlItem28.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem28.Name = "layoutControlItem28";
-            this.layoutControlItem28.Size = new System.Drawing.Size(240, 35);
-            this.layoutControlItem28.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem28.Size = new System.Drawing.Size(176, 47);
             this.layoutControlItem28.Text = "LV-Position ";
             this.layoutControlItem28.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem28.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutControlItem28.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem28.TextSize = new System.Drawing.Size(70, 16);
             this.layoutControlItem28.TextToControlDistance = 5;
-            // 
-            // emptySpaceItem123
-            // 
-            this.emptySpaceItem123.AllowHotTrack = false;
-            this.emptySpaceItem123.Location = new System.Drawing.Point(542, 56);
-            this.emptySpaceItem123.MinSize = new System.Drawing.Size(110, 30);
-            this.emptySpaceItem123.Name = "emptySpaceItem123";
-            this.emptySpaceItem123.Size = new System.Drawing.Size(420, 56);
-            this.emptySpaceItem123.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem123.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem131
-            // 
-            this.emptySpaceItem131.AllowHotTrack = false;
-            this.emptySpaceItem131.Location = new System.Drawing.Point(599, 218);
-            this.emptySpaceItem131.Name = "emptySpaceItem131";
-            this.emptySpaceItem131.Size = new System.Drawing.Size(115, 23);
-            this.emptySpaceItem131.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem133
-            // 
-            this.emptySpaceItem133.AllowHotTrack = false;
-            this.emptySpaceItem133.Location = new System.Drawing.Point(714, 218);
-            this.emptySpaceItem133.Name = "emptySpaceItem133";
-            this.emptySpaceItem133.Size = new System.Drawing.Size(248, 23);
-            this.emptySpaceItem133.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem134
-            // 
-            this.emptySpaceItem134.AllowHotTrack = false;
-            this.emptySpaceItem134.Location = new System.Drawing.Point(599, 241);
-            this.emptySpaceItem134.MaxSize = new System.Drawing.Size(213, 33);
-            this.emptySpaceItem134.MinSize = new System.Drawing.Size(213, 33);
-            this.emptySpaceItem134.Name = "emptySpaceItem134";
-            this.emptySpaceItem134.Size = new System.Drawing.Size(363, 33);
-            this.emptySpaceItem134.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem134.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem122
-            // 
-            this.emptySpaceItem122.AllowHotTrack = false;
-            this.emptySpaceItem122.Location = new System.Drawing.Point(0, 0);
-            this.emptySpaceItem122.MaxSize = new System.Drawing.Size(240, 21);
-            this.emptySpaceItem122.MinSize = new System.Drawing.Size(240, 21);
-            this.emptySpaceItem122.Name = "emptySpaceItem122";
-            this.emptySpaceItem122.Size = new System.Drawing.Size(240, 21);
-            this.emptySpaceItem122.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem122.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem82
             // 
             this.layoutControlItem82.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem82.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem82.Control = this.txtGrundMultiME1;
-            this.layoutControlItem82.Location = new System.Drawing.Point(240, 274);
-            this.layoutControlItem82.MaxSize = new System.Drawing.Size(105, 56);
-            this.layoutControlItem82.MinSize = new System.Drawing.Size(105, 56);
+            this.layoutControlItem82.Location = new System.Drawing.Point(210, 188);
+            this.layoutControlItem82.MaxSize = new System.Drawing.Size(134, 47);
+            this.layoutControlItem82.MinSize = new System.Drawing.Size(134, 47);
             this.layoutControlItem82.Name = "layoutControlItem82";
-            this.layoutControlItem82.Size = new System.Drawing.Size(105, 56);
+            this.layoutControlItem82.Size = new System.Drawing.Size(134, 47);
             this.layoutControlItem82.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem82.Text = "Grund-Multi";
             this.layoutControlItem82.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
@@ -5978,110 +7154,23 @@
             // layoutControlItem90
             // 
             this.layoutControlItem90.Control = this.txtGrundMultiMO1;
-            this.layoutControlItem90.Location = new System.Drawing.Point(240, 330);
-            this.layoutControlItem90.MaxSize = new System.Drawing.Size(105, 35);
-            this.layoutControlItem90.MinSize = new System.Drawing.Size(105, 35);
+            this.layoutControlItem90.Location = new System.Drawing.Point(210, 235);
             this.layoutControlItem90.Name = "layoutControlItem90";
-            this.layoutControlItem90.Size = new System.Drawing.Size(105, 35);
-            this.layoutControlItem90.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem90.Size = new System.Drawing.Size(134, 26);
             this.layoutControlItem90.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem90.TextVisible = false;
-            // 
-            // emptySpaceItem44
-            // 
-            this.emptySpaceItem44.AllowHotTrack = false;
-            this.emptySpaceItem44.Location = new System.Drawing.Point(402, 415);
-            this.emptySpaceItem44.MaxSize = new System.Drawing.Size(105, 20);
-            this.emptySpaceItem44.MinSize = new System.Drawing.Size(105, 20);
-            this.emptySpaceItem44.Name = "emptySpaceItem44";
-            this.emptySpaceItem44.Size = new System.Drawing.Size(105, 20);
-            this.emptySpaceItem44.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem44.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem97
-            // 
-            this.emptySpaceItem97.AllowHotTrack = false;
-            this.emptySpaceItem97.Location = new System.Drawing.Point(1089, 415);
-            this.emptySpaceItem97.Name = "emptySpaceItem97";
-            this.emptySpaceItem97.Size = new System.Drawing.Size(104, 19);
-            this.emptySpaceItem97.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem7
-            // 
-            this.emptySpaceItem7.AllowHotTrack = false;
-            this.emptySpaceItem7.Location = new System.Drawing.Point(1276, 0);
-            this.emptySpaceItem7.MaxSize = new System.Drawing.Size(147, 505);
-            this.emptySpaceItem7.MinSize = new System.Drawing.Size(147, 505);
-            this.emptySpaceItem7.Name = "emptySpaceItem7";
-            this.emptySpaceItem7.Size = new System.Drawing.Size(147, 505);
-            this.emptySpaceItem7.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem7.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // layoutControlItem123
-            // 
-            this.layoutControlItem123.Control = this.labelControl6;
-            this.layoutControlItem123.Location = new System.Drawing.Point(1193, 298);
-            this.layoutControlItem123.MaxSize = new System.Drawing.Size(83, 27);
-            this.layoutControlItem123.MinSize = new System.Drawing.Size(83, 27);
-            this.layoutControlItem123.Name = "layoutControlItem123";
-            this.layoutControlItem123.Size = new System.Drawing.Size(83, 27);
-            this.layoutControlItem123.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem123.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem123.TextVisible = false;
-            // 
-            // emptySpaceItem8
-            // 
-            this.emptySpaceItem8.AllowHotTrack = false;
-            this.emptySpaceItem8.Location = new System.Drawing.Point(1193, 0);
-            this.emptySpaceItem8.MaxSize = new System.Drawing.Size(83, 298);
-            this.emptySpaceItem8.MinSize = new System.Drawing.Size(83, 298);
-            this.emptySpaceItem8.Name = "emptySpaceItem8";
-            this.emptySpaceItem8.Size = new System.Drawing.Size(83, 298);
-            this.emptySpaceItem8.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem8.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem11
-            // 
-            this.emptySpaceItem11.AllowHotTrack = false;
-            this.emptySpaceItem11.Location = new System.Drawing.Point(1193, 362);
-            this.emptySpaceItem11.MaxSize = new System.Drawing.Size(83, 143);
-            this.emptySpaceItem11.MinSize = new System.Drawing.Size(83, 143);
-            this.emptySpaceItem11.Name = "emptySpaceItem11";
-            this.emptySpaceItem11.Size = new System.Drawing.Size(83, 143);
-            this.emptySpaceItem11.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem11.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // layoutControlItem241
-            // 
-            this.layoutControlItem241.Control = this.labelControl7;
-            this.layoutControlItem241.Location = new System.Drawing.Point(1193, 335);
-            this.layoutControlItem241.MaxSize = new System.Drawing.Size(83, 27);
-            this.layoutControlItem241.MinSize = new System.Drawing.Size(83, 27);
-            this.layoutControlItem241.Name = "layoutControlItem241";
-            this.layoutControlItem241.Size = new System.Drawing.Size(83, 27);
-            this.layoutControlItem241.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem241.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem241.TextVisible = false;
-            // 
-            // emptySpaceItem22
-            // 
-            this.emptySpaceItem22.AllowHotTrack = false;
-            this.emptySpaceItem22.Location = new System.Drawing.Point(1193, 325);
-            this.emptySpaceItem22.MaxSize = new System.Drawing.Size(83, 10);
-            this.emptySpaceItem22.MinSize = new System.Drawing.Size(83, 10);
-            this.emptySpaceItem22.Name = "emptySpaceItem22";
-            this.emptySpaceItem22.Size = new System.Drawing.Size(83, 10);
-            this.emptySpaceItem22.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem22.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem43
             // 
             this.layoutControlItem43.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem43.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem43.Control = this.txtMulti1ME;
-            this.layoutControlItem43.Location = new System.Drawing.Point(104, 415);
+            this.layoutControlItem43.Location = new System.Drawing.Point(72, 271);
+            this.layoutControlItem43.MaxSize = new System.Drawing.Size(136, 45);
+            this.layoutControlItem43.MinSize = new System.Drawing.Size(136, 45);
             this.layoutControlItem43.Name = "layoutControlItem43";
-            this.layoutControlItem43.Size = new System.Drawing.Size(73, 45);
+            this.layoutControlItem43.Size = new System.Drawing.Size(136, 45);
+            this.layoutControlItem43.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem43.Text = "Multi 1";
             this.layoutControlItem43.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem43.TextSize = new System.Drawing.Size(69, 16);
@@ -6089,119 +7178,214 @@
             // layoutControlItem51
             // 
             this.layoutControlItem51.Control = this.txtMulti1MO;
-            this.layoutControlItem51.Location = new System.Drawing.Point(104, 460);
+            this.layoutControlItem51.Location = new System.Drawing.Point(72, 316);
             this.layoutControlItem51.Name = "layoutControlItem51";
-            this.layoutControlItem51.Size = new System.Drawing.Size(73, 45);
+            this.layoutControlItem51.Size = new System.Drawing.Size(136, 28);
             this.layoutControlItem51.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem51.TextVisible = false;
-            // 
-            // emptySpaceItem31
-            // 
-            this.emptySpaceItem31.AllowHotTrack = false;
-            this.emptySpaceItem31.Location = new System.Drawing.Point(292, 415);
-            this.emptySpaceItem31.MaxSize = new System.Drawing.Size(37, 88);
-            this.emptySpaceItem31.MinSize = new System.Drawing.Size(37, 88);
-            this.emptySpaceItem31.Name = "emptySpaceItem31";
-            this.emptySpaceItem31.Size = new System.Drawing.Size(37, 90);
-            this.emptySpaceItem31.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem31.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem33
-            // 
-            this.emptySpaceItem33.AllowHotTrack = false;
-            this.emptySpaceItem33.Location = new System.Drawing.Point(507, 415);
-            this.emptySpaceItem33.MaxSize = new System.Drawing.Size(42, 88);
-            this.emptySpaceItem33.MinSize = new System.Drawing.Size(42, 88);
-            this.emptySpaceItem33.Name = "emptySpaceItem33";
-            this.emptySpaceItem33.Size = new System.Drawing.Size(42, 90);
-            this.emptySpaceItem33.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem33.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem43
-            // 
-            this.emptySpaceItem43.AllowHotTrack = false;
-            this.emptySpaceItem43.Location = new System.Drawing.Point(726, 415);
-            this.emptySpaceItem43.MaxSize = new System.Drawing.Size(34, 88);
-            this.emptySpaceItem43.MinSize = new System.Drawing.Size(34, 88);
-            this.emptySpaceItem43.Name = "emptySpaceItem43";
-            this.emptySpaceItem43.Size = new System.Drawing.Size(34, 90);
-            this.emptySpaceItem43.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem43.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem65
-            // 
-            this.emptySpaceItem65.AllowHotTrack = false;
-            this.emptySpaceItem65.Location = new System.Drawing.Point(833, 415);
-            this.emptySpaceItem65.MaxSize = new System.Drawing.Size(118, 20);
-            this.emptySpaceItem65.MinSize = new System.Drawing.Size(118, 20);
-            this.emptySpaceItem65.Name = "emptySpaceItem65";
-            this.emptySpaceItem65.Size = new System.Drawing.Size(118, 20);
-            this.emptySpaceItem65.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem65.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem45
-            // 
-            this.emptySpaceItem45.AllowHotTrack = false;
-            this.emptySpaceItem45.Location = new System.Drawing.Point(951, 415);
-            this.emptySpaceItem45.MaxSize = new System.Drawing.Size(29, 88);
-            this.emptySpaceItem45.MinSize = new System.Drawing.Size(29, 88);
-            this.emptySpaceItem45.Name = "emptySpaceItem45";
-            this.emptySpaceItem45.Size = new System.Drawing.Size(29, 90);
-            this.emptySpaceItem45.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem45.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem56
             // 
             this.layoutControlItem56.Control = this.txtValue2MO;
-            this.layoutControlItem56.Location = new System.Drawing.Point(402, 461);
-            this.layoutControlItem56.MaxSize = new System.Drawing.Size(105, 34);
-            this.layoutControlItem56.MinSize = new System.Drawing.Size(105, 34);
+            this.layoutControlItem56.Location = new System.Drawing.Point(482, 318);
             this.layoutControlItem56.Name = "layoutControlItem56";
-            this.layoutControlItem56.Size = new System.Drawing.Size(105, 44);
-            this.layoutControlItem56.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem56.Size = new System.Drawing.Size(146, 26);
             this.layoutControlItem56.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem56.TextVisible = false;
-            // 
-            // emptySpaceItem63
-            // 
-            this.emptySpaceItem63.AllowHotTrack = false;
-            this.emptySpaceItem63.Location = new System.Drawing.Point(421, 168);
-            this.emptySpaceItem63.Name = "emptySpaceItem63";
-            this.emptySpaceItem63.Size = new System.Drawing.Size(290, 10);
-            this.emptySpaceItem63.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem109
-            // 
-            this.emptySpaceItem109.AllowHotTrack = false;
-            this.emptySpaceItem109.Location = new System.Drawing.Point(421, 204);
-            this.emptySpaceItem109.Name = "emptySpaceItem109";
-            this.emptySpaceItem109.Size = new System.Drawing.Size(290, 14);
-            this.emptySpaceItem109.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem117
-            // 
-            this.emptySpaceItem117.AllowHotTrack = false;
-            this.emptySpaceItem117.Location = new System.Drawing.Point(0, 365);
-            this.emptySpaceItem117.Name = "emptySpaceItem117";
-            this.emptySpaceItem117.Size = new System.Drawing.Size(104, 50);
-            this.emptySpaceItem117.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem23
-            // 
-            this.emptySpaceItem23.AllowHotTrack = false;
-            this.emptySpaceItem23.Location = new System.Drawing.Point(432, 56);
-            this.emptySpaceItem23.Name = "emptySpaceItem23";
-            this.emptySpaceItem23.Size = new System.Drawing.Size(110, 56);
-            this.emptySpaceItem23.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem26
             // 
             this.layoutControlItem26.Control = this.txtShortDescriptionCD;
-            this.layoutControlItem26.Location = new System.Drawing.Point(0, 168);
+            this.layoutControlItem26.Location = new System.Drawing.Point(711, 47);
             this.layoutControlItem26.Name = "layoutControlItem26";
-            this.layoutControlItem26.Size = new System.Drawing.Size(421, 50);
+            this.layoutControlItem26.Size = new System.Drawing.Size(301, 94);
             this.layoutControlItem26.Text = "Kurz Text ";
+            this.layoutControlItem26.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem26.TextSize = new System.Drawing.Size(69, 16);
+            // 
+            // layoutControlItem246
+            // 
+            this.layoutControlItem246.AppearanceItemCaption.Options.UseTextOptions = true;
+            this.layoutControlItem246.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.layoutControlItem246.Control = this.txtDetailKZCD;
+            this.layoutControlItem246.Location = new System.Drawing.Point(176, 0);
+            this.layoutControlItem246.Name = "layoutControlItem246";
+            this.layoutControlItem246.Size = new System.Drawing.Size(97, 47);
+            this.layoutControlItem246.Text = "Det KZ ";
+            this.layoutControlItem246.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem246.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem246.TextSize = new System.Drawing.Size(41, 16);
+            this.layoutControlItem246.TextToControlDistance = 5;
+            // 
+            // layoutControlItem6
+            // 
+            this.layoutControlItem6.Control = this.dtpValidityDate;
+            this.layoutControlItem6.Location = new System.Drawing.Point(581, 47);
+            this.layoutControlItem6.Name = "layoutControlItem6";
+            this.layoutControlItem6.Size = new System.Drawing.Size(130, 47);
+            this.layoutControlItem6.Text = "Gültigkeit ";
+            this.layoutControlItem6.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(69, 16);
+            // 
+            // emptySpaceItem6
+            // 
+            this.emptySpaceItem6.AllowHotTrack = false;
+            this.emptySpaceItem6.Location = new System.Drawing.Point(660, 0);
+            this.emptySpaceItem6.Name = "emptySpaceItem6";
+            this.emptySpaceItem6.Size = new System.Drawing.Size(1002, 47);
+            this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // layoutControlItem29
+            // 
+            this.layoutControlItem29.AppearanceItemCaption.Options.UseTextOptions = true;
+            this.layoutControlItem29.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.layoutControlItem29.Control = this.txtDim1;
+            this.layoutControlItem29.Location = new System.Drawing.Point(291, 47);
+            this.layoutControlItem29.Name = "layoutControlItem29";
+            this.layoutControlItem29.Size = new System.Drawing.Size(97, 47);
+            this.layoutControlItem29.Text = "A";
+            this.layoutControlItem29.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem29.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem29.TextSize = new System.Drawing.Size(9, 16);
+            this.layoutControlItem29.TextToControlDistance = 5;
+            // 
+            // layoutControlItem30
+            // 
+            this.layoutControlItem30.AppearanceItemCaption.Options.UseTextOptions = true;
+            this.layoutControlItem30.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.layoutControlItem30.Control = this.txtDim2;
+            this.layoutControlItem30.Location = new System.Drawing.Point(388, 47);
+            this.layoutControlItem30.Name = "layoutControlItem30";
+            this.layoutControlItem30.Size = new System.Drawing.Size(96, 47);
+            this.layoutControlItem30.Text = "B";
+            this.layoutControlItem30.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem30.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem30.TextSize = new System.Drawing.Size(8, 16);
+            this.layoutControlItem30.TextToControlDistance = 5;
+            // 
+            // layoutControlItem31
+            // 
+            this.layoutControlItem31.AppearanceItemCaption.Options.UseTextOptions = true;
+            this.layoutControlItem31.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.layoutControlItem31.Control = this.txtDim3;
+            this.layoutControlItem31.Location = new System.Drawing.Point(484, 47);
+            this.layoutControlItem31.Name = "layoutControlItem31";
+            this.layoutControlItem31.Size = new System.Drawing.Size(97, 47);
+            this.layoutControlItem31.Text = "L";
+            this.layoutControlItem31.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem31.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem31.TextSize = new System.Drawing.Size(7, 16);
+            this.layoutControlItem31.TextToControlDistance = 5;
+            // 
+            // layoutControlItem12
+            // 
+            this.layoutControlItem12.AppearanceItemCaption.Options.UseTextOptions = true;
+            this.layoutControlItem12.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.layoutControlItem12.Control = this.txtLiefrantMA;
+            this.layoutControlItem12.Location = new System.Drawing.Point(367, 94);
+            this.layoutControlItem12.Name = "layoutControlItem12";
+            this.layoutControlItem12.Size = new System.Drawing.Size(344, 47);
+            this.layoutControlItem12.Text = "Lieferant MA";
+            this.layoutControlItem12.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem12.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem12.TextSize = new System.Drawing.Size(74, 16);
+            this.layoutControlItem12.TextToControlDistance = 5;
+            // 
+            // emptySpaceItem7
+            // 
+            this.emptySpaceItem7.AllowHotTrack = false;
+            this.emptySpaceItem7.Location = new System.Drawing.Point(1384, 47);
+            this.emptySpaceItem7.Name = "emptySpaceItem7";
+            this.emptySpaceItem7.Size = new System.Drawing.Size(278, 94);
+            this.emptySpaceItem7.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // layoutControlItem40
+            // 
+            this.layoutControlItem40.Control = this.txtPreisText;
+            this.layoutControlItem40.Location = new System.Drawing.Point(1012, 47);
+            this.layoutControlItem40.Name = "layoutControlItem40";
+            this.layoutControlItem40.OptionsToolTip.IconToolTip = "200 Figuren";
+            this.layoutControlItem40.Size = new System.Drawing.Size(372, 94);
+            this.layoutControlItem40.Text = "Preis Text";
+            this.layoutControlItem40.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem40.TextSize = new System.Drawing.Size(69, 16);
+            // 
+            // emptySpaceItem8
+            // 
+            this.emptySpaceItem8.AllowHotTrack = false;
+            this.emptySpaceItem8.Location = new System.Drawing.Point(1015, 141);
+            this.emptySpaceItem8.Name = "emptySpaceItem8";
+            this.emptySpaceItem8.Size = new System.Drawing.Size(647, 47);
+            this.emptySpaceItem8.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // lccmbLVStatus
+            // 
+            this.lccmbLVStatus.AppearanceItemCaption.Options.UseTextOptions = true;
+            this.lccmbLVStatus.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lccmbLVStatus.Control = this.cmbLVStatus;
+            this.lccmbLVStatus.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lccmbLVStatus.Location = new System.Drawing.Point(899, 141);
+            this.lccmbLVStatus.Name = "lccmbLVStatus";
+            this.lccmbLVStatus.Size = new System.Drawing.Size(116, 47);
+            this.lccmbLVStatus.Text = "LV-Status ";
+            this.lccmbLVStatus.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.lccmbLVStatus.TextLocation = DevExpress.Utils.Locations.Top;
+            this.lccmbLVStatus.TextSize = new System.Drawing.Size(61, 16);
+            this.lccmbLVStatus.TextToControlDistance = 5;
+            // 
+            // layoutControlItem123
+            // 
+            this.layoutControlItem123.Control = this.labelControl6;
+            this.layoutControlItem123.Location = new System.Drawing.Point(1540, 188);
+            this.layoutControlItem123.Name = "layoutControlItem123";
+            this.layoutControlItem123.Size = new System.Drawing.Size(78, 39);
+            this.layoutControlItem123.Text = " ";
+            this.layoutControlItem123.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem123.TextSize = new System.Drawing.Size(69, 16);
+            // 
+            // layoutControlItem241
+            // 
+            this.layoutControlItem241.Control = this.labelControl7;
+            this.layoutControlItem241.Location = new System.Drawing.Point(1540, 227);
+            this.layoutControlItem241.Name = "layoutControlItem241";
+            this.layoutControlItem241.Size = new System.Drawing.Size(78, 34);
+            this.layoutControlItem241.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem241.TextVisible = false;
+            // 
+            // emptySpaceItem3
+            // 
+            this.emptySpaceItem3.AllowHotTrack = false;
+            this.emptySpaceItem3.Location = new System.Drawing.Point(1618, 188);
+            this.emptySpaceItem3.Name = "emptySpaceItem3";
+            this.emptySpaceItem3.Size = new System.Drawing.Size(44, 73);
+            this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem13
+            // 
+            this.emptySpaceItem13.AllowHotTrack = false;
+            this.emptySpaceItem13.Location = new System.Drawing.Point(0, 261);
+            this.emptySpaceItem13.Name = "emptySpaceItem13";
+            this.emptySpaceItem13.Size = new System.Drawing.Size(1662, 10);
+            this.emptySpaceItem13.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem18
+            // 
+            this.emptySpaceItem18.AllowHotTrack = false;
+            this.emptySpaceItem18.Location = new System.Drawing.Point(1530, 188);
+            this.emptySpaceItem18.MaxSize = new System.Drawing.Size(10, 73);
+            this.emptySpaceItem18.MinSize = new System.Drawing.Size(10, 73);
+            this.emptySpaceItem18.Name = "emptySpaceItem18";
+            this.emptySpaceItem18.Size = new System.Drawing.Size(10, 73);
+            this.emptySpaceItem18.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.emptySpaceItem18.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem11
+            // 
+            this.emptySpaceItem11.AllowHotTrack = false;
+            this.emptySpaceItem11.Location = new System.Drawing.Point(1530, 271);
+            this.emptySpaceItem11.Name = "emptySpaceItem11";
+            this.emptySpaceItem11.Size = new System.Drawing.Size(132, 73);
+            this.emptySpaceItem11.TextSize = new System.Drawing.Size(0, 0);
             // 
             // repositoryItemButtonEdit2
             // 
@@ -7100,7 +8284,7 @@
             this.splitContainerControl1.Panel2.Controls.Add(this.layoutControl4);
             this.splitContainerControl1.Panel2.Text = "Panel2";
             this.splitContainerControl1.Size = new System.Drawing.Size(1711, 615);
-            this.splitContainerControl1.SplitterPosition = 310;
+            this.splitContainerControl1.SplitterPosition = 314;
             this.splitContainerControl1.TabIndex = 37;
             this.splitContainerControl1.Text = "splitContainerControl1";
             // 
@@ -7122,7 +8306,7 @@
             this.splitContainerControl2.Panel2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.splitContainerControl2.Panel2.Controls.Add(this.lcCostDetails);
             this.splitContainerControl2.Panel2.Text = "Panel2";
-            this.splitContainerControl2.Size = new System.Drawing.Size(1707, 306);
+            this.splitContainerControl2.Size = new System.Drawing.Size(1707, 310);
             this.splitContainerControl2.SplitterPosition = 300;
             this.splitContainerControl2.TabIndex = 40;
             this.splitContainerControl2.Text = "splitContainerControl2";
@@ -7148,7 +8332,7 @@
             this.layoutControl4.Name = "layoutControl4";
             this.layoutControl4.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1315, 341, 250, 350);
             this.layoutControl4.Root = this.Root;
-            this.layoutControl4.Size = new System.Drawing.Size(1707, 291);
+            this.layoutControl4.Size = new System.Drawing.Size(1707, 287);
             this.layoutControl4.TabIndex = 36;
             this.layoutControl4.Text = "layoutControl4";
             // 
@@ -7262,7 +8446,7 @@
             this.tlPositions.OptionsView.AutoWidth = false;
             this.tlPositions.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.tlPositions.ShowButtonMode = DevExpress.XtraTreeList.ShowButtonModeEnum.ShowForFocusedRow;
-            this.tlPositions.Size = new System.Drawing.Size(1701, 285);
+            this.tlPositions.Size = new System.Drawing.Size(1701, 281);
             this.tlPositions.TabIndex = 30;
             this.tlPositions.FocusedNodeChanged += new DevExpress.XtraTreeList.FocusedNodeChangedEventHandler(this.tlPositions_FocusedNodeChanged);
             this.tlPositions.PopupMenuShowing += new DevExpress.XtraTreeList.PopupMenuShowingEventHandler(this.tlPositions_PopupMenuShowing);
@@ -7439,7 +8623,7 @@
             // 
             // treeListColumn9
             // 
-            this.treeListColumn9.Caption = "MA_Selbstkosten";
+            this.treeListColumn9.Caption = "Gemeinkosten MA";
             this.treeListColumn9.ColumnEdit = this.rpiMulti1;
             this.treeListColumn9.FieldName = "MA_selbstkostenMulti";
             this.treeListColumn9.Name = "treeListColumn9";
@@ -7447,14 +8631,14 @@
             // 
             // treeListColumn59
             // 
-            this.treeListColumn59.Caption = "MA_Selb_Value";
+            this.treeListColumn59.Caption = "Gemeinkosten MA Value";
             this.treeListColumn59.FieldName = "MA_selbstkosten";
             this.treeListColumn59.Name = "treeListColumn59";
             this.treeListColumn59.OptionsColumn.AllowEdit = false;
             // 
             // treeListColumn8
             // 
-            this.treeListColumn8.Caption = "MA_Verkaufspreis";
+            this.treeListColumn8.Caption = "Verkaufsmargen MA";
             this.treeListColumn8.ColumnEdit = this.rpiMulti1;
             this.treeListColumn8.FieldName = "MA_verkaufspreis_Multi";
             this.treeListColumn8.Name = "treeListColumn8";
@@ -7462,7 +8646,7 @@
             // 
             // treeListColumn58
             // 
-            this.treeListColumn58.Caption = "MA_Verk_Value";
+            this.treeListColumn58.Caption = "Verkaufsmargen MA Value";
             this.treeListColumn58.FieldName = "MA_verkaufspreis";
             this.treeListColumn58.Name = "treeListColumn58";
             this.treeListColumn58.OptionsColumn.AllowEdit = false;
@@ -7509,7 +8693,7 @@
             // 
             // treeListColumn16
             // 
-            this.treeListColumn16.Caption = "MO_Selbstkosten";
+            this.treeListColumn16.Caption = "Gemeinkosten MO";
             this.treeListColumn16.ColumnEdit = this.rpiMulti1;
             this.treeListColumn16.FieldName = "MO_selbstkostenMulti";
             this.treeListColumn16.Name = "treeListColumn16";
@@ -7517,14 +8701,14 @@
             // 
             // treeListColumn60
             // 
-            this.treeListColumn60.Caption = "MO_Selb_Value";
+            this.treeListColumn60.Caption = "Gemeinkosten MO Value";
             this.treeListColumn60.FieldName = "MO_selbstkosten";
             this.treeListColumn60.Name = "treeListColumn60";
             this.treeListColumn60.OptionsColumn.AllowEdit = false;
             // 
             // treeListColumn7
             // 
-            this.treeListColumn7.Caption = "MO_Verkaufspreis";
+            this.treeListColumn7.Caption = "Verkaufsmargen MO";
             this.treeListColumn7.ColumnEdit = this.rpiMulti1;
             this.treeListColumn7.FieldName = "MO_verkaufspreisMulti";
             this.treeListColumn7.Name = "treeListColumn7";
@@ -7532,7 +8716,7 @@
             // 
             // treeListColumn61
             // 
-            this.treeListColumn61.Caption = "MO_Verk_Value";
+            this.treeListColumn61.Caption = "Verkaufsmargen MO Value";
             this.treeListColumn61.FieldName = "MO_verkaufspreis";
             this.treeListColumn61.Name = "treeListColumn61";
             this.treeListColumn61.OptionsColumn.AllowEdit = false;
@@ -7607,7 +8791,7 @@
             this.layoutControlItem1});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.Root.Size = new System.Drawing.Size(1707, 291);
+            this.Root.Size = new System.Drawing.Size(1707, 287);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -7615,7 +8799,7 @@
             this.layoutControlItem1.Control = this.tlPositions;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1705, 289);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1705, 285);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -8256,7 +9440,7 @@
             // 
             // checkEditNachtragsnummer
             // 
-            this.checkEditNachtragsnummer.Location = new System.Drawing.Point(1374, 153);
+            this.checkEditNachtragsnummer.Location = new System.Drawing.Point(1385, 153);
             this.checkEditNachtragsnummer.Name = "checkEditNachtragsnummer";
             this.checkEditNachtragsnummer.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.checkEditNachtragsnummer.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F);
@@ -8265,14 +9449,14 @@
             this.checkEditNachtragsnummer.Properties.Appearance.Options.UseFont = true;
             this.checkEditNachtragsnummer.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditNachtragsnummer.Properties.Caption = "";
-            this.checkEditNachtragsnummer.Size = new System.Drawing.Size(46, 18);
+            this.checkEditNachtragsnummer.Size = new System.Drawing.Size(35, 18);
             this.checkEditNachtragsnummer.StyleController = this.layoutControl7;
             this.checkEditNachtragsnummer.TabIndex = 37;
             this.checkEditNachtragsnummer.CheckedChanged += new System.EventHandler(this.checkEditNachtragsnummer_CheckedChanged);
             // 
             // checkEditLieferantMA
             // 
-            this.checkEditLieferantMA.Location = new System.Drawing.Point(1374, 127);
+            this.checkEditLieferantMA.Location = new System.Drawing.Point(1385, 127);
             this.checkEditLieferantMA.Name = "checkEditLieferantMA";
             this.checkEditLieferantMA.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.checkEditLieferantMA.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F);
@@ -8281,14 +9465,14 @@
             this.checkEditLieferantMA.Properties.Appearance.Options.UseFont = true;
             this.checkEditLieferantMA.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditLieferantMA.Properties.Caption = "";
-            this.checkEditLieferantMA.Size = new System.Drawing.Size(46, 18);
+            this.checkEditLieferantMA.Size = new System.Drawing.Size(35, 18);
             this.checkEditLieferantMA.StyleController = this.layoutControl7;
             this.checkEditLieferantMA.TabIndex = 36;
             this.checkEditLieferantMA.CheckedChanged += new System.EventHandler(this.checkEditLieferantMA_CheckedChanged);
             // 
             // checkEditTyp
             // 
-            this.checkEditTyp.Location = new System.Drawing.Point(1374, 101);
+            this.checkEditTyp.Location = new System.Drawing.Point(1385, 101);
             this.checkEditTyp.Name = "checkEditTyp";
             this.checkEditTyp.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.checkEditTyp.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F);
@@ -8297,14 +9481,14 @@
             this.checkEditTyp.Properties.Appearance.Options.UseFont = true;
             this.checkEditTyp.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditTyp.Properties.Caption = "";
-            this.checkEditTyp.Size = new System.Drawing.Size(46, 18);
+            this.checkEditTyp.Size = new System.Drawing.Size(35, 18);
             this.checkEditTyp.StyleController = this.layoutControl7;
             this.checkEditTyp.TabIndex = 35;
             this.checkEditTyp.CheckedChanged += new System.EventHandler(this.checkEditTyp_CheckedChanged);
             // 
             // checkEditFabrikat
             // 
-            this.checkEditFabrikat.Location = new System.Drawing.Point(1374, 75);
+            this.checkEditFabrikat.Location = new System.Drawing.Point(1385, 75);
             this.checkEditFabrikat.Name = "checkEditFabrikat";
             this.checkEditFabrikat.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.checkEditFabrikat.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F);
@@ -8313,7 +9497,7 @@
             this.checkEditFabrikat.Properties.Appearance.Options.UseFont = true;
             this.checkEditFabrikat.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditFabrikat.Properties.Caption = "";
-            this.checkEditFabrikat.Size = new System.Drawing.Size(46, 18);
+            this.checkEditFabrikat.Size = new System.Drawing.Size(35, 18);
             this.checkEditFabrikat.StyleController = this.layoutControl7;
             this.checkEditFabrikat.TabIndex = 34;
             this.checkEditFabrikat.CheckedChanged += new System.EventHandler(this.checkEditFabrikat_CheckedChanged);
@@ -8409,7 +9593,7 @@
             this.checkEditArtikelnummerWG.Properties.Appearance.Options.UseFont = true;
             this.checkEditArtikelnummerWG.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditArtikelnummerWG.Properties.Caption = "";
-            this.checkEditArtikelnummerWG.Size = new System.Drawing.Size(31, 18);
+            this.checkEditArtikelnummerWG.Size = new System.Drawing.Size(20, 18);
             this.checkEditArtikelnummerWG.StyleController = this.layoutControl7;
             this.checkEditArtikelnummerWG.TabIndex = 25;
             this.checkEditArtikelnummerWG.CheckedChanged += new System.EventHandler(this.checkEditArtikelnummerWG_CheckedChanged);
@@ -8425,7 +9609,7 @@
             this.checkEditPreisErstaztext.Properties.Appearance.Options.UseFont = true;
             this.checkEditPreisErstaztext.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditPreisErstaztext.Properties.Caption = "";
-            this.checkEditPreisErstaztext.Size = new System.Drawing.Size(31, 18);
+            this.checkEditPreisErstaztext.Size = new System.Drawing.Size(20, 18);
             this.checkEditPreisErstaztext.StyleController = this.layoutControl7;
             this.checkEditPreisErstaztext.TabIndex = 24;
             this.checkEditPreisErstaztext.CheckedChanged += new System.EventHandler(this.checkEditPreisErstaztext_CheckedChanged);
@@ -8441,7 +9625,7 @@
             this.checkEditMontageKZ.Properties.Appearance.Options.UseFont = true;
             this.checkEditMontageKZ.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditMontageKZ.Properties.Caption = "";
-            this.checkEditMontageKZ.Size = new System.Drawing.Size(31, 18);
+            this.checkEditMontageKZ.Size = new System.Drawing.Size(20, 18);
             this.checkEditMontageKZ.StyleController = this.layoutControl7;
             this.checkEditMontageKZ.TabIndex = 23;
             this.checkEditMontageKZ.CheckedChanged += new System.EventHandler(this.checkEditMontageKZ_CheckedChanged);
@@ -8457,7 +9641,7 @@
             this.checkEditMaterialKz.Properties.Appearance.Options.UseFont = true;
             this.checkEditMaterialKz.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditMaterialKz.Properties.Caption = "";
-            this.checkEditMaterialKz.Size = new System.Drawing.Size(31, 18);
+            this.checkEditMaterialKz.Size = new System.Drawing.Size(20, 18);
             this.checkEditMaterialKz.StyleController = this.layoutControl7;
             this.checkEditMaterialKz.TabIndex = 22;
             this.checkEditMaterialKz.CheckedChanged += new System.EventHandler(this.checkEditMaterialKz_CheckedChanged);
@@ -8473,7 +9657,7 @@
             this.checkEditPositionMenge.Properties.Appearance.Options.UseFont = true;
             this.checkEditPositionMenge.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditPositionMenge.Properties.Caption = "";
-            this.checkEditPositionMenge.Size = new System.Drawing.Size(31, 18);
+            this.checkEditPositionMenge.Size = new System.Drawing.Size(20, 18);
             this.checkEditPositionMenge.StyleController = this.layoutControl7;
             this.checkEditPositionMenge.TabIndex = 21;
             this.checkEditPositionMenge.CheckedChanged += new System.EventHandler(this.checkEditPositionMenge_CheckedChanged);
@@ -8481,12 +9665,12 @@
             // checkEditLVPositionKZ
             // 
             this.checkEditLVPositionKZ.Enabled = false;
-            this.checkEditLVPositionKZ.Location = new System.Drawing.Point(1374, 179);
+            this.checkEditLVPositionKZ.Location = new System.Drawing.Point(1385, 179);
             this.checkEditLVPositionKZ.Name = "checkEditLVPositionKZ";
             this.checkEditLVPositionKZ.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.checkEditLVPositionKZ.Properties.Appearance.Options.UseBackColor = true;
             this.checkEditLVPositionKZ.Properties.Caption = "";
-            this.checkEditLVPositionKZ.Size = new System.Drawing.Size(46, 18);
+            this.checkEditLVPositionKZ.Size = new System.Drawing.Size(35, 18);
             this.checkEditLVPositionKZ.StyleController = this.layoutControl7;
             this.checkEditLVPositionKZ.TabIndex = 20;
             this.checkEditLVPositionKZ.CheckedChanged += new System.EventHandler(this.checkEditLVPositionKZ_CheckedChanged);
@@ -8502,7 +9686,7 @@
             this.checkEditSectionAMulti6MO.Properties.Appearance.Options.UseFont = true;
             this.checkEditSectionAMulti6MO.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditSectionAMulti6MO.Properties.Caption = "";
-            this.checkEditSectionAMulti6MO.Size = new System.Drawing.Size(32, 18);
+            this.checkEditSectionAMulti6MO.Size = new System.Drawing.Size(21, 18);
             this.checkEditSectionAMulti6MO.StyleController = this.layoutControl7;
             this.checkEditSectionAMulti6MO.TabIndex = 16;
             this.checkEditSectionAMulti6MO.CheckedChanged += new System.EventHandler(this.checkEditSectionAMulti6MO_CheckedChanged);
@@ -8518,7 +9702,7 @@
             this.checkEditSectionAMulti6MA.Properties.Appearance.Options.UseFont = true;
             this.checkEditSectionAMulti6MA.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditSectionAMulti6MA.Properties.Caption = "";
-            this.checkEditSectionAMulti6MA.Size = new System.Drawing.Size(32, 18);
+            this.checkEditSectionAMulti6MA.Size = new System.Drawing.Size(21, 18);
             this.checkEditSectionAMulti6MA.StyleController = this.layoutControl7;
             this.checkEditSectionAMulti6MA.TabIndex = 15;
             this.checkEditSectionAMulti6MA.CheckedChanged += new System.EventHandler(this.checkEditSectionAMulti6MA_CheckedChanged);
@@ -8534,7 +9718,7 @@
             this.checkEditSectionAMulti5MO.Properties.Appearance.Options.UseFont = true;
             this.checkEditSectionAMulti5MO.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditSectionAMulti5MO.Properties.Caption = "";
-            this.checkEditSectionAMulti5MO.Size = new System.Drawing.Size(32, 18);
+            this.checkEditSectionAMulti5MO.Size = new System.Drawing.Size(21, 18);
             this.checkEditSectionAMulti5MO.StyleController = this.layoutControl7;
             this.checkEditSectionAMulti5MO.TabIndex = 14;
             this.checkEditSectionAMulti5MO.CheckedChanged += new System.EventHandler(this.checkEditSectionAMulti5MO_CheckedChanged);
@@ -8550,7 +9734,7 @@
             this.checkEditSectionAMulti5MA.Properties.Appearance.Options.UseFont = true;
             this.checkEditSectionAMulti5MA.Properties.Appearance.Options.UseForeColor = true;
             this.checkEditSectionAMulti5MA.Properties.Caption = "";
-            this.checkEditSectionAMulti5MA.Size = new System.Drawing.Size(32, 18);
+            this.checkEditSectionAMulti5MA.Size = new System.Drawing.Size(21, 18);
             this.checkEditSectionAMulti5MA.StyleController = this.layoutControl7;
             this.checkEditSectionAMulti5MA.TabIndex = 13;
             this.checkEditSectionAMulti5MA.CheckedChanged += new System.EventHandler(this.checkEditSectionAMulti5MA_CheckedChanged);
@@ -8621,9 +9805,9 @@
             this.layoutControlItem91.Location = new System.Drawing.Point(0, 30);
             this.layoutControlItem91.Name = "layoutControlItem10";
             this.layoutControlItem91.Size = new System.Drawing.Size(148, 26);
-            this.layoutControlItem91.Text = "Selbstkosten MA";
+            this.layoutControlItem91.Text = "Gemeinkosten MA";
             this.layoutControlItem91.TextLocation = DevExpress.Utils.Locations.Right;
-            this.layoutControlItem91.TextSize = new System.Drawing.Size(109, 16);
+            this.layoutControlItem91.TextSize = new System.Drawing.Size(120, 16);
             // 
             // lciMulti5MA
             // 
@@ -8641,9 +9825,9 @@
             this.layoutControlItem94.Location = new System.Drawing.Point(0, 56);
             this.layoutControlItem94.Name = "layoutControlItem11";
             this.layoutControlItem94.Size = new System.Drawing.Size(148, 26);
-            this.layoutControlItem94.Text = "Selbstkosten MO";
+            this.layoutControlItem94.Text = "Gemeinkosten MO";
             this.layoutControlItem94.TextLocation = DevExpress.Utils.Locations.Right;
-            this.layoutControlItem94.TextSize = new System.Drawing.Size(109, 16);
+            this.layoutControlItem94.TextSize = new System.Drawing.Size(120, 16);
             // 
             // lciMulti5MO
             // 
@@ -8661,9 +9845,9 @@
             this.layoutControlItem95.Location = new System.Drawing.Point(0, 82);
             this.layoutControlItem95.Name = "layoutControlItem12";
             this.layoutControlItem95.Size = new System.Drawing.Size(148, 26);
-            this.layoutControlItem95.Text = "Selbstkosten MO";
+            this.layoutControlItem95.Text = "Verkaufsmargen MA";
             this.layoutControlItem95.TextLocation = DevExpress.Utils.Locations.Right;
-            this.layoutControlItem95.TextSize = new System.Drawing.Size(109, 16);
+            this.layoutControlItem95.TextSize = new System.Drawing.Size(120, 16);
             // 
             // lciMulti6MA
             // 
@@ -8681,9 +9865,9 @@
             this.layoutControlItem96.Location = new System.Drawing.Point(0, 108);
             this.layoutControlItem96.Name = "layoutControlItem13";
             this.layoutControlItem96.Size = new System.Drawing.Size(148, 26);
-            this.layoutControlItem96.Text = "Verkaufspreis MO";
+            this.layoutControlItem96.Text = "Verkaufsmargen MO";
             this.layoutControlItem96.TextLocation = DevExpress.Utils.Locations.Right;
-            this.layoutControlItem96.TextSize = new System.Drawing.Size(109, 16);
+            this.layoutControlItem96.TextSize = new System.Drawing.Size(120, 16);
             // 
             // lciMulti6MO
             // 
@@ -8767,7 +9951,7 @@
             this.layoutControlItem101.Size = new System.Drawing.Size(147, 22);
             this.layoutControlItem101.Text = "Position Menge";
             this.layoutControlItem101.TextLocation = DevExpress.Utils.Locations.Right;
-            this.layoutControlItem101.TextSize = new System.Drawing.Size(109, 16);
+            this.layoutControlItem101.TextSize = new System.Drawing.Size(120, 16);
             // 
             // layoutControlItem102
             // 
@@ -8777,7 +9961,7 @@
             this.layoutControlItem102.Size = new System.Drawing.Size(147, 22);
             this.layoutControlItem102.Text = "Material-KZ";
             this.layoutControlItem102.TextLocation = DevExpress.Utils.Locations.Right;
-            this.layoutControlItem102.TextSize = new System.Drawing.Size(109, 16);
+            this.layoutControlItem102.TextSize = new System.Drawing.Size(120, 16);
             // 
             // layoutControlItem103
             // 
@@ -8787,7 +9971,7 @@
             this.layoutControlItem103.Size = new System.Drawing.Size(147, 22);
             this.layoutControlItem103.Text = "Montage-KZ";
             this.layoutControlItem103.TextLocation = DevExpress.Utils.Locations.Right;
-            this.layoutControlItem103.TextSize = new System.Drawing.Size(109, 16);
+            this.layoutControlItem103.TextSize = new System.Drawing.Size(120, 16);
             // 
             // layoutControlItem104
             // 
@@ -8797,7 +9981,7 @@
             this.layoutControlItem104.Size = new System.Drawing.Size(147, 22);
             this.layoutControlItem104.Text = "Preis Ersatztext";
             this.layoutControlItem104.TextLocation = DevExpress.Utils.Locations.Right;
-            this.layoutControlItem104.TextSize = new System.Drawing.Size(109, 16);
+            this.layoutControlItem104.TextSize = new System.Drawing.Size(120, 16);
             // 
             // lciFabrikat
             // 
@@ -8816,7 +10000,7 @@
             this.layoutControlItem108.Name = "layoutControlItem31";
             this.layoutControlItem108.Size = new System.Drawing.Size(162, 26);
             this.layoutControlItem108.Text = "Fabrikat";
-            this.layoutControlItem108.TextSize = new System.Drawing.Size(109, 16);
+            this.layoutControlItem108.TextSize = new System.Drawing.Size(120, 16);
             // 
             // layoutControlItem109
             // 
@@ -8825,7 +10009,7 @@
             this.layoutControlItem109.Name = "layoutControlItem32";
             this.layoutControlItem109.Size = new System.Drawing.Size(162, 26);
             this.layoutControlItem109.Text = "Typ";
-            this.layoutControlItem109.TextSize = new System.Drawing.Size(109, 16);
+            this.layoutControlItem109.TextSize = new System.Drawing.Size(120, 16);
             // 
             // lciTyp
             // 
@@ -8854,7 +10038,7 @@
             this.layoutControlItem110.Name = "layoutControlItem33";
             this.layoutControlItem110.Size = new System.Drawing.Size(162, 26);
             this.layoutControlItem110.Text = "Lieferant MA";
-            this.layoutControlItem110.TextSize = new System.Drawing.Size(109, 16);
+            this.layoutControlItem110.TextSize = new System.Drawing.Size(120, 16);
             // 
             // layoutControlItem111
             // 
@@ -8863,7 +10047,7 @@
             this.layoutControlItem111.Name = "layoutControlItem34";
             this.layoutControlItem111.Size = new System.Drawing.Size(162, 26);
             this.layoutControlItem111.Text = "Nachtragsnummer";
-            this.layoutControlItem111.TextSize = new System.Drawing.Size(109, 16);
+            this.layoutControlItem111.TextSize = new System.Drawing.Size(120, 16);
             // 
             // lciNachtragsnummer
             // 
@@ -8893,7 +10077,7 @@
             this.layoutControlItem100.Name = "layoutControlItem17";
             this.layoutControlItem100.Size = new System.Drawing.Size(162, 78);
             this.layoutControlItem100.Text = "LV Position KZ";
-            this.layoutControlItem100.TextSize = new System.Drawing.Size(109, 16);
+            this.layoutControlItem100.TextSize = new System.Drawing.Size(120, 16);
             this.layoutControlItem100.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
             // 
             // emptySpaceItem35
@@ -8962,7 +10146,7 @@
             this.layoutControlItem105.Size = new System.Drawing.Size(147, 94);
             this.layoutControlItem105.Text = "WG/WA/WI";
             this.layoutControlItem105.TextLocation = DevExpress.Utils.Locations.Right;
-            this.layoutControlItem105.TextSize = new System.Drawing.Size(109, 16);
+            this.layoutControlItem105.TextSize = new System.Drawing.Size(120, 16);
             // 
             // lciWarenart
             // 
@@ -9107,7 +10291,7 @@
             this.tbMulti5.Controls.Add(this.layoutControl5);
             this.tbMulti5.Name = "tbMulti5";
             this.tbMulti5.Size = new System.Drawing.Size(1711, 615);
-            this.tbMulti5.Text = "Selbstkosten";
+            this.tbMulti5.Text = "Gemeinkosten";
             // 
             // layoutControl5
             // 
@@ -9476,7 +10660,7 @@
             this.tbMulti6.Controls.Add(this.layoutControl8);
             this.tbMulti6.Name = "tbMulti6";
             this.tbMulti6.Size = new System.Drawing.Size(1711, 615);
-            this.tbMulti6.Text = "Verkaufskosten";
+            this.tbMulti6.Text = "Verkaufsmargen";
             // 
             // layoutControl8
             // 
@@ -9921,7 +11105,7 @@
             this.tbOmlage.Controls.Add(this.layoutControl9);
             this.tbOmlage.Name = "tbOmlage";
             this.tbOmlage.Size = new System.Drawing.Size(1711, 615);
-            this.tbOmlage.Text = "Umlage";
+            this.tbOmlage.Text = "Kostenumlagen";
             // 
             // layoutControl9
             // 
@@ -9965,27 +11149,27 @@
             // 
             // txtUmlageValue
             // 
-            this.txtUmlageValue.Location = new System.Drawing.Point(732, 344);
+            this.txtUmlageValue.Location = new System.Drawing.Point(677, 344);
             this.txtUmlageValue.Name = "txtUmlageValue";
             this.txtUmlageValue.Properties.Mask.EditMask = "n2";
             this.txtUmlageValue.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtUmlageValue.Properties.Mask.ShowPlaceHolders = false;
             this.txtUmlageValue.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtUmlageValue.Properties.ReadOnly = true;
-            this.txtUmlageValue.Size = new System.Drawing.Size(101, 22);
+            this.txtUmlageValue.Size = new System.Drawing.Size(156, 22);
             this.txtUmlageValue.StyleController = this.layoutControl9;
             this.txtUmlageValue.TabIndex = 12;
             // 
             // txtUmlageFactor
             // 
-            this.txtUmlageFactor.Location = new System.Drawing.Point(732, 370);
+            this.txtUmlageFactor.Location = new System.Drawing.Point(677, 370);
             this.txtUmlageFactor.Name = "txtUmlageFactor";
             this.txtUmlageFactor.Properties.Mask.EditMask = "n3";
             this.txtUmlageFactor.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtUmlageFactor.Properties.Mask.ShowPlaceHolders = false;
             this.txtUmlageFactor.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtUmlageFactor.Properties.ReadOnly = true;
-            this.txtUmlageFactor.Size = new System.Drawing.Size(101, 22);
+            this.txtUmlageFactor.Size = new System.Drawing.Size(156, 22);
             this.txtUmlageFactor.StyleController = this.layoutControl9;
             this.txtUmlageFactor.TabIndex = 11;
             // 
@@ -10112,36 +11296,27 @@
             // layoutControlItem135
             // 
             this.layoutControlItem135.Control = this.txtUmlageFactor;
-            this.layoutControlItem135.Location = new System.Drawing.Point(632, 358);
-            this.layoutControlItem135.MaxSize = new System.Drawing.Size(193, 26);
-            this.layoutControlItem135.MinSize = new System.Drawing.Size(193, 26);
+            this.layoutControlItem135.Location = new System.Drawing.Point(532, 358);
             this.layoutControlItem135.Name = "layoutControlItem135";
-            this.layoutControlItem135.Size = new System.Drawing.Size(193, 26);
-            this.layoutControlItem135.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem135.Text = "Umlage Factor";
-            this.layoutControlItem135.TextSize = new System.Drawing.Size(85, 16);
+            this.layoutControlItem135.Size = new System.Drawing.Size(293, 26);
+            this.layoutControlItem135.Text = "Kostenumlagen Factor";
+            this.layoutControlItem135.TextSize = new System.Drawing.Size(130, 16);
             // 
             // layoutControlItem136
             // 
             this.layoutControlItem136.Control = this.txtUmlageValue;
-            this.layoutControlItem136.Location = new System.Drawing.Point(632, 332);
-            this.layoutControlItem136.MaxSize = new System.Drawing.Size(193, 26);
-            this.layoutControlItem136.MinSize = new System.Drawing.Size(193, 26);
+            this.layoutControlItem136.Location = new System.Drawing.Point(532, 332);
             this.layoutControlItem136.Name = "layoutControlItem136";
-            this.layoutControlItem136.Size = new System.Drawing.Size(193, 26);
-            this.layoutControlItem136.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem136.Text = "Umlage Value";
-            this.layoutControlItem136.TextSize = new System.Drawing.Size(85, 16);
+            this.layoutControlItem136.Size = new System.Drawing.Size(293, 26);
+            this.layoutControlItem136.Text = "Kostenumlagen Value";
+            this.layoutControlItem136.TextSize = new System.Drawing.Size(130, 16);
             // 
             // emptySpaceItem40
             // 
             this.emptySpaceItem40.AllowHotTrack = false;
             this.emptySpaceItem40.Location = new System.Drawing.Point(0, 332);
-            this.emptySpaceItem40.MaxSize = new System.Drawing.Size(632, 26);
-            this.emptySpaceItem40.MinSize = new System.Drawing.Size(632, 26);
             this.emptySpaceItem40.Name = "emptySpaceItem40";
-            this.emptySpaceItem40.Size = new System.Drawing.Size(632, 26);
-            this.emptySpaceItem40.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.emptySpaceItem40.Size = new System.Drawing.Size(532, 26);
             this.emptySpaceItem40.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem50
@@ -10149,7 +11324,7 @@
             this.emptySpaceItem50.AllowHotTrack = false;
             this.emptySpaceItem50.Location = new System.Drawing.Point(0, 358);
             this.emptySpaceItem50.Name = "emptySpaceItem50";
-            this.emptySpaceItem50.Size = new System.Drawing.Size(632, 26);
+            this.emptySpaceItem50.Size = new System.Drawing.Size(532, 26);
             this.emptySpaceItem50.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem262
@@ -11401,7 +12576,7 @@
             this.tbSupplierProposal.Controls.Add(this.layoutControl14);
             this.tbSupplierProposal.Name = "tbSupplierProposal";
             this.tbSupplierProposal.Size = new System.Drawing.Size(1711, 615);
-            this.tbSupplierProposal.Text = "Preisanfrage Starten";
+            this.tbSupplierProposal.Text = "Angebotsanfrage Lieferanten";
             // 
             // layoutControl14
             // 
@@ -11424,7 +12599,6 @@
             this.layoutControl14.Controls.Add(this.gcProposedDetails);
             this.layoutControl14.Controls.Add(this.gcDeletedDetails);
             this.layoutControl14.Controls.Add(this.gcLVDetailsforSupplier);
-            this.layoutControl14.Controls.Add(this.cmbLVSectionProposal);
             this.layoutControl14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl14.HiddenItems.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem160});
@@ -11449,10 +12623,10 @@
             // 
             this.chkSupplierLists.CheckOnClick = true;
             this.chkSupplierLists.Cursor = System.Windows.Forms.Cursors.Default;
-            this.chkSupplierLists.Location = new System.Drawing.Point(1066, 48);
+            this.chkSupplierLists.Location = new System.Drawing.Point(1066, 22);
             this.chkSupplierLists.MultiColumn = true;
             this.chkSupplierLists.Name = "chkSupplierLists";
-            this.chkSupplierLists.Size = new System.Drawing.Size(642, 79);
+            this.chkSupplierLists.Size = new System.Drawing.Size(642, 105);
             this.chkSupplierLists.StyleController = this.layoutControl14;
             this.chkSupplierLists.TabIndex = 25;
             this.chkSupplierLists.ItemChecking += new DevExpress.XtraEditors.Controls.ItemCheckingEventHandler(this.chkSupplierLists_ItemChecking);
@@ -11835,23 +13009,6 @@
             this.gridColumnPositionsStatus.FieldName = "PositionsStatus";
             this.gridColumnPositionsStatus.Name = "gridColumnPositionsStatus";
             // 
-            // cmbLVSectionProposal
-            // 
-            this.cmbLVSectionProposal.Location = new System.Drawing.Point(69, 3);
-            this.cmbLVSectionProposal.Name = "cmbLVSectionProposal";
-            this.cmbLVSectionProposal.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbLVSectionProposal.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("LVSectionID", "LVSectionID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("LVSectionName", "LV Section")});
-            this.cmbLVSectionProposal.Properties.NullText = "";
-            this.cmbLVSectionProposal.Properties.PopupSizeable = false;
-            this.cmbLVSectionProposal.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.cmbLVSectionProposal.Size = new System.Drawing.Size(388, 22);
-            this.cmbLVSectionProposal.StyleController = this.layoutControl14;
-            this.cmbLVSectionProposal.TabIndex = 29;
-            this.cmbLVSectionProposal.Closed += new DevExpress.XtraEditors.Controls.ClosedEventHandler(this.cmbLVSectionProposal_Closed);
-            // 
             // layoutControlItem160
             // 
             this.layoutControlItem160.Control = this.labelControl9;
@@ -11870,43 +13027,21 @@
             this.layoutControlGroup23.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup23.GroupBordersVisible = false;
             this.layoutControlGroup23.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.emptySpaceItem47,
-            this.layoutControlItem157,
             this.layoutControlItem195,
             this.layoutControlItem163,
             this.layoutControlItem162,
             this.layoutControlItem155,
-            this.layoutControlItem156,
-            this.emptySpaceItem137});
+            this.layoutControlItem156});
             this.layoutControlGroup23.Name = "Root";
             this.layoutControlGroup23.Padding = new DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1);
             this.layoutControlGroup23.Size = new System.Drawing.Size(1711, 615);
             // 
-            // emptySpaceItem47
-            // 
-            this.emptySpaceItem47.AllowHotTrack = false;
-            this.emptySpaceItem47.Location = new System.Drawing.Point(1063, 0);
-            this.emptySpaceItem47.Name = "emptySpaceItem47";
-            this.emptySpaceItem47.Size = new System.Drawing.Size(646, 26);
-            this.emptySpaceItem47.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // layoutControlItem157
-            // 
-            this.layoutControlItem157.Control = this.cmbLVSectionProposal;
-            this.layoutControlItem157.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem157.Name = "layoutControlItem157";
-            this.layoutControlItem157.Size = new System.Drawing.Size(458, 26);
-            this.layoutControlItem157.Text = "LV Sektion";
-            this.layoutControlItem157.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem157.TextSize = new System.Drawing.Size(61, 16);
-            this.layoutControlItem157.TextToControlDistance = 5;
-            // 
             // layoutControlItem195
             // 
             this.layoutControlItem195.Control = this.gcProposedSupplier;
-            this.layoutControlItem195.Location = new System.Drawing.Point(0, 26);
+            this.layoutControlItem195.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem195.Name = "layoutControlItem195";
-            this.layoutControlItem195.Size = new System.Drawing.Size(1063, 318);
+            this.layoutControlItem195.Size = new System.Drawing.Size(1063, 344);
             this.layoutControlItem195.Text = "Bitte wählen Sie eine Zeile aus, um Lieferanten und Positionen zu sehen";
             this.layoutControlItem195.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem195.TextSize = new System.Drawing.Size(408, 16);
@@ -11946,27 +13081,19 @@
             // layoutControlItem156
             // 
             this.layoutControlItem156.Control = this.chkSupplierLists;
-            this.layoutControlItem156.Location = new System.Drawing.Point(1063, 26);
+            this.layoutControlItem156.Location = new System.Drawing.Point(1063, 0);
             this.layoutControlItem156.Name = "layoutControlItem156";
-            this.layoutControlItem156.Size = new System.Drawing.Size(646, 102);
+            this.layoutControlItem156.Size = new System.Drawing.Size(646, 128);
             this.layoutControlItem156.Text = "Lieferantenauswahl für Preisanfrage (bis zu 8)";
             this.layoutControlItem156.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem156.TextSize = new System.Drawing.Size(408, 16);
-            // 
-            // emptySpaceItem137
-            // 
-            this.emptySpaceItem137.AllowHotTrack = false;
-            this.emptySpaceItem137.Location = new System.Drawing.Point(458, 0);
-            this.emptySpaceItem137.Name = "emptySpaceItem137";
-            this.emptySpaceItem137.Size = new System.Drawing.Size(605, 26);
-            this.emptySpaceItem137.TextSize = new System.Drawing.Size(0, 0);
             // 
             // tbUpdateSupplier
             // 
             this.tbUpdateSupplier.Controls.Add(this.layoutControl15);
             this.tbUpdateSupplier.Name = "tbUpdateSupplier";
             this.tbUpdateSupplier.Size = new System.Drawing.Size(1711, 615);
-            this.tbUpdateSupplier.Text = "Preisanfrage Erfassung";
+            this.tbUpdateSupplier.Text = "Angebotsanfrage Datenerfassung";
             // 
             // layoutControl15
             // 
@@ -14342,1542 +15469,10 @@
             this.ProposalName.Visible = true;
             this.ProposalName.VisibleIndex = 0;
             // 
-            // ribbonControl1
-            // 
-            this.ribbonControl1.AutoSaveLayoutToXml = true;
-            this.ribbonControl1.ExpandCollapseItem.Id = 0;
-            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl1.ExpandCollapseItem,
-            this.dbtnPriceComp,
-            this.btnArtSettings,
-            this.btnFormBlattArt,
-            this.btnProjectArt,
-            this.btnSaveProject,
-            this.btnAngebotCommentary,
-            this.btnCaluclatorCommentary,
-            this.btnDataTransfer,
-            this.btnAddDisc,
-            this.btnDeleteDisc,
-            this.btnNew,
-            this.btnSaveLVDetails,
-            this.btnCancel,
-            this.chkCreateNew,
-            this.btnExportExcel,
-            this.btnAddLVSection,
-            this.btnPrevious,
-            this.btnNext,
-            this.btnLongDescription,
-            this.btnSaveActionA,
-            this.btnSavesectionB,
-            this.btnApply,
-            this.btnDocuwareLink,
-            this.btnAddAccessories,
-            this.ChkManualMontageentry,
-            this.btnValiditydates,
-            this.btnProjRefresh,
-            this.btnProjectExport,
-            this.btnProjectImport,
-            this.btnMulti5LoadArticles,
-            this.btnMulti5UpdateSelbekosten,
-            this.btnMulti6LoadArticles,
-            this.btnMulti6UpdateSelbekosten,
-            this.btnUmlageSave,
-            this.btnAddedCost,
-            this.btnUmlageExport,
-            this.btnDelSave,
-            this.barEditItem5,
-            this.btnInvoiceSave,
-            this.btnInvoiceView,
-            this.barButtonItem56,
-            this.btnSaveSupplierProposal,
-            this.btnSubmit,
-            this.btnExportProposalPositions,
-            this.bnSaveTemparary1,
-            this.rgProposalViews,
-            this.rgFilter,
-            this.rgDropMode1,
-            this.barSubItem1,
-            this.btnAngebotReport,
-            this.btnQuerCalcV1,
-            this.btnQuerCalcV2,
-            this.btnFormBlatt,
-            this.btnBreakdownReport,
-            this.btnConsolidatedBlatt,
-            this.btnDeliveryNotes,
-            this.barSubItem2,
-            this.btnTitleBlattV011,
-            this.btnTitleBlattV014,
-            this.btnTitleBlattV013,
-            this.btnTitleBlattDelivery,
-            this.btnTitleBlattInvoice,
-            this.btnTitleBlattV012,
-            this.btnRefreshTreeView,
-            this.cmbSelectTreelistColumnsItem,
-            this.btnModify});
-            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 91;
-            this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.rpProjectMetaData,
-            this.rpPosition,
-            this.rpBulkProcess,
-            this.rpCalculations,
-            this.rpDelInv,
-            this.rpProposal,
-            this.rpGAEB,
-            this.rpReports,
-            this.ribbonPage1});
-            this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.ChkLVCreateNew,
-            this.cmbLVSelectTreeListColumns,
-            this.cmbCostSelectColumns,
-            this.chkCostMontageEntry,
-            this.chkDelActiveDelivery,
-            this.repositoryItemRadioGroup1,
-            this.repositoryItemRadioGroup2,
-            this.rpLVDropMode,
-            this.repositoryItemCheckEdit2,
-            this.chkSelectTreelistColumns});
-            this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(1717, 171);
-            this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
-            this.ribbonControl1.SelectedPageChanged += new System.EventHandler(this.ribbonControl1_SelectedPageChanged);
-            // 
-            // dbtnPriceComp
-            // 
-            this.dbtnPriceComp.Caption = "Preisvergleich";
-            this.dbtnPriceComp.Id = 1;
-            this.dbtnPriceComp.ImageOptions.Image = global::CalcPro.Properties.Resources.pricecompare_32x32;
-            this.dbtnPriceComp.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.dbtnPriceComp.ItemAppearance.Disabled.Options.UseFont = true;
-            this.dbtnPriceComp.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.dbtnPriceComp.ItemAppearance.Hovered.Options.UseFont = true;
-            this.dbtnPriceComp.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.dbtnPriceComp.ItemAppearance.Normal.Options.UseFont = true;
-            this.dbtnPriceComp.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.dbtnPriceComp.ItemAppearance.Pressed.Options.UseFont = true;
-            this.dbtnPriceComp.Name = "dbtnPriceComp";
-            this.dbtnPriceComp.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.dbtnPriceComp.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.dbtnPriceComp_ItemClick);
-            // 
-            // btnArtSettings
-            // 
-            this.btnArtSettings.Caption = "Felddefinition Artikelstamm";
-            this.btnArtSettings.Id = 14;
-            this.btnArtSettings.ImageOptions.Image = global::CalcPro.Properties.Resources.fieldinfor_32x32;
-            this.btnArtSettings.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnArtSettings.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnArtSettings.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnArtSettings.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnArtSettings.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnArtSettings.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnArtSettings.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnArtSettings.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnArtSettings.Name = "btnArtSettings";
-            this.btnArtSettings.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnArtSettings.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnArtSettings_ItemClick);
-            // 
-            // btnFormBlattArt
-            // 
-            this.btnFormBlattArt.Caption = "Formblatt Artikel";
-            this.btnFormBlattArt.Id = 15;
-            this.btnFormBlattArt.ImageOptions.Image = global::CalcPro.Properties.Resources.formblattarticle_32x32;
-            this.btnFormBlattArt.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnFormBlattArt.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnFormBlattArt.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnFormBlattArt.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnFormBlattArt.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnFormBlattArt.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnFormBlattArt.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnFormBlattArt.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnFormBlattArt.Name = "btnFormBlattArt";
-            this.btnFormBlattArt.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnFormBlattArt.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnFormBlattArt_ItemClick);
-            // 
-            // btnProjectArt
-            // 
-            this.btnProjectArt.Caption = "Projekt Artikel";
-            this.btnProjectArt.Id = 16;
-            this.btnProjectArt.ImageOptions.Image = global::CalcPro.Properties.Resources.projectblatt_32x32;
-            this.btnProjectArt.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjectArt.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnProjectArt.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjectArt.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnProjectArt.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjectArt.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnProjectArt.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjectArt.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnProjectArt.Name = "btnProjectArt";
-            this.btnProjectArt.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnProjectArt.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProjectArt_ItemClick);
-            // 
-            // btnSaveProject
-            // 
-            this.btnSaveProject.Caption = "Speichern Projekt";
-            this.btnSaveProject.Id = 18;
-            this.btnSaveProject.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x32;
-            this.btnSaveProject.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveProject.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnSaveProject.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveProject.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnSaveProject.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveProject.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnSaveProject.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveProject.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnSaveProject.Name = "btnSaveProject";
-            this.btnSaveProject.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnSaveProject.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSaveProject_ItemClick);
-            // 
-            // btnAngebotCommentary
-            // 
-            this.btnAngebotCommentary.Caption = "Schlussparagraph Angebot";
-            this.btnAngebotCommentary.Id = 19;
-            this.btnAngebotCommentary.ImageOptions.Image = global::CalcPro.Properties.Resources.commentarycalc_32x32;
-            this.btnAngebotCommentary.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAngebotCommentary.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnAngebotCommentary.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAngebotCommentary.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnAngebotCommentary.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAngebotCommentary.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnAngebotCommentary.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAngebotCommentary.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnAngebotCommentary.Name = "btnAngebotCommentary";
-            this.btnAngebotCommentary.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnAngebotCommentary.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAngebotCommentary_ItemClick);
-            // 
-            // btnCaluclatorCommentary
-            // 
-            this.btnCaluclatorCommentary.Caption = "Kommentar Kalkulator";
-            this.btnCaluclatorCommentary.Id = 20;
-            this.btnCaluclatorCommentary.ImageOptions.Image = global::CalcPro.Properties.Resources.paragraphcomment_32x32;
-            this.btnCaluclatorCommentary.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnCaluclatorCommentary.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnCaluclatorCommentary.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnCaluclatorCommentary.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnCaluclatorCommentary.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnCaluclatorCommentary.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnCaluclatorCommentary.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnCaluclatorCommentary.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnCaluclatorCommentary.Name = "btnCaluclatorCommentary";
-            this.btnCaluclatorCommentary.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnCaluclatorCommentary.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCaluclatorCommentary_ItemClick);
-            // 
-            // btnDataTransfer
-            // 
-            this.btnDataTransfer.Caption = "Daten ins OTTO Projektcockpit laden";
-            this.btnDataTransfer.Id = 21;
-            this.btnDataTransfer.ImageOptions.Image = global::CalcPro.Properties.Resources.transfer_32x32;
-            this.btnDataTransfer.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDataTransfer.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnDataTransfer.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDataTransfer.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnDataTransfer.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDataTransfer.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnDataTransfer.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDataTransfer.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnDataTransfer.Name = "btnDataTransfer";
-            this.btnDataTransfer.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnDataTransfer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDataTransfer_ItemClick);
-            // 
-            // btnAddDisc
-            // 
-            this.btnAddDisc.Caption = "Hinzufügen Discount";
-            this.btnAddDisc.Id = 22;
-            this.btnAddDisc.ImageOptions.Image = global::CalcPro.Properties.Resources.percentadd_32x32;
-            this.btnAddDisc.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddDisc.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnAddDisc.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddDisc.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnAddDisc.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddDisc.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnAddDisc.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddDisc.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnAddDisc.Name = "btnAddDisc";
-            this.btnAddDisc.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnAddDisc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAddDisc_ItemClick);
-            // 
-            // btnDeleteDisc
-            // 
-            this.btnDeleteDisc.Caption = "Löschen Discount";
-            this.btnDeleteDisc.Id = 23;
-            this.btnDeleteDisc.ImageOptions.Image = global::CalcPro.Properties.Resources.percentdelete_32x32;
-            this.btnDeleteDisc.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDeleteDisc.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnDeleteDisc.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDeleteDisc.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnDeleteDisc.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDeleteDisc.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnDeleteDisc.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDeleteDisc.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnDeleteDisc.Name = "btnDeleteDisc";
-            this.btnDeleteDisc.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnDeleteDisc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDeleteDisc_ItemClick);
-            // 
-            // btnNew
-            // 
-            this.btnNew.Caption = "Neu";
-            this.btnNew.Id = 24;
-            this.btnNew.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnNew.ImageOptions.SvgImage")));
-            this.btnNew.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnNew.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnNew.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnNew.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnNew.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnNew.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnNew.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnNew.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnNew.Name = "btnNew";
-            this.btnNew.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVNew_ItemClick);
-            // 
-            // btnSaveLVDetails
-            // 
-            this.btnSaveLVDetails.Caption = "Speichern";
-            this.btnSaveLVDetails.Id = 25;
-            this.btnSaveLVDetails.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSaveLVDetails.ImageOptions.SvgImage")));
-            this.btnSaveLVDetails.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveLVDetails.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnSaveLVDetails.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveLVDetails.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnSaveLVDetails.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveLVDetails.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnSaveLVDetails.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveLVDetails.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnSaveLVDetails.Name = "btnSaveLVDetails";
-            this.btnSaveLVDetails.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVSave_ItemClick);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Caption = "Abbrechen";
-            this.btnCancel.Id = 26;
-            this.btnCancel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCancel.ImageOptions.SvgImage")));
-            this.btnCancel.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnCancel.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnCancel.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnCancel.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnCancel.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnCancel.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnCancel.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnCancel.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVCancel_ItemClick);
-            // 
-            // chkCreateNew
-            // 
-            this.chkCreateNew.Caption = "Neu Anlegen";
-            this.chkCreateNew.Edit = this.ChkLVCreateNew;
-            this.chkCreateNew.Id = 27;
-            this.chkCreateNew.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkCreateNew.ItemAppearance.Disabled.Options.UseFont = true;
-            this.chkCreateNew.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkCreateNew.ItemAppearance.Hovered.Options.UseFont = true;
-            this.chkCreateNew.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkCreateNew.ItemAppearance.Normal.Options.UseFont = true;
-            this.chkCreateNew.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkCreateNew.ItemAppearance.Pressed.Options.UseFont = true;
-            this.chkCreateNew.Name = "chkCreateNew";
-            this.chkCreateNew.EditValueChanged += new System.EventHandler(this.chkCreateNewBarItem_EditValueChanged);
-            // 
-            // ChkLVCreateNew
-            // 
-            this.ChkLVCreateNew.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.ChkLVCreateNew.Appearance.Options.UseFont = true;
-            this.ChkLVCreateNew.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.ChkLVCreateNew.AppearanceDisabled.Options.UseFont = true;
-            this.ChkLVCreateNew.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.ChkLVCreateNew.AppearanceFocused.Options.UseFont = true;
-            this.ChkLVCreateNew.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.ChkLVCreateNew.AppearanceReadOnly.Options.UseFont = true;
-            this.ChkLVCreateNew.AutoHeight = false;
-            this.ChkLVCreateNew.Name = "ChkLVCreateNew";
-            // 
-            // btnExportExcel
-            // 
-            this.btnExportExcel.Caption = "LV Angaben exportieren";
-            this.btnExportExcel.Id = 29;
-            this.btnExportExcel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnExportExcel.ImageOptions.SvgImage")));
-            this.btnExportExcel.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnExportExcel.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnExportExcel.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnExportExcel.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnExportExcel.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnExportExcel.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnExportExcel.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnExportExcel.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnExportExcel.Name = "btnExportExcel";
-            this.btnExportExcel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVExport_ItemClick);
-            // 
-            // btnAddLVSection
-            // 
-            this.btnAddLVSection.Caption = "Add LV Section";
-            this.btnAddLVSection.Id = 30;
-            this.btnAddLVSection.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAddLVSection.ImageOptions.SvgImage")));
-            this.btnAddLVSection.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddLVSection.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnAddLVSection.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddLVSection.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnAddLVSection.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddLVSection.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnAddLVSection.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddLVSection.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnAddLVSection.Name = "btnAddLVSection";
-            this.btnAddLVSection.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVAddLVSec_ItemClick);
-            // 
-            // btnPrevious
-            // 
-            this.btnPrevious.Caption = "Previous";
-            this.btnPrevious.Id = 31;
-            this.btnPrevious.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnPrevious.ImageOptions.SvgImage")));
-            this.btnPrevious.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnPrevious.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnPrevious.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnPrevious.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnPrevious.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnPrevious.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnPrevious.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnPrevious.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVPrevious_ItemClick);
-            // 
-            // btnNext
-            // 
-            this.btnNext.Caption = "Next";
-            this.btnNext.Id = 32;
-            this.btnNext.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnNext.ImageOptions.SvgImage")));
-            this.btnNext.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnNext.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnNext.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnNext.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnNext.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnNext.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnNext.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnNext.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnNext.Name = "btnNext";
-            this.btnNext.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVNext_ItemClick);
-            // 
-            // btnLongDescription
-            // 
-            this.btnLongDescription.Caption = "Bearbeiten";
-            this.btnLongDescription.Id = 33;
-            this.btnLongDescription.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnLongDescription.ImageOptions.SvgImage")));
-            this.btnLongDescription.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnLongDescription.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnLongDescription.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnLongDescription.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnLongDescription.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnLongDescription.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnLongDescription.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnLongDescription.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnLongDescription.Name = "btnLongDescription";
-            this.btnLongDescription.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLVLang_ItemClick);
-            // 
-            // btnSaveActionA
-            // 
-            this.btnSaveActionA.Caption = "Save Section A";
-            this.btnSaveActionA.Id = 34;
-            this.btnSaveActionA.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSaveActionA.ImageOptions.SvgImage")));
-            this.btnSaveActionA.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveActionA.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnSaveActionA.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveActionA.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnSaveActionA.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveActionA.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnSaveActionA.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveActionA.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnSaveActionA.Name = "btnSaveActionA";
-            this.btnSaveActionA.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBulkSaveA_ItemClick);
-            // 
-            // btnSavesectionB
-            // 
-            this.btnSavesectionB.Caption = "Save Section B";
-            this.btnSavesectionB.Id = 35;
-            this.btnSavesectionB.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSavesectionB.ImageOptions.SvgImage")));
-            this.btnSavesectionB.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSavesectionB.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnSavesectionB.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSavesectionB.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnSavesectionB.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSavesectionB.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnSavesectionB.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSavesectionB.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnSavesectionB.Name = "btnSavesectionB";
-            this.btnSavesectionB.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBulkSaveB_ItemClick);
-            // 
-            // btnApply
-            // 
-            this.btnApply.Caption = "Anwenden Filter";
-            this.btnApply.Id = 36;
-            this.btnApply.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnApply.ImageOptions.SvgImage")));
-            this.btnApply.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnApply.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnApply.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnApply.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnApply.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnApply.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnApply.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnApply.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnApply.Name = "btnApply";
-            this.btnApply.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBulkApply_ItemClick);
-            // 
-            // btnDocuwareLink
-            // 
-            this.btnDocuwareLink.Caption = "Docuware Link";
-            this.btnDocuwareLink.Id = 44;
-            this.btnDocuwareLink.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDocuwareLink.ImageOptions.SvgImage")));
-            this.btnDocuwareLink.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDocuwareLink.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnDocuwareLink.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDocuwareLink.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnDocuwareLink.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDocuwareLink.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnDocuwareLink.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDocuwareLink.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnDocuwareLink.Name = "btnDocuwareLink";
-            this.btnDocuwareLink.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCostDocuware_ItemClick);
-            // 
-            // btnAddAccessories
-            // 
-            this.btnAddAccessories.Caption = "Zubehör hinzufügen";
-            this.btnAddAccessories.Id = 45;
-            this.btnAddAccessories.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAddAccessories.ImageOptions.SvgImage")));
-            this.btnAddAccessories.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddAccessories.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnAddAccessories.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddAccessories.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnAddAccessories.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddAccessories.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnAddAccessories.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddAccessories.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnAddAccessories.Name = "btnAddAccessories";
-            this.btnAddAccessories.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCostAddAceess_ItemClick);
-            // 
-            // ChkManualMontageentry
-            // 
-            this.ChkManualMontageentry.Caption = "Direkte Erfassung Montagelistenpreis";
-            this.ChkManualMontageentry.Edit = this.chkCostMontageEntry;
-            this.ChkManualMontageentry.Id = 46;
-            this.ChkManualMontageentry.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.ChkManualMontageentry.ItemAppearance.Disabled.Options.UseFont = true;
-            this.ChkManualMontageentry.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.ChkManualMontageentry.ItemAppearance.Hovered.Options.UseFont = true;
-            this.ChkManualMontageentry.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.ChkManualMontageentry.ItemAppearance.Normal.Options.UseFont = true;
-            this.ChkManualMontageentry.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.ChkManualMontageentry.ItemAppearance.Pressed.Options.UseFont = true;
-            this.ChkManualMontageentry.Name = "ChkManualMontageentry";
-            this.ChkManualMontageentry.EditValueChanged += new System.EventHandler(this.chkCostMontageEntryItem_EditValueChanged);
-            // 
-            // chkCostMontageEntry
-            // 
-            this.chkCostMontageEntry.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkCostMontageEntry.Appearance.Options.UseFont = true;
-            this.chkCostMontageEntry.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkCostMontageEntry.AppearanceDisabled.Options.UseFont = true;
-            this.chkCostMontageEntry.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkCostMontageEntry.AppearanceFocused.Options.UseFont = true;
-            this.chkCostMontageEntry.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkCostMontageEntry.AppearanceReadOnly.Options.UseFont = true;
-            this.chkCostMontageEntry.AutoHeight = false;
-            this.chkCostMontageEntry.Name = "chkCostMontageEntry";
-            // 
-            // btnValiditydates
-            // 
-            this.btnValiditydates.Caption = "Gültigkeitsdatum";
-            this.btnValiditydates.Id = 47;
-            this.btnValiditydates.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnValiditydates.ImageOptions.SvgImage")));
-            this.btnValiditydates.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnValiditydates.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnValiditydates.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnValiditydates.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnValiditydates.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnValiditydates.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnValiditydates.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnValiditydates.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnValiditydates.Name = "btnValiditydates";
-            this.btnValiditydates.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCostValidityDate_ItemClick);
-            // 
-            // btnProjRefresh
-            // 
-            this.btnProjRefresh.Caption = "Refresh Project";
-            this.btnProjRefresh.Id = 48;
-            this.btnProjRefresh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnProjRefresh.ImageOptions.SvgImage")));
-            this.btnProjRefresh.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjRefresh.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnProjRefresh.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjRefresh.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnProjRefresh.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjRefresh.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnProjRefresh.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjRefresh.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnProjRefresh.Name = "btnProjRefresh";
-            this.btnProjRefresh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProjRefresh_ItemClick);
-            // 
-            // btnProjectExport
-            // 
-            this.btnProjectExport.Caption = "Export";
-            this.btnProjectExport.Id = 49;
-            this.btnProjectExport.ImageOptions.Image = global::CalcPro.Properties.Resources.export_32x32;
-            this.btnProjectExport.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjectExport.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnProjectExport.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjectExport.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnProjectExport.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjectExport.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnProjectExport.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjectExport.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnProjectExport.Name = "btnProjectExport";
-            this.btnProjectExport.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnProjectExport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProjectExport_ItemClick);
-            // 
-            // btnProjectImport
-            // 
-            this.btnProjectImport.Caption = "Import";
-            this.btnProjectImport.Id = 50;
-            this.btnProjectImport.ImageOptions.Image = global::CalcPro.Properties.Resources.import_32x32;
-            this.btnProjectImport.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjectImport.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnProjectImport.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjectImport.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnProjectImport.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjectImport.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnProjectImport.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnProjectImport.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnProjectImport.Name = "btnProjectImport";
-            this.btnProjectImport.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnProjectImport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProjectImport_ItemClick);
-            // 
-            // btnMulti5LoadArticles
-            // 
-            this.btnMulti5LoadArticles.Caption = "Laden Sie alle";
-            this.btnMulti5LoadArticles.Id = 51;
-            this.btnMulti5LoadArticles.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMulti5LoadArticles.ImageOptions.SvgImage")));
-            this.btnMulti5LoadArticles.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti5LoadArticles.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnMulti5LoadArticles.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti5LoadArticles.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnMulti5LoadArticles.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti5LoadArticles.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnMulti5LoadArticles.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti5LoadArticles.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnMulti5LoadArticles.Name = "btnMulti5LoadArticles";
-            this.btnMulti5LoadArticles.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSelbLoad_ItemClick);
-            // 
-            // btnMulti5UpdateSelbekosten
-            // 
-            this.btnMulti5UpdateSelbekosten.Caption = "Anwenden der Selbstkostenmultis";
-            this.btnMulti5UpdateSelbekosten.Id = 52;
-            this.btnMulti5UpdateSelbekosten.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMulti5UpdateSelbekosten.ImageOptions.SvgImage")));
-            this.btnMulti5UpdateSelbekosten.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti5UpdateSelbekosten.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnMulti5UpdateSelbekosten.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti5UpdateSelbekosten.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnMulti5UpdateSelbekosten.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti5UpdateSelbekosten.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnMulti5UpdateSelbekosten.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti5UpdateSelbekosten.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnMulti5UpdateSelbekosten.Name = "btnMulti5UpdateSelbekosten";
-            this.btnMulti5UpdateSelbekosten.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSelbSubmit_ItemClick);
-            // 
-            // btnMulti6LoadArticles
-            // 
-            this.btnMulti6LoadArticles.Caption = "Laden Sie alle";
-            this.btnMulti6LoadArticles.Id = 53;
-            this.btnMulti6LoadArticles.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMulti6LoadArticles.ImageOptions.SvgImage")));
-            this.btnMulti6LoadArticles.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti6LoadArticles.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnMulti6LoadArticles.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti6LoadArticles.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnMulti6LoadArticles.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti6LoadArticles.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnMulti6LoadArticles.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti6LoadArticles.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnMulti6LoadArticles.Name = "btnMulti6LoadArticles";
-            this.btnMulti6LoadArticles.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnVerkLoad_ItemClick);
-            // 
-            // btnMulti6UpdateSelbekosten
-            // 
-            this.btnMulti6UpdateSelbekosten.Caption = "Anwenden der Verkaufskostenmultis";
-            this.btnMulti6UpdateSelbekosten.Id = 54;
-            this.btnMulti6UpdateSelbekosten.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMulti6UpdateSelbekosten.ImageOptions.SvgImage")));
-            this.btnMulti6UpdateSelbekosten.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti6UpdateSelbekosten.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnMulti6UpdateSelbekosten.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti6UpdateSelbekosten.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnMulti6UpdateSelbekosten.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti6UpdateSelbekosten.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnMulti6UpdateSelbekosten.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnMulti6UpdateSelbekosten.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnMulti6UpdateSelbekosten.Name = "btnMulti6UpdateSelbekosten";
-            this.btnMulti6UpdateSelbekosten.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnVerkSubmit_ItemClick);
-            // 
-            // btnUmlageSave
-            // 
-            this.btnUmlageSave.Caption = "Speichern Und Aktualisieren";
-            this.btnUmlageSave.Id = 55;
-            this.btnUmlageSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnUmlageSave.ImageOptions.SvgImage")));
-            this.btnUmlageSave.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnUmlageSave.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnUmlageSave.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnUmlageSave.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnUmlageSave.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnUmlageSave.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnUmlageSave.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnUmlageSave.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnUmlageSave.Name = "btnUmlageSave";
-            this.btnUmlageSave.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUmlSave_ItemClick);
-            // 
-            // btnAddedCost
-            // 
-            this.btnAddedCost.Caption = "Ausführen der Kostenumlage";
-            this.btnAddedCost.Id = 56;
-            this.btnAddedCost.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAddedCost.ImageOptions.SvgImage")));
-            this.btnAddedCost.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddedCost.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnAddedCost.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddedCost.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnAddedCost.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddedCost.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnAddedCost.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnAddedCost.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnAddedCost.Name = "btnAddedCost";
-            this.btnAddedCost.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUmlSubmit_ItemClick);
-            // 
-            // btnUmlageExport
-            // 
-            this.btnUmlageExport.Caption = "Umlage exportieren";
-            this.btnUmlageExport.Id = 57;
-            this.btnUmlageExport.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnUmlageExport.ImageOptions.SvgImage")));
-            this.btnUmlageExport.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnUmlageExport.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnUmlageExport.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnUmlageExport.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnUmlageExport.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnUmlageExport.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnUmlageExport.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnUmlageExport.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnUmlageExport.Name = "btnUmlageExport";
-            this.btnUmlageExport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUmlExport_ItemClick);
-            // 
-            // btnDelSave
-            // 
-            this.btnDelSave.Caption = "Aufmass speichern";
-            this.btnDelSave.Id = 58;
-            this.btnDelSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDelSave.ImageOptions.SvgImage")));
-            this.btnDelSave.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDelSave.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnDelSave.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDelSave.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnDelSave.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDelSave.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnDelSave.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnDelSave.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnDelSave.Name = "btnDelSave";
-            // 
-            // barEditItem5
-            // 
-            this.barEditItem5.Caption = "Aktives Aufmass";
-            this.barEditItem5.Edit = this.chkDelActiveDelivery;
-            this.barEditItem5.Id = 59;
-            this.barEditItem5.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barEditItem5.ItemAppearance.Disabled.Options.UseFont = true;
-            this.barEditItem5.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barEditItem5.ItemAppearance.Hovered.Options.UseFont = true;
-            this.barEditItem5.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barEditItem5.ItemAppearance.Normal.Options.UseFont = true;
-            this.barEditItem5.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barEditItem5.ItemAppearance.Pressed.Options.UseFont = true;
-            this.barEditItem5.Name = "barEditItem5";
-            // 
-            // chkDelActiveDelivery
-            // 
-            this.chkDelActiveDelivery.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkDelActiveDelivery.Appearance.Options.UseFont = true;
-            this.chkDelActiveDelivery.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkDelActiveDelivery.AppearanceDisabled.Options.UseFont = true;
-            this.chkDelActiveDelivery.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkDelActiveDelivery.AppearanceFocused.Options.UseFont = true;
-            this.chkDelActiveDelivery.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkDelActiveDelivery.AppearanceReadOnly.Options.UseFont = true;
-            this.chkDelActiveDelivery.AutoHeight = false;
-            this.chkDelActiveDelivery.Name = "chkDelActiveDelivery";
-            // 
-            // btnInvoiceSave
-            // 
-            this.btnInvoiceSave.Caption = "Speichern";
-            this.btnInvoiceSave.Id = 60;
-            this.btnInvoiceSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnInvoiceSave.ImageOptions.SvgImage")));
-            this.btnInvoiceSave.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnInvoiceSave.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnInvoiceSave.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnInvoiceSave.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnInvoiceSave.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnInvoiceSave.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnInvoiceSave.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnInvoiceSave.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnInvoiceSave.Name = "btnInvoiceSave";
-            // 
-            // btnInvoiceView
-            // 
-            this.btnInvoiceView.Caption = "Rechnung erstellen";
-            this.btnInvoiceView.Id = 61;
-            this.btnInvoiceView.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnInvoiceView.ImageOptions.SvgImage")));
-            this.btnInvoiceView.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnInvoiceView.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnInvoiceView.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnInvoiceView.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnInvoiceView.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnInvoiceView.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnInvoiceView.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnInvoiceView.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnInvoiceView.Name = "btnInvoiceView";
-            // 
-            // barButtonItem56
-            // 
-            this.barButtonItem56.Caption = "Schlussrechnung";
-            this.barButtonItem56.Id = 62;
-            this.barButtonItem56.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem56.ImageOptions.SvgImage")));
-            this.barButtonItem56.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barButtonItem56.ItemAppearance.Disabled.Options.UseFont = true;
-            this.barButtonItem56.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barButtonItem56.ItemAppearance.Hovered.Options.UseFont = true;
-            this.barButtonItem56.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barButtonItem56.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem56.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barButtonItem56.ItemAppearance.Pressed.Options.UseFont = true;
-            this.barButtonItem56.Name = "barButtonItem56";
-            // 
-            // btnSaveSupplierProposal
-            // 
-            this.btnSaveSupplierProposal.Caption = "Speichern";
-            this.btnSaveSupplierProposal.Id = 63;
-            this.btnSaveSupplierProposal.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSaveSupplierProposal.ImageOptions.SvgImage")));
-            this.btnSaveSupplierProposal.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveSupplierProposal.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnSaveSupplierProposal.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveSupplierProposal.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnSaveSupplierProposal.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveSupplierProposal.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnSaveSupplierProposal.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSaveSupplierProposal.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnSaveSupplierProposal.Name = "btnSaveSupplierProposal";
-            this.btnSaveSupplierProposal.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem57_ItemClick);
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.Caption = "Übertrag der Daten";
-            this.btnSubmit.Id = 64;
-            this.btnSubmit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSubmit.ImageOptions.SvgImage")));
-            this.btnSubmit.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSubmit.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnSubmit.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSubmit.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnSubmit.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSubmit.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnSubmit.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnSubmit.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSaveUSP_ItemClick);
-            // 
-            // btnExportProposalPositions
-            // 
-            this.btnExportProposalPositions.Caption = "Preisvergleich exportieren";
-            this.btnExportProposalPositions.Id = 65;
-            this.btnExportProposalPositions.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnExportProposalPositions.ImageOptions.SvgImage")));
-            this.btnExportProposalPositions.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnExportProposalPositions.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnExportProposalPositions.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnExportProposalPositions.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnExportProposalPositions.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnExportProposalPositions.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnExportProposalPositions.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnExportProposalPositions.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnExportProposalPositions.Name = "btnExportProposalPositions";
-            this.btnExportProposalPositions.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnExportUSP_ItemClick);
-            // 
-            // bnSaveTemparary1
-            // 
-            this.bnSaveTemparary1.Caption = "Speichern der Angaben zu MULTI";
-            this.bnSaveTemparary1.Id = 66;
-            this.bnSaveTemparary1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bnSaveTemparary1.ImageOptions.SvgImage")));
-            this.bnSaveTemparary1.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.bnSaveTemparary1.ItemAppearance.Disabled.Options.UseFont = true;
-            this.bnSaveTemparary1.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.bnSaveTemparary1.ItemAppearance.Hovered.Options.UseFont = true;
-            this.bnSaveTemparary1.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.bnSaveTemparary1.ItemAppearance.Normal.Options.UseFont = true;
-            this.bnSaveTemparary1.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.bnSaveTemparary1.ItemAppearance.Pressed.Options.UseFont = true;
-            this.bnSaveTemparary1.Name = "bnSaveTemparary1";
-            this.bnSaveTemparary1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bnSaveTemparary1_ItemClick);
-            // 
-            // rgProposalViews
-            // 
-            this.rgProposalViews.Edit = this.repositoryItemRadioGroup1;
-            this.rgProposalViews.EditHeight = 100;
-            this.rgProposalViews.EditWidth = 500;
-            this.rgProposalViews.Id = 67;
-            this.rgProposalViews.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rgProposalViews.ItemAppearance.Disabled.Options.UseFont = true;
-            this.rgProposalViews.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rgProposalViews.ItemAppearance.Hovered.Options.UseFont = true;
-            this.rgProposalViews.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rgProposalViews.ItemAppearance.Normal.Options.UseFont = true;
-            this.rgProposalViews.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rgProposalViews.ItemAppearance.Pressed.Options.UseFont = true;
-            this.rgProposalViews.Name = "rgProposalViews";
-            this.rgProposalViews.EditValueChanged += new System.EventHandler(this.rgProposalViews_EditValueChanged);
-            // 
-            // repositoryItemRadioGroup1
-            // 
-            this.repositoryItemRadioGroup1.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.repositoryItemRadioGroup1.Appearance.Options.UseFont = true;
-            this.repositoryItemRadioGroup1.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.repositoryItemRadioGroup1.AppearanceDisabled.Options.UseFont = true;
-            this.repositoryItemRadioGroup1.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.repositoryItemRadioGroup1.AppearanceFocused.Options.UseFont = true;
-            this.repositoryItemRadioGroup1.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.repositoryItemRadioGroup1.AppearanceReadOnly.Options.UseFont = true;
-            this.repositoryItemRadioGroup1.Columns = 2;
-            this.repositoryItemRadioGroup1.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Listenpreis je Einheit"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Listenpreis je Einheit mit Multis"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Listenpreis für Gesamtmenge"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Listenpreis für Gesamtmenge mit Multis")});
-            this.repositoryItemRadioGroup1.ItemsLayout = DevExpress.XtraEditors.RadioGroupItemsLayout.Flow;
-            this.repositoryItemRadioGroup1.Name = "repositoryItemRadioGroup1";
-            // 
-            // rgFilter
-            // 
-            this.rgFilter.Edit = this.repositoryItemRadioGroup2;
-            this.rgFilter.EditHeight = 100;
-            this.rgFilter.EditWidth = 300;
-            this.rgFilter.Id = 69;
-            this.rgFilter.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rgFilter.ItemAppearance.Disabled.Options.UseFont = true;
-            this.rgFilter.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rgFilter.ItemAppearance.Hovered.Options.UseFont = true;
-            this.rgFilter.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rgFilter.ItemAppearance.Normal.Options.UseFont = true;
-            this.rgFilter.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rgFilter.ItemAppearance.Pressed.Options.UseFont = true;
-            this.rgFilter.Name = "rgFilter";
-            this.rgFilter.EditValueChanged += new System.EventHandler(this.rgFilter1_EditValueChanged);
-            // 
-            // repositoryItemRadioGroup2
-            // 
-            this.repositoryItemRadioGroup2.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.repositoryItemRadioGroup2.Appearance.Options.UseFont = true;
-            this.repositoryItemRadioGroup2.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.repositoryItemRadioGroup2.AppearanceDisabled.Options.UseFont = true;
-            this.repositoryItemRadioGroup2.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.repositoryItemRadioGroup2.AppearanceFocused.Options.UseFont = true;
-            this.repositoryItemRadioGroup2.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.repositoryItemRadioGroup2.AppearanceReadOnly.Options.UseFont = true;
-            this.repositoryItemRadioGroup2.Columns = 1;
-            this.repositoryItemRadioGroup2.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Ohne"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Update all positions"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Auswahl LV Positionen nach")});
-            this.repositoryItemRadioGroup2.Name = "repositoryItemRadioGroup2";
-            // 
-            // rgDropMode1
-            // 
-            this.rgDropMode1.Edit = this.rpLVDropMode;
-            this.rgDropMode1.EditHeight = 100;
-            this.rgDropMode1.EditWidth = 600;
-            this.rgDropMode1.Id = 70;
-            this.rgDropMode1.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rgDropMode1.ItemAppearance.Disabled.Options.UseFont = true;
-            this.rgDropMode1.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rgDropMode1.ItemAppearance.Hovered.Options.UseFont = true;
-            this.rgDropMode1.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rgDropMode1.ItemAppearance.Normal.Options.UseFont = true;
-            this.rgDropMode1.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rgDropMode1.ItemAppearance.Pressed.Options.UseFont = true;
-            this.rgDropMode1.Name = "rgDropMode1";
-            // 
-            // rpLVDropMode
-            // 
-            this.rpLVDropMode.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rpLVDropMode.Appearance.Options.UseFont = true;
-            this.rpLVDropMode.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rpLVDropMode.AppearanceDisabled.Options.UseFont = true;
-            this.rpLVDropMode.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rpLVDropMode.AppearanceFocused.Options.UseFont = true;
-            this.rpLVDropMode.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.rpLVDropMode.AppearanceReadOnly.Options.UseFont = true;
-            this.rpLVDropMode.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "An den Anfang des Positionsbereichs"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "An das Ende des Positionsbereichs"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Benutzerdefinierte Positionierung")});
-            this.rpLVDropMode.Name = "rpLVDropMode";
-            // 
-            // barSubItem1
-            // 
-            this.barSubItem1.Caption = "Reports";
-            this.barSubItem1.Id = 71;
-            this.barSubItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barSubItem1.ImageOptions.SvgImage")));
-            this.barSubItem1.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.ItemAppearance.Disabled.Options.UseFont = true;
-            this.barSubItem1.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.ItemAppearance.Hovered.Options.UseFont = true;
-            this.barSubItem1.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.ItemAppearance.Normal.Options.UseFont = true;
-            this.barSubItem1.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.ItemAppearance.Pressed.Options.UseFont = true;
-            this.barSubItem1.ItemInMenuAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.ItemInMenuAppearance.Disabled.Options.UseFont = true;
-            this.barSubItem1.ItemInMenuAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.ItemInMenuAppearance.Hovered.Options.UseFont = true;
-            this.barSubItem1.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.ItemInMenuAppearance.Normal.Options.UseFont = true;
-            this.barSubItem1.ItemInMenuAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.ItemInMenuAppearance.Pressed.Options.UseFont = true;
-            this.barSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnAngebotReport),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnQuerCalcV1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnQuerCalcV2),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnFormBlatt),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnBreakdownReport),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnConsolidatedBlatt),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnDeliveryNotes)});
-            this.barSubItem1.MenuAppearance.AppearanceMenu.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.MenuAppearance.AppearanceMenu.Disabled.Options.UseFont = true;
-            this.barSubItem1.MenuAppearance.AppearanceMenu.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.MenuAppearance.AppearanceMenu.Hovered.Options.UseFont = true;
-            this.barSubItem1.MenuAppearance.AppearanceMenu.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.MenuAppearance.AppearanceMenu.Normal.Options.UseFont = true;
-            this.barSubItem1.MenuAppearance.AppearanceMenu.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.MenuAppearance.AppearanceMenu.Pressed.Options.UseFont = true;
-            this.barSubItem1.MenuAppearance.HeaderItemAppearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.MenuAppearance.HeaderItemAppearance.Options.UseFont = true;
-            this.barSubItem1.MenuAppearance.MenuBar.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.MenuAppearance.MenuBar.Options.UseFont = true;
-            this.barSubItem1.MenuAppearance.MenuCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.MenuAppearance.MenuCaption.Options.UseFont = true;
-            this.barSubItem1.MenuAppearance.SideStrip.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.MenuAppearance.SideStrip.Options.UseFont = true;
-            this.barSubItem1.MenuAppearance.SideStripNonRecent.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem1.MenuAppearance.SideStripNonRecent.Options.UseFont = true;
-            this.barSubItem1.Name = "barSubItem1";
-            // 
-            // btnAngebotReport
-            // 
-            this.btnAngebotReport.Caption = "Angebot";
-            this.btnAngebotReport.Id = 73;
-            this.btnAngebotReport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAngebotReport.ImageOptions.Image")));
-            this.btnAngebotReport.Name = "btnAngebotReport";
-            this.btnAngebotReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAngebotReport_ItemClick);
-            // 
-            // btnQuerCalcV1
-            // 
-            this.btnQuerCalcV1.Caption = "QuerKalkulation V1";
-            this.btnQuerCalcV1.Id = 74;
-            this.btnQuerCalcV1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuerCalcV1.ImageOptions.Image")));
-            this.btnQuerCalcV1.Name = "btnQuerCalcV1";
-            this.btnQuerCalcV1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQuerCalcV1_ItemClick);
-            // 
-            // btnQuerCalcV2
-            // 
-            this.btnQuerCalcV2.Caption = "QuerKalkulation V2";
-            this.btnQuerCalcV2.Id = 75;
-            this.btnQuerCalcV2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuerCalcV2.ImageOptions.Image")));
-            this.btnQuerCalcV2.Name = "btnQuerCalcV2";
-            this.btnQuerCalcV2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQuerCalcV2_ItemClick);
-            // 
-            // btnFormBlatt
-            // 
-            this.btnFormBlatt.Caption = "Formblatt";
-            this.btnFormBlatt.Id = 76;
-            this.btnFormBlatt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFormBlatt.ImageOptions.Image")));
-            this.btnFormBlatt.Name = "btnFormBlatt";
-            this.btnFormBlatt.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnFormBlatt_ItemClick);
-            // 
-            // btnBreakdownReport
-            // 
-            this.btnBreakdownReport.Caption = "Einzelaufgliederung Beispiel";
-            this.btnBreakdownReport.Id = 77;
-            this.btnBreakdownReport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBreakdownReport.ImageOptions.Image")));
-            this.btnBreakdownReport.Name = "btnBreakdownReport";
-            this.btnBreakdownReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBreakdownReport_ItemClick);
-            // 
-            // btnConsolidatedBlatt
-            // 
-            this.btnConsolidatedBlatt.Caption = "Aufmasszusammenstellung";
-            this.btnConsolidatedBlatt.Id = 78;
-            this.btnConsolidatedBlatt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnConsolidatedBlatt.ImageOptions.Image")));
-            this.btnConsolidatedBlatt.Name = "btnConsolidatedBlatt";
-            this.btnConsolidatedBlatt.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnConsolidatedBlatt_ItemClick);
-            // 
-            // btnDeliveryNotes
-            // 
-            this.btnDeliveryNotes.Caption = "Aufmasse";
-            this.btnDeliveryNotes.Id = 79;
-            this.btnDeliveryNotes.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDeliveryNotes.ImageOptions.Image")));
-            this.btnDeliveryNotes.Name = "btnDeliveryNotes";
-            this.btnDeliveryNotes.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDeliveryNotes_ItemClick);
-            // 
-            // barSubItem2
-            // 
-            this.barSubItem2.Caption = "Title Blatt";
-            this.barSubItem2.Id = 80;
-            this.barSubItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barSubItem2.ImageOptions.SvgImage")));
-            this.barSubItem2.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.ItemAppearance.Disabled.Options.UseFont = true;
-            this.barSubItem2.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.ItemAppearance.Hovered.Options.UseFont = true;
-            this.barSubItem2.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.ItemAppearance.Normal.Options.UseFont = true;
-            this.barSubItem2.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.ItemAppearance.Pressed.Options.UseFont = true;
-            this.barSubItem2.ItemInMenuAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.ItemInMenuAppearance.Disabled.Options.UseFont = true;
-            this.barSubItem2.ItemInMenuAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.ItemInMenuAppearance.Hovered.Options.UseFont = true;
-            this.barSubItem2.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.ItemInMenuAppearance.Normal.Options.UseFont = true;
-            this.barSubItem2.ItemInMenuAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.ItemInMenuAppearance.Pressed.Options.UseFont = true;
-            this.barSubItem2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnTitleBlattV011),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnTitleBlattV012),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnTitleBlattV013),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnTitleBlattV014),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnTitleBlattDelivery),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnTitleBlattInvoice)});
-            this.barSubItem2.MenuAppearance.AppearanceMenu.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.MenuAppearance.AppearanceMenu.Disabled.Options.UseFont = true;
-            this.barSubItem2.MenuAppearance.AppearanceMenu.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.MenuAppearance.AppearanceMenu.Hovered.Options.UseFont = true;
-            this.barSubItem2.MenuAppearance.AppearanceMenu.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.MenuAppearance.AppearanceMenu.Normal.Options.UseFont = true;
-            this.barSubItem2.MenuAppearance.AppearanceMenu.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.MenuAppearance.AppearanceMenu.Pressed.Options.UseFont = true;
-            this.barSubItem2.MenuAppearance.HeaderItemAppearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.MenuAppearance.HeaderItemAppearance.Options.UseFont = true;
-            this.barSubItem2.MenuAppearance.MenuBar.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.MenuAppearance.MenuBar.Options.UseFont = true;
-            this.barSubItem2.MenuAppearance.MenuCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.MenuAppearance.MenuCaption.Options.UseFont = true;
-            this.barSubItem2.MenuAppearance.SideStrip.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.MenuAppearance.SideStrip.Options.UseFont = true;
-            this.barSubItem2.MenuAppearance.SideStripNonRecent.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.barSubItem2.MenuAppearance.SideStripNonRecent.Options.UseFont = true;
-            this.barSubItem2.Name = "barSubItem2";
-            // 
-            // btnTitleBlattV011
-            // 
-            this.btnTitleBlattV011.Caption = "Standardanschreiben Angebot V‐011";
-            this.btnTitleBlattV011.Id = 81;
-            this.btnTitleBlattV011.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTitleBlattV011.ImageOptions.Image")));
-            this.btnTitleBlattV011.Name = "btnTitleBlattV011";
-            this.btnTitleBlattV011.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTitleBlattV011_ItemClick);
-            // 
-            // btnTitleBlattV012
-            // 
-            this.btnTitleBlattV012.Caption = "Anhang / Schlussblatt V-012";
-            this.btnTitleBlattV012.Id = 86;
-            this.btnTitleBlattV012.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTitleBlattV012.ImageOptions.Image")));
-            this.btnTitleBlattV012.Name = "btnTitleBlattV012";
-            this.btnTitleBlattV012.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTitleBlattV012_ItemClick);
-            // 
-            // btnTitleBlattV013
-            // 
-            this.btnTitleBlattV013.Caption = "Angebot3 V-013";
-            this.btnTitleBlattV013.Id = 83;
-            this.btnTitleBlattV013.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTitleBlattV013.ImageOptions.Image")));
-            this.btnTitleBlattV013.Name = "btnTitleBlattV013";
-            this.btnTitleBlattV013.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTitleBlattV013_ItemClick);
-            // 
-            // btnTitleBlattV014
-            // 
-            this.btnTitleBlattV014.Caption = "Angebotsdeckblatt V‐014";
-            this.btnTitleBlattV014.Id = 82;
-            this.btnTitleBlattV014.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTitleBlattV014.ImageOptions.Image")));
-            this.btnTitleBlattV014.Name = "btnTitleBlattV014";
-            this.btnTitleBlattV014.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTitleBlattV014_ItemClick);
-            // 
-            // btnTitleBlattDelivery
-            // 
-            this.btnTitleBlattDelivery.Caption = "Titelblatt (Aufmass)";
-            this.btnTitleBlattDelivery.Id = 84;
-            this.btnTitleBlattDelivery.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTitleBlattDelivery.ImageOptions.Image")));
-            this.btnTitleBlattDelivery.Name = "btnTitleBlattDelivery";
-            this.btnTitleBlattDelivery.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTitleBlattDelivery_ItemClick);
-            // 
-            // btnTitleBlattInvoice
-            // 
-            this.btnTitleBlattInvoice.Caption = "Titelblatt (Rechnung)";
-            this.btnTitleBlattInvoice.Id = 85;
-            this.btnTitleBlattInvoice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTitleBlattInvoice.ImageOptions.Image")));
-            this.btnTitleBlattInvoice.Name = "btnTitleBlattInvoice";
-            this.btnTitleBlattInvoice.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTitleBlattInvoice_ItemClick);
-            // 
-            // btnRefreshTreeView
-            // 
-            this.btnRefreshTreeView.Caption = "Tabellenansicht aktualisieren";
-            this.btnRefreshTreeView.Id = 87;
-            this.btnRefreshTreeView.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnRefreshTreeView.ImageOptions.SvgImage")));
-            this.btnRefreshTreeView.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnRefreshTreeView.ItemAppearance.Disabled.Options.UseFont = true;
-            this.btnRefreshTreeView.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnRefreshTreeView.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnRefreshTreeView.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnRefreshTreeView.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnRefreshTreeView.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.btnRefreshTreeView.ItemAppearance.Pressed.Options.UseFont = true;
-            this.btnRefreshTreeView.Name = "btnRefreshTreeView";
-            this.btnRefreshTreeView.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRefershTabularView_ItemClick);
-            // 
-            // cmbSelectTreelistColumnsItem
-            // 
-            this.cmbSelectTreelistColumnsItem.Caption = "Auswahl";
-            this.cmbSelectTreelistColumnsItem.Edit = this.chkSelectTreelistColumns;
-            this.cmbSelectTreelistColumnsItem.EditWidth = 201;
-            this.cmbSelectTreelistColumnsItem.Id = 89;
-            this.cmbSelectTreelistColumnsItem.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.cmbSelectTreelistColumnsItem.ItemAppearance.Disabled.Options.UseFont = true;
-            this.cmbSelectTreelistColumnsItem.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.cmbSelectTreelistColumnsItem.ItemAppearance.Hovered.Options.UseFont = true;
-            this.cmbSelectTreelistColumnsItem.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.cmbSelectTreelistColumnsItem.ItemAppearance.Normal.Options.UseFont = true;
-            this.cmbSelectTreelistColumnsItem.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.cmbSelectTreelistColumnsItem.ItemAppearance.Pressed.Options.UseFont = true;
-            this.cmbSelectTreelistColumnsItem.Name = "cmbSelectTreelistColumnsItem";
-            this.cmbSelectTreelistColumnsItem.EditValueChanged += new System.EventHandler(this.cmbSelectTreelistColumnsItem_EditValueChanged);
-            // 
-            // chkSelectTreelistColumns
-            // 
-            this.chkSelectTreelistColumns.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkSelectTreelistColumns.Appearance.Options.UseFont = true;
-            this.chkSelectTreelistColumns.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkSelectTreelistColumns.AppearanceDisabled.Options.UseFont = true;
-            this.chkSelectTreelistColumns.AppearanceDropDown.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkSelectTreelistColumns.AppearanceDropDown.Options.UseFont = true;
-            this.chkSelectTreelistColumns.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkSelectTreelistColumns.AppearanceFocused.Options.UseFont = true;
-            this.chkSelectTreelistColumns.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.chkSelectTreelistColumns.AppearanceReadOnly.Options.UseFont = true;
-            this.chkSelectTreelistColumns.AutoHeight = false;
-            this.chkSelectTreelistColumns.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.chkSelectTreelistColumns.Items.AddRange(new DevExpress.XtraEditors.Controls.CheckedListBoxItem[] {
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem("MA Multies", "MA Multies"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem("MO Multies", "MO Multies"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem("Einkaufspreis", "Einkaufspreis"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem("Selbstkosten", "Selbstkosten"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem("Verkaufspreis", "Verkaufspreis")});
-            this.chkSelectTreelistColumns.Name = "chkSelectTreelistColumns";
-            this.chkSelectTreelistColumns.NullText = "Auswahl";
-            // 
-            // btnModify
-            // 
-            this.btnModify.Caption = "&Ändern";
-            this.btnModify.Id = 90;
-            this.btnModify.Name = "btnModify";
-            this.btnModify.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-            this.btnModify.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnModifyItem_ItemClick);
-            // 
-            // rpProjectMetaData
-            // 
-            this.rpProjectMetaData.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
-            this.rpProjectMetaData.Appearance.Options.UseFont = true;
-            this.rpProjectMetaData.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgProjectMetaData,
-            this.rpgDiscount,
-            this.rpgOthers});
-            this.rpProjectMetaData.Name = "rpProjectMetaData";
-            this.rpProjectMetaData.Text = "Projekteigenschaften";
-            this.rpProjectMetaData.Visible = false;
-            // 
-            // rpgProjectMetaData
-            // 
-            this.rpgProjectMetaData.ItemLinks.Add(this.btnSaveProject);
-            this.rpgProjectMetaData.ItemLinks.Add(this.btnAngebotCommentary);
-            this.rpgProjectMetaData.ItemLinks.Add(this.btnCaluclatorCommentary);
-            this.rpgProjectMetaData.ItemLinks.Add(this.btnDataTransfer);
-            this.rpgProjectMetaData.Name = "rpgProjectMetaData";
-            this.rpgProjectMetaData.Text = "Projekteigenschaften";
-            // 
-            // rpgDiscount
-            // 
-            this.rpgDiscount.ItemLinks.Add(this.btnAddDisc);
-            this.rpgDiscount.ItemLinks.Add(this.btnDeleteDisc);
-            this.rpgDiscount.Name = "rpgDiscount";
-            this.rpgDiscount.Text = "Discount";
-            // 
-            // rpgOthers
-            // 
-            this.rpgOthers.ItemLinks.Add(this.btnFormBlattArt);
-            this.rpgOthers.ItemLinks.Add(this.btnProjectArt);
-            this.rpgOthers.ItemLinks.Add(this.btnArtSettings);
-            this.rpgOthers.Name = "rpgOthers";
-            this.rpgOthers.Text = "Others";
-            // 
-            // rpPosition
-            // 
-            this.rpPosition.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
-            this.rpPosition.Appearance.Options.UseFont = true;
-            this.rpPosition.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgLVDetails,
-            this.ribbonPageGroup3,
-            this.ribbonPageGroup4,
-            this.ribbonPageGroup5,
-            this.rpgRefresh});
-            this.rpPosition.Name = "rpPosition";
-            this.rpPosition.Text = "Positionen ";
-            this.rpPosition.Visible = false;
-            // 
-            // rpgLVDetails
-            // 
-            this.rpgLVDetails.ItemLinks.Add(this.btnNew);
-            this.rpgLVDetails.ItemLinks.Add(this.btnSaveLVDetails);
-            this.rpgLVDetails.ItemLinks.Add(this.btnCancel);
-            this.rpgLVDetails.ItemLinks.Add(this.chkCreateNew);
-            this.rpgLVDetails.ItemLinks.Add(this.ChkManualMontageentry);
-            this.rpgLVDetails.ItemLinks.Add(this.cmbSelectTreelistColumnsItem);
-            this.rpgLVDetails.ItemLinks.Add(this.btnModify);
-            this.rpgLVDetails.Name = "rpgLVDetails";
-            this.rpgLVDetails.Text = "LV Detailsicht";
-            // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.btnPrevious);
-            this.ribbonPageGroup3.ItemLinks.Add(this.btnNext);
-            this.ribbonPageGroup3.ItemLinks.Add(this.btnRefreshTreeView);
-            this.ribbonPageGroup3.ItemLinks.Add(this.btnExportExcel);
-            this.ribbonPageGroup3.ItemLinks.Add(this.dbtnPriceComp);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "Navigation";
-            // 
-            // ribbonPageGroup4
-            // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.btnLongDescription);
-            this.ribbonPageGroup4.ItemLinks.Add(this.btnDocuwareLink);
-            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "Documents";
-            // 
-            // ribbonPageGroup5
-            // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.btnAddLVSection);
-            this.ribbonPageGroup5.ItemLinks.Add(this.btnAddAccessories);
-            this.ribbonPageGroup5.ItemLinks.Add(this.btnValiditydates);
-            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            this.ribbonPageGroup5.Text = "Meta Data";
-            // 
-            // rpgRefresh
-            // 
-            this.rpgRefresh.ItemLinks.Add(this.btnProjRefresh);
-            this.rpgRefresh.Name = "rpgRefresh";
-            this.rpgRefresh.Text = "Refresh";
-            // 
-            // rpBulkProcess
-            // 
-            this.rpBulkProcess.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
-            this.rpBulkProcess.Appearance.Options.UseFont = true;
-            this.rpBulkProcess.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgBuilkProccess,
-            this.rpgLVCopy});
-            this.rpBulkProcess.Name = "rpBulkProcess";
-            this.rpBulkProcess.Text = "Globale LV Bearbeitung";
-            this.rpBulkProcess.Visible = false;
-            // 
-            // rpgBuilkProccess
-            // 
-            this.rpgBuilkProccess.ItemLinks.Add(this.btnSaveActionA);
-            this.rpgBuilkProccess.ItemLinks.Add(this.btnSavesectionB);
-            this.rpgBuilkProccess.ItemLinks.Add(this.btnApply);
-            this.rpgBuilkProccess.Name = "rpgBuilkProccess";
-            this.rpgBuilkProccess.Text = "Globale LV Bearbeitung";
-            // 
-            // rpgLVCopy
-            // 
-            this.rpgLVCopy.ItemLinks.Add(this.rgDropMode1);
-            this.rpgLVCopy.Name = "rpgLVCopy";
-            this.rpgLVCopy.Text = "LV Positionen kopieren / Drop Mode";
-            // 
-            // rpCalculations
-            // 
-            this.rpCalculations.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
-            this.rpCalculations.Appearance.Options.UseFont = true;
-            this.rpCalculations.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgSelb,
-            this.rpgVerka,
-            this.rpgUmlage});
-            this.rpCalculations.Name = "rpCalculations";
-            this.rpCalculations.Text = "Calculations";
-            this.rpCalculations.Visible = false;
-            // 
-            // rpgSelb
-            // 
-            this.rpgSelb.ItemLinks.Add(this.btnMulti5LoadArticles);
-            this.rpgSelb.ItemLinks.Add(this.btnMulti5UpdateSelbekosten);
-            this.rpgSelb.Name = "rpgSelb";
-            this.rpgSelb.Text = "Selbstkosten";
-            // 
-            // rpgVerka
-            // 
-            this.rpgVerka.ItemLinks.Add(this.btnMulti6LoadArticles);
-            this.rpgVerka.ItemLinks.Add(this.btnMulti6UpdateSelbekosten);
-            this.rpgVerka.Name = "rpgVerka";
-            this.rpgVerka.Text = "Verkaufskosten";
-            // 
-            // rpgUmlage
-            // 
-            this.rpgUmlage.ItemLinks.Add(this.btnUmlageSave);
-            this.rpgUmlage.ItemLinks.Add(this.btnAddedCost);
-            this.rpgUmlage.ItemLinks.Add(this.btnUmlageExport);
-            this.rpgUmlage.Name = "rpgUmlage";
-            this.rpgUmlage.Text = "Umlage";
-            // 
-            // rpDelInv
-            // 
-            this.rpDelInv.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
-            this.rpDelInv.Appearance.Options.UseFont = true;
-            this.rpDelInv.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgDelivery,
-            this.rpgInvoice});
-            this.rpDelInv.Name = "rpDelInv";
-            this.rpDelInv.Text = "Aufmasse & Rechnungen";
-            this.rpDelInv.Visible = false;
-            // 
-            // rpgDelivery
-            // 
-            this.rpgDelivery.ItemLinks.Add(this.btnDelSave);
-            this.rpgDelivery.ItemLinks.Add(this.barEditItem5);
-            this.rpgDelivery.Name = "rpgDelivery";
-            this.rpgDelivery.Text = "Aufmasse";
-            // 
-            // rpgInvoice
-            // 
-            this.rpgInvoice.ItemLinks.Add(this.btnInvoiceSave);
-            this.rpgInvoice.ItemLinks.Add(this.btnInvoiceView);
-            this.rpgInvoice.ItemLinks.Add(this.barButtonItem56);
-            this.rpgInvoice.Name = "rpgInvoice";
-            this.rpgInvoice.Text = "Rechnungen";
-            // 
-            // rpProposal
-            // 
-            this.rpProposal.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
-            this.rpProposal.Appearance.Options.UseFont = true;
-            this.rpProposal.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgSP,
-            this.rpgUSP,
-            this.rpgFilter,
-            this.rpgProposalViews});
-            this.rpProposal.Name = "rpProposal";
-            this.rpProposal.Text = "Preisanfrage";
-            this.rpProposal.Visible = false;
-            // 
-            // rpgSP
-            // 
-            this.rpgSP.ItemLinks.Add(this.btnSaveSupplierProposal);
-            this.rpgSP.Name = "rpgSP";
-            this.rpgSP.Text = "Preisanfrage Starten";
-            // 
-            // rpgUSP
-            // 
-            this.rpgUSP.ItemLinks.Add(this.btnSubmit);
-            this.rpgUSP.ItemLinks.Add(this.btnExportProposalPositions);
-            this.rpgUSP.ItemLinks.Add(this.bnSaveTemparary1);
-            this.rpgUSP.Name = "rpgUSP";
-            this.rpgUSP.Text = "Preisanfrage Erfassung";
-            // 
-            // rpgFilter
-            // 
-            this.rpgFilter.ItemLinks.Add(this.rgFilter);
-            this.rpgFilter.Name = "rpgFilter";
-            this.rpgFilter.Text = "Filter";
-            // 
-            // rpgProposalViews
-            // 
-            this.rpgProposalViews.ItemLinks.Add(this.rgProposalViews);
-            this.rpgProposalViews.Name = "rpgProposalViews";
-            this.rpgProposalViews.Text = "Views";
-            // 
-            // rpGAEB
-            // 
-            this.rpGAEB.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
-            this.rpGAEB.Appearance.Options.UseFont = true;
-            this.rpGAEB.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgGAEB});
-            this.rpGAEB.Name = "rpGAEB";
-            this.rpGAEB.Text = "GAEB";
-            // 
-            // rpgGAEB
-            // 
-            this.rpgGAEB.ItemLinks.Add(this.btnProjectExport);
-            this.rpgGAEB.ItemLinks.Add(this.btnProjectImport);
-            this.rpgGAEB.Name = "rpgGAEB";
-            this.rpgGAEB.Text = "GAEB";
-            // 
-            // rpReports
-            // 
-            this.rpReports.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 11F);
-            this.rpReports.Appearance.Options.UseFont = true;
-            this.rpReports.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgReports,
-            this.rpgTitleBlatt});
-            this.rpReports.Name = "rpReports";
-            this.rpReports.Text = "Dokumente";
-            // 
-            // rpgReports
-            // 
-            this.rpgReports.ItemLinks.Add(this.barSubItem1);
-            this.rpgReports.Name = "rpgReports";
-            // 
-            // rpgTitleBlatt
-            // 
-            this.rpgTitleBlatt.ItemLinks.Add(this.barSubItem2);
-            this.rpgTitleBlatt.Name = "rpgTitleBlatt";
-            // 
-            // cmbLVSelectTreeListColumns
-            // 
-            this.cmbLVSelectTreeListColumns.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.cmbLVSelectTreeListColumns.Appearance.Options.UseFont = true;
-            this.cmbLVSelectTreeListColumns.AppearanceDisabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.cmbLVSelectTreeListColumns.AppearanceDisabled.Options.UseFont = true;
-            this.cmbLVSelectTreeListColumns.AppearanceDropDown.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.cmbLVSelectTreeListColumns.AppearanceDropDown.Options.UseFont = true;
-            this.cmbLVSelectTreeListColumns.AppearanceDropDownHeader.Font = new System.Drawing.Font("Bahnschrift", 10F);
-            this.cmbLVSelectTreeListColumns.AppearanceDropDownHeader.Options.UseFont = true;
-            this.cmbLVSelectTreeListColumns.AppearanceFocused.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.cmbLVSelectTreeListColumns.AppearanceFocused.Options.UseFont = true;
-            this.cmbLVSelectTreeListColumns.AppearanceReadOnly.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.cmbLVSelectTreeListColumns.AppearanceReadOnly.Options.UseFont = true;
-            this.cmbLVSelectTreeListColumns.AutoHeight = false;
-            this.cmbLVSelectTreeListColumns.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbLVSelectTreeListColumns.Name = "cmbLVSelectTreeListColumns";
-            this.cmbLVSelectTreeListColumns.NullText = "Auswahl";
-            // 
-            // cmbCostSelectColumns
-            // 
-            this.cmbCostSelectColumns.AutoHeight = false;
-            this.cmbCostSelectColumns.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbCostSelectColumns.Name = "cmbCostSelectColumns";
-            // 
-            // repositoryItemCheckEdit2
-            // 
-            this.repositoryItemCheckEdit2.AutoHeight = false;
-            this.repositoryItemCheckEdit2.Name = "repositoryItemCheckEdit2";
-            // 
             // ribbonPage2
             // 
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
             // frmProject
             // 
@@ -15982,6 +15577,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.rpiAll)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcCostDetails)).EndInit();
             this.lcCostDetails.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtpValidityDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtpValidityDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChkLVCreateNew)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkCostMontageEntry)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkDelActiveDelivery)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRadioGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRadioGroup2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rpLVDropMode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkSelectTreelistColumns)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSectionProposal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSelectTreeListColumns)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbCostSelectColumns)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGrundMultiMO1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGrundMultiME1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLVPositionCD.Properties)).EndInit();
@@ -16052,22 +15661,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbPositionKZCD.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem242)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem246)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem249)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem250)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem251)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem253)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem255)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lccmbLVStatus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem256)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem36)).EndInit();
@@ -16085,8 +15686,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem74)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem79)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem42)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem213)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem41)).EndInit();
@@ -16099,13 +15698,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem77)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem80)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem81)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem118)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem78)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem75)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem127)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem257)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem47)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem44)).EndInit();
@@ -16125,42 +15719,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem60)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem61)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem62)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem64)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem98)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem116)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem119)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem120)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem123)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem131)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem133)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem134)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem122)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem82)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem90)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem44)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem97)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem123)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem241)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem43)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem65)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem56)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem63)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem109)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem117)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem246)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lccmbLVStatus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem123)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem241)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcProjectDetails)).EndInit();
             this.tcProjectDetails.ResumeLayout(false);
@@ -16474,17 +16056,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.gcLVDetailsforSupplier)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvLVDetailsforSupplier)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rpiDescription)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSectionProposal.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem160)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem47)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem157)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem195)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem163)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem162)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem155)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem156)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem137)).EndInit();
             this.tbUpdateSupplier.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl15)).EndInit();
             this.layoutControl15.ResumeLayout(false);
@@ -16600,17 +16178,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem108)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem124)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ChkLVCreateNew)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkCostMontageEntry)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkDelActiveDelivery)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRadioGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRadioGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rpLVDropMode)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkSelectTreelistColumns)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbLVSelectTreeListColumns)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbCostSelectColumns)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -17042,7 +16609,6 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit3;
         private DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit repositoryItemRichTextEdit3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem195;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem47;
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit txtprice;
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit txtInvoicePrice;
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit txtBlatPrice;
@@ -17160,7 +16726,6 @@
         private DevExpress.XtraLayout.LayoutControl lcCostDetails;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private System.Windows.Forms.DateTimePicker dtpValidityDate;
         private DevExpress.XtraEditors.TextEdit txtEP;
         private DevExpress.XtraEditors.MemoEdit txtPreisText;
         private DevExpress.XtraEditors.TextEdit txtLPMO;
@@ -17301,13 +16866,11 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem23;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem21;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem242;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem246;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem249;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem250;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem251;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem19;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem20;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem253;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem29;
@@ -17334,8 +16897,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem74;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem79;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem19;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem42;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem213;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem41;
@@ -17349,12 +16910,8 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem80;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem81;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem40;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem34;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem29;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem118;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem78;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem75;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem127;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem257;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem43;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem47;
@@ -17377,27 +16934,12 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem60;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem61;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem62;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem64;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem65;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem98;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem116;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem119;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem120;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem20;
         private DevExpress.XtraEditors.TextEdit txtLVPositionCD;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem28;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem123;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem131;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem133;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem134;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem122;
         private DevExpress.XtraEditors.TextEdit txtGrundMultiMO1;
         private DevExpress.XtraEditors.TextEdit txtGrundMultiME1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem82;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem90;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem44;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem97;
         private DevExpress.XtraEditors.TextEdit txtStufe1Title;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem238;
@@ -17414,14 +16956,10 @@
         private DevExpress.XtraLayout.LayoutControlItem lblsurchargefrom;
         private DevExpress.XtraLayout.LayoutControlItem lblsurchargeto;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem28;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem7;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem123;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem8;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem11;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem241;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem22;
         private DevExpress.XtraEditors.ComboBoxEdit cmbME;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem252;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand13;
@@ -17429,26 +16967,17 @@
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand15;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand16;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem24;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem157;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem31;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem33;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem43;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem45;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem160;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem234;
         private DevExpress.Utils.ToolTipController toolTipController1;
         private DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider dxVPProject;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem63;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem109;
         private DevExpress.XtraTreeList.Columns.TreeListColumn treeListColumn6;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem117;
         private DevExpress.XtraEditors.RadioGroup rgUmlageMode;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem262;
         private System.Windows.Forms.RichTextBox txtRemarks;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem23;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem108;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem124;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn94;
@@ -17488,7 +17017,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem276;
         private DevExpress.XtraEditors.MemoEdit txtShortDescriptionCD;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem26;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem137;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn109;
         private DevExpress.XtraGrid.Views.Grid.GridView gvProposalArticles;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn110;
@@ -17516,7 +17044,6 @@
         private DevExpress.XtraEditors.LookUpEdit cmbLVStatus;
         private DevExpress.XtraEditors.LookUpEdit cmbPositionKZ;
         private DevExpress.XtraEditors.LookUpEdit cmbPositionKZCD;
-        private DevExpress.XtraEditors.LookUpEdit cmbLVSectionProposal;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn119;
         private DevExpress.XtraTreeList.Columns.TreeListColumn treeListColumn142;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
@@ -17736,7 +17263,18 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.Ribbon.RibbonPage rpGAEB;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.BarEditItem cmbLVSectionProposalItem;
+        private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit cmbLVSectionProposal;
+        private DevExpress.XtraBars.BarButtonItem btnCopyPosition;
+        private DevExpress.XtraBars.BarButtonItem btnDeletePosition;
+        private DevExpress.XtraEditors.DateEdit dtpValidityDate;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem6;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem7;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem8;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem13;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem18;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem11;
     }
 }

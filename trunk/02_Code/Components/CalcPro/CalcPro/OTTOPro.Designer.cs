@@ -379,7 +379,7 @@
             // 
             // btnOTTO
             // 
-            this.btnOTTO.Caption = "OTTO";
+            this.btnOTTO.Caption = "COMPANY";
             this.btnOTTO.Id = 27;
             this.btnOTTO.ImageOptions.Image = global::CalcPro.Properties.Resources.Organization_32x32;
             this.btnOTTO.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
@@ -413,7 +413,7 @@
             // 
             // btnArticledata
             // 
-            this.btnArticledata.Caption = "Artikeldaten";
+            this.btnArticledata.Caption = "Artikelstammdaten";
             this.btnArticledata.Id = 29;
             this.btnArticledata.ImageOptions.Image = global::CalcPro.Properties.Resources.articledata_32x32;
             this.btnArticledata.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
@@ -836,7 +836,7 @@
             // 
             // btnRefreshProject
             // 
-            this.btnRefreshProject.Caption = "Refresh";
+            this.btnRefreshProject.Caption = "Aktualisieren";
             this.btnRefreshProject.Id = 64;
             this.btnRefreshProject.ImageOptions.Image = global::CalcPro.Properties.Resources.refresh_32x32;
             this.btnRefreshProject.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
@@ -968,7 +968,8 @@
             this.ribbonPageGroup8.ItemLinks.Add(this.nbCopyPosition);
             this.ribbonPageGroup8.ItemLinks.Add(this.nbDeletePosition);
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
-            this.ribbonPageGroup8.Text = "Position";
+            this.ribbonPageGroup8.Text = "LV Position";
+            this.ribbonPageGroup8.Visible = false;
             // 
             // ribbonPageGroup5
             // 
@@ -987,7 +988,7 @@
             this.rpgArticleMaster.ItemLinks.Add(this.btnAddAccessories);
             this.rpgArticleMaster.ItemLinks.Add(this.btnDataNormImport);
             this.rpgArticleMaster.Name = "rpgArticleMaster";
-            this.rpgArticleMaster.Text = "Artikels";
+            this.rpgArticleMaster.Text = "Artikelstammdaten";
             // 
             // ribbonPageGroup2
             // 

@@ -756,7 +756,7 @@ namespace CalcPro
                             if (splitContainerControl2.SplitterPosition > 0)
                             {
                                 splitContainerControl2.SplitterPosition = 0;
-                                splitContainerControl1.SplitterPosition = 560;
+                                splitContainerControl1.SplitterPosition = 420;
                             }
                             else if (splitContainerControl2.SplitterPosition == 0 && splitContainerControl1.PanelVisibility == SplitPanelVisibility.Both)
                             {
@@ -765,8 +765,8 @@ namespace CalcPro
                             else if (splitContainerControl2.SplitterPosition == 0 && splitContainerControl1.PanelVisibility == SplitPanelVisibility.Panel1)
                             {
                                 splitContainerControl1.PanelVisibility = SplitPanelVisibility.Both;
-                                splitContainerControl2.SplitterPosition = 310;
-                                splitContainerControl1.SplitterPosition = 310;
+                                splitContainerControl2.SplitterPosition = 300;
+                                splitContainerControl1.SplitterPosition = 300;
                             }
                         }
                     }
@@ -1989,7 +1989,7 @@ namespace CalcPro
                     txtSurchargeTo.Text = tlPositions.FocusedNode["surchargeto"] == DBNull.Value ? "" : tlPositions.FocusedNode["surchargeto"].ToString();
                     txtSurchargePerME.Text = tlPositions.FocusedNode["surchargePercentage"] == DBNull.Value ? "" : tlPositions.FocusedNode["surchargePercentage"].ToString();
                     txtSurchargePerMO.Text = tlPositions.FocusedNode["surchargePercentage_MO"] == DBNull.Value ? "" : tlPositions.FocusedNode["surchargePercentage_MO"].ToString();
-                    dtpValidityDate.Value = tlPositions.FocusedNode["validitydate"] == DBNull.Value ? DateTime.Now : Convert.ToDateTime(tlPositions.FocusedNode["validitydate"]);
+                    dtpValidityDate.EditValue = tlPositions.FocusedNode["validitydate"] == DBNull.Value ? DateTime.Now : Convert.ToDateTime(tlPositions.FocusedNode["validitydate"]);
                     txtMa.Text = tlPositions.FocusedNode["MA"] == DBNull.Value ? "" : tlPositions.FocusedNode["MA"].ToString();
                     txtMo.Text = tlPositions.FocusedNode["MO"] == DBNull.Value ? "" : tlPositions.FocusedNode["MO"].ToString();
                     decimal dval = 0;
@@ -4283,7 +4283,7 @@ namespace CalcPro
 
         private void dtpSubmitDate_EditValueChanged(object sender, EventArgs e)
         {
-            dtpValidityDate.Value = Convert.ToDateTime(dtpSubmitDate.EditValue);
+            dtpValidityDate.EditValue = dtpSubmitDate.EditValue;
         }
 
         private void txtLPMe_KeyDown(object sender, KeyEventArgs e)
@@ -4434,7 +4434,7 @@ namespace CalcPro
 
                     if (ObjEProject.DimVisible && !string.IsNullOrEmpty(ObjEPosition.Dim))
                         txtDim.Text = ObjEPosition.Dim;
-                    dtpValidityDate.Value = ObjEPosition.ValidityDate;
+                    dtpValidityDate.EditValue = ObjEPosition.ValidityDate;
                 }
             }
             catch (Exception ex)
@@ -4530,7 +4530,7 @@ namespace CalcPro
                         txtLPMe.Text = ObjEPosition.LPMA.ToString();
                     if (ObjEProject.DimVisible && !string.IsNullOrEmpty(ObjEPosition.Dim))
                         txtDim.Text = ObjEPosition.Dim;
-                    dtpValidityDate.Value = ObjEPosition.ValidityDate;
+                    dtpValidityDate.EditValue = ObjEPosition.ValidityDate;
                 }
                 else
                 {
@@ -4604,7 +4604,7 @@ namespace CalcPro
                         txtLPMe.EditValue = ObjEPosition.LPMA;
                     else
                         txtLPMe.Text = string.Empty;
-                    dtpValidityDate.Value = ObjEPosition.ValidityDate;
+                    dtpValidityDate.EditValue = ObjEPosition.ValidityDate;
                 }
 
             }
@@ -5603,9 +5603,9 @@ namespace CalcPro
                             txtMin.EditValue = dValue;
                         DateTime dt = DateTime.Now;
                         if (DateTime.TryParse(Convert.ToString(ObjEArticles.dtDimensionValues.Rows[0]["ValidityDate"]), out dt))
-                            dtpValidityDate.Value = dt;
+                            dtpValidityDate.EditValue = dt;
                         else
-                            dtpValidityDate.Value = ObjEProject.SubmitDate;
+                            dtpValidityDate.EditValue = ObjEProject.SubmitDate;
                     }
                 }
             }
@@ -5787,7 +5787,7 @@ namespace CalcPro
                 if (decimal.TryParse(txtSurchargePerMO.Text, out dValue))
                     ObjEPosition.surchargePercentage_MO = dValue;
 
-                ObjEPosition.ValidityDate = dtpValidityDate.Value;
+                ObjEPosition.ValidityDate = dtpValidityDate.DateTime;
 
                 ObjEPosition.MA = txtMa.Text;
                 ObjEPosition.MO = txtMo.Text;
@@ -6422,7 +6422,7 @@ namespace CalcPro
                 txtDetailKZ.Text = "0";
                 txtEP.Text = string.Empty;
                 txtFinalGB.Text = string.Empty;
-                dtpValidityDate.Value = ObjEProject.SubmitDate;
+                dtpValidityDate.EditValue = ObjEProject.SubmitDate;
                 if (Utility.LVsectionAddAccess == "7" || Utility.LVsectionAddAccess == "9")
                     Utility.SetLookupEditValue(cmbLVSection, "HA");
                 else
@@ -7472,7 +7472,7 @@ namespace CalcPro
                 LongDescription = ObjBPosition.GetLongDescription(Convert.ToInt32(tlPositions.FocusedNode["PositionID"]));
                 btnSaveLVDetails_Click(null, null);
             }
-            catch (Exception ex) { }
+            catch (Exception ex) { Utility.ShowError(ex); }
         }
 
         /// <summary>
@@ -9457,7 +9457,7 @@ namespace CalcPro
             {
                 if (Utility.LVSectionEditAccess == "7")
                 {
-                    if (cmbLVSectionProposal.Text.ToLower() != "ha")
+                    if (Convert.ToString(cmbLVSectionProposal.GetDisplayValueByKeyValue(cmbLVSectionProposalItem.EditValue)).ToLower() != "ha")
                         btnSaveSupplierProposal.Enabled = false;
                     else if (Utility.CalcAccess != "7")
                         btnSaveSupplierProposal.Enabled = true;
@@ -9468,8 +9468,8 @@ namespace CalcPro
                 if (ObjBSupplier == null)
                     ObjBSupplier = new BSupplier();
                 ObjESupplier.ProjectID = ObjEProject.ProjectID;
-                ObjESupplier.LVSection = cmbLVSectionProposal.Text;
-                ObjESupplier.LVSectionID = cmbLVSectionProposal.EditValue;
+                ObjESupplier.LVSection = Convert.ToString(cmbLVSectionProposal.GetDisplayValueByKeyValue(cmbLVSectionProposalItem.EditValue));
+                ObjESupplier.LVSectionID = cmbLVSectionProposalItem.EditValue;
 
                 if (ObjESupplier.LVSectionID != null)
                 {
@@ -9511,8 +9511,8 @@ namespace CalcPro
                     if (int.TryParse(Convert.ToString(gvProposedSupplier.GetFocusedRowCellValue("SupplierProposalID")), out Ivalue))
                     {
                         ObjESupplier.ProjectID = ObjEProject.ProjectID;
-                        ObjESupplier.LVSection = cmbLVSectionProposal.Text;
-                        ObjESupplier.LVSectionID = cmbLVSectionProposal.EditValue;
+                        ObjESupplier.LVSection = Convert.ToString(cmbLVSectionProposal.GetDisplayValueByKeyValue(cmbLVSectionProposalItem.EditValue));
+                        ObjESupplier.LVSectionID = cmbLVSectionProposalItem.EditValue;
                         ObjESupplier.ProposalID = Ivalue;
                         ObjESupplier.dtArticleID = new DataTable();
                         ObjESupplier.dtArticleID.Columns.Add("ID", typeof(int));
@@ -9694,8 +9694,8 @@ namespace CalcPro
                     ObjESupplier.dtArticleID.Rows.Add(drNew);
                 }
                 ObjESupplier.ProjectID = ObjEProject.ProjectID;
-                ObjESupplier.LVSection = cmbLVSectionProposal.Text;
-                ObjESupplier.LVSectionID = cmbLVSectionProposal.EditValue;
+                ObjESupplier.LVSection = Convert.ToString(cmbLVSectionProposal.GetDisplayValueByKeyValue(cmbLVSectionProposalItem.EditValue));
+                ObjESupplier.LVSectionID = cmbLVSectionProposalItem.EditValue;
                 ObjBSupplier.SaveSupplierProposal(ObjESupplier);
                 cmbLVSectionProposal_Closed(null, null);
                 Utility.Setfocus(gvProposedSupplier, "SupplierProposalID", ObjESupplier.ProposalID);
@@ -9925,8 +9925,8 @@ namespace CalcPro
                         ObjESupplier.dtArticleID.Rows.Add(drNew);
                     }
                     ObjESupplier.ProjectID = ObjEProject.ProjectID;
-                    ObjESupplier.LVSection = cmbLVSectionProposal.Text;
-                    ObjESupplier.LVSectionID = cmbLVSectionProposal.EditValue;
+                    ObjESupplier.LVSectionID = cmbLVSectionProposalItem.EditValue;
+                    ObjESupplier.LVSection = Convert.ToString(cmbLVSectionProposal.GetDisplayValueByKeyValue(cmbLVSectionProposalItem.EditValue));
                     ObjESupplier.SupplierProposalID = Ivalue;
 
                     ObjBSupplier.GetArticlesForProposal(ObjESupplier);
@@ -10182,15 +10182,15 @@ namespace CalcPro
                     {
                         DataView dv = ObjESupplier.dtLVSection.DefaultView;
                         dv.RowFilter = "LVSectionName= 'HA'";
-                        cmbLVSectionProposal.Properties.DataSource = dv;
-                        cmbLVSectionProposal.Properties.DisplayMember = "LVSectionName";
-                        cmbLVSectionProposal.Properties.ValueMember = "LVSectionID";
+                        cmbLVSectionProposal.DataSource = dv;
+                        cmbLVSectionProposal.DisplayMember = "LVSectionName";
+                        cmbLVSectionProposal.ValueMember = "LVSectionID";
                     }
                     else
                     {
-                        cmbLVSectionProposal.Properties.DataSource = ObjESupplier.dtLVSection;
-                        cmbLVSectionProposal.Properties.DisplayMember = "LVSectionName";
-                        cmbLVSectionProposal.Properties.ValueMember = "LVSectionID";
+                        cmbLVSectionProposal.DataSource = ObjESupplier.dtLVSection;
+                        cmbLVSectionProposal.DisplayMember = "LVSectionName";
+                        cmbLVSectionProposal.ValueMember = "LVSectionID";
                     }
                 }
             }
@@ -13421,6 +13421,21 @@ namespace CalcPro
                 }
             }
             catch (Exception ex) { }
+        }
+
+        private void cmbLVSectionProposalItem_EditValueChanged(object sender, EventArgs e)
+        {
+            cmbLVSectionProposal_Closed(null, null);
+        }
+
+        private void btnCopyPosition_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            CopyPosition();
+        }
+
+        private void btnDeletePosition_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            DeletePosition();
         }
     }
 }
