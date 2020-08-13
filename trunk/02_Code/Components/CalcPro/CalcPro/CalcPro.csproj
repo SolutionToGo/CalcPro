@@ -1216,6 +1216,32 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\titleblatt_32x32.png" />
+    <None Include="Resources\Reports_32x32.png" />
+    <None Include="Resources\Supplierproposal_32x32.png" />
+    <None Include="Resources\submitproposalvalues_32x32.png" />
+    <None Include="Resources\savelistprices_32x32.png" />
+    <None Include="Resources\exportproposalvalues_32x32.png" />
+    <None Include="Resources\submitspecialcost_64x64.png" />
+    <None Include="Resources\SubmitMultis_32x32.png" />
+    <None Include="Resources\Saveandrefresh_32x32.png" />
+    <None Include="Resources\LoadArticles_32x32.png" />
+    <None Include="Resources\exportumlage_32x32.png" />
+    <None Include="Resources\Applyfilter_32x32.png" />
+    <None Include="Resources\Save_32x326.png" />
+    <None Include="Resources\LVRefreshProject_32x32.png" />
+    <None Include="Resources\addvaliditydate_32x32.png" />
+    <None Include="Resources\AddAccessories_32x32.png" />
+    <None Include="Resources\AddLVSection_32x32.png" />
+    <None Include="Resources\docuwarelink_32x32.png" />
+    <None Include="Resources\LongDescription_32x32.png" />
+    <None Include="Resources\export_32x321.png" />
+    <None Include="Resources\RefreshTreeview_32x32.png" />
+    <None Include="Resources\Next_32x32.png" />
+    <None Include="Resources\Previous_32x32.png" />
+    <None Include="Resources\CancelButton_32x32.png" />
+    <None Include="Resources\Save_32x325.png" />
+    <None Include="Resources\NewPosition_32x32.png" />
     <None Include="Resources\calcpro_withalign1.png" />
     <None Include="Resources\LoadProject_32x32.png" />
     <None Include="Resources\supplier_32x32.png" />
