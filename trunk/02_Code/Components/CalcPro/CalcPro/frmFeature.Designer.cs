@@ -103,10 +103,10 @@
             // 
             this.btnSaveFeature.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
             this.btnSaveFeature.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnSaveFeature.Location = new System.Drawing.Point(800, 787);
+            this.btnSaveFeature.Location = new System.Drawing.Point(800, 781);
             this.btnSaveFeature.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSaveFeature.Name = "btnSaveFeature";
-            this.btnSaveFeature.Size = new System.Drawing.Size(135, 38);
+            this.btnSaveFeature.Size = new System.Drawing.Size(135, 44);
             this.btnSaveFeature.StyleController = this.layoutControl1;
             this.btnSaveFeature.TabIndex = 10;
             this.btnSaveFeature.Text = "Speichern";
@@ -121,7 +121,7 @@
             this.gcFeature.Name = "gcFeature";
             this.gcFeature.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.rpiAccessLevels});
-            this.gcFeature.Size = new System.Drawing.Size(926, 742);
+            this.gcFeature.Size = new System.Drawing.Size(926, 736);
             this.gcFeature.TabIndex = 5;
             this.gcFeature.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvFeature});
@@ -236,7 +236,7 @@
             this.layoutControlItem1.Control = this.gcFeature;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 32);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(930, 746);
+            this.layoutControlItem1.Size = new System.Drawing.Size(930, 740);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -251,10 +251,10 @@
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.btnSaveFeature;
-            this.layoutControlItem6.Location = new System.Drawing.Point(791, 778);
+            this.layoutControlItem6.Location = new System.Drawing.Point(791, 772);
             this.layoutControlItem6.MinSize = new System.Drawing.Size(103, 32);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(139, 42);
+            this.layoutControlItem6.Size = new System.Drawing.Size(139, 48);
             this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
@@ -262,9 +262,9 @@
             // emptySpaceItem4
             // 
             this.emptySpaceItem4.AllowHotTrack = false;
-            this.emptySpaceItem4.Location = new System.Drawing.Point(0, 778);
+            this.emptySpaceItem4.Location = new System.Drawing.Point(0, 772);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(791, 42);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(791, 48);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem7

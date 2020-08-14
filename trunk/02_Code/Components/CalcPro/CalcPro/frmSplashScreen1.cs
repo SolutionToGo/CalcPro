@@ -17,6 +17,8 @@ namespace CalcPro
             InitializeComponent();
             this.labelControl1.Text = "Copyright © 1998-" + DateTime.Now.Year.ToString();
             this.labelControl3.Text = "Version : V1.1";
+            marqueeProgressBarControl1.LookAndFeel.UseDefaultLookAndFeel = false;
+            marqueeProgressBarControl1.LookAndFeel.SkinName = "CategisSkin";
 
         }
 

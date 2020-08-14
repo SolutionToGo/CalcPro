@@ -83,7 +83,7 @@
             this.btnCancel.Location = new System.Drawing.Point(137, 38);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(130, 36);
+            this.btnCancel.Size = new System.Drawing.Size(130, 38);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "&Abbrechen";
@@ -99,7 +99,7 @@
             this.btnOK.Location = new System.Drawing.Point(271, 38);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(113, 36);
+            this.btnOK.Size = new System.Drawing.Size(113, 38);
             this.btnOK.StyleController = this.layoutControl1;
             this.btnOK.TabIndex = 4;
             this.btnOK.Text = "OK";

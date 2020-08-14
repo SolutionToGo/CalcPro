@@ -593,7 +593,7 @@
             // 
             this.RbtnAdd.Caption = "&Speichern";
             this.RbtnAdd.Id = 3;
-            this.RbtnAdd.ImageOptions.Image = global::CalcPro.Properties.Resources.discountadd_32x32;
+            this.RbtnAdd.ImageOptions.Image = global::CalcPro.Properties.Resources.Save_32x321;
             this.RbtnAdd.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RbtnAdd.ItemAppearance.Disabled.Options.UseFont = true;
             this.RbtnAdd.ItemAppearance.Disabled.Options.UseTextOptions = true;
@@ -634,7 +634,7 @@
             this.RbtnAddtype.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.RbtnAddtype.ItemAppearance.Pressed.Options.UseFont = true;
             this.RbtnAddtype.ItemAppearance.Pressed.Options.UseTextOptions = true;
-            this.RbtnAddtype.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.RbtnAddtype.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.RbtnAddtype.Name = "RbtnAddtype";
             this.RbtnAddtype.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.RbtnAddtype.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.RbtnAddtype_ItemClick);

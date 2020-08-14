@@ -25,7 +25,7 @@ namespace CalcPro
         {
             InitializeComponent();
         }
-
+       
         private void txtUserName_Enter(object sender, EventArgs e)
         {
             try
@@ -47,6 +47,12 @@ namespace CalcPro
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            
+            btnLogin.LookAndFeel.UseDefaultLookAndFeel = false;
+            btnCancel.LookAndFeel.UseDefaultLookAndFeel = false;
+            btnLogin.LookAndFeel.SkinName = "CategisSkin";
+            btnCancel.LookAndFeel.SkinName = "CategisSkin"; 
+
             try
             {
                 RegistryKey RGkey = Registry.CurrentUser.OpenSubKey(RegPath, true);

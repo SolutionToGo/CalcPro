@@ -131,6 +131,20 @@ namespace CalcPro
             SplashScreenManager.CloseForm(false);
         }
 
+
         #endregion
+
+        private void frmGAEBImport_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                if (e.KeyData == Keys.Escape)
+                {
+                    this.Close();
+                }
+
+            }
+            catch (Exception ex) { }
+        }
     }
 }
