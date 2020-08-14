@@ -360,7 +360,7 @@ namespace CalcPro
                         rpgSP.Visible = true;
                         rpgUSP.Visible = false;
                         rpgFilter.Visible = false;
-                        rpgProposalViews.Visible = false;
+                        rpgViews.Visible = false;
                         this.ribbonControl1.SelectPage(rpProposal);
                         break;
                     case "tbUpdateSupplier":
@@ -368,7 +368,7 @@ namespace CalcPro
                         rpgSP.Visible = false;
                         rpgUSP.Visible = true;
                         rpgFilter.Visible = true;
-                        rpgProposalViews.Visible = true;
+                        rpgViews.Visible = true;
                         this.ribbonControl1.SelectPage(rpProposal);
                         break;
                     case "tbAufmassReport":
@@ -667,7 +667,8 @@ namespace CalcPro
                 {
                     if (ObjEProject.ProjectID > 0)
                     {
-                        rgProposalViews.EditValue = 0;
+                        rgFilter.EditValue = repositoryItemRadioGroup2.Items[0].Value;
+                        rgProposalViews.EditValue = repositoryItemRadioGroup1.Items[0].Value;
                         FillProposalNumbers();
                         gcDeletedDetails.DataSource = null;
                         gcProposedDetails.DataSource = null;
@@ -728,7 +729,7 @@ namespace CalcPro
                         if (tlPositions.AllNodesCount >= 2)
                         {
                             FillProjectNumber();
-                            rgDropMode1.EditValue = 2;
+                            rgDropMode1.EditValue = rpLVDropMode.Items[2].Value;
                         }
                         else
                         {
@@ -1019,7 +1020,7 @@ namespace CalcPro
                 {
                     if (ObjEProject.ProjectID > 0)
                     {
-                        rgProposalViews.EditValue = 0;
+                        rgProposalViews.EditValue = repositoryItemRadioGroup1.Items[0].Value;
                         FillProposalNumbers();
                         gcDeletedDetails.DataSource = null;
                         gcProposedDetails.DataSource = null;
@@ -8500,7 +8501,7 @@ namespace CalcPro
         #endregion
 
         #endregion
-
+        
         #region MULTIES
 
         #region Events
@@ -10258,7 +10259,7 @@ namespace CalcPro
                             gcSupplier.DataSource = ObjESupplier.dtPositions;
                         }
                         else
-                            rgProposalViews.EditValue = 0;
+                            rgProposalViews.EditValue = repositoryItemRadioGroup1.Items[0].Value;
 
                         gvSupplier.FormatRules.Clear();
 
@@ -10665,7 +10666,7 @@ namespace CalcPro
             {
                 if (gvSupplier.RowCount == 0)
                     return;
-                rgProposalViews.EditValue = 0;
+                rgProposalViews.EditValue = repositoryItemRadioGroup1.Items[0].Value;
 
                 if (Convert.ToInt16(rgProposalViews.EditValue) != 0)
                 {
@@ -13415,7 +13416,6 @@ namespace CalcPro
         {
 
         }
-
 
         private void btnrowdelete_Click(object sender, EventArgs e)
         {

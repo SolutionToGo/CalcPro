@@ -68,11 +68,10 @@
             this.layoutControl1.Controls.Add(this.gcTyp);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(326, 125, 450, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(1149, 663);
+            this.layoutControl1.Size = new System.Drawing.Size(985, 539);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -81,10 +80,9 @@
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.CancelButton_32x32;
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancel.Location = new System.Drawing.Point(858, 617);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Location = new System.Drawing.Point(736, 496);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(142, 38);
+            this.btnCancel.Size = new System.Drawing.Size(121, 36);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Abbrechen";
@@ -94,10 +92,9 @@
             // 
             this.btnOk.ImageOptions.Image = global::CalcPro.Properties.Resources.OK_32x32;
             this.btnOk.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnOk.Location = new System.Drawing.Point(1004, 617);
-            this.btnOk.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnOk.Location = new System.Drawing.Point(861, 496);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(137, 38);
+            this.btnOk.Size = new System.Drawing.Size(117, 36);
             this.btnOk.StyleController = this.layoutControl1;
             this.btnOk.TabIndex = 5;
             this.btnOk.Text = "OK";
@@ -105,12 +102,10 @@
             // 
             // gcTyp
             // 
-            this.gcTyp.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.gcTyp.Location = new System.Drawing.Point(8, 8);
+            this.gcTyp.Location = new System.Drawing.Point(7, 7);
             this.gcTyp.MainView = this.gvTyp;
-            this.gcTyp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcTyp.Name = "gcTyp";
-            this.gcTyp.Size = new System.Drawing.Size(1133, 605);
+            this.gcTyp.Size = new System.Drawing.Size(971, 485);
             this.gcTyp.TabIndex = 4;
             this.gcTyp.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvTyp});
@@ -118,6 +113,8 @@
             // 
             // gvTyp
             // 
+            this.gvTyp.Appearance.FocusedCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(65)))));
+            this.gvTyp.Appearance.FocusedCell.Options.UseBackColor = true;
             this.gvTyp.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gvTyp.Appearance.FocusedRow.Options.UseBackColor = true;
             this.gvTyp.Appearance.FooterPanel.Font = new System.Drawing.Font("Bahnschrift", 10F);
@@ -126,7 +123,6 @@
             this.gvTyp.Appearance.HeaderPanel.Options.UseFont = true;
             this.gvTyp.Appearance.Row.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.gvTyp.Appearance.Row.Options.UseFont = true;
-            this.gvTyp.DetailHeight = 431;
             this.gvTyp.GridControl = this.gcTyp;
             this.gvTyp.Name = "gvTyp";
             this.gvTyp.OptionsBehavior.Editable = false;
@@ -148,8 +144,8 @@
             this.layoutControlItem3,
             this.emptySpaceItem1});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1149, 663);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(985, 539);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -157,45 +153,44 @@
             this.layoutControlItem1.Control = this.gcTyp;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1137, 609);
+            this.layoutControlItem1.Size = new System.Drawing.Size(975, 489);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.btnOk;
-            this.layoutControlItem2.Location = new System.Drawing.Point(996, 609);
+            this.layoutControlItem2.Location = new System.Drawing.Point(854, 489);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(141, 42);
+            this.layoutControlItem2.Size = new System.Drawing.Size(121, 40);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.btnCancel;
-            this.layoutControlItem3.Location = new System.Drawing.Point(850, 609);
+            this.layoutControlItem3.Location = new System.Drawing.Point(729, 489);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(146, 42);
+            this.layoutControlItem3.Size = new System.Drawing.Size(125, 40);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 609);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 489);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(850, 42);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(729, 40);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // frmTypList
             // 
             this.AcceptButton = this.btnOk;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(1149, 663);
+            this.ClientSize = new System.Drawing.Size(985, 539);
             this.Controls.Add(this.layoutControl1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmTypList";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;

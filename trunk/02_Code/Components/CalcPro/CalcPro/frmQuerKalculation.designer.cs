@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -51,7 +52,7 @@
             this.cmbLVSectionFilter = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.reportDesignTableAdapter1 = new CalcPro.Report_Design.dsProposalCoverPage1TableAdapters.ReportDesignTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -92,30 +93,31 @@
             this.layoutControl1.Controls.Add(this.radioGroupSelection);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(578, 168, 450, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(491, 422);
+            this.layoutControl1.Size = new System.Drawing.Size(421, 343);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // gvAddRemovePositions
             // 
             this.gvAddRemovePositions.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gvAddRemovePositions.Location = new System.Drawing.Point(9, 115);
+            this.gvAddRemovePositions.Location = new System.Drawing.Point(8, 94);
             this.gvAddRemovePositions.MainView = this.gridView1;
             this.gvAddRemovePositions.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gvAddRemovePositions.Name = "gvAddRemovePositions";
             this.gvAddRemovePositions.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btndelete});
-            this.gvAddRemovePositions.Size = new System.Drawing.Size(473, 256);
+            this.gvAddRemovePositions.Size = new System.Drawing.Size(405, 201);
             this.gvAddRemovePositions.TabIndex = 56;
             this.gvAddRemovePositions.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
+            this.gridView1.Appearance.FocusedCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(65)))));
+            this.gridView1.Appearance.FocusedCell.Options.UseBackColor = true;
             this.gridView1.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gridView1.Appearance.FocusedRow.Options.UseBackColor = true;
             this.gridView1.Appearance.FooterPanel.Font = new System.Drawing.Font("Bahnschrift", 10F);
@@ -129,6 +131,7 @@
             this.gridColumn1,
             this.gridColumn2,
             this.Remove});
+            this.gridView1.DetailHeight = 284;
             this.gridView1.GridControl = this.gvAddRemovePositions;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.True;
@@ -141,23 +144,23 @@
             // 
             this.gridColumn1.Caption = "Von";
             this.gridColumn1.FieldName = "Von";
-            this.gridColumn1.MinWidth = 24;
+            this.gridColumn1.MinWidth = 21;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsEditForm.StartNewRow = true;
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 94;
+            this.gridColumn1.Width = 81;
             // 
             // gridColumn2
             // 
             this.gridColumn2.Caption = "Bis";
             this.gridColumn2.FieldName = "Bis";
-            this.gridColumn2.MinWidth = 24;
+            this.gridColumn2.MinWidth = 21;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsEditForm.StartNewRow = true;
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 94;
+            this.gridColumn2.Width = 81;
             // 
             // Remove
             // 
@@ -166,11 +169,11 @@
             this.Remove.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.Remove.Caption = "Remove";
             this.Remove.ColumnEdit = this.btndelete;
-            this.Remove.MinWidth = 24;
+            this.Remove.MinWidth = 21;
             this.Remove.Name = "Remove";
             this.Remove.Visible = true;
             this.Remove.VisibleIndex = 2;
-            this.Remove.Width = 94;
+            this.Remove.Width = 81;
             // 
             // btndelete
             // 
@@ -187,10 +190,9 @@
             this.simpleButton2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.simpleButton2.ImageOptions.Image = global::CalcPro.Properties.Resources.CancelButton_32x32;
             this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(213, 375);
-            this.simpleButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.simpleButton2.Location = new System.Drawing.Point(183, 299);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(137, 38);
+            this.simpleButton2.Size = new System.Drawing.Size(117, 36);
             this.simpleButton2.StyleController = this.layoutControl1;
             this.simpleButton2.TabIndex = 55;
             this.simpleButton2.Text = "Abbrechen";
@@ -198,12 +200,11 @@
             // cmbLVSection
             // 
             this.cmbLVSection.Enabled = false;
-            this.cmbLVSection.Location = new System.Drawing.Point(93, 83);
-            this.cmbLVSection.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmbLVSection.Location = new System.Drawing.Point(72, 68);
             this.cmbLVSection.Name = "cmbLVSection";
             this.cmbLVSection.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbLVSection.Size = new System.Drawing.Size(389, 28);
+            this.cmbLVSection.Size = new System.Drawing.Size(341, 22);
             this.cmbLVSection.StyleController = this.layoutControl1;
             this.cmbLVSection.TabIndex = 54;
             // 
@@ -211,10 +212,9 @@
             // 
             this.simpleButton1.ImageOptions.Image = global::CalcPro.Properties.Resources.OK_32x32;
             this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(354, 375);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.simpleButton1.Location = new System.Drawing.Point(304, 299);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(128, 38);
+            this.simpleButton1.Size = new System.Drawing.Size(109, 36);
             this.simpleButton1.StyleController = this.layoutControl1;
             this.simpleButton1.TabIndex = 53;
             this.simpleButton1.Text = "Anwenden";
@@ -222,8 +222,7 @@
             // 
             // radioGroupSelection
             // 
-            this.radioGroupSelection.Location = new System.Drawing.Point(9, 9);
-            this.radioGroupSelection.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioGroupSelection.Location = new System.Drawing.Point(8, 8);
             this.radioGroupSelection.Name = "radioGroupSelection";
             this.radioGroupSelection.Properties.AllowMouseWheel = false;
             this.radioGroupSelection.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
@@ -231,7 +230,7 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Alle LV Positionen"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Titel und Untertitel"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "LV Sektions")});
-            this.radioGroupSelection.Size = new System.Drawing.Size(473, 70);
+            this.radioGroupSelection.Size = new System.Drawing.Size(405, 56);
             this.radioGroupSelection.StyleController = this.layoutControl1;
             this.radioGroupSelection.TabIndex = 4;
             this.radioGroupSelection.SelectedIndexChanged += new System.EventHandler(this.radioGroupSelection_SelectedIndexChanged);
@@ -251,8 +250,8 @@
             this.layoutControlItem3,
             this.layoutControlItem2});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(491, 422);
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(421, 343);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -260,51 +259,51 @@
             this.layoutControlItem1.Control = this.radioGroupSelection;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(477, 74);
+            this.layoutControlItem1.Size = new System.Drawing.Size(409, 60);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 366);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 291);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(204, 42);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(175, 40);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.simpleButton1;
-            this.layoutControlItem4.Location = new System.Drawing.Point(345, 366);
+            this.layoutControlItem4.Location = new System.Drawing.Point(296, 291);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(132, 42);
+            this.layoutControlItem4.Size = new System.Drawing.Size(113, 40);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
             // cmbLVSectionFilter
             // 
             this.cmbLVSectionFilter.Control = this.cmbLVSection;
-            this.cmbLVSectionFilter.Location = new System.Drawing.Point(0, 74);
+            this.cmbLVSectionFilter.Location = new System.Drawing.Point(0, 60);
             this.cmbLVSectionFilter.Name = "cmbLVSectionFilter";
-            this.cmbLVSectionFilter.Size = new System.Drawing.Size(477, 32);
+            this.cmbLVSectionFilter.Size = new System.Drawing.Size(409, 26);
             this.cmbLVSectionFilter.Text = "LV Sektion";
-            this.cmbLVSectionFilter.TextSize = new System.Drawing.Size(81, 21);
+            this.cmbLVSectionFilter.TextSize = new System.Drawing.Size(61, 16);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.simpleButton2;
-            this.layoutControlItem3.Location = new System.Drawing.Point(204, 366);
+            this.layoutControlItem3.Location = new System.Drawing.Point(175, 291);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(141, 42);
+            this.layoutControlItem3.Size = new System.Drawing.Size(121, 40);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.gvAddRemovePositions;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 106);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 86);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(477, 260);
+            this.layoutControlItem2.Size = new System.Drawing.Size(409, 205);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -315,12 +314,11 @@
             // frmQuerKalculation
             // 
             this.AcceptButton = this.simpleButton1;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.simpleButton2;
-            this.ClientSize = new System.Drawing.Size(491, 422);
+            this.ClientSize = new System.Drawing.Size(421, 343);
             this.Controls.Add(this.layoutControl1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmQuerKalculation";

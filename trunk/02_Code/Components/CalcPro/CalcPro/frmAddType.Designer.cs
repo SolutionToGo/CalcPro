@@ -70,6 +70,8 @@
             // 
             // gvAddTyp
             // 
+            this.gvAddTyp.Appearance.FocusedCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(65)))));
+            this.gvAddTyp.Appearance.FocusedCell.Options.UseBackColor = true;
             this.gvAddTyp.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gvAddTyp.Appearance.FocusedRow.Options.UseBackColor = true;
             this.gvAddTyp.Appearance.FooterPanel.Font = new System.Drawing.Font("Bahnschrift", 10F);

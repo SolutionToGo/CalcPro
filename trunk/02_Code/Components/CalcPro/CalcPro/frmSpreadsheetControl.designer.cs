@@ -759,13 +759,12 @@
             // spreadsheetControl1
             // 
             this.spreadsheetControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.spreadsheetControl1.Location = new System.Drawing.Point(0, 211);
-            this.spreadsheetControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.spreadsheetControl1.Location = new System.Drawing.Point(0, 171);
             this.spreadsheetControl1.MenuManager = this.ribbonControl1;
             this.spreadsheetControl1.Name = "spreadsheetControl1";
             this.spreadsheetControl1.Options.Import.Csv.Encoding = ((System.Text.Encoding)(resources.GetObject("spreadsheetControl1.Options.Import.Csv.Encoding")));
             this.spreadsheetControl1.Options.Import.Txt.Encoding = ((System.Text.Encoding)(resources.GetObject("spreadsheetControl1.Options.Import.Txt.Encoding")));
-            this.spreadsheetControl1.Size = new System.Drawing.Size(1585, 747);
+            this.spreadsheetControl1.Size = new System.Drawing.Size(1359, 607);
             this.spreadsheetControl1.TabIndex = 0;
             this.spreadsheetControl1.Text = "c";
             this.spreadsheetControl1.UnhandledException += new DevExpress.XtraSpreadsheet.UnhandledExceptionEventHandler(this.spreadsheetControl1_UnhandledException);
@@ -1122,7 +1121,6 @@
             this.barEditItem4,
             this.btnOpen});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 352;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
@@ -1149,7 +1147,7 @@
             this.repositoryItemLookUpEdit1,
             this.repositoryItemDateEdit1,
             this.dtpValidityDate});
-            this.ribbonControl1.Size = new System.Drawing.Size(1585, 211);
+            this.ribbonControl1.Size = new System.Drawing.Size(1359, 171);
             // 
             // spreadsheetCommandBarButtonItem1
             // 
@@ -1465,7 +1463,7 @@
             this.commandBarGalleryDropDown1.Gallery.DrawImageBackground = false;
             this.commandBarGalleryDropDown1.Gallery.ImageSize = new System.Drawing.Size(65, 46);
             this.commandBarGalleryDropDown1.Gallery.ItemAutoSizeMode = DevExpress.XtraBars.Ribbon.Gallery.GalleryItemAutoSizeMode.None;
-            this.commandBarGalleryDropDown1.Gallery.ItemSize = new System.Drawing.Size(170, 32);
+            this.commandBarGalleryDropDown1.Gallery.ItemSize = new System.Drawing.Size(136, 26);
             this.commandBarGalleryDropDown1.Gallery.RowCount = 14;
             this.commandBarGalleryDropDown1.Gallery.ShowGroupCaption = false;
             this.commandBarGalleryDropDown1.Gallery.ShowItemText = true;
@@ -5547,12 +5545,11 @@
             // 
             // frmSpreadsheetControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1585, 958);
+            this.ClientSize = new System.Drawing.Size(1359, 778);
             this.Controls.Add(this.spreadsheetControl1);
             this.Controls.Add(this.ribbonControl1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmSpreadsheetControl";
             this.Ribbon = this.ribbonControl1;
             this.ShowIcon = false;

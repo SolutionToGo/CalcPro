@@ -46,7 +46,7 @@ namespace CalcPro
             {
                 if (Utility.OTTODataAccess == "7")
                     btnSaveContact.Enabled = false;
-                this.Text = "OTTO Kontaktdaten";
+                this.Text = "Company Kontaktdaten";
                 BindContactsDetails();
             }
             catch (Exception ex){Utility.ShowError(ex);}

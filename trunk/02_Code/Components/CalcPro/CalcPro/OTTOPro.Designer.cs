@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalcPro));
-            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem3 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip7 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem7 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip8 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem8 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip9 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem9 = new DevExpress.Utils.ToolTipItem();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnNewProject = new DevExpress.XtraBars.BarButtonItem();
             this.btnLoadProject = new DevExpress.XtraBars.BarButtonItem();
@@ -88,9 +88,6 @@
             this.nbCopyDetailKZ = new DevExpress.XtraBars.BarButtonItem();
             this.btnRefreshProject = new DevExpress.XtraBars.BarButtonItem();
             this.btnSendLogfile = new DevExpress.XtraBars.BarButtonItem();
-            this.txtAppVersion = new DevExpress.XtraBars.BarStaticItem();
-            this.txtDBVersion = new DevExpress.XtraBars.BarStaticItem();
-            this.txtUsername = new DevExpress.XtraBars.BarStaticItem();
             this.btnDataNormImport = new DevExpress.XtraBars.BarButtonItem();
             this.tsStatus = new DevExpress.XtraBars.BarStaticItem();
             this.miHome = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -100,7 +97,6 @@
             this.rpgArticleMaster = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpSetting = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgTextModule = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -117,6 +113,10 @@
             this.lblDBVersion = new System.Windows.Forms.Label();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.txtUsername = new DevExpress.XtraBars.BarStaticItem();
+            this.txtAppVersion = new DevExpress.XtraBars.BarStaticItem();
+            this.txtDBVersion = new DevExpress.XtraBars.BarStaticItem();
+            this.barMdiChildrenListItem1 = new DevExpress.XtraBars.BarMdiChildrenListItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkAutoSave)).BeginInit();
@@ -176,24 +176,25 @@
             this.nbCopyDetailKZ,
             this.btnRefreshProject,
             this.btnSendLogfile,
-            this.txtAppVersion,
-            this.txtDBVersion,
-            this.txtUsername,
             this.bbProposalLetter,
             this.btnDataNormImport,
-            this.tsStatus});
+            this.tsStatus,
+            this.txtUsername,
+            this.txtAppVersion,
+            this.txtDBVersion,
+            this.barMdiChildrenListItem1});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 82;
+            this.ribbon.MaxItemId = 86;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.miHome,
             this.rpSetting,
             this.Profile});
+            this.ribbon.QuickToolbarItemLinks.Add(this.barMdiChildrenListItem1);
             this.ribbon.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.chkAutoSave,
             this.repositoryItemCheckEdit1});
-            this.ribbon.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbon.Size = new System.Drawing.Size(1185, 148);
+            this.ribbon.Size = new System.Drawing.Size(1185, 171);
             this.ribbon.StatusBar = this.ribbonStatusBar1;
             // 
             // btnNewProject
@@ -914,9 +915,9 @@
             this.nbDeletePosition.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.nbDeletePosition.Name = "nbDeletePosition";
             this.nbDeletePosition.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipItem1.Text = "AF5 - Löschen";
-            superToolTip1.Items.Add(toolTipItem1);
-            this.nbDeletePosition.SuperTip = superToolTip1;
+            toolTipItem7.Text = "AF5 - Löschen";
+            superToolTip7.Items.Add(toolTipItem7);
+            this.nbDeletePosition.SuperTip = superToolTip7;
             this.nbDeletePosition.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.nbDeletePosition_ItemClick);
             // 
             // nbCopyPosition
@@ -942,9 +943,9 @@
             this.nbCopyPosition.ItemAppearance.Pressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.nbCopyPosition.Name = "nbCopyPosition";
             this.nbCopyPosition.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipItem2.Text = "F4 - Kopieren";
-            superToolTip2.Items.Add(toolTipItem2);
-            this.nbCopyPosition.SuperTip = superToolTip2;
+            toolTipItem8.Text = "F4 - Kopieren";
+            superToolTip8.Items.Add(toolTipItem8);
+            this.nbCopyPosition.SuperTip = superToolTip8;
             this.nbCopyPosition.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.nbCopyPosition_ItemClick);
             // 
             // nbCopyDetailKZ
@@ -1002,54 +1003,6 @@
             this.btnSendLogfile.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnSendLogfile.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSendLogfile_ItemClick);
             // 
-            // txtAppVersion
-            // 
-            this.txtAppVersion.Caption = "Version Software 9.5.8 (06.04.2020) - PROD";
-            this.txtAppVersion.Id = 69;
-            this.txtAppVersion.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 8F);
-            this.txtAppVersion.ItemAppearance.Disabled.Options.UseFont = true;
-            this.txtAppVersion.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 8F);
-            this.txtAppVersion.ItemAppearance.Hovered.Options.UseFont = true;
-            this.txtAppVersion.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 8F);
-            this.txtAppVersion.ItemAppearance.Normal.ForeColor = System.Drawing.Color.Blue;
-            this.txtAppVersion.ItemAppearance.Normal.Options.UseFont = true;
-            this.txtAppVersion.ItemAppearance.Normal.Options.UseForeColor = true;
-            this.txtAppVersion.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 8F);
-            this.txtAppVersion.ItemAppearance.Pressed.Options.UseFont = true;
-            this.txtAppVersion.Name = "txtAppVersion";
-            // 
-            // txtDBVersion
-            // 
-            this.txtDBVersion.Caption = "barStaticItem3";
-            this.txtDBVersion.Id = 70;
-            this.txtDBVersion.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 8F);
-            this.txtDBVersion.ItemAppearance.Disabled.Options.UseFont = true;
-            this.txtDBVersion.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 8F);
-            this.txtDBVersion.ItemAppearance.Hovered.Options.UseFont = true;
-            this.txtDBVersion.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 8F);
-            this.txtDBVersion.ItemAppearance.Normal.ForeColor = System.Drawing.Color.Blue;
-            this.txtDBVersion.ItemAppearance.Normal.Options.UseFont = true;
-            this.txtDBVersion.ItemAppearance.Normal.Options.UseForeColor = true;
-            this.txtDBVersion.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 8F);
-            this.txtDBVersion.ItemAppearance.Pressed.Options.UseFont = true;
-            this.txtDBVersion.Name = "txtDBVersion";
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Caption = "barStaticItem4";
-            this.txtUsername.Id = 73;
-            this.txtUsername.ItemAppearance.Disabled.Font = new System.Drawing.Font("Bahnschrift Light", 8F);
-            this.txtUsername.ItemAppearance.Disabled.Options.UseFont = true;
-            this.txtUsername.ItemAppearance.Hovered.Font = new System.Drawing.Font("Bahnschrift Light", 8F);
-            this.txtUsername.ItemAppearance.Hovered.Options.UseFont = true;
-            this.txtUsername.ItemAppearance.Normal.Font = new System.Drawing.Font("Bahnschrift Light", 8F);
-            this.txtUsername.ItemAppearance.Normal.ForeColor = System.Drawing.Color.Blue;
-            this.txtUsername.ItemAppearance.Normal.Options.UseFont = true;
-            this.txtUsername.ItemAppearance.Normal.Options.UseForeColor = true;
-            this.txtUsername.ItemAppearance.Pressed.Font = new System.Drawing.Font("Bahnschrift Light", 8F);
-            this.txtUsername.ItemAppearance.Pressed.Options.UseFont = true;
-            this.txtUsername.Name = "txtUsername";
-            // 
             // btnDataNormImport
             // 
             this.btnDataNormImport.Caption = "DATANORM Import";
@@ -1082,8 +1035,7 @@
             this.ribbonPageGroup5,
             this.rpgArticleMaster,
             this.ribbonPageGroup2,
-            this.ribbonPageGroup4,
-            this.ribbonPageGroup9});
+            this.ribbonPageGroup4});
             this.miHome.Name = "miHome";
             this.miHome.Text = "CalcPro";
             // 
@@ -1135,16 +1087,6 @@
             // 
             this.ribbonPageGroup4.ItemLinks.Add(this.barMdiChildrenListItemProject);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            // 
-            // ribbonPageGroup9
-            // 
-            this.ribbonPageGroup9.Alignment = DevExpress.XtraBars.Ribbon.RibbonPageGroupAlignment.Far;
-            this.ribbonPageGroup9.ItemLinks.Add(this.txtAppVersion);
-            this.ribbonPageGroup9.ItemLinks.Add(this.txtDBVersion);
-            this.ribbonPageGroup9.ItemLinks.Add(this.txtUsername);
-            this.ribbonPageGroup9.ItemsLayout = DevExpress.XtraBars.Ribbon.RibbonPageGroupItemsLayout.ThreeRows;
-            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
-            this.ribbonPageGroup9.ShowCaptionButton = false;
             // 
             // rpSetting
             // 
@@ -1201,10 +1143,13 @@
             // ribbonStatusBar1
             // 
             this.ribbonStatusBar1.ItemLinks.Add(this.tsStatus);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 608);
+            this.ribbonStatusBar1.ItemLinks.Add(this.txtUsername);
+            this.ribbonStatusBar1.ItemLinks.Add(this.txtAppVersion);
+            this.ribbonStatusBar1.ItemLinks.Add(this.txtDBVersion);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 617);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbon;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1185, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1185, 22);
             // 
             // BarButtonItem10
             // 
@@ -1213,12 +1158,12 @@
             this.BarButtonItem10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarButtonItem10.ImageOptions.Image")));
             this.BarButtonItem10.Name = "BarButtonItem10";
             this.BarButtonItem10.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipTitleItem1.Text = "Otto Pro";
-            toolTipItem3.LeftIndent = 6;
-            toolTipItem3.Text = "Maintains Customer Information";
-            superToolTip3.Items.Add(toolTipTitleItem1);
-            superToolTip3.Items.Add(toolTipItem3);
-            this.BarButtonItem10.SuperTip = superToolTip3;
+            toolTipTitleItem3.Text = "Otto Pro";
+            toolTipItem9.LeftIndent = 6;
+            toolTipItem9.Text = "Maintains Customer Information";
+            superToolTip9.Items.Add(toolTipTitleItem3);
+            superToolTip9.Items.Add(toolTipItem9);
+            this.BarButtonItem10.SuperTip = superToolTip9;
             // 
             // tmrStatus
             // 
@@ -1230,9 +1175,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::CalcPro.Properties.Resources.calcpro_withalign;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 148);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 171);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1185, 491);
+            this.pictureBox1.Size = new System.Drawing.Size(1185, 468);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -1280,6 +1225,33 @@
             // 
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.txtUsername.Caption = "barStaticItem1";
+            this.txtUsername.Id = 82;
+            this.txtUsername.Name = "txtUsername";
+            // 
+            // txtAppVersion
+            // 
+            this.txtAppVersion.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.txtAppVersion.Caption = "barStaticItem2";
+            this.txtAppVersion.Id = 83;
+            this.txtAppVersion.Name = "txtAppVersion";
+            // 
+            // txtDBVersion
+            // 
+            this.txtDBVersion.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.txtDBVersion.Caption = "barStaticItem3";
+            this.txtDBVersion.Id = 84;
+            this.txtDBVersion.Name = "txtDBVersion";
+            // 
+            // barMdiChildrenListItem1
+            // 
+            this.barMdiChildrenListItem1.Caption = "barMdiChildrenListItem1";
+            this.barMdiChildrenListItem1.Id = 85;
+            this.barMdiChildrenListItem1.Name = "barMdiChildrenListItem1";
             // 
             // frmCalcPro
             // 
@@ -1392,13 +1364,13 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.BarButtonItem btnRefreshProject;
         private DevExpress.XtraBars.BarButtonItem btnSendLogfile;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
-        private DevExpress.XtraBars.BarStaticItem txtAppVersion;
-        private DevExpress.XtraBars.BarStaticItem txtDBVersion;
-        private DevExpress.XtraBars.BarStaticItem txtUsername;
         private DevExpress.XtraBars.BarButtonItem bbProposalLetter;
         private DevExpress.XtraBars.BarButtonItem btnDataNormImport;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
         private DevExpress.XtraBars.BarStaticItem tsStatus;
+        private DevExpress.XtraBars.BarStaticItem txtUsername;
+        private DevExpress.XtraBars.BarStaticItem txtAppVersion;
+        private DevExpress.XtraBars.BarStaticItem txtDBVersion;
+        private DevExpress.XtraBars.BarMdiChildrenListItem barMdiChildrenListItem1;
     }
 }
