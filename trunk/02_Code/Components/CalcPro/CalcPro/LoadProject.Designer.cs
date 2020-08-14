@@ -114,6 +114,7 @@
             this.gcProjectSearch.TabIndex = 3;
             this.gcProjectSearch.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.dgProjectSearch});
+         //   this.gcProjectSearch.Click += new System.EventHandler(this.gcProjectSearch_Click);
             // 
             // dgProjectSearch
             // 

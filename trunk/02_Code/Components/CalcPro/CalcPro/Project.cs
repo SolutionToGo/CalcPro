@@ -249,11 +249,19 @@ namespace CalcPro
                 cmbPositionKZCD.Properties.DisplayMember = "KZDescription";
                 cmbPositionKZCD.Properties.ValueMember = "PositionKZListID";
                 tcProjectDetails_SelectedPageChanged(null, null);
-            }
+
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Von", typeof(string));
+                dt.Columns.Add("Bis", typeof(string));
+                dt.Columns[0].ReadOnly = false;
+                dt.Columns[1].ReadOnly = false;
+                gvAddRemovePositions.DataSource = dt;
+                        }
             catch (Exception ex)
             {
                 Utility.ShowError(ex);
             }
+
         }
 
         private void frmProject_FormClosing(object sender, FormClosingEventArgs e)
@@ -1974,7 +1982,7 @@ namespace CalcPro
                     int _DetailKZ = 0;
                     if (int.TryParse(txtDetailKZ.Text, out _DetailKZ))
                     {
-                        if (_DetailKZ > 0)
+                        if (_DetailKZ > 0 || splitContainerControl2.SplitterPosition != 0)
                             btnAddAccessories.Enabled = false;
                         else
                             btnAddAccessories.Enabled = true;
@@ -7603,7 +7611,7 @@ namespace CalcPro
             {
                 if (cmbBulkProcessSelection.SelectedIndex != 2)
                 {
-                    if (gvAddRemovePositions.RowCount == 0)
+                    if (gvAddRemovePositions.DefaultView.RowCount == 0)
                     {
                         if (Utility._IsGermany == true)
                         {
@@ -7619,9 +7627,14 @@ namespace CalcPro
                 string Gridvalue = null;
                 if (cmbBulkProcessSelection.SelectedIndex != 2)
                 {
-                    foreach (DataGridViewRow dr in gvAddRemovePositions.Rows)
+                    //foreach (DataGridViewRow dr in gvAddRemovePositions.Rows)
+                    //{
+                    
+                    for (int i = 0; i < gridView1.RowCount; i++)
                     {
-                        Gridvalue = Convert.ToString(dr.Cells[1].Value);
+                        DataRow dr;
+                        dr = gridView1.GetDataRow(i);                       
+                        Gridvalue = Convert.ToString(dr[1]);
                         if (Gridvalue == null || Gridvalue == "")
                         {
                             if (Utility._IsGermany == true)
@@ -7670,16 +7683,18 @@ namespace CalcPro
 
                     string tfrom = null;
                     string tTo = null;
-                    foreach (DataGridViewRow dr in gvAddRemovePositions.Rows)
+                    //foreach (DataGridViewRow dr in gvAddRemovePositions.Rows)
+                    for (int i = 0; i < gridView1.RowCount; i++)
                     {
-                        if (dr.Cells[0].Value == null)
+                        DataRow dr = gridView1.GetDataRow(i);
+                        if (dr[0] == null)
                         {
                             throw new Exception("Bitte machen Sie VON Angaben.");
                         }
 
                         DataRow drPos = dtPos.NewRow();
-                        tfrom = dr.Cells[0].Value.ToString();
-                        tTo = dr.Cells[1].Value.ToString();
+                        tfrom = dr[0].ToString();
+                        tTo = dr[1].ToString();
                         if (cmbBulkProcessSelection.SelectedIndex == 0)
                         {
                             string _fromParent = string.Empty;
@@ -8301,7 +8316,7 @@ namespace CalcPro
                 }
                 if (ObjEPosition.dsPositionOZList != null)
                 {
-                    gvAddRemovePositions.Rows.Clear();
+                   // gvAddRemovePositions.DefaultView.DataSource = null;
                     tlBulkProcessPositionDetails.DataSource = null;
                 }
 
@@ -8318,52 +8333,11 @@ namespace CalcPro
             txtBulkProcessWA.Text = "";
         }
 
-        private void gvAddRemovePositions_MouseClick(object sender, MouseEventArgs e)
-        {
-            try
-            {
-                if (e.Button == MouseButtons.Right)
-                {
-                    this.contextMenuStrip1.Show(this.gvAddRemovePositions, e.Location);
-                    contextMenuStrip1.Show(Cursor.Position);
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
+      
 
-        private void toolStripMenuItemAdd_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                gvAddRemovePositions.Rows.Add();
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
+      
 
-        private void toolStripMenuItemRemove_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (this.gvAddRemovePositions.SelectedRows.Count > 0)
-                {
-                    foreach (DataGridViewRow item in this.gvAddRemovePositions.SelectedRows)
-                    {
-                        gvAddRemovePositions.Rows.RemoveAt(item.Index);
-                    }
-                    tlBulkProcessPositionDetails.DataSource = null;
-                }
-            }
-            catch (Exception ex)
-            {
-                Utility.ShowError(ex);
-            }
-        }
+      
 
         #endregion
 
@@ -13436,6 +13410,33 @@ namespace CalcPro
         private void btnDeletePosition_ItemClick(object sender, ItemClickEventArgs e)
         {
             DeletePosition();
+        }
+
+        private void gvAddRemovePositions_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+
+        private void btnrowdelete_Click(object sender, EventArgs e)
+        {
+            gridView1.DeleteSelectedRows();
+        }
+
+      
+
+        private void splitContainerControl2_SplitterPositionChanged(object sender, EventArgs e)
+        {
+            if (splitContainerControl2.SplitterPosition!=0)
+            {
+                btnAddAccessories.Enabled = false;
+                btnValiditydates.Enabled = false;
+            }
+            else
+            {
+                btnAddAccessories.Enabled = true;
+                btnValiditydates.Enabled = true;
+            }
         }
     }
 }
