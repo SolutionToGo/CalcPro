@@ -10852,12 +10852,11 @@ namespace CalcPro
                 {
                     SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
                     SplashScreenManager.Default.SetWaitFormDescription("Loading...");
-                    RadioGroup edit = sender as RadioGroup;
-                    if (edit.SelectedIndex == 0)
+                    if (rgProposalViews.EditValue != null && Convert.ToInt32(rgProposalViews.EditValue) == 0)
                         gcSupplier.DataSource = ObjESupplier.dtPositions;
-                    else
+                    else if(rgProposalViews.EditValue != null)
                     {
-                        ObjESupplier = ObjBSupplier.ChangeProposalView(ObjESupplier, edit.SelectedIndex);
+                        ObjESupplier = ObjBSupplier.ChangeProposalView(ObjESupplier, Convert.ToInt32(rgProposalViews.EditValue));
                         gcSupplier.DataSource = ObjESupplier.dtPositionscopy;
                     }
                     CalculateSupplierColumns();
@@ -12397,7 +12396,7 @@ namespace CalcPro
         {
             try
             {
-                if (gvDiscount.FocusedRowHandle > 0)
+                if (gvDiscount.FocusedRowHandle >= 0)
                 {
                     int IValue = 0;
                     string strTemp = Convert.ToString(gvDiscount.GetFocusedRowCellValue("DiscountID"));
@@ -13423,8 +13422,6 @@ namespace CalcPro
             gridView1.DeleteSelectedRows();
         }
 
-      
-
         private void splitContainerControl2_SplitterPositionChanged(object sender, EventArgs e)
         {
             if (splitContainerControl2.SplitterPosition!=0)
@@ -13438,5 +13435,6 @@ namespace CalcPro
                 btnValiditydates.Enabled = true;
             }
         }
+
     }
 }

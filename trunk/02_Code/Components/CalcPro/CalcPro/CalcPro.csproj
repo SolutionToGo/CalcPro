@@ -72,7 +72,8 @@
     <Reference Include="Accessibility">
       <Private>True</Private>
     </Reference>
-    <Reference Include="CategisSkin">
+    <Reference Include="CategisSkin, Version=18.2.13.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\OTTOPro\trunk\02_Code\CategisSkin\CategisSkin.dll</HintPath>
     </Reference>
     <Reference Include="dcmArge_6.0">
@@ -1216,6 +1217,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\calcpro.png" />
     <None Include="Resources\titleblatt_32x32.png" />
     <None Include="Resources\Reports_32x32.png" />
     <None Include="Resources\Supplierproposal_32x32.png" />

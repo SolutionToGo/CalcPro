@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule2 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.dtpDeliveryDeadline = new DevExpress.XtraEditors.DateEdit();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
@@ -40,9 +40,6 @@
             this.txtProjectNumber = new DevExpress.XtraEditors.TextEdit();
             this.rgGAEBVersion = new DevExpress.XtraEditors.RadioGroup();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.tabbedControlGroup2 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
@@ -54,6 +51,7 @@
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.dxValidationProvider1 = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
             this.dlg = new DevExpress.XtraEditors.XtraFolderBrowserDialog(this.components);
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtpDeliveryDeadline.Properties.CalendarTimeProperties)).BeginInit();
@@ -63,9 +61,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtProjectNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgGAEBVersion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
@@ -76,6 +71,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -102,40 +98,37 @@
             this.layoutControl1.Controls.Add(this.rgGAEBVersion);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(833, 120, 450, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(638, 366);
+            this.layoutControl1.Size = new System.Drawing.Size(547, 297);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // dtpDeliveryDeadline
             // 
             this.dtpDeliveryDeadline.EditValue = null;
-            this.dtpDeliveryDeadline.Location = new System.Drawing.Point(193, 247);
-            this.dtpDeliveryDeadline.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtpDeliveryDeadline.Location = new System.Drawing.Point(148, 191);
             this.dtpDeliveryDeadline.Name = "dtpDeliveryDeadline";
             this.dtpDeliveryDeadline.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtpDeliveryDeadline.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtpDeliveryDeadline.Size = new System.Drawing.Size(428, 28);
+            this.dtpDeliveryDeadline.Size = new System.Drawing.Size(384, 22);
             this.dtpDeliveryDeadline.StyleController = this.layoutControl1;
             this.dtpDeliveryDeadline.TabIndex = 11;
-            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule1.ErrorText = "Mandatory";
-            this.dxValidationProvider1.SetValidationRule(this.dtpDeliveryDeadline, conditionValidationRule1);
+            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule2.ErrorText = "Mandatory";
+            this.dxValidationProvider1.SetValidationRule(this.dtpDeliveryDeadline, conditionValidationRule2);
             // 
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ImageOptions.Image = global::CalcPro.Properties.Resources.CancelButton_32x32;
             this.btnCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnCancel.Location = new System.Drawing.Point(495, 320);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Location = new System.Drawing.Point(425, 252);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(135, 38);
+            this.btnCancel.Size = new System.Drawing.Size(115, 38);
             this.btnCancel.StyleController = this.layoutControl1;
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "&Abbrechen";
@@ -145,10 +138,9 @@
             // 
             this.btnOk.ImageOptions.Image = global::CalcPro.Properties.Resources.OK_32x32;
             this.btnOk.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnOk.Location = new System.Drawing.Point(388, 320);
-            this.btnOk.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnOk.Location = new System.Drawing.Point(308, 252);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(103, 38);
+            this.btnOk.Size = new System.Drawing.Size(113, 38);
             this.btnOk.StyleController = this.layoutControl1;
             this.btnOk.TabIndex = 9;
             this.btnOk.Text = "Ok";
@@ -157,10 +149,9 @@
             // btnBrowse
             // 
             this.btnBrowse.ImageOptions.Image = global::CalcPro.Properties.Resources.browsepath_16x16;
-            this.btnBrowse.Location = new System.Drawing.Point(480, 279);
-            this.btnBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnBrowse.Location = new System.Drawing.Point(412, 217);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(141, 28);
+            this.btnBrowse.Size = new System.Drawing.Size(120, 23);
             this.btnBrowse.StyleController = this.layoutControl1;
             this.btnBrowse.TabIndex = 8;
             this.btnBrowse.Text = "Durchsuchen";
@@ -168,41 +159,37 @@
             // 
             // txtFilePath
             // 
-            this.txtFilePath.Location = new System.Drawing.Point(193, 279);
-            this.txtFilePath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFilePath.Location = new System.Drawing.Point(148, 217);
             this.txtFilePath.Name = "txtFilePath";
             this.txtFilePath.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtFilePath.Properties.Appearance.Options.UseBackColor = true;
             this.txtFilePath.Properties.ReadOnly = true;
-            this.txtFilePath.Size = new System.Drawing.Size(283, 28);
+            this.txtFilePath.Size = new System.Drawing.Size(260, 22);
             this.txtFilePath.StyleController = this.layoutControl1;
             this.txtFilePath.TabIndex = 7;
             // 
             // txtFileName
             // 
-            this.txtFileName.Location = new System.Drawing.Point(193, 215);
-            this.txtFileName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFileName.Location = new System.Drawing.Point(148, 165);
             this.txtFileName.Name = "txtFileName";
-            this.txtFileName.Size = new System.Drawing.Size(428, 28);
+            this.txtFileName.Size = new System.Drawing.Size(384, 22);
             this.txtFileName.StyleController = this.layoutControl1;
             this.txtFileName.TabIndex = 6;
             // 
             // txtProjectNumber
             // 
-            this.txtProjectNumber.Location = new System.Drawing.Point(193, 183);
-            this.txtProjectNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtProjectNumber.Location = new System.Drawing.Point(148, 139);
             this.txtProjectNumber.Name = "txtProjectNumber";
             this.txtProjectNumber.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtProjectNumber.Properties.Appearance.Options.UseBackColor = true;
             this.txtProjectNumber.Properties.ReadOnly = true;
-            this.txtProjectNumber.Size = new System.Drawing.Size(428, 28);
+            this.txtProjectNumber.Size = new System.Drawing.Size(384, 22);
             this.txtProjectNumber.StyleController = this.layoutControl1;
             this.txtProjectNumber.TabIndex = 5;
             // 
             // rgGAEBVersion
             // 
-            this.rgGAEBVersion.Location = new System.Drawing.Point(17, 44);
-            this.rgGAEBVersion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rgGAEBVersion.Location = new System.Drawing.Point(7, 26);
             this.rgGAEBVersion.Name = "rgGAEBVersion";
             this.rgGAEBVersion.Properties.AllowMouseWheel = false;
             this.rgGAEBVersion.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
@@ -210,7 +197,7 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "D83(GAEB 1990)"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "P83(GAEB 2000)"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "X83(GAEB XML)")});
-            this.rgGAEBVersion.Size = new System.Drawing.Size(603, 88);
+            this.rgGAEBVersion.Size = new System.Drawing.Size(533, 80);
             this.rgGAEBVersion.StyleController = this.layoutControl1;
             this.rgGAEBVersion.TabIndex = 4;
             // 
@@ -224,82 +211,40 @@
             this.layoutControlGroup1.GroupBordersVisible = false;
             this.layoutControlGroup1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.tabbedControlGroup2,
             this.layoutControlItem6,
             this.layoutControlItem7,
             this.emptySpaceItem2,
-            this.layoutControlGroup2});
-            this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(638, 366);
-            this.layoutControlGroup1.TextVisible = false;
-            // 
-            // tabbedControlGroup2
-            // 
-            this.tabbedControlGroup2.AppearanceGroup.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.tabbedControlGroup2.AppearanceGroup.Options.UseFont = true;
-            this.tabbedControlGroup2.AppearanceItemCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.tabbedControlGroup2.AppearanceItemCaption.Options.UseFont = true;
-            this.tabbedControlGroup2.Location = new System.Drawing.Point(0, 0);
-            this.tabbedControlGroup2.Name = "tabbedControlGroup2";
-            this.tabbedControlGroup2.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
-            this.tabbedControlGroup2.SelectedTabPage = this.layoutControlGroup3;
-            this.tabbedControlGroup2.Size = new System.Drawing.Size(626, 138);
-            this.tabbedControlGroup2.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup3});
-            // 
-            // layoutControlGroup3
-            // 
-            this.layoutControlGroup3.AppearanceGroup.Font = new System.Drawing.Font("Bahnschrift", 10F);
-            this.layoutControlGroup3.AppearanceGroup.Options.UseFont = true;
-            this.layoutControlGroup3.AppearanceItemCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.layoutControlGroup3.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlGroup3.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup2,
             this.layoutControlItem1});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup3.Name = "layoutControlGroup3";
-            this.layoutControlGroup3.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
-            this.layoutControlGroup3.Size = new System.Drawing.Size(607, 92);
-            this.layoutControlGroup3.Text = "GAEB Version";
-            // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
-            this.layoutControlItem1.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem1.Control = this.rgGAEBVersion;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(607, 92);
-            this.layoutControlItem1.Text = "GAEB Version";
-            this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(547, 297);
+            this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.btnOk;
-            this.layoutControlItem6.Location = new System.Drawing.Point(380, 312);
+            this.layoutControlItem6.Location = new System.Drawing.Point(301, 245);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(107, 42);
+            this.layoutControlItem6.Size = new System.Drawing.Size(117, 42);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.btnCancel;
-            this.layoutControlItem7.Location = new System.Drawing.Point(487, 312);
+            this.layoutControlItem7.Location = new System.Drawing.Point(418, 245);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(139, 42);
+            this.layoutControlItem7.Size = new System.Drawing.Size(119, 42);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 312);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 245);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(380, 42);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(301, 42);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup2
@@ -315,10 +260,10 @@
             this.layoutControlItem4,
             this.layoutControlItem5,
             this.layoutControlItem8});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 138);
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 103);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
-            this.layoutControlGroup2.Size = new System.Drawing.Size(626, 174);
+            this.layoutControlGroup2.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(537, 142);
             this.layoutControlGroup2.Text = "Dateidetails";
             // 
             // layoutControlItem2
@@ -326,55 +271,66 @@
             this.layoutControlItem2.Control = this.txtProjectNumber;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(608, 32);
+            this.layoutControlItem2.Size = new System.Drawing.Size(521, 26);
             this.layoutControlItem2.Text = "Ausgewähltes Projekt ";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(173, 21);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(130, 16);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.txtFileName;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 32);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 26);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(608, 32);
+            this.layoutControlItem3.Size = new System.Drawing.Size(521, 26);
             this.layoutControlItem3.Text = "Export-Dateiname ";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(173, 21);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(130, 16);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.txtFilePath;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 78);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(463, 32);
+            this.layoutControlItem4.Size = new System.Drawing.Size(397, 27);
             this.layoutControlItem4.Text = "Export-Dateipfad ";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(173, 21);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(130, 16);
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnBrowse;
-            this.layoutControlItem5.Location = new System.Drawing.Point(463, 96);
+            this.layoutControlItem5.Location = new System.Drawing.Point(397, 78);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(145, 32);
+            this.layoutControlItem5.Size = new System.Drawing.Size(124, 27);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.dtpDeliveryDeadline;
-            this.layoutControlItem8.Location = new System.Drawing.Point(0, 64);
+            this.layoutControlItem8.Location = new System.Drawing.Point(0, 52);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(608, 32);
+            this.layoutControlItem8.Size = new System.Drawing.Size(521, 26);
             this.layoutControlItem8.Text = "Abgabefrist";
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(173, 21);
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(130, 16);
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
+            this.layoutControlItem1.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem1.Control = this.rgGAEBVersion;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(537, 103);
+            this.layoutControlItem1.Text = "GAEB Version";
+            this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(130, 16);
             // 
             // frmGAEBFormat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(638, 366);
+            this.ClientSize = new System.Drawing.Size(547, 297);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmGAEBFormat";
@@ -392,9 +348,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtProjectNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgGAEBVersion.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
@@ -405,6 +358,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -430,10 +384,8 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
-        private DevExpress.XtraLayout.TabbedControlGroup tabbedControlGroup2;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider dxValidationProvider1;
         private DevExpress.XtraEditors.XtraFolderBrowserDialog dlg;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
     }
 }
