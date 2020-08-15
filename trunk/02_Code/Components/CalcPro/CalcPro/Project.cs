@@ -256,6 +256,7 @@ namespace CalcPro
                 dt.Columns[0].ReadOnly = false;
                 dt.Columns[1].ReadOnly = false;
                 gvAddRemovePositions.DataSource = dt;
+                btnValiditydates.Enabled = false;
                         }
             catch (Exception ex)
             {

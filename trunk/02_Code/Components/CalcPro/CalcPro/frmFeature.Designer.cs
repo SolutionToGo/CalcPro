@@ -135,8 +135,8 @@
             this.gvFeature.Appearance.HideSelectionRow.Options.UseFont = true;
             this.gvFeature.Appearance.Row.Font = new System.Drawing.Font("Bahnschrift Light", 10F);
             this.gvFeature.Appearance.Row.Options.UseFont = true;
-            this.gvFeature.AppearancePrint.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvFeature.AppearancePrint.HeaderPanel.Options.UseFont = true;
+            //this.gvFeature.AppearancePrint.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            //this.gvFeature.AppearancePrint.HeaderPanel.Options.UseFont = true;
             this.gvFeature.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,

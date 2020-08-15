@@ -52,10 +52,10 @@ namespace CalcPro
             _IsNew = true;
             ObjEArticle.WGID = -1;
             ObjEArticle.WIID = -1;
-            txtWG.Text = string.Empty;
-            txtWGDescription.Text = string.Empty;
-            txtWA.Text = string.Empty;
-            txtWADescription.Text = string.Empty;
+            //txtWG.Text = string.Empty;
+            //txtWGDescription.Text = string.Empty;
+            //txtWA.Text = string.Empty;
+           // txtWADescription.Text = string.Empty;
             txtWI.Text = string.Empty;
             txtWIDescription.Text = string.Empty;
             txtfabricat.Text = string.Empty;

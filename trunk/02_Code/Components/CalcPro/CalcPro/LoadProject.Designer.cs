@@ -96,7 +96,7 @@
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(759, 208, 250, 350);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(1216, 710);
+            this.layoutControl1.Size = new System.Drawing.Size(1216, 711);
             this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -110,11 +110,11 @@
             this.gcProjectSearch.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.riDate,
             this.btnLoadProject});
-            this.gcProjectSearch.Size = new System.Drawing.Size(1200, 694);
+            this.gcProjectSearch.Size = new System.Drawing.Size(1200, 695);
             this.gcProjectSearch.TabIndex = 3;
             this.gcProjectSearch.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.dgProjectSearch});
-         //   this.gcProjectSearch.Click += new System.EventHandler(this.gcProjectSearch_Click);
+            this.gcProjectSearch.Click += new System.EventHandler(this.dgProjectSearch_DoubleClick);
             // 
             // dgProjectSearch
             // 
@@ -392,7 +392,7 @@
             this.layoutControlItem2});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(6, 6, 6, 6);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1216, 710);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1216, 711);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem2
@@ -400,7 +400,7 @@
             this.layoutControlItem2.Control = this.gcProjectSearch;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(1204, 698);
+            this.layoutControlItem2.Size = new System.Drawing.Size(1204, 699);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -413,7 +413,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1216, 710);
+            this.ClientSize = new System.Drawing.Size(1216, 711);
             this.Controls.Add(this.layoutControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;

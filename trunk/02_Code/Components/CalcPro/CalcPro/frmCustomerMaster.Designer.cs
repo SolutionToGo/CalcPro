@@ -441,8 +441,7 @@
             // 
             // tbCustomerAddress
             // 
-            this.tbCustomerAddress.Appearance.Header.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.tbCustomerAddress.Appearance.Header.Options.UseFont = true;
+            
             this.tbCustomerAddress.Controls.Add(this.layoutControl4);
             this.tbCustomerAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbCustomerAddress.Name = "tbCustomerAddress";
