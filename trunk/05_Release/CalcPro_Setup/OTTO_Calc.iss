@@ -39,7 +39,7 @@ Name: "german"; MessagesFile: "compiler:Languages\German.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-source: "E:\CalcPro\trunk\05_Release\CalcPro_Setup\Input\*"; destdir: "{win}\CalcPro"; flags: ignoreversion recursesubdirs createallsubdirs
+source: "D:\Anilet V Antony\CalcPro\trunk\05_Release\CalcPro_Setup\Input\*"; destdir: "{win}\CalcPro"; flags: ignoreversion recursesubdirs createallsubdirs
 
 [Dirs]
 
