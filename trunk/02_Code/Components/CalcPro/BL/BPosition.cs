@@ -423,7 +423,7 @@ namespace BL
         /// <param name="MO_Verkaufspreis"></param>
         /// <param name="dt"></param>
         /// <returns></returns>
-        public void UpdateBulkProcess_ActionB(EPosition ObjEPosition, int ProjectID, string Position_Type, string Menge, string MA, string MO, string PeriesText, string Fabricat, string Typ, string LieferantMA, string wg, string wa, string wi, string tLVSection, DataTable dt)
+        public void UpdateBulkProcess_ActionB(EPosition ObjEPosition, int ProjectID, string Position_Type, decimal Menge, string MA, string MO, string PeriesText, string Fabricat, string Typ, string LieferantMA, string wg, string wa, string wi, string tLVSection, DataTable dt)
         {
             try
             {

@@ -99,7 +99,7 @@ namespace CalcPro
                 ObjEArticle.ValidityDate = dateEditGultigkeit.DateTime;
                 ObjEArticle.dtDim = ((DataView)gvDimensions.DataSource).ToTable();
                 ObjEArticle = ObjBArticle.SaveDimensionCopy(ObjEArticle);
-                MessageBox.Show("Maße / Artikeldaten mit neuem Gültigkeitsdatum wurden gespeichert : " + string.Format("{0:y}", dateEditGultigkeit.DateTime));
+                XtraMessageBox.Show("Maße / Artikeldaten mit neuem Gültigkeitsdatum wurden gespeichert : " + string.Format("{0:y}", dateEditGultigkeit.DateTime));
                 this.Close();
             }
             catch (Exception ex)

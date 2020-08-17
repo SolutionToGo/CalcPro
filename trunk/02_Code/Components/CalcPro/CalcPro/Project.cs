@@ -8214,7 +8214,7 @@ namespace CalcPro
                     }
                 }
 
-                ObjBPosition.UpdateBulkProcess_ActionB(ObjEPosition, ObjEProject.ProjectID, tType, txtPositionMenge.Text,
+                ObjBPosition.UpdateBulkProcess_ActionB(ObjEPosition, ObjEProject.ProjectID, tType, Convert.ToDecimal(txtPositionMenge.EditValue),
                     txtMaterialKz.Text, txtMontageKZ.Text,
                     txtPreisErstaztext.Text, txtFabrikat.Text, txtTyp.Text, txtBulkLieferantMA.Text, txtArtikelnummerWG.Text,
                     txtArtikelnummerWA.Text, txtArtikelnummerWI.Text, txtNachtragsnummer.Text, dtPos);
@@ -8892,11 +8892,21 @@ namespace CalcPro
         {
             try
             {
-                string filePath = @"D:\Umlage.xlsx";
-                XlsxExportOptionsEx opt = new XlsxExportOptionsEx();
-                gvOmlage.ExportToXlsx(filePath, opt);
-                gvOmlage.BestFitColumns();
-                Process.Start(filePath);
+                SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                saveFileDialog1.InitialDirectory = @"D:\";
+                saveFileDialog1.CheckPathExists = true;
+                saveFileDialog1.DefaultExt = "xlsx";
+                saveFileDialog1.Filter = "Excel files (*.xlsx)|*.xlsx";
+                saveFileDialog1.FilterIndex = 2;
+                saveFileDialog1.RestoreDirectory = true;
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = saveFileDialog1.FileName;
+                     XlsxExportOptionsEx opt = new XlsxExportOptionsEx();
+                    gvOmlage.ExportToXlsx(filePath, opt);
+                    gvOmlage.BestFitColumns();
+                    Process.Start(filePath);
+                }
             }
             catch (Exception ex)
             {
