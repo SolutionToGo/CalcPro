@@ -443,7 +443,7 @@ namespace DataAccess
         /// <param name="MO_Verkaufspreis"></param>
         /// <param name="dt"></param>
         /// <returns></returns>
-        public DataSet UpdateBulkProcess_ActionB(int ProjectID, string tType, decimal Menge, string MA, string MO, string PeriesText, string Fabricat, string Typ, string LieferantMA, string wg, string wa, string wi, string tLVSection, DataTable dt)
+        public DataSet UpdateBulkProcess_ActionB(int ProjectID, string tType, object Menge, string MA, string MO, string PeriesText, string Fabricat, string Typ, string LieferantMA, string wg, string wa, string wi, string tLVSection, DataTable dt)
         {
             DataSet dsPositionsOZList = new DataSet();
             try

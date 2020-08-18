@@ -8213,8 +8213,10 @@ namespace CalcPro
                         throw new Exception("Cannot Save Positions With NT Or NTM");
                     }
                 }
-
-                ObjBPosition.UpdateBulkProcess_ActionB(ObjEPosition, ObjEProject.ProjectID, tType, Convert.ToDecimal(txtPositionMenge.EditValue),
+                object menge = -1;
+                if (txtPositionMenge.EditValue != null && txtPositionMenge.EditValue.ToString() != "")
+                    menge = txtPositionMenge.EditValue;
+                    ObjBPosition.UpdateBulkProcess_ActionB(ObjEPosition, ObjEProject.ProjectID, tType, menge,
                     txtMaterialKz.Text, txtMontageKZ.Text,
                     txtPreisErstaztext.Text, txtFabrikat.Text, txtTyp.Text, txtBulkLieferantMA.Text, txtArtikelnummerWG.Text,
                     txtArtikelnummerWA.Text, txtArtikelnummerWI.Text, txtNachtragsnummer.Text, dtPos);
