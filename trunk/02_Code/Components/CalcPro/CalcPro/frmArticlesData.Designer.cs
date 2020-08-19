@@ -1307,8 +1307,11 @@
             // 
             this.layoutControlItem4.Control = this.txtWG;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem4.MaxSize = new System.Drawing.Size(412, 32);
+            this.layoutControlItem4.MinSize = new System.Drawing.Size(412, 32);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(412, 32);
+            this.layoutControlItem4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem4.Text = "WG";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(148, 21);
             // 
@@ -1316,8 +1319,11 @@
             // 
             this.layoutControlItem5.Control = this.txtDimension;
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 160);
+            this.layoutControlItem5.MaxSize = new System.Drawing.Size(412, 32);
+            this.layoutControlItem5.MinSize = new System.Drawing.Size(412, 32);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Size = new System.Drawing.Size(412, 32);
+            this.layoutControlItem5.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem5.Text = "Dimension ";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(148, 21);
             // 
@@ -1334,8 +1340,11 @@
             // 
             this.layoutControlItem7.Control = this.txtWA;
             this.layoutControlItem7.Location = new System.Drawing.Point(0, 32);
+            this.layoutControlItem7.MaxSize = new System.Drawing.Size(412, 32);
+            this.layoutControlItem7.MinSize = new System.Drawing.Size(412, 32);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(412, 32);
+            this.layoutControlItem7.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem7.Text = "WA";
             this.layoutControlItem7.TextSize = new System.Drawing.Size(148, 21);
             // 
@@ -1361,8 +1370,11 @@
             // 
             this.layoutControlItem10.Control = this.txtWI;
             this.layoutControlItem10.Location = new System.Drawing.Point(0, 64);
+            this.layoutControlItem10.MaxSize = new System.Drawing.Size(412, 32);
+            this.layoutControlItem10.MinSize = new System.Drawing.Size(412, 32);
             this.layoutControlItem10.Name = "layoutControlItem10";
             this.layoutControlItem10.Size = new System.Drawing.Size(412, 32);
+            this.layoutControlItem10.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem10.Text = "WI";
             this.layoutControlItem10.TextSize = new System.Drawing.Size(148, 21);
             // 
@@ -1370,8 +1382,11 @@
             // 
             this.layoutControlItem11.Control = this.txtfabricat;
             this.layoutControlItem11.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem11.MaxSize = new System.Drawing.Size(412, 32);
+            this.layoutControlItem11.MinSize = new System.Drawing.Size(412, 32);
             this.layoutControlItem11.Name = "layoutControlItem11";
             this.layoutControlItem11.Size = new System.Drawing.Size(412, 32);
+            this.layoutControlItem11.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem11.Text = "Fabrikat ";
             this.layoutControlItem11.TextSize = new System.Drawing.Size(148, 21);
             // 
@@ -1379,8 +1394,11 @@
             // 
             this.layoutControlItem12.Control = this.txtDatanormNr;
             this.layoutControlItem12.Location = new System.Drawing.Point(0, 128);
+            this.layoutControlItem12.MaxSize = new System.Drawing.Size(412, 32);
+            this.layoutControlItem12.MinSize = new System.Drawing.Size(412, 32);
             this.layoutControlItem12.Name = "layoutControlItem12";
             this.layoutControlItem12.Size = new System.Drawing.Size(412, 32);
+            this.layoutControlItem12.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem12.Text = "Datanorm-Nr ";
             this.layoutControlItem12.TextSize = new System.Drawing.Size(148, 21);
             // 

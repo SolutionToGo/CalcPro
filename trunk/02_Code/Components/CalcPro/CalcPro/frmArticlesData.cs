@@ -52,10 +52,19 @@ namespace CalcPro
             _IsNew = true;
             ObjEArticle.WGID = -1;
             ObjEArticle.WIID = -1;
-            //txtWG.Text = string.Empty;
-            //txtWGDescription.Text = string.Empty;
-            //txtWA.Text = string.Empty;
-           // txtWADescription.Text = string.Empty;
+            if (RchkIsNew.Checked)
+            { 
+          
+            txtWI.Text = string.Empty;
+            txtWIDescription.Text = string.Empty;
+            txtWI.Focus();
+            }
+        else
+        {
+            txtWG.Text = string.Empty;
+            txtWGDescription.Text = string.Empty;
+            txtWA.Text = string.Empty;
+            txtWADescription.Text = string.Empty;
             txtWI.Text = string.Empty;
             txtWIDescription.Text = string.Empty;
             txtfabricat.Text = string.Empty;
@@ -65,6 +74,8 @@ namespace CalcPro
             txtTextKZ.Text = string.Empty;
             txtremark.Text = string.Empty;
             txtDatanormNr.Text = string.Empty;
+            txtWG.Focus();
+        }
             layoutControlItem3.Text = "Artikelübersicht zu : ";
             BindDimensions(ObjEArticle.WIID);
         }
@@ -660,7 +671,7 @@ namespace CalcPro
                 DataView dvDimensions = ObjEArticle.dtDimenstions.DefaultView;
                 dvDimensions.RowFilter = "WIID = '" + WIID + "'";
                 gcDimensions.DataSource = dvDimensions;
-                gvDimensions.BestFitColumns();
+               gvDimensions.BestFitColumns();
             }
             catch (Exception ex)
             {
